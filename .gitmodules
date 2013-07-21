@@ -1,3 +1,3 @@
 [submodule "src/twython"]
-path = src/twython
-url = https://github.com/RyanMcGrath/twython
+	path = src/twython
+	url = https://github.com/ryanmcgrath/twython
