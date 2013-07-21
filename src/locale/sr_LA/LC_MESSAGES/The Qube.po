@@ -1,0 +1,2659 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Qube 1.0\n"
+"POT-Creation-Date: 2013-06-09 00:06+FLE Daylight Time\n"
+"PO-Revision-Date: 2013-06-09 23:01+0200\n"
+"Last-Translator: Andre Polykanine\n"
+"Language-Team: Oire translation team <elensule@oire.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"X-Generator: Poedit 1.5.5\n"
+
+#: ../src\core\gui\SessionManager\main.py:16
+msgid "Sessions:"
+msgstr "Sesije"
+
+#: ../src\core\gui\SessionManager\main.py:22
+msgid "&Switch to"
+msgstr "Prebaci se na"
+
+#: ../src\core\gui\SessionManager\main.py:24
+msgid "&Delete session..."
+msgstr "Izbriši sesiju"
+
+#: ../src\core\gui\SessionManager\main.py:26
+msgid "&New session..."
+msgstr "Nova sesija"
+
+#: ../src\core\gui\SessionManager\main.py:40
+msgid "Are you sure you want to close session %s?"
+msgstr "Jeste li sigurni da želite da zatvorite sesiju %s?"
+
+#: ../src\core\gui\SessionManager\main.py:40
+msgid "Remove session"
+msgstr "Ukloni sesiju"
+
+#: ../src\core\gui\SessionManager\main.py:44
+#: ../src\core\gui\new_message.py:240 ../src\core\gui\new_message.py:271
+#: ../src\core\gui\recording.py:73
+#: ../src\core\sessions\buffers\interface.py:165 ../src\meta_interface.py:50
+#: ../src\meta_interface.py:109 ../src\meta_interface.py:145
+#: ../src\session\twitter\buffers\blocked.py:44
+#: ../src\session\twitter\buffers\list_members.py:37
+#: ../src\session\twitter\buffers\list_subscribers.py:37
+#: ../src\session\twitter\buffers\main.py:251
+#: ../src\session\twitter\gui\list_manager\list_manager.py:50
+#: ../src\session\twitter\gui\list_manager\list_manager.py:65
+#: ../src\session\twitter\gui\list_manager\list_manager.py:80
+#: ../src\session\twitter\interface.py:51
+#: ../src\session\twitter\interface.py:143
+#: ../src\session\twitter\interface.py:487
+#: ../src\session\twitter\interface.py:566
+#: ../src\session\twitter\interface.py:643
+#: ../src\session\twitter\interface.py:651
+#: ../src\session\twitter\interface.py:664
+#: ../src\session\twitter\interface.py:672
+#: ../src\session\twitter\interface.py:755
+#: ../src\session\twitter\twitter.py:275 ../src\session\twitter\twitter.py:281
+#: ../src\session\twitter\twitter.py:292 ../src\utils\wx_utils.py:17
+msgid "Canceled."
+msgstr "Otkazano"
+
+#: ../src\core\gui\SessionManager\main.py:54
+msgid "Type"
+msgstr "Vrsta"
+
+#: ../src\core\gui\SessionManager\main.py:55
+#: ../src\session\stopwatch\buffers\main.py:10
+#: ../src\session\twitter\buffers\directs.py:20
+#: ../src\session\twitter\buffers\tweets.py:15
+#: ../src\session\twitter\buffers\users.py:26
+#: ../src\session\twitter\gui\list_manager\list_manager.py:144
+msgid "Name"
+msgstr "Ime"
+
+#: ../src\core\gui\SessionManager\new_session.py:9
+msgid "New Session"
+msgstr "Nova sesija"
+
+#: ../src\core\gui\SessionManager\new_session.py:11
+msgid "Session type:"
+msgstr "Vrsta sesije"
+
+#: ../src\core\gui\SessionManager\new_session.py:16
+msgid "Session name:"
+msgstr "Ime sesije"
+
+#: ../src\core\gui\configuration\dialog.py:8
+msgid "Configuration"
+msgstr "Postavke"
+
+#: ../src\core\gui\configuration\main.py:23
+msgid "Language"
+msgstr "Jezik"
+
+#: ../src\core\gui\configuration\main.py:25
+msgid "Speech"
+msgstr "Govor"
+
+#: ../src\core\gui\configuration\main.py:27
+msgid "Navigation"
+msgstr "Kretanje"
+
+#: ../src\core\gui\configuration\main.py:29
+msgid "Braille"
+msgstr "Brajevo pismo"
+
+#: ../src\core\gui\configuration\main.py:31
+#: ../src\session\twitter\gui\configuration\main.py:28
+msgid "Miscellaneous"
+msgstr "Razno"
+
+#: ../src\core\gui\configuration\panels\braille.py:7
+msgid "Braille Output:"
+msgstr "Brajev izlaz"
+
+#: ../src\core\gui\configuration\panels\braille.py:8
+msgid "Braille spoken text?"
+msgstr "Brajev izgovoreni tekst?"
+
+#: ../src\core\gui\configuration\panels\language.py:10
+msgid "Language Selection:"
+msgstr "Odabir jezika"
+
+#: ../src\core\gui\configuration\panels\misc.py:13
+msgid "Automatically start %s after Windows log on?"
+msgstr "Automatski pokreni %s nakon prijavljivanja na windows"
+
+#: ../src\core\gui\configuration\panels\misc.py:14
+msgid "Show confirmation dialog before exitting %s?"
+msgstr "Prikaži potvrdni dijalog pre napuštanja %s"
+
+#: ../src\core\gui\configuration\panels\misc.py:15
+msgid "Prefered URL Shortener:"
+msgstr "Željeni skraćivač linkova, URL shortener"
+
+#: ../src\core\gui\configuration\panels\misc.py:18
+msgid "Perform standard actions with Home/End keys?"
+msgstr "Izvrši standardne radnje sa home i end tasterima"
+
+#: ../src\core\gui\configuration\panels\navigation.py:7
+msgid "Move by percentage amount (as a %)"
+msgstr "Kretanje po procentima (kao 5%)"
+
+#: ../src\core\gui\configuration\panels\navigation.py:11
+msgid "Move by time (defined as hours:minutes) hours"
+msgstr "Kretanje po vremenu sa određenim satima i minutima"
+
+#: ../src\core\gui\configuration\panels\navigation.py:15
+msgid "Move by time (defined as hours:minutes) minutes"
+msgstr "Kretanje po vremenu određeno po satima i minutima"
+
+#: ../src\core\gui\configuration\panels\navigation.py:19
+msgid "Undo stack size"
+msgstr "Veličina fijoke za opoziv"
+
+#: ../src\core\gui\configuration\panels\speech.py:10
+msgid "Speech output"
+msgstr "Izlazna govorna jedinica"
+
+#: ../src\core\gui\configuration\panels\speech.py:13
+msgid "SAPI speech rate"
+msgstr "Brzina SAPI govora"
+
+#: ../src\core\gui\configuration\panels\speech.py:18
+msgid "SAPI speech volume"
+msgstr "Jačina SAPI govora"
+
+#: ../src\core\gui\configuration\panels\speech.py:24
+msgid "SAPI speech voice"
+msgstr "Glas SAPI govora"
+
+#: ../src\core\gui\configuration\panels\speech.py:30
+msgid "Enable speech recognition?"
+msgstr "Uključi prepoznavanje govora"
+
+#: ../src\core\gui\list_urls.py:15
+msgid "URL Selection"
+msgstr "Izbor linkova"
+
+#: ../src\core\gui\list_urls.py:19
+msgid "Select URL to open"
+msgstr "Izaberite link koji želite da otvorite"
+
+#: ../src\core\gui\list_urls.py:22 ../src\core\gui\new_message.py:223
+msgid "&Unshorten URL"
+msgstr "Vrati link u prvobitno stanje"
+
+#: ../src\core\gui\list_urls.py:25
+msgid "&Copy URL"
+msgstr "Kopiraj link"
+
+#: ../src\core\gui\list_urls.py:49 ../src\core\gui\new_message.py:162
+msgid "URL expanded."
+msgstr "Link je vraćen u normalno stanje"
+
+#: ../src\core\gui\list_urls.py:52
+msgid "Unable to expand URL"
+msgstr "Ne mogu da vratim link u prvobitno stanje"
+
+#: ../src\core\gui\list_urls.py:67
+msgid "URL copied to clipboard."
+msgstr "Link je iskopiran u ostavu."
+
+#: ../src\core\gui\login.py:15
+msgid "Username"
+msgstr "Korisničko ime"
+
+#: ../src\core\gui\login.py:16
+msgid "Password"
+msgstr "Lozinka"
+
+#: ../src\core\gui\new_message.py:54 ../src\core\gui\selectable_message.py:29
+msgid "%s - %d of %d Characters"
+msgstr "%s - %d od %d znakova"
+
+#: ../src\core\gui\new_message.py:76
+msgid "URL Shortener - No URLs"
+msgstr "Skraćivač linkova, nema pronađenih linkova"
+
+#: ../src\core\gui\new_message.py:77
+msgid ""
+"No URLs were found to shorten. If there is one, select the URL and click "
+"this button again."
+msgstr ""
+"Nisu pronađeni linkovi za skraćivanje. Ako postoji jedan, izaberite ga i "
+"kliknite na ovo dugme ponovo."
+
+#: ../src\core\gui\new_message.py:91
+msgid "URL Shortener - Select URL"
+msgstr "Skraćivač linkova - izaberite link"
+
+#: ../src\core\gui\new_message.py:92
+msgid "Select URL to shorten."
+msgstr "Izaberite link za skraćivanje"
+
+#: ../src\core\gui\new_message.py:108
+msgid "URL Shortened."
+msgstr "Link je skraćen."
+
+#: ../src\core\gui\new_message.py:111
+msgid "URL Shortener - Problem"
+msgstr "Problem skraćivača linkova."
+
+#: ../src\core\gui\new_message.py:112
+msgid "There was a problem shortening the selected URL."
+msgstr "Pojavio se problem prilikom skraćivanja ovog linka."
+
+#: ../src\core\gui\new_message.py:126
+msgid "URL Unshortener - No URLs"
+msgstr "Nema linkova za vraćanje."
+
+#: ../src\core\gui\new_message.py:127
+msgid ""
+"No URLs were found to unshorten. If there is one, select the URL and click "
+"this button again."
+msgstr ""
+"Nisu pronađeni linkovi koji mogu biti vraćeni u prvobitno stanje. Ako "
+"postoji jedan, izaberite ga i pritisnite ponovo ovo dugme."
+
+#: ../src\core\gui\new_message.py:141
+msgid "URL Unshortener - Select URL"
+msgstr "Vraćanje linkova, izaberite link"
+
+#: ../src\core\gui\new_message.py:142
+msgid "Select URL to unshorten."
+msgstr "Izaberite link koji želite da vratite u prvobitno stanje"
+
+#: ../src\core\gui\new_message.py:165
+msgid "URL Unshortener - Problem"
+msgstr "Problem prilikom vraćanja linka"
+
+#: ../src\core\gui\new_message.py:166
+msgid "There was a problem unshortening the selected URL."
+msgstr "Pojavio se problem prilikom vraćanja linka u prvobitno stanje."
+
+#: ../src\core\gui\new_message.py:211
+msgid "Message:"
+msgstr "Poruka:"
+
+#: ../src\core\gui\new_message.py:221
+msgid "&Shorten URL"
+msgstr "Skrati link"
+
+#: ../src\core\gui\new_message.py:227
+msgid "Attach &Audio..."
+msgstr "Priloži audio..."
+
+#: ../src\core\gui\new_message.py:232
+msgid "S&chedule message..."
+msgstr "Zakaži poruku..."
+
+#: ../src\core\gui\new_message.py:243
+msgid "Attaching..."
+msgstr "Prilažem..."
+
+#: ../src\core\gui\new_message.py:250
+msgid "There was an error attaching the file."
+msgstr "Dogodila se greška prilikom umetanja datoteke."
+
+#: ../src\core\gui\new_message.py:259
+msgid "File attached."
+msgstr "Datoteka je priložena."
+
+#: ../src\core\gui\new_message.py:268
+msgid "Resetting currently-scheduled item."
+msgstr "Resetujem trenutnu zakazanu stavku."
+
+#: ../src\core\gui\new_message.py:269
+msgid "Schedule message"
+msgstr "Zakaži poruku"
+
+#: ../src\core\gui\new_message.py:273
+msgid "Delaying for %s"
+msgstr "Odlažem do %s"
+
+#: ../src\core\gui\qdm\add.py:8
+msgid "Entry:"
+msgstr "Unos:"
+
+#: ../src\core\gui\qdm\add.py:12
+msgid "Replacement:"
+msgstr "Zamena:"
+
+#: ../src\core\gui\qdm\add.py:16
+msgid "Case senative?"
+msgstr "Osetljivost na vellika i mala slova"
+
+#: ../src\core\gui\qdm\main.py:14
+msgid "Dictionary Entries"
+msgstr "Unosi rečnika"
+
+#: ../src\core\gui\qdm\main.py:18
+msgid "Add..."
+msgstr "Dodaj..."
+
+#: ../src\core\gui\qdm\main.py:21
+msgid "Delete..."
+msgstr "Izbriši..."
+
+#: ../src\core\gui\qdm\main.py:46
+msgid "Entry"
+msgstr "Unos"
+
+#: ../src\core\gui\qdm\main.py:47
+msgid "Replacement"
+msgstr "Zamena"
+
+#: ../src\core\gui\qube.py:18 ../src\core\sessions\hotkey\interface.py:36
+msgid "Modifiers unlocked."
+msgstr "Modifikatori su otključani."
+
+#: ../src\core\gui\recording.py:17
+msgid "Attach audio"
+msgstr "Priloži audio"
+
+#: ../src\core\gui\recording.py:24 ../src\core\gui\recording.py:65
+msgid "&Record"
+msgstr "Snimi"
+
+#: ../src\core\gui\recording.py:26
+msgid "Attach existing audio &file..."
+msgstr "Priloži postojeću audio datoteku..."
+
+#: ../src\core\gui\recording.py:28 ../src\core\gui\recording.py:113
+#: ../src\core\gui\recording.py:123
+msgid "&Play"
+msgstr "Pusti"
+
+#: ../src\core\gui\recording.py:31
+msgid "&Discard"
+msgstr "Odbaci"
+
+#: ../src\core\gui\recording.py:37
+msgid "&Attach!"
+msgstr "Priloži!"
+
+#: ../src\core\gui\recording.py:57 ../src\core\gui\recording.py:109
+msgid "&Stop"
+msgstr "Zaustavi"
+
+#: ../src\core\gui\recording.py:58
+msgid "Recording."
+msgstr "Snimanje"
+
+#: ../src\core\gui\recording.py:63 ../src\core\gui\recording.py:120
+#: ../src\session\google_voice\buffers\voicemail.py:82
+msgid "Stopped."
+msgstr "zaustavljeno"
+
+#: ../src\core\gui\recording.py:71
+msgid "Select audio file"
+msgstr "Izaberite audio datoteku"
+
+#: ../src\core\gui\recording.py:97
+msgid "Discarded."
+msgstr "Odbačeno"
+
+#: ../src\core\gui\recording.py:107
+msgid "Playing."
+msgstr "Reprodukcija"
+
+#: ../src\core\gui\recording.py:128
+msgid "Transcoding audio."
+msgstr "Pretvaram audio"
+
+#: ../src\core\gui\schedule.py:16
+msgid "Interval"
+msgstr "Interval"
+
+#: ../src\core\gui\schedule.py:16
+msgid "Select scheduling method"
+msgstr "Izaberite način zakazivanja"
+
+#: ../src\core\gui\schedule.py:16
+#: ../src\core\sessions\buffers\buffers\messages.py:21
+msgid "Time"
+msgstr "Vreme"
+
+#: ../src\core\gui\schedule.py:44
+#: ../src\session\stopwatch\gui\dialogs\countdown.py:11
+msgid "Hours:"
+msgstr "Sati:"
+
+#: ../src\core\gui\schedule.py:46
+#: ../src\session\stopwatch\gui\dialogs\countdown.py:14
+msgid "Minutes:"
+msgstr "Minuta:"
+
+#: ../src\core\gui\schedule.py:48
+#: ../src\session\stopwatch\gui\dialogs\countdown.py:17
+msgid "Seconds:"
+msgstr "Sekundi:"
+
+#: ../src\core\gui\schedule.py:60
+msgid "Hour:"
+msgstr "Sat:"
+
+#: ../src\core\gui\selectable_message.py:17
+msgid "Recipient:"
+msgstr "Primalac:"
+
+#: ../src\core\gui\selectable_message.py:28
+msgid "%s to %s"
+msgstr "%s za %s"
+
+#: ../src\core\gui\translate.py:11
+msgid "Auto detect"
+msgstr "Otkrij automatski"
+
+#: ../src\core\gui\translate.py:16
+msgid "Translate"
+msgstr "Prevedi"
+
+#: ../src\core\gui\translate.py:19
+msgid "Source language:"
+msgstr "Izvorni jezikk:"
+
+#: ../src\core\gui\translate.py:21
+msgid "Destination language:"
+msgstr "Odredišni jezik:"
+
+#: ../src\core\sessions\buffers\buffers\buffer.py:52
+msgid "Total"
+msgstr "ukupno"
+
+#: ../src\core\sessions\buffers\buffers\buffer.py:53
+msgid "Index"
+msgstr "Indeks"
+
+#: ../src\core\sessions\buffers\buffers\buffer.py:92
+msgid "Item deleted."
+msgstr "Stavka je obrisana."
+
+#: ../src\core\sessions\buffers\buffers\buffer.py:194
+msgid "buffer %s"
+msgstr "Kanal %s"
+
+#: ../src\core\sessions\buffers\buffers\buffer.py:229
+msgid "Buffer mute off"
+msgstr "Prigušivanje kanala isključeno"
+
+#: ../src\core\sessions\buffers\buffers\buffer.py:231
+msgid "Buffer mute on"
+msgstr "Prigušivanje kanala uključeno"
+
+#: ../src\core\sessions\buffers\buffers\buffer.py:260
+msgid "Item %d of %d."
+msgstr "Stavka %d od %d."
+
+#: ../src\core\sessions\buffers\buffers\filtered.py:157
+msgid "Removed all matching items from source %s"
+msgstr "Uklonjene su sve stavke koje se poklapaju  iz izvora %s"
+
+#: ../src\core\sessions\buffers\buffers\filtered.py:190
+msgid "rx {term}"
+msgstr "rx {term}"
+
+#: ../src\core\sessions\buffers\buffers\filtered.py:208
+msgid " and "
+msgstr " i "
+
+#: ../src\core\sessions\buffers\buffers\filtered.py:210
+#: ../src\core\sessions\buffers\buffers\filtered.py:217
+msgid ", "
+msgstr ", "
+
+#: ../src\core\sessions\buffers\buffers\filtered.py:211
+msgid ", and "
+msgstr ", i "
+
+#: ../src\core\sessions\buffers\buffers\filtered.py:215
+msgid " or "
+msgstr " ili "
+
+#: ../src\core\sessions\buffers\buffers\filtered.py:218
+msgid ", or "
+msgstr ", ili "
+
+#: ../src\core\sessions\buffers\buffers\filtered.py:220
+msgid "{0} with {1}"
+msgstr "{0} with {1}"
+
+#: ../src\core\sessions\buffers\buffers\filtered.py:222
+msgid "{0} without {1}"
+msgstr "{0} without {1}"
+
+#: ../src\core\sessions\buffers\buffers\filtered.py:224
+msgid "{0} with {1} and without {2}"
+msgstr "{0} with {1} and without {2}"
+
+#: ../src\core\sessions\buffers\buffers\filtered.py:226
+msgid "{0} with {1}. Without {2}"
+msgstr "{0} with {1}. Without {2}"
+
+#: ../src\core\sessions\buffers\buffers\messages.py:19
+msgid "Relative Time"
+msgstr "Relativno vreme"
+
+#: ../src\core\sessions\buffers\buffers\messages.py:20
+msgid "Date"
+msgstr "Datum"
+
+#: ../src\core\sessions\buffers\buffers\messages.py:27
+#: ../src\core\sessions\buffers\buffers\messages.py:35
+#: ../src\core\sessions\buffers\buffers\messages.py:43
+#: ../src\core\sessions\buffers\buffers\messages.py:51
+#: ../src\core\sessions\buffers\buffers\messages.py:60
+msgid "Not Available"
+msgstr "Nije dostupno"
+
+#: ../src\core\sessions\buffers\buffers\messages.py:30
+msgid "{0} ago"
+msgstr "{0} ago"
+
+#: ../src\core\sessions\buffers\buffers\messages.py:96
+msgid "No URLs detected in current item."
+msgstr "U trenutnoj stavci linkovi nisu otkriveni."
+
+#: ../src\core\sessions\buffers\buffers\messages.py:103
+msgid "%s %d of %d."
+msgstr "%s %d od %d."
+
+#: ../src\core\sessions\buffers\buffers\updating.py:32
+msgid "message"
+msgstr "Poruka"
+
+#: ../src\core\sessions\buffers\buffers\updating.py:33
+msgid "messages"
+msgstr "Poruke"
+
+#: ../src\core\sessions\buffers\buffers\updating.py:78
+msgid "Update already in progress; please wait."
+msgstr "Ažuriranje je već u toku. Molimo sačekajte."
+
+#: ../src\core\sessions\buffers\buffers\updating.py:124
+msgid "No new %s."
+msgstr "Nema novih %s."
+
+#: ../src\core\sessions\buffers\buffers\updating.py:131
+msgid "%s: %s"
+msgstr "%s: %s"
+
+#: ../src\core\sessions\buffers\buffers\updating.py:148
+msgid "Checking for %s."
+msgstr "Proveravam za %s"
+
+#: ../src\core\sessions\buffers\gui\filter.py:13
+msgid "Filter: %s"
+msgstr "Filter: %s"
+
+#: ../src\core\sessions\buffers\gui\filter.py:16
+msgid "Filters:"
+msgstr "Filteri:"
+
+#: ../src\core\sessions\buffers\gui\filter.py:20
+msgid "&Add"
+msgstr "Dodaj"
+
+#: ../src\core\sessions\buffers\gui\filter.py:22
+msgid "&Remove"
+msgstr "Ukloni"
+
+#: ../src\core\sessions\buffers\gui\filter.py:24
+msgid "Use a regular expression"
+msgstr "Koristi regularni izraz"
+
+#: ../src\core\sessions\buffers\gui\filter.py:27
+msgid "Buffer Search:"
+msgstr "Pretraga kanala:"
+
+#: ../src\core\sessions\buffers\gui\filter.py:31
+msgid "Fields:"
+msgstr "Polja:"
+
+#: ../src\core\sessions\buffers\gui\filter.py:41
+msgid "excluding"
+msgstr "isključujući"
+
+#: ../src\core\sessions\buffers\gui\filter.py:44
+msgid "Replace source buffer"
+msgstr "Zameni izvorni kanal"
+
+#: ../src\core\sessions\buffers\gui\filter.py:86
+msgid "Regular Expression:"
+msgstr "Regularni izraz:"
+
+#: ../src\core\sessions\buffers\gui\filter.py:88
+msgid "Term:"
+msgstr "Trajanje:"
+
+#: ../src\core\sessions\buffers\gui\filter.py:172
+msgid "replacement "
+msgstr "Zamena "
+
+#: ../src\core\sessions\buffers\gui\filter.py:174
+msgid "without "
+msgstr "Bez "
+
+#: ../src\core\sessions\buffers\gui\filter.py:176
+msgid "with "
+msgstr "Sa "
+
+#: ../src\core\sessions\buffers\gui\filter.py:178
+msgid "RX "
+msgstr "RX "
+
+#: ../src\core\sessions\buffers\gui\jump_to_item.py:10
+msgid "Enter item number to jump to, 1 to %s:"
+msgstr "Unesite broj stavke na koju želite da skočite, između 1 i %s:"
+
+#: ../src\core\sessions\buffers\interface.py:64
+#: ../src\core\sessions\buffers\interface.py:77
+msgid "Cannot move by time in this buffer."
+msgstr "U ovom kanalu se ne mogu kretati po vremenu."
+
+#: ../src\core\sessions\buffers\interface.py:112
+#: ../src\core\sessions\buffers\interface.py:122
+msgid "No active buffers in %s session."
+msgstr "Nema aktivnih kanala u sesiji %s."
+
+#: ../src\core\sessions\buffers\interface.py:129
+msgid "There are no buffers to dismiss."
+msgstr "Nema kanala za odbacivanje."
+
+#: ../src\core\sessions\buffers\interface.py:131
+#: ../src\core\sessions\buffers\interface.py:137
+msgid "Unable to dismiss buffer %s"
+msgstr "Ne mogu da odbacim kanal %s."
+
+#: ../src\core\sessions\buffers\interface.py:145
+msgid "Undo failed: stack empty"
+msgstr "Opoziv nije uspeo. Fioka je prazna."
+
+#: ../src\core\sessions\buffers\interface.py:148
+msgid "Undo failed: buffer no longer exists"
+msgstr "Opoziv nije uspeo. Kanal više ne postoji."
+
+#: ../src\core\sessions\buffers\interface.py:160
+msgid "This buffer cannot be cleared."
+msgstr "Ovaj kanal ne može biti očišćen."
+
+#: ../src\core\sessions\buffers\interface.py:161
+msgid "Are you sure you want to delete %d items from %s?"
+msgstr "Jeste li sigurni da želite da izbrišete %d stavki iz %s?"
+
+#: ../src\core\sessions\buffers\interface.py:161
+msgid "Clear buffer"
+msgstr "Očisti kanal"
+
+#: ../src\core\sessions\buffers\interface.py:176
+msgid "Item number too high."
+msgstr "Broj stavke je previsok."
+
+#: ../src\core\sessions\buffers\interface.py:192
+msgid "Processing.  Please wait."
+msgstr "Obrada je u toku, molimo sačekajte."
+
+#: ../src\core\sessions\buffers\interface.py:207
+msgid "Item copied to clipboard."
+msgstr "Stavka je kopirana u ostavu."
+
+#: ../src\core\sessions\buffers\interface.py:221
+#: ../src\core\sessions\buffers\interface.py:228
+msgid "Moved"
+msgstr "Premešteno."
+
+#: ../src\core\sessions\buffers\interface.py:235
+msgid "The export function is not available."
+msgstr "Funkcija izvoza nije dostupna."
+
+#: ../src\core\sessions\buffers\interface.py:237
+msgid "Export started, please wait."
+msgstr "Izvoz je počeo. Molimo sačekajte."
+
+#: ../src\core\sessions\buffers\interface.py:241
+msgid "Export complete"
+msgstr "Izvoz je dovršen."
+
+#: ../src\core\sessions\buffers\interface.py:253
+msgid "Export failed."
+msgstr "Izvoz nije uspeo."
+
+#: ../src\core\sessions\buffers\interface.py:260
+msgid "No buffers in this session."
+msgstr "U ovoj sesiji nema kanala."
+
+#: ../src\core\sessions\buffers\interface.py:265
+#: ../src\core\sessions\buffers\interface.py:267
+#: ../src\core\sessions\buffers\interface.py:269
+#: ../src\core\sessions\buffers\interface.py:271
+#: ../src\core\sessions\buffers\interface.py:273
+msgid "%s Buffer Configuration"
+msgstr "%s postavke kanala"
+
+#: ../src\core\sessions\buffers\interface.py:281 ../src\meta_interface.py:40
+#: ../src\session\google_voice\google_voice.py:86
+#: ../src\session\twitter\twitter.py:182
+msgid "Configuration saved."
+msgstr "Postavke su sačuvane."
+
+#: ../src\core\sessions\buffers\interface.py:284
+#: ../src\session\google_voice\google_voice.py:90
+#: ../src\session\twitter\twitter.py:176
+msgid "Configuration canceled."
+msgstr "Postavke su otkazane."
+
+#: ../src\core\sessions\buffers\interface.py:293
+msgid "Forcing updates is not permitted in this buffer."
+msgstr "Nametanje ažuriranja nije dozvoljeno u ovom kanalu."
+
+#: ../src\core\sessions\buffers\interface.py:298
+msgid "Item text:"
+msgstr "Tekst stavke:"
+
+#: ../src\core\sessions\buffers\interface.py:298
+msgid "View item"
+msgstr "Vidi ‚stavku"
+
+#: ../src\core\sessions\buffers\interface.py:304
+msgid "Interaction is not enabled in this buffer."
+msgstr "Interakcija nije uključena u ovom kanalu."
+
+#: ../src\core\sessions\buffers\main.py:95
+msgid "No buffers remaining."
+msgstr "Nema preostalih kanala."
+
+#: ../src\core\sessions\buffers\main.py:315
+msgid "No current buffer."
+msgstr "Nema trenutnog kanala."
+
+#: ../src\core\sessions\buffers\main.py:319
+msgid "%s: Empty."
+msgstr "%s: prazno."
+
+#: ../src\core\sessions\buffers\main.py:321
+msgid "%s: %d of %d items."
+msgstr "%s: %d od %d stavki."
+
+#: ../src\core\sessions\hotkey\gui\dialog.py:9
+#: ../src\core\sessions\hotkey\gui\main.py:16
+msgid "Keystroke Manager"
+msgstr "Upravljač prečica sa tastature"
+
+#: ../src\core\sessions\hotkey\gui\dialog.py:10
+msgid "CTRL"
+msgstr "CTRL"
+
+#: ../src\core\sessions\hotkey\gui\dialog.py:11
+msgid "WIN"
+msgstr "Win"
+
+#: ../src\core\sessions\hotkey\gui\dialog.py:12
+msgid "ALT"
+msgstr "Alt"
+
+#: ../src\core\sessions\hotkey\gui\dialog.py:13
+msgid "SHIFT"
+msgstr "Shift"
+
+#: ../src\core\sessions\hotkey\gui\dialog.py:14
+msgid "Key:"
+msgstr "Taster:"
+
+#: ../src\core\sessions\hotkey\gui\dialog.py:54
+msgid "Function:"
+msgstr "Funkcija:"
+
+#: ../src\core\sessions\hotkey\gui\main.py:20
+#: ../src\core\sessions\hotkey\gui\main.py:21
+msgid "Keymap:"
+msgstr "Prečica:"
+
+#: ../src\core\sessions\hotkey\gui\main.py:27
+msgid "E&xecute Function"
+msgstr "Izvrši funkciju"
+
+#: ../src\core\sessions\hotkey\gui\main.py:29
+msgid "&Add..."
+msgstr "Dodaj..."
+
+#: ../src\core\sessions\hotkey\gui\main.py:31
+msgid "&Edit..."
+msgstr "Izmeni..."
+
+#: ../src\core\sessions\hotkey\gui\main.py:33
+msgid "&Delete..."
+msgstr "Izbriši..."
+
+#: ../src\core\sessions\hotkey\gui\main.py:69
+msgid "Keystroke in use"
+msgstr "Prečica se koristi."
+
+#: ../src\core\sessions\hotkey\gui\main.py:69
+msgid "The keystroke %s is already in use.  Please choose another."
+msgstr "Prečica %s se već koristi. Molimo vas da izaberete neku drugu."
+
+#: ../src\core\sessions\hotkey\gui\main.py:80
+msgid "Function"
+msgstr "Funkcija"
+
+#: ../src\core\sessions\hotkey\gui\main.py:81
+msgid "Keystroke"
+msgstr "Prečica"
+
+#: ../src\core\sessions\hotkey\gui\main.py:82
+#: ../src\session\twitter\buffers\users.py:29
+#: ../src\session\twitter\gui\list_manager\list_manager.py:147
+msgid "Description"
+msgstr "Opis"
+
+#: ../src\core\sessions\hotkey\interface.py:21
+msgid "Keymap saved."
+msgstr "Prečica sačuvana."
+
+#: ../src\core\sessions\hotkey\interface.py:28
+msgid "Keyboard help on."
+msgstr "Pomoćnik za tastaturu je uključen."
+
+#: ../src\core\sessions\hotkey\interface.py:30
+msgid "Keyboard help off."
+msgstr "Pomoćnik za tastaturu je isključen."
+
+#: ../src\core\sessions\hotkey\interface.py:39
+msgid "Modifiers locked."
+msgstr "Modifikatori su zaključani."
+
+#: ../src\core\sessions\sound\buffers\audio.py:17
+msgid "Attached Audio"
+msgstr "Priložen audio"
+
+#: ../src\core\sessions\sound\buffers\audio.py:42
+msgid "playing audio."
+msgstr "Reprodukujem audio"
+
+#: ../src\core\sessions\sound\buffers\audio.py:57
+msgid "audio playback stopped."
+msgstr "Reprodukcija audio zapisa je zaustavljena."
+
+#: ../src\core\sessions\sound\interface.py:25
+msgid "Louder."
+msgstr "Glasnije"
+
+#: ../src\core\sessions\sound\interface.py:32
+msgid "Quieter."
+msgstr "Tiše"
+
+#: ../src\core\sessions\sound\sound.py:80
+msgid "No internet connection could be opened."
+msgstr "Nijedna internet veza ne može biti otvorena."
+
+#: ../src\core\sessions\sound\sound.py:83
+msgid "Unable to play audio."
+msgstr "Ne mogu da pustim audio."
+
+#: ../src\core\sessions\sound\sound.py:116
+msgid "Session mute off"
+msgstr "Prigušivanje sesije isključeno"
+
+#: ../src\core\sessions\sound\sound.py:118
+msgid "Session mute on"
+msgstr "Prigušivanje sesije uključeno"
+
+#: ../src\core\sessions\sound\sound.py:124
+msgid "Global mute off"
+msgstr "Globalno prigušivanje je isključeno"
+
+#: ../src\core\sessions\sound\sound.py:126
+msgid "Global mute on"
+msgstr "Globalno prigušivanje je uključeno"
+
+#: ../src\core\sessions\storage\storage.py:59
+msgid "Sync failed."
+msgstr "Sinhronizacija neuspela."
+
+#: ../src\core\sessions\storage\storage.py:63
+msgid "Sync completed."
+msgstr "Sinhronizacija dovršena."
+
+#: ../src\durus_importer.py:18
+msgid "Loading file..."
+msgstr "Učitavam datoteku..."
+
+#: ../src\durus_importer.py:33
+msgid "Attempting import of buffer %s"
+msgstr "Pokušavam da uvezem kanal %s"
+
+#: ../src\main.pyw:37
+msgid "Welcome to %s"
+msgstr "Dobrodošli u %s"
+
+#: ../src\main.pyw:45
+msgid "There was an error in the startup process.  We appologize for this."
+msgstr "Dogodila se greška prilikom pokretanja. Izvinjavamo se zbog toga."
+
+#: ../src\meta_interface.py:38
+msgid "%s Configuration"
+msgstr "%s postavke"
+
+#: ../src\meta_interface.py:48
+msgid "Are you sure you wish to exit %s?"
+msgstr "Jeste li sigurni da želite da napustite %s?"
+
+#: ../src\meta_interface.py:48
+msgid "Exit %s"
+msgstr "Napusti %s"
+
+#: ../src\meta_interface.py:52
+msgid "Exiting %s."
+msgstr "Izlazim iz %s"
+
+#: ../src\meta_interface.py:65
+msgid "Speech recognition off."
+msgstr "Prepoznavanje govora isključeno."
+
+#: ../src\meta_interface.py:69
+msgid "Speech recognition on."
+msgstr "Prepoznavanje govora uključeno."
+
+#: ../src\meta_interface.py:95 ../src\meta_interface.py:102
+msgid "Error: this is the only session."
+msgstr "Greška. Ovo je jedina sesija."
+
+#: ../src\meta_interface.py:103
+msgid "Delete Session"
+msgstr "Izbriši sesiju"
+
+#: ../src\meta_interface.py:121
+msgid "Please enter a name for this session."
+msgstr "Molimo vas, unesite ime ove sesije."
+
+#: ../src\meta_interface.py:126
+msgid "Unable to spawn new %s session."
+msgstr "Ne mogu da umnožim novu %s sesiju."
+
+#: ../src\meta_interface.py:142
+msgid "Please enter a new name for session %s:"
+msgstr "Molimo vas unesite novo ime za sesiju %s."
+
+#: ../src\meta_interface.py:142
+msgid "Rename %s session"
+msgstr "Preimenuj %s sesiju"
+
+#: ../src\meta_interface.py:147
+msgid "Renaming session %s to %s, please wait."
+msgstr "Menjam ime sesije %s u %s, molim sačekajte."
+
+#: ../src\meta_interface.py:151
+msgid "There was an error renaming %s to %s: %s"
+msgstr "Pojavila se greška prilikom preimenovanja %s na %s: %s"
+
+#: ../src\meta_interface.py:152
+msgid "Renaming session complete."
+msgstr "Preimenovanje sesije dovršeno."
+
+#: ../src\misc.py:92
+msgid "less than %d second"
+msgstr "Manje od %d sekund"
+
+#: ../src\misc.py:93
+msgid "%d second"
+msgstr "%d sekund"
+
+#: ../src\misc.py:94
+msgid "%d seconds"
+msgstr "%d sekundi"
+
+#: ../src\misc.py:95
+msgid "%d minute"
+msgstr "%d minut"
+
+#: ../src\misc.py:96
+msgid "%d minutes"
+msgstr "%d minuta"
+
+#: ../src\misc.py:97
+msgid "%d hour"
+msgstr "%d sat"
+
+#: ../src\misc.py:98
+msgid "%d hours"
+msgstr "%d sati"
+
+#: ../src\misc.py:99
+msgid "%d day"
+msgstr "%d dan"
+
+#: ../src\misc.py:100
+msgid "%d days"
+msgstr "%d dana"
+
+#: ../src\misc.py:101
+msgid "%d week"
+msgstr "%d nedelja"
+
+#: ../src\misc.py:102
+msgid "%d weeks"
+msgstr "%d nedelja"
+
+#: ../src\misc.py:103
+msgid "%d month"
+msgstr "Mesec"
+
+#: ../src\misc.py:104
+msgid "%d months"
+msgstr "%d meseci"
+
+#: ../src\misc.py:105
+msgid "%d year"
+msgstr "%d godina"
+
+#: ../src\misc.py:106
+msgid "%d years"
+msgstr "%d godina"
+
+#: ../src\output.py:58
+msgid "No current session."
+msgstr "Nema trenutne sesije"
+
+#: ../src\session\google_voice\buffers\main.py:18
+msgid "Phone number"
+msgstr "Broj telefona"
+
+#: ../src\session\google_voice\buffers\main.py:19
+msgid "Display phone number"
+msgstr "Prikaži broj telefona"
+
+#: ../src\session\google_voice\buffers\main.py:48
+msgid "Calling %s"
+msgstr "Pozivam %s"
+
+#: ../src\session\google_voice\buffers\missed.py:8
+msgid "missed call"
+msgstr "Propušten poziv"
+
+#: ../src\session\google_voice\buffers\missed.py:9
+msgid "missed calls"
+msgstr "Propušteni pozivi"
+
+#: ../src\session\google_voice\buffers\placed.py:8
+msgid "placed call"
+msgstr "Birani poziv"
+
+#: ../src\session\google_voice\buffers\placed.py:9
+msgid "placed calls"
+msgstr "Birani brojevi"
+
+#: ../src\session\google_voice\buffers\received.py:8
+msgid "received call"
+msgstr "Primljen poziv"
+
+#: ../src\session\google_voice\buffers\received.py:9
+msgid "received calls"
+msgstr "Primljeni pozivi"
+
+#: ../src\session\google_voice\buffers\sms.py:15
+msgid "Message sender"
+msgstr "Pošiljalac poruke"
+
+#: ../src\session\google_voice\buffers\sms.py:16
+msgid "Message text"
+msgstr "Tekst poruke"
+
+#: ../src\session\google_voice\buffers\voicemail.py:20
+msgid "voicemail"
+msgstr "Govorna poruka"
+
+#: ../src\session\google_voice\buffers\voicemail.py:21
+msgid "voicemails"
+msgstr "Govorne poruke"
+
+#: ../src\session\google_voice\buffers\voicemail.py:26
+msgid "Item state"
+msgstr "Stanje stavke"
+
+#: ../src\session\google_voice\buffers\voicemail.py:39
+msgid "Downloading voicemail..."
+msgstr "Preuzimam govornu poruku..."
+
+#: ../src\session\google_voice\buffers\voicemail.py:70
+msgid "Playing voicemail from %s"
+msgstr "Reprodukujem govornu poruku od %s"
+
+#: ../src\session\google_voice\google_voice.py:36
+msgid "Missed"
+msgstr "Propušteno"
+
+#: ../src\session\google_voice\google_voice.py:36
+msgid "Placed"
+msgstr "Birano"
+
+#: ../src\session\google_voice\google_voice.py:36
+msgid "Received"
+msgstr "Primljeno"
+
+#: ../src\session\google_voice\google_voice.py:36
+msgid "Sms"
+msgstr "SMS"
+
+#: ../src\session\google_voice\google_voice.py:36
+msgid "Voicemail"
+msgstr "Govorna pošta"
+
+#: ../src\session\google_voice\google_voice.py:55
+msgid "Logged into Google Voice as %s"
+msgstr "Prijavljen na Google Voice kao %s"
+
+#: ../src\session\google_voice\google_voice.py:58
+msgid "Unable to Log into Google Voice."
+msgstr "Ne mogu da se prijavim na Google Voice."
+
+#: ../src\session\google_voice\google_voice.py:70
+msgid "Google Voice Login"
+msgstr "Prijavljivanje na Google Voice"
+
+#: ../src\session\google_voice\google_voice.py:70
+msgid "Please provide your credentials to login to Google Voice"
+msgstr "Molimo vas unesite vaše podatke za prijavljivanje na Google Voice"
+
+#: ../src\session\google_voice\gui\call.py:10
+msgid "Enter phone number to call:"
+msgstr "Unesite broj telefona koji želite da pozovete:"
+
+#: ../src\session\google_voice\gui\call.py:13
+msgid "Forwarding Number (where calls are bridged)"
+msgstr "Preusmeravanje broja gde su pozovi premošćeni"
+
+#: ../src\session\google_voice\gui\configuration\main.py:21
+msgid "General"
+msgstr "Opšte"
+
+#: ../src\session\google_voice\interface.py:14
+msgid "New SMS"
+msgstr "Novi SMS"
+
+#: ../src\session\google_voice\interface.py:16
+msgid "Sms successfully sent to %s"
+msgstr "SMS je uspešno poslat na %s"
+
+#: ../src\session\google_voice\interface.py:19
+msgid "Call Phone"
+msgstr "Pozovi telefon"
+
+#: ../src\session\google_voice\interface.py:22
+msgid "Please enter a phone number to call."
+msgstr "Molimo vas unesite broj koji želite da pozovete"
+
+#: ../src\session\google_voice\interface.py:26
+msgid ""
+"Please indicate where the call should be bridged by selecting a forwarding "
+"phone number."
+msgstr ""
+"Molimo vas označite da li poziv treba da bude premošćen biranjem broja za "
+"preusmerenje"
+
+#: ../src\session\google_voice\interface.py:29
+msgid "Error, forwarding phone number not found."
+msgstr "Greška, broj za preusmerenje nije pronađen."
+
+#: ../src\session\google_voice\interface.py:30
+msgid "Calling: %r"
+msgstr "Pozivam: %r"
+
+#: ../src\session\google_voice\interface.py:32
+msgid "Call placed."
+msgstr "Broj je izabran."
+
+#: ../src\session\google_voice\interface.py:38
+msgid "Unable to detect a sender to reply to."
+msgstr "Ne mogu da otkrijem pošiljaoca kako biste odgovorili."
+
+#: ../src\session\google_voice\interface.py:40
+#: ../src\session\twitter\interface.py:92
+#: ../src\session\twitter\twitter.py:248
+msgid "Reply"
+msgstr "Odgovori"
+
+#: ../src\session\login.py:32
+msgid "Login succeeded."
+msgstr "Prijavljivanje je uspešno."
+
+#: ../src\session\login.py:35
+msgid "Login failed."
+msgstr "Prijavljivanje nije uspelo."
+
+#: ../src\session\speech_recognition.py:39
+msgid "Unable to initialize speech recognition."
+msgstr "Ne mogu da pokrenem prepoznavanje govora."
+
+#: ../src\session\stopwatch\buffers\countdowns.py:15
+msgid "Remaining time"
+msgstr "Preostalo vreme"
+
+#: ../src\session\stopwatch\buffers\timers.py:17
+msgid "Elapsed time"
+msgstr "Proteklo vreme"
+
+#: ../src\session\stopwatch\buffers\timers.py:28
+msgid "Stopwatch reset and counting."
+msgstr "Štoperica reset i odbrojavanje"
+
+#: ../src\session\stopwatch\buffers\timers.py:31
+msgid "Stopwatch counting."
+msgstr "Štoperica odbrojava"
+
+#: ../src\session\stopwatch\gui\dialogs\countdown.py:9
+msgid "Name:"
+msgstr "Ime:"
+
+#: ../src\session\stopwatch\interface.py:17
+msgid "Countdown Timer"
+msgstr "Brojač"
+
+#: ../src\session\stopwatch\interface.py:21
+msgid "Counting."
+msgstr "Odbrojavanje"
+
+#: ../src\session\stopwatch\main.py:21
+msgid "Countdowns"
+msgstr "Odbrojavanja"
+
+#: ../src\session\stopwatch\main.py:21
+msgid "Timers"
+msgstr "Brojači"
+
+#: ../src\session\stopwatch\main.py:24
+msgid "default"
+msgstr "Podrazumevano"
+
+#: ../src\session\stopwatch\main.py:79
+msgid "Countdown %s complete."
+msgstr "Odbrojavanje %s dovršeno."
+
+#: ../src\session\twitter\buffers\blocked.py:19
+#: ../src\session\twitter\buffers\blocked.py:23
+msgid "blocked user"
+msgstr "Blokiran korisnik"
+
+#: ../src\session\twitter\buffers\blocked.py:20
+#: ../src\session\twitter\buffers\blocked.py:24
+msgid "blocked users"
+msgstr "Blokirani korisnici"
+
+#: ../src\session\twitter\buffers\blocked.py:28
+msgid "Retrieving blocked users"
+msgstr "Primam blokirane korisnike"
+
+#: ../src\session\twitter\buffers\blocked.py:32
+msgid "%s blocked users retrieved."
+msgstr "%s blokiranih korisnika je primljeno."
+
+#: ../src\session\twitter\buffers\blocked.py:40
+msgid "Are you sure you wish to unblock %s?"
+msgstr "Jeste li sigurni da želite da odblokirate %s?"
+
+#: ../src\session\twitter\buffers\blocked.py:40
+msgid "Unblock"
+msgstr "Deblokiraj"
+
+#: ../src\session\twitter\buffers\blocked.py:46
+msgid "unblocking %s"
+msgstr "Deblokiranje %s"
+
+#: ../src\session\twitter\buffers\directs.py:17
+msgid "direct message"
+msgstr "Direktna poruka"
+
+#: ../src\session\twitter\buffers\directs.py:18
+msgid "direct messages"
+msgstr "Direktne poruke"
+
+#: ../src\session\twitter\buffers\directs.py:21
+#: ../src\session\twitter\buffers\search.py:34
+#: ../src\session\twitter\buffers\tweets.py:16
+msgid "Screen Name"
+msgstr "Ekransko ime"
+
+#: ../src\session\twitter\buffers\favorites.py:26
+msgid "favorite"
+msgstr "Omiljeno"
+
+#: ../src\session\twitter\buffers\favorites.py:27
+msgid "favorites"
+msgstr "Omiljeno"
+
+#: ../src\session\twitter\buffers\favorites.py:43
+#: ../src\session\twitter\twitter.py:364
+msgid "Tweet removed from favorites."
+msgstr "Tvit je uklonjen iz omiljenih stavki."
+
+#: ../src\session\twitter\buffers\favorites.py:46
+msgid "Unable to remove tweet from favorites."
+msgstr "Ne mogu da uklonim tvit iz omiljenih stavki."
+
+#: ../src\session\twitter\buffers\followers.py:17
+#: ../src\session\twitter\buffers\followers.py:21
+msgid "follower"
+msgstr "Pratilac"
+
+#: ../src\session\twitter\buffers\followers.py:18
+#: ../src\session\twitter\buffers\followers.py:22
+msgid "followers"
+msgstr "Pratioci"
+
+#: ../src\session\twitter\buffers\followers_analysis.py:32
+msgid "New Follower"
+msgstr "Novi pratilac"
+
+#: ../src\session\twitter\buffers\friends.py:18
+msgid "friend"
+msgstr "Prijatelj"
+
+#: ../src\session\twitter\buffers\friends.py:19
+msgid "friends"
+msgstr "Prijatelji"
+
+#: ../src\session\twitter\buffers\home.py:14
+#: ../src\session\twitter\buffers\main.py:288
+#: ../src\session\twitter\interface.py:56
+#: ../src\session\twitter\twitter.py:356
+msgid "tweet"
+msgstr "Tvit"
+
+#: ../src\session\twitter\buffers\home.py:15
+msgid "tweets"
+msgstr "Tvitovi"
+
+#: ../src\session\twitter\buffers\individual.py:20
+msgid "tweet from %s"
+msgstr "Tvit od %s"
+
+#: ../src\session\twitter\buffers\individual.py:21
+msgid "tweets from %s"
+msgstr "Tvitovi od %s"
+
+#: ../src\session\twitter\buffers\list_members.py:19
+msgid "list member"
+msgstr "Član liste"
+
+#: ../src\session\twitter\buffers\list_members.py:20
+msgid "list members"
+msgstr "Članovi liste"
+
+#: ../src\session\twitter\buffers\list_members.py:34
+#: ../src\session\twitter\buffers\list_subscribers.py:34
+msgid "Are you sure you wish to remove %s from list %s?"
+msgstr "Jeste li sigurni da želite da uklonite %s sa liste %s?"
+
+#: ../src\session\twitter\buffers\list_members.py:34
+#: ../src\session\twitter\buffers\list_subscribers.py:34
+msgid "Remove user"
+msgstr "Ukloni korisnika"
+
+#: ../src\session\twitter\buffers\list_members.py:38
+#: ../src\session\twitter\buffers\list_subscribers.py:38
+#: ../src\session\twitter\interface.py:674
+msgid "removing %s from list %s."
+msgstr "uklanjam %s sa liste %s"
+
+#: ../src\session\twitter\buffers\list_subscribers.py:19
+msgid "list subscriber"
+msgstr "Pretplatnik liste"
+
+#: ../src\session\twitter\buffers\list_subscribers.py:20
+msgid "list subscribers"
+msgstr "Pretplatnici liste"
+
+#: ../src\session\twitter\buffers\local_trends.py:15
+msgid "local trend"
+msgstr "Lokalni trend"
+
+#: ../src\session\twitter\buffers\local_trends.py:16
+msgid "local trends"
+msgstr "Lokalni trendovi"
+
+#: ../src\session\twitter\buffers\local_trends.py:22
+msgid "Retrieving local trends"
+msgstr "Primam lokalne trendove"
+
+#: ../src\session\twitter\buffers\main.py:249
+msgid "Remove Tweet"
+msgstr "ukloni tvit"
+
+#: ../src\session\twitter\buffers\main.py:249
+msgid ""
+"The post you are trying to remove will also be deleted from Twitter.  Do you "
+"still wish to remove it?"
+msgstr ""
+"Poruka koju pokušavate da uklonite će takođe biti izbrisana sa Twittera.  Da "
+"li i dalje želite da je uklonite?"
+
+#: ../src\session\twitter\buffers\main.py:255
+msgid "Deleting direct message"
+msgstr "Brišem direktnu poruku"
+
+#: ../src\session\twitter\buffers\main.py:255
+msgid "deleting direct message"
+msgstr "Brišem direktnu poruku"
+
+#: ../src\session\twitter\buffers\main.py:257
+msgid "removing item"
+msgstr "Uklanjam stavku"
+
+#: ../src\session\twitter\buffers\mentions.py:16
+msgid "mention"
+msgstr "Spominjanje"
+
+#: ../src\session\twitter\buffers\mentions.py:17
+msgid "mentions"
+msgstr "Spominjanja"
+
+#: ../src\session\twitter\buffers\public.py:18
+msgid "public tweet"
+msgstr "Javni tvit"
+
+#: ../src\session\twitter\buffers\public.py:19
+msgid "public tweets"
+msgstr "Javni tvitovi"
+
+#: ../src\session\twitter\buffers\retweets.py:16
+msgid "retweet"
+msgstr "Retvit"
+
+#: ../src\session\twitter\buffers\retweets.py:17
+msgid "retweets"
+msgstr "Retvitovi"
+
+#: ../src\session\twitter\buffers\search.py:24
+#: ../src\session\twitter\buffers\user_search.py:17
+msgid "result for %s"
+msgstr "Rezultat za %s"
+
+#: ../src\session\twitter\buffers\search.py:25
+#: ../src\session\twitter\buffers\user_search.py:18
+msgid "results for %s"
+msgstr "Rezultati za %s"
+
+#: ../src\session\twitter\buffers\search.py:44
+msgid "saving search %s"
+msgstr "Čuvam pretragu %s"
+
+#: ../src\session\twitter\buffers\search.py:47
+msgid "Destroying saved search %s"
+msgstr "uništavam sačuvanu pretragu %s"
+
+#: ../src\session\twitter\buffers\search.py:62
+msgid "%s returned no results."
+msgstr "%s ne daje rezultate."
+
+#: ../src\session\twitter\buffers\sent.py:22
+msgid "sent item"
+msgstr "Poslata stavka"
+
+#: ../src\session\twitter\buffers\sent.py:23
+msgid "sent items"
+msgstr "Poslate stavke"
+
+#: ../src\session\twitter\buffers\sent.py:29
+msgid "Direct Message"
+msgstr "Direktna poruka"
+
+#: ../src\session\twitter\buffers\sent.py:30
+msgid "DM Recipient's Name"
+msgstr "Primalac direktne poruke"
+
+#: ../src\session\twitter\buffers\sent.py:31
+msgid "DM Recipient's Screen Name"
+msgstr "Ekransko ime primaoca direktne poruke"
+
+#: ../src\session\twitter\buffers\social_network.py:30
+msgid "user"
+msgstr "Korisnik"
+
+#: ../src\session\twitter\buffers\social_network.py:31
+msgid "users"
+msgstr "Korisnici"
+
+#: ../src\session\twitter\buffers\top_trends.py:20
+msgid "Retrieving trends"
+msgstr "Primam trendove"
+
+#: ../src\session\twitter\buffers\trends.py:18
+msgid "trend"
+msgstr "Trend"
+
+#: ../src\session\twitter\buffers\trends.py:19
+msgid "trends"
+msgstr "Trendovi"
+
+#: ../src\session\twitter\buffers\trends.py:22
+msgid "Trending item's name"
+msgstr "Ime stavki u trendu"
+
+#: ../src\session\twitter\buffers\trends.py:33
+msgid "%s updated."
+msgstr "%s ažurirano"
+
+#: ../src\session\twitter\buffers\trends.py:42
+msgid "Search"
+msgstr "Pretraga"
+
+#: ../src\session\twitter\buffers\tweets.py:12
+msgid "Tweet Source"
+msgstr "Izvor tvita"
+
+#: ../src\session\twitter\buffers\tweets.py:13
+msgid "Geo Tagged"
+msgstr "Sa geografskom oznakom"
+
+#: ../src\session\twitter\buffers\tweets.py:14
+msgid "Message Text"
+msgstr "Tekst poruke"
+
+#: ../src\session\twitter\buffers\tweets.py:17
+#: ../src\session\twitter\buffers\users.py:28
+msgid "Location"
+msgstr "Lokacija"
+
+#: ../src\session\twitter\buffers\tweets.py:18
+msgid "Retweet count"
+msgstr "Broj retvitova"
+
+#: ../src\session\twitter\buffers\tweets.py:19
+msgid "Favorited"
+msgstr "Omiljeno"
+
+#: ../src\session\twitter\buffers\tweets.py:20
+msgid "Retweeted"
+msgstr "Retvitovano"
+
+#: ../src\session\twitter\buffers\users.py:27
+msgid "Screen name"
+msgstr "Ekransko ime"
+
+#: ../src\session\twitter\buffers\users.py:30
+msgid "Protected"
+msgstr "Zaštićeno"
+
+#: ../src\session\twitter\buffers\users.py:31
+msgid "Follower count"
+msgstr "Broj pratilaca"
+
+#: ../src\session\twitter\buffers\users.py:32
+msgid "Friend count"
+msgstr "Broj prijatelja"
+
+#: ../src\session\twitter\buffers\users.py:33
+msgid "Number of tweets"
+msgstr "Broj tvitova"
+
+#: ../src\session\twitter\buffers\users.py:34
+msgid "Device notifications"
+msgstr "SMS obaveštenja"
+
+#: ../src\session\twitter\buffers\users.py:35
+msgid "User's local time"
+msgstr "Lokalno vreme korisnika"
+
+#: ../src\session\twitter\buffers\users.py:37
+msgid "Last Tweet Time"
+msgstr "Vreme poslednjeg tvita"
+
+#: ../src\session\twitter\buffers\users.py:38
+msgid "Last Tweet Date"
+msgstr "Datum poslednjeg tvita"
+
+#: ../src\session\twitter\buffers\users.py:39
+msgid "Last Tweet Relative Time"
+msgstr "Poslednje relativno vreme tvita"
+
+#: ../src\session\twitter\buffers\users.py:76
+msgid "%s updated"
+msgstr "%s ažurirano."
+
+#: ../src\session\twitter\buffers\users.py:78
+msgid "%s for %s updated"
+msgstr "%s za %s ažurirano."
+
+#: ../src\session\twitter\gui\api_count.py:12
+msgid "Posts per update:"
+msgstr "Poruka po ažuriranju:"
+
+#: ../src\session\twitter\gui\api_count.py:17
+msgid "Max API calls to use per update (1 API call = {0} tweets)"
+msgstr "Najviše API poziva po ažuriranju (1 API poziv = {0} tvitova)"
+
+#: ../src\session\twitter\gui\configuration\main.py:16
+msgid "Twitter Configuration"
+msgstr "Postavke tvitera"
+
+#: ../src\session\twitter\gui\configuration\main.py:24
+msgid "Sounds"
+msgstr "Zvuci"
+
+#: ../src\session\twitter\gui\configuration\main.py:26
+msgid "Templates"
+msgstr "Predlošci"
+
+#: ../src\session\twitter\gui\configuration\main.py:44
+msgid "Always add comments (old style)"
+msgstr "Uvek dodaj komentare, stari stil"
+
+#: ../src\session\twitter\gui\configuration\main.py:44
+msgid "Ask whether comments are to be added (recommended)"
+msgstr "Pitaj za dodavanje komentara, preporučeno"
+
+#: ../src\session\twitter\gui\configuration\main.py:44
+msgid "Never add comments (automatically retweet)"
+msgstr "Nikad ne dodaj komentare, automatski retvituj"
+
+#: ../src\session\twitter\gui\favorites.py:9
+msgid "Display favorites"
+msgstr "Prikaži omiljeno"
+
+#: ../src\session\twitter\gui\favorites.py:11
+msgid "Favorites for:"
+msgstr "Omiljene stavke za:"
+
+#: ../src\session\twitter\gui\follow.py:8
+msgid "Follow someone"
+msgstr "Pratite nekoga"
+
+#: ../src\session\twitter\gui\follow.py:9
+msgid "Follow who:"
+msgstr "Unesite tviter ime osobe koju želite da pratite:"
+
+#: ../src\session\twitter\gui\follow.py:11
+msgid "Mobile Updates"
+msgstr "SMS ažuriranja"
+
+#: ../src\session\twitter\gui\followers.py:9
+msgid "List Followers"
+msgstr "Prikaži pratioce"
+
+#: ../src\session\twitter\gui\followers.py:11
+msgid "Followers for:"
+msgstr "Pratioci za:"
+
+#: ../src\session\twitter\gui\friends.py:9
+msgid "List Friends"
+msgstr "Prikaži  prijatelje"
+
+#: ../src\session\twitter\gui\friends.py:11
+msgid "Friends for:"
+msgstr "Prijatelji za:"
+
+#: ../src\session\twitter\gui\geo_location.py:11
+msgid "Geo Location"
+msgstr "Geografska lokacija"
+
+#: ../src\session\twitter\gui\geo_location.py:15
+msgid "Geo location coordinates:"
+msgstr "koordinate geografske lokacije:"
+
+#: ../src\session\twitter\gui\geo_location.py:22
+#: ../src\session\twitter\gui\profile.py:23
+msgid "Location:"
+msgstr "Lokacija:"
+
+#: ../src\session\twitter\gui\geo_location.py:26
+msgid "Accuracy:"
+msgstr "Tačnost:"
+
+#: ../src\session\twitter\gui\geo_location_input.py:10
+msgid "Input Coordinates"
+msgstr "Upiši koordinate"
+
+#: ../src\session\twitter\gui\geo_location_input.py:12
+msgid "Latitude:"
+msgstr "Geografska širina:"
+
+#: ../src\session\twitter\gui\geo_location_input.py:21
+msgid "Longitude:"
+msgstr "Geografska dužina:"
+
+#: ../src\session\twitter\gui\geo_location_input.py:38
+msgid "Error: Latitude must be a value between negative 90 and positive 90."
+msgstr ""
+"Greška. Geografska širina mora biti vrednost između minus 90 i plus 90."
+
+#: ../src\session\twitter\gui\geo_location_input.py:39
+msgid "Error: Longitude must be a value between negative 180 and positive 180."
+msgstr ""
+"Greška. Geografska dužina mora biti vrednosti između minus 90 i plus 90."
+
+#: ../src\session\twitter\gui\individual.py:9
+msgid "Individual Timeline"
+msgstr "Pojedinačna vremenska linija"
+
+#: ../src\session\twitter\gui\individual.py:11
+msgid "Buffer for:"
+msgstr "Kanal za:"
+
+#: ../src\session\twitter\gui\list_manager\add_list.py:11
+msgid "List name:"
+msgstr "Ime liste:"
+
+#: ../src\session\twitter\gui\list_manager\add_list.py:15
+msgid "List mode:"
+msgstr "Način liste:"
+
+#: ../src\session\twitter\gui\list_manager\add_list.py:18
+msgid "List description:"
+msgstr "Opis liste:"
+
+#: ../src\session\twitter\gui\list_manager\list_manager.py:18
+msgid "List manager"
+msgstr "Upravljač listama"
+
+#: ../src\session\twitter\gui\list_manager\list_manager.py:19
+msgid "Current lists:"
+msgstr "Trenutne liste:"
+
+#: ../src\session\twitter\gui\list_manager\list_manager.py:23
+msgid "&Add list..."
+msgstr "Dodaj listu..."
+
+#: ../src\session\twitter\gui\list_manager\list_manager.py:25
+msgid "&Edit list..."
+msgstr "Izmeni listu..."
+
+#: ../src\session\twitter\gui\list_manager\list_manager.py:27
+msgid "&Remove list..."
+msgstr "Ukloni listu..."
+
+#: ../src\session\twitter\gui\list_manager\list_manager.py:29
+msgid "Subscribe"
+msgstr "Prijavi se"
+
+#: ../src\session\twitter\gui\list_manager\list_manager.py:31
+msgid "&Unsubscribe"
+msgstr "Odjavi se"
+
+#: ../src\session\twitter\gui\list_manager\list_manager.py:33
+msgid "&Spawn list"
+msgstr "Umnoži listu"
+
+#: ../src\session\twitter\gui\list_manager\list_manager.py:47
+msgid "Add list"
+msgstr "Dodaj listu"
+
+#: ../src\session\twitter\gui\list_manager\list_manager.py:55
+msgid "Creating list"
+msgstr "Stvaram listu"
+
+#: ../src\session\twitter\gui\list_manager\list_manager.py:55
+#: ../src\session\twitter\gui\list_manager\list_manager.py:70
+#: ../src\session\twitter\gui\list_manager\list_manager.py:81
+msgid "Please wait..."
+msgstr "Molim sačekajte..."
+
+#: ../src\session\twitter\gui\list_manager\list_manager.py:62
+msgid "Edit list"
+msgstr "Izmeni listu"
+
+#: ../src\session\twitter\gui\list_manager\list_manager.py:70
+msgid "Editting list"
+msgstr "Menjam listu"
+
+#: ../src\session\twitter\gui\list_manager\list_manager.py:77
+msgid "Delete list"
+msgstr "Izbriši listu"
+
+#: ../src\session\twitter\gui\list_manager\list_manager.py:145
+msgid "Owner"
+msgstr "Vlasnik"
+
+#: ../src\session\twitter\gui\list_manager\list_manager.py:146
+msgid "Mode"
+msgstr "Način"
+
+#: ../src\session\twitter\gui\local_trends.py:16
+msgid "Location Selection"
+msgstr "Odabir lokacije"
+
+#: ../src\session\twitter\gui\local_trends.py:18
+msgid "Select type of location:"
+msgstr "Izaberite vrstu lokacije"
+
+#: ../src\session\twitter\gui\local_trends.py:20
+msgid "Select location:"
+msgstr "Izaberite lokaciju"
+
+#: ../src\session\twitter\gui\new_reply.py:11
+msgid "&Mention all users"
+msgstr "Spomeni sve korisnike"
+
+#: ../src\session\twitter\gui\new_tweet.py:9
+msgid "Tweet"
+msgstr "Tvit"
+
+#: ../src\session\twitter\gui\new_tweet.py:13
+msgid "Retweet:"
+msgstr "Retvit"
+
+#: ../src\session\twitter\gui\profile.py:18
+msgid "Screen name:"
+msgstr "Ekransko ime"
+
+#: ../src\session\twitter\gui\profile.py:20
+msgid "Real name:"
+msgstr "Stvarno ime:"
+
+#: ../src\session\twitter\gui\profile.py:25
+msgid "Account ID:"
+msgstr "ID naloga:"
+
+#: ../src\session\twitter\gui\profile.py:28
+msgid "URL:"
+msgstr "URL:"
+
+#: ../src\session\twitter\gui\profile.py:34
+msgid "Bio:"
+msgstr "Biografija:"
+
+#: ../src\session\twitter\gui\profile.py:36
+msgid "Tweets are protected:"
+msgstr "Tvitovi su zaštićeni."
+
+#: ../src\session\twitter\gui\profile.py:42
+msgid "Number of followers:"
+msgstr "Broj pratilaca:"
+
+#: ../src\session\twitter\gui\profile.py:44
+msgid "Number of friends:"
+msgstr "Broj prijatelja:"
+
+#: ../src\session\twitter\gui\profile.py:46
+msgid "Number of tweets:"
+msgstr "Broj tvitova:"
+
+#: ../src\session\twitter\gui\profile.py:48
+msgid "Average tweets per day since joining Twitter:"
+msgstr "Prosečno tvitova po danu od dolaska na twitter:"
+
+#: ../src\session\twitter\gui\profile.py:51
+msgid "Date of last tweet:"
+msgstr "Datum poslednjeg tvita:"
+
+#: ../src\session\twitter\gui\profile.py:55
+msgid "Not available"
+msgstr "Nije dostupno"
+
+#: ../src\session\twitter\gui\profile.py:57
+msgid "Date joined Twitter:"
+msgstr "Datum pridruživanja Twitter-u:"
+
+#: ../src\session\twitter\gui\profile.py:90
+msgid "Follow %s"
+msgstr "Prati %s"
+
+#: ../src\session\twitter\gui\profile.py:93
+msgid "Unfollow %s"
+msgstr "Otprati %s"
+
+#: ../src\session\twitter\gui\profile_update.py:10
+msgid "Update profile"
+msgstr "Ažuriraj profil"
+
+#: ../src\session\twitter\gui\profile_update.py:11
+msgid "Name (Maximum of %d characters)."
+msgstr "Ime, najviše %d znakova"
+
+#: ../src\session\twitter\gui\profile_update.py:17
+msgid "URL (Maximum of %d characters)."
+msgstr "URL: najviše %d znakova"
+
+#: ../src\session\twitter\gui\profile_update.py:23
+msgid "Location (Maximum of %d characters)."
+msgstr "Lokacija: Najviše %d znakova."
+
+#: ../src\session\twitter\gui\profile_update.py:32
+msgid "Bio (Maximum of %d characters)."
+msgstr "Biografija, najviše %d znakova"
+
+#: ../src\session\twitter\gui\relationship_status.py:8
+msgid "Relationship"
+msgstr "Odnos"
+
+#: ../src\session\twitter\gui\relationship_status.py:10
+msgid "Relationship status between:"
+msgstr "Stanje odnosa između:"
+
+#: ../src\session\twitter\gui\relationship_status.py:13
+msgid "And:"
+msgstr "I:"
+
+#: ../src\session\twitter\gui\search.py:10
+msgid "Twitter Search:"
+msgstr "Pretraga Twittera:"
+
+#: ../src\session\twitter\gui\search.py:15
+msgid "Persistent results"
+msgstr "Stalni rezultati"
+
+#: ../src\session\twitter\gui\search.py:18
+msgid "Save Search"
+msgstr "Sačuvaj pretragu"
+
+#: ../src\session\twitter\gui\unfollow.py:8
+msgid "Unfollow someone"
+msgstr "Otpratite nekoga"
+
+#: ../src\session\twitter\gui\unfollow.py:10
+msgid "Unfollow who:"
+msgstr "Unesite ime osobe koju želite da otpratite:"
+
+#: ../src\session\twitter\gui\unfollow.py:13
+msgid "Action:"
+msgstr "Radnja:"
+
+#: ../src\session\twitter\gui\unfollow.py:13
+msgid "Block"
+msgstr "Blokiraj"
+
+#: ../src\session\twitter\gui\unfollow.py:13
+msgid "Report as spam"
+msgstr "Prijavi zloupotrebu"
+
+#: ../src\session\twitter\gui\unfollow.py:13
+msgid "Unfollow"
+msgstr "Otprati"
+
+#: ../src\session\twitter\gui\user_info.py:8
+msgid "User profile"
+msgstr "Korisnički profil"
+
+#: ../src\session\twitter\gui\user_info.py:10
+msgid "User profile for:"
+msgstr "Korisnički profil za:"
+
+#: ../src\session\twitter\interface.py:65
+msgid "Direct message"
+msgstr "Direktna poruka"
+
+#: ../src\session\twitter\interface.py:72
+msgid "dm"
+msgstr "Poruka"
+
+#: ../src\session\twitter\interface.py:91
+msgid "Unable to detect a user to reply to."
+msgstr "Ne mogu da otkrijem korisnika kome treba odgovoriti."
+
+#: ../src\session\twitter\interface.py:99
+msgid "reply"
+msgstr "Odgovori"
+
+#: ../src\session\twitter\interface.py:107
+msgid "view item"
+msgstr "Pogledaj stavku"
+
+#: ../src\session\twitter\interface.py:113
+msgid "View Tweet From %s"
+msgstr "Pogledaj tvit od %s"
+
+#: ../src\session\twitter\interface.py:131
+msgid "Item is not a post."
+msgstr "Stavka nije poruka."
+
+#: ../src\session\twitter\interface.py:134
+msgid "Cannot retweet a direct message while DM safe mode is enabled."
+msgstr ""
+"Ne mogu da retvitujem direktnu poruku dok je sigurnosni način rada direktnih "
+"poruka uključen."
+
+#: ../src\session\twitter\interface.py:137
+msgid "Cannot retweet your own tweet."
+msgstr "Ne možete retvitovati sopstveni tvit."
+
+#: ../src\session\twitter\interface.py:141
+msgid "Would you like to add a comment?"
+msgstr "Želite li da dodate komentar?"
+
+#: ../src\session\twitter\interface.py:141
+#: ../src\session\twitter\twitter.py:241
+msgid "Retweet"
+msgstr "Retvituj"
+
+#: ../src\session\twitter\interface.py:160
+msgid "No users to follow detected in current post."
+msgstr "U ovoj poruci nije otkriven niko koga biste mogli pratiti."
+
+#: ../src\session\twitter\interface.py:173
+msgid "No users to unfollow detected in current post."
+msgstr "U ovoj poruci nije otkriven  niko koga biste mogli otpratiti."
+
+#: ../src\session\twitter\interface.py:200
+msgid "No URLs detected in current post."
+msgstr "Nisu otkriveni linkovi u ovoj poruci."
+
+#: ../src\session\twitter\interface.py:213
+msgid "Twitter search"
+msgstr "Pretraga Twittera"
+
+#: ../src\session\twitter\interface.py:222
+msgid "Please enter a term to search for."
+msgstr "Molimo unesite šta tražite:"
+
+#: ../src\session\twitter\interface.py:224
+#: ../src\session\twitter\twitter.py:127
+msgid "Search for %s"
+msgstr "Pretraga za %s"
+
+#: ../src\session\twitter\interface.py:230
+msgid "Trending: Worldwide"
+msgstr "Trendovi: Širom sveta"
+
+#: ../src\session\twitter\interface.py:235
+msgid "Loading public timeline."
+msgstr "Učitavam javnu vremensku liniju"
+
+#: ../src\session\twitter\interface.py:235
+msgid "Public Timeline"
+msgstr "Javna vremenska linija"
+
+#: ../src\session\twitter\interface.py:240
+msgid "Favorites"
+msgstr "Omiljene stavke"
+
+#: ../src\session\twitter\interface.py:240
+msgid "Loading favorites"
+msgstr "Učitavam omiljene stavke"
+
+#: ../src\session\twitter\interface.py:249
+msgid "%s's favorites"
+msgstr "%s omiljene stavke"
+
+#: ../src\session\twitter\interface.py:250
+msgid "Loading favorites for %s."
+msgstr "Učitavam omiljene stavke za %s"
+
+#: ../src\session\twitter\interface.py:267
+msgid "Followers"
+msgstr "Pratioci"
+
+#: ../src\session\twitter\interface.py:267
+msgid "Loading followers list."
+msgstr "Učitavam listu pratilaca"
+
+#: ../src\session\twitter\interface.py:272
+msgid "Friends"
+msgstr "Prijatelji"
+
+#: ../src\session\twitter\interface.py:272
+msgid "Loading friends list."
+msgstr "Učitavam listu prijatelja"
+
+#: ../src\session\twitter\interface.py:283
+msgid ""
+"Please launch your followers buffer before attempting to perform analysis."
+msgstr ""
+"molimo vas da pokrenete kanal sa vašim pratiocima pre nego što pokušate da "
+"izvršite analize."
+
+#: ../src\session\twitter\interface.py:285
+msgid "Cannot perform analysis on an empty followers buffer."
+msgstr "Ne mogu da izvršim analize na praznom kanalu pratilaca."
+
+#: ../src\session\twitter\interface.py:286
+msgid "Followers Analysis"
+msgstr "Analiza pratilaca"
+
+#: ../src\session\twitter\interface.py:286
+msgid "Performing followers analysis, please wait..."
+msgstr "Izvršavam analize pratilaca... Molim sačekajte..."
+
+#: ../src\session\twitter\interface.py:291
+msgid "Blocked Users"
+msgstr "Blokirani korisnici"
+
+#: ../src\session\twitter\interface.py:291
+msgid "Loading blocked users."
+msgstr "Učitavam blokirane korisnike"
+
+#: ../src\session\twitter\interface.py:296
+msgid "Checking current API call count..."
+msgstr "Proveravam broj preostalih API poziva..."
+
+#: ../src\session\twitter\interface.py:317
+msgid "%s's timeline"
+msgstr "%s vremenska linija"
+
+#: ../src\session\twitter\interface.py:317
+msgid "Loading timeline for %s."
+msgstr "Učitavam vremensku liniju za %s"
+
+#: ../src\session\twitter\interface.py:362
+msgid "Loading followers for %s."
+msgstr "Učitavam pratioce za %s"
+
+#: ../src\session\twitter\interface.py:363
+msgid "%s's followers"
+msgstr "%s pratioci"
+
+#: ../src\session\twitter\interface.py:374
+msgid "%s's friends"
+msgstr "%s prijatelji"
+
+#: ../src\session\twitter\interface.py:375
+msgid "Loading friends for %s."
+msgstr "Učitavam prijatelje za %s"
+
+#: ../src\session\twitter\interface.py:380
+msgid "My tweets that have been retweeted by others"
+msgstr "Moji tvitovi koje su drugi retvitovali"
+
+#: ../src\session\twitter\interface.py:380
+msgid "Select type"
+msgstr "Izaberite vrstu"
+
+#: ../src\session\twitter\interface.py:380
+msgid "Select which type of retweets to display:"
+msgstr "Izaberite koju vrstu retvitova želite da prikažete:"
+
+#: ../src\session\twitter\interface.py:380
+#: ../src\session\twitter\interface.py:384
+msgid "My friends' retweets"
+msgstr "Retvitovi mojih prijatelja"
+
+#: ../src\session\twitter\interface.py:380
+#: ../src\session\twitter\interface.py:386
+msgid "My retweets"
+msgstr "Moji retvitovi"
+
+#: ../src\session\twitter\interface.py:399
+msgid "This command is not supported from within a search buffer."
+msgstr "Ova komanda nije podržana iz kanala pretrage."
+
+#: ../src\session\twitter\interface.py:401
+#: ../src\session\twitter\interface.py:607
+msgid "No user detected in current item."
+msgstr "Nijedan korisnik nije otkriven u trenutnoj stavci."
+
+#: ../src\session\twitter\interface.py:412
+msgid "Loading profile for %s"
+msgstr "Učitavam profil za %s"
+
+#: ../src\session\twitter\interface.py:427
+msgid "Retrieving locations."
+msgstr "Primam lokacije"
+
+#: ../src\session\twitter\interface.py:433
+msgid "Unable to retrieve local trend locations; please try again later."
+msgstr "Ne mogu da primim lokacije trendova. Molim pokušajte kasnije."
+
+#: ../src\session\twitter\interface.py:472
+#: ../src\session\twitter\interface.py:595
+msgid "Canceled"
+msgstr "Otkazano"
+
+#: ../src\session\twitter\interface.py:483
+msgid "Are you sure you want to import %d items from old database?"
+msgstr ""
+"Jeste li sigurni da želite da uvezete %d stavki iz stare baze podataka?"
+
+#: ../src\session\twitter\interface.py:483
+msgid "Are you sure?"
+msgstr "Jeste li sigurni?"
+
+#: ../src\session\twitter\interface.py:485
+msgid "Importing, please wait."
+msgstr "Uvozim, molim sačekajte..."
+
+#: ../src\session\twitter\interface.py:494
+msgid "Session type mismatch."
+msgstr "Neslaganje vrste sesija."
+
+#: ../src\session\twitter\interface.py:496
+msgid "Import complete."
+msgstr "Uvoz dovršen."
+
+#: ../src\session\twitter\interface.py:496
+msgid "Import completed successfully."
+msgstr "Uvoz je uspešno završen."
+
+#: ../src\session\twitter\interface.py:506
+#: ../src\session\twitter\interface.py:531
+msgid "No geo location info present in this tweet."
+msgstr "U ovom tvitu geografska lokacija nije prikazana."
+
+#: ../src\session\twitter\interface.py:508
+#: ../src\session\twitter\interface.py:533
+#: ../src\session\twitter\interface.py:567
+msgid "Retrieving geo location info..."
+msgstr "Primam informacije o geografskoj lokaciji..."
+
+#: ../src\session\twitter\interface.py:515
+#: ../src\session\twitter\interface.py:523
+#: ../src\session\twitter\interface.py:540
+#: ../src\session\twitter\interface.py:550
+#: ../src\session\twitter\interface.py:574
+#: ../src\session\twitter\interface.py:585
+msgid "Error determining location."
+msgstr "Greška prilikom određivanja lokacije."
+
+#: ../src\session\twitter\interface.py:518
+#: ../src\session\twitter\interface.py:543
+#: ../src\session\twitter\interface.py:579
+msgid "Coordinates are not accurate enough to determine a location."
+msgstr "Koordinate nisu dovoljno tačne za određivanje lokacije."
+
+#: ../src\session\twitter\interface.py:591
+msgid "Enter a name to search for:"
+msgstr "Unesite ime koje tražite:"
+
+#: ../src\session\twitter\interface.py:591
+msgid "User search"
+msgstr "Pretraga korisnika"
+
+#: ../src\session\twitter\interface.py:597
+msgid "User search for %s"
+msgstr "Pretraga korisnika za %s"
+
+#: ../src\session\twitter\interface.py:613
+msgid "Retrieving relationship status for %s"
+msgstr "Primam status odnosa za %s"
+
+#: ../src\session\twitter\interface.py:631
+msgid "Retrieving relationship status between %s and %s"
+msgstr "Primam status odnosa između %s i %s"
+
+#: ../src\session\twitter\interface.py:639
+#: ../src\session\twitter\twitter.py:271
+msgid "Select user to add"
+msgstr "Izaberite korisnika za dodavanje"
+
+#: ../src\session\twitter\interface.py:645
+#: ../src\session\twitter\interface.py:666
+#: ../src\session\twitter\twitter.py:277
+msgid "Retrieving lists, please wait."
+msgstr "Primam liste. Molim sačekajte..."
+
+#: ../src\session\twitter\interface.py:648
+#: ../src\session\twitter\interface.py:669
+msgid ""
+"No lists defined.  Please create a list with the list manager before "
+"performing this action."
+msgstr ""
+"Nijedna lista nije stvorena. Molim vas da stvorite listu preko upravljača "
+"lista pre izvršavanja ove radnje."
+
+#: ../src\session\twitter\interface.py:649
+#: ../src\session\twitter\interface.py:670
+#: ../src\session\twitter\twitter.py:279
+msgid "Select list"
+msgstr "Izaberite listu"
+
+#: ../src\session\twitter\interface.py:649
+#: ../src\session\twitter\twitter.py:279
+msgid "Please select a list to add %s to?"
+msgstr "Molim izaberite listu na koju želite da dodate %s"
+
+#: ../src\session\twitter\interface.py:653
+msgid "adding %s to list %s."
+msgstr "Dodajem %s na listu %s"
+
+#: ../src\session\twitter\interface.py:660
+msgid "Select user to remove"
+msgstr "Izaberite korisnika koga želite da uklonite"
+
+#: ../src\session\twitter\interface.py:670
+msgid "Please select a list to remove %s from?"
+msgstr "Izaberite listu sa koje želite da uklonite %s"
+
+#: ../src\session\twitter\interface.py:681
+#: ../src\session\twitter\interface.py:719
+msgid "Please change to a list buffer before using this command."
+msgstr ""
+"Molim vas da se prebacite na kanal liste pre nego što koristite ovu komandu."
+
+#: ../src\session\twitter\interface.py:689
+msgid "Choose your social network:"
+msgstr "Izaberite vašu društvenu mrežu:"
+
+#: ../src\session\twitter\interface.py:689
+msgid "Social Network"
+msgstr "Društvena mreža"
+
+#: ../src\session\twitter\interface.py:689
+msgid "Users who follow me but whom I do not follow"
+msgstr "Korisnici koji me prate ali ih ja ne pratim"
+
+#: ../src\session\twitter\interface.py:689
+#: ../src\session\twitter\interface.py:706
+msgid "Users whom I follow and who also follow me"
+msgstr "Korisnici koje pratim i koji me takođe prate"
+
+#: ../src\session\twitter\interface.py:689
+#: ../src\session\twitter\interface.py:708
+msgid "Users whom I follow but who do not follow me"
+msgstr "Korisnici koje pratim ali koji me ne prate"
+
+#: ../src\session\twitter\interface.py:702
+msgid ""
+"Please launch both your followers and friends buffers before attempting to "
+"create a social network."
+msgstr ""
+"Molim vas pokrenite kanale sa pratiocima i prijateljima pre nego što "
+"pokušate da stvorite društvenu mrežu."
+
+#: ../src\session\twitter\interface.py:704
+msgid "Cannot create social network from an empty followers or friends buffer."
+msgstr ""
+"Ne mogu da stvorim društvenu mrežu iz praznog kanala pratilaca ili "
+"prijatelja."
+
+#: ../src\session\twitter\interface.py:712
+msgid "Creating social network, please wait..."
+msgstr "Stvaram društvenu mrežu... Molim sačekajte..."
+
+#: ../src\session\twitter\interface.py:712
+msgid "Social Network: %s"
+msgstr "Društvena mreža: %s"
+
+#: ../src\session\twitter\interface.py:743
+msgid "Translation process has failed."
+msgstr "Prevođenje nije uspelo."
+
+#: ../src\session\twitter\interface.py:744
+msgid "Translation from %s to %s"
+msgstr "Prevod sa %s na %s"
+
+#: ../src\session\twitter\interface.py:751
+msgid "Select user"
+msgstr "Izaberite korisnika"
+
+#: ../src\session\twitter\twitter.py:46
+msgid "Direct Messages"
+msgstr "Direktne poruke"
+
+#: ../src\session\twitter\twitter.py:46
+msgid "Home"
+msgstr "Početni"
+
+#: ../src\session\twitter\twitter.py:46
+msgid "Mentions"
+msgstr "Spominjanja"
+
+#: ../src\session\twitter\twitter.py:46
+msgid "Sent"
+msgstr "Poslato"
+
+#: ../src\session\twitter\twitter.py:67
+msgid "Please wait while an access token is retrieved from Twitter."
+msgstr "Molim sačekajte dok ne primim pristupni ključ od Twittera."
+
+#: ../src\session\twitter\twitter.py:74
+msgid "Please enter the verification code from Twitter for session %s"
+msgstr "Molim vas unesite verifikacioni kod sa Twittera za sesiju %s"
+
+#: ../src\session\twitter\twitter.py:74
+msgid "Twitter Login"
+msgstr "Prijavljivanje na Twitter"
+
+#: ../src\session\twitter\twitter.py:81
+msgid "Retrieved access token from Twitter."
+msgstr "Primljen  pristupni ključ sa Twittera"
+
+#: ../src\session\twitter\twitter.py:95
+msgid "verifying Twitter credentials"
+msgstr "Proveravam pristupne podatke za Twitter"
+
+#: ../src\session\twitter\twitter.py:101
+msgid "Logged into Twitter as %s"
+msgstr "Prijavljen na Twitter kao %s"
+
+#: ../src\session\twitter\twitter.py:110
+msgid "Login failed!"
+msgstr "Prijavljivanje nije uspelo!"
+
+#: ../src\session\twitter\twitter.py:124
+msgid "Loading %d saved search%s from twitter."
+msgstr "Učitavam %d sačuvanu pretragu %s sa Twittera."
+
+#: ../src\session\twitter\twitter.py:134
+msgid "Retrieving lists"
+msgstr "Primam liste"
+
+#: ../src\session\twitter\twitter.py:136
+msgid "Retrieving lists for %s"
+msgstr "Primam liste za %s"
+
+#: ../src\session\twitter\twitter.py:161
+msgid "Retrieving %d list timeline%s from twitter."
+msgstr "Primam %d listu vremenske linije %s sa twittera."
+
+#: ../src\session\twitter\twitter.py:169
+msgid "List timeline for %s"
+msgstr "Lista vremenske linije za %s"
+
+#: ../src\session\twitter\twitter.py:193
+msgid "retrieving relationship status for %s"
+msgstr "Primam status odnosa za %s"
+
+#: ../src\session\twitter\twitter.py:196
+msgid "You are following %s.  "
+msgstr "Vi pratite %s"
+
+#: ../src\session\twitter\twitter.py:198
+msgid "%s is following you.  "
+msgstr "%s vas prati."
+
+#: ../src\session\twitter\twitter.py:200
+msgid "No relationship exists between yourself and %s."
+msgstr "Ne postoji nikakav odnos između vas i %s."
+
+#: ../src\session\twitter\twitter.py:204
+msgid "retrieving relationship status between %s and %s"
+msgstr "Primam status odnosa između %s i %s"
+
+#: ../src\session\twitter\twitter.py:207 ../src\session\twitter\twitter.py:209
+msgid "%s is following %s.  "
+msgstr "%s prati %s"
+
+#: ../src\session\twitter\twitter.py:211
+msgid "No relationship exists between %s and %s."
+msgstr "Ne postoji nikakav odnos između %s i %s"
+
+#: ../src\session\twitter\twitter.py:216 ../src\session\twitter\twitter.py:218
+msgid "following %s"
+msgstr "Praćenje %s"
+
+#: ../src\session\twitter\twitter.py:222
+msgid "unfollowing %s"
+msgstr "Ne pratim %s"
+
+#: ../src\session\twitter\twitter.py:224
+msgid "blocking %s"
+msgstr "Blokiram %s"
+
+#: ../src\session\twitter\twitter.py:226
+msgid "reporting %s as spam"
+msgstr "Prijavljujem %s kao nepoželjno."
+
+#: ../src\session\twitter\twitter.py:235
+msgid "Update"
+msgstr "Ažuriraj"
+
+#: ../src\session\twitter\twitter.py:256
+msgid "Sending dm"
+msgstr "šaljem direktnu poruku"
+
+#: ../src\session\twitter\twitter.py:283
+msgid "adding user %s to list %s"
+msgstr "Dodajem korisnika %s na listu %s"
+
+#: ../src\session\twitter\twitter.py:288
+msgid "Please wait while your profile is retrieved."
+msgstr "Molim sačekajte dok ne primim vaš profil"
+
+#: ../src\session\twitter\twitter.py:289
+msgid "Retrieving profile to edit"
+msgstr "Primam profil za izmenu"
+
+#: ../src\session\twitter\twitter.py:297
+msgid "updating profile"
+msgstr "Ažuriram profil"
+
+#: ../src\session\twitter\twitter.py:311
+msgid "Subscribing to list"
+msgstr "Prijavljujem se na listu"
+
+#: ../src\session\twitter\twitter.py:314
+msgid "Unsubscribing from list"
+msgstr "Odjavljujem se sa liste"
+
+#: ../src\session\twitter\twitter.py:323
+msgid "%s has no lists."
+msgstr "%s nema liste."
+
+#: ../src\session\twitter\twitter.py:342
+msgid "%s failed.  Reason: %s"
+msgstr "%s nije uspelo. Razlog: %s"
+
+#: ../src\session\twitter\twitter.py:345
+msgid "%s succeeded."
+msgstr "%s uspešno."
+
+#: ../src\session\twitter\twitter.py:349
+msgid "Retrieving API calls"
+msgstr "Primam API pozive"
+
+#: ../src\session\twitter\twitter.py:351
+msgid "You have %s API calls left.  They will reset to %d calls in %s."
+msgstr ""
+"Preostalo vam je još %s API poziva.  Oni će se resetovati na %d poziva za %s."
+
+#: ../src\session\twitter\twitter.py:357
+msgid "You can only favorite a tweet."
+msgstr "Možete samo označiti tvit kao omiljen."
+
+#: ../src\session\twitter\twitter.py:358
+msgid "Marking as favorite"
+msgstr "Označavam kao omiljeno"
+
+#: ../src\session\twitter\twitter.py:359 ../src\session\twitter\twitter.py:363
+msgid "marking as favorite"
+msgstr "Označavam kao omiljeno"
+
+#: ../src\session\twitter\twitter.py:368
+msgid "Toggling device notifications"
+msgstr "Uključujem ili isključujem SMS obaveštenja"
+
+#: ../src\session\twitter\twitter.py:368
+msgid "retrieving user details for %s"
+msgstr "Primam korisničke detalje za %s"
+
+#: ../src\session\twitter\twitter.py:371
+msgid "enabling device notifications for %s"
+msgstr "uključujem SMS obaveštenja za %s"
+
+#: ../src\session\twitter\twitter.py:374
+msgid "disabling device notifications for %s"
+msgstr "Isključujem SMS obaveštenja za %s"
+
+#: ../src\sessions.py:146
+msgid ""
+"There was an error spawning previously-loaded sessions.  Please send your "
+"log to The Qube's development staff.  Activating new session dialog."
+msgstr ""
+"Dogodila se greška prilikom umnožavanja prethodno učitanih ssesija.  Molim "
+"pošaljite vaš dnevnik razvojnom timu The Qube programa.  Dijalog aktivacije "
+"nove sesije."
+
+#: ../src\update_manager.py:25
+msgid ""
+"An update for %s is available, would you like to download and install it now?"
+msgstr ""
+"Dostupna je nadogradnja za %s. Želite li da je preuzmete i instalirate?"
+
+#: ../src\update_manager.py:25
+msgid "Update %s"
+msgstr "Dogradi %s"
+
+#: ../src\update_manager.py:39
+msgid ""
+"An update for The Qube has been downloaded and installed. Press okay to "
+"restart the application and begin using the new version.\n"
+" Enjoy!"
+msgstr ""
+"Nadogradnja za The Qube je uspešno preuzeta i instalirana. Pritisnite u redu "
+"za ponovno pokretanje nove verzije aplikacije. Uživajte."
+
+#: ../src\update_manager.py:39
+msgid "The Qube update"
+msgstr "Nadogradnja za The Qube"
+
+#: ../src\utils\delay.py:19
+msgid "action"
+msgstr "Radnja"
+
+#: ../src\utils\delay.py:20
+msgid "Delaying %s for %s."
+msgstr "Odlažem %s za %s"
+
+#: ../src\utils\time_period.py:7
+msgid "a decade"
+msgstr "Dekada"
+
+#: ../src\utils\time_period.py:7
+msgid "{0} decades"
+msgstr "{0} dekada"
+
+#: ../src\utils\time_period.py:8
+msgid "a year"
+msgstr "Godina"
+
+#: ../src\utils\time_period.py:8
+msgid "{0} years"
+msgstr "{0} godina"
+
+#: ../src\utils\time_period.py:9
+msgid "a month"
+msgstr "Mesec"
+
+#: ../src\utils\time_period.py:9
+msgid "{0} months"
+msgstr "{0} meseci"
+
+#: ../src\utils\time_period.py:10
+msgid "a week"
+msgstr "Nedelja"
+
+#: ../src\utils\time_period.py:10
+msgid "{0} weeks"
+msgstr "{0} nedelja"
+
+#: ../src\utils\time_period.py:11
+msgid "a day"
+msgstr "Dan"
+
+#: ../src\utils\time_period.py:11
+msgid "{0} days"
+msgstr "{0} dana"
+
+#: ../src\utils\time_period.py:12
+msgid "an hour"
+msgstr "Sat"
+
+#: ../src\utils\time_period.py:12
+msgid "{0} hours"
+msgstr "{0} sati"
+
+#: ../src\utils\time_period.py:13
+msgid "a minute"
+msgstr "Minut"
+
+#: ../src\utils\time_period.py:13
+msgid "{0} minutes"
+msgstr "{0} minuta"
+
+#: ../src\utils\time_period.py:14
+msgid "a second"
+msgstr "Sekund"
+
+#: ../src\utils\time_period.py:14
+msgid "{0} seconds"
+msgstr "{0} sekundi"

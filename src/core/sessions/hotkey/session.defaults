@@ -1,0 +1,4 @@
+[keymap]
+ChangeKeymap=string(default="control+win+k")
+ToggleKeyboardHelp=string(default="control+shift+win+k")
+ToggleModifierLock = string(default="alt+win+k")

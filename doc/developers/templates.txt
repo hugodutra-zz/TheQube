@@ -1,0 +1,68 @@
+Template Syntax
+
+New style templates have a slightly different syntax from old style templates.  This document outlines the syntax and how the new template works.
+
+Escape Sequences
+
+All escape sequences start with a $.
+
+$$ - Replaced with a single $ in the output.
+${{ Replaced with a { in the output.  You can also use { by itself, except when it immediately follows a conditional, or it follows the } for the first block of a conditional.
+$}} - Replaced with a single } in the output.  You can also use } by itself, except in a conditional block where it ends the block.
+
+Variable Substitutions
+
+A variable substitution is replaced by the value of the variable in the output, or an empty string if the variable isn't defined.
+
+A variable substitution is a single $ followed by a name.  The name can be between { and } if there's a chance of the template engine reading the wrong name without the braces.  Names can still be in braces even if the template engine will read the right name.  The name "if" provides a special substitution explained next.
+
+Conditionals
+
+The conditional is the most safisticated part of the template, but they're still quite easy.  The following is the general format for a conditional.
+
+$if(condition){...If True...}{...If False...}
+
+Both the condition and "If True" block are required for the conditional to work.  The "If False" block is optional and will be replaced with an empty string if it's missing.
+
+Conditions
+
+The condition must appear between ( and ).  The template supports 2 kinds of condition.
+
+The first type is a simple test for True or False and looks like the following.
+
+not name
+
+The "not" is optional, but if present will reverse the outcome.  The name specifies a variable name.  It will test False if it is not defined, is an empty string, or it equals the number 0, the result is true otherwise.
+
+The second kind of conditional tests the relationship between the variable on the left and the variable, string, or number on the right.  This kind of conditional looks like one of the following.
+
+not name relop name
+not name relop string
+not name relop number
+
+Again the not is optional and reverses the result of the relational operator if present.
+
+A string is a text sequence between a pair of " characters.  To include a " in the string to test against, use "".
+
+A number starts with an optional + or - followed by a sequence of decimal digits.  A number can also have a fractional part which is a . followed by another set of numbers.  Scientific floating point notation is not supported.
+
+A relop is one of the following.
+
+== Equal to
+< Less than
+<= Less than or equal to
+> Greater than
+>= Greater than or equal to
+<> or != Not equal to
+
+Conditional blocks
+
+Both blocks after the $if(condition) are enclosed in { and }.  There must not be a space between the ) of the conditional and the first {.  Also, no space is allowed between the } of the first block and the { of the second block, if there is a space, the second block will be interpreted as being empty.
+
+The first block is substituted for the conditional if the result is true, and is required.
+
+The second block is optional, and will be substituted for the conditional if the result is false.  If the second block is missing and the conditional result is false, it will be as if the conditional wasn't in the template.
+
+Invalid sequences
+
+Any sequence of characters not valid for the template will be removed up to the first character that caused the problem, which may cause problems for reading the rest of the template.

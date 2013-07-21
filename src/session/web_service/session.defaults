@@ -1,0 +1,2 @@
+[security]
+workOffline=boolean(default=True)

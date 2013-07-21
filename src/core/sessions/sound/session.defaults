@@ -1,0 +1,13 @@
+[sounds]
+audioDevice=string(default='')
+mute=boolean(default=False)
+
+[keymap]
+ToggleSessionMute=string(default="control+win+m")
+ToggleGlobalMute=string(default="control+win+shift+m")
+IncreaseVolume=string(default="control+alt+win+up")
+DecreaseVolume=string(default="control+alt+win+down")
+Rewind=string(default="win+f5")
+PlayOrStop=string(default="windows+f6")
+Pause=string(default="win+f7")
+FastForward=string(default="win+f8")

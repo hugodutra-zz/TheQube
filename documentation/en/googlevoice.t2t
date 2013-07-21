@@ -1,0 +1,35 @@
+
+
+=Google Voice=[GV-Session]
+
+==What is google Voice?==[GV-intro]
+
+Google Voice is an internet phone forwarding service.  It allows you to have one central phone number which can forward calls to your other numbers, such as home, mobile and work.  It also allows you to centrally manage voicemail, call history and sms or text messages.  This management facility is where The Qube comes into play, allowing you to place calls, send messages and play voicemails without opening a browser.
+
+==Getting started with Google Voice==[gv-setup]
+
+If you don't already have one, you will need to get a Google Voice number.  Go to [the Google Voice homepage http://google.com/voice] to get started.  If you use GMail, blogger.com or any other google service requiring an account, then you can enter your existing details to skip straight to setting up a number.  Otherwise you will have to go through the process of signing up.  There may be a captcha, but google provides an alternative audio challenge that you can use.
+
+Once you have followed the steps to set up your number with Google Voice, press ctrl+shift+win+n, select Google voice as your session type and give the session a name.  You will be presented with a login dialog, so enter your username and password.
+
+==Buffers in the Google-voice session==[gv-buffers]
+
+Within the google voice session, there are five buffers.  The Voicemail and SMS buffers hold those items.  The other buffers contain your call history divided into three categories, missed calls, calls you received and answered, and calls you placed with Google Voice.
+
+==Placing a call==[gv-calling]
+
+While working in the Google Voice session, pressing ctrl+win+c will open the call phone dialog.  First, enter the number that you would like to call.  The next option is a list of forwarding numbers that you set up on the Google Voice web site.  Select the phone that you want the call to be sent to.  When you press ok, google will first call you at the selected number.  Once you have answered, it will call the number that you have entered.
+
+Alternatively, you can press control+win+enter to call the selected number in a buffer.  If you are in the sms buffer, this command will call the sender of the current sms.  From within a call history buffer, you will call the selected number.  This keystroke does something else when working with voicemails, see below.
+
+==working with voicemails==[gv-voicemail]
+
+From the voicemail buffer, press ctrl+win+enter to begin playing the selected voicemail.  You can press the keystroke again on the same message to stop playback.
+
+==Sending SMS messages==[gv-sms]
+
+From any buffer in this session, you can press ctrl+win+n to send an sms message, also known as a text message.  First, enter the number that you wish to send a message to.  Press tab, type your message and press enter.  You have a limit of 160 characters for these messages.
+
+Messages that you have sent also show up in the sms buffer.  There is currently a known issue that your sent messages are announced as being from the recipient.
+
+

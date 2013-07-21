@@ -1,0 +1,80 @@
+#Client-related stuff
+
+[client]
+pid=integer(default=0) #the pid of the last run instance of The Qube
+autoReadNum=boolean(default=True) #Automatically read number of new items?
+readBufferLength=boolean(default=True) #Automatically announce how many items are in the buffer upon buffer change?
+AutoStart=boolean(default=False)
+AskForExit=boolean(default=True)
+useGUI=boolean(default=False)
+step=integer(default=5)
+timeStep=integer(default=60)
+undoStackSize=integer(default=100)
+
+[speech]
+#Automatically try to guess it by default.
+screenreader=string(default="auto")
+#these are only for SAPI
+rate=integer(default=4)
+voice=string(default="")
+volume=integer(default=100)
+
+[sounds]
+SoundServer=string(default="http://www.qwitter-client.net/soundpacks")
+audioDevice=string(default="")
+mute=boolean(default=False)
+soundPack=string(default="Standard")
+volume=float(default=100.00)
+
+#Export information
+[exporter]
+export=string(default="current tweet")
+format=string(default="txt")
+filename=string(default="")
+path=string(default="")
+
+#Braille
+[braille]
+brailleSpoken=boolean(default=False)
+
+# Google Maps
+[GoogleMaps]
+APIKey=string(default="ABQIAAAAW56977gIWd3EKHNuNuKnbRQiSjJMu2suV1yof5sYS2J2gZKBsBTt2s9HZbrJYO3UwwufBKqq_Qtl0Q")
+
+[sessions]
+sessions=list(default=list())
+current=integer(default=0)
+
+[languages]
+current=string(default="Windows")
+
+[recognition]
+enabled=boolean(default=False)
+
+[keymap]
+CopyToClipboard = string(default = "control+win+shift+c")
+Exit = string(default = "control+win+f4")
+StopSpeech = string(default = "win+s")
+export=string(default="control+win+e")
+PrevSession=string(default="control+shift+win+left")
+NextSession=string(default="control+shift+win+right")
+CurrentSession = string(default = "control+shift+win+space")
+NewSession=string(default="control+win+shift+n")
+DismissSession=string(default="control+win+shift+'")
+RenameSession=string(default="control+win+f2")
+DeleteSession=string(default="win+alt+delete")
+MainConfigDialog=string(default="control+win+shift+o")
+ForceSyncToDisk = string(default="control+shift+win+alt+s")
+About=string(default="control+win+h")
+ToggleSpeechRecognition=string(default="win+shift+s")
+#SessionManager=string(default="alt+win+s")
+
+[UI]
+stdKeyHandling=boolean(default=False)
+
+
+[shortener]
+urlShortener=string(default="Hkc.Im")
+
+[SndUp]
+APIKey=string(default="")

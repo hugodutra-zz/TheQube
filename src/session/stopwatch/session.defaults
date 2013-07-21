@@ -1,0 +1,20 @@
+isVisible=boolean(default=True)
+templateSystemVersion=integer(default=1)
+
+isConfigured=boolean(default=True)
+
+[countdown]
+hours=integer(default=0)
+minutes=integer(default=0)
+seconds=integer(default=0)
+
+[keymap]
+CountdownTimer=string(default="control+win+c")
+ToggleStopwatch=string(default="control+win+return")
+
+[templates]
+timer=string(default="$name: $elapsed")
+countdown=string(default="$name: $remaining")
+
+[sounds]
+countdownFinished=string(default="countdown_finished.wav")

@@ -28,8 +28,12 @@ nosetests.xml
 
 # Translations
 *.mo
+*.pot
 
 # Mr Developer
 .mr.developer.cfg
 .project
 .pydevproject
+
+# Ready documentation files
+*.html

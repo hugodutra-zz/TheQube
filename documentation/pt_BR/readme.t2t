@@ -1,0 +1,591 @@
+Manual do Qwitter
+versão 4.1
+Atualizado em: %%mtime(%x)
+
+%!target: html
+%!options: --toc --toc-level=2 -o Readme.html
+
+=Introdução=[introduction]
+
+==O que é o Qwitter ?==[qwitter-intro]
+
+O Qwitter foi pensado inicialmente para ser um cliente do serviço de microblog Twitter e essa é de fato a melhor função dele. Nesta versão, porém, tornou-se um programa extremamente inovador, que leva o já popular paradigma de navegação baseada em fala e sons a outros serviços além do Twitter. A principal vantagem do Qwitter é que se podem acessar esses serviços sem abrir qualquer janela. Nunca é necessário sair da aplicação onde se está trabalhando no momento.
+
+O Qwitter é extremamente intuitivo. Depois de ler este documento você provavelmente conseguirá usá-lo de modo intensivo, eficiente e rotineiro. Esperamos que aprecie o programa e sinta-se à vontade para fazer considerações e sugestões na lista de discussão.
+
+O Qwitter funciona com a maioria dos leitores de tela incluindo JAWS, Window-Eyes, System Access e o livre e gratuito [NVDA. http://nvda-project.org] É necessário o NVDA 2010.1 ou mais novo.
+
+=Conceitos gerais do Qwitter=[general]
+
+==O que são sessões ?==[-sessions]
+
+As sessões são aplicações que rodam na plataforma do Qwitter e adicionam funções ao mesmo. A função mais comum das sessões é interagir com aplicações web específicas. A primeira sessão a existir foi aquela original do Twitter.
+
+Quando se executa o Qwitter pela primeira vez após instalá-lo, aparece a janela de nova sessão. Escolha o tipo de sessão que quer usar e aí pressione TAB para dar um nome à mesma. Provavelmente você vai configurar o Qwitter para trabalhar primeiro com o Twitter. Descrevemos a sessão do Twitter no [próximo capítulo. #twitter-session] Pode-se ter mais de uma sessão para um só serviço. Por exemplo: pode criar uma sessão para cada conta de Twitter e acessar várias ao mesmo tempo.
+
+As seguintes teclas podem ser usadas para mexer com sessões no Qwitter:
+
+- control-shift-windows-n abre a janela de nova sessão, se precisar novamente no futuro;
+- control-shift-windows-setas esquerda e direita alternam entre sessões que você tenha criado;
+- control-windows-o chama a janela de configuração da sessão atual, caso haja alguma;
+- control-shift-windows-apóstrofo descarta a sessão atual; futuramente basta criar uma sessão de tipo e nome iguais e ela volta do mesmo jeito que estava antes de descartá-la;
+- windows-alt-del apaga de modo permanente a sessão e todos os dados a ela associados;
+- control-shift-windows-espaço informa em qual sessão está no momento;
+- control-windows-F2 troca o nome da sessão atual.
+
+
+==O que são exibidores ?==[buffers]
+
+Exibidores são áreas separadas dentro do Qwitter, usadas para armazenar tipos diferentes de informação a serem lidos. Cada tipo de sessão usa os exibidores de modo diferente. Explicamos como usá-los todos ao longo deste documento.
+
+Para alternar entre os exibidores existentes, use control-windows-setas direita e esquerda. O Qwitter diz o exibidor para o qual mudou e assim você sempre saberá onde se encontra. Por padrão ele sempre lhe deixa no exibidor onde estava, mesmo após reiniciar o programa. Uma vez que tenha escolhido o exibidor cujos itens queira ler, use control-windows-setas cima e baixo para navegar. Pode usar control-windows-z para desfazer o último comando de navegação.
+
+Para ir ao item mais novo ou mais antigo, use control-windows-home ou end, respectivamente. Para mover à frente ou atrás em percentagens de cinco porcento da lista inteira, use control-windows-pageUp ou pageDown. Para mover em intervalos de uma hora, use control-shift-windows-pageUp ou pageDown. Ajusta-se na guia "navegação" da janela de configuração principal do Qwitter, que se acessa a pressionar control-shift-windows-o, o quanto cada um desses comandos move.
+
+Caso queira atualizar manualmente o exibidor onde esteja no momento, ao invés de esperar que ele atualize automaticamente após o tempo que escolheu na configuração, use control-windows-u. Se desejar apagar da base de dados do Qwitter o conteúdo de um exibidor, pressione control-shift-windows-del. Assim que o exibidor se atualizar novamente, os itens mais novos voltarão a aparecer até o número máximo que você configurou.
+
+Você pode também mudar a ordem que os exibidores aparecem, pressionando control-windows-alt-seta esquerda ou direita para mover o exibidor naquela direção.
+
+==Ajuda de teclado==[keyboard-help]
+
+Recomendamos fortemente que leia este documento inteiro para entender bem como funcionam os comandos vários do Qwitter. Depois de ter feito isso, há um jeito rápido de lembrar o que uma dada tecla faz. Pode ligar o modo ajuda de teclado pressionando control-windows-shift-k. Nesse modo, ao pressionar um comando do Qwitter, é informado o que aquela tecla faz, na sessão atual. Pressione control-windows-shift-k novamente para sair do modo ajuda de teclado.
+
+==Configuração==[configuration]
+
+O Qwitter é bastante flexível. Este documento apresenta sobretudo o comportamento padrão do programa. A pressionar control-windows-o aparece uma janela com opções que configuram a sessão atual. Elas são descritas nos capítulos sobre cada tipo de sessão. Já se pressionar control-shift-windows-o é chamada a [janela principal de configuração #main_config] com opções que se aplicam ao Qwitter como um todo.
+
+=Twitter=[twitter-session]
+
+==O que é o Twitter ?==[twitter-intro]
+
+O Twitter é um serviço tremendamente popular de microblog, isto é, ele permite publicar na Internet pequenos textos escritos com no máximo 140 caracteres cada um, sendo que esses textos ou "tuítes", como são chamados na terminologia do Twitter, são lidos pelos seus seguidores assim que você os publica. Caso não possua no momento uma conta no Twitter, pode criar uma [aqui (em Inglês). http://twitter.com/signup]
+
+O Qwitter foi criado para tornar o uso do Twitter o mais simples e eficiente possível. Existem muitas vantagens em usar um cliente de Twitter, em particular o Qwitter. Eis algumas apenas:
+
+- Acesso instantâneo e imediato ao Twitter a partir de qualquer local do sistema sem precisar de navegador aberto;
+- Notificação de novos eventos tais como receber tuítes novos, mensagens diretas ou menções, ou quando novos resultados aparecem numa busca feita no Twitter;
+- Um repositório com todos os tuítes recebidos que pode ser consultado à vontade, armazenado na base de dados da sessão.
+
+
+==Entrar no Twitter==[login-dialog]
+
+Quando se abre uma sessão de Twitter pela primeira vez, você deve inserir o seu nome de usuário e sua senha. O Qwitter então entra no Twitter e aí você já pode começar. As próximas seções explicam o que se deve saber para usar o Twitter.
+
+Nota: algumas pessoas reportaram problemas para conectar ao Twitter quando certos firewalls estão ativados. O Vipre firewall por exemplo costuma dar problemas. Caso não consiga conectar, talvez precise adicionar uma exceção ao firewall. No caso do Vipre, adicione o twitter.com como exceção de web. Geralmente basta criar uma exceção para a página twitter.com na porta 80 ou então para o próprio programa Qwitter.
+
+==Importar bases de dados antigas do Qwitter==[importing]
+
+Agora que o Qwitter adotou um método novo de armazenar informações conhecido como "armazenagem por sessão", alguém pode precisar importar informações contidas em alguma base de dados antiga. Isso é muito simples. Estando na sessão onde deseja que os dados importados fiquem, tecle control-shift-windows-i para chamar o importador de bases de dados. Por padrão você será posicionado no diretório do Qwitter em dados de aplicativos, onde as bases de dados eram antes armazenadas. Selecione a base de dados na janela de abrir que aparece e, quando indagado, responda sim à mensagem mostrada. Em instantes receberá uma mensagem dando conta que a importação foi completada com sucesso. Caso tenha problemas nesse processo, certifique-se que a base de dados que tenta importar esteja mesmo na pasta %appdata%\qwitter.
+
+==Sobre chamadas ao Twitter==[api]
+
+Ao longo deste capítulo, você notará referências a chamadas ao Twitter. O Twitter possui um limite de quantos dados se pode obter dele no período de uma hora. Toda vez que você usa o Qwitter ou outro cliente de Twitter qualquer para baixar tuítes, ele conta até chegar nesse limite. Pressione control-windows-a para ver quantas chamadas restam a usar e quanto tempo falta para o limite voltar ao máximo.
+
+Na maioria dos casos, uma chamada ao Twitter é capaz de obter duzentos tuítes. Por padrão, o Qwitter usa somente uma chamada para cada operação. Pode-se mudar isso na guia "opções padrão" da janela de configuração de exibidores, acessada por control-windows-alt-o. Essa janela será discutida [noutra sessão adiante. #buffer-config]Você tem que ter isso em mente sempre quando alterar alguma opção que vá usar mais de uma chamada. Nós por padrão escolhemos valores de modo a garantir que você não venha exceder o seu limite horário.
+
+==Exibidores para Twitter==[twitter-buffers]
+
+Numa sessão de Twitter, há quatro exibidores ou coleções de postagens padrão. São eles: principal, diretas, enviados e menções.
+
+No exibidor principal vão todos os tuítes recebidos exceto as mensagens diretas. São os tuítes dos usuáriios que você tenha decidido seguir.
+
+No exibidor diretas vão as mensagens diretas que você recebe. Trata-se de um modo de enviar que somente a pessoa que recebe pode ver a mensagem e vice-versa.
+
+O exibidor de enviados, logicamente, contém todos os tuítes que você enviou.
+
+O exibidor de menções contém todo tuíte que possua uma menção ao teu nome de tela. No Twitter, se você faz um comentário que outra pessoa quer responder, esta pode fazer o que se chama de menção ou resposta. Na página do Twitter a pessoa teria de digitar uma @ seguida do teu nome de tela. Mas no Qwitter nós automatzamos isso. (veja a seção sobre [respostas. #reply]
+
+===A janela de configuração dos exibidores===[buffer-config]
+
+Existem opções que se podem configurar de modo diferente para cada exibidor. Control-windows-alt-o chama a janela de configuração dos exibidores. A guia opções padrão determina os padrões para qualquer exibidor novo que você criar, como de busca ou de linha do tempo individual. Pode marcar a caixa de seleção aplicar opções a todos os exibidores se quiser usar essas opções em exibidores que já existam.
+
+Essa janela possui uma guia de opções para cada exibidor. Ao abrir a janela, a guia ativa é a que corresponde ao exibidor onde você estiver no momento. Caso troque de exibidor com a janela aberta, a guia ativa mudará para a que corresponde à sua posição. As opções disponíveis na janela são descritas abaixo.
+
+Primeiro vem o intervalo de atualização. Aí pode decidir com qual freqüência o Qwitter checa se há atualizações para o exibidor em questão. O padrão é 3 minutos. Na guia de opções padrão esse valor é o mínimo permitido. Pode colocar até 1 minuto para cada exibidor em particular, mas não se recomenda isso. Se não tomar bastante cuidado, excederá o limite de chamadas ao Twitter.
+
+Em seguida temos a opção de número máximo de tuítes a obter. Trata-se precisamente disto: quantos tuítes o Qwitter deve pegar de cada vez ? O padrão é 200, o máximo que o Twitter deixa.
+
+Caso a opção acima haja sido posta em 200, pode usar mais que uma chamada se necessário para pegar um número maior de tuítes. A próxima opção, no caso, será o número máximo de chamadas a usar. Cada chamada baixa até 200 tuítes. Lembrando novamente que isso ajuda a esgotar mais cedo o limite horário de chamadas.
+
+As duas opções que seguem determinam como o Qwitter formata informações. O modelo para fala especifica como serão falados os Twites naquele exibidor, ao passo que o modelo para área de transferência define o formato usado ao copiá-los para a área de transferência. Para mais instruções de como mexer com essas opções, ver a [seção sobre modelos. #templates]
+
+==Seguir e largar==[follow]
+
+Para passar a seguir quem enviou o tuíte atual ou então alguém mencionado em um tuíte, use control-windows-l. Caso deseje seguir outro que não aquele no topo da lista, pressione a seta baixo primeiro. Use a tecla que faz o leitor de telas ler a linha para saber qual está selecionado. Pode também introduzir manualmente um nome de usuário.
+
+Se a qualquer momento não desejar mais receber no exibidor principal os tuítes de algum usuário, largue-o com control-shift-windows-l. O remetente do tuíte atual é o padrão, mas pode inserir manualmente outro nome se preciso. Nessa janela é possível também bloquear o usuário para que não lhe siga, ou denunciar os tuítes dele como spam.
+
+==Postar novidades==[twitter-post]
+
+===Escrever um tuíte novo===[new-tweet]
+
+Para postar um tuíte novo, pressione control-windows-n. Isso chama uma janela e foca num campo de edição. É só ir digitando. O Twitter impõe o limite de 140 caracteres, daí que se passar disso o Qwitter faz um barulho para alertar. Note que um caractere é qualquer coisa que se digite, seja letra, pontuação, número, símbolo ou espaço.
+
+Se precisa saber quantos caracteres já digitou, use a tecla que faz o leitor de telas ler o título da janela atual. Será dito algo como "Twite novo - 40 de 140", onde 40 é o número de caracteres já usados. Esse detalhe, embora pequeno, é muito útil.
+
+Assim que pronto pressione Enter. Você ouvirá o som de tuíte enviado e o leitor de telas dirá "Atualização postada."
+
+===Responder um tuíte===[reply]
+
+Lembra que falamos antes em menções e respostas ? Aqui vamos descobrir como proceder às mesmas. Quando estiver lendo na lista dos tuítes e achar algum que queira replicar, use control-windows-r. Isso vai chamar uma janela bastante semelhante à do tuíte novo.
+
+Simplesmente digite a réplica e pressione Enter. Preste atenção a quantos caracteres já digitou, pois aqui uma parte deles já foi consumida pelo nome de quem você está respondendo. Como no caso anterior, se ler o título da janela pode ter uma idéia de quantos caracteres restam.
+
+Essa janela possui também um botão para mencionar todos os usuários presentes no tuíte atual. Isso é uma forma fácil de garantir que nenhuma pessoa que esteja envolvida numa conversa fique fora. Note que quanto mais usuários mencionar, tanto menos caracteres sobrarão para a mensagem, propriamente.
+
+===Postar uma mensagem direta===[post-direct]
+
+Para enviar uma mensagem direta, localize um tuíte escrito pela pessoa para quem quer enviá-la e pressione control-windows-d. Aparece uma janela nos mesmos moldes das acima descritas. Note que você só pode enviar mensagem direta para quem lhe segue. Isso é uma regra por parte do Twitter e não uma limitação do Qwitter. Não fosse esse limite, todo mundo seria importunado com uma infinidade de spams e esse recurso seria menos útil que e-mails.
+
+===Apagar um tuíte que você postou===[delete]
+
+Acontece com todo mundo. Você responde a pessoa errada ou envia uma resposta pública ao invés de uma mensagem direta. Ou talvez se dê conta de ter acabado de postar algo que de fato não merecia ter um lugar ao sol. Quando precisar apagar um tuíte teu, localize-o e pressione control-windows-del.
+
+===Ver um tuíte===[view-tweet]
+
+Pode ver um tuíte numa janelinha própria. Pressione control-windows-v para chamá-la. Ali há também a caixa de seleção retwitar. Caso a marque e pressione OK, o tuíte em questão será postado como um retuíte. Se desmarcada ele é postado como um tuíte novo normal. Pressione cancelar se não deseja fazer nada disso.
+
+===Encurtar endereços longos de páginas===[url-short]
+
+A idéia dos encurtadores é que, ao encurtar um endereço longo, sobrem mais caracteres a digitar no tuíte. Escolhe-se o encurtador preferido na guia diversos da janela de configuração principal do Twitter, que se acessa a pressionar control-windows-o. Em qualquer janela de escrever tuíte, encontram-se botões para encurtar e desencurtar endereços neste presentes, caso haja algum.
+
+Se o endereço começa com "http://" ou "www." (sem aspas) ele é detectado automaticamente. Pressionando alt-e ou clicando no botão "Encurtar endereço", este será substituído por um mais curto. Caso o endereço que quer encurtar não seja detectado, pode selecioná-lo e pressionar alt-e que ele usa a seleção. Se for detectado mais de um endereço, será mostrada uma lista para que escolha qual quer encurtar.
+
+===Postergar um tuíte===[tweet-delay]
+
+Existe a opção de postergar o envio de um tuíte por um tempo específico. Em toda janela onde se escreve um tuíte há uma caixa de seleção para enviar a mensagem mais tarde. Ao marcá-la o tuíte ficará esperando o tempo que escolher. Pressione tab e altere o número de minutos que quer aguardar.
+
+==Outros comandos que mexem com tuítes==
+
+Seguem alguns comandos que facilitam a lida com tuítes. Pretendemos adicionar mais no futuro; se tiver sugestões, não se furte em comunicar-no-las.
+
+- Repetir o tuíte atualmente selecionado, control-windows-espaço;
+- Pular para um tuíte, control-windows-j. Quando aparecer a janela de pular para postagem, insira o número do tuíte ao qual pular;
+- Ver o tuíte que está sendo respondido pelo tuíte atualmente selecionado, windows-alt-seta baixo. Pode repetir esse comando para continuar seguindo a conversa. Quando terminar, vá pressionando control-windows-z até retornar à posição anterior;
+- Ver a primeira resposta ao tuíte atual, windows-alt-seta cima. Este comando é o inverso do anterior e a mesma observação aplica-se;
+- Copiar o tuíte atual para a área de transferência, control-windows-chift-c;
+- Ir para a página na Internet ou a página do Twitter de algum usuário que esteja mencionado no Twite atual, control-windows-b. Aparece uma lista. Escolha aonde quer ir e pressione Enter. A página abre numa nova guia ou janela do navegador padrão. Pode pressionar também o botão copiar endereço para pô-lo na área de transferência. Caso o endereço haja sido encurtado, pode pressionar o botão desencurtar endereço para ver o original.
+
+
+==Interagir com tuítes==[interaction]
+
+Existe um jeito rápido de ativar um endereço contido num tuíte. O comando control-windows-enter interage com o primeiro endereço mencionado no tuíte. Geralmente abre-se no navegador padrão a página correspondente. Mas, se o endereço apontar para uma postagem de áudio que tenha sido gravada com um dos serviços de postagens de áudio suportados, o Qwitter reproduz diretamente o conteúdo, sem abrir qualquer janela mais. Por padrão, o Qwitter alerta quando um endereço presente num tuíte aponta para conteúdo de áudio que possa ser reproduzido com o Qwitter. Para pausar a reprodução, pressione control-windows-enter de novo encima do mesmo tuíte. No momento, o Qwitter é capaz de tocar automaticamente postagens encontradas no [twaud.io http://twaud.io] ou [audioboo. http://audioboo.fm]
+
+==Lidar com preferidos==[favorites]
+
+Caso encontre um tuíte que considere realmente importante, pode adicioná-lo a uma lista de tuítes preferidos pressionando alt-windows-f. Para remover um tuíte da lista de preferidos, pressione alt-shift-windows-f. Estando na lista dos preferidos é possível também remover um tuíte com control-windows-del.
+
+Para chamar um exibidor contendo os preferidos, pressione control-windows-alt-f. Para saber os preferidos de outro usuário, pressione control-shift-windows-alt-f. Isso trás uma janelinha onde se escolhe o usuário cujos preferidos queira ver. A primeira opção é quem enviou o tuíte atual. Pode pressionar a seta baixo para escolher outro usuário que esteja mencionado nesse tuíte. Use a tecla que faz o leitor de telas ler a linha para ver qual está selecionado no momento. Pode inserir também manualmente um nome diferente. Por fim, pode descartar o exibidor de preferidos com control-windows-apóstrofo.
+
+==Retuítes==[retweets]
+
+===Retwitar um tuíte===[retweeting]
+
+Se você encontrar um tuíte que de algum modo lhe soe interessante, pode postá-lo novamente para que seus seguidores o vejam. Isso se conhece como retwitar. Os retuítes vêm assinalados com "RT @nomeDeUsuário" antes do texto do tuíte. Para retwitar o tuíte atual, pressione control-shift-windows-r. Na guia diversos da janela de configuração do Twitter você pode escolher se quer adicionar um comentário ao retuíte. A primeira opção é a recomendada. Nesse modo, o Qwitter indagar-lhe-á cada vez que pressionar o comando de retwitar. No segundo modo, presume-se que você queira enviar o retuíte automaticamente, sem comentário. Já a terceira opção simplesmente presume que queira adicionar um comentário.
+
+No caso de adicionar um comentário, o tuíte é mostrado numa janelinha de modo que possa editá-lo a gosto. Quando estiver satisfeito, pressione OK e o tuíte é postado.
+
+===Ver retuítes===[view-retweets]
+
+Para ver retuítes, pressione control-windows-alt-r. Isso exibe uma janela a perguntar que tipo de retuíte gostaria de ver. São possíveis 3 opções: Retuítes dos meus amigos, meus retuítes e retuítes meus que tenham sido retwitados por amigos. São opções bastante autoexplicativas. Após fazer a seleção, pressione OK. Será criado um exibidor com os tuítes do tipo que você escolheu. De notar que este é um recurso novo do Twitter e pode conter ainda algum bug. Depreende-se também daí que outros clientes de Twitter não tenham adotado ainda esse método novo de postar retuítes e por isso muitos tuítes podem não aparecer no exibidor. Somente Tuítes postados sem comentários pelo Qwitter aparecerão nesses exibidores.
+
+==Buscar tuítes==[searching]
+
+Com a função de busca do Qwitter você pode procurar uma palavra ou termo em todos os tuítes públicos da twittersfera. Para iniciar uma busca, pressione control-windows-/. Isso exibe uma janela de buscas. Caso o tuíte atual possua alguma etiqueta de assunto, é possível escolher alguma pressionando seta baixo. Use o recurso do leitor de telas que lê a linha para ver qual está selecionada. As etiquetas de assunto são usadas pelo pessoal para facilitar a procura por tuítes sobre um dado evento ou tópico. Por exemplo, quem pretendesse ir ao Encontro Dosvox de 2011 poderia etiquetar os tuítes que postar sobre o evento com algo como #dosvox2011 para facilitar a quem pesquise sobre o tema.
+
+Depois de digitar o termo a buscar, há outras opções que pode escolher. A primeira é uma caixa de seleção que diz "Busca persistente". Se marcada, essa opção armazena os resultados da busca na sessão atual, de sorte que se futuramente procurar o mesmo termo, poderá ver os resultados da busca anterior. A segunda caixa, salvar busca, informa ao Qwitter que você quer que apareça um exibidor com essa busca cada vez que você inicia o Qwitter. No caso de buscas, cada chamada ao Twitter traz cem resultados. A opção que segue especifica o número de postagens a trazer por atualização; o padrão é cem. Caso não a mude, a opção seguinte especifica o número máximo de chamadas a usar por atualização nessa busca. O padrão será o que você houver colocado na guia opções padrão da janela de configuração dos exibidores. Clique em OK e será criado um exibidor de buscas onde você será posicionado. De notar que caso crie uma busca salva, o Qwitter automaticamente salvará as postagens na sessão.
+
+Note que exibidores de busca comportam-se como outro exibidor qualquer, atualizam-se à medida que novos resultados surjam ou se forem forçados a fazê-lo mediante a tecla de forçar atualização. Para descartar um exibidor de busca, como qualquer exibidor descartável, pressione control-windows-apóstrofo.
+
+==Buscar um usuário==[user-search]
+
+Caso esteja à procura de uma pessoa específica no Twitter e não saiba o nome de usuário dela, o Qwitter lhe pode ajudar a encontrá-la. A pressionar control-shift-windows-barra vem à tona a janela de buscar usuário. Simplesmente insira o nome verdadeiro da pessoa que o Qwitter traz um máximo de vinte contas de usuário que possuam o termo procurado.
+
+As informações de cada usuário são as mesmas apresentadas nos exibidores de [seguidores e amigos, #followers-friends] e podem ser personalizadas mediante um modelo. Veja a [seção sobre modelos #templates] para detalhes.
+
+==Filtros==[filters]
+===Como funcionam os filtros===[filter-explanation]
+
+Os filtros servem para procurar um termo ou palavra chave num exibidor particular. Para chamar a janela de filtros, use control-shift-windows-f. Você será focado no campo de edição onde pode digitar o termo a buscar.
+
+Se pressionar o tab a partir daí, tem duas opções que determinam como será aplicado o filtro. A primeira é a lista dos possíveis campos. Escolha nessa lista cada campo que o filtro deve checar. A opção seguinte é a caixa de seleção "excluindo". Caso a deixe desmarcada, é feita basicamente uma busca normal. O Qwitter encontra todos os tuítes do exibidor atual que possuam o termo especificado e os coloca para você num novo exibidor. Se, porém, marcar a caixa de seleção, o Qwitter encontra todos os tuítes com o termo especificado e os exclui do exibidor. Use control-windows-apóstrofo para descartar o exibidor quando quiser. Os filtros perduram até que se descarte o exibidor de filtros ou a própria sessão de Twitter.
+
+===Exemplos===[filter-examples]
+
+Talvez uns casos reais esclareçam melhor a utilidade dessas opções. Eis algumas formas de combiná-las e conseguir resultados interessantes:
+
+- Selecione o campo "nome" ou então o "nome de tela" de alguém e aí marque a caixa "excluindo". Isso faz você deixar temporariamente de ler todos os tuítes da pessoa, útil se por acaso ela estiver twitando demais sobre um assunto que não lhe interesse. Assim não precisa tomar a atitude mais drástica que é deixar de seguir a pessoa;
+- Farto de jogos como o #spymaster ? Pouco se lixando para aquele programa de TV sobre o qual o pessoal sempre tuíta? Selecione o campo "texto da mensagem" e a caixa de seleção "excluindo" e jamais ouvirá falar nisso novamente;
+- Se escolher o campo "texto da mensagem" e deixar desmarcada a caixa "excluindo", é feita uma vasculha no exibidor atrás do que os amigos estejam comentando sobre um dado assunto. Pode assim ver rapidamente os tuítes que lhe interessam no momento sem precisar ler todos os tuítes do exibidor até achar um por um;
+
+Pode também criar um filtro encima de outro. Como exemplo, pode fazer um filtro para excluir #spymaster do exibidor principal. Aí pode criar, a partir do exibidor já filtrado, outro filtro para excluir os tuítes automáticos que possuam a etiqueta #nowplaying, sobre o que as pessoas estão escutando no momento. Assim fica com todos os tuítes do exibidor principal exceto os que lhe incomodam. Pode acrescentar quantos filtros quiser.
+
+==Listas==[Lists]
+
+===O que são as listas ?===[Lists-Explanation]
+
+O Twitter implementou recentemente o recurso de listas. Elas servem para criar grupos específicos de usuários e monitorá-los de modo mais fácil. No Qwitter as listas são mostradas em exibidores próprios. Existem as listas públicas e as privadas. As públicas, conforme o nome, podem ser consultadas por qualquer pessoa no Twitter; são úteis por exemplo para que outros vejam os assuntos ou fontes de pesquisas que lhe interessam. As listas privadas por seu turno são visíveis somente para quem as cria. No geral, as listas são usadas para juntar os parentes ou amigos num só local, agrupar um tipo particular de informação (sejam notícias sobre um assunto, trabalhos de uma comunidade, etc.) ou reunir usuários do Twitter que se interessem pelas mesmas coisas. No fim é você quem escolhe como quer usá-las.
+
+===O gestor de listas===[List-Manager-Explanation]
+
+O que se usa para mexer com listas no Qwitter é o gestor. Para acessá-lo é alt-windows-l e então pode ver as listas se já tiver criado alguma, adicionar, editar e apagar listas como quiser. Há também um botão de carregar lista para quando fechar um exibidor de lista e quiser reabri-lo.
+
+===Adicionar e apagar usuários de listas===[Adding-and-Deleting-Users-from-Lists]
+
+Para adicionar um usuário a uma lista, pressione control-alt-windows-l encima do nome dele em uma lista de amigos ou seguidores ou então nalgum tuíte que ele enviou. Vai abrir uma caixa de combinação onde pode editar o nome de usuário caso queira. Dê OK para adicioná-lo. Pergunta-se então em qual lista quer adicionar. Use as setas cima e baixo para escolher a lista desejada e pressione Enter. Para apagar um usuário de uma lista, simplesmente encontre uma postagem dele na lista da qual quer removê-lo e aí pressione control-windows-del. Será pedida confirmação.
+
+==Exportar tuítes ==[exporter]
+
+O Qwitter também exporta tuítes. Por enquanto as postagens podem ser exportadas para arquivos de texto apenas. Adiante podemos adicionar outros formatos.
+
+Pressione control-windows-e para abrir a janela de exportar. Na guia formato, pressione o botão "Salvar Como" para abrir uma janelinha de escolher onde quer salvar o arquivo. Caso pretenda exportar mais de um conjunto de itens, marque a caixa de seleção "Exportar Mais" que aí a janela de exportar abre novamente após completar esta exportação.
+
+Agora pressione control-tab para ir à guia itens. Na primeira opção escolhe-se de qual exibidor quer exportar itens. Em seguida pode personalizar o formato como as postagens em si serão exportadas, usando um [modelo. #templates] Na opção intervalo tem três escolhas: "tudo de baixo para cima" exporta o exibidor inteiro começando pelo tuíte mais velho. "Tudo de cima para baixo" exporta o exibidor inteiro começando pelo tuíte mais novo. Cuidado ao usar essas opções num exibidor muito grande, como por exemplo no principal. A opção "personalizar" serve para escolher o intervalo de postagens a ser exportado. Nesse caso, os próximos dois campos pedem os números da primeira e da última postagens a serem exportadas. Caso pressione control-windows-espaço encima duma postagem, é dito o número do item ao fim do tuíte, ou pode também usar a variável $index como parte do [modelo #templates] padrão.
+
+Uma vez configuradas as opções, pressione o botão OK para exportar os tuítes selecionados.
+
+==Assuntos populares==[trends]
+
+O Twitter possui um recurso que informa quais são os temas mais populares do momento. Existe uma lista de assuntos populares em todo o mundo e também listas específicas de assuntos que sejam populares em determinados locais. Para criar um exibidor com os assuntos mais populares do momento no mundo, pressione control-windows-t. Para ver assuntos de um local específico, pressione control-shift-windows-t. Isso trás uma janelinha para seleção de local. Primeiro escolha se quer consultar os assuntos de um país inteiro ou de uma cidade ou município. Aí pressione tab para escolher o local numa lista e depois Enter para ver um exibidor com assuntos daquela área. Descarte-o com control-windows-apóstrofo. Note que o assunto mais popular encontra-se no topo do exibidor, mas quando este é criado você começa a navegar de baixo.
+
+==A linha pública do tempo==[public]
+
+Todo tuíte postado no Twitter fica disponível numa linha pública do tempo, exceto aqueles de usuários que protegeram os próprios tuítes. Você pode consultar uma amostra da linha pública do tempo com control-windows-alt-p. Será trazido um exibidor com os 20 últimos tuítes. De notar que, dada a popularidade do Twitter, os tuítes chegam à linha pública aos milhares por segundo. Atualize o exibidor com control-windows-u para pegar outra amostra.
+
+==Listar seguidores e amigos==[followers-friends]
+
+Para exibir a lista dos teus seguidores, pressione control-windows-abre colchetes. Do mesmo modo, para exibir a lista dos teus amigos, que na terminologia do Twitter são aqueles que você segue, use control-windows-fecha colchete. Note que essas listas podem levar um tempo para carregar, dependendo de quantos amigos ou seguidores possua. Você pode também fazer o Qwitter notificá-lo sobre novos seguidores e quem deixa de lhe seguir. Chame a lista dos seguidores com control-windows-abre colchetes e espere a lista carregar. Aí pressione control-windows-alt-abre colchetes. O Qwitter criará um novo exibidor com essa lista. Na primeira vez que fizer isso, todos os seguidores aparecerão como novos. Nas próximas ocasiões o Qwitter dirá quem passou a segui-lo e quem lhe largou.
+
+Adicionando shift a esses comandos, você pode ver os seguidores e amigos de um usuário diferente. Aparece uma janelinha onde se escolhe um usuário. O remetente do tuíte atual é a primeira opção nessa janela. É possível selecionar com a seta abaixo qualquer um mencionado no tuíte atual. Leia a linha atual com o leitor de telas para saber qual está selecionado. Pode de mesmo modo inserir um nome manualmente. No caso desses comandos, cada chamada obtém até cem amigos ou seguidores. Existe uma opção para determinar quantos serão trazidos; o padrão é cem. Se você não alterá-la, aparece depois a opção do número máximo de chamadas a usar. Ela parte do que você colocou na guia opções padrão na janela de configuração dos exibidores. Assim que pronto, pressione OK. Será criado um exibidor com os seguidores ou amigos daquela pessoa. Descarte-o com control-windows-apóstrofo.
+
+Nota: Como em qualquer exibidor, pode usar aí as teclas padrão para seguir/largar, responder, enviar mensagem direta, etc., para esses usuários.
+
+Nota: As informações extra que são ditas sobre cada usuário podem ser personalizadas na guia modelos da janela de configuração, mexendo nos modelos de amigos e seguidores. Consulte a [seção sobre modelos #templates]para detalhes.
+
+==Obter o local de um tuíte==[geolocation]
+
+Existe um recurso no Twitter com o qual se pode informar ao escrever um tuíte o lugar exato onde a pessoa se encontra, e com o Qwitter é fácil ouvir essa informação. Caso o programa que o remetente usou para escrever inclua dados sobre o local, o pressionar de control-windows-g dir-lhe-á onde ele estava quando escreveu um dado tuíte. A pressionar control-shift-windows-g, a mesma informação é exibida numa caixa de mensagem de maneira que possa copiá-la ou ler com mais cuidado.
+
+Esse recurso é relativamente novo no Twitter, logo alguns clientes podem ainda não o suportar. Além disso, a pessoa pode escolher não fornecer os dados. Portanto, isso não funcionará em todos os tuítes. Por padrão depois de instalar o Qwitter pela primeira vez ele avisa quando há informações de local disponíveis.
+
+Tem também a opção de introduzir coordenadas de latitude e longitude manualmente. Pressione control-windows-shift-alt-g e o Qwitter pedir-lhe-á a informação. Se o tuíte atual contiver dados de local, as coordenadas serão autopreenchidas por padrão. As coordenadas que você inserir serão checadas e será exibido o local correspondente numa caixa de mensagem.
+
+Note que o Qwitter consegue somente ler os dados fornecidos por outros. Ele não consegue adicionar ddados de local aos teus tuítes.
+
+==Notificações no telefone celular==[notifications]
+
+O Twitter pode enviar tuítes para o telefone celular via SMS se você tiver configurado isso na página do Twitter. São as chamadas notificações no telefone celular. Você pode decidir de quais usuários quer receber os tuítes. Para mexer nisso, ache um tuíte do usuário que deseja e pressione control-windows-shift-d. Isso ativa as notificações daquele usuário. Pressionar essa tecla novamente as desativa.
+
+==Editar perfil==[edit-profile]
+
+Você pode alterar com o Qwitter os dados do seu perfil no Twitter. Pressione control-windows-shift-p para chamar uma janela onde pode mudar qualquer campo do perfil.
+
+==Obter informações sobre um usuário==[info-commands]
+
+===Ver os tuítes===[user-timeline]
+
+Pode-se ver a linha do tempo individual de um usuário em particular. Simplesmente pressione control-windows-i. Isso chama a janela de exibidor individual. Quem enviou o tuíte atual é a primeira opção nessa janela. Pode selecionar com seta baixo qualquer mencionado no tuíte. Leia a linha atual para saber quem está selecionado. Se quiser, insira manualmente um nome. Pressionando tab pode escolher quantos tuítes quer receber a cada atualização. Se escolher 200, pode colocar também o número de chamadas máximo a usar por atualização. Cada chamada pega duzentos tuítes. Por padrão, essa opção condiz com o que você pôs na guia opções padrão na janela de configuração de exibidores. Quando terminar, pressione OK. Isso criará um novo exibidor com os tuítes mais recentes daquela pessoa. Descarte o exibidor com control-windows-apóstrofo.
+
+===Consultar relações entre um usuário e você===[relationship-status]
+
+É possível descobrir de maneira fácil que tipo de relação existe entre você e outro usuário do Twitter. Pressione control-windows-alt-ponto e vírgula encima de uma mensagem para o Qwitter dizer a relação entre você e o usuário que a enviou. Você ouvirá quem está seguindo quem. De notar que essa operação consome uma chamada ao Twitter.
+
+===Ver o perfil===[user-profile]
+
+Há duas maneiras de aceder a informação listada no perfil do Twitter de outro usuário:
+
+- Pressione control-windows-ponto e vírgula. Isso apenas diz informações sobre o usuário. Elas são faladas com base no que foi posto como modelo para informações de usuário na janela de configuração do Twitter. Mais na [seção sobre modelos. #templates]
+- Pressione control-shift-windows-ponto e vírgula. Isso mostra primeiro uma janela a indagar de qual usuário quer ver o perfil. Quem enviou o tuíte atual é a primeira opção nessa janela. Pode selecionar com a seta baixo qualquer um mencionado no tuíte. Leia a linha atual para ver quem é o selecionado. Pode também inserir manualmente um nome se quiser. Pressione OK quando satisfeito. A janela que daí resulta conterá todo tipo de informação do usuário (o nome dele, nome de tela, número de seguidores, de amigos e de tuítes, etc.).
+
+
+==Modos do mudo==[mute]
+
+Tem-se inúmeras opções para determinar quais sons o Qwitter faz. Por padrão, o modo mudo encontra-se completamente desligado. Pode ajustar essas opções na guia sons da janela de configuração do Qwitter, que se acessa a pressionar control-shift-windows-o, ou pode ir alternando os modos com control-windows-m. Tem as seguintes opções:
+
+- Mudo a receber: o Qwitter não anuncia o número de tuítes que chegam nem toca o som;
+- Tudo mudo exceto a receber: os sons para tuítes que chegam ficam ativados e todos os outros são desligados;
+- Tudo mudo: nenhum som;
+- Nada mudo: a configuração padrão; todos sons ativados.
+
+
+É possível também emudecer todas as sessões do Qwitter. Se quiser fazer isso de modo a não ouvir mais nada por parte do programa, pressione control-shift-windows-m.
+
+==Configurar a sessão de Twitter==[twitter-config]
+
+Estando numa sessão de Twitter, pode abrir a janela de configuração do Twitter pressionando control-windows-o. Essa janela mexe com opções que afetam somente a sessão de Twitter atual. Geralmente sugerimos que deixe essas opções no padrão até ter usado o Qwitter por um tempinho, mas explicamos brevemente nas seções abaixo de que se trata cada uma delas. Muitas serão ainda mais detalhadas depois.  A janela divide-se em seções ou guias. Pressione control-tab e control-shift-tab para navegar entre as seções várias. Ao terminar, pressione o botão OK. 
+
+===Guia Sons===[sounds]
+
+A primeira opção dessa guia é para escolher a coleção de sons que deseja. O Qwitter vem com apenas uma, mas o pessoal contribuiu com muitas outras que podem ser pegas na [Central de coleções de sons. http://www.qwitter-client.net/soundpacks.php] Ao pegar uma coleção de sons, descompacte-a na pasta de sons dentro daquela onde instalou o Qwitter. Por padrão é a C:\Arquivos de programas\qwitter\sounds.
+
+A opção seguinte mexe no státus do mudo. Os modos de mudo serão descritos [mais tarde. #mute]
+
+=== Guia modelos===[twitter-templates] 
+
+As opções dessa guia servem para configurar alguns [modelos #templates] do Qwitter. Isso é explicado depois, e não é preciso mexer nessas opções ao configurar uma sessão de Twitter pela primeira vez.
+
+Define-se a maioria dos modelos na janela de configuração dos exibidores. Já no caso desta guia, definem-se os modelos que afetam exibidores a serem criados depois, ou então modelos que não se podem configurar para cada exibidor em separado. Para facilitar, existe na guia um botão para alterar modelos de exibidores existentes, que simplesmente abre a janela de configuração dos exibidores.
+
+Há também modelos que controlam o formato de respostas e retuítes enviados. Recomenda-se fortemente deixá-los como estão, pois seguem padrões adotados pelo Twitter, que não é bom mexer.
+
+===Guia Diversos===[twitter-misc]
+
+Temos primeiramente o modo seguro para mensagens diretas. Essa opção é a primeira que você talvez queira alterar. Se marcada, toda vez que responder uma mensagem direta (aprenderemos sobre elas mais adiante), a resposta irá em forma de mensagem direta e não como menção pública. Você ficará também impedido de retwitar mensagens diretas.
+
+Quanto à opção que vem depois, se estiver marcada o Qwitter pedirá confirmação ao apagar tuítes ou mensagens diretas que você enviou.
+
+A opção "teclas Home e End comportam-se de maneira padrão" altera o que essas teclas fazem. Se marcada, elas vão para o início e o fim da linha atual ao invés de irem ao início ou ao fim do tuíte.
+
+Na opção seguinte você escolhe o encurtador de endereço preferido. Quando se escrevem tuítes, existe a opção de usar algum [serviço de encurtar endereços #url-short] a fim de liberar mais espaço para digitar. Mais tarde descrevemos melhor esse recurso.
+
+A próxima opção especifica como são enviados os retuítes. [Posteriormente em outra seção #retweets]explicamos essa opção e descrevemos em detalhes como se mexe com retuítes.
+
+A última opção dessa guia é responder a si mesmo. Se desmarcada, o Qwitter não lhe deixa postar uma resposta (mais sobre isso adiante) para si mesmo.
+
+==O sistema de modelos==[templates]
+
+É fácil personalizar a forma como o Qwitter anuncia informações. Isso se controla usando modelos. Os modelos são pequenas porções de texto que contêm instruções acerca do que o Qwitter deve falar ou copiar para a área de transferência. Elas começam com o sinal $ (cifrão). No modo mais simples e comum de uso, colocam-se variáveis no texto e o Qwitter as substitui pelas informações correspondentes. As variáveis que se podem usar são descritas nas tabelas mais abaixo. Existem também os modelos condicionais, mas estes são descritos mais tarde e não é necessário entendê-los para começar a usar modelos. Se por alguma razão quiser que o Qwitter use o sinal $ em algum modelo sem substituí-lo por outra coisa, use-o duas vezes, como $$. As chaves também são caracteres especiais, de modo que para usá-las você tem que escrever ${{ ou $}}.
+
+Configura-se a maioria dos modelos individualmente para cada exibidor, na janela de configuração dos exibidores acessada com control-alt-windows-o. Na guia modelos da janela de configuração do Twitter, acessada com control-windows-o, ficam os usados quando se criam novos exibidores, bem como aqueles para formatar os tuítes que você envia.
+
+===Modelos para formatar tuítes===[tweet-templates]
+
+Configuram-se os modelos que especificam como o Qwitter formata os tuítes na janela de configuração de exibidores, chamada com control-windows-alt-o. Cada guia de exibidor contém duas opções de modelos. Podem-se assim definir em separado o formato para fala e o formato dos tuítes copiados para a área de transferência. A janela de configuração do Twitter, acessada com control-windows-o, tem também um modelo padrão que se aplica a novos exibidores, bem como um modelo para resultados de buscas. A tabela seguinte lista as variáveis que pode usar para personalizar os formatos:
+
+|| Variável | Descrição |
+| $time | A hora exata que o tuíte foi postado. |
+| $date | A data que o tuíte foi postado. |
+| $when | Há quanto tempo aproximadamente o tuíte foi enviado. |
+| $name | O nome da pessoa que enviou o tuíte. Note que essa variável não está disponível no modelo para buscas. Isso é uma limitação do Twitter. |
+| $screen_name | O nome de tela do usuário que postou o tuíte. |
+| $message | O texto do tuíte. |
+| $from | O nome do cliente de Twitter usado para postar o tuíte atual, ou "web" caso tenha sido postado direto pelo twitter.com. |
+| $index | o número que representa o local do tuíte no exibidor, sendo 1 o mais novo. |
+| $total | O número total de tuítes no exibidor atual. É útil quando usado com o $index. Por exemplo, $index de $total diz algo como 30 de 165. |
+| $geo | Indica se há dados de local em um tuíte ou não. Fica bem como parte de um modelo condicional (ver abaixo). |
+| $dm | Indica que o tuíte é uma mensagem direta. Usa-se geralmente no exibidor enviados como parte de um modelo condicional, combinada com a $rcpt_name. |
+| $rcpt_name | O destinatário de uma mensagem direta. Usa-se geralmente como parte de um modelo condicional, com a $dm. |
+| $nl | Cria uma linha nova; útil em modelos para área de transferência. |
+
+===Modelos para formatar informações de usuário===[user-info-templates]
+
+Há também modelos que especificam o que é falado quando o Qwitter apresenta informações sobre usuários. Localizam-se na guia modelos da janela de configuração do Twitter. O modelo padrão para amigos/seguidores determina o falado ao consultar aquelas listas. Já o modelo para informações de usuário determina os itens falados quando se pressiona control-windows-ponto e vírgula. A seguinte tabela lista as possíveis variáveis para esses modelos. Além das abaixo mencionadas, a $index e a $total também aplicam-se como descritas acima:
+
+|| Variável | Descrição |
+| $name | O nome verdadeiro do usuário. |
+| $screen_name | O nome de tela do usuário no Twitter. |
+| $location | Quaisquer informações de local que o usuário houver especificado no perfil do Twitter. |
+| $bio | A mensagem de apresentação do usuário. |
+| $url | A página do usuário na Internet caso exista. |
+| $followers_count | O número de seguidores do usuário. |
+| $friends_count | O número de amigos do usuário. |
+| $tweets_count | O número de tuítes que o usuário postou desde que aderiu ao Twitter. |
+| $when | Há quanto tempo aproximadamente o usuário aderiu ao Twitter. |
+| $date | Data que o usuário aderiu ao Twitter. |
+| $time | Hora exata que o usuário aderiu ao Twitter. Fica bem após $data. |
+| $local_time | Hora atual no fuso horário do usuário. |
+| $local_date | Data no fuso horário do usuário. |
+| $last_tweet_when | Há quanto tempo aproximadamente o usuário postou pela última vez. Disponível somente nos modelos para amigos e seguidores. |
+| $last_tweet_date | Data do último tuíte do usuário. Disponível somente nos modelos para amigos e seguidores. |
+| $protected | Indica se o usuário protegeu os próprios tuítes. Disponível somente nos modelos para amigos e seguidores. |
+
+===Modelos condicionais===[conditional]
+
+Tratam-se de modelos com os quais pode-se exercer mais controle sobre o que o Qwitter diz, com base no conteúdo das variáveis. Os modelos padrão já trazem alguns interessantes. Se por acaso não compreender a explicação que segue ou não estiver interessado nos condicionais pode ignorar esta parte, já que é opcional.
+
+O formato de um modelo condicional é este:
+
+$if(condição){se_verdadeiro}{se_falso}
+
+Pode deixar o {se_falso} fora se não precisar que o Qwitter diga algo no caso de a condição não ser satisfeita.
+
+Eis alguns exemplos. A forma mais simples serve apenas para o Qwitter dizer algo se uma variável for verdadeira ou falsa. O formato padrão do exibidor enviados usa o seguinte condicional para determinar se o tuíte é uma mensagem direta e, caso seja, dizer o nome do destinatário.
+
+$if(dm){direta para $rcpt_name:}
+
+No caso, essa parte do modelo não diz nada se a mensagem for um tuíte regular, vez que a seção {se_falso} não foi incluída.
+
+Outro exemplo é lidar com dados de local. Como a maioria dos tuítes não possui essa informação, o modelo padrão marca os que possuem usando este condicional:
+
+$if(geo){*geo*}
+
+Agora vejamos um exemplo que usa os comandos {se_verdadeiro} e {se_falso}. Você poderia pôr o seguinte condicional no modelo de informações de usuário ou no de seguidores/amigos para saber se a pessoa protegeu ou não os próprios tuítes:
+
+$if(protected){tuítes protegidos}{tuítes públicos}
+
+Os condicionais também aceitam instruções conhecidas como operadores relacionais. Você talvez precise aumentar o nível de pontuação do seu leitor de telas ou ler caractere por caractere para entender bem o que segue. Um possível uso para esses operadores seria fazer por exemplo o Qwitter falar coisas diferentes dependendo de quantas pessoas seguem um dado usuário. Você no caso colocaria o condicional seguinte no modelo de informações de usuário ou no de seguidores/amigos e ele apontaria os usuários com muitos seguidores:
+
+$if(followers_count >= 1000){usuário popular}
+
+Os operadores relacionais são bem mais poderosos que nesse exemplo. Uma análise completa de potenciais aplicações para eles está além do escopo deste documento. Aqui vai uma lista dos diversos operadores que se podem usar:
+
+|| Operador | significado |
+| == | Igual a |
+| < | Menor que |
+| <= | Menor que ou igual a |
+| > | Maior que |
+| >= | Maior que ou igual a |
+| <> or != | Diferente de |
+
+=Procurar na Internet usando o Bing=[bing]
+
+Agora é possível com o Qwitter, estando em qualquer lugar do sistema, fazer buscas na Internet usando o motor Bing da Microsoft. Pressione control-shift-windows-n, escolha Bing e dê um nome à sessão.
+
+==Procurar páginas web==[bing-search]
+
+Para começar uma pesquisa, pressione control-windows-/. Abrir-se-á a janela de buscas no Bing. Digite o termo a consultar e pressione Enter. Cada busca feita é posta num exibidor próprio. Você é colocado no primeiro resultado da busca e move-se por eles com control-windows-setas cima e baixo. Pressione control-windows-Enter para carregar o resultado selecionado no navegador padrão.
+
+==Procurar notícias recentes==[bing-news]
+
+É possível usar o Bing para pesquisar notícias e artigos jornalísticos recentes. Para iniciar uma busca de notícias, pressione control-windows-n, digite os termos da busca e pressione enter. É criado um novo exibidor com os artigos mais recentes que condizem com o termo pesquisado, ordenados por data. Use control-windows-enter para carregar um artigo no navegador.
+
+=Solona=[solona]
+
+==O que é o Solona ?==[solona-description]
+
+Provavelmente você vez por outra passa por alguma página de Internet que pede para resolver uma CAPTCHA, quer para cadastrar-se, comentar em um blog, etc. CAPTCHAS são aquelas palavras ou números distorcidos que se tem de transcrever em um campo de edição para provar que você não é um programa de computador. O problema é exatamente este. Uma vez que elas são pensadas para ser ilegíveis por qualquer programa, isso inclui programas legítimos, como os leitores de tela. Aí é que entra o serviço Solona. O Solona é um serviço com base em voluntários destinado a resolver CAPTCHAs para pessoas cegas. O Qwitter automatiza por completo o processo de submeter uma CAPTCHA ao Solona e receber de volta a solução.
+
+==Configurar o Solona==[solona-session]
+
+Caso não haja ainda se cadastrado, acesse www.solona.net. Selecione o linque registrar o preencha o formulário.
+
+Agora pressione control-windows-shift-n para acessar a janela de nova sessão. Escolha Solona, pressione tab e nomeie a sessão como quiser. Daí aparece a janela de configuração do Solona. Insira o nome de usuário e a senha que escolheu na página do Solona e pressione Enter. Essa janela tem também a guia opções. Aí pode escolher se as soluções de CAPTCHA devem ser mostradas numa caixa de mensagem ou copiadas automaticamente para a área de transferência. Assim que houver feito tudo nessa janela você estará pronto para submeter CAPTCHAs ao Solona automaticamente.
+
+==Submeter uma CAPTCHA ao solona==[captcha-submit]
+
+Entre com o navegador na página que contém o CAPTCHA a ser resolvido. Por questões de privacidade, sugere-se primeiro submeter a CAPTCHA ao Solona e somente depois preencher qualquer informação pessoal. Encontre o campo onde deve digitar o texto da imagem. Entre no modo de formulário do JAWS, modo de foco no NVDA ou desligue o modo de navegação no Window-Eyes.
+
+Caso esteja em outra sessão do Qwitter, pressione control-shift-windows-seta direita até chegar à sessão do Solona. O Qwitter certificar-se-á que existe alguém do Solona à disposição para atender à solicitação e não submeterá a CAPTCHA se o Solona estiver fora do ar. Você mesmo pode checar o status do Solona pressionando control-windows-s. Pressione então control-windows-c para submeter a CAPTCHA. O Qwitter dirá que está capturando a tela, e uns segundos depois dirá que está submetendo a imagem. Após cerca de um minuto vai aparecer uma caixinha de mensagem com a solução da CAPTCHA. Selecione a solução que o Solona devolveu com control-a e copie-a para a área de transferência com control-c. Pressione então o botão fechar para descartar a mensagem. Aí cole o resultado no formulário com control-v, preencha o restante e envie como de costume. Simples assim.
+
+Pode configurar o Qwitter de modo que ele copie a solução para a área de transferência automaticamente. Pressione control-windows-o para abrir a janela de configuração do Solona. A única opção aí é escolher se é mostrada a mensagem com a solução ou se esta é copiada automaticamente.
+
+É também possível submeter uma imagem que você tenha capturado de algum outro jeito pressionando control-windows-alt-f.
+
+=O cronômetro=[stopwatch]
+
+O Qwitter pode servir até como um ótimo cronômetro para contagens de tempo normais e regressivas. Abra a janela de nova sessão com control-shift-windows-n, selecione "stopwatch" como tipo de sessão, dê-lhe um nome e pressione OK.
+
+Pressione control-windows-c para criar uma contagem regressiva. Insira o tempo que deseja pôr no cronômetro e pressione OK. O Qwitter anunciará quando o tempo estiver esgotado, não importando em qual sessão esteja a trabalhar. Estando na sessão do cronômetro, pode checar quanto tempo falta no exibidor da contagem regressiva.
+
+Pressione control-windows-Enter para dar início a uma contagem de tempo normal (progressiva). Pressionando novamente o cronômetro pára e anuncia quanto tempo passou.
+
+=Personalizar o Qwitter=[customize]
+
+==Janela de configuração principal do Qwitter==[main-config]
+
+Pode pressionar control-shift-windows-o para abrir a janela de configuração principal do Qwitter. Essa janela controla as opções de configuração usadas pelo programa como um todo. Sugerimos que as deixe no padrão até que haja usado o Qwitter por um tempo, mas explicamos nas seções abaixo de que se tratam. A janela é dividida em seções, ou guias. Pressione control-tab para mover entre as seções. Ao terminar, pressione o botão OK.
+
+===Guia Idioma===[language]
+
+Nessa guia pode escolher em qual idioma quer que as mensagens do Qwitter estejam. Existem já vários e é bastante fácil adicionar outros.
+
+===Guia Fala===[speech-tab]
+
+O primeiro item dessa guia, Saída de fala, está como automática. Dificilmente você precisará alterá-la, já que o Qwitter detecta automaticamente o leitor de telas em uso. Se ele não detectar nenhum leitor de telas suportado, ou se você não estiver usando algum, será usada a voz SAPI que seja a padrão no painel de controle do Windows. Caso por alguma razão não queira usar um leitor de telas, mesmo que esteja rodando algum, escolha a opção SAPI.
+
+As duas opções que seguem são bastante autoexplicativas; permitem alterar a velocidade e o volume da voz SAPI caso tenha optado por usar alguma no Qwitter.
+
+A última opção dessa guia serve para habilitar e desabilitar o reconhecimento de voz no Qwitter. Pode também fazer isso a qualquer momento com as teclas shift-windows-s.
+
+===Guia navegação===[navigation]
+
+A primeira opção, porcentagem pela qual mover, controla quão longe o Qwitter pula entre itens quando se usam os comandos de mover por percentagem, control-windows-pageUp ou pageDown.
+
+As outras duas opções determinam quão longe ele pula ao usarem-se os comandos de mover por tempo, control-shift-windows-pageUp ou pageDown. São elas: tempo pelo qual mover em horas:minutos (horas) e tempo pelo qual mover em horas:minutos (minutos). A primeira caixa determina quantas horas o Qwitter deve saltar e a segunda quantos minutos deve mover. Por exemplo, se na caixa horas estiver 1 e na caixa minutos 5, ele vai saltar uma hora e cinco minutos para frente ou para trás dependendo do comando.
+
+A última opção dessa guia é o tamanho da pilha do desfazer. Ele determina o número máximo de desfazeres possível. Por exemplo, se o valor na caixa for 100, significa que pode desfazer os últimos 100 comandos.
+
+===Guia Braile===[braille]
+
+Existe atualmente uma opção nessa guia apenas. A caixa de seleção texto falado em braile determina se o suporte a braile do Qwitter deve ser usado.
+
+===Guia Diversos===[main-misc-tab]
+
+A primeira opção dessa guia é bem autoexplicativa. Caso não queira ser interpelado quando for sair do Qwitter, desmarque a caixa de seleção mostrar confirmação.
+
+A opção "teclas Home e End comportam-se de maneira padrão" altera o que essas teclas fazem. Se marcada, elas vão para o início e o fim da linha atual ao invés de irem ao início ou ao fim do tuíte.
+
+==Trocar as teclas de atalho padrão==[keymap]
+
+Todas as teclas do Qwitter podem ser facilmente mudadas. Pressione control-windows-k para acessar o gestor de teclas de atalho. Serão mostradas todas as teclas que podem ser usadas na sessão atual. Pode alterar uma dada tecla com o botão editar, ou mesmo removê-la com o botão apagar. Caso remova a tecla para uma função, pode associar depois alguma novamente com o botão adicionar.
+
+Você pode executar de modo rápido qualquer função do Qwitter a partir do gestor de teclas. Apenas localize o comando que quer rodar e pressione o botão "Executar Função".
+
+=Sair do Qwitter=[quit]
+
+Se por alguma razão quiser fechar o Qwitter, use control-windows-F4. Será exibida uma janela de confirmação.
+
+=Modo portátil=[portable]
+
+Se você executar o Qwitter com a opção -p ou --portable na linha de comando ou em um atalho, ele vai rodar no modo portátil, quer dizer, qualquer arquivo que ele leia ou escreva será mantido na pasta atual do Qwitter, tornando-o ideal para uso num dispositivo móvel.
+
+=Suporte técnico=[technical-support]
+
+==Problemas na API do Twitter==[api-trouble]
+
+Se de repente começar a ter problemas com uma sessão de Twitter que antes funcionava bem, é quase certo que o problema ocorre na API do próprio Twitter e não no Qwitter. Que a página do Twitter esteja funcionando normalmente não reduz a probabilidade de a API para aplicativos externos encontrar-se instável. Veja na [página de status do Twitter http://status.twitter.com] se ocorrem no momento problemas sabidos na API. Seguem algumas situações já reportadas. Não precisa reportá-las de novo, já que os desenvolvedores do Qwitter nada podem fazer nesses casos.
+
+- Caso não consiga logar e tenha certeza que as credenciais estão corretas, algum problema ocorre com o Twitter;
+- Caso o Qwitter não consiga postar um tuíte mas este continue sendo exibido, é porque o Twitter informou um status errado ao Qwitter. O Qwitter pode apenas lhe informar o que a API reportou. Por exemplo: esse tipo de situação aconteceu muito nos primeiros jogos da Copa do Mundo de 2010, quando então o Twitter ficava sobrecarregado;
+- O Twitter pode alterar o número de chamadas que se podem usar por hora quando o serviço estiver particularmente ocupado. É possível configurar, para cada exibidor, quão freqüentemente ele checa com o Twitter se há postagens novas. Sempre que o limite de chamadas ficar mais baixo, ajuste esse intervalo para evitar que esgotem rápido. Os valores padrão geralmente bastam.
+
+
+==Aparece uma mensagem dizendo que o aplicativo não pode iniciar porque a configuração está incorreta.==[configuration-error]
+
+Em certas ocasiões o pessoal recebe esse erro. Tem-se de instalar alguns componentes da Microsoft. Existem felizmente linques para os mesmos na nossa página de downloads.
+
+Procure o linque que diz "The Visual C++ 2008 SP1 Redistributable." Mas esteja certo de pegar o correto pois existe um para sistemas de 32 bits e outro para os de 64 bits.
+
+==Aparece uma mensagem dizendo que o programa não pode iniciar porque o arquivo de log não pôde ser acessado.==[logfile-error]
+
+Em sistemas a partir do Windows Vista o pessoal às vezes recebe esse erro à primeira vez que roda o Qwitter. Há uma correção simples.
+
+Localize o ícone do Qwitter e pressione shift-F10 ou a tecla de aplicações se a tiver. Desça até executar como administrador e pressione Enter. Vai aparecer uma janela de controle de contas de usuário a perguntar se quer permitir o acesso do aplicativo ao computador. Responda sim e o Qwitter deve passar a iniciar de modo normal.
+
+De notar que só é necessário fazer isso uma vez.
+
+==Ao ler os tuítes, diz a hora incorreta.==[timezone]
+
+Para que o Qwitter diga a hora correta que um tuíte foi postado, o fuso horário deve estar corretamente configurado na página do Twitter e também no seu computador. Eis como verificar as configurações de fuso horário:
+
+Para acertar o fuso horário no Twitter, faça login na página e entre no link "settings". Ali tem várias opções, inclusive uma para escolher o fuso horário. Uma vez que o escolha e pressione o botão "save", talvez o Twitter peça de novo a sua senha para confirmar as mudanças.
+
+Agora abra o painel de controle do Windows e selecione Data e Hora. Ali pode acertar a hora, a data e o fuso horário. Acertar apenas a hora não basta; o Qwitter continua dizendo a hora errada se o fuso horário não estiver também correto.
+
+==Ao escrever um tuíte, é difícil ler com o JAWS o que eu já escrevi.==[mctwit-scripts-error]
+
+Sabe-se que existe um conflito entre o Qwitter e os scripts do JAWS para o aplicativo McTwit. O JAWS associa as janelas do Qwitter aos scripts para o McTwit e essa combinação dá problemas. De momento a única solução que se conhece é remover do sistema os scripts para o McTwit. O McTwit já é bastante acessível sem eles.
+
+==Tenho uma questão/comentário não tratado neste manual.==[contact]
+
+Fizemos o possível para que este documento tenha explicado em detalhes todos e cada aspecto do Qwitter. Caso já o tenha vasculhado cuidadosamente e não conseguiu encontrar a informação que precisa, a melhor maneira de tê-la respondida é postar na lista de discussão qwitter-discuss (no momento apenas em Inglês). Essa lista tem gente pronta a auxiliar. Há duas formas de inscrever-se na lista. Pode enviar um e-mail em branco para qwitter-discuss-request@lists.qwitter-client.net ou então ir à [página da lista. http://lists.qwitter-client.net/listinfo.cgi/qwitter-discuss-qwitter-client.net] Seja como for, vai receber uma mensagem de confirmação a qual tem de responder.
+
+Se tiver sugestões de novos recursos para o Qwitter ou caso creia ter encontrado um bug, a [página de registros http://trac.qwitter-client.net] é o local correto. Tem-se que criar uma conta antes de fazer registros ali. Isso é rápido, gratuito e se faz em minutos. No futuro fica mais simples, já que a conta só se cria uma vez.
+
+Tem que saber algumas coisas antes de criar registros (ou "tickets" em Inglês). Primeiro, dê uma lida nos já criados por outras pessoas. Alguém pode ter postado o mesmo bug ou idéia, que pode inclusive já ter sido corrigido ou estar a caminho para a próxima versão. Assim evita-se duplicação de trabalho para os desenvolvedores.
+
+Por último, forneça detalhes suficientes do problema para que este seja bem compreendido. Não precisa escrever um texto longo, mas tem que dizer o que está fazendo quando o problema ocorre, qual leitor de telas está usando e se o Qwitter encerra-se de modo inesperado quando ele acontece. Se aparecer alguma mensagem de erro, copie e cole exatamente como aparece. Se algo não funciona bem mas o Qwitter não diz nenhuma mensagem de erro, ou se o Qwitter fecha-se de repente, anexe se possível o arquivo %appdata%\qwitter.log. Isso ajudará os desenvolvedores a identificarem o problema de modo mais efetivo.
+
+=Créditos=[credits]
+
+A idéia de um cliente de Twitter sem interface visível foi do Sean Randall, [@cachondo no Twitter http://www.twitter.com/cachondo], que originalmente escreveu o [Jawter http://randylaptop.com/software/jawter-2/all/1/].
+
+Christopher Toth, o [@Mongoose_Q no Twitter http://www.twitter.com/mongoose_q], é responsável pela maior parte do código do Qwitter, logo se algo der defeito, provavelmente será melhor culpá-lo primeiro.
+
+hllf, o [@hllf no Twitter http://www.twitter.com/hllf], é responsável em grande parte pelos recursos avançados do Twitter que o Qwitter suporta. Ele contribui com código quando encontra tempo e gosta de corrigir os bugs que nos incomodam.
+
+Haden Pike, o [@hadenpike no Twitter http://www.twitter.com/hadenpike], tem realizado um trabalho notável no Qwitter ajudando o @Mongoose_Q quando não precisa ir à Escola.
+
+Paul, o [@webboy42 no Twitter http://www.twitter.com/webboy42], reescreveu o sistema de modelos e o exportador. É alguém de muita opinião e tem uma vida bastante ativa no Twitter enquanto vai programando funções particularmente intrincadas.
+
+David Sexton, o [@Daiverd no Twitter http://www.twitter.com/Daiverd], contribui de tempos em tempos com algum código, em especial no que toca a encerrar o Qwitter.
+
+Jason White, o [@Coderunner no Twitter http://www.twitter.com/coderunner], está por trás de alguns aspectos importantes da janela de configuração.
+
+Matt Campbell, o [@mwcampbell1980 no Twitter http://www.twitter.com/mwcampbell1980], adicionou ao Qwitter suporte ao System Access.
+
+Nehemiah Hall, o [@MiahTech no Twitter http://www.twitter.com/MiahTech], foi responsável pelo texto original deste manual e geralmente contribui com idéias.
+
+Justin Ekis, o [@jekis no Twitter http://www.twitter.com/jekis], mantém atualizado este manual.
+
+Chris Nestrud, o [@IAmChrisN no Twitter http://www.twitter.com/IAmChrisN], assiste no processo de tornar e manter o Qwitter o melhor cliente que existe.

@@ -1,0 +1,3474 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-12-18 11:26+0100\n"
+"PO-Revision-Date: 2010-12-18 12:36+0100\n"
+"Last-Translator: cucciolotta1990 <cannone.la@virgilio.it>\n"
+"Language-Team: cucciolotta1990 <cannone.la@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
+"X-Poedit-Basepath: c:\\users\\laura\\qwitter\n"
+"X-Poedit-Language: Italian\n"
+"X-Poedit-Country: ITALY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-SearchPath-0: src\n"
+
+#: src/meta_interface.py:37
+#, python-format
+msgid "%s Configuration"
+msgstr "Configurazione di %s"
+
+#: src/meta_interface.py:39
+msgid "Configuration saved."
+msgstr "Configurazione salvata."
+
+#: src/meta_interface.py:47
+#, python-format
+msgid "Exit %s"
+msgstr "Esci da %s"
+
+#: src/meta_interface.py:47
+#, python-format
+msgid "Are you sure you wish to exit %s?"
+msgstr "Sei sicuro di voler uscire da %s?"
+
+#: src/meta_interface.py:49
+#: src/meta_interface.py:108
+#: src/meta_interface.py:146
+msgid "Canceled."
+msgstr "Annullato."
+
+#: src/meta_interface.py:51
+#, python-format
+msgid "Exiting %s."
+msgstr "Uscita da %s."
+
+#: src/meta_interface.py:64
+msgid "Speech recognition off."
+msgstr "Riconoscimento vocale disattivato."
+
+#: src/meta_interface.py:68
+msgid "Speech recognition on."
+msgstr "Riconoscimento vocale attivato."
+
+#: src/meta_interface.py:94
+#: src/meta_interface.py:101
+msgid "Error: this is the only session."
+msgstr "Errore: questa è l'unica sessione."
+
+#: src/meta_interface.py:102
+#, python-format
+msgid "Permanently delete all data associated with session %s?"
+msgstr "Eliminare definitivamente tutti i dati associati alla sessione %s?"
+
+#: src/meta_interface.py:102
+msgid "Delete Session"
+msgstr "Elimina sessione"
+
+#: src/meta_interface.py:120
+msgid "Please enter a name for this session."
+msgstr "Per favore, inserisci un nome per questa sessione."
+
+#: src/meta_interface.py:125
+#, python-format
+msgid "Unable to spawn new %s session."
+msgstr "Impossibile aprire la nuova sessione %s."
+
+#: src/meta_interface.py:135
+#, python-format
+msgid "Syncing storage to disk for %s session."
+msgstr "Sincronizzazione dati sul disco per la sessione %s."
+
+#: src/meta_interface.py:143
+#, python-format
+msgid "Rename %s session"
+msgstr "Rinomina sessione %s"
+
+#: src/meta_interface.py:143
+#, python-format
+msgid "Please enter a new name for session %s:"
+msgstr "Per favore, inserisci un nuovo nome per la sessione %s:"
+
+#: src/meta_interface.py:148
+#, python-format
+msgid "Renaming session %s to %s, please wait."
+msgstr "Ridenominazione sessione %s in %s, attendi per favore."
+
+#: src/meta_interface.py:152
+#, python-format
+msgid "There was an error renaming %s to %s: %s"
+msgstr "C'è stato un errore nel rinominare %s in %s: %s"
+
+#: src/meta_interface.py:153
+msgid "Renaming session complete."
+msgstr "Ridenominazione sessione completa."
+
+#: src/misc.py:90
+#, python-format
+msgid "less than %d second"
+msgstr "Meno di %d secondi"
+
+#: src/misc.py:91
+#, python-format
+msgid "%d second"
+msgstr "%d secondo"
+
+#: src/misc.py:92
+#, python-format
+msgid "%d seconds"
+msgstr "%d secondi"
+
+#: src/misc.py:93
+#, python-format
+msgid "%d minute"
+msgstr "%d minuto"
+
+#: src/misc.py:94
+#, python-format
+msgid "%d minutes"
+msgstr "%d minuti"
+
+#: src/misc.py:95
+#, python-format
+msgid "%d hour"
+msgstr "%d ora"
+
+#: src/misc.py:96
+#, python-format
+msgid "%d hours"
+msgstr "%d ore"
+
+#: src/misc.py:97
+#, python-format
+msgid "%d day"
+msgstr "%d giorno"
+
+#: src/misc.py:98
+#, python-format
+msgid "%d days"
+msgstr "%d giorni"
+
+#: src/misc.py:99
+#, python-format
+msgid "%d week"
+msgstr "%d settimana"
+
+#: src/misc.py:100
+#, python-format
+msgid "%d weeks"
+msgstr "%d settimane"
+
+#: src/misc.py:101
+#, python-format
+msgid "%d month"
+msgstr "%d mese"
+
+#: src/misc.py:102
+#, python-format
+msgid "%d months"
+msgstr "%d mesi"
+
+#: src/misc.py:103
+#, python-format
+msgid "%d year"
+msgstr "%d anno"
+
+#: src/misc.py:104
+#, python-format
+msgid "%d years"
+msgstr "%d anni"
+
+#: src/output.py:29
+#, python-format
+msgid "No items in %s buffer."
+msgstr "Nessun elemento nel buffer %s."
+
+#: src/output.py:67
+msgid "No current buffer."
+msgstr "Nessun buffer corrente."
+
+#: src/output.py:71
+#, python-format
+msgid "%s: No items."
+msgstr "%s: nessun elemento."
+
+#: src/output.py:73
+#, python-format
+msgid "%s: %d of %d items."
+msgstr "%s: %d di %d elementi."
+
+#: src/output.py:79
+#, python-format
+msgid "Item %d of %d."
+msgstr "%d di %d elemento."
+
+#: src/output.py:86
+msgid "No current session."
+msgstr "Nessuna sessione corrente."
+
+#: src/sessions.py:149
+msgid "There was an error spawning previously-loaded sessions.  Please send your log to the Qwitter development staff.  Activating new session dialog."
+msgstr "C'è stato un errore nell'aprire la sessione precedentemente caricata. Per favore, invia il tuo log allo staff di sviluppo di Qwitter. Attivazione nuova sessione dialogo."
+
+#: src/core/dialogs/gui.py:13
+msgid "&Tweet"
+msgstr "&Tweet"
+
+#: src/core/dialogs/gui.py:13
+msgid "Post a new tweet"
+msgstr "Pubblica un nuovo tweet"
+
+#: src/core/dialogs/gui.py:14
+msgid "&Direct message"
+msgstr "&Messaggio diretto"
+
+#: src/core/dialogs/gui.py:14
+msgid "Post a new direct message"
+msgstr "Invia un nuovo messaggio diretto"
+
+#: src/core/dialogs/gui.py:15
+msgid "New"
+msgstr "Nuovo"
+
+#: src/core/dialogs/gui.py:29
+msgid "Select a buffer:"
+msgstr "Seleziona un buffer:"
+
+#: src/core/dialogs/list_urls.py:15
+msgid "URL Selection"
+msgstr "Selezione URL"
+
+#: src/core/dialogs/list_urls.py:19
+msgid "Select URL to open"
+msgstr "Seleziona URL da aprire"
+
+#: src/core/dialogs/list_urls.py:23
+msgid "&Unshorten URL"
+msgstr "&Espandi URL"
+
+#: src/core/dialogs/list_urls.py:27
+msgid "&Copy URL"
+msgstr "&copia URL"
+
+#: src/core/dialogs/list_urls.py:52
+msgid "URL expanded."
+msgstr "URL espanso."
+
+#: src/core/dialogs/list_urls.py:55
+msgid "Unable to expand URL"
+msgstr "Impossibile espandere URL"
+
+#: src/core/dialogs/list_urls.py:70
+msgid "URL copied to clipboard."
+msgstr "URL copiato negli appunti."
+
+#: src/core/dialogs/login.py:11
+msgid "Username"
+msgstr "Username"
+
+#: src/core/dialogs/login.py:13
+msgid "Password"
+msgstr "Password"
+
+#: src/core/dialogs/new_message.py:51
+#: src/core/dialogs/selectable_message.py:30
+#, python-format
+msgid "%s - %d of %d Characters"
+msgstr "%s - %d di %d caratteri"
+
+#: src/core/dialogs/new_message.py:73
+msgid "URL Shortener - No URLs"
+msgstr "Riduttore URL - nessun URL"
+
+#: src/core/dialogs/new_message.py:74
+msgid "No URLs were found to shorten. If there is one, select the URL and click this button again."
+msgstr "Nessun URL trovato per la riduzione. Se ce n'è uno, seleziona l'URL e premi di nuovo questo pulsante."
+
+#: src/core/dialogs/new_message.py:88
+msgid "URL Shortener - Select URL"
+msgstr "Riduttore URL - seleziona URL"
+
+#: src/core/dialogs/new_message.py:89
+msgid "Select URL to shorten."
+msgstr "Seleziona URL da accorciare."
+
+#: src/core/dialogs/new_message.py:105
+msgid "URL Shortened."
+msgstr "URL accorciato."
+
+#: src/core/dialogs/new_message.py:108
+msgid "URL Shortener - Problem"
+msgstr "Riduttore URL - problema"
+
+#: src/core/dialogs/new_message.py:109
+msgid "There was a problem shortening the selected URL."
+msgstr "C'è stato un problema nell'accorciare l'URL selezionato."
+
+#: src/core/dialogs/new_message.py:123
+msgid "URL Unshortener - No URLs"
+msgstr "Espansore URL - nessun URL"
+
+#: src/core/dialogs/new_message.py:124
+msgid "No URLs were found to unshorten. If there is one, select the URL and click this button again."
+msgstr "Nessun URL trovato per l'espansione. Se ce n'è uno, seleziona l'URL e premi di nuovo questo pulsante."
+
+#: src/core/dialogs/new_message.py:138
+msgid "URL Unshortener - Select URL"
+msgstr "Espansore URL - seleziona URL"
+
+#: src/core/dialogs/new_message.py:139
+msgid "Select URL to unshorten."
+msgstr "Seleziona URL da espandere."
+
+#: src/core/dialogs/new_message.py:162
+msgid "URL Unshortener - Problem"
+msgstr "Espansore URL - problema"
+
+#: src/core/dialogs/new_message.py:163
+msgid "There was a problem unshortening the selected URL."
+msgstr "C'è stato un problema nell'espandere l'URL selezionato."
+
+#: src/core/dialogs/new_message.py:209
+msgid "Message:"
+msgstr "Messaggio:"
+
+#: src/core/dialogs/new_message.py:219
+msgid "&Shorten URL"
+msgstr "&Accorcia URL"
+
+#: src/core/dialogs/new_message.py:226
+msgid "Attach &Audio..."
+msgstr "Allega &audio..."
+
+#: src/core/dialogs/new_message.py:231
+msgid "S&chedule message..."
+msgstr "P&ianifica messaggio..."
+
+#: src/core/dialogs/new_message.py:243
+msgid "Attaching..."
+msgstr "Allegando..."
+
+#: src/core/dialogs/new_message.py:248
+msgid "There was an error attaching the file."
+msgstr "C'è stato un errore nell'allegare il file."
+
+#: src/core/dialogs/new_message.py:250
+msgid "File attached."
+msgstr "File allegato."
+
+#: src/core/dialogs/new_message.py:256
+msgid "Resetting currently-scheduled item."
+msgstr "Ripristino elemento pianificato attuale."
+
+#: src/core/dialogs/new_message.py:257
+msgid "Schedule message"
+msgstr "Pianifica messaggio"
+
+#: src/core/dialogs/new_message.py:261
+#, python-format
+msgid "Delaying for %s"
+msgstr "Ritardo di %s."
+
+#: src/core/dialogs/new_message.py:265
+msgid "&Translate Message..."
+msgstr "&Traduci messaggio..."
+
+#: src/core/dialogs/new_message.py:270
+msgid "Translate message"
+msgstr "Traduci messaggio"
+
+#: src/core/dialogs/new_message.py:281
+msgid "Translation process has failed."
+msgstr "Il processo di traduzione è fallito."
+
+#: src/core/dialogs/qwitter.py:59
+msgid "Destroyed..."
+msgstr "Distrutto..."
+
+#: src/core/dialogs/recording.py:16
+msgid "Attach audio"
+msgstr "Allega audio"
+
+#: src/core/dialogs/recording.py:23
+#: src/core/dialogs/recording.py:64
+msgid "&Record"
+msgstr "&Registra"
+
+#: src/core/dialogs/recording.py:25
+msgid "Attach existing audio &file..."
+msgstr "Allega &file audio esistente..."
+
+#: src/core/dialogs/recording.py:27
+#: src/core/dialogs/recording.py:114
+#: src/core/dialogs/recording.py:124
+msgid "&Play"
+msgstr "&Riproduci"
+
+#: src/core/dialogs/recording.py:30
+msgid "&Discard"
+msgstr "&Scarta"
+
+#: src/core/dialogs/recording.py:36
+msgid "&Attach!"
+msgstr "&Allega!"
+
+#: src/core/dialogs/recording.py:56
+#: src/core/dialogs/recording.py:110
+msgid "&Stop"
+msgstr "&Stop"
+
+#: src/core/dialogs/recording.py:57
+msgid "Recording."
+msgstr "Registrazione."
+
+#: src/core/dialogs/recording.py:62
+#: src/core/dialogs/recording.py:121
+msgid "Stopped."
+msgstr "Fermata."
+
+#: src/core/dialogs/recording.py:70
+msgid "Select audio file"
+msgstr "Seleziona file audio"
+
+#: src/core/dialogs/recording.py:96
+msgid "Discarded."
+msgstr "Scartato."
+
+#: src/core/dialogs/recording.py:108
+msgid "Playing."
+msgstr "Riproduzione."
+
+#: src/core/dialogs/recording.py:129
+msgid "Transcoding audio."
+msgstr "Transcodifica audio"
+
+#: src/core/dialogs/schedule.py:16
+msgid "Select scheduling method"
+msgstr "Seleziona metodo di pianificazione"
+
+#: src/core/dialogs/schedule.py:16
+msgid "Interval"
+msgstr "Intervallo"
+
+#: src/core/dialogs/schedule.py:16
+msgid "Time"
+msgstr "Tempo"
+
+#: src/core/dialogs/schedule.py:46
+msgid "Hours:"
+msgstr "Ore:"
+
+#: src/core/dialogs/schedule.py:48
+msgid "Minutes:"
+msgstr "Minuti:"
+
+#: src/core/dialogs/schedule.py:50
+msgid "Seconds:"
+msgstr "Secondi:"
+
+#: src/core/dialogs/schedule.py:62
+msgid "Hour:"
+msgstr "Ora:"
+
+#: src/core/dialogs/schedule.py:64
+msgid "Minute:"
+msgstr "Minuto:"
+
+#: src/core/dialogs/selectable_message.py:17
+msgid "Recipient:"
+msgstr "Destinatario:"
+
+#: src/core/dialogs/selectable_message.py:29
+#, python-format
+msgid "%s to %s"
+msgstr "%s a %s"
+
+#: src/core/dialogs/translate.py:11
+msgid "Auto detect"
+msgstr "Rileva automaticamente"
+
+#: src/core/dialogs/translate.py:16
+msgid "Translate"
+msgstr "Traduci"
+
+#: src/core/dialogs/translate.py:20
+msgid "Translate from"
+msgstr "Traduci da"
+
+#: src/core/dialogs/translate.py:25
+msgid "Translate into"
+msgstr "Traduci in"
+
+#: src/core/dialogs/configuration/dialog.py:8
+msgid "Configuration"
+msgstr "Configurazione"
+
+#: src/core/dialogs/configuration/main.py:19
+msgid "Language"
+msgstr "Lingua"
+
+#: src/core/dialogs/configuration/main.py:21
+msgid "Speech"
+msgstr "Sintetizzatore"
+
+#: src/core/dialogs/configuration/main.py:23
+msgid "Navigation"
+msgstr "Navigazione"
+
+#: src/core/dialogs/configuration/main.py:25
+msgid "Braille"
+msgstr "Braille"
+
+#: src/core/dialogs/configuration/main.py:27
+msgid "Miscellaneous"
+msgstr "Varie"
+
+#: src/core/dialogs/configuration/panels/braille.py:7
+msgid "Braille Output:"
+msgstr "Output braille:"
+
+#: src/core/dialogs/configuration/panels/braille.py:8
+msgid "Braille spoken text?"
+msgstr "Testo vocalizzato in Braille?"
+
+#: src/core/dialogs/configuration/panels/language.py:10
+msgid "Language Selection:"
+msgstr "Selezione lingua:"
+
+#: src/core/dialogs/configuration/panels/misc.py:10
+#, python-format
+msgid "Show confirmation dialog before exitting %s?"
+msgstr "Mostra il dialogo di conferma prima di uscire da %s?"
+
+#: src/core/dialogs/configuration/panels/misc.py:11
+msgid "Prefered URL Shortener:"
+msgstr "Riduttore URL preferito:"
+
+#: src/core/dialogs/configuration/panels/misc.py:14
+msgid "Perform standard actions with Home/End keys?"
+msgstr "Esegui azioni standard con i tasti home/fine?"
+
+#: src/core/dialogs/configuration/panels/navigation.py:7
+msgid "Move by percentage amount (as a %)"
+msgstr "Sposta per importo percentuale (come %)"
+
+#: src/core/dialogs/configuration/panels/navigation.py:11
+msgid "Move by time (defined as hours:minutes) hours"
+msgstr "Sposta per tempo (definito come ore/minuti) ore"
+
+#: src/core/dialogs/configuration/panels/navigation.py:15
+msgid "Move by time (defined as hours:minutes) minutes"
+msgstr "Sposta per tempo (definito come ore/minuti) minuti"
+
+#: src/core/dialogs/configuration/panels/navigation.py:19
+msgid "Undo stack size"
+msgstr "Numero azioni annullabili"
+
+#: src/core/dialogs/configuration/panels/speech.py:6
+msgid "Speech output"
+msgstr "Sintesi vocale"
+
+#: src/core/dialogs/configuration/panels/speech.py:9
+msgid "SAPI speech rate"
+msgstr "Velocità sintesi sapi"
+
+#: src/core/dialogs/configuration/panels/speech.py:14
+msgid "SAPI speech volume"
+msgstr "Volume sintesi sapi"
+
+#: src/core/dialogs/configuration/panels/speech.py:25
+msgid "Enable speech recognition?"
+msgstr "Attivare il riconoscimento vocale?"
+
+#: src/core/dialogs/qdm/add.py:8
+msgid "Entry:"
+msgstr "Voce:"
+
+#: src/core/dialogs/qdm/add.py:12
+msgid "Replacement:"
+msgstr "Sostituzione:"
+
+#: src/core/dialogs/qdm/add.py:16
+msgid "Case senative?"
+msgstr "Sensibile alle maiuscole?"
+
+#: src/core/dialogs/qdm/main.py:14
+msgid "Dictionary Entries"
+msgstr "Voci del dizionario"
+
+#: src/core/dialogs/qdm/main.py:18
+msgid "Add..."
+msgstr "Aggiungi..."
+
+#: src/core/dialogs/qdm/main.py:21
+msgid "Delete..."
+msgstr "Elimina..."
+
+#: src/core/dialogs/qdm/main.py:46
+msgid "Entry"
+msgstr "Voce"
+
+#: src/core/dialogs/qdm/main.py:47
+msgid "Replacement"
+msgstr "Sostituzione"
+
+#: src/core/dialogs/SessionManager/main.py:19
+msgid "Sessions:"
+msgstr "Sessioni:"
+
+#: src/core/dialogs/SessionManager/main.py:23
+msgid "&Switch to"
+msgstr "&Passa a"
+
+#: src/core/dialogs/SessionManager/main.py:25
+msgid "&Delete session..."
+msgstr "&Elimina sessione..."
+
+#: src/core/dialogs/SessionManager/main.py:27
+msgid "&New session..."
+msgstr "&Nuova sessione..."
+
+#: src/core/dialogs/SessionManager/main.py:46
+#, python-format
+msgid "Are you sure you want to close session %s?"
+msgstr "Sei sicuro di voler chiudere la sessione %s?"
+
+#: src/core/dialogs/SessionManager/main.py:46
+msgid "Remove session"
+msgstr "Rimuovi sessione"
+
+#: src/core/dialogs/SessionManager/main.py:60
+msgid "Type"
+msgstr "Tipo"
+
+#: src/core/dialogs/SessionManager/main.py:61
+msgid "Name"
+msgstr "Nome"
+
+#: src/core/dialogs/SessionManager/new_session.py:9
+msgid "New Session"
+msgstr "Nuova sessione"
+
+#: src/core/dialogs/SessionManager/new_session.py:11
+msgid "Session type:"
+msgstr "Tipo sessione:"
+
+#: src/core/dialogs/SessionManager/new_session.py:16
+msgid "Session name:"
+msgstr "Nome sessione:"
+
+#: src/google/maps/api.py:16
+msgid "planet"
+msgstr "Pianeta"
+
+#: src/google/maps/api.py:16
+msgid "country"
+msgstr "Paese"
+
+#: src/google/maps/api.py:16
+msgid "region"
+msgstr "Regione"
+
+#: src/google/maps/api.py:16
+msgid "sub-region"
+msgstr "Sub-regione"
+
+#: src/google/maps/api.py:16
+msgid "town"
+msgstr "Città"
+
+#: src/google/maps/api.py:16
+msgid "post code"
+msgstr "Codice postale"
+
+#: src/google/maps/api.py:16
+msgid "street"
+msgstr "Strada"
+
+#: src/google/maps/api.py:16
+msgid "intersection"
+msgstr "Intersezione"
+
+#: src/google/maps/api.py:16
+msgid "address"
+msgstr "Indirizzo"
+
+#: src/google/maps/api.py:16
+msgid "premise"
+msgstr "Posizione attuale"
+
+#: src/session/login.py:29
+msgid "Login succeeded."
+msgstr "Accesso riuscito."
+
+#: src/session/login.py:32
+msgid "Login failed."
+msgstr "Accesso fallito."
+
+#: src/session/speech_recognition.py:39
+msgid "Unable to initialize speech recognition."
+msgstr "Impossibile inizializzare il riconoscimento vocale."
+
+#: src/session/storage.py:59
+msgid "Sync failed."
+msgstr "Sincronizzazione fallita."
+
+#: src/session/storage.py:63
+msgid "Sync completed."
+msgstr "Sincronizzazione completata."
+
+#: src/session/bing/interface.py:21
+msgid "Bing! Search"
+msgstr "Bing! Ricerca"
+
+#: src/session/bing/interface.py:24
+#: src/session/bing/interface.py:43
+msgid "Please enter a term to search for."
+msgstr "Per favore, inserisci un termine da cercare:"
+
+#: src/session/bing/interface.py:33
+msgid "Opening website."
+msgstr "Apertura sito web."
+
+#: src/session/bing/interface.py:40
+msgid "Bing! News Search"
+msgstr "Bing! Ricerca notizie"
+
+#: src/session/bing/interface.py:45
+#, python-format
+msgid "Headlines for %s"
+msgstr "Notizie recenti per %s"
+
+#: src/session/bing/buffers/bing.py:11
+msgid "Title"
+msgstr "Titolo"
+
+#: src/session/bing/buffers/bing.py:12
+msgid "Item URL"
+msgstr "URL elemento"
+
+#: src/session/bing/buffers/news.py:17
+msgid "news story"
+msgstr "Storico notizie"
+
+#: src/session/bing/buffers/news.py:18
+msgid "news stories"
+msgstr "Ultime notizie"
+
+#: src/session/bing/buffers/news.py:21
+msgid "Story source"
+msgstr "Storico codice"
+
+#: src/session/bing/buffers/news.py:22
+msgid "Breaking news"
+msgstr "Ultime notizie"
+
+#: src/session/bing/buffers/news.py:23
+msgid "Snippet"
+msgstr "Frammento"
+
+#: src/session/bing/buffers/news.py:34
+#: src/session/bing/buffers/search.py:29
+#, python-format
+msgid "%s returned no results."
+msgstr "%s non ha prodotto risultati."
+
+#: src/session/bing/buffers/search.py:14
+msgid "search result"
+msgstr "Risultato della ricerca"
+
+#: src/session/bing/buffers/search.py:15
+msgid "search results"
+msgstr "Risultati della ricerca"
+
+#: src/session/bing/buffers/search.py:18
+msgid "Description"
+msgstr "Descrizione"
+
+#: src/session/bing/dialogs/news_search.py:9
+#: src/session/bing/dialogs/search.py:9
+msgid "Search:"
+msgstr "Ricerca:"
+
+#: src/session/buffers/interface.py:67
+#: src/session/buffers/interface.py:80
+msgid "Cannot move by time in this buffer."
+msgstr "Impossibile spostarsi per tempo in questo buffer."
+
+#: src/session/buffers/interface.py:117
+#: src/session/buffers/interface.py:127
+#, python-format
+msgid "No active buffers in %s session."
+msgstr "Nessun buffer attivo nella sessione %s."
+
+#: src/session/buffers/interface.py:135
+msgid "There are no buffers to dismiss."
+msgstr "Non ci sono buffers da nascondere."
+
+#: src/session/buffers/interface.py:137
+#: src/session/buffers/interface.py:143
+#, python-format
+msgid "Unable to dismiss buffer %s"
+msgstr "Impossibile nascondere il buffer %s"
+
+#: src/session/buffers/interface.py:163
+msgid "No buffers remaining."
+msgstr "Nessun buffer rimanente."
+
+#: src/session/buffers/interface.py:171
+msgid "Undo failed: stack empty"
+msgstr "Annullamento fallito: stack vuoto"
+
+#: src/session/buffers/interface.py:174
+msgid "Undo failed: buffer no longer exists"
+msgstr "Annullamento fallito: il buffer non esiste più"
+
+#: src/session/buffers/interface.py:187
+msgid "This buffer cannot be cleared."
+msgstr "Questo buffer non può essere cancellato."
+
+#: src/session/buffers/interface.py:188
+#, python-format
+msgid "Are you sure you want to delete %d items from %s?"
+msgstr "Sei sicuro di voler eliminare %d elementi da %s?"
+
+#: src/session/buffers/interface.py:188
+msgid "Clear buffer"
+msgstr "Cancella buffer"
+
+#: src/session/buffers/interface.py:204
+msgid "Item number too high."
+msgstr "Numero di elementi troppo alto."
+
+#: src/session/buffers/interface.py:219
+#, python-format
+msgid "Buffer %s does not support filtration."
+msgstr "Il buffer %s non supporta filtraggio."
+
+#: src/session/buffers/interface.py:221
+msgid "Processing.  Please wait."
+msgstr "Elaborazione. Attendi per favore."
+
+#: src/session/buffers/interface.py:236
+msgid "Item copied to clipboard."
+msgstr "Elemento copiato negli appunti."
+
+#: src/session/buffers/interface.py:251
+#: src/session/buffers/interface.py:259
+msgid "Moved"
+msgstr "Spostato"
+
+#: src/session/buffers/interface.py:266
+msgid "The export function is not available."
+msgstr "La funzione di esportazione non è disponibile."
+
+#: src/session/buffers/interface.py:268
+msgid "Export started, please wait."
+msgstr "Esportazione iniziata, attendi per favore."
+
+#: src/session/buffers/interface.py:272
+msgid "Export complete"
+msgstr "Esportazione completa"
+
+#: src/session/buffers/interface.py:284
+msgid "Export failed."
+msgstr "Esportazione fallita."
+
+#: src/session/buffers/interface.py:291
+msgid "No buffers in this session."
+msgstr "Nessun buffer in questa sessione."
+
+#: src/session/buffers/interface.py:296
+#: src/session/buffers/interface.py:298
+#: src/session/buffers/interface.py:300
+#: src/session/buffers/interface.py:302
+#: src/session/buffers/interface.py:304
+#, python-format
+msgid "%s Buffer Configuration"
+msgstr "Configurazione del buffer %s"
+
+#: src/session/buffers/interface.py:315
+msgid "Configuration canceled."
+msgstr "Configurazione annullata."
+
+#: src/session/buffers/interface.py:325
+msgid "Forcing updates is not permitted in this buffer."
+msgstr "L'aggiornamento forzato non è permesso in questo buffer."
+
+#: src/session/buffers/interface.py:332
+msgid "Item text:"
+msgstr "Testo dell'elemento:"
+
+#: src/session/buffers/interface.py:332
+msgid "View item"
+msgstr "Visualizza elemento"
+
+#: src/session/buffers/interface.py:338
+msgid "Interaction is not enabled in this buffer."
+msgstr "L'interazione non è attiva in questo buffer"
+
+#: src/session/buffers/buffers/audio.py:15
+msgid "Attached Audio"
+msgstr "Allegato audio"
+
+#: src/session/buffers/buffers/audio.py:44
+#: src/session/buffers/buffers/audio.py:55
+msgid "playing audio."
+msgstr "Riproduzione audio."
+
+#: src/session/buffers/buffers/audio.py:49
+msgid "No internet connection could be opened."
+msgstr "Nessuna connessione ad internet può essere aperta."
+
+#: src/session/buffers/buffers/audio.py:52
+msgid "Unable to play audio."
+msgstr "Impossibile riprodurre l'audio."
+
+#: src/session/buffers/buffers/audio.py:62
+msgid "audio playback paused."
+msgstr "Riproduzione audio messa in pausa."
+
+#: src/session/buffers/buffers/filtered.py:55
+msgid "Source Index"
+msgstr "Inizio codice"
+
+#: src/session/buffers/buffers/filtered.py:58
+msgid "Source Total"
+msgstr "Codice totale"
+
+#: src/session/buffers/buffers/filtered.py:64
+msgid "Master Index"
+msgstr "Inizio master"
+
+#: src/session/buffers/buffers/filtered.py:65
+msgid "Master Total"
+msgstr "Master totale"
+
+#: src/session/buffers/buffers/filtered.py:137
+#, python-format
+msgid "Removed all matching items from source %s"
+msgstr "Rimossi tutti gli elementi corrispondenti dal sorgente %s"
+
+#: src/session/buffers/buffers/filtered.py:173
+msgid "rx {term}"
+msgstr "{termine} rx"
+
+#: src/session/buffers/buffers/filtered.py:191
+msgid " and "
+msgstr " e "
+
+#: src/session/buffers/buffers/filtered.py:193
+#: src/session/buffers/buffers/filtered.py:200
+msgid ", "
+msgstr ", "
+
+#: src/session/buffers/buffers/filtered.py:194
+msgid ", and "
+msgstr ", e "
+
+#: src/session/buffers/buffers/filtered.py:198
+msgid " or "
+msgstr " o "
+
+#: src/session/buffers/buffers/filtered.py:201
+msgid ", or "
+msgstr ", o "
+
+#: src/session/buffers/buffers/filtered.py:203
+msgid "{0} with {1}."
+msgstr "{0} con {1}."
+
+#: src/session/buffers/buffers/filtered.py:205
+msgid "{0} without {1}."
+msgstr "{0} senza {1}."
+
+#: src/session/buffers/buffers/filtered.py:207
+msgid "{0} with {1} and without {2}."
+msgstr "{0} con {1} e senza {2}."
+
+#: src/session/buffers/buffers/filtered.py:209
+msgid "{0} with {1}. Without {2}."
+msgstr "{0} con {1}. Senza {2}."
+
+#: src/session/buffers/buffers/main.py:48
+msgid "Total"
+msgstr "Totale"
+
+#: src/session/buffers/buffers/main.py:49
+msgid "Index"
+msgstr "Indice"
+
+#: src/session/buffers/buffers/main.py:87
+msgid "Item deleted."
+msgstr "Elemento eliminato."
+
+#: src/session/buffers/buffers/main.py:171
+#, python-format
+msgid "buffer %s"
+msgstr "Buffer %s"
+
+#: src/session/buffers/buffers/main.py:206
+msgid "Buffer mute off"
+msgstr "Silenzio buffer disattivato"
+
+#: src/session/buffers/buffers/main.py:208
+msgid "Buffer mute on"
+msgstr "Silenzio buffer attivato"
+
+#: src/session/buffers/buffers/messages.py:20
+msgid "Relative Time"
+msgstr "Tempo relativo"
+
+#: src/session/buffers/buffers/messages.py:21
+msgid "Date"
+msgstr "Data"
+
+#: src/session/buffers/buffers/messages.py:28
+#: src/session/buffers/buffers/messages.py:36
+#: src/session/buffers/buffers/messages.py:44
+#: src/session/buffers/buffers/messages.py:52
+#: src/session/buffers/buffers/messages.py:61
+#, fuzzy
+msgid "Not Available"
+msgstr "Non disponibile"
+
+#: src/session/buffers/buffers/messages.py:31
+msgid "about {0} ago"
+msgstr "Circa {0} fa"
+
+#: src/session/buffers/buffers/messages.py:92
+msgid "No URLs detected in current item."
+msgstr "Nessun URL trovato nell'elemento corrente."
+
+#: src/session/buffers/buffers/messages.py:94
+#, python-format
+msgid "Opening URL: %s"
+msgstr "Apertura URL: %s"
+
+#: src/session/buffers/buffers/updating.py:31
+msgid "message"
+msgstr "Messaggio"
+
+#: src/session/buffers/buffers/updating.py:32
+msgid "messages"
+msgstr "Messaggi"
+
+#: src/session/buffers/buffers/updating.py:82
+msgid "Update already in progress; please wait."
+msgstr "Aggiornamento già in corso, attendi per favore."
+
+#: src/session/buffers/buffers/updating.py:128
+#, python-format
+msgid "No new %s."
+msgstr "Nessun nuovo %s."
+
+#: src/session/buffers/buffers/updating.py:135
+#, python-format
+msgid "%s: %s"
+msgstr "%s: %s"
+
+#: src/session/buffers/buffers/updating.py:138
+#: src/session/buffers/buffers/updating.py:140
+#, python-format
+msgid "%s%d new %s."
+msgstr "%s%d nuovi %s."
+
+#: src/session/buffers/buffers/updating.py:151
+#, python-format
+msgid "Checking for %s."
+msgstr "Verifica di %s."
+
+#: src/session/buffers/dialogs/filter.py:13
+#, python-format
+msgid "Filter: %s"
+msgstr "Filtro: %s"
+
+#: src/session/buffers/dialogs/filter.py:16
+msgid "Filters:"
+msgstr "Filtri:"
+
+#: src/session/buffers/dialogs/filter.py:20
+msgid "&Add"
+msgstr "&Aggiungi"
+
+#: src/session/buffers/dialogs/filter.py:22
+msgid "&Remove"
+msgstr "&Rimuovi"
+
+#: src/session/buffers/dialogs/filter.py:24
+msgid "Use a regular expression"
+msgstr "Usa un'espressione regolare"
+
+#: src/session/buffers/dialogs/filter.py:27
+msgid "Buffer Search:"
+msgstr "Buffer di ricerca:"
+
+#: src/session/buffers/dialogs/filter.py:31
+msgid "Fields:"
+msgstr "Campi:"
+
+#: src/session/buffers/dialogs/filter.py:41
+msgid "excluding"
+msgstr "Escluso"
+
+#: src/session/buffers/dialogs/filter.py:44
+msgid "Replace source buffer"
+msgstr "Sostituire il buffer sorgente"
+
+#: src/session/buffers/dialogs/filter.py:86
+msgid "Regular Expression:"
+msgstr "Espressione regolare:"
+
+#: src/session/buffers/dialogs/filter.py:88
+msgid "Term:"
+msgstr "Termine:"
+
+#: src/session/buffers/dialogs/filter.py:172
+#, fuzzy
+msgid "replacement "
+msgstr "Sostituzione"
+
+#: src/session/buffers/dialogs/filter.py:174
+msgid "without "
+msgstr "Senza"
+
+#: src/session/buffers/dialogs/filter.py:176
+msgid "with "
+msgstr "Con"
+
+#: src/session/buffers/dialogs/filter.py:178
+msgid "RX "
+msgstr "RX "
+
+#: src/session/buffers/dialogs/jump_to_item.py:8
+#, python-format
+msgid "Jump to Item in %s"
+msgstr "Salta all'elemento in %s"
+
+#: src/session/buffers/dialogs/jump_to_item.py:10
+#, python-format
+msgid "Enter item number to jump to, 1 to %s:"
+msgstr "Inserisci il numero dell'elemento a cui saltare? Da 1 a %s:"
+
+#: src/session/buffers/dialogs/configuration/twitter/main.py:19
+msgid "Buffer Configuration"
+msgstr "Configurazione del buffer"
+
+#: src/session/buffers/dialogs/configuration/twitter/main.py:23
+msgid "Default Settings"
+msgstr "Impostazioni predefinite"
+
+#: src/session/buffers/dialogs/configuration/twitter/main.py:143
+#, python-format
+msgid "No modifiable properties for buffer %s; showing default buffer configuration."
+msgstr "Nessuna proprietà modificabile per il buffer %s; Mostra la configurazione predefinita per il buffer."
+
+#: src/session/buffers/dialogs/configuration/twitter/main.py:143
+msgid "Attention"
+msgstr "Attenzione"
+
+#: src/session/buffers/dialogs/configuration/twitter/panels/buffer.py:9
+msgid "Update interval (in minutes)"
+msgstr "Intervallo aggiornamento (in minuti)"
+
+#: src/session/buffers/dialogs/configuration/twitter/panels/buffer.py:13
+msgid "Number of posts to download per update"
+msgstr "Numero di messaggi da scaricare per aggiornamento"
+
+#: src/session/buffers/dialogs/configuration/twitter/panels/buffer.py:20
+msgid "Max API calls to use per update (1 API call = 100 results)"
+msgstr "Massimo api calls da usare per aggiornamento (1 api call = 100 risultati)"
+
+#: src/session/buffers/dialogs/configuration/twitter/panels/buffer.py:22
+msgid "Max API calls to use per update (1 API call = 200 tweets)"
+msgstr "Massimo api calls da usare per aggiornamento (1 api call = 200 tweets)"
+
+#: src/session/buffers/dialogs/configuration/twitter/panels/buffer.py:27
+msgid "Mute buffer"
+msgstr "Silenzio buffer"
+
+#: src/session/buffers/dialogs/configuration/twitter/panels/buffer.py:30
+msgid "Apply settings to all buffers"
+msgstr "Applica le impostazioni a tutti i buffers"
+
+#: src/session/buffers/dialogs/configuration/twitter/panels/buffer.py:32
+msgid "Use default spoken template"
+msgstr "Usa modello predefinito per feedback vocale"
+
+#: src/session/buffers/dialogs/configuration/twitter/panels/buffer.py:34
+msgid "Spoken template:"
+msgstr "Modello per feedback vocale:"
+
+#: src/session/buffers/dialogs/configuration/twitter/panels/buffer.py:37
+msgid "Use default clipboard template"
+msgstr "Usa modello predefinito per copia negli appunti"
+
+#: src/session/buffers/dialogs/configuration/twitter/panels/buffer.py:39
+msgid "Clipboard template:"
+msgstr "Modello per copia negli appunti"
+
+#: src/session/buffers/dialogs/export/main.py:12
+msgid "Export"
+msgstr "Esporta"
+
+#: src/session/buffers/dialogs/export/panels/buffer.py:14
+msgid "Select buffer:"
+msgstr "Seleziona buffer:"
+
+#: src/session/buffers/dialogs/export/panels/buffer.py:16
+#: src/session/buffers/dialogs/export/panels/item.py:10
+#: src/session/buffers/dialogs/export/panels/range.py:19
+msgid "Save As..."
+msgstr "Salva come..."
+
+#: src/session/buffers/dialogs/export/panels/buffer.py:19
+#: src/session/buffers/dialogs/export/panels/item.py:13
+#: src/session/buffers/dialogs/export/panels/range.py:22
+msgid "Speech rate"
+msgstr "Velocità sintetizzatore"
+
+#: src/session/buffers/dialogs/export/panels/buffer.py:25
+#: src/session/buffers/dialogs/export/panels/item.py:19
+#: src/session/buffers/dialogs/export/panels/range.py:28
+msgid "Speech Volume"
+msgstr "Volume sintetizzatore"
+
+#: src/session/buffers/dialogs/export/panels/buffer.py:31
+#: src/session/buffers/dialogs/export/panels/item.py:25
+#: src/session/buffers/dialogs/export/panels/range.py:34
+msgid "Speech Voice"
+msgstr "Voce sintetizzatore"
+
+#: src/session/buffers/dialogs/export/panels/format_panel.py:8
+msgid "Format"
+msgstr "Formato"
+
+#: src/session/buffers/dialogs/export/panels/format_panel.py:9
+msgid "Export Format"
+msgstr "Formato di esportazione"
+
+#: src/session/buffers/dialogs/export/panels/format_panel.py:13
+msgid "Filename"
+msgstr "Nome file"
+
+#: src/session/buffers/dialogs/export/panels/format_panel.py:16
+msgid "Save As"
+msgstr "Salva come"
+
+#: src/session/buffers/dialogs/export/panels/format_panel.py:18
+msgid "Export more?"
+msgstr "Esportare di più?"
+
+#: src/session/buffers/dialogs/export/panels/items_panel.py:10
+msgid "Items"
+msgstr "Elementi"
+
+#: src/session/buffers/dialogs/export/panels/items_panel.py:11
+msgid "Buffer"
+msgstr "Buffer"
+
+#: src/session/buffers/dialogs/export/panels/items_panel.py:15
+msgid "Item template"
+msgstr "Modello per elemento"
+
+#: src/session/buffers/dialogs/export/panels/items_panel.py:18
+msgid "Range"
+msgstr "Posizione"
+
+#: src/session/buffers/dialogs/export/panels/items_panel.py:19
+msgid "All (bottom to top)"
+msgstr "Tutti (dall'alto in basso)"
+
+#: src/session/buffers/dialogs/export/panels/items_panel.py:19
+msgid "All (top to bottom)"
+msgstr "Tutti (dal basso in alto)"
+
+#: src/session/buffers/dialogs/export/panels/items_panel.py:19
+msgid "Custom"
+msgstr "Personalizza"
+
+#: src/session/buffers/dialogs/export/panels/items_panel.py:22
+msgid "First item index"
+msgstr "Inizio primo elemento"
+
+#: src/session/buffers/dialogs/export/panels/items_panel.py:25
+msgid "Last item index"
+msgstr "Inizio ultimo elemento"
+
+#: src/session/buffers/dialogs/export/panels/range.py:10
+msgid "Min:"
+msgstr "Minimo:"
+
+#: src/session/buffers/dialogs/export/panels/range.py:15
+msgid "Max:"
+msgstr "Massimo:"
+
+#: src/session/buffers/exporter/exporters/text.py:22
+msgid "Text file"
+msgstr "File di testo"
+
+#: src/session/file_manager/main.py:26
+msgid "Files"
+msgstr "Files"
+
+#: src/session/google_voice/interface.py:14
+msgid "New SMS"
+msgstr "Nuovo sms"
+
+#: src/session/google_voice/interface.py:16
+#, python-format
+msgid "Sms successfully sent to %s"
+msgstr "Sms inviato con successo a %s"
+
+#: src/session/google_voice/interface.py:19
+msgid "Call Phone"
+msgstr "Telefonata"
+
+#: src/session/google_voice/interface.py:22
+msgid "Please enter a phone number to call."
+msgstr "Per favore, inserisci un numero telefonico da chiamare."
+
+#: src/session/google_voice/interface.py:26
+msgid "Please indicate where the call should be bridged by selecting a forwarding phone number."
+msgstr "Per favore, indica dove la chiamata deve essere inoltrata selezionando un numero telefonico di inoltro."
+
+#: src/session/google_voice/interface.py:29
+msgid "Error, forwarding phone number not found."
+msgstr "Errore: numero telefonico di inoltro non trovato."
+
+#: src/session/google_voice/interface.py:30
+#, python-format
+msgid "Calling: %r"
+msgstr "Chiamata da: %r"
+
+#: src/session/google_voice/interface.py:32
+msgid "Call placed."
+msgstr "Chiamata effettuata."
+
+#: src/session/google_voice/interface.py:38
+msgid "Unable to detect a sender to reply to."
+msgstr "Impossibile trovare un destinatario a cui rispondere."
+
+#: src/session/google_voice/interface.py:40
+msgid "Reply"
+msgstr "Risposta"
+
+#: src/session/google_voice/interface.py:42
+#, python-format
+msgid "Reply sent to %s"
+msgstr "Risposta inviata a %s"
+
+#: src/session/google_voice/main.py:33
+msgid "Sms"
+msgstr "Sms"
+
+#: src/session/google_voice/main.py:33
+msgid "Voicemail"
+msgstr "Mail vocali"
+
+#: src/session/google_voice/main.py:33
+msgid "Missed"
+msgstr "Perse"
+
+#: src/session/google_voice/main.py:33
+msgid "Received"
+msgstr "Ricevute"
+
+#: src/session/google_voice/main.py:33
+msgid "Placed"
+msgstr "Effettuate"
+
+#: src/session/google_voice/main.py:41
+#, python-format
+msgid "Unable to connect to Google Voice.  %s will retry until connection is established."
+msgstr "Impossibile connettersi a Google Voice. %s ritenterà finchè la connessione non sarà stabilita."
+
+#: src/session/google_voice/main.py:49
+#, python-format
+msgid "Logged into Google Voice as %s"
+msgstr "Effettuato l'accesso a Google Voice come %s"
+
+#: src/session/google_voice/main.py:52
+msgid "Unable to Log into Google Voice."
+msgstr "Impossibile accedere a Google Voice."
+
+#: src/session/google_voice/main.py:64
+msgid "Google Voice Login"
+msgstr "Accesso a Google Voice"
+
+#: src/session/google_voice/main.py:64
+msgid "Please provide your credentials to login to Google Voice"
+msgstr "Per favore, fornisci le tue credenziali per accedere a Google Voice"
+
+#: src/session/google_voice/buffers/main.py:16
+msgid "Phone number"
+msgstr "Numero telefonico"
+
+#: src/session/google_voice/buffers/main.py:17
+msgid "Display phone number"
+msgstr "Visualizza numero ttelefonico"
+
+#: src/session/google_voice/buffers/main.py:51
+#, python-format
+msgid "Calling %s"
+msgstr "Chiamata da %s"
+
+#: src/session/google_voice/buffers/missed.py:8
+msgid "missed call"
+msgstr "Chiamata senza risposta."
+
+#: src/session/google_voice/buffers/missed.py:9
+msgid "missed calls"
+msgstr "Chiamate senza risposta."
+
+#: src/session/google_voice/buffers/placed.py:8
+msgid "placed call"
+msgstr "Chiamata effettuata"
+
+#: src/session/google_voice/buffers/placed.py:9
+msgid "placed calls"
+msgstr "Chiamate effettuate"
+
+#: src/session/google_voice/buffers/received.py:8
+msgid "received call"
+msgstr "Chiamata ricevuta"
+
+#: src/session/google_voice/buffers/received.py:9
+msgid "received calls"
+msgstr "Chiamate ricevute"
+
+#: src/session/google_voice/buffers/sms.py:15
+msgid "Message sender"
+msgstr "Mittente del messaggio"
+
+#: src/session/google_voice/buffers/sms.py:16
+msgid "Message text"
+msgstr "Testo del messaggio"
+
+#: src/session/google_voice/buffers/voicemail.py:17
+msgid "voicemail"
+msgstr "Mail vocale"
+
+#: src/session/google_voice/buffers/voicemail.py:18
+msgid "voicemails"
+msgstr "Mails vocali"
+
+#: src/session/google_voice/buffers/voicemail.py:23
+msgid "Item state"
+msgstr "Stato elemento"
+
+#: src/session/google_voice/buffers/voicemail.py:36
+msgid "Downloading voicemail..."
+msgstr "Scaricamento mail vocale..."
+
+#: src/session/google_voice/buffers/voicemail.py:68
+#, python-format
+msgid "Playing voicemail from %s"
+msgstr "Riproduzione mail vocale da %s"
+
+#: src/session/google_voice/dialogs/call.py:10
+msgid "Enter phone number to call:"
+msgstr "Inserisci numero telefonico da chiamare:"
+
+#: src/session/google_voice/dialogs/call.py:13
+msgid "Forwarding Number (where calls are bridged)"
+msgstr "Numero d'inoltro (a cui le chiamate sono trasferite)"
+
+#: src/session/google_voice/dialogs/configuration/main.py:21
+msgid "General"
+msgstr "Generale"
+
+#: src/session/google_voice/dialogs/configuration/panels/general.py:10
+msgid "Email Address"
+msgstr "Indirizzo email"
+
+#: src/session/gui/notification_area.py:12
+#, python-format
+msgid "&About %s"
+msgstr "&Circa %s"
+
+#: src/session/gui/notification_area.py:12
+#, python-format
+msgid "About %s"
+msgstr "Circa %s"
+
+#: src/session/gui/notification_area.py:14
+#, python-format
+msgid "E&xit %s"
+msgstr "&Esci da %s"
+
+#: src/session/gui/notification_area.py:14
+#, python-format
+msgid "Exit %s..."
+msgstr "Esci da %s..."
+
+#: src/session/hotkey/interface.py:19
+msgid "Keymap saved."
+msgstr "Mappa dei tasti salvata."
+
+#: src/session/hotkey/interface.py:26
+msgid "Keyboard help on."
+msgstr "Aiuto tastiera attivato."
+
+#: src/session/hotkey/interface.py:29
+msgid "Keyboard help off."
+msgstr "Aiuto tastiera disattivato."
+
+#: src/session/hotkey/dialogs/add.py:11
+msgid "Function:"
+msgstr "Funzione:"
+
+#: src/session/hotkey/dialogs/dialog.py:7
+#: src/session/hotkey/dialogs/main.py:14
+msgid "Keystroke Manager"
+msgstr "Gestore combinazioni di tasti"
+
+#: src/session/hotkey/dialogs/dialog.py:10
+msgid "CTRL"
+msgstr "CTRL"
+
+#: src/session/hotkey/dialogs/dialog.py:11
+msgid "WIN"
+msgstr "WIN"
+
+#: src/session/hotkey/dialogs/dialog.py:12
+msgid "ALT"
+msgstr "ALT"
+
+#: src/session/hotkey/dialogs/dialog.py:13
+msgid "SHIFT"
+msgstr "SHIFT"
+
+#: src/session/hotkey/dialogs/dialog.py:14
+msgid "Key:"
+msgstr "Tasto:"
+
+#: src/session/hotkey/dialogs/main.py:18
+#: src/session/hotkey/dialogs/main.py:19
+msgid "Keymap:"
+msgstr "Mappa dei tasti:"
+
+#: src/session/hotkey/dialogs/main.py:24
+msgid "&Add..."
+msgstr "&Aggiungi..."
+
+#: src/session/hotkey/dialogs/main.py:26
+msgid "&Edit..."
+msgstr "&Modifica..."
+
+#: src/session/hotkey/dialogs/main.py:28
+msgid "&Delete..."
+msgstr "&Elimina..."
+
+#: src/session/hotkey/dialogs/main.py:64
+#, python-format
+msgid "The keystroke %s is already in use.  Please choose another."
+msgstr "La combinazione %s è già in uso. Per favore, scegline un'altra."
+
+#: src/session/hotkey/dialogs/main.py:64
+msgid "Keystroke in use"
+msgstr "Combinazione in uso"
+
+#: src/session/hotkey/dialogs/main.py:75
+msgid "Function"
+msgstr "Funzione"
+
+#: src/session/hotkey/dialogs/main.py:76
+msgid "Keystroke"
+msgstr "Combinazione di tasti"
+
+#: src/session/language/main.py:8
+msgid "Definitions"
+msgstr "Definizioni"
+
+#: src/session/language/main.py:9
+msgid "Translations"
+msgstr "Traduzioni"
+
+#: src/session/rss/interface.py:20
+msgid "Unable to retrieve URL to open from this feed."
+msgstr "Impossibile ottenere URL da aprire da questo feed."
+
+#: src/session/rss/interface.py:29
+msgid "Enter URL of rss feed to add:"
+msgstr "Inserisci l'URL del feed da aggiungere:"
+
+#: src/session/rss/interface.py:29
+msgid "Add feed"
+msgstr "Aggiungi feed"
+
+#: src/session/rss/buffers/main.py:39
+#, python-format
+msgid "No new items in %s buffer."
+msgstr "Nessun nuovo elemento nel buffer %s."
+
+#: src/session/rss/buffers/main.py:44
+#, python-format
+msgid "%d new item in feed %s"
+msgstr "%d nuovo elemento nel feed %s"
+
+#: src/session/rss/buffers/main.py:46
+#, python-format
+msgid "%d new items in feed %s"
+msgstr "%d nuovi elementi nel feed %s"
+
+#: src/session/rss/dialogs/viewer.py:7
+#, python-format
+msgid "%s RSS Viewer"
+msgstr "Visualizzatore rss %s"
+
+#: src/session/skype/interface.py:18
+#: src/session/skype/main.py:37
+msgid "Contact List"
+msgstr "Lista contatti"
+
+#: src/session/skype/interface.py:31
+msgid "Call ended."
+msgstr "Chiamata terminata."
+
+#: src/session/skype/interface.py:38
+msgid "Call on hold."
+msgstr "Chiamata in attesa."
+
+#: src/session/skype/interface.py:41
+msgid "Call resumed."
+msgstr "Chiamata ripristinata."
+
+#: src/session/skype/interface.py:46
+#, python-format
+msgid "Getting chat with %s."
+msgstr "Caricamento chat con %s"
+
+#: src/session/skype/interface.py:47
+#, python-format
+msgid "Chat with %s"
+msgstr "Chat con %s"
+
+#: src/session/skype/interface.py:53
+msgid "Mood Message"
+msgstr "Messaggio d'umore:"
+
+#: src/session/skype/interface.py:61
+#, python-format
+msgid "Mood text changed to: %s"
+msgstr "Messaggio di umore cambiato in: %s"
+
+#: src/session/skype/interface.py:64
+msgid "Failed to post mood text."
+msgstr "Invio del messaggio di umore fallito."
+
+#: src/session/skype/interface.py:71
+#, python-format
+msgid "Send an instant message to %s"
+msgstr "Invia un messaggio istantaneo a %s."
+
+#: src/session/skype/main.py:67
+#, python-format
+msgid "Call: %s"
+msgstr "Chiama: %s"
+
+#: src/session/skype/buffers/chat.py:32
+#, python-format
+msgid "%s has no messages."
+msgstr "%s non ha messaggi."
+
+#: src/session/skype/buffers/chat.py:42
+#, python-format
+msgid "No new items in buffer %s."
+msgstr "Nessun nuovo elemento nel buffer %s."
+
+#: src/session/skype/dialogs/send_IM.py:7
+msgid "Instant Message"
+msgstr "Messaggio istantaneo"
+
+#: src/session/skype/dialogs/configuration/main.py:16
+msgid "Skype Session Configuration"
+msgstr "Configurazione sessione Skype"
+
+#: src/session/skype/dialogs/configuration/main.py:24
+msgid "Templates"
+msgstr "Modelli"
+
+#: src/session/skype/dialogs/configuration/panels/misc.py:9
+#, python-format
+msgid "Let %s start Skype"
+msgstr "Lascia che %s esegua skype"
+
+#: src/session/skype/dialogs/configuration/panels/templates.py:9
+msgid "Contact list buffer template:"
+msgstr "Modello per buffer della lista contatti"
+
+#: src/session/skype/dialogs/configuration/panels/templates.py:13
+msgid "Chat buffer template:"
+msgstr "Modello per buffer della chat"
+
+#: src/session/solona/interface.py:24
+msgid "Capturing screenshot."
+msgstr "Cattura dell'immagine."
+
+#: src/session/solona/interface.py:30
+msgid "Unable to take screenshot."
+msgstr "Impossibile catturare l'immagine."
+
+#: src/session/solona/interface.py:37
+#: src/session/solona/interface.py:67
+msgid "Unable to submit captcha to Solona."
+msgstr "Impossibile inviare il captcha a Solona."
+
+#: src/session/solona/interface.py:39
+#: src/session/solona/interface.py:69
+msgid "Submitted captcha for analysis."
+msgstr "Captcha inviato per l'analisi."
+
+#: src/session/solona/interface.py:42
+#: src/session/solona/interface.py:60
+msgid "Solona is currently offline; please try again later."
+msgstr "Solona è al momento offline; Per favore, prova di nuovo più tardi."
+
+#: src/session/solona/interface.py:78
+msgid "Checking current status of Solona..."
+msgstr "Verifica stato attuale di Solona..."
+
+#: src/session/solona/interface.py:83
+msgid "Unable to obtain current operator status."
+msgstr "Impossibile ottenere lo stato attuale degli operatori."
+
+#: src/session/solona/interface.py:86
+msgid "Solona is offline; no operators are available."
+msgstr "Solona è offline. Nessun operatore è disponibile."
+
+#: src/session/solona/interface.py:88
+msgid "Solona is online, and operators are standing by."
+msgstr "Solona è online, e gli operatori sono in attesa."
+
+#: src/session/solona/main.py:28
+#, python-format
+msgid "Unable to connect to Solona.  %s will retry until connection is established."
+msgstr "Impossibile connettersi a Solona. %s ritenterà finchè la connessione non sarà stabilita."
+
+#: src/session/solona/main.py:34
+#, python-format
+msgid "Logged into Solona as %s"
+msgstr "Effettuato l'accesso a Solona come %s"
+
+#: src/session/solona/main.py:37
+msgid "Unable to Log into Solona."
+msgstr "Impossibile accedere a Solona."
+
+#: src/session/solona/main.py:53
+msgid "Solona Login"
+msgstr "Accesso a Solona"
+
+#: src/session/solona/main.py:53
+msgid "Please supply your credentials for Solona"
+msgstr "Per favore, fornisci le tue credenziali di Solona"
+
+#: src/session/solona/main.py:55
+msgid "Login canceled."
+msgstr "Accesso annullato."
+
+#: src/session/solona/main.py:96
+msgid "Captcha solution copied to clipboard."
+msgstr "Soluzione del captcha copiata negli appunti."
+
+#: src/session/solona/dialogs/solution.py:8
+msgid "Solona Solution"
+msgstr "Soluzione di Solona"
+
+#: src/session/solona/dialogs/solution.py:9
+msgid "Solona returned:"
+msgstr "Restituito da Solona:"
+
+#: src/session/solona/dialogs/configuration/main.py:13
+msgid "Settings"
+msgstr "Impostazioni"
+
+#: src/session/solona/dialogs/configuration/panels/settings.py:7
+msgid "Show message box with captcha solution."
+msgstr "Mostrare un box di messaggio con la soluzione del captcha."
+
+#: src/session/solona/dialogs/configuration/panels/settings.py:8
+msgid "Copy Captcha solution to clipboard."
+msgstr "Copiare la soluzione del captcha negli appunti."
+
+#: src/session/sound/interface.py:25
+msgid "Louder."
+msgstr "Più forte."
+
+#: src/session/sound/interface.py:32
+msgid "Quieter."
+msgstr "Meno forte."
+
+#: src/session/sound/main.py:103
+msgid "Session mute off"
+msgstr "Silenzio sessione disattivato"
+
+#: src/session/sound/main.py:105
+msgid "Session mute on"
+msgstr "Silenzio sessione attivato"
+
+#: src/session/sound/main.py:111
+msgid "Global mute off"
+msgstr "Silenzio globale disattivato"
+
+#: src/session/sound/main.py:113
+msgid "Global mute on"
+msgstr "Silenzio globale attivato"
+
+#: src/session/stopwatch/interface.py:17
+msgid "Countdown Timer"
+msgstr "Timer conto alla rovescia"
+
+#: src/session/stopwatch/interface.py:21
+msgid "Counting."
+msgstr "Conteggio in corso."
+
+#: src/session/stopwatch/main.py:21
+msgid "Countdowns"
+msgstr "Conti alla rovescia"
+
+#: src/session/stopwatch/main.py:21
+msgid "Timers"
+msgstr "Timers"
+
+#: src/session/stopwatch/main.py:24
+msgid "default"
+msgstr "Predefinito"
+
+#: src/session/stopwatch/main.py:79
+#, python-format
+msgid "Countdown %s complete."
+msgstr "Conto alla rovescia %s completo."
+
+#: src/session/stopwatch/buffers/countdowns.py:15
+msgid "Remaining time"
+msgstr "Tempo rimanente"
+
+#: src/session/stopwatch/buffers/timers.py:17
+msgid "Elapsed time"
+msgstr "Tempo trascorso"
+
+#: src/session/stopwatch/buffers/timers.py:28
+msgid "Stopwatch reset and counting."
+msgstr "Cronometro azzerato e conteggio in corso."
+
+#: src/session/stopwatch/buffers/timers.py:31
+msgid "Stopwatch counting."
+msgstr "Conteggio cronometro."
+
+#: src/session/stopwatch/buffers/timers.py:34
+#, python-format
+msgid "Stopwatch stopped at %s."
+msgstr "Cronometro fermato a %s."
+
+#: src/session/stopwatch/dialogs/countdown.py:9
+msgid "Name:"
+msgstr "Nome:"
+
+#: src/session/twitter/interface.py:56
+msgid "tweet"
+msgstr "Tweet"
+
+#: src/session/twitter/interface.py:66
+msgid "Direct message"
+msgstr "Messaggio diretto"
+
+#: src/session/twitter/interface.py:73
+msgid "dm"
+msgstr "Messaggio diretto"
+
+#: src/session/twitter/interface.py:93
+msgid "Unable to detect a user to reply to."
+msgstr "Impossibile trovare un utente a cui rispondere."
+
+#: src/session/twitter/interface.py:101
+#, fuzzy
+msgid "reply"
+msgstr "Risposta"
+
+#: src/session/twitter/interface.py:110
+msgid "view item"
+msgstr "Visualizza elemento"
+
+#: src/session/twitter/interface.py:116
+#, python-format
+msgid "View Tweet From %s"
+msgstr "Visualizza tweet da %s"
+
+#: src/session/twitter/interface.py:134
+msgid "Item is not a post."
+msgstr "L'elemento non è un messaggio."
+
+#: src/session/twitter/interface.py:137
+msgid "Cannot retweet a direct message while DM safe mode is enabled."
+msgstr "Non si può fare il retweet di un messaggio diretto mentre la modalità messaggio diretto sicuro è attiva."
+
+#: src/session/twitter/interface.py:140
+msgid "Cannot retweet your own tweet."
+msgstr "Non si può fare il retweet di un tuo stesso tweet."
+
+#: src/session/twitter/interface.py:144
+msgid "Retweet"
+msgstr "Retweet"
+
+#: src/session/twitter/interface.py:144
+msgid "Would you like to add a comment?"
+msgstr "Desideri aggiungere un commento?"
+
+#: src/session/twitter/interface.py:165
+msgid "No users to follow detected in current post."
+msgstr "Nessun utente da seguire trovato nel messaggio corrente."
+
+#: src/session/twitter/interface.py:179
+msgid "No users to unfollow detected in current post."
+msgstr "Nessun utente da smettere di seguire trovato nel messaggio corrente."
+
+#: src/session/twitter/interface.py:207
+msgid "No URLs detected in current post."
+msgstr "Nessun URL trovato nel messaggio corrente."
+
+#: src/session/twitter/interface.py:220
+msgid "Twitter search"
+msgstr "Ricerca di Twitter"
+
+#: src/session/twitter/interface.py:231
+#, python-format
+msgid "Search for %s"
+msgstr "Ricerca di %s"
+
+#: src/session/twitter/interface.py:237
+msgid "Trending: Worldwide"
+msgstr "Tendenza: tutto il mondo"
+
+#: src/session/twitter/interface.py:242
+msgid "Public Timeline"
+msgstr "Timeline pubblica"
+
+#: src/session/twitter/interface.py:242
+msgid "Loading public timeline."
+msgstr "Caricamento timeline pubblica."
+
+#: src/session/twitter/interface.py:247
+msgid "Favorites"
+msgstr "Preferiti"
+
+#: src/session/twitter/interface.py:247
+msgid "Loading favorites"
+msgstr "Caricamento preferiti."
+
+#: src/session/twitter/interface.py:256
+#, python-format
+msgid "%s's favorites"
+msgstr "Preferiti di %s"
+
+#: src/session/twitter/interface.py:257
+#, python-format
+msgid "Loading favorites for %s."
+msgstr "Caricamento preferiti di %s"
+
+#: src/session/twitter/interface.py:276
+msgid "Followers"
+msgstr "Followers"
+
+#: src/session/twitter/interface.py:276
+msgid "Loading followers list."
+msgstr "Caricamento lista followers."
+
+#: src/session/twitter/interface.py:281
+msgid "Friends"
+msgstr "Amici"
+
+#: src/session/twitter/interface.py:281
+msgid "Loading friends list."
+msgstr "Caricamento lista amici."
+
+#: src/session/twitter/interface.py:292
+msgid "Please launch your followers buffer before attempting to perform analysis."
+msgstr "Per favore, lancia il tuo buffer di followers prima di tentare di eseguire l'analisi."
+
+#: src/session/twitter/interface.py:294
+msgid "Cannot perform analysis on an empty followers buffer."
+msgstr "Non si può eseguire l'analisi in un buffer di followers vuoto."
+
+#: src/session/twitter/interface.py:295
+msgid "Followers Analysis"
+msgstr "Analisi dei followers"
+
+#: src/session/twitter/interface.py:295
+msgid "Performing followers analysis, please wait..."
+msgstr "Esecuzione analisi followers, attendi per favore."
+
+#: src/session/twitter/interface.py:300
+msgid "Blocked Users"
+msgstr "Utenti bloccati"
+
+#: src/session/twitter/interface.py:300
+msgid "Loading blocked users."
+msgstr "Caricamento utenti bloccati."
+
+#: src/session/twitter/interface.py:305
+msgid "Checking current API call count..."
+msgstr "Verifica numero api call attuale..."
+
+#: src/session/twitter/interface.py:330
+#, python-format
+msgid "%s's timeline"
+msgstr "Timeline di %s"
+
+#: src/session/twitter/interface.py:330
+#, python-format
+msgid "Loading timeline for %s."
+msgstr "Caricamento timeline di %s"
+
+#: src/session/twitter/interface.py:410
+#, python-format
+msgid "Loading followers for %s."
+msgstr "Caricamento followers di %s."
+
+#: src/session/twitter/interface.py:411
+#, python-format
+msgid "%s's followers"
+msgstr "Followers di %s"
+
+#: src/session/twitter/interface.py:422
+#, python-format
+msgid "%s's friends"
+msgstr "Amici di %s"
+
+#: src/session/twitter/interface.py:423
+#, python-format
+msgid "Loading friends for %s."
+msgstr "Caricamento amici di %s."
+
+#: src/session/twitter/interface.py:428
+msgid "Select which type of retweets to display:"
+msgstr "Seleziona quale tipo di retweets visualizzare:"
+
+#: src/session/twitter/interface.py:428
+msgid "Select type"
+msgstr "Seleziona tipo"
+
+#: src/session/twitter/interface.py:428
+#: src/session/twitter/interface.py:432
+msgid "My friends' retweets"
+msgstr "Retweets dei miei amici"
+
+#: src/session/twitter/interface.py:428
+#: src/session/twitter/interface.py:434
+msgid "My retweets"
+msgstr "Miei retweets"
+
+#: src/session/twitter/interface.py:428
+msgid "My tweets that have been retweeted by others"
+msgstr "Miei tweet di cui altri hanno fatto il retweet"
+
+#: src/session/twitter/interface.py:438
+#, python-format
+msgid "%s"
+msgstr "%s"
+
+#: src/session/twitter/interface.py:447
+msgid "This command is not supported from within a search buffer."
+msgstr "Questo comando non è supportato all'interno di un buffer di ricerca."
+
+#: src/session/twitter/interface.py:449
+#: src/session/twitter/interface.py:647
+msgid "No user detected in current item."
+msgstr "Nessun utente trovato nell'elemento corrente."
+
+#: src/session/twitter/interface.py:460
+#, python-format
+msgid "Loading profile for %s"
+msgstr "Caricamento profilo di %s"
+
+#: src/session/twitter/interface.py:475
+msgid "Retrieving locations."
+msgstr "Recupero posizioni."
+
+#: src/session/twitter/interface.py:480
+msgid "Unable to retrieve local trend locations; please try again later."
+msgstr "Impossibile recuperare le posizioni della tendenza locale; per favore, prova di nuovo più tardi."
+
+#: src/session/twitter/interface.py:499
+#, python-format
+msgid "Trending: %s"
+msgstr "Tendenza: %s"
+
+#: src/session/twitter/interface.py:519
+#: src/session/twitter/interface.py:635
+msgid "Canceled"
+msgstr "Annullato"
+
+#: src/session/twitter/interface.py:529
+#, python-format
+msgid "Are you sure you want to import %d items from old database?"
+msgstr "Sei sicuro di voler importare %d elementi dal vecchio database?"
+
+#: src/session/twitter/interface.py:529
+msgid "Are you sure?"
+msgstr "Sei sicuro?"
+
+#: src/session/twitter/interface.py:531
+msgid "Importing, please wait."
+msgstr "Importazione, attendi per favore."
+
+#: src/session/twitter/interface.py:536
+msgid "Import completed successfully."
+msgstr "Importazione completata con successo."
+
+#: src/session/twitter/interface.py:536
+msgid "Import complete."
+msgstr "Importazione completa."
+
+#: src/session/twitter/interface.py:546
+#: src/session/twitter/interface.py:571
+msgid "No geo location info present in this tweet."
+msgstr "Nessuna informazione sulla posizione geografica presente in questo tweet."
+
+#: src/session/twitter/interface.py:548
+#: src/session/twitter/interface.py:573
+#: src/session/twitter/interface.py:607
+msgid "Retrieving geo location info..."
+msgstr "Recupero delle informazioni sulla posizione geografica."
+
+#: src/session/twitter/interface.py:555
+#: src/session/twitter/interface.py:563
+#: src/session/twitter/interface.py:580
+#: src/session/twitter/interface.py:590
+#: src/session/twitter/interface.py:614
+#: src/session/twitter/interface.py:625
+msgid "Error determining location."
+msgstr "Errore nel determinare la locazione."
+
+#: src/session/twitter/interface.py:558
+#: src/session/twitter/interface.py:583
+#: src/session/twitter/interface.py:619
+msgid "Coordinates are not accurate enough to determine a location."
+msgstr "Le coordinate non sono abbastanza accurate per determinare una locazione."
+
+#: src/session/twitter/interface.py:560
+#, python-format
+msgid "Location is %s; %s level accuracy"
+msgstr "La posizione è %s; livello accuratezza %s"
+
+#: src/session/twitter/interface.py:585
+#: src/session/twitter/interface.py:621
+#, python-format
+msgid "%s level accuracy"
+msgstr "Livello accuratezza %s"
+
+#: src/session/twitter/interface.py:631
+msgid "Enter a name to search for:"
+msgstr "Inserisci un nome da cercare:"
+
+#: src/session/twitter/interface.py:631
+msgid "User search"
+msgstr "Ricerca di utenti"
+
+#: src/session/twitter/interface.py:637
+#, python-format
+msgid "User search for %s"
+msgstr "Ricerca utenti di %s"
+
+#: src/session/twitter/interface.py:653
+#, python-format
+msgid "Retrieving relationship status for %s"
+msgstr "Recupero stato di relazione di %s"
+
+#: src/session/twitter/interface.py:673
+#, python-format
+msgid "Retrieving relationship status between %s and %s"
+msgstr "Recupero stato di relazione tra %s e %s"
+
+#: src/session/twitter/interface.py:683
+msgid "Select user to add"
+msgstr "Seleziona utente da aggiungere"
+
+#: src/session/twitter/interface.py:689
+#: src/session/twitter/interface.py:710
+msgid "Retrieving lists, please wait."
+msgstr "Recupero lista, attendi per favore."
+
+#: src/session/twitter/interface.py:692
+#: src/session/twitter/interface.py:713
+msgid "No lists defined.  Please create a list with the list manager before performing this action."
+msgstr "Nessuna lista definita. Per favore, creane una con il gestore lista prima di eseguire questa azione."
+
+#: src/session/twitter/interface.py:693
+#: src/session/twitter/interface.py:714
+msgid "Select list"
+msgstr "Seleziona lista"
+
+#: src/session/twitter/interface.py:693
+#, python-format
+msgid "Please select a list to add %s to?"
+msgstr "Per favore, seleziona una lista a cui aggiungere %s?"
+
+#: src/session/twitter/interface.py:697
+#, python-format
+msgid "adding %s to list %s."
+msgstr "Aggiunta di %s alla lista %s."
+
+#: src/session/twitter/interface.py:704
+msgid "Select user to remove"
+msgstr "Seleziona utente da rimuovere"
+
+#: src/session/twitter/interface.py:714
+#, python-format
+msgid "Please select a list to remove %s from?"
+msgstr "Per favore, seleziona una lista da cui rimuovere %s?"
+
+#: src/session/twitter/interface.py:718
+#, python-format
+msgid "removing %s from list %s."
+msgstr "Rimozione di %s alla lista %s."
+
+#: src/session/twitter/interface.py:725
+#: src/session/twitter/interface.py:762
+msgid "Please change to a list buffer before using this command."
+msgstr "Per favore, passa ad un buffer di lista prima di usare questo comando."
+
+#: src/session/twitter/interface.py:727
+#, python-format
+msgid "List members for %s"
+msgstr "Membri della lista %s"
+
+#: src/session/twitter/interface.py:732
+msgid "Choose your social network:"
+msgstr "Scegli il tuo social network:"
+
+#: src/session/twitter/interface.py:732
+msgid "Social Network"
+msgstr "Social network"
+
+#: src/session/twitter/interface.py:732
+#: src/session/twitter/interface.py:749
+msgid "Users whom I follow and who also follow me"
+msgstr "Utenti che seguo e che mi seguono"
+
+#: src/session/twitter/interface.py:732
+#: src/session/twitter/interface.py:751
+msgid "Users whom I follow but who do not follow me"
+msgstr "Utenti che seguo ma che non mi seguono"
+
+#: src/session/twitter/interface.py:732
+msgid "Users who follow me but whom I do not follow"
+msgstr "Utenti che mi seguono ma che non seguo"
+
+#: src/session/twitter/interface.py:745
+msgid "Please launch both your followers and friends buffers before attempting to create a social network."
+msgstr "Per favore, lancia i buffers di followers e di amici prima di tentare di creare il tuo social network."
+
+#: src/session/twitter/interface.py:747
+msgid "Cannot create social network from an empty followers or friends buffer."
+msgstr "Non si può creare un social network in un buffer di followers o di amici vuoto"
+
+#: src/session/twitter/interface.py:755
+#, python-format
+msgid "Social Network: %s"
+msgstr "Social network: %s"
+
+#: src/session/twitter/interface.py:755
+msgid "Creating social network, please wait..."
+msgstr "Creazione social network, attendi per favore."
+
+#: src/session/twitter/interface.py:764
+#, python-format
+msgid "List subscribers for %s"
+msgstr "Iscritti alla lista %s"
+
+#: src/session/twitter/interface.py:786
+#, python-format
+msgid "Translation from %s to %s"
+msgstr "Traduzione da %s in%s"
+
+#: src/session/twitter/main.py:41
+msgid "Mentions"
+msgstr "Menzioni"
+
+#: src/session/twitter/main.py:41
+msgid "Home"
+msgstr "Home"
+
+#: src/session/twitter/main.py:41
+msgid "Direct Messages"
+msgstr "Messaggi diretti"
+
+#: src/session/twitter/main.py:41
+msgid "Sent"
+msgstr "Inviati"
+
+#: src/session/twitter/main.py:83
+msgid "Please wait while an access token is retrieved from Twitter."
+msgstr "Per favore, attendi mentre viene ottenuto un token di accesso da twitter."
+
+#: src/session/twitter/main.py:86
+msgid "Retrieved access token from Twitter."
+msgstr "Token di accesso ottenuto da Twitter."
+
+#: src/session/twitter/main.py:104
+msgid "verifying Twitter credentials"
+msgstr "Verifica credenziali di twitter."
+
+#: src/session/twitter/main.py:109
+#, python-format
+msgid "Logged into Twitter as %s"
+msgstr "Effettuato l'accesso a twitter come %s"
+
+#: src/session/twitter/main.py:121
+msgid "Login failed!"
+msgstr "Accesso fallito!"
+
+#: src/session/twitter/main.py:130
+msgid "Twitter Login"
+msgstr "Accesso a twitter"
+
+#: src/session/twitter/main.py:130
+msgid "Please provide your credentials to login to Twitter"
+msgstr "Per favore, fornisci le tue credenziali per accedere a twitter"
+
+#: src/session/twitter/main.py:150
+#, python-format
+msgid "Loading %d saved search%s from twitter."
+msgstr "Caricamento della ricerca salvata %d %s da twitter."
+
+#: src/session/twitter/main.py:174
+#, python-format
+msgid "Retrieving %d list timeline%s from twitter."
+msgstr "Recupero timeline %d della lista%s da twitter."
+
+#: src/session/twitter/main.py:182
+#, python-format
+msgid "List timeline for %s"
+msgstr "Timeline della lista di %s"
+
+#: src/session/twitter/main.py:206
+#, python-format
+msgid "retrieving relationship status for %s"
+msgstr "Recupero stato di relazione di %s"
+
+#: src/session/twitter/main.py:209
+#, python-format
+msgid "You are following %s.  "
+msgstr "Stai seguendo %s"
+
+#: src/session/twitter/main.py:211
+#, python-format
+msgid "%s is following you.  "
+msgstr "%s ti sta seguendo."
+
+#: src/session/twitter/main.py:213
+#, python-format
+msgid "No relationship exists between yourself and %s."
+msgstr "Non esiste alcuna relazione tra te e %s."
+
+#: src/session/twitter/main.py:217
+#, python-format
+msgid "retrieving relationship status between %s and %s"
+msgstr "Recupero stato di relazione tra %s e %s"
+
+#: src/session/twitter/main.py:220
+#: src/session/twitter/main.py:222
+#, python-format
+msgid "%s is following %s.  "
+msgstr "%s sta seguendo %s."
+
+#: src/session/twitter/main.py:224
+#, python-format
+msgid "No relationship exists between %s and %s."
+msgstr "Non esiste alcuna relazione tra %s e %s."
+
+#: src/session/twitter/main.py:229
+#: src/session/twitter/main.py:231
+#, python-format
+msgid "following %s"
+msgstr "%s seguito"
+
+#: src/session/twitter/main.py:235
+#, python-format
+msgid "unfollowing %s"
+msgstr "%s smesso di seguire"
+
+#: src/session/twitter/main.py:237
+#, python-format
+msgid "blocking %s"
+msgstr "%s bloccato"
+
+#: src/session/twitter/main.py:239
+#, python-format
+msgid "reporting %s as spam"
+msgstr "%s segnalato come spam"
+
+#: src/session/twitter/main.py:243
+#, python-format
+msgid "Unable to connect to twitter.  %s will retry until connection is established."
+msgstr "Impossibile connettersi a Twitter. %s ritenterà finchè la connessione non sarà stabilita."
+
+#: src/session/twitter/main.py:247
+msgid "Update"
+msgstr "Aggiornamento"
+
+#: src/session/twitter/main.py:268
+msgid "Sending dm"
+msgstr "Invio messaggio diretto"
+
+#: src/session/twitter/main.py:295
+#, python-format
+msgid "adding user %s to list %s"
+msgstr "Aggiunta utente %s alla lista %s"
+
+#: src/session/twitter/main.py:300
+msgid "Please wait while your profile is retrieved."
+msgstr "Per favore, attendi mentre il tuo profilo viene recuperato."
+
+#: src/session/twitter/main.py:301
+msgid "Retrieving profile to edit"
+msgstr "Recupero profilo da modificare"
+
+#: src/session/twitter/main.py:309
+msgid "updating profile"
+msgstr "Aggiornamento profilo"
+
+#: src/session/twitter/main.py:331
+#, python-format
+msgid "%s failed.  Reason: %s"
+msgstr "%s fallito. Ragione: %s"
+
+#: src/session/twitter/main.py:334
+#, python-format
+msgid "%s succeeded."
+msgstr "%s riuscito."
+
+#: src/session/twitter/main.py:338
+msgid "Retrieving API calls"
+msgstr "Recupero api calls"
+
+#: src/session/twitter/main.py:340
+#, python-format
+msgid "You have %s API calls left.  They will reset to %d calls in %s."
+msgstr "Hai %s api calls rimanenti. Saranno ripristinate a %d calls in %s"
+
+#: src/session/twitter/main.py:346
+#, python-format
+msgid "You can not favorite a %s."
+msgstr "Non è possibile aggiuntere ai preferiti un %s."
+
+#: src/session/twitter/main.py:347
+msgid "Marking as favorite"
+msgstr "Contrassegnato come preferito"
+
+#: src/session/twitter/main.py:348
+#: src/session/twitter/main.py:352
+msgid "marking as favorite"
+msgstr "Contrassegnato come preferito"
+
+#: src/session/twitter/main.py:353
+#: src/session/twitter/buffers/favorites.py:42
+msgid "Tweet removed from favorites."
+msgstr "Tweet rimosso dai preferiti."
+
+#: src/session/twitter/main.py:357
+msgid "Toggling device notifications"
+msgstr "Verifica notifiche su dispositivo mobile"
+
+#: src/session/twitter/main.py:357
+#, python-format
+msgid "retrieving user details for %s"
+msgstr "Recupero dettagli utente pdi %s"
+
+#: src/session/twitter/main.py:360
+#, python-format
+msgid "enabling device notifications for %s"
+msgstr "Attivazione notifiche su dispositivo mobile per %s"
+
+#: src/session/twitter/main.py:363
+#, python-format
+msgid "disabling device notifications for %s"
+msgstr "Disattivazione notifiche su dispositivo mobile per %s"
+
+#: src/session/twitter/buffers/blocked.py:19
+#: src/session/twitter/buffers/blocked.py:23
+msgid "blocked user"
+msgstr "%s Bloccato utente %s"
+
+#: src/session/twitter/buffers/blocked.py:20
+#: src/session/twitter/buffers/blocked.py:24
+msgid "blocked users"
+msgstr "Utenti bloccati"
+
+#: src/session/twitter/buffers/blocked.py:28
+msgid "Retrieving blocked users"
+msgstr "Recupero utenti bloccati"
+
+#: src/session/twitter/buffers/blocked.py:32
+#, python-format
+msgid "%s blocked users retrieved."
+msgstr "%s utenti bloccati recuperati."
+
+#: src/session/twitter/buffers/blocked.py:40
+msgid "Unblock"
+msgstr "Sblocca"
+
+#: src/session/twitter/buffers/blocked.py:40
+#, python-format
+msgid "Are you sure you wish to unblock %s?"
+msgstr "Sei sicuro di voler sbloccare %s?"
+
+#: src/session/twitter/buffers/blocked.py:46
+#, python-format
+msgid "unblocking %s"
+msgstr "%s sbloccato"
+
+#: src/session/twitter/buffers/directs.py:16
+msgid "direct message"
+msgstr "Messaggio diretto"
+
+#: src/session/twitter/buffers/directs.py:17
+msgid "direct messages"
+msgstr "Messaggi diretti"
+
+#: src/session/twitter/buffers/favorites.py:25
+msgid "favorite"
+msgstr "Preferito"
+
+#: src/session/twitter/buffers/favorites.py:26
+msgid "favorites"
+msgstr "Preferiti"
+
+#: src/session/twitter/buffers/favorites.py:31
+msgid "Retrieving favorites"
+msgstr "Recupero preferiti"
+
+#: src/session/twitter/buffers/favorites.py:45
+msgid "Unable to remove tweet from favorites."
+msgstr "Impossibile rimuovere il tweet dai preferiti."
+
+#: src/session/twitter/buffers/followers.py:18
+#: src/session/twitter/buffers/followers.py:22
+msgid "follower"
+msgstr "Follower"
+
+#: src/session/twitter/buffers/followers.py:19
+#: src/session/twitter/buffers/followers.py:23
+msgid "followers"
+msgstr "Followers"
+
+#: src/session/twitter/buffers/followers.py:31
+#, python-format
+msgid "%s followers retrieved."
+msgstr "%s followers recuperati."
+
+#: src/session/twitter/buffers/followers_analysis.py:32
+msgid "New Follower"
+msgstr "Nuovi followers"
+
+#: src/session/twitter/buffers/friends.py:18
+msgid "friend"
+msgstr "Amico"
+
+#: src/session/twitter/buffers/friends.py:19
+msgid "friends"
+msgstr "Amici"
+
+#: src/session/twitter/buffers/friends.py:29
+#, python-format
+msgid "%s friends retrieved."
+msgstr "%s amici recuperati."
+
+#: src/session/twitter/buffers/home.py:15
+msgid "tweets"
+msgstr "Tweets"
+
+#: src/session/twitter/buffers/individual.py:20
+#, python-format
+msgid "tweet from %s"
+msgstr "Tweet da %s"
+
+#: src/session/twitter/buffers/individual.py:21
+#, python-format
+msgid "tweets from %s"
+msgstr "Tweets da %s"
+
+#: src/session/twitter/buffers/list_members.py:19
+msgid "list member"
+msgstr "Membro della lista"
+
+#: src/session/twitter/buffers/list_members.py:20
+msgid "list members"
+msgstr "Membri della lista"
+
+#: src/session/twitter/buffers/list_members.py:34
+#: src/session/twitter/buffers/list_subscribers.py:34
+msgid "Remove user"
+msgstr "Rimuovi utente"
+
+#: src/session/twitter/buffers/list_members.py:34
+#: src/session/twitter/buffers/list_subscribers.py:34
+#, python-format
+msgid "Are you sure you wish to remove %s from list %s?"
+msgstr "Sei sicuro di voler rimuovere l'utente %s dalla lista %s?"
+
+#: src/session/twitter/buffers/list_subscribers.py:19
+msgid "list subscriber"
+msgstr "Iscritto alla lista"
+
+#: src/session/twitter/buffers/list_subscribers.py:20
+msgid "list subscribers"
+msgstr "Iscritti alla lista"
+
+#: src/session/twitter/buffers/list_timeline.py:25
+#, python-format
+msgid "tweet in %s"
+msgstr "Tweet in %s"
+
+#: src/session/twitter/buffers/list_timeline.py:26
+#, python-format
+msgid "tweets in %s"
+msgstr "Tweets in %s"
+
+#: src/session/twitter/buffers/local_trends.py:15
+msgid "local trend"
+msgstr "Tendenza locale"
+
+#: src/session/twitter/buffers/local_trends.py:16
+msgid "local trends"
+msgstr "Tendenze locali"
+
+#: src/session/twitter/buffers/local_trends.py:22
+msgid "Retrieving local trends"
+msgstr "Recupero tendenze locali"
+
+#: src/session/twitter/buffers/main.py:284
+msgid "Remove Tweet"
+msgstr "Rimuovi tweet"
+
+#: src/session/twitter/buffers/main.py:284
+msgid "The post you are trying to remove will also be deleted from Twitter.  Do you still wish to remove it?"
+msgstr "Il messaggio che stai cercando di rimuovere sarà eliminato anche da Twitter. Desideri ancora rimuoverlo?"
+
+#: src/session/twitter/buffers/main.py:290
+msgid "Deleting direct message"
+msgstr "Eliminazione messaggio diretto"
+
+#: src/session/twitter/buffers/main.py:290
+msgid "deleting direct message"
+msgstr "Eliminazione messaggio diretto"
+
+#: src/session/twitter/buffers/main.py:292
+msgid "removing item"
+msgstr "Rimozione elemento"
+
+#: src/session/twitter/buffers/mentions.py:16
+msgid "mention"
+msgstr "Menzione"
+
+#: src/session/twitter/buffers/mentions.py:17
+msgid "mentions"
+msgstr "Menzioni"
+
+#: src/session/twitter/buffers/public.py:18
+msgid "public tweet"
+msgstr "Tweet pubblico"
+
+#: src/session/twitter/buffers/public.py:19
+msgid "public tweets"
+msgstr "Tweets pubblici"
+
+#: src/session/twitter/buffers/retweets.py:16
+msgid "retweet"
+msgstr "Retweet"
+
+#: src/session/twitter/buffers/retweets.py:17
+msgid "retweets"
+msgstr "Retweets"
+
+#: src/session/twitter/buffers/search.py:25
+#: src/session/twitter/buffers/user_search.py:17
+#, python-format
+msgid "result for %s"
+msgstr "Risultato per %s"
+
+#: src/session/twitter/buffers/search.py:26
+#: src/session/twitter/buffers/user_search.py:18
+#, python-format
+msgid "results for %s"
+msgstr "Risultati per %s"
+
+#: src/session/twitter/buffers/search.py:48
+#, python-format
+msgid "saving search %s"
+msgstr "Salvataggio ricerca %s"
+
+#: src/session/twitter/buffers/search.py:51
+#, python-format
+msgid "Destroying saved search %s"
+msgstr "Distruzione della ricerca salvata %s"
+
+#: src/session/twitter/buffers/sent.py:20
+msgid "sent item"
+msgstr "Elemento inviato"
+
+#: src/session/twitter/buffers/sent.py:21
+msgid "sent items"
+msgstr "Elementi inviati"
+
+#: src/session/twitter/buffers/sent.py:27
+msgid "Direct Message"
+msgstr "Messaggio diretto"
+
+#: src/session/twitter/buffers/sent.py:28
+msgid "DM Recipient's Name"
+msgstr "Nome destinatario del messaggio diretto"
+
+#: src/session/twitter/buffers/sent.py:29
+msgid "DM Recipient's Screen Name"
+msgstr "Nome visualizzato destinatario del messaggio diretto"
+
+#: src/session/twitter/buffers/top_trends.py:20
+msgid "Retrieving trends"
+msgstr "Recupero tendenze"
+
+#: src/session/twitter/buffers/trends.py:17
+msgid "trend"
+msgstr "Tendenza"
+
+#: src/session/twitter/buffers/trends.py:18
+msgid "trends"
+msgstr "Tendenze"
+
+#: src/session/twitter/buffers/trends.py:21
+msgid "Trending item's name"
+msgstr "Nome dell'elemento tendenza"
+
+#: src/session/twitter/buffers/trends.py:32
+#, python-format
+msgid "%s updated."
+msgstr "%s aggiornato."
+
+#: src/session/twitter/buffers/trends.py:41
+msgid "Search"
+msgstr "Ricerca"
+
+#: src/session/twitter/buffers/tweets.py:9
+msgid "Tweet Source"
+msgstr "Tweet sorgente"
+
+#: src/session/twitter/buffers/tweets.py:10
+msgid "Geo Tagged"
+msgstr "Ultime notizie"
+
+#: src/session/twitter/buffers/tweets.py:11
+msgid "Message Text"
+msgstr "Testo del messaggio"
+
+#: src/session/twitter/buffers/tweets.py:13
+msgid "Screen Name"
+msgstr "Nome visualizzato"
+
+#: src/session/twitter/buffers/tweets.py:14
+#: src/session/twitter/buffers/users.py:26
+msgid "Location"
+msgstr "Posizione"
+
+#: src/session/twitter/buffers/tweets.py:15
+msgid "Retweet count"
+msgstr "Conteggio retweet"
+
+#: src/session/twitter/buffers/tweets.py:16
+msgid "Favorited"
+msgstr "Preferito"
+
+#: src/session/twitter/buffers/tweets.py:17
+msgid "Retweeted"
+msgstr "Di cui si è effettuato il retweet"
+
+#: src/session/twitter/buffers/users.py:25
+#, fuzzy
+msgid "Screen name"
+msgstr "Nome visualizzato:"
+
+#: src/session/twitter/buffers/users.py:28
+msgid "Protected"
+msgstr "Protetto"
+
+#: src/session/twitter/buffers/users.py:29
+msgid "Follower count"
+msgstr "Conteggio followers"
+
+#: src/session/twitter/buffers/users.py:30
+msgid "Friend count"
+msgstr "Conteggio amici"
+
+#: src/session/twitter/buffers/users.py:31
+msgid "Number of tweets"
+msgstr "Numero di tweets"
+
+#: src/session/twitter/buffers/users.py:32
+msgid "Device notifications"
+msgstr "Notifiche su dispositivo mobile"
+
+#: src/session/twitter/buffers/users.py:33
+msgid "User's local time"
+msgstr "Ora locale dell'utente"
+
+#: src/session/twitter/buffers/users.py:34
+msgid "User's local date"
+msgstr "Data locale dell'utente"
+
+#: src/session/twitter/buffers/users.py:35
+msgid "Last Tweet Time"
+msgstr "Ora ultimo tweet"
+
+#: src/session/twitter/buffers/users.py:36
+msgid "Last Tweet Date"
+msgstr "Data ultimo tweet"
+
+#: src/session/twitter/buffers/users.py:37
+msgid "Last Tweet Relative Time"
+msgstr "Tempo relativo all'ultimo tweet"
+
+#: src/session/twitter/dialogs/api_count.py:12
+msgid "Posts per update:"
+msgstr "Messaggi per aggiornamento:"
+
+#: src/session/twitter/dialogs/api_count.py:18
+msgid "Max API calls to use per update (1 API call = {0} tweets)"
+msgstr "Massimo api calls da usare per aggiornamento (1 api call = [0] tweets)"
+
+#: src/session/twitter/dialogs/favorites.py:9
+msgid "Display favorites"
+msgstr "Visualizza preferiti"
+
+#: src/session/twitter/dialogs/favorites.py:11
+msgid "Favorites for:"
+msgstr "Preferiti di:"
+
+#: src/session/twitter/dialogs/follow.py:8
+msgid "Follow someone"
+msgstr "Segui qualcuno"
+
+#: src/session/twitter/dialogs/follow.py:9
+msgid "Follow who:"
+msgstr "Segui chi:"
+
+#: src/session/twitter/dialogs/follow.py:11
+msgid "Mobile Updates"
+msgstr "Aggiornamenti sul cellulare"
+
+#: src/session/twitter/dialogs/followers.py:9
+msgid "List Followers"
+msgstr "Lista followers"
+
+#: src/session/twitter/dialogs/followers.py:11
+msgid "Followers for:"
+msgstr "Followers di:"
+
+#: src/session/twitter/dialogs/friends.py:9
+msgid "List Friends"
+msgstr "Lista amici"
+
+#: src/session/twitter/dialogs/friends.py:11
+msgid "Friends for:"
+msgstr "Amici di:"
+
+#: src/session/twitter/dialogs/geo_location.py:10
+msgid "Geo Location"
+msgstr "Posizione geografica"
+
+#: src/session/twitter/dialogs/geo_location.py:12
+msgid "Geo location coordinates:"
+msgstr "Coordinate posizione geografica:"
+
+#: src/session/twitter/dialogs/geo_location.py:20
+#: src/session/twitter/dialogs/profile.py:30
+msgid "Location:"
+msgstr "Posizione:"
+
+#: src/session/twitter/dialogs/geo_location.py:28
+msgid "Accuracy:"
+msgstr "Accuratezza:"
+
+#: src/session/twitter/dialogs/geo_location_input.py:10
+msgid "Input Coordinates"
+msgstr "Immissione coordinate:"
+
+#: src/session/twitter/dialogs/geo_location_input.py:12
+msgid "Latitude:"
+msgstr "Latitudine:"
+
+#: src/session/twitter/dialogs/geo_location_input.py:21
+msgid "Longitude:"
+msgstr "Longitudine:"
+
+#: src/session/twitter/dialogs/geo_location_input.py:39
+msgid "Error: Latitude must be a value between negative 90 and positive 90."
+msgstr "Errore: la latitudine deve essere un valore tra +90 e -90."
+
+#: src/session/twitter/dialogs/geo_location_input.py:40
+msgid "Error: Longitude must be a value between negative 180 and positive 180."
+msgstr "Errore: la latitudine deve essere un valore tra +180 e -180."
+
+#: src/session/twitter/dialogs/individual.py:9
+msgid "Individual Timeline"
+msgstr "Timeline individuale"
+
+#: src/session/twitter/dialogs/individual.py:11
+msgid "Buffer for:"
+msgstr "Vuffer di:"
+
+#: src/session/twitter/dialogs/local_trends.py:14
+msgid "Location Selection"
+msgstr "Selezione posizione"
+
+#: src/session/twitter/dialogs/local_trends.py:16
+msgid "Select type of location:"
+msgstr "Seleziona tipo di posizione:"
+
+#: src/session/twitter/dialogs/local_trends.py:18
+msgid "Select location:"
+msgstr "Seleziona posizione:"
+
+#: src/session/twitter/dialogs/new_reply.py:11
+msgid "&Mention all users"
+msgstr "&Menziona tutti gli utenti"
+
+#: src/session/twitter/dialogs/new_tweet.py:9
+msgid "Tweet"
+msgstr "Tweet"
+
+#: src/session/twitter/dialogs/new_tweet.py:13
+msgid "Retweet:"
+msgstr "Retweet"
+
+#: src/session/twitter/dialogs/profile.py:16
+#, python-format
+msgid "Profile for %s"
+msgstr "Profilo di %s"
+
+#: src/session/twitter/dialogs/profile.py:19
+msgid "Screen name:"
+msgstr "Nome visualizzato:"
+
+#: src/session/twitter/dialogs/profile.py:24
+msgid "Real name:"
+msgstr "Vero nome:"
+
+#: src/session/twitter/dialogs/profile.py:36
+msgid "URL:"
+msgstr "URL:"
+
+#: src/session/twitter/dialogs/profile.py:42
+msgid "Bio:"
+msgstr "Bio:"
+
+#: src/session/twitter/dialogs/profile.py:50
+msgid "Tweets are protected:"
+msgstr "I tweets sono protetti:"
+
+#: src/session/twitter/dialogs/profile.py:59
+msgid "Number of followers:"
+msgstr "Numero di followers:"
+
+#: src/session/twitter/dialogs/profile.py:64
+msgid "Number of friends:"
+msgstr "Numero di amici:"
+
+#: src/session/twitter/dialogs/profile.py:69
+msgid "Number of tweets:"
+msgstr "Numero di tweets:"
+
+#: src/session/twitter/dialogs/profile.py:74
+msgid "Average tweets per day since joining Twitter:"
+msgstr "Media giornaliera tweet dall'iscrizione a twitter"
+
+#: src/session/twitter/dialogs/profile.py:80
+msgid "Date of last tweet:"
+msgstr "Data dell'ultimo tweet:"
+
+#: src/session/twitter/dialogs/profile.py:85
+msgid "Not available"
+msgstr "Non disponibile"
+
+#: src/session/twitter/dialogs/profile.py:89
+msgid "Date joined Twitter:"
+msgstr "Data iscrizione a twitter"
+
+#: src/session/twitter/dialogs/profile.py:125
+#, python-format
+msgid "Follow %s"
+msgstr "Segui %s"
+
+#: src/session/twitter/dialogs/profile.py:128
+#, python-format
+msgid "Unfollow %s"
+msgstr "Smetti di seguire %s"
+
+#: src/session/twitter/dialogs/profile_update.py:9
+msgid "Update profile"
+msgstr "Aggiorna profilo"
+
+#: src/session/twitter/dialogs/profile_update.py:11
+#, python-format
+msgid "Name (Maximum of %d characters)."
+msgstr "Nome (massimo di %d caratteri)."
+
+#: src/session/twitter/dialogs/profile_update.py:16
+#, python-format
+msgid "URL (Maximum of %d characters)."
+msgstr "URL (massimo di %d caratteri)."
+
+#: src/session/twitter/dialogs/profile_update.py:21
+#, python-format
+msgid "Location (Maximum of %d characters)."
+msgstr "Posizione (massimo di %d caratteri)."
+
+#: src/session/twitter/dialogs/profile_update.py:26
+#, python-format
+msgid "Bio (Maximum of %d characters)."
+msgstr "Bio (massimo di %d caratteri)."
+
+#: src/session/twitter/dialogs/relationship_status.py:8
+msgid "Relationship"
+msgstr "Relazione"
+
+#: src/session/twitter/dialogs/relationship_status.py:10
+msgid "Relationship status between:"
+msgstr "Stato di relazione tra:"
+
+#: src/session/twitter/dialogs/relationship_status.py:13
+msgid "And:"
+msgstr "E:"
+
+#: src/session/twitter/dialogs/search.py:10
+msgid "Twitter Search:"
+msgstr "Ricerca di twitter:"
+
+#: src/session/twitter/dialogs/search.py:15
+msgid "Persistent results"
+msgstr "Risultati persistenti"
+
+#: src/session/twitter/dialogs/search.py:18
+msgid "Save Search"
+msgstr "Salva la ricerca"
+
+#: src/session/twitter/dialogs/unfollow.py:8
+msgid "Unfollow someone"
+msgstr "Smetti di seguire qualcuno"
+
+#: src/session/twitter/dialogs/unfollow.py:10
+msgid "Unfollow who:"
+msgstr "Smetti di seguire chi:"
+
+#: src/session/twitter/dialogs/unfollow.py:13
+msgid "Action:"
+msgstr "Azione:"
+
+#: src/session/twitter/dialogs/unfollow.py:13
+msgid "Unfollow"
+msgstr "Smetti di seguire"
+
+#: src/session/twitter/dialogs/unfollow.py:13
+msgid "Block"
+msgstr "Blocca"
+
+#: src/session/twitter/dialogs/unfollow.py:13
+msgid "Report as spam"
+msgstr "Segnala come spam"
+
+#: src/session/twitter/dialogs/user_info.py:8
+msgid "User profile"
+msgstr "Profilo utente"
+
+#: src/session/twitter/dialogs/user_info.py:10
+msgid "User profile for:"
+msgstr "Profilo utente di:"
+
+#: src/session/twitter/dialogs/configuration/main.py:16
+msgid "Twitter Configuration"
+msgstr "Configurazione di twitter"
+
+#: src/session/twitter/dialogs/configuration/main.py:24
+msgid "Sounds"
+msgstr "Suoni"
+
+#: src/session/twitter/dialogs/configuration/main.py:44
+msgid "Ask whether comments are to be added (recommended)"
+msgstr "Chiedere se devono essere aggiunti commenti (raccomandato)"
+
+#: src/session/twitter/dialogs/configuration/main.py:44
+msgid "Never add comments (automatically retweet)"
+msgstr "Non aggiungere mai commenti (fai il retweet automaticamente)"
+
+#: src/session/twitter/dialogs/configuration/main.py:44
+msgid "Always add comments (old style)"
+msgstr "Aggiungere sempre i commenti (vecchio stile)"
+
+#: src/session/twitter/dialogs/configuration/panels/misc.py:8
+msgid "Enable DM safe mode"
+msgstr "Attiva la modalità sicura per messaggi diretti"
+
+#: src/session/twitter/dialogs/configuration/panels/misc.py:9
+msgid "Confirm before removing sent tweets and DMs"
+msgstr "Conferma prima di rimuovere tweets inviati e messaggi diretti"
+
+#: src/session/twitter/dialogs/configuration/panels/misc.py:10
+msgid "Retweet Style"
+msgstr "Stile retweet"
+
+#: src/session/twitter/dialogs/configuration/panels/misc.py:13
+msgid "Allow reply to self"
+msgstr "Permetti la risposta a te stesso"
+
+#: src/session/twitter/dialogs/configuration/panels/misc.py:14
+msgid "Work offline"
+msgstr "Lavora offline"
+
+#: src/session/twitter/dialogs/configuration/panels/sound.py:8
+msgid "Sound pack"
+msgstr "Pacchetti suoni"
+
+#: src/session/twitter/dialogs/configuration/panels/sound.py:11
+msgid "Mute session"
+msgstr "Silenzio sessione"
+
+#: src/session/twitter/dialogs/configuration/panels/templates.py:10
+msgid "New generic buffer template:"
+msgstr "Nuovo modello per buffer generico:"
+
+#: src/session/twitter/dialogs/configuration/panels/templates.py:14
+msgid "New search buffer template:"
+msgstr "Nuovo modello per buffer di ricerca:"
+
+#: src/session/twitter/dialogs/configuration/panels/templates.py:18
+msgid "New followers/friends buffer template:"
+msgstr "Nuovo modello per buffer di followers/amici:"
+
+#: src/session/twitter/dialogs/configuration/panels/templates.py:22
+msgid "Modify Existing Buffer Templates..."
+msgstr "Modifica i modelli per i buffer esistenti..."
+
+#: src/session/twitter/dialogs/configuration/panels/templates.py:25
+msgid "User info template:"
+msgstr "Modello per informazioni utente:"
+
+#: src/session/twitter/dialogs/configuration/panels/templates.py:29
+msgid "Reply template:"
+msgstr "Modello per risposta:"
+
+#: src/session/twitter/dialogs/configuration/panels/templates.py:33
+msgid "Retweet template:"
+msgstr "Modello per retweet:"
+
+#: src/session/twitter/dialogs/list_manager/add_list.py:11
+msgid "List name:"
+msgstr "Nome lista:"
+
+#: src/session/twitter/dialogs/list_manager/add_list.py:15
+msgid "List mode:"
+msgstr "Modalità lista:"
+
+#: src/session/twitter/dialogs/list_manager/add_list.py:18
+msgid "List description:"
+msgstr "Descrizione lista:"
+
+#: src/session/twitter/dialogs/list_manager/list_manager.py:15
+msgid "List manager"
+msgstr "Gestore lista"
+
+#: src/session/twitter/dialogs/list_manager/list_manager.py:17
+msgid "Current lists:"
+msgstr "Liste correnti:"
+
+#: src/session/twitter/dialogs/list_manager/list_manager.py:23
+msgid "&Add list..."
+msgstr "&Aggiungi lista..."
+
+#: src/session/twitter/dialogs/list_manager/list_manager.py:25
+msgid "&Edit list..."
+msgstr "&Modifica lista..."
+
+#: src/session/twitter/dialogs/list_manager/list_manager.py:27
+msgid "&Remove list..."
+msgstr "&Rimuovi lista..."
+
+#: src/session/twitter/dialogs/list_manager/list_manager.py:29
+msgid "&Spawn list"
+msgstr "&Apri lista"
+
+#: src/session/twitter/dialogs/list_manager/list_manager.py:38
+msgid "Add list"
+msgstr "Aggiungi lista"
+
+#: src/session/twitter/dialogs/list_manager/list_manager.py:48
+#: src/session/twitter/dialogs/list_manager/list_manager.py:69
+#: src/session/twitter/dialogs/list_manager/list_manager.py:84
+msgid "Please wait..."
+msgstr "Attendi per favore..."
+
+#: src/session/twitter/dialogs/list_manager/list_manager.py:50
+msgid "List created."
+msgstr "Lista creata."
+
+#: src/session/twitter/dialogs/list_manager/list_manager.py:60
+msgid "Edit list"
+msgstr "Modifica lista"
+
+#: src/session/twitter/dialogs/list_manager/list_manager.py:71
+msgid "List editted successfully."
+msgstr "Lista modificata con successo."
+
+#: src/session/twitter/dialogs/list_manager/list_manager.py:74
+msgid "Unable to edit list."
+msgstr "Impossibile modificare la lista."
+
+#: src/session/twitter/dialogs/list_manager/list_manager.py:81
+#, python-format
+msgid "Are you sure you want to delete %s?"
+msgstr "Sei sicuro di voler eliminare %s?"
+
+#: src/session/twitter/dialogs/list_manager/list_manager.py:81
+msgid "Delete list"
+msgstr "Elimina lista"
+
+#: src/session/twitter/dialogs/list_manager/list_manager.py:87
+#, python-format
+msgid "list %s deleted."
+msgstr "Lista %s eliminata."
+
+#: src/session/twitter/dialogs/list_manager/list_manager.py:90
+#, python-format
+msgid "Unable to delete list %s."
+msgstr "impossibile eliminare la lista %s."
+
+#: src/session/twitter/dialogs/list_manager/list_manager.py:117
+msgid "Mode"
+msgstr "Modalità"
+
+#: src/utils/delay.py:19
+msgid "action"
+msgstr "Azione"
+
+#: src/utils/delay.py:20
+#, python-format
+msgid "Delaying %s for %s."
+msgstr "Ritardo %s di %s."
+
+#: src/utils/time_period.py:7
+msgid "a decade"
+msgstr "un decennio"
+
+#: src/utils/time_period.py:7
+msgid "{0} decades"
+msgstr "{0} decenni"
+
+#: src/utils/time_period.py:8
+msgid "a year"
+msgstr "un anno"
+
+#: src/utils/time_period.py:8
+msgid "{0} years"
+msgstr "{0} anni"
+
+#: src/utils/time_period.py:9
+msgid "a month"
+msgstr "un mese"
+
+#: src/utils/time_period.py:9
+msgid "{0} months"
+msgstr "{0} mesi"
+
+#: src/utils/time_period.py:10
+msgid "a week"
+msgstr "una settimana"
+
+#: src/utils/time_period.py:10
+msgid "{0} weeks"
+msgstr "{0} settimane"
+
+#: src/utils/time_period.py:11
+msgid "a day"
+msgstr "un giorno"
+
+#: src/utils/time_period.py:11
+msgid "{0} days"
+msgstr "{0} giorni"
+
+#: src/utils/time_period.py:12
+msgid "an hour"
+msgstr "un ora"
+
+#: src/utils/time_period.py:12
+msgid "{0} hours"
+msgstr "{0} ore"
+
+#: src/utils/time_period.py:13
+msgid "a minute"
+msgstr "un minuto"
+
+#: src/utils/time_period.py:13
+msgid "{0} minutes"
+msgstr "{0} minuti"
+
+#: src/utils/time_period.py:14
+msgid "a second"
+msgstr "un secondo"
+
+#: src/utils/time_period.py:14
+msgid "{0} seconds"
+msgstr "{0} secondi"
+
+#: src/main.pyw:33
+#, c-format
+msgid "Welcome to %s"
+msgstr "Benvenuto in %s..."
+
+#: src/main.pyw:40
+msgid "There was an error in the startup process.  We appologize for this."
+msgstr "C'è stato un errore nel processo di avvio. Ci scusiamo per questo."
+
+#~ msgid "days"
+#~ msgstr "giorni"
+
+#~ msgid "about a second ago"
+#~ msgstr "Circa un secondo fa"
+
+#~ msgid "more than a second ago"
+#~ msgstr "Più di un secondo fa"
+
+#~ msgid "about %d seconds ago"
+#~ msgstr "Circa %d secondi fa"
+
+#~ msgid "about a minute ago"
+#~ msgstr "Circa un minuto fa"
+
+#~ msgid "more than a minute ago"
+#~ msgstr "Più di un minuto fa"
+
+#~ msgid "about %d minutes ago"
+#~ msgstr "Circa %d minuti fa"
+
+#~ msgid "about an hour ago"
+#~ msgstr "Circa un'ora fa"
+
+#~ msgid "more than an hour ago"
+#~ msgstr "Più di un'ora fa"
+
+#~ msgid "about %d hours ago"
+#~ msgstr "Circa %d ore fa"
+
+#~ msgid "about a day ago"
+#~ msgstr "Circa un giorno fa"
+
+#~ msgid "more than a day ago"
+#~ msgstr "Più di un giorno fa"
+
+#~ msgid "No new posts in %s buffer."
+#~ msgstr "Nessun nuovo messaggio nel buffer %s."
+
+#~ msgid "User"
+#~ msgstr "Utente"
+
+#~ msgid "Removing tweet from favorites failed."
+#~ msgstr "Rimozione tweet dai preferiti fallita."
+
+#~ msgid "Status updated."
+#~ msgstr "Stato aggiornato."
+
+#~ msgid "Updating status failed."
+#~ msgstr "Aggiornamento stato fallito."
+
+#~ msgid "Statuses"
+#~ msgstr "Stati"
+
+#~ msgid "%s new status update."
+#~ msgstr "%s nuovo aggiornamento di stato"
+
+#~ msgid "%s new status updates."
+#~ msgstr "%s nuovi aggiornamenti di stato."
+
+#~ msgid "Login to facebook"
+#~ msgstr "Accedi a Facebook"
+
+#~ msgid "Select URL from tweet to open"
+#~ msgstr "Seleziona URL da aprire da un tweet"
+
+#~ msgid "Keymap unsaved."
+#~ msgstr "Mappa dei tasti non salvata."
+
+#~ msgid "Default (English)"
+#~ msgstr "inglese (predefinito)"
+
+#~ msgid "Message cannot be sent."
+#~ msgstr "Il messaggio non può essere inviato."
+
+#~ msgid "Reply canceled."
+#~ msgstr "Risposta annullata."
+
+#~ msgid "Remove Post"
+#~ msgstr "Rimuovi messaggio"
+
+#~ msgid "New Tweet"
+#~ msgstr "Nuovo tweet"
+
+#~ msgid "Available Fields:"
+#~ msgstr "Campi disponibili:"
+
+#~ msgid "canceled."
+#~ msgstr "Annullato."
+
+#~ msgid "Post this message later?"
+#~ msgstr "Inviare questo messaggio più tardi?"
+
+#~ msgid "Time in minutes to wait before posting this message?"
+#~ msgstr "Tempo di attesa in minuti prima di inviare questo messaggio?"
+
+#~ msgid "This tweet will be posted in %d minutes."
+#~ msgstr "Questo tweet sarà pubblicato in %d minuti."
+
+#~ msgid "This dm will be posted in %d minutes."
+#~ msgstr "Questo messaggio diretto sarà inviato in %d minuti."
+
+#~ msgid "This reply will be posted in %d minutes."
+#~ msgstr "Questa risposta sarà inviata in %d minuti."
+
+#~ msgid "Unshorten URL"
+#~ msgstr "Riduzione URL"
+
+#~ msgid "Posting reply"
+#~ msgstr "Invio risposta"
+
+#~ msgid "Full mute"
+#~ msgstr "Silenzio totale"
+
+#~ msgid "Mute all but receive"
+#~ msgstr "Silenzio totale ma ricezione"
+
+#~ msgid "Public timeline updated."
+#~ msgstr "Timeline pubblica aggiornata."
+
+#~ msgid "Mute Status"
+#~ msgstr "Stato silenzio"
+
+#~ msgid "Buffer Search"
+#~ msgstr "Buffer di ricerca"
+
+#~ msgid "Successfully removed %s from list %s"
+#~ msgstr "%s rimosso con successo dalla lista %s"
+
+#~ msgid "Unable to remove %s from list %s"
+#~ msgstr "Impossibile rimuovere %s dalla lista %s"
+
+#~ msgid "including"
+#~ msgstr "Compreso"
+
+#~ msgid "%s has no tweets."
+#~ msgstr "%s non ha tweets."
+
+#~ msgid "%d new post in %s's favorites."
+#~ msgstr "%d nuovo messaggio nei preferiti di %s."
+
+#~ msgid "%d new posts in %s's favorites."
+#~ msgstr "%d nuovi messaggi nei preferiti di %s."

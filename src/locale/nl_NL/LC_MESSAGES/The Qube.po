@@ -1,0 +1,1783 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Qwitter 3.1\n"
+"Report-Msgid-Bugs-To: Leonard de Ruijter <leonard@playinginthedark.net>\n"
+"POT-Creation-Date: 2010-02-05 23:35+W. Europe Standard Time\n"
+"PO-Revision-Date: 2010-02-06 15:24+0100\n"
+"Last-Translator: Bram Duvigneau <bram@bramd.nl>\n"
+"Language-Team: Leonard de Ruijter <leonard@playinginthedark.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Poedit-Language: Dutch (Nederlands)\n"
+"X-Poedit-Country: the Netherlands\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Basepath: E:\\Programming\\Qwitter\\trunk\n"
+"X-Poedit-SearchPath-0: src\n"
+
+#: ../src\buffer\bing\search.py:36
+#: ../src\buffer\facebook\statuses.py:30
+#: ../src\buffer\main.py:59
+#: ../src\buffer\rss.py:41
+#: ../src\buffer\twitter\directs.py:44
+#: ../src\buffer\twitter\favorites.py:56
+#: ../src\buffer\twitter\home.py:44
+#: ../src\buffer\twitter\mentions.py:43
+#: ../src\buffer\twitter\search.py:85
+#: ../src\buffer\twitter\sent.py:124
+#: ../src\buffer\twitter\user.py:51
+msgid "No new posts in %s buffer."
+msgstr "Geen nieuwe posts in buffer %s."
+
+#: ../src\buffer\bing\search.py:41
+msgid "%d new item in search %s"
+msgstr "%d nieuw item in zoekopdracht %s"
+
+#: ../src\buffer\bing\search.py:43
+msgid "%d new items in search %s"
+msgstr "%d nieuwe items in zoekopdracht %s"
+
+#: ../src\buffer\facebook\statuses.py:35
+msgid "%s new status update."
+msgstr "%s nieuwe status update."
+
+#: ../src\buffer\facebook\statuses.py:37
+msgid "%s new status updates."
+msgstr "%s nieuwe status updates."
+
+#: ../src\buffer\rss.py:46
+msgid "%d new item in feed %s"
+msgstr "%d nieuwe post in feed %s"
+
+#: ../src\buffer\rss.py:48
+msgid "%d new items in feed %s"
+msgstr "%d nieuwe posts in feed %s"
+
+#: ../src\buffer\twitter\directs.py:49
+msgid "%d new direct message."
+msgstr "%d nieuw privébericht."
+
+#: ../src\buffer\twitter\directs.py:51
+msgid "%d new direct messages."
+msgstr "%d nieuwe directe berichten."
+
+#: ../src\buffer\twitter\favorites.py:48
+#: ../src\session\twitter\interface.py:445
+msgid "Tweet removed from favorites."
+msgstr "Tweet verwijderd uit favorieten."
+
+#: ../src\buffer\twitter\favorites.py:51
+msgid "Unable to remove tweet from favorites."
+msgstr "Fout bij het verwijderen van tweet uit favorieten."
+
+#: ../src\buffer\twitter\favorites.py:61
+#: ../src\buffer\twitter\user.py:56
+msgid "%d new post in %s's timeline."
+msgstr "%d nieuwe post in %s's tijdlijn."
+
+#: ../src\buffer\twitter\favorites.py:63
+msgid "%d new posts in %s's favorites."
+msgstr "%d nieuwe post in %s's favorieten."
+
+#: ../src\buffer\twitter\home.py:49
+msgid "%d new tweet."
+msgstr "%d nieuwe tweet."
+
+#: ../src\buffer\twitter\home.py:51
+msgid "%d new tweets."
+msgstr "%d nieuwe tweets."
+
+#: ../src\buffer\twitter\main.py:62
+msgid "about a second ago"
+msgstr "ongeveer een seconde geleden"
+
+#: ../src\buffer\twitter\main.py:65
+msgid "more than a second ago"
+msgstr "Meer dan een second geleden"
+
+#: ../src\buffer\twitter\main.py:67
+msgid "about %d seconds ago"
+msgstr "ongeveer %d seconden geleden"
+
+#: ../src\buffer\twitter\main.py:69
+msgid "about a minute ago"
+msgstr "ongeveer een minuut geleden"
+
+#: ../src\buffer\twitter\main.py:72
+msgid "more than a minute ago"
+msgstr "meer dan een minuut geleden"
+
+#: ../src\buffer\twitter\main.py:74
+msgid "about %d minutes ago"
+msgstr "ongeveer %d minuten geleden"
+
+#: ../src\buffer\twitter\main.py:76
+msgid "about an hour ago"
+msgstr "ongeveer een uur geleden"
+
+#: ../src\buffer\twitter\main.py:79
+msgid "more than an hour ago"
+msgstr "meer dan een uur geleden"
+
+#: ../src\buffer\twitter\main.py:81
+msgid "about %d hours ago"
+msgstr "ongeveer %d uur geleden"
+
+#: ../src\buffer\twitter\main.py:83
+msgid "about a day ago"
+msgstr "ongeveer een dag geleden"
+
+#: ../src\buffer\twitter\main.py:86
+msgid "more than a day ago"
+msgstr "meer dan een dag geleden"
+
+#: ../src\buffer\twitter\main.py:88
+msgid "about %d days ago"
+msgstr "ongeveer %d dagen geleden"
+
+#: ../src\buffer\twitter\main.py:420
+msgid "Message deleted from database."
+msgstr "Bericht verwijderd uit database."
+
+#: ../src\buffer\twitter\main.py:428
+msgid "Tweet removed from twitter."
+msgstr "Tweet verwijderd van twitter."
+
+#: ../src\buffer\twitter\main.py:431
+msgid "Unable to delete tweet from Twitter."
+msgstr "Fout bij het verwijderen van tweet van twitter."
+
+#: ../src\buffer\twitter\mentions.py:48
+msgid "%d new mention."
+msgstr "%d nieuwe vermelding."
+
+#: ../src\buffer\twitter\mentions.py:50
+msgid "%d new mentions."
+msgstr "%d nieuwe vermeldingen."
+
+#: ../src\buffer\twitter\public.py:28
+#: ../src\buffer\twitter\public.py:33
+msgid "Public timeline updated."
+msgstr "Publieke tijdlijn update."
+
+#: ../src\buffer\twitter\search.py:90
+msgid "%d new result for %s"
+msgstr "%d nieuw resultaat voor %s"
+
+#: ../src\buffer\twitter\search.py:92
+msgid "%d new results for %s"
+msgstr "%d nieuwe resultaten voor %s"
+
+#: ../src\buffer\twitter\sent.py:126
+msgid "%d new sent item."
+msgstr "%d nieuw verzonden item."
+
+#: ../src\buffer\twitter\sent.py:128
+msgid "%d new sent items."
+msgstr "%d nieuwe verzonden items."
+
+#: ../src\buffer\twitter\user.py:58
+msgid "%d new posts in %s's timeline."
+msgstr "%d nieuwe posts in %s's tijdlijn."
+
+#: ../src\dialogs\SessionManager\main.py:17
+msgid "Sessions:"
+msgstr "Sessies:"
+
+#: ../src\dialogs\SessionManager\main.py:21
+msgid "&Switch to"
+msgstr "&Schakel naar"
+
+#: ../src\dialogs\SessionManager\main.py:23
+msgid "&Delete session..."
+msgstr "&Verwijder sessie..."
+
+#: ../src\dialogs\SessionManager\main.py:25
+msgid "&New session..."
+msgstr "&Nieuwe sessie..."
+
+#: ../src\dialogs\SessionManager\main.py:44
+msgid "Are you sure you want to close session %s?"
+msgstr "Weet je zeker dat je sessie %s wilt sluiten?"
+
+#: ../src\dialogs\SessionManager\main.py:44
+msgid "Remove session"
+msgstr "Verwijder sessie"
+
+#: ../src\dialogs\SessionManager\main.py:48
+#: ../src\meta_interface.py:182
+#: ../src\meta_interface.py:199
+#: ../src\session\stopwatch\interface.py:20
+#: ../src\session\twitter\interface.py:198
+msgid "Canceled."
+msgstr "Geannuleerd."
+
+#: ../src\dialogs\SessionManager\main.py:58
+msgid "Type"
+msgstr "Type"
+
+#: ../src\dialogs\SessionManager\main.py:59
+#: ../src\dialogs\twitter\list_manager\list_manager.py:58
+msgid "Name"
+msgstr "Naam"
+
+#: ../src\dialogs\SessionManager\new_session.py:7
+msgid "New Session"
+msgstr "Nieuwe sessie"
+
+#: ../src\dialogs\SessionManager\new_session.py:13
+msgid "Session type:"
+msgstr "Sessietype:"
+
+#: ../src\dialogs\SessionManager\new_session.py:17
+msgid "Session name:"
+msgstr "Sessienaam:"
+
+#: ../src\dialogs\bing\search.py:7
+msgid "Bing! search"
+msgstr "Bing! zoekopdracht"
+
+#: ../src\dialogs\bing\search.py:13
+msgid "Search:"
+msgstr "zoeken:"
+
+#: ../src\dialogs\configuration\dialog.py:8
+msgid "Configuration"
+msgstr "Configuratie"
+
+#: ../src\dialogs\configuration\main.py:20
+msgid "Language"
+msgstr "Taal"
+
+#: ../src\dialogs\configuration\main.py:22
+msgid "Sounds"
+msgstr "Geluiden"
+
+#: ../src\dialogs\configuration\main.py:24
+msgid "Speech"
+msgstr "Spraak"
+
+#: ../src\dialogs\configuration\main.py:26
+msgid "Navigation"
+msgstr "Navigatie"
+
+#: ../src\dialogs\configuration\main.py:28
+msgid "Braille"
+msgstr "Braille"
+
+#: ../src\dialogs\configuration\main.py:30
+#: ../src\dialogs\twitter\configuration\main.py:25
+msgid "Miscellaneous"
+msgstr "Diversen"
+
+#: ../src\dialogs\configuration\main.py:46
+msgid "All but Receive Sounds"
+msgstr "Alles behalve Ontvangstgeluiden"
+
+#: ../src\dialogs\configuration\main.py:46
+msgid "Full"
+msgstr "Volledig"
+
+#: ../src\dialogs\configuration\main.py:46
+msgid "Off"
+msgstr "Uit"
+
+#: ../src\dialogs\configuration\main.py:46
+msgid "Receive Sounds"
+msgstr "Ontvangstgeluiden"
+
+#: ../src\dialogs\configuration\panels\braille.py:7
+msgid "Braille Output:"
+msgstr "Braille-uitvoer:"
+
+#: ../src\dialogs\configuration\panels\braille.py:8
+msgid "Braille spoken text?"
+msgstr "Uitgesproken tekst brailleren?"
+
+#: ../src\dialogs\configuration\panels\language.py:10
+msgid "Language Selection:"
+msgstr "Taalkeuze:"
+
+#: ../src\dialogs\configuration\panels\misc.py:8
+msgid "URL Shortener to use"
+msgstr "Te gebruiken URL-verkorter"
+
+#: ../src\dialogs\configuration\panels\misc.py:11
+msgid "Show confirmation dialog before exitting %s?"
+msgstr "Een bevestigingsvenster voor het afsluiten van %s weergeven?"
+
+#: ../src\dialogs\configuration\panels\navigation.py:7
+msgid "Move by percentage amount (as a %)"
+msgstr ""
+
+#: ../src\dialogs\configuration\panels\navigation.py:11
+msgid "Move by time (defined as hours:minutes) hours"
+msgstr ""
+
+#: ../src\dialogs\configuration\panels\navigation.py:15
+msgid "Move by time (defined as hours:minutes) minutes"
+msgstr ""
+
+#: ../src\dialogs\configuration\panels\navigation.py:19
+msgid "Undo stack size"
+msgstr ""
+
+#: ../src\dialogs\configuration\panels\sound.py:7
+msgid "Sound System"
+msgstr "Geluidssysteem"
+
+#: ../src\dialogs\configuration\panels\sound.py:10
+msgid "Sound pack"
+msgstr "Geluidspakket"
+
+#: ../src\dialogs\configuration\panels\sound.py:13
+msgid "Mute Status"
+msgstr "Dempstatus"
+
+#: ../src\dialogs\configuration\panels\speech.py:6
+msgid "Speech output"
+msgstr "Spraakuitvoer"
+
+#: ../src\dialogs\configuration\panels\speech.py:9
+msgid "SAPI speech rate"
+msgstr "Snelheid van spraak bij SAPI"
+
+#: ../src\dialogs\configuration\panels\speech.py:14
+msgid "SAPI speech volume"
+msgstr "Volume van spraak bij SAPI"
+
+#: ../src\dialogs\configuration\panels\speech.py:25
+msgid "Enable speech recognition?"
+msgstr "Spraakherkenning inschakelen?"
+
+#: ../src\dialogs\export\main.py:12
+msgid "Export"
+msgstr "Exporteren"
+
+#: ../src\dialogs\export\main.py:15
+msgid "Item"
+msgstr "Item"
+
+#: ../src\dialogs\export\main.py:19
+msgid "Buffer"
+msgstr "Buffer"
+
+#: ../src\dialogs\export\panel.py:12
+msgid "Save as"
+msgstr "Opslaan als"
+
+#: ../src\dialogs\export\panel.py:12
+msgid "Text File (*.txt)|*.txt|WAV File (*.wav)|*.wav"
+msgstr "Teksttbestand (*.txt)|*.txt|Geluidsbestand (*.wav)|*.wav"
+
+#: ../src\dialogs\export\panels\buffer.py:14
+msgid "Select buffer:"
+msgstr "Kies een buffer:"
+
+#: ../src\dialogs\export\panels\buffer.py:16
+#: ../src\dialogs\export\panels\item.py:10
+#: ../src\dialogs\export\panels\range.py:19
+msgid "Save As..."
+msgstr "Opslaan Als..."
+
+#: ../src\dialogs\export\panels\buffer.py:19
+#: ../src\dialogs\export\panels\item.py:13
+#: ../src\dialogs\export\panels\range.py:22
+msgid "Speech rate"
+msgstr "Snelheid van spraak"
+
+#: ../src\dialogs\export\panels\buffer.py:25
+#: ../src\dialogs\export\panels\item.py:19
+#: ../src\dialogs\export\panels\range.py:28
+msgid "Speech Volume"
+msgstr "Volume van spraak"
+
+#: ../src\dialogs\export\panels\buffer.py:31
+#: ../src\dialogs\export\panels\item.py:25
+#: ../src\dialogs\export\panels\range.py:34
+msgid "Speech Voice"
+msgstr "Stem"
+
+#: ../src\dialogs\export\panels\range.py:10
+msgid "Min:"
+msgstr "Minimaal"
+
+#: ../src\dialogs\export\panels\range.py:15
+msgid "Max:"
+msgstr "Maximaal"
+
+#: ../src\dialogs\facebook\configuration\login.py:7
+msgid "Login to facebook"
+msgstr "Inloggen op facebook"
+
+#: ../src\dialogs\facebook\configuration\main.py:17
+msgid "General"
+msgstr "Algemeen"
+
+#: ../src\dialogs\facebook\configuration\panels\general.py:12
+#: ../src\dialogs\twitter\buffers\panels\buffer.py:9
+msgid "Update interval (in minutes)"
+msgstr "Update interval (in minuten)"
+
+#: ../src\dialogs\facebook\post_update.py:15
+#: ../src\dialogs\twitter\new_tweet.py:13
+msgid "Message:"
+msgstr "Bericht:"
+
+#: ../src\dialogs\filter.py:9
+msgid "%s Buffer Search"
+msgstr "Buffer %s doorzoeken"
+
+#: ../src\dialogs\filter.py:15
+msgid "Buffer Search:"
+msgstr "Buffer doorzoeken:"
+
+#: ../src\dialogs\filter.py:19
+msgid "excluding"
+msgstr "uitsluiten"
+
+#: ../src\dialogs\gui.py:13
+msgid "&Tweet"
+msgstr "&Tweet"
+
+#: ../src\dialogs\gui.py:13
+msgid "Post a new tweet"
+msgstr "Post een nieuwe tweet"
+
+#: ../src\dialogs\gui.py:14
+msgid "&Direct message"
+msgstr "&privébericht"
+
+#: ../src\dialogs\gui.py:14
+msgid "Post a new direct message"
+msgstr "Stuur een nieuw privébericht"
+
+#: ../src\dialogs\gui.py:15
+msgid "New"
+msgstr "Nieuw"
+
+#: ../src\dialogs\gui.py:29
+msgid "Select a buffer:"
+msgstr "Kies een buffer:"
+
+#: ../src\dialogs\jump_to_post.py:7
+msgid "Jump to Post"
+msgstr "Spring naar post"
+
+#: ../src\dialogs\jump_to_post.py:12
+msgid "Enter post number to jump to, 1 to %s:"
+msgstr "Voer het nummer van een post in om naartoe te springen, 1 tot en met %s:"
+
+#: ../src\dialogs\keymap\add.py:11
+msgid "Function:"
+msgstr "Functie:"
+
+#: ../src\dialogs\keymap\dialog.py:7
+#: ../src\dialogs\keymap\main.py:10
+msgid "Keystroke Manager"
+msgstr "Beheer sneltoetsen"
+
+#: ../src\dialogs\keymap\dialog.py:10
+msgid "CTRL"
+msgstr "CTRL"
+
+#: ../src\dialogs\keymap\dialog.py:11
+msgid "WIN"
+msgstr "WIN"
+
+#: ../src\dialogs\keymap\dialog.py:12
+msgid "ALT"
+msgstr "ALT"
+
+#: ../src\dialogs\keymap\dialog.py:13
+msgid "SHIFT"
+msgstr "SHIFT"
+
+#: ../src\dialogs\keymap\dialog.py:14
+msgid "Key:"
+msgstr "toets:"
+
+#: ../src\dialogs\keymap\main.py:17
+#: ../src\dialogs\keymap\main.py:18
+msgid "Keymap:"
+msgstr "Sneltoetsen:"
+
+#: ../src\dialogs\keymap\main.py:22
+msgid "&Add..."
+msgstr "&Toevoegen..."
+
+#: ../src\dialogs\keymap\main.py:24
+msgid "&Edit..."
+msgstr "&Bewerken..."
+
+#: ../src\dialogs\keymap\main.py:26
+msgid "&Delete..."
+msgstr "&Verwijderen..."
+
+#: ../src\dialogs\keymap\main.py:64
+msgid "Keystroke in use"
+msgstr "Sneltoets in gebruik"
+
+#: ../src\dialogs\keymap\main.py:64
+msgid "The keystroke %s is already in use.  Please choose another."
+msgstr "Deze sneltoets (%s) wordt al gebruikt. Kies a.u.b. een andere."
+
+#: ../src\dialogs\keymap\main.py:75
+msgid "Function"
+msgstr "Functie"
+
+#: ../src\dialogs\keymap\main.py:76
+msgid "Keystroke"
+msgstr "Sneltoets"
+
+#: ../src\dialogs\keymap\main.py:77
+#: ../src\dialogs\twitter\list_manager\list_manager.py:60
+msgid "Description"
+msgstr "beschrijving:"
+
+#: ../src\dialogs\list_urls.py:11
+msgid "URL Selection"
+msgstr "Kies een URL"
+
+#: ../src\dialogs\list_urls.py:17
+msgid "Select URL from tweet to open"
+msgstr "Kies een URL uit deze tweet om in je browser te openen"
+
+#: ../src\dialogs\list_urls.py:24
+msgid "Unshorten URL"
+msgstr "URL verkorten"
+
+#: ../src\dialogs\list_urls.py:28
+msgid "Copy URL"
+msgstr "Kopieer URL"
+
+#: ../src\dialogs\list_urls.py:63
+msgid "Error"
+msgstr "Fout"
+
+#: ../src\dialogs\list_urls.py:63
+msgid "There was an error in unshortening this URL."
+msgstr "Er is een fout opgetreden bij het verkorten van dit URL."
+
+#: ../src\dialogs\list_urls.py:77
+msgid "URL copied to clipboard."
+msgstr "URL gekopiëerd naar klembord."
+
+#: ../src\dialogs\rss\viewer.py:7
+msgid "%s RSS Viewer"
+msgstr "%s RSS Lezer"
+
+#: ../src\dialogs\solona\configuration\main.py:12
+#: ../src\dialogs\twitter\configuration\main.py:21
+msgid "Account"
+msgstr "Account"
+
+#: ../src\dialogs\solona\configuration\main.py:14
+msgid "Settings"
+msgstr "Instellingen"
+
+#: ../src\dialogs\solona\configuration\panels\account.py:7
+#: ../src\dialogs\twitter\configuration\panels\account.py:7
+msgid "Username"
+msgstr "Gebruikersnaam"
+
+#: ../src\dialogs\solona\configuration\panels\account.py:10
+#: ../src\dialogs\twitter\configuration\panels\account.py:10
+msgid "Password"
+msgstr "Wachtwoord"
+
+#: ../src\dialogs\solona\configuration\panels\settings.py:7
+msgid "Show message box with captcha solution."
+msgstr "Toon dialoogvenster met oplossing van CAPTCHA"
+
+#: ../src\dialogs\solona\configuration\panels\settings.py:8
+msgid "Copy Captcha solution to clipboard."
+msgstr "kopieer Captcha-oplossing naar klembord."
+
+#: ../src\dialogs\solona\solution.py:7
+msgid "Solona Solution"
+msgstr "Solona oplossing"
+
+#: ../src\dialogs\solona\solution.py:10
+msgid "Solona returned:"
+msgstr "Antwoord van solona:"
+
+#: ../src\dialogs\stopwatch\countdown.py:11
+msgid "Name:"
+msgstr "Naam"
+
+#: ../src\dialogs\stopwatch\countdown.py:13
+msgid "Hours:"
+msgstr "Uren:"
+
+#: ../src\dialogs\stopwatch\countdown.py:16
+msgid "Minutes:"
+msgstr "Minuten:"
+
+#: ../src\dialogs\stopwatch\countdown.py:19
+msgid "Seconds:"
+msgstr "Seconden:"
+
+#: ../src\dialogs\twitter\buffers\main.py:17
+msgid "Buffer Configuration"
+msgstr "Buffer Configuratie"
+
+#: ../src\dialogs\twitter\buffers\main.py:21
+msgid "Default Settings"
+msgstr "Standaardinstellingen"
+
+#: ../src\dialogs\twitter\buffers\main.py:110
+msgid "Attention"
+msgstr "Let op"
+
+#: ../src\dialogs\twitter\buffers\panels\buffer.py:13
+msgid "Number of posts to download per update"
+msgstr "Aantal te downloaden posts per update"
+
+#: ../src\dialogs\twitter\buffers\panels\buffer.py:20
+#: ../src\dialogs\twitter\search.py:23
+msgid "Max API calls to use per update (1 API call = 100 results)"
+msgstr "Maximaal te gebruiken API calls per update (1 API call = 100 resultaten)"
+
+#: ../src\dialogs\twitter\buffers\panels\buffer.py:22
+#: ../src\dialogs\twitter\individual.py:26
+msgid "Max API calls to use per update (1 API call = 200 tweets)"
+msgstr "Maximaal te gebruiken API calls per update (1 API call = 200 tweets)"
+
+#: ../src\dialogs\twitter\buffers\panels\buffer.py:31
+msgid "Apply settings to all buffers"
+msgstr "Instellingen op alle buffers toepassen"
+
+#: ../src\dialogs\twitter\configuration\main.py:13
+msgid "Twitter Configuration"
+msgstr "Twitter Configuratie"
+
+#: ../src\dialogs\twitter\configuration\main.py:23
+msgid "Templates"
+msgstr "Templates"
+
+#: ../src\dialogs\twitter\configuration\main.py:41
+msgid "Always add comments (old style)"
+msgstr "Altijd commentaar toevoegen (Oude stijl)"
+
+#: ../src\dialogs\twitter\configuration\main.py:41
+msgid "Ask whether comments are to be added (recommended)"
+msgstr "Vraag of commentaar moet worden toegevoegd (aanbevolen)"
+
+#: ../src\dialogs\twitter\configuration\main.py:41
+msgid "Never add comments (automatically retweet)"
+msgstr "Nooit commentaar toevoegen (automatisch retweeten)"
+
+#: ../src\dialogs\twitter\configuration\panels\misc.py:7
+msgid "Enable DM safe mode?"
+msgstr "Veilige modus voor directe berichten inschakelen?"
+
+#: ../src\dialogs\twitter\configuration\panels\misc.py:8
+msgid "Retweet Style"
+msgstr "Retweetstijl:"
+
+#: ../src\dialogs\twitter\configuration\panels\misc.py:11
+msgid "Reply to self?"
+msgstr "Antwoord naar jezelf?"
+
+#: ../src\dialogs\twitter\configuration\panels\templates.py:8
+msgid "Tweet template:"
+msgstr "Tweet sjabloon:"
+
+#: ../src\dialogs\twitter\configuration\panels\templates.py:11
+msgid "Clipboard template:"
+msgstr "Klembord sjabloon:"
+
+#: ../src\dialogs\twitter\configuration\panels\templates.py:14
+msgid "Sent tweet template:"
+msgstr "Verzonden tweet sjabloon:"
+
+#: ../src\dialogs\twitter\configuration\panels\templates.py:17
+msgid "Sent direct message template:"
+msgstr "Verzonden DM sjabloon:"
+
+#: ../src\dialogs\twitter\configuration\panels\templates.py:20
+msgid "Search template:"
+msgstr "Sjabloon voor zoeken:"
+
+#: ../src\dialogs\twitter\configuration\panels\templates.py:24
+msgid "Reply template:"
+msgstr "Antwoord sjabloon:"
+
+#: ../src\dialogs\twitter\configuration\panels\templates.py:27
+msgid "Retweet template:"
+msgstr "Retweet sjabloon:"
+
+#: ../src\dialogs\twitter\configuration\panels\templates.py:30
+msgid "Followers and friends template:"
+msgstr "Volgers en vrienden template:"
+
+#: ../src\dialogs\twitter\configuration\panels\templates.py:33
+msgid "User info template:"
+msgstr "Gebruikersinformatie template:"
+
+#: ../src\dialogs\twitter\favorites.py:7
+msgid "Show Favorites"
+msgstr "Favorieten weergeven"
+
+#: ../src\dialogs\twitter\favorites.py:13
+msgid "Favorites for:"
+msgstr "Favorieten van:"
+
+#: ../src\dialogs\twitter\follow.py:7
+msgid "Follow someone"
+msgstr "Iemand volgen"
+
+#: ../src\dialogs\twitter\follow.py:13
+msgid "Follow who:"
+msgstr "Volg wie:"
+
+#: ../src\dialogs\twitter\follow.py:19
+msgid "Mobile Updates"
+msgstr "Mobiele updates"
+
+#: ../src\dialogs\twitter\followers.py:7
+msgid "List Followers"
+msgstr "Volgers weergeven"
+
+#: ../src\dialogs\twitter\followers.py:13
+msgid "Followers for:"
+msgstr "Volgers van:"
+
+#: ../src\dialogs\twitter\followers.py:19
+msgid "Max API calls to use (1 API call = 100 followers)"
+msgstr "Maximaal te gebruiken API calls (1 API call = 100 volgers)"
+
+#: ../src\dialogs\twitter\friends.py:7
+msgid "List Friends"
+msgstr "Vrienden weergeven"
+
+#: ../src\dialogs\twitter\friends.py:13
+msgid "Friends for:"
+msgstr "Vrienden van:"
+
+#: ../src\dialogs\twitter\friends.py:19
+msgid "Max API calls to use (1 API call = 100 friends)"
+msgstr "Maximaal te gebruiken API calls (1 API call = 100 vrienden)"
+
+#: ../src\dialogs\twitter\individual.py:7
+msgid "Individual Buffer"
+msgstr "Individuele buffer"
+
+#: ../src\dialogs\twitter\individual.py:13
+msgid "Buffer for:"
+msgstr "Buffer voor:"
+
+#: ../src\dialogs\twitter\individual.py:20
+msgid "Posts per update:"
+msgstr "Posts per update:"
+
+#: ../src\dialogs\twitter\list_manager\add_list.py:12
+msgid "List name:"
+msgstr "Lijstnaam:"
+
+#: ../src\dialogs\twitter\list_manager\add_list.py:16
+msgid "List mode:"
+msgstr "Lijstmodus:"
+
+#: ../src\dialogs\twitter\list_manager\add_list.py:19
+msgid "List description:"
+msgstr "Lijstbeschrijving:"
+
+#: ../src\dialogs\twitter\list_manager\list_manager.py:16
+msgid "Current lists:"
+msgstr "Huidige lijsten:"
+
+#: ../src\dialogs\twitter\list_manager\list_manager.py:20
+msgid "Delete list"
+msgstr "Verwijder lijst"
+
+#: ../src\dialogs\twitter\list_manager\list_manager.py:22
+msgid "Edit list..."
+msgstr "Bewerk lijst"
+
+#: ../src\dialogs\twitter\list_manager\list_manager.py:23
+msgid "New list..."
+msgstr "Nieuwe lijst"
+
+#: ../src\dialogs\twitter\list_manager\list_manager.py:48
+msgid "List created."
+msgstr "Lijst aangemaakt."
+
+#: ../src\dialogs\twitter\list_manager\list_manager.py:59
+msgid "Mode"
+msgstr "Modus"
+
+#: ../src\dialogs\twitter\local_trends.py:11
+msgid "Location Selection"
+msgstr "Locatieselectie"
+
+#: ../src\dialogs\twitter\local_trends.py:17
+msgid "Select type of location:"
+msgstr "Selecteer het locatietype:"
+
+#: ../src\dialogs\twitter\local_trends.py:19
+msgid "Select location:"
+msgstr "Selecteer locatie:"
+
+#: ../src\dialogs\twitter\new_dm.py:13
+msgid "DM who?"
+msgstr "DM naar wie?"
+
+#: ../src\dialogs\twitter\new_dm.py:24
+msgid "Direct message:"
+msgstr "privébericht:"
+
+#: ../src\dialogs\twitter\new_dm.py:28
+#: ../src\dialogs\twitter\new_tweet.py:17
+msgid "&Shorten URL"
+msgstr "&URL verkorten"
+
+#: ../src\dialogs\twitter\new_dm.py:30
+#: ../src\dialogs\twitter\new_tweet.py:23
+msgid "Post this message later?"
+msgstr "Dit bericht later posten?"
+
+#: ../src\dialogs\twitter\new_dm.py:33
+#: ../src\dialogs\twitter\new_tweet.py:26
+msgid "Time in minutes to wait before posting this message?"
+msgstr "de Te wachten tijd voor verzending (in minuten)"
+
+#: ../src\dialogs\twitter\new_message.py:21
+msgid "%s - %d of %d Characters"
+msgstr "%s - %d van de %d karakters"
+
+#: ../src\dialogs\twitter\new_message.py:68
+msgid "URL Shortener - No URLs"
+msgstr "URL-verkorter - Geen URLs"
+
+#: ../src\dialogs\twitter\new_message.py:69
+msgid "No URLs were found to shorten. If there is one, select the URL and click this button again."
+msgstr "Geen webadressen gevonden om in te korten. Selecteer een adres en probeer het opnieuw."
+
+#: ../src\dialogs\twitter\new_message.py:83
+msgid "URL Shortener - Select URL"
+msgstr "Webadressenverkorter - Selecteer adres"
+
+#: ../src\dialogs\twitter\new_message.py:84
+msgid "Select URL to shorten."
+msgstr "Selecteer een webadres om in te korten."
+
+#: ../src\dialogs\twitter\new_message.py:100
+msgid "URL Shortened."
+msgstr "Adres ingekort."
+
+#: ../src\dialogs\twitter\new_message.py:103
+msgid "URL Shortener - Problem"
+msgstr "Webadressenverkorter - Fout"
+
+#: ../src\dialogs\twitter\new_message.py:104
+msgid "There was a problem shortening the selected URL."
+msgstr "Er trad een probleem op bij het verkorten van het geselecteerde adres."
+
+#: ../src\dialogs\twitter\new_reply.py:7
+msgid "New Reply to %s"
+msgstr "Nieuw antwoord aan %s"
+
+#: ../src\dialogs\twitter\new_tweet.py:20
+msgid "Retweet:"
+msgstr "Retweet:"
+
+#: ../src\dialogs\twitter\profile.py:18
+msgid "Real name:"
+msgstr "Echte naam:"
+
+#: ../src\dialogs\twitter\profile.py:24
+msgid "Screen name:"
+msgstr "Schermnaam:"
+
+#: ../src\dialogs\twitter\profile.py:31
+msgid "Location:"
+msgstr "Locatie:"
+
+#: ../src\dialogs\twitter\profile.py:38
+msgid "URL"
+msgstr "URL"
+
+#: ../src\dialogs\twitter\profile.py:45
+msgid "Bio:"
+msgstr "Bio:"
+
+#: ../src\dialogs\twitter\profile.py:51
+msgid "Tweets are protected:"
+msgstr "Tweets zijn privé:"
+
+#: ../src\dialogs\twitter\profile.py:60
+msgid "Number of followers:"
+msgstr "Aantal volgers:"
+
+#: ../src\dialogs\twitter\profile.py:66
+msgid "Number of friends:"
+msgstr "Aantal vrienden:"
+
+#: ../src\dialogs\twitter\profile.py:72
+msgid "Number of tweets:"
+msgstr "Aantal tweets:"
+
+#: ../src\dialogs\twitter\profile.py:78
+msgid "Average tweets per day since joining Twitter:"
+msgstr "Gemiddeld aantal tweets per dag sinds aanmelding bij twitter:"
+
+#: ../src\dialogs\twitter\profile.py:84
+msgid "Date of last tweet:"
+msgstr "Datum van laatste tweet:"
+
+#: ../src\dialogs\twitter\profile.py:93
+msgid "Date joined Twitter:"
+msgstr "Twitter aanmeldingsdatum:"
+
+#: ../src\dialogs\twitter\profile_update.py:8
+msgid "Update profile"
+msgstr "Update profiel"
+
+#: ../src\dialogs\twitter\profile_update.py:14
+msgid "Name (Maximum of %d characters)."
+msgstr "Naam (Maximaal %d karakters)."
+
+#: ../src\dialogs\twitter\profile_update.py:20
+msgid "Email (Maximum of %d characters)."
+msgstr "E-mail adres (Maximaal %d karakters)."
+
+#: ../src\dialogs\twitter\profile_update.py:26
+msgid "URL (Maximum of %d characters)."
+msgstr "Webadres (Maximaal %d karakters)."
+
+#: ../src\dialogs\twitter\profile_update.py:32
+msgid "Location (Maximum of %d characters)."
+msgstr "Locatie (Maximaal %d karakters)."
+
+#: ../src\dialogs\twitter\profile_update.py:38
+msgid "Bio (Maximum of %d characters)."
+msgstr "Bio (Maximaal %d karakters)."
+
+#: ../src\dialogs\twitter\search.py:7
+msgid "Twitter search"
+msgstr "Zoeken op twitter"
+
+#: ../src\dialogs\twitter\search.py:13
+msgid "Twitter Search:"
+msgstr "Twitter Zoeken:"
+
+#: ../src\dialogs\twitter\search.py:18
+msgid "Persistent results"
+msgstr "Blijvende resultaten"
+
+#: ../src\dialogs\twitter\search.py:21
+msgid "Save Search"
+msgstr "Zoekopdracht Opslaan"
+
+#: ../src\dialogs\twitter\unfollow.py:7
+msgid "Stop following someone"
+msgstr "Stop iemand te volgen"
+
+#: ../src\dialogs\twitter\unfollow.py:13
+msgid "Unfollow who:"
+msgstr "Stop volgen van:"
+
+#: ../src\dialogs\twitter\unfollow.py:20
+msgid "Action:"
+msgstr "Actie:"
+
+#: ../src\dialogs\twitter\user_info.py:7
+msgid "User Profile"
+msgstr "Gebruikersprofiel"
+
+#: ../src\dialogs\twitter\user_info.py:13
+msgid "User profile for:"
+msgstr "Gebruikersprofiel van:"
+
+#: ../src\meta_interface.py:28
+msgid "%s Configuration"
+msgstr "Configuratie voor %s"
+
+#: ../src\meta_interface.py:32
+#: ../src\meta_interface.py:63
+#: ../src\session\facebook\main.py:52
+#: ../src\session\solona\main.py:47
+#: ../src\session\twitter\main.py:137
+msgid "Configuration saved."
+msgstr "Configuratie opgeslagen."
+
+#: ../src\meta_interface.py:34
+#: ../src\meta_interface.py:65
+#: ../src\session\facebook\main.py:56
+#: ../src\session\solona\main.py:51
+#: ../src\session\twitter\main.py:141
+msgid "Configuration canceled."
+msgstr "Configuratie geannuleerd."
+
+#: ../src\meta_interface.py:41
+msgid "No buffers in this session."
+msgstr "Geen buffers in deze sessie."
+
+#: ../src\meta_interface.py:46
+#: ../src\meta_interface.py:48
+#: ../src\meta_interface.py:50
+#: ../src\meta_interface.py:52
+#: ../src\meta_interface.py:54
+msgid "%s Buffer Configuration"
+msgstr "Bufferconfiguratie voor %s"
+
+#: ../src\meta_interface.py:83
+msgid "Exporting..."
+msgstr "Bezig met exporteren..."
+
+#: ../src\meta_interface.py:85
+#: ../src\meta_interface.py:89
+#: ../src\meta_interface.py:92
+msgid "Export complete."
+msgstr "Exporteren voltooid."
+
+#: ../src\meta_interface.py:97
+msgid "Are you sure you want to exit %s?"
+msgstr "Weet je zeker dat je %s wilt afsluiten?"
+
+#: ../src\meta_interface.py:97
+msgid "Exit %s"
+msgstr "%s afsluiten"
+
+#: ../src\meta_interface.py:103
+msgid "Exitting %s."
+msgstr "%s wordt afgesloten."
+
+#: ../src\meta_interface.py:116
+msgid "Speech recognition off."
+msgstr "Spraakherkenning uit."
+
+#: ../src\meta_interface.py:120
+msgid "Speech recognition on."
+msgstr "Spraakherkenning aan."
+
+#: ../src\meta_interface.py:152
+msgid "Keymap saved."
+msgstr "Sneltoetsen opgeslagen."
+
+#: ../src\meta_interface.py:154
+msgid "Keymap unsaved."
+msgstr "Sneltoetsen niet opgeslagen."
+
+#: ../src\meta_interface.py:168
+#: ../src\meta_interface.py:185
+msgid "Error: this is the only session."
+msgstr "Fout: dit is de enige sessie."
+
+#: ../src\meta_interface.py:175
+msgid "Delete Session"
+msgstr "Verwijder sessie"
+
+#: ../src\meta_interface.py:202
+msgid "Please enter a name for this session."
+msgstr "Voer een naam in voor deze sessie."
+
+#: ../src\meta_interface.py:207
+msgid "Unable to spawn new %s session."
+msgstr "Fout bij het opslaan van de nieuwe sessie %s."
+
+#: ../src\meta_interface.py:216
+msgid "Keyboard help on."
+msgstr "Toetsenbordhelp aan."
+
+#: ../src\meta_interface.py:219
+msgid "Keyboard help off."
+msgstr "Toetsenbordhelp uit."
+
+#: ../src\output.py:60
+msgid "No current buffer."
+msgstr "Geen huidige buffer."
+
+#: ../src\output.py:64
+msgid "%s: No items."
+msgstr "%s: Geen items."
+
+#: ../src\output.py:66
+msgid "%s: %d of %d items."
+msgstr "%s: %d van de %d items."
+
+#: ../src\output.py:72
+msgid "Item %d of %d."
+msgstr "Item %d van %d."
+
+#: ../src\output.py:79
+msgid "No current session."
+msgstr "Geen huidige sessie."
+
+#: ../src\qwitter.pyw:35
+msgid "Welcome to %s"
+msgstr "Welkom bij %s"
+
+#: ../src\qwitter.pyw:40
+msgid "There was an error in the startup process.  We appologize for this."
+msgstr "Er is een fout opgetreden tijdens het opstarten. Onze excuses voor het ongemak."
+
+#: ../src\session\bing\interface.py:14
+msgid "Bing! Search"
+msgstr "Bing! zoekopdracht"
+
+#: ../src\session\bing\interface.py:18
+#: ../src\session\twitter\interface.py:357
+msgid "Please enter a term to search for."
+msgstr "Voer een zoekopdracht in."
+
+#: ../src\session\bing\interface.py:36
+msgid "Opening website."
+msgstr "Website wordt geopend."
+
+#: ../src\session\buffers\interface.py:58
+#: ../src\session\buffers\interface.py:75
+msgid "Cannot move by time in this buffer."
+msgstr "Navigeren bij tijd is niet mogelijk in deze buffer."
+
+#: ../src\session\buffers\interface.py:126
+msgid "There are no buffers to dismiss."
+msgstr "Er zijn geen buffers die gesloten kunnen worden."
+
+#: ../src\session\buffers\interface.py:129
+#: ../src\session\buffers\interface.py:136
+msgid "Unable to dismiss buffer %s"
+msgstr "Fout bij het verwijderen van buffer %s"
+
+#: ../src\session\buffers\interface.py:157
+msgid "No buffers remaining."
+msgstr "Geen overgebleven buffers."
+
+#: ../src\session\buffers\interface.py:165
+msgid "Undo failed: stack empty"
+msgstr "Ongedaan maken mislukt: lege stack"
+
+#: ../src\session\buffers\interface.py:169
+msgid "Undo failed: buffer no longer exists"
+msgstr "Ongedaan maken mislukt: De buffer bestaat niet langer"
+
+#: ../src\session\buffers\interface.py:183
+msgid "This buffer cannot be cleared."
+msgstr "Deze buffer kan niet geleegd worden."
+
+#: ../src\session\buffers\interface.py:220
+msgid "Processing.  Please wait."
+msgstr "Bezig, even geduld."
+
+#: ../src\session\buffers\interface.py:241
+msgid "Post copied to clipboard."
+msgstr "Post gekopiëerd naar klembord."
+
+#: ../src\session\facebook\interface.py:30
+msgid "Status updated."
+msgstr "Status geupdate."
+
+#: ../src\session\facebook\interface.py:35
+msgid "Updating status failed."
+msgstr "Updaten van status mislukt."
+
+#: ../src\session\facebook\main.py:23
+msgid "Statuses"
+msgstr "Statussen"
+
+#: ../src\session\gui\notification_area.py:12
+msgid "&About %s"
+msgstr "&Over %s"
+
+#: ../src\session\gui\notification_area.py:12
+msgid "About %s"
+msgstr "Over %s"
+
+#: ../src\session\gui\notification_area.py:14
+msgid "E&xit %s"
+msgstr "%s a&fsluiten"
+
+#: ../src\session\gui\notification_area.py:14
+msgid "Exit %s..."
+msgstr "%s afsluiten..."
+
+#: ../src\session\login.py:19
+msgid "Login succeeded."
+msgstr "Inloggen succesvol."
+
+#: ../src\session\login.py:22
+msgid "Login failed."
+msgstr "Inloggen mislukt."
+
+#: ../src\session\rss\interface.py:21
+msgid "Unable to retrieve URL to open from this feed."
+msgstr ""
+
+#: ../src\session\rss\interface.py:34
+msgid "Add feed"
+msgstr "Feed toevoegen"
+
+#: ../src\session\rss\interface.py:34
+msgid "Enter URL of rss feed to add:"
+msgstr "Voer het webadres van de toe te voegen feed in:"
+
+#: ../src\session\solona\interface.py:17
+msgid "Capturing screenshot."
+msgstr "Screenshot wordt vastgelegd."
+
+#: ../src\session\solona\interface.py:23
+msgid "Unable to take screenshot."
+msgstr "Fout bij het maken van screenshot."
+
+#: ../src\session\solona\interface.py:30
+#: ../src\session\solona\interface.py:60
+msgid "Unable to submit captcha to Solona."
+msgstr "Fout bij het versturen van captcha naar Solona."
+
+#: ../src\session\solona\interface.py:33
+#: ../src\session\solona\interface.py:63
+msgid "Submitted captcha for analysis."
+msgstr "Capttcha verzonden voor analize."
+
+#: ../src\session\solona\interface.py:36
+#: ../src\session\solona\interface.py:66
+msgid "Solona is currently offline; please try again later."
+msgstr "Solona is momenteel offline, probeer het later opnieuw."
+
+#: ../src\session\solona\interface.py:74
+msgid "Checking current status of Solona..."
+msgstr "De huidige status van Solona wordt gecontroleerd."
+
+#: ../src\session\solona\interface.py:79
+msgid "Unable to obtain current operator status."
+msgstr ""
+
+#: ../src\session\solona\interface.py:83
+msgid "Solona is offline; no operators are available."
+msgstr "Solona is offline, er zijn geen operators beschikbaar."
+
+#: ../src\session\solona\interface.py:85
+msgid "Solona is online, and operators are standing by."
+msgstr "Solona is online, operators zijn beschikbaar."
+
+#: ../src\session\solona\main.py:32
+msgid "Successfully logged into Solona as %s"
+msgstr "succesvol bij Solona aangemeld als %s"
+
+#: ../src\session\solona\main.py:35
+msgid "Unable to Log into Solona."
+msgstr "Fout bij het inloggen op Solona."
+
+#: ../src\session\solona\main.py:72
+msgid "Captcha solution copied to clipboard."
+msgstr "Oplossing van captcha naar klembord gekopiëerd."
+
+#: ../src\session\speech_recognition.py:36
+msgid "Unable to initialize speech recognition."
+msgstr "Fout bij het initialiseren van de spraakherkenning."
+
+#: ../src\session\stopwatch\interface.py:13
+msgid "Countdown Timer"
+msgstr ""
+
+#: ../src\session\stopwatch\interface.py:18
+msgid "Counting."
+msgstr "Bezig met tellen."
+
+#: ../src\session\stopwatch\main.py:19
+msgid "Countdowns"
+msgstr ""
+
+#: ../src\session\stopwatch\main.py:19
+msgid "Timers"
+msgstr "Timers"
+
+#: ../src\session\stopwatch\main.py:48
+msgid "Time is up."
+msgstr "Tijd is op."
+
+#: ../src\session\storage.py:44
+msgid "Sync failed."
+msgstr "Synchronisatie mislukt."
+
+#: ../src\session\storage.py:48
+msgid "Sync completed."
+msgstr "Synchronisatie voltooid."
+
+#: ../src\session\twitter\interface.py:35
+msgid "New Tweet"
+msgstr "Nieuwe Tweet"
+
+#: ../src\session\twitter\interface.py:98
+msgid "No user found to reply to."
+msgstr "Geen gebruiker gevonden om te antwoorden."
+
+#: ../src\session\twitter\interface.py:133
+msgid "View Item"
+msgstr "Bekijk Item"
+
+#: ../src\session\twitter\interface.py:140
+msgid "View Tweet From %s"
+msgstr "Bekijk Tweet Van %s"
+
+#: ../src\session\twitter\interface.py:155
+msgid "Item is not a post."
+msgstr "Dit item is geen post."
+
+#: ../src\session\twitter\interface.py:159
+msgid "Cannot retweet a direct message while DM safe mode is enabled."
+msgstr "Kan geen privébericht hertweeten wanneer de pb veilige modus is ingeschakeld."
+
+#: ../src\session\twitter\interface.py:163
+msgid "Cannot retweet your own tweet."
+msgstr "Een eigen tweet kan niet hertweet worden."
+
+#: ../src\session\twitter\interface.py:168
+msgid "Retweet"
+msgstr "Retweet"
+
+#: ../src\session\twitter\interface.py:168
+msgid "Would you like to add a comment?"
+msgstr "Wil je commentaar toevoegen?"
+
+#: ../src\session\twitter\interface.py:191
+msgid "No users to follow detected in current post."
+msgstr "Geen te volgen gebruikers gevonden in deze post."
+
+#: ../src\session\twitter\interface.py:205
+msgid "Now following %s"
+msgstr "%s wordt nu gevolgd."
+
+#: ../src\session\twitter\interface.py:207
+msgid "Following %s failed"
+msgstr "Volgen van %s mislukt"
+
+#: ../src\session\twitter\interface.py:225
+#: ../src\session\twitter\interface.py:376
+#: ../src\session\twitter\interface.py:807
+#: ../src\session\twitter\interface.py:828
+#: ../src\session\twitter\interface.py:841
+msgid "Canceled"
+msgstr "Geannuleerd"
+
+#: ../src\session\twitter\interface.py:230
+msgid "No longer following %s"
+msgstr "Volgen van %s gestopt"
+
+#: ../src\session\twitter\interface.py:232
+msgid "Unfollowing %s failed"
+msgstr "Stoppen met volgen van %s mislukt"
+
+#: ../src\session\twitter\interface.py:238
+msgid "%s has been blocked."
+msgstr "%s is geblokkeerd."
+
+#: ../src\session\twitter\interface.py:240
+msgid "Blocking %s failed"
+msgstr "Blokkeren van %s mislukt"
+
+#: ../src\session\twitter\interface.py:246
+msgid "%s has been reported as a spammer."
+msgstr "%s is gerapporteerd als een spammer."
+
+#: ../src\session\twitter\interface.py:248
+msgid "Reporting %s as spam failed"
+msgstr "Rapporteren van %s als spammer mislukt"
+
+#: ../src\session\twitter\interface.py:258
+msgid "Checking for new updates in %s buffer."
+msgstr "Controleren op nieuwe updates in buffer %s."
+
+#: ../src\session\twitter\interface.py:263
+msgid "Forcing updates is not permitted in this buffer."
+msgstr "Het forceren van updates in deze buffer is niet mogelijk."
+
+#: ../src\session\twitter\interface.py:277
+msgid "No URLs detected in current post."
+msgstr "Geen webadressen gevonden in huidige tweet."
+
+#: ../src\session\twitter\interface.py:291
+msgid "%s login failure"
+msgstr "Inloggen als %s mislukt"
+
+#: ../src\session\twitter\interface.py:291
+msgid "Logging into Twitter with the supplied credentials failed."
+msgstr "Inloggen bij twitter met de ingevoerde gegevens mislukt."
+
+#: ../src\session\twitter\interface.py:300
+msgid "Update posted."
+msgstr "Update epost."
+
+#: ../src\session\twitter\interface.py:305
+msgid "Update failed."
+msgstr "Update mislukt."
+
+#: ../src\session\twitter\interface.py:312
+msgid "Reply posted."
+msgstr "Antwoord gepost."
+
+#: ../src\session\twitter\interface.py:317
+msgid "Reply failed."
+msgstr "Antwoord mislukt."
+
+#: ../src\session\twitter\interface.py:325
+msgid "Dm Sent."
+msgstr "Privébericht verstuurd."
+
+#: ../src\session\twitter\interface.py:330
+msgid "Sending dm failed."
+msgstr "Versturen van privébericht mislukt."
+
+#: ../src\session\twitter\interface.py:336
+msgid "Retweet posted."
+msgstr "Hertweet gepost."
+
+#: ../src\session\twitter\interface.py:341
+msgid "Retweet failed."
+msgstr "Hertweet mislukt."
+
+#: ../src\session\twitter\interface.py:359
+msgid "Search for %s"
+msgstr "Zoeken naar %s"
+
+#: ../src\session\twitter\interface.py:385
+#, fuzzy
+msgid "Trending: Worldwide"
+msgstr "Trending: Wereldwijd"
+
+#: ../src\session\twitter\interface.py:396
+msgid "Loading public timeline."
+msgstr "Publieke tijdlijn wordt geladen."
+
+#: ../src\session\twitter\interface.py:397
+msgid "Public Timeline"
+msgstr "Publieke Tijdlijn"
+
+#: ../src\session\twitter\interface.py:408
+msgid "Favorites"
+msgstr "Favorieten"
+
+#: ../src\session\twitter\interface.py:423
+#: ../src\session\twitter\interface.py:568
+#: ../src\session\twitter\interface.py:679
+#: ../src\session\twitter\interface.py:699
+#: ../src\session\twitter\interface.py:760
+msgid "canceled."
+msgstr "Geannuleerd."
+
+#: ../src\session\twitter\interface.py:426
+msgid "%s's favorites"
+msgstr "Favorieten van %s"
+
+#: ../src\session\twitter\interface.py:436
+msgid "Tweet added to favorites"
+msgstr "Tweet toegevoegd aan favorieten"
+
+#: ../src\session\twitter\interface.py:438
+msgid "Marking tweet as favorite failed."
+msgstr "Toevoegen van tweet aan favorieten mislukt."
+
+#: ../src\session\twitter\interface.py:447
+msgid "Removing tweet from favorites failed."
+msgstr "Verwijderen van tweet aan favorieten mislukt."
+
+#: ../src\session\twitter\interface.py:452
+#: ../src\session\twitter\interface.py:457
+#: ../src\session\twitter\interface.py:476
+msgid "Followers"
+msgstr "Volgers"
+
+#: ../src\session\twitter\interface.py:456
+msgid "Loading followers list."
+msgstr "Volgerslijst wordt geladen:"
+
+#: ../src\session\twitter\interface.py:464
+#: ../src\session\twitter\interface.py:469
+msgid "Friends"
+msgstr "Vrienden"
+
+#: ../src\session\twitter\interface.py:468
+msgid "Loading friends list."
+msgstr "Vriendenlijst wordt geladen:"
+
+#: ../src\session\twitter\interface.py:477
+#: ../src\session\twitter\interface.py:485
+msgid "Followers Analysis"
+msgstr "Volgersanalize"
+
+#: ../src\session\twitter\interface.py:481
+msgid "Please launch your followers buffer before attempting to perform analysis."
+msgstr "Open je followers buffer voor je de followers laat analyseren."
+
+#: ../src\session\twitter\interface.py:483
+msgid "Cannot perform analysis on an empty followers buffer."
+msgstr "Kan geen analyse uitvoeren op een lege followers buffer."
+
+#: ../src\session\twitter\interface.py:488
+msgid "Performing analysis, please wait..."
+msgstr "Analyse wordt uitgevoerd, even geduld..."
+
+#: ../src\session\twitter\interface.py:493
+msgid "Checking current API call count..."
+msgstr "Aantal API calls wordt gecontroleerd."
+
+#: ../src\session\twitter\interface.py:502
+msgid "You have %s API calls left.  They will reset to %d calls in %s."
+msgstr "Je hebt nog %s API calls over. Een reset naar %d calls zal binnen %s plaats vinden."
+
+#: ../src\session\twitter\interface.py:504
+msgid "Unable to obtain the remaining number of API calls you have this hour."
+msgstr "Fout bij het ophalen van het aantal resterende API calls dit uur."
+
+#: ../src\session\twitter\interface.py:514
+msgid "Unable to check notification status for %s."
+msgstr "Fout bij het controleren van de notificatiestatus voor %s."
+
+#: ../src\session\twitter\interface.py:519
+msgid "You will now receive device notifications for %s."
+msgstr "Je ontvangt vanaf nu apparaatnotificaties voor %s."
+
+#: ../src\session\twitter\interface.py:522
+msgid "Unable to turn on device notifications for %s."
+msgstr "Fout bij het inschakelen van apparaatnotificaties voor %s."
+
+#: ../src\session\twitter\interface.py:527
+msgid "You will no longer receive device notifications for %s."
+msgstr "Je ontvangt vanaf nu niet langer apparaatnotificaties voor %s."
+
+#: ../src\session\twitter\interface.py:530
+msgid "Unable to turn off device notifications for %s."
+msgstr "Fout bij het uitschakelen van apparaatnotificaties voor %s."
+
+#: ../src\session\twitter\interface.py:549
+msgid "Profile updated."
+msgstr "Profiel geupdate."
+
+#: ../src\session\twitter\interface.py:551
+msgid "Unable to update profile."
+msgstr "Fout bij het updaten van profiel."
+
+#: ../src\session\twitter\interface.py:570
+msgid "Loading timeline for %s."
+msgstr "Tijdlijn van %s wordt geladen:"
+
+#: ../src\session\twitter\interface.py:571
+msgid "%s's timeline"
+msgstr "Tijdlijn van %s"
+
+#: ../src\session\twitter\interface.py:579
+msgid "No update is currently available.  Thanks for checking!"
+msgstr "Er is op dit moment geen update beschikbaar."
+
+#: ../src\session\twitter\interface.py:582
+msgid "Attempting to retrieve previous posts in buffer %s"
+msgstr ""
+
+#: ../src\session\twitter\interface.py:586
+msgid "%s does not support this feature."
+msgstr "%s ondersteund deze optie niet."
+
+#: ../src\session\twitter\interface.py:681
+msgid "Loading followers for %s."
+msgstr "Volgers van %s worden geladen."
+
+#: ../src\session\twitter\interface.py:682
+msgid "%s's followers"
+msgstr "Volgers van %s"
+
+#: ../src\session\twitter\interface.py:701
+msgid "Loading friends for %s."
+msgstr "Vrienden van %s worden geladen."
+
+#: ../src\session\twitter\interface.py:702
+msgid "%s's friends"
+msgstr "Vrienden van %s"
+
+#: ../src\session\twitter\interface.py:716
+msgid "My tweets that have been retweeted by others"
+msgstr "Mijn tweets die zijn hertweet door anderen"
+
+#: ../src\session\twitter\interface.py:716
+msgid "Select type"
+msgstr "Selecteer type"
+
+#: ../src\session\twitter\interface.py:716
+msgid "Select which type of retweets to display:"
+msgstr "Selecteer welk type hertweets weergegeven moeten worden."
+
+#: ../src\session\twitter\interface.py:716
+#: ../src\session\twitter\interface.py:720
+msgid "My friends' retweets"
+msgstr "Hertweets van mijn vrienden"
+
+#: ../src\session\twitter\interface.py:716
+#: ../src\session\twitter\interface.py:722
+msgid "My retweets"
+msgstr "Mijn hertweets"
+
+#: ../src\session\twitter\interface.py:737
+msgid "This command is not supported from within a search buffer."
+msgstr "Dit commando wordt niet ondersteund vanuit een zoekbuffer."
+
+#: ../src\session\twitter\interface.py:739
+msgid "No user detected in current item."
+msgstr "Geen gebruiker gedetecteerd in huidig item."
+
+#: ../src\session\twitter\interface.py:762
+msgid "Loading profile for %s"
+msgstr "Profiel van %s wordt geladen"
+
+#: ../src\session\twitter\interface.py:777
+msgid "Retrieving locations."
+msgstr "Locaties worden opgehaald."
+
+#: ../src\session\twitter\interface.py:782
+msgid "Unable to retrieve local trend locations; please try again later."
+msgstr "Kan locaties voor lokale trends niet ophalen, probeer het later opnieuw."
+
+#: ../src\session\twitter\interface.py:837
+msgid "Are you sure you want to import %d items from old database?"
+msgstr "Weet je zeker dat je %d items uit oude database wilt importeren?"
+
+#: ../src\session\twitter\interface.py:837
+msgid "Are you sure?"
+msgstr "Weet je het zeker?"
+
+#: ../src\session\twitter\interface.py:839
+msgid "Importing, please wait."
+msgstr "Bezig met importeren, een ogenblik a.u.b."
+
+#: ../src\session\twitter\interface.py:845
+msgid "Import complete."
+msgstr "Importeren voltooid."
+
+#: ../src\session\twitter\interface.py:845
+msgid "Import completed successfully."
+msgstr "Importeren met succes voltooid."
+
+#: ../src\session\twitter\interface.py:855
+msgid "No geo location info present in this tweet."
+msgstr "Geen geolocatie info aanwezig in deze tweet."
+
+#: ../src\session\twitter\interface.py:857
+msgid "Retrieving geo location info..."
+msgstr "Bezig met ophalen van geolocatie info..."
+
+#: ../src\session\twitter\interface.py:864
+#: ../src\session\twitter\interface.py:873
+msgid "Error determining location."
+msgstr "Fout bij het bepalen van locatie."
+
+#: ../src\session\twitter\interface.py:868
+msgid "Coordinates are not accurate enough to determine a location."
+msgstr "Coordinaten zijn niet nauwkeurig genoeg om locatie te bepalen."
+
+#: ../src\session\twitter\main.py:34
+msgid "Direct Messages"
+msgstr "Privéberichten"
+
+#: ../src\session\twitter\main.py:34
+msgid "Home"
+msgstr "Startpagina"
+
+#: ../src\session\twitter\main.py:34
+msgid "Mentions"
+msgstr "Vermeldingen"
+
+#: ../src\session\twitter\main.py:34
+msgid "Sent"
+msgstr "Verzonden"
+
+#: ../src\session\twitter\main.py:56
+msgid "Logging into Twitter as %s"
+msgstr "Bezig met inloggen als %s op twitter."
+
+#: ../src\session\twitter\main.py:70
+msgid "Unable to connect to twitter.  %s will retry until connection is established."
+msgstr "Fout bij het verbinden naar twitter. %s zal opnieuw proberen te verbinden totdat er een verbinding tot stand is gebracht."
+
+#: ../src\session\twitter\main.py:95
+msgid "Loading %d saved search%s from twitter."
+msgstr ""
+
+#: ../src\session\twitter\main.py:121
+msgid "Retrieving %d list timeline %s from twitter."
+msgstr ""
+
+#: ../src\sound.py:82
+msgid "Mute off"
+msgstr "Dempen uit"
+
+#: ../src\sound.py:84
+msgid "Mute receive"
+msgstr "Demp ontvangen"
+
+#: ../src\sound.py:86
+msgid "Mute all but receive"
+msgstr "Demp alles behalve ontvangen"
+
+#: ../src\sound.py:88
+msgid "Full mute"
+msgstr "Alles dempen"
+
+#~ msgid "No user detected in current buffer."
+#~ msgstr "Geen gebruiker gedetecteerd in huidige buffer."
+
+#~ msgid "%d followers retrieved."
+#~ msgstr "%d volgers opgehaald."
+
+#~ msgid "%s"
+#~ msgstr "%s"
+
+#~ msgid "%d friends retrieved."
+#~ msgstr "%d vrienden opgehaald."
+
+#~ msgid "No new posts in buffer %s."
+#~ msgstr "Geen nieuwe posts in buffer %s."
+
+#~ msgid "%d new tweet in %s list."
+#~ msgstr "%d nieuwe tweet in %s list."
+
+#~ msgid "%d new tweets in %s list."
+#~ msgstr "%d nieuwe tweets in %s list."
+
+#~ msgid "None"
+#~ msgstr "Geen"
+
+#~ msgid "Auto Detect"
+#~ msgstr "Automatisch detecteren"
+
+#~ msgid "Use a GUI (graphical user interface)?"
+#~ msgstr "Een GUI (grafische gebruikersinterface) gebruiken?"
+
+#~ msgid "check for new soundpacks"
+#~ msgstr "Zoeken naar nieuwe geluidspakketten"
+
+#~ msgid "SAPI speech voice"
+#~ msgstr "Te gebruiken stem bij SAPI"
+
+#~ msgid "Profile for %s"
+#~ msgstr "Profiel van %s"
+
+#~ msgid ""
+#~ "No modifiable properties for buffer %s; showing default buffer "
+#~ "configuration."
+#~ msgstr ""
+#~ "Geen wijzigbare eigenschappen voor buffer %s; de standaardconfiguratie "
+#~ "wordt getoond."
+
+#~ msgid "Automatically retweet posts?"
+#~ msgstr "Posts automatisch hertweeten?"
+
+#~ msgid "Help"
+#~ msgstr "Help"
+
+#~ msgid "Buffer %s does not support filters."
+#~ msgstr "Buffer %s ondersteunt geen filters."
+
+#~ msgid "This tweet will be posted in %d minutes."
+#~ msgstr "Deze tweet zal over %d minuten gepost worden."
+
+#~ msgid "This dm will be posted in %d minutes."
+#~ msgstr "DIt privébericht zal over %d minuten gepost worden."
+
+#~ msgid "This reply will be posted in %d minutes."
+#~ msgstr "Dit antwoord zal over %d minuten gepost worden."
+
+#~ msgid "Now checking for an update to %s.  Please wait."
+#~ msgstr "Bezig met controleren op updates voor %s. Een ogenblik a.u.b."
+
+#~ msgid "No web addresses detected."
+#~ msgstr "Keine Web-Adressen erkannt."
