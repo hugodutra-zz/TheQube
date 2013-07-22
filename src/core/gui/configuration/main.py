@@ -51,6 +51,7 @@ class MainConfigDialog (ConfigurationDialog):
   self.misc.shorteners.SetValue(config.main['shortener']['urlShortener'])
   self.misc.SndUpAPIKey.SetValue(config.main['SndUp']['APIKey'])
   #self.misc.useGUI.SetValue(config.main['client']['useGUI'])
+  self.misc.sendMessagesWithEnterKey.SetValue(config.main['UI']['sendMessagesWithEnterKey'])
   self.misc.stdKeyHandling.SetValue(config.main['UI']['stdKeyHandling'])
 
  def SetNewConfigValues (self):
@@ -83,6 +84,8 @@ class MainConfigDialog (ConfigurationDialog):
   #logging.info("useGUI set to: %s" % config.main['client']['useGUI'])
   config.main['UI']['stdKeyHandling'] = self.misc.stdKeyHandling.GetValue()
   logging.info("stdKeyHandling set to: %d" % config.main['UI']['stdKeyHandling'])
+  config.main['UI']['sendMessagesWithEnterKey'] = self.misc.sendMessagesWithEnterKey.GetValue()
+  logging.info("sendMessagesWithEnterKey set to: %d" % config.main['UI']['sendMessagesWithEnterKey'])
   config.main.write()
   i18n.setup()
   output.setup()

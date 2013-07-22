@@ -70,6 +70,7 @@ ToggleSpeechRecognition=string(default="win+shift+s")
 #SessionManager=string(default="alt+win+s")
 
 [UI]
+sendMessagesWithEnterKey=boolean(default=True)
 stdKeyHandling=boolean(default=False)
 
 

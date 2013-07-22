@@ -18,6 +18,7 @@ class MiscPanel (ConfigurationPanel):
   wx.StaticText(parent=self, label=_("Your Sndup.net API Key:"))
   self.SndUpAPIKey = wx.TextCtrl(parent=self)
   self.SndUpAPIKey.SetSizerProps(expand=True)
+  self.sendMessagesWithEnterKey = wx.CheckBox(self, label=_("Send Messages With Enter Key?"))
   self.stdKeyHandling = wx.CheckBox(self, label=_("Perform standard actions with Home/End keys?"))
   #self.useGUI = wx.CheckBox(self, -1, _("Use a GUI (graphical user interface)?"))
   self._first = self.AutoStart if AutoStart_allowed else self.AskForExit

@@ -193,6 +193,11 @@ class NewMessageDialog(SquareDialog):
    object.SetInsertionPoint(0)
    object.SetSelection(0, len(object.GetValue()))
   elif key == 13:
+   if config.main['UI']['sendMessagesWithEnterKey']:
+    self.EndModal(wx.ID_OK)
+   else:
+    evt.Skip()
+  elif key == 13 and modifiers == wx.MOD_CONTROL:
    self.EndModal(wx.ID_OK)
   else:
    evt.Skip()
