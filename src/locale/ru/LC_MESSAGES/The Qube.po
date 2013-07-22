@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TheQube 1.0\n"
 "Report-Msgid-Bugs-To: http://traq.oire.org/theqube/\n"
-"POT-Creation-Date: 2013-06-24 19:38+FLE Daylight Time\n"
+"POT-Creation-Date: 2013-07-23 02:07+FLE Daylight Time\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Andre Polykanine\n"
 "Language-Team: elensule translation team <andre@oire.org>\n"
@@ -41,7 +41,7 @@ msgid "Remove session"
 msgstr "Удалить сессию"
 
 #: ../src\core\gui\SessionManager\main.py:44
-#: ../src\core\gui\new_message.py:240 ../src\core\gui\new_message.py:275
+#: ../src\core\gui\new_message.py:245 ../src\core\gui\new_message.py:282
 #: ../src\core\gui\recording.py:73
 #: ../src\core\sessions\buffers\interface.py:165 ../src\meta_interface.py:50
 #: ../src\meta_interface.py:109 ../src\meta_interface.py:145
@@ -145,6 +145,10 @@ msgid "Your Sndup.net API Key:"
 msgstr "Ваш API-ключ для sndup.net:"
 
 #: ../src\core\gui\configuration\panels\misc.py:21
+msgid "Send Messages With Enter Key?"
+msgstr "Отправлять сообщения по нажатию клавиши Enter?"
+
+#: ../src\core\gui\configuration\panels\misc.py:22
 msgid "Perform standard actions with Home/End keys?"
 msgstr "Выполнять стандартные действия по клавишам Home и End?"
 
@@ -192,7 +196,7 @@ msgstr "Выбор ссылки"
 msgid "Select URL to open"
 msgstr "Выберите открываемую ссылку"
 
-#: ../src\core\gui\list_urls.py:22 ../src\core\gui\new_message.py:223
+#: ../src\core\gui\list_urls.py:22 ../src\core\gui\new_message.py:228
 msgid "&Unshorten URL"
 msgstr "Развернуть &ссылку"
 
@@ -285,47 +289,47 @@ msgstr "Сервис разворачивания ссылок - проблем�
 msgid "There was a problem unshortening the selected URL."
 msgstr "при разворачивании выбранной ссылки возникла проблема."
 
-#: ../src\core\gui\new_message.py:211
+#: ../src\core\gui\new_message.py:216
 msgid "Message:"
 msgstr "Сообщение:"
 
-#: ../src\core\gui\new_message.py:221
+#: ../src\core\gui\new_message.py:226
 msgid "&Shorten URL"
 msgstr "&Сократить ссылку"
 
-#: ../src\core\gui\new_message.py:227
+#: ../src\core\gui\new_message.py:232
 msgid "Attach &Audio..."
 msgstr "прикрепить &аудио..."
 
-#: ../src\core\gui\new_message.py:232
+#: ../src\core\gui\new_message.py:237
 msgid "S&chedule message..."
 msgstr "О&тложить отправку сообщения..."
 
-#: ../src\core\gui\new_message.py:243
+#: ../src\core\gui\new_message.py:248
 msgid "Attaching..."
 msgstr "прикрепление..."
 
-#: ../src\core\gui\new_message.py:248
+#: ../src\core\gui\new_message.py:255
 msgid "Upload in progress"
 msgstr "Идёт загрузка"
 
-#: ../src\core\gui\new_message.py:254
+#: ../src\core\gui\new_message.py:261
 msgid "There was an error attaching the file."
 msgstr "В ходе прикрепления файла произошла ошибка."
 
-#: ../src\core\gui\new_message.py:263
+#: ../src\core\gui\new_message.py:270
 msgid "File attached."
 msgstr "Файл прикреплён."
 
-#: ../src\core\gui\new_message.py:272
+#: ../src\core\gui\new_message.py:279
 msgid "Resetting currently-scheduled item."
 msgstr "Сброс отложенного в данный момент элемента."
 
-#: ../src\core\gui\new_message.py:273
+#: ../src\core\gui\new_message.py:280
 msgid "Schedule message"
 msgstr "Отложить сообщение"
 
-#: ../src\core\gui\new_message.py:277
+#: ../src\core\gui\new_message.py:284
 msgid "Delaying for %s"
 msgstr "Откладываем на %s"
 
