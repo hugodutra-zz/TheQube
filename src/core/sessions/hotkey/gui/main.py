@@ -50,7 +50,7 @@ class KeymapDialog(SquareDialog):
 
  def onEdit (self, evt):
   evt.Skip()
-  dlg = EditHotkeyDialog(sessions.current_session.frame, wx.ID_ANY)
+  dlg = EditHotkeyDialog(sessions.current_session.frame)
   dlg.set_key(self.keystrokes.keys[self.keystrokes.GetFirstSelected()][1])
   if dlg.ShowModal() == wx.ID_OK:
    key = dlg.get_key()
