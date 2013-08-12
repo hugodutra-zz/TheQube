@@ -1,3 +1,0 @@
-[submodule "src/twython"]
-	path = src/twython
-	url = https://github.com/Oire/twython
