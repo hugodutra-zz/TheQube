@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TheQube 1.0\n"
 "Report-Msgid-Bugs-To: http://traq.oire.org/theqube/\n"
-"POT-Creation-Date: 2013-07-23 02:07+FLE Daylight Time\n"
+"POT-Creation-Date: 2013-08-12 19:04+FLE Daylight Time\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Andre Polykanine\n"
 "Language-Team: elensule translation team <andre@oire.org>\n"
@@ -1752,9 +1752,8 @@ msgstr ""
 "Запрашивать подтверждения при удалении отправленных твитов и личных сообщений"
 
 #: ../src\session\twitter\gui\configuration\panels\misc.py:11
-#, fuzzy
 msgid "Retweet Style"
-msgstr "Сделан ретвит"
+msgstr "стиль ретвита"
 
 #: ../src\session\twitter\gui\configuration\panels\misc.py:14
 msgid "Allow reply to self"
@@ -1765,14 +1764,12 @@ msgid "Work offline"
 msgstr "Работать автономно"
 
 #: ../src\session\twitter\gui\configuration\panels\sound.py:8
-#, fuzzy
 msgid "Sound pack"
-msgstr "Звуки"
+msgstr "Звуковая схема"
 
 #: ../src\session\twitter\gui\configuration\panels\sound.py:11
-#, fuzzy
 msgid "Mute session"
-msgstr "Новая сессия"
+msgstr "Выключить звук для сессии"
 
 #: ../src\session\twitter\gui\configuration\panels\templates.py:10
 msgid "New generic buffer template:"
@@ -1799,9 +1796,8 @@ msgid "Reply template:"
 msgstr "Шаблон ответа:"
 
 #: ../src\session\twitter\gui\configuration\panels\templates.py:33
-#, fuzzy
 msgid "Retweet template:"
-msgstr "Ретвит:"
+msgstr "Шаблон ретвита:"
 
 #: ../src\session\twitter\gui\favorites.py:9
 msgid "Display favorites"
