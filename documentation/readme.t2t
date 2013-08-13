@@ -1,0 +1,13 @@
+The Qube Readme
+
+
+%!target: html
+%!options: -o readme.html
+
+=Welcome!=[welcome]
+
+==Please select your language==[language-selection]
+
+- [English en/Readme.html]
+- [Português Brasileiro pt_BR/Readme.html]
+- [Русский ru/Readme.html]
