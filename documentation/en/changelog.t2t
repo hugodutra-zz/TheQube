@@ -6,6 +6,17 @@
 
 =Change Log=[changelog]
 
+
+
+==The Qube 1.0 Beta 5==
+
+===Changes===
+
+- Now The Qube supports Twitter API 1.1.
+- Added ability to provide an API key for SndUp.net to upload audio as a registered user.
+- Twitter API library changed from Tweepy to [Twython https://github.com/ryanmcgrath/twython/].
+
+
 ==The Qube 1.0 Beta 4.3==
 
 ===Changes===

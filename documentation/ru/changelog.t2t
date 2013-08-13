@@ -7,6 +7,14 @@
 
 =История изменений=[changelog]
 
+==The Qube 1.0 Beta 5==
+
+===Изменения===
+
+- Теперь The Qube поддерживает Twitter API 1.1.
+- Добавлена возможность указывать API-ключ для SndUp.net, чтобы закачивать туда файлы как зарегистрированный пользователь.
+- Библиотека Twitter API изменена с Tweepy на [Twython https://github.com/ryanmcgrath/twython/].
+
 ==The Qube 1.0 Beta 4.3==
 
 ===Изменения===
