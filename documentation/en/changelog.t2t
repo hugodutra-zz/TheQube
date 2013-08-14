@@ -19,6 +19,7 @@ The Qube change log
 ===Bugfixes===
 
 - Now you're able to send messages with line breaks in them. By default, a line break is inserted with Ctrl+Enter. However, you might want to set Ctrl+Enter to send messages, then you'll be able to insert a line break by pressing Enter.
+- Keystrokes editing works again.
 
 
 ==The Qube 1.0 Beta 5==
