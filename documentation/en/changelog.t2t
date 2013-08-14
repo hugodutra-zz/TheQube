@@ -1,4 +1,4 @@
-
+The Qube change log
 
 
 %!target: html
@@ -6,6 +6,19 @@
 
 =Change Log=[changelog]
 
+==The Qube 1.0 beta 6==
+
+===Changes===
+
+- Buffer update hotkey has been changed to Ctrl+Win+Alt+U to resolve a conflict with Windows 8 key assignments.
+- The Qube source has been moved to [Github https://github.com/Oire/TheQube]
+- Now The Qube has a bugtracker. It's located [here https://github.com/Oire/TheQube/issues].
+- Now you can decide whether to send messages by pressin Enter or by pressing Ctrl+Enter. The corresponding checkbox is located in The Qube configuration under the Miscellaneous tab. The default is to send messages with Enter, as it was earlier.
+
+
+===Bugfixes===
+
+- Now you're able to send messages with line breaks in them. By default, a line break is inserted with Ctrl+Enter. However, you might want to set Ctrl+Enter to send messages, then you'll be able to insert a line break by pressing Enter.
 
 
 ==The Qube 1.0 Beta 5==

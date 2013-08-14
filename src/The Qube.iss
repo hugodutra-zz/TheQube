@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "The Qube"
-#define MyAppVersion "1.0 Beta 5"
+#define MyAppVersion "1.0 Beta 6"
 #define MyAppPublisher "Quartizer Projects"
 #define MyAppURL "http://www.quartzprojects.co.uk"
 #define MyAppExeName "The Qube.exe"
