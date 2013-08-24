@@ -16,12 +16,12 @@ class BufferPanel (ConfigurationPanel):
   self.retrieveCount.SetValue(200)
   self.retrieveCount.Bind(wx.EVT_TEXT, self.retrieveCountChanged)
   self.retrieveCount.SetSizerProps(expand=True)
-  if buffer and buffer.name.startswith("Search for "):
+  if buffer and buffer.name.startswith(_("Search for ")):
    wx.StaticText(self, -1, _("Max API calls to use per update (1 API call = 100 results)"))
   else:
    wx.StaticText(self, -1, _("Max API calls to use per update (1 API call = 200 tweets)"))
   self.maxAPIPerUpdate = wx.SpinCtrl(self, wx.ID_ANY)
-  self.maxAPIPerUpdate.SetRange(1, 100)
+  self.maxAPIPerUpdate.SetRange(1, 4)
   self.maxAPIPerUpdate.SetValue(1)
   self.maxAPIPerUpdate.SetSizerProps(expand=True)
   self.mute = wx.CheckBox(parent=self, label=_("Mute buffer"))

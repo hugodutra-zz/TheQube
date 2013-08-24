@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2013-08-12 19:04+FLE Daylight Time\n"
+"POT-Creation-Date: 2013-08-24 14:31+FLE Daylight Time\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -606,6 +606,50 @@ msgstr ""
 
 #: ../src\core\sessions\buffers\gui\configuration\twitter\main.py:150
 msgid "Attention"
+msgstr ""
+
+#: ../src\core\sessions\buffers\gui\configuration\twitter\panels\buffer.py:9
+msgid "Update interval (in minutes)"
+msgstr ""
+
+#: ../src\core\sessions\buffers\gui\configuration\twitter\panels\buffer.py:13
+msgid "Number of posts to download per update"
+msgstr ""
+
+#: ../src\core\sessions\buffers\gui\configuration\twitter\panels\buffer.py:19
+msgid "Search for "
+msgstr ""
+
+#: ../src\core\sessions\buffers\gui\configuration\twitter\panels\buffer.py:20
+msgid "Max API calls to use per update (1 API call = 100 results)"
+msgstr ""
+
+#: ../src\core\sessions\buffers\gui\configuration\twitter\panels\buffer.py:22
+msgid "Max API calls to use per update (1 API call = 200 tweets)"
+msgstr ""
+
+#: ../src\core\sessions\buffers\gui\configuration\twitter\panels\buffer.py:27
+msgid "Mute buffer"
+msgstr ""
+
+#: ../src\core\sessions\buffers\gui\configuration\twitter\panels\buffer.py:30
+msgid "Apply settings to all buffers"
+msgstr ""
+
+#: ../src\core\sessions\buffers\gui\configuration\twitter\panels\buffer.py:32
+msgid "Use default spoken template"
+msgstr ""
+
+#: ../src\core\sessions\buffers\gui\configuration\twitter\panels\buffer.py:34
+msgid "Spoken template:"
+msgstr ""
+
+#: ../src\core\sessions\buffers\gui\configuration\twitter\panels\buffer.py:37
+msgid "Use default clipboard template"
+msgstr ""
+
+#: ../src\core\sessions\buffers\gui\configuration\twitter\panels\buffer.py:39
+msgid "Clipboard template:"
 msgstr ""
 
 #: ../src\core\sessions\buffers\gui\export\main.py:12

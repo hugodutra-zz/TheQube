@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TheQube 1.0\n"
 "Report-Msgid-Bugs-To: http://traq.oire.org/theqube/\n"
-"POT-Creation-Date: 2013-08-12 19:04+FLE Daylight Time\n"
+"POT-Creation-Date: 2013-08-24 14:31+FLE Daylight Time\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Andre Polykanine\n"
 "Language-Team: elensule translation team <andre@oire.org>\n"
@@ -617,6 +617,52 @@ msgstr "Настройки по умолчанию"
 #: ../src\core\sessions\buffers\gui\configuration\twitter\main.py:150
 msgid "Attention"
 msgstr "Внимание"
+
+#: ../src\core\sessions\buffers\gui\configuration\twitter\panels\buffer.py:9
+msgid "Update interval (in minutes)"
+msgstr "Интервал между обновлениями (в минутах)"
+
+#: ../src\core\sessions\buffers\gui\configuration\twitter\panels\buffer.py:13
+msgid "Number of posts to download per update"
+msgstr "Число загружаемых сообщений за обновление"
+
+#: ../src\core\sessions\buffers\gui\configuration\twitter\panels\buffer.py:19
+msgid "Search for "
+msgstr "Поиск"
+
+#: ../src\core\sessions\buffers\gui\configuration\twitter\panels\buffer.py:20
+msgid "Max API calls to use per update (1 API call = 100 results)"
+msgstr ""
+"Максимальное число вызовов API на обновление (1 вызов API =100 результатов):"
+
+#: ../src\core\sessions\buffers\gui\configuration\twitter\panels\buffer.py:22
+msgid "Max API calls to use per update (1 API call = 200 tweets)"
+msgstr ""
+"Максимальное число вызовов API на обновление (1 вызов API =200 твитов):"
+
+#: ../src\core\sessions\buffers\gui\configuration\twitter\panels\buffer.py:27
+msgid "Mute buffer"
+msgstr "Выключить звук для буфера"
+
+#: ../src\core\sessions\buffers\gui\configuration\twitter\panels\buffer.py:30
+msgid "Apply settings to all buffers"
+msgstr "Применить настройки ко всем буферам"
+
+#: ../src\core\sessions\buffers\gui\configuration\twitter\panels\buffer.py:32
+msgid "Use default spoken template"
+msgstr "Использовать речевой шаблон по умолчанию"
+
+#: ../src\core\sessions\buffers\gui\configuration\twitter\panels\buffer.py:34
+msgid "Spoken template:"
+msgstr "Речевой шаблон:"
+
+#: ../src\core\sessions\buffers\gui\configuration\twitter\panels\buffer.py:37
+msgid "Use default clipboard template"
+msgstr "Использовать шаблон для буфера обмена по умолчанию"
+
+#: ../src\core\sessions\buffers\gui\configuration\twitter\panels\buffer.py:39
+msgid "Clipboard template:"
+msgstr "Шаблон для буфера обмена:"
 
 #: ../src\core\sessions\buffers\gui\export\main.py:12
 msgid "Export"
