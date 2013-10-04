@@ -1,9 +1,7 @@
 from logger import logger
 logging = logger.getChild('sessions.twitter.interface')
 
-from google_apis.maps import GoogleMapsAPI
-from google_apis.translate import Translator, TranslationError
-
+from gmaps import GoogleMapsAPI
 from importer import Importer
 from durus_importer import SessionImporter
 from core.sessions.buffers.buffer_defaults import buffer_defaults
@@ -521,7 +519,7 @@ class TwitterInterface (BuffersInterface, HotkeyInterface, MetaInterface):
    try:
     location = api.Geocoding(coordinates)['Placemark'][0]
    except:
-    logging.debug("Unable to retrieve location details from Google Maps.")
+    logging.debug("Unable to retrieve location details from Google Maps, coordinates: %s" % str(coordinates))
     return output.speak(_("Error determining location."), True)
    if 'address' in location and 'AddressDetails' in location and 'Accuracy' in location['AddressDetails']:
     if not location['address']:
