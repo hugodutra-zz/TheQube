@@ -77,5 +77,6 @@ stdKeyHandling=boolean(default=False)
 [shortener]
 urlShortener=string(default="Hkc.Im")
 
-[SndUp]
-APIKey=string(default="")
+[AudioServices]
+service=string(default="sndup.net")
+sndUpAPIKey=string(default="")

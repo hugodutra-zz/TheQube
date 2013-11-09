@@ -246,9 +246,9 @@ class NewMessageDialog(SquareDialog):
   try:
    dlg.postprocess()
    output.speak(_("Attaching..."), True)
-   baseUrl = 'http://sndup.net/post.php'
-   if len(config.main['SndUp']['APIKey']) > 0:
-    uploadUrl = baseUrl + '?apikey=' + config.main['SndUp']['APIKey']
+   baseUrl = 'http://api.twup.me/post.json' if config.main['AudioServices']['service'] == 'twup.me' else 'http://sndup.net/post.php'
+   if config.main['AudioServices']['service'] == 'sndup.net' and len(config.main['AudioServices']['sndUpAPIKey']) > 0:
+    uploadUrl = baseUrl + '?apikey=' + config.main['AudioServices']['sndUpAPIKey']
    else:
     uploadUrl = baseUrl
    logging.debug("Upload url: %s" % uploadUrl)
@@ -256,7 +256,7 @@ class NewMessageDialog(SquareDialog):
    self.upload_dlg.Show(True)
    self.upload_dlg.perform_threaded()
   except:
-   logging.exception("Unable to upload audio file to SndUp.")
+   logging.exception("Unable to upload audio file to %s" % config.main['AudioServices']['service'])
    dlg.cleanup()
    return output.speak(_("There was an error attaching the file."), True)
 

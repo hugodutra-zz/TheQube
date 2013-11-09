@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2013-08-24 14:31+FLE Daylight Time\n"
+"POT-Creation-Date: 2013-11-09 22:05+FLE Standard Time\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,15 +51,15 @@ msgstr ""
 #: ../src\session\twitter\gui\list_manager\list_manager.py:50
 #: ../src\session\twitter\gui\list_manager\list_manager.py:65
 #: ../src\session\twitter\gui\list_manager\list_manager.py:80
-#: ../src\session\twitter\interface.py:51
-#: ../src\session\twitter\interface.py:143
-#: ../src\session\twitter\interface.py:497
-#: ../src\session\twitter\interface.py:576
-#: ../src\session\twitter\interface.py:653
-#: ../src\session\twitter\interface.py:661
-#: ../src\session\twitter\interface.py:674
-#: ../src\session\twitter\interface.py:682
-#: ../src\session\twitter\interface.py:765
+#: ../src\session\twitter\interface.py:49
+#: ../src\session\twitter\interface.py:141
+#: ../src\session\twitter\interface.py:495
+#: ../src\session\twitter\interface.py:574
+#: ../src\session\twitter\interface.py:651
+#: ../src\session\twitter\interface.py:659
+#: ../src\session\twitter\interface.py:672
+#: ../src\session\twitter\interface.py:680
+#: ../src\session\twitter\interface.py:763
 #: ../src\session\twitter\twitter.py:275 ../src\session\twitter\twitter.py:281
 #: ../src\session\twitter\twitter.py:292 ../src\utils\wx_utils.py:17
 msgid "Canceled."
@@ -136,18 +136,22 @@ msgid "Show confirmation dialog before exiting %s?"
 msgstr ""
 
 #: ../src\core\gui\configuration\panels\misc.py:15
-msgid "Prefered URL Shortener:"
+msgid "Preferred URL Shortener:"
 msgstr ""
 
 #: ../src\core\gui\configuration\panels\misc.py:18
-msgid "Your Sndup.net API Key:"
-msgstr ""
-
-#: ../src\core\gui\configuration\panels\misc.py:21
-msgid "Send Messages With Enter Key?"
+msgid "Preferred audio service:"
 msgstr ""
 
 #: ../src\core\gui\configuration\panels\misc.py:22
+msgid "Your Sndup.net API Key:"
+msgstr ""
+
+#: ../src\core\gui\configuration\panels\misc.py:25
+msgid "Send Messages With Enter Key?"
+msgstr ""
+
+#: ../src\core\gui\configuration\panels\misc.py:26
 msgid "Perform standard actions with Home/End keys?"
 msgstr ""
 
@@ -1052,6 +1056,46 @@ msgstr ""
 msgid "Attempting import of buffer %s"
 msgstr ""
 
+#: ../src\gmaps\api.py:18
+msgid "address"
+msgstr ""
+
+#: ../src\gmaps\api.py:18
+msgid "country"
+msgstr ""
+
+#: ../src\gmaps\api.py:18
+msgid "intersection"
+msgstr ""
+
+#: ../src\gmaps\api.py:18
+msgid "planet"
+msgstr ""
+
+#: ../src\gmaps\api.py:18
+msgid "post code"
+msgstr ""
+
+#: ../src\gmaps\api.py:18
+msgid "premise"
+msgstr ""
+
+#: ../src\gmaps\api.py:18
+msgid "region"
+msgstr ""
+
+#: ../src\gmaps\api.py:18
+msgid "street"
+msgstr ""
+
+#: ../src\gmaps\api.py:18
+msgid "sub-region"
+msgstr ""
+
+#: ../src\gmaps\api.py:18
+msgid "town"
+msgstr ""
+
 #: ../src\main.pyw:37
 msgid "Welcome to %s"
 msgstr ""
@@ -1337,7 +1381,7 @@ msgid "Unable to detect a sender to reply to."
 msgstr ""
 
 #: ../src\session\google_voice\interface.py:40
-#: ../src\session\twitter\interface.py:92
+#: ../src\session\twitter\interface.py:90
 #: ../src\session\twitter\twitter.py:248
 msgid "Reply"
 msgstr ""
@@ -1478,7 +1522,7 @@ msgstr ""
 
 #: ../src\session\twitter\buffers\home.py:14
 #: ../src\session\twitter\buffers\main.py:288
-#: ../src\session\twitter\interface.py:56
+#: ../src\session\twitter\interface.py:54
 #: ../src\session\twitter\twitter.py:350
 msgid "tweet"
 msgstr ""
@@ -1515,7 +1559,7 @@ msgstr ""
 
 #: ../src\session\twitter\buffers\list_members.py:38
 #: ../src\session\twitter\buffers\list_subscribers.py:38
-#: ../src\session\twitter\interface.py:684
+#: ../src\session\twitter\interface.py:682
 msgid "removing %s from list %s."
 msgstr ""
 
@@ -2145,355 +2189,355 @@ msgstr ""
 msgid "User profile for:"
 msgstr ""
 
-#: ../src\session\twitter\interface.py:65
+#: ../src\session\twitter\interface.py:63
 msgid "Direct message"
 msgstr ""
 
-#: ../src\session\twitter\interface.py:72
+#: ../src\session\twitter\interface.py:70
 msgid "dm"
 msgstr ""
 
-#: ../src\session\twitter\interface.py:91
+#: ../src\session\twitter\interface.py:89
 msgid "Unable to detect a user to reply to."
 msgstr ""
 
-#: ../src\session\twitter\interface.py:99
+#: ../src\session\twitter\interface.py:97
 msgid "reply"
 msgstr ""
 
-#: ../src\session\twitter\interface.py:107
+#: ../src\session\twitter\interface.py:105
 msgid "view item"
 msgstr ""
 
-#: ../src\session\twitter\interface.py:113
+#: ../src\session\twitter\interface.py:111
 msgid "View Tweet From %s"
 msgstr ""
 
-#: ../src\session\twitter\interface.py:131
+#: ../src\session\twitter\interface.py:129
 msgid "Item is not a post."
 msgstr ""
 
-#: ../src\session\twitter\interface.py:134
+#: ../src\session\twitter\interface.py:132
 msgid "Cannot retweet a direct message while DM safe mode is enabled."
 msgstr ""
 
-#: ../src\session\twitter\interface.py:137
+#: ../src\session\twitter\interface.py:135
 msgid "Cannot retweet your own tweet."
 msgstr ""
 
-#: ../src\session\twitter\interface.py:141
+#: ../src\session\twitter\interface.py:139
 msgid "Would you like to add a comment?"
 msgstr ""
 
-#: ../src\session\twitter\interface.py:141
+#: ../src\session\twitter\interface.py:139
 #: ../src\session\twitter\twitter.py:241
 msgid "Retweet"
 msgstr ""
 
-#: ../src\session\twitter\interface.py:160
+#: ../src\session\twitter\interface.py:158
 msgid "No users to follow detected in current post."
 msgstr ""
 
-#: ../src\session\twitter\interface.py:173
+#: ../src\session\twitter\interface.py:171
 msgid "No users to unfollow detected in current post."
 msgstr ""
 
-#: ../src\session\twitter\interface.py:200
+#: ../src\session\twitter\interface.py:198
 msgid "No URLs detected in current post."
 msgstr ""
 
-#: ../src\session\twitter\interface.py:213
+#: ../src\session\twitter\interface.py:211
 msgid "Twitter search"
 msgstr ""
 
-#: ../src\session\twitter\interface.py:222
+#: ../src\session\twitter\interface.py:220
 msgid "Please enter a term to search for."
 msgstr ""
 
-#: ../src\session\twitter\interface.py:224
+#: ../src\session\twitter\interface.py:222
 #: ../src\session\twitter\twitter.py:127
 msgid "Search for %s"
 msgstr ""
 
-#: ../src\session\twitter\interface.py:230
+#: ../src\session\twitter\interface.py:228
 msgid "Trending: Worldwide"
 msgstr ""
 
-#: ../src\session\twitter\interface.py:235
+#: ../src\session\twitter\interface.py:233
 msgid "Loading public timeline."
 msgstr ""
 
-#: ../src\session\twitter\interface.py:235
+#: ../src\session\twitter\interface.py:233
 msgid "Public Timeline"
 msgstr ""
 
-#: ../src\session\twitter\interface.py:240
+#: ../src\session\twitter\interface.py:238
 msgid "Favorites"
 msgstr ""
 
-#: ../src\session\twitter\interface.py:240
+#: ../src\session\twitter\interface.py:238
 msgid "Loading favorites"
 msgstr ""
 
-#: ../src\session\twitter\interface.py:249
+#: ../src\session\twitter\interface.py:247
 msgid "%s's favorites"
 msgstr ""
 
-#: ../src\session\twitter\interface.py:250
+#: ../src\session\twitter\interface.py:248
 msgid "Loading favorites for %s."
 msgstr ""
 
-#: ../src\session\twitter\interface.py:267
+#: ../src\session\twitter\interface.py:265
 msgid "Followers"
 msgstr ""
 
-#: ../src\session\twitter\interface.py:267
+#: ../src\session\twitter\interface.py:265
 msgid "Loading followers list."
 msgstr ""
 
-#: ../src\session\twitter\interface.py:272
+#: ../src\session\twitter\interface.py:270
 msgid "Friends"
 msgstr ""
 
-#: ../src\session\twitter\interface.py:272
+#: ../src\session\twitter\interface.py:270
 msgid "Loading friends list."
 msgstr ""
 
-#: ../src\session\twitter\interface.py:283
+#: ../src\session\twitter\interface.py:281
 msgid "Please launch your followers buffer before attempting to perform analysis."
 msgstr ""
 
-#: ../src\session\twitter\interface.py:285
+#: ../src\session\twitter\interface.py:283
 msgid "Cannot perform analysis on an empty followers buffer."
 msgstr ""
 
-#: ../src\session\twitter\interface.py:286
+#: ../src\session\twitter\interface.py:284
 msgid "Followers Analysis"
 msgstr ""
 
-#: ../src\session\twitter\interface.py:286
+#: ../src\session\twitter\interface.py:284
 msgid "Performing followers analysis, please wait..."
 msgstr ""
 
-#: ../src\session\twitter\interface.py:291
+#: ../src\session\twitter\interface.py:289
 msgid "Blocked Users"
 msgstr ""
 
-#: ../src\session\twitter\interface.py:291
+#: ../src\session\twitter\interface.py:289
 msgid "Loading blocked users."
 msgstr ""
 
-#: ../src\session\twitter\interface.py:319
+#: ../src\session\twitter\interface.py:317
 msgid "%s's timeline"
 msgstr ""
 
-#: ../src\session\twitter\interface.py:319
+#: ../src\session\twitter\interface.py:317
 msgid "Loading timeline for %s."
 msgstr ""
 
-#: ../src\session\twitter\interface.py:364
+#: ../src\session\twitter\interface.py:362
 msgid "Loading followers for %s."
 msgstr ""
 
-#: ../src\session\twitter\interface.py:365
+#: ../src\session\twitter\interface.py:363
 msgid "%s's followers"
 msgstr ""
 
-#: ../src\session\twitter\interface.py:376
+#: ../src\session\twitter\interface.py:374
 msgid "%s's friends"
 msgstr ""
 
-#: ../src\session\twitter\interface.py:377
+#: ../src\session\twitter\interface.py:375
 msgid "Loading friends for %s."
 msgstr ""
 
-#: ../src\session\twitter\interface.py:409
+#: ../src\session\twitter\interface.py:407
 msgid "This command is not supported from within a search buffer."
 msgstr ""
 
-#: ../src\session\twitter\interface.py:411
-#: ../src\session\twitter\interface.py:617
+#: ../src\session\twitter\interface.py:409
+#: ../src\session\twitter\interface.py:615
 msgid "No user detected in current item."
 msgstr ""
 
-#: ../src\session\twitter\interface.py:422
+#: ../src\session\twitter\interface.py:420
 msgid "Loading profile for %s"
 msgstr ""
 
-#: ../src\session\twitter\interface.py:437
+#: ../src\session\twitter\interface.py:435
 msgid "Retrieving locations."
 msgstr ""
 
-#: ../src\session\twitter\interface.py:443
+#: ../src\session\twitter\interface.py:441
 msgid "Unable to retrieve local trend locations; please try again later."
 msgstr ""
 
-#: ../src\session\twitter\interface.py:482
-#: ../src\session\twitter\interface.py:605
+#: ../src\session\twitter\interface.py:480
+#: ../src\session\twitter\interface.py:603
 msgid "Canceled"
 msgstr ""
 
-#: ../src\session\twitter\interface.py:493
+#: ../src\session\twitter\interface.py:491
 msgid "Are you sure you want to import %d items from old database?"
 msgstr ""
 
-#: ../src\session\twitter\interface.py:493
+#: ../src\session\twitter\interface.py:491
 msgid "Are you sure?"
 msgstr ""
 
-#: ../src\session\twitter\interface.py:495
+#: ../src\session\twitter\interface.py:493
 msgid "Importing, please wait."
 msgstr ""
 
-#: ../src\session\twitter\interface.py:504
+#: ../src\session\twitter\interface.py:502
 msgid "Session type mismatch."
 msgstr ""
 
-#: ../src\session\twitter\interface.py:506
+#: ../src\session\twitter\interface.py:504
 msgid "Import complete."
 msgstr ""
 
-#: ../src\session\twitter\interface.py:506
+#: ../src\session\twitter\interface.py:504
 msgid "Import completed successfully."
+msgstr ""
+
+#: ../src\session\twitter\interface.py:514
+#: ../src\session\twitter\interface.py:539
+msgid "No geo location info present in this tweet."
 msgstr ""
 
 #: ../src\session\twitter\interface.py:516
 #: ../src\session\twitter\interface.py:541
-msgid "No geo location info present in this tweet."
-msgstr ""
-
-#: ../src\session\twitter\interface.py:518
-#: ../src\session\twitter\interface.py:543
-#: ../src\session\twitter\interface.py:577
+#: ../src\session\twitter\interface.py:575
 msgid "Retrieving geo location info..."
 msgstr ""
 
-#: ../src\session\twitter\interface.py:525
-#: ../src\session\twitter\interface.py:533
-#: ../src\session\twitter\interface.py:550
-#: ../src\session\twitter\interface.py:560
-#: ../src\session\twitter\interface.py:584
-#: ../src\session\twitter\interface.py:595
+#: ../src\session\twitter\interface.py:523
+#: ../src\session\twitter\interface.py:531
+#: ../src\session\twitter\interface.py:548
+#: ../src\session\twitter\interface.py:558
+#: ../src\session\twitter\interface.py:582
+#: ../src\session\twitter\interface.py:593
 msgid "Error determining location."
 msgstr ""
 
-#: ../src\session\twitter\interface.py:528
-#: ../src\session\twitter\interface.py:553
-#: ../src\session\twitter\interface.py:589
+#: ../src\session\twitter\interface.py:526
+#: ../src\session\twitter\interface.py:551
+#: ../src\session\twitter\interface.py:587
 msgid "Coordinates are not accurate enough to determine a location."
 msgstr ""
 
-#: ../src\session\twitter\interface.py:601
+#: ../src\session\twitter\interface.py:599
 msgid "Enter a name to search for:"
 msgstr ""
 
-#: ../src\session\twitter\interface.py:601
+#: ../src\session\twitter\interface.py:599
 msgid "User search"
 msgstr ""
 
-#: ../src\session\twitter\interface.py:607
+#: ../src\session\twitter\interface.py:605
 msgid "User search for %s"
 msgstr ""
 
-#: ../src\session\twitter\interface.py:623
+#: ../src\session\twitter\interface.py:621
 msgid "Retrieving relationship status for %s"
 msgstr ""
 
-#: ../src\session\twitter\interface.py:641
+#: ../src\session\twitter\interface.py:639
 msgid "Retrieving relationship status between %s and %s"
 msgstr ""
 
-#: ../src\session\twitter\interface.py:649
+#: ../src\session\twitter\interface.py:647
 #: ../src\session\twitter\twitter.py:271
 msgid "Select user to add"
 msgstr ""
 
-#: ../src\session\twitter\interface.py:655
-#: ../src\session\twitter\interface.py:676
+#: ../src\session\twitter\interface.py:653
+#: ../src\session\twitter\interface.py:674
 #: ../src\session\twitter\twitter.py:277
 msgid "Retrieving lists, please wait."
 msgstr ""
 
-#: ../src\session\twitter\interface.py:658
-#: ../src\session\twitter\interface.py:679
+#: ../src\session\twitter\interface.py:656
+#: ../src\session\twitter\interface.py:677
 msgid "No lists defined.  Please create a list with the list manager before performing this action."
 msgstr ""
 
-#: ../src\session\twitter\interface.py:659
-#: ../src\session\twitter\interface.py:680
+#: ../src\session\twitter\interface.py:657
+#: ../src\session\twitter\interface.py:678
 #: ../src\session\twitter\twitter.py:279
 msgid "Select list"
 msgstr ""
 
-#: ../src\session\twitter\interface.py:659
+#: ../src\session\twitter\interface.py:657
 #: ../src\session\twitter\twitter.py:279
 msgid "Please select a list to add %s to?"
 msgstr ""
 
-#: ../src\session\twitter\interface.py:663
+#: ../src\session\twitter\interface.py:661
 msgid "adding %s to list %s."
 msgstr ""
 
-#: ../src\session\twitter\interface.py:670
+#: ../src\session\twitter\interface.py:668
 msgid "Select user to remove"
 msgstr ""
 
-#: ../src\session\twitter\interface.py:680
+#: ../src\session\twitter\interface.py:678
 msgid "Please select a list to remove %s from?"
 msgstr ""
 
-#: ../src\session\twitter\interface.py:691
-#: ../src\session\twitter\interface.py:729
+#: ../src\session\twitter\interface.py:689
+#: ../src\session\twitter\interface.py:727
 msgid "Please change to a list buffer before using this command."
 msgstr ""
 
-#: ../src\session\twitter\interface.py:699
+#: ../src\session\twitter\interface.py:697
 msgid "Choose your social network:"
 msgstr ""
 
-#: ../src\session\twitter\interface.py:699
+#: ../src\session\twitter\interface.py:697
 msgid "Social Network"
 msgstr ""
 
-#: ../src\session\twitter\interface.py:699
+#: ../src\session\twitter\interface.py:697
 msgid "Users who follow me but whom I do not follow"
 msgstr ""
 
-#: ../src\session\twitter\interface.py:699
-#: ../src\session\twitter\interface.py:716
+#: ../src\session\twitter\interface.py:697
+#: ../src\session\twitter\interface.py:714
 msgid "Users whom I follow and who also follow me"
 msgstr ""
 
-#: ../src\session\twitter\interface.py:699
-#: ../src\session\twitter\interface.py:718
+#: ../src\session\twitter\interface.py:697
+#: ../src\session\twitter\interface.py:716
 msgid "Users whom I follow but who do not follow me"
 msgstr ""
 
-#: ../src\session\twitter\interface.py:712
+#: ../src\session\twitter\interface.py:710
 msgid "Please launch both your followers and friends buffers before attempting to create a social network."
 msgstr ""
 
-#: ../src\session\twitter\interface.py:714
+#: ../src\session\twitter\interface.py:712
 msgid "Cannot create social network from an empty followers or friends buffer."
 msgstr ""
 
-#: ../src\session\twitter\interface.py:722
+#: ../src\session\twitter\interface.py:720
 msgid "Creating social network, please wait..."
 msgstr ""
 
-#: ../src\session\twitter\interface.py:722
+#: ../src\session\twitter\interface.py:720
 msgid "Social Network: %s"
 msgstr ""
 
-#: ../src\session\twitter\interface.py:753
+#: ../src\session\twitter\interface.py:751
 msgid "Translation process has failed."
 msgstr ""
 
-#: ../src\session\twitter\interface.py:754
+#: ../src\session\twitter\interface.py:752
 msgid "Translation from %s to %s"
 msgstr ""
 
-#: ../src\session\twitter\interface.py:761
+#: ../src\session\twitter\interface.py:759
 msgid "Select user"
 msgstr ""
 

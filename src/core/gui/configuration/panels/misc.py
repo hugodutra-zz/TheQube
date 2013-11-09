@@ -12,9 +12,13 @@ class MiscPanel (ConfigurationPanel):
   AutoStart_allowed = hasattr(sys, 'frozen') and not global_vars.portable
   self.AutoStart = wx.CheckBox(self, -1, _("Automatically start %s after Windows log on?") % application.name)
   self.AskForExit = wx.CheckBox(self, -1, _("Show confirmation dialog before exiting %s?") % application.name)
-  wx.StaticText(parent=self, label=_("Prefered URL Shortener:"))
+  wx.StaticText(parent=self, label=_("Preferred URL Shortener:"))
   self.shorteners = wx.ComboBox(parent=self, choices=url_shortener.list_services(), style = wx.CB_READONLY)
   self.shorteners.SetSizerProps(expand=True)
+  wx.StaticText(parent=self, label=_("Preferred audio service:"))
+  # M. E.: I don't see why we should not hard-code this list for now
+  self.audioServices = wx.ComboBox(parent=self, choices=['sndup.net', 'twup.me'], style = wx.CB_READONLY)
+  self.audioServices.SetSizerProps(expand=True)
   wx.StaticText(parent=self, label=_("Your Sndup.net API Key:"))
   self.SndUpAPIKey = wx.TextCtrl(parent=self)
   self.SndUpAPIKey.SetSizerProps(expand=True)
