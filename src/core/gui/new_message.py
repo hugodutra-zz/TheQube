@@ -252,9 +252,12 @@ class NewMessageDialog(SquareDialog):
    else:
     uploadUrl = baseUrl
    logging.debug("Upload url: %s" % uploadUrl)
-   self.upload_dlg = UploadDialog(parent=self, title=_("Upload in progress"), field='file', url=uploadUrl, filename=unicode(dlg.file), completed_callback=self.upload_completed)
+   self.upload_dlg = UploadDialog(parent=self, title=_("Upload in progress"), field='file', url=uploadUrl, filename=dlg.file, completed_callback=self.upload_completed)
    self.upload_dlg.Show(True)
-   self.upload_dlg.perform_threaded()
+   try:
+    self.upload_dlg.perform_threaded()
+   except:
+    logging.exception("Unable to perform upload")
   except:
    logging.exception("Unable to upload audio file to %s" % config.main['AudioServices']['service'])
    dlg.cleanup()
@@ -262,6 +265,7 @@ class NewMessageDialog(SquareDialog):
 
  def upload_completed(self):
   url = json.loads(self.upload_dlg.response['body'])['url']
+  logging.debug("Gotten URL: %s" % url)
   self.upload_dlg.Destroy()
   self.recording_dlg.cleanup()
   self.recording_dlg.Destroy()

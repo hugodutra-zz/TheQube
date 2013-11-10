@@ -14,7 +14,7 @@ The Qube change log
 - The Qube source has been moved to [Github https://github.com/Oire/TheQube]
 - Now The Qube has a bugtracker. It's located [here https://github.com/Oire/TheQube/issues].
 - Now you can decide whether to send messages by pressin Enter or by pressing Ctrl+Enter. The corresponding checkbox is located in The Qube configuration under the Miscellaneous tab. The default is to send messages with Enter, as it was earlier.
-
+- Now you can choose whether to upload audio to [SndUp http://sndup.net/] or [TwUp http://twup.me/].
 
 ===Bugfixes===
 

@@ -84,11 +84,7 @@ class Hotkey (Configuration, Interface, Gui):
    self.execute_interface_function(function)
  
  def execute_interface_function(self, func):
-  try:
-   func()
-  except:
-   logging.exception("Error executing function %r")
-   raise
+  func()
 
  def key_description(self, func):
   return getattr(getattr(self.interface, func, None), '__doc__', None)
