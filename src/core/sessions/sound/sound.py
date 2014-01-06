@@ -10,8 +10,8 @@ import paths
 import subprocess
 import tempfile
 from utils.repeating_timer import RepeatingTimer
-import sound_lib
 from sound_lib.main import BassError
+from sound_lib import recording, stream, input as sound_input, output as sound_output
 
 from core.sessions.configuration.configuration import Configuration
 from core.sessions.interface.main import Interface
@@ -44,8 +44,8 @@ class Sound (Configuration, Interface):
    if hasattr(global_vars, 'sound_output') and global_vars.sound_output:
     global_vars.sound_output.free()
    try:
-    global_vars.sound_output = sound_lib.output.Output()
-    global_vars.sound_input = sound_lib.input.Input()
+    global_vars.sound_output = sound_output.Output()
+    global_vars.sound_input = sound_input.Input()
     global_vars.sound_output.volume = config.main['sounds']['volume']
    except:
     global_vars.sound_output = None
@@ -62,7 +62,7 @@ class Sound (Configuration, Interface):
    except IOError: #The file wasn't found
     return
   try:
-   snd = sound_lib.stream.FileStream(file=unicode(file), flags=sound_lib.stream.BASS_UNICODE)
+   snd = stream.FileStream(file=unicode(file), flags=stream.BASS_UNICODE)
    snd.play()
   except BassError as e:
    if this_retry < self.MAX_OUTPUT_RESETS:
@@ -74,7 +74,7 @@ class Sound (Configuration, Interface):
 
  def play_stream (self, url):
   try:
-   snd = sound_lib.stream.URLStream(url=str(url.encode('utf-8')))
+   snd = stream.URLStream(url=str(url.encode('utf-8')))
   except BassError as e:
    if e.code == 32:
     output.speak(_("No internet connection could be opened."), True)
@@ -88,10 +88,10 @@ class Sound (Configuration, Interface):
 
  def record_sound(self, filename):
   try:
-   val = sound_lib.recording.WaveRecording(filename=filename)
-  except sound_lib.main.BassError:
-   global_vars.sound_input = sound_lib.input.Input()
-   val = sound_lib.recording.WaveRecording(filename=filename)
+   val = recording.WaveRecording(filename=filename)
+  except BassError as e:
+   global_vars.sound_input = sound_input.Input()
+   val = recording.WaveRecording(filename=filename)
   return val
 
  def find_sound_file (self, file):
