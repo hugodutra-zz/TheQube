@@ -14,7 +14,7 @@ def speak(text, interrupt=0):
  speaker.speak(text,interrupt);
  try:
   if config.main['braille']['brailleSpoken'] == True:
-   speaker.Braille(text)
+   speaker.braille(text)
  except TypeError: #The configuration isn't setup
   pass
 
