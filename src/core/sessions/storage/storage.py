@@ -62,7 +62,7 @@ class Storage (Session):
   if speak:
    output.speak(_("Sync completed."))
 
- def shutdown (self, delete = False, *args, **kwargs):
+ def shutdown (self, delete = True, *args, **kwargs):
   try:
    self.timer.cancel()
    logging.debug("%s: Synchronizer: Deactivated sync storage timer." % self.name)
