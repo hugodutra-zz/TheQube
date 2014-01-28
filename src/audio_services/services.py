@@ -4,11 +4,25 @@ import re
 import urllib
 
 @matches_url('http://boo.fm')
-def convert_audioboo(url):
+def convert_boo(url):
  if not re.findall ("^https?://boo.fm/[a-zA-Z]+\d+/?$", url.lower()):
   raise TypeError('%r is not a valid URL' % url)
  audio_id = url.split('.fm/')[-1][1:]
  return 'http://audioboo.fm/boos/%s.mp3' % audio_id
+
+@matches_url('http://audioboo.fm')
+def convert_audioboo(url):
+ if not re.findall ("^https?://audioboo.fm/boos/[a-zA-Z0-9]", url.lower()):
+  raise TypeError('%r is not a valid URL' % url)
+ url = url.split('?')[0]
+ return url + ".mp3"
+
+@matches_url('https://audioboo.fm')
+def convert_secure_audioboo(url):
+ if not re.findall ("^https?://audioboo.fm/boos/[a-zA-Z0-9]", url.lower()):
+  raise TypeError('%r is not a valid URL' % url)
+ url = url.split('?')[0]
+ return url + ".mp3"
 
 @matches_url('http://q-audio.net')
 def convert_q_audio(url):
