@@ -15,6 +15,7 @@ class Users (Dismissable, Twitter):
  def __init__ (self, username=None, *args, **kwargs):
   if not username:
    username = kwargs['session'].username
+   kwargs['count'] = 200
    kwargs['maxAPIPerUpdate'] = 15
   self.username = username
   super(Users, self).__init__(*args, **kwargs)

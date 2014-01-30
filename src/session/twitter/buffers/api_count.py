@@ -36,9 +36,11 @@ class APICount (Buffer):
     break
   return self.merge_segments(results)
 
- def cursored_update (self, update_function_name, cursor_arg='cursor', *args, **kwargs):
+ def cursored_update (self, update_function_name, cursor_arg='cursor', count_arg='count', respect_count=True, *args, **kwargs):
   next_cursor = -1
   results = []
+  if respect_count:
+   kwargs[count_arg] = self.count
   i = 0
   while next_cursor and i < self.maxAPIPerUpdate:
    i += 1
