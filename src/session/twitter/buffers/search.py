@@ -55,7 +55,7 @@ class Search (Dismissable, Tweets):
   maxAPIPerUpdate = self.maxAPIPerUpdate
   if maxAPIPerUpdate > 15:
    maxAPIPerUpdate = 15
-  results = self.paged_update(update_function_name='search', page_arg='', count_arg='count', respect_count=False, maxAPIPerUpdate=maxAPIPerUpdate, results_subscript='results', q=self.term, since_id=self.get_max_twitter_id(), count=count, include_entities=True)['statuses']
+  results = self.paged_update(update_function_name='search', count_arg='count', respect_count=False, q=self.term, since_id=self.get_max_twitter_id(), count=count, include_entities=True)['statuses']
   if self.initial_update:
    self.initial_update = False
    if not len(self) and not results:

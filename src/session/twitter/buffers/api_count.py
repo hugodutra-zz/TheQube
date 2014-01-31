@@ -30,7 +30,10 @@ class APICount (Buffer):
     new_data = new_data[0]
    if not new_data:
     break
-   id = new_data[-1]['id'] -1
+   try:
+    id = new_data[-1]['id'] -1
+   except:
+    id = new_data['statuses'][-1]['id'] -1
    results.append(new_data)
   return self.merge_segments(results)
 
