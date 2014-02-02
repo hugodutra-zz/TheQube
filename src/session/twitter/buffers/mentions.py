@@ -19,7 +19,7 @@ class Mentions (Tweets):
   self.init_done_event.set()
 
  def retrieve_update(self, *args, **kwargs):
-  return self.paged_update(update_function_name='get_mentions_timeline', since_id=self.get_max_twitter_id(), include_rts=True, include_entities=True)
+  return self.timeline_update(update_function_name='get_mentions_timeline', since_id=self.get_max_twitter_id(), include_rts=True, include_entities=True)
 
  def handles_post(self, post):
   if 'text' in post and '@%s' % self.session.username.lower() in post['text'].lower():

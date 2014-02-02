@@ -23,7 +23,7 @@ class Individual(Dismissable, Tweets):
   self.init_done_event.set()
 
  def retrieve_update(self, *args, **kwargs):
-  timeline = self.paged_update('get_user_timeline', since_id=self.get_max_twitter_id(), screen_name=self.username, include_rts=True, include_entities=True)
+  timeline = self.timeline_update('get_user_timeline', since_id=self.get_max_twitter_id(), screen_name=self.username, include_rts=True, include_entities=True)
   if self.initial_update:
    self.initial_update = False
    if not len(self) and not timeline:

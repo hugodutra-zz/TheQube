@@ -16,7 +16,28 @@ class APICount (Buffer):
   self.store_args({'maxAPIPerUpdate':maxAPIPerUpdate, 'count':count})
   super(APICount, self).__init__ (session, *args, **kwargs)
 
- def paged_update (self, update_function_name, MaxID_arg='max_id', count_arg='count', respect_count=True, *args, **kwargs):
+
+ def paged_update (self, update_function_name, page_arg='page', count_arg='count', first_page=1, respect_count=True, maxAPIPerUpdate=None, results_subscript=None, *args, **kwargs):
+  if not maxAPIPerUpdate:
+   maxAPIPerUpdate = self.maxAPIPerUpdate
+  first_page = first_page - 1
+  results = []
+  if respect_count:
+   kwargs[count_arg] = self.count
+  for i in xrange(1, maxAPIPerUpdate + 1):
+   if page_arg:
+       kwargs[page_arg] = first_page + i
+   new_data = self.session.api_call(update_function_name, report_success=False, report_failure=False, *args, **kwargs)
+   if not new_data:
+    break
+   if type(new_data) == tuple:
+    new_data = new_data[0]
+   results.append(new_data)
+   if len(new_data) < kwargs[count_arg] * 0.9:
+    break
+  return self.merge_segments(results)
+
+ def timeline_update (self, update_function_name, MaxID_arg='max_id', count_arg='count', respect_count=True, *args, **kwargs):
   id = None
   results = []
   if respect_count:
