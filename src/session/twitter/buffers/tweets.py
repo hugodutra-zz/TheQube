@@ -44,6 +44,10 @@ class Tweets (Twitter):
   if 'entities' not in item:
    return super(Tweets, self).get_urls(index=index, item=item)
   answer = []
+  if 'media' in item['entities']:
+   item['entities']['urls'] = item['entities']['media']
+  else:
+   item['entities']['urls'] = item['entities']['urls']
   for u in item['entities']['urls']:
    if u['expanded_url'] is not None:
     answer.append(u['expanded_url'])
@@ -51,12 +55,18 @@ class Tweets (Twitter):
     answer.append(u['url'])
   return answer
 
-
-  
  def process_update(self, update, *args, **kwargs):
   for item in update:
+   if 'retweeted_status' in item:
+    item = item['retweeted_status']
+   else:
+    item = item 
    if 'entities' not in item:
     continue
+   if 'media' in item['entities']:
+    item['entities']['urls'] = item['entities']['media']
+   else:
+    item['entities']['urls'] = item['entities']['urls']
    for url in item['entities']['urls']:
     if url['expanded_url'] is not None:
      item['text'] = item['text'].replace(url['url'], url['expanded_url'])
