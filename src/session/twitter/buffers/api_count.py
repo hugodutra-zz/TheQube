@@ -26,6 +26,10 @@ class APICount (Buffer):
    i += 1
    kwargs[MaxID_arg] = id
    new_data = self.session.api_call(update_function_name, report_success=False, report_failure=False, *args, **kwargs)
+   if 'statuses' in new_data:
+    new_data = new_data['statuses']
+   else:
+    new_data = new_data
    if type(new_data) == tuple:
     new_data = new_data[0]
    if not new_data:

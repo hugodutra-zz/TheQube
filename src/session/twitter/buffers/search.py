@@ -49,13 +49,7 @@ class Search (Dismissable, Tweets):
  def retrieve_update(self, *args, **kwargs):
   if self.initial_update and self.saved:
    self.initial_update = False
-  count = self.count
-  if count > 100:
-   count = 100
-  maxAPIPerUpdate = self.maxAPIPerUpdate
-  if maxAPIPerUpdate > 15:
-   maxAPIPerUpdate = 15
-  results = self.paged_update(update_function_name='search', count_arg='count', respect_count=False, q=self.term, since_id=self.get_max_twitter_id(), count=count, include_entities=True)['statuses']
+  results = self.paged_update(update_function_name='search', q=self.term, since_id=self.get_max_twitter_id(), include_entities=True)
   if self.initial_update:
    self.initial_update = False
    if not len(self) and not results:
