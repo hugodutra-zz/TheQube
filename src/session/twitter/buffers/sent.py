@@ -32,15 +32,15 @@ class Sent (Tweets):
   self.init_done_event.set()
 
  def retrieve_update(self, *args, **kwargs):
-  tweets = self.paged_update(update_function_name='get_user_timeline', since_id=self.get_max_sent_item_id(), include_rts=True)
+  tweets = self.paged_update(update_function_name='get_user_timeline', since_id=self.get_max_sent_item_id(), include_rts=True, include_entities=True)
   tweets.extend(self.retrieve_new_sent_directs())
   return tweets
 
  def retrieve_new_sent_directs (self):
-  return self.paged_update(update_function_name='get_sent_messages', since_id=self.get_max_sent_direct_id())
+  return self.paged_update(update_function_name='get_sent_messages', since_id=self.get_max_sent_direct_id(), include_entities=True)
 
  def process_update(self, update, *args, **kwargs):
-  update = Twitter.process_update(self, update)
+  update = Tweets.process_update(self, update)
   update.sort(key=lambda a: calendar.timegm(rfc822.parsedate(a['created_at'])))
   return update
 
