@@ -19,15 +19,22 @@ DELETE_DIRS = (
 def get_datafiles():
  return [("", ["main.defaults"] + glob('*.exe') + glob("*.dll")),
 ("Documentation", glob("../doc/*.txt") + glob("../documentation/*/*.html")),
-] + list_all_documentation() + list_session_defaults()  + accessible_output_data() + sound_lib_data() + get_soundpacks() + get_locales()
+] + list_all_documentation() + list_session_defaults()  + accessible_output_data() + sound_lib_data() + requests_data() + get_soundpacks() + get_locales()
 
 def accessible_output_data():
- import accessible_output
- return accessible_output.py2exe_datafiles()
+ import accessible_output2
+ return accessible_output2.find_datafiles()
 
 def sound_lib_data():
  import sound_lib
- return sound_lib.py2exe_datafiles()
+ return sound_lib.find_datafiles()
+
+def requests_data():
+ import requests
+ path = os.path.join(requests.__path__[0], '*.pem')
+ results = glob(path)
+ dest_dir = os.path.join('requests')
+ return [(dest_dir, results)]
 
 def list_session_defaults():
  files = glob('session/*/*.defaults') + glob('core/sessions/*/*.defaults')
