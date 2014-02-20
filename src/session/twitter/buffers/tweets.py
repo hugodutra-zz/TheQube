@@ -49,16 +49,28 @@ class Tweets (Twitter):
     answer.append(u['expanded_url'])
    else:
     answer.append(u['url'])
+  if 'media' in item['entities']:
+   for u in item['entities']['media']:
+    if u['display_url'] is not None:
+     answer.append("http://"+u['display_url'])
+    else:
+     answer.append(u['url'])
   return answer
 
-
-  
  def process_update(self, update, *args, **kwargs):
   for item in update:
+   if 'retweeted_status' in item:
+    item = item['retweeted_status']
+   else:
+    item = item 
    if 'entities' not in item:
     continue
    for url in item['entities']['urls']:
     if url['expanded_url'] is not None:
      item['text'] = item['text'].replace(url['url'], url['expanded_url'])
+   if 'media' in item['entities']:
+    for url in item['entities']['media']:
+     if url['display_url'] is not None:
+      item['text'] = item['text'].replace(url['url'], "http://"+url['display_url'])
   return super(Tweets, self).process_update(update, *args, **kwargs)
 

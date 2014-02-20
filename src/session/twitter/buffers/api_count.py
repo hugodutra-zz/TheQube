@@ -16,6 +16,7 @@ class APICount (Buffer):
   self.store_args({'maxAPIPerUpdate':maxAPIPerUpdate, 'count':count})
   super(APICount, self).__init__ (session, *args, **kwargs)
 
+
  def paged_update (self, update_function_name, page_arg='page', count_arg='count', first_page=1, respect_count=True, maxAPIPerUpdate=None, results_subscript=None, *args, **kwargs):
   if not maxAPIPerUpdate:
    maxAPIPerUpdate = self.maxAPIPerUpdate
@@ -36,9 +37,36 @@ class APICount (Buffer):
     break
   return self.merge_segments(results)
 
- def cursored_update (self, update_function_name, cursor_arg='cursor', *args, **kwargs):
+ def timeline_update (self, update_function_name, MaxID_arg='max_id', count_arg='count', respect_count=True, *args, **kwargs):
+  id = None
+  results = []
+  if respect_count:
+   kwargs[count_arg] = self.count
+  i = 0
+  while i < self.maxAPIPerUpdate:
+   i += 1
+   kwargs[MaxID_arg] = id
+   new_data = self.session.api_call(update_function_name, report_success=False, report_failure=False, *args, **kwargs)
+   if 'statuses' in new_data:
+    new_data = new_data['statuses']
+   else:
+    new_data = new_data
+   if type(new_data) == tuple:
+    new_data = new_data[0]
+   if not new_data:
+    break
+   try:
+    id = new_data[-1]['id'] -1
+   except:
+    id = new_data['statuses'][-1]['id'] -1
+   results.append(new_data)
+  return self.merge_segments(results)
+
+ def cursored_update (self, update_function_name, cursor_arg='cursor', count_arg='count', respect_count=True, *args, **kwargs):
   next_cursor = -1
   results = []
+  if respect_count:
+   kwargs[count_arg] = self.count
   i = 0
   while next_cursor and i < self.maxAPIPerUpdate:
    i += 1

@@ -30,4 +30,4 @@ class Retweets(Dismissable, Tweets):
   count = self.count
   if count > 100:
    count = 100
-  return self.paged_update(update_function_name=update_function_name, since_id=self.get_max_twitter_id(), respect_count=False, count=count)
+  return self.timeline_update(update_function_name=update_function_name, since_id=self.get_max_twitter_id(), respect_count=False, count=count)

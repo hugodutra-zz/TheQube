@@ -356,23 +356,24 @@ class TwitterInterface (BuffersInterface, HotkeyInterface, MetaInterface):
   """Creates a buffer containing the people that are following the specified user."""
 
   who = buffer.get_all_screen_names(index)
-  new = modal_dialog(gui.FollowersDialog, parent=self.session.frame, users=who, results_per_api=100)
+  new = modal_dialog(gui.FollowersDialog, parent=self.session.frame, users=who)
   who = new.users.GetValue()
-  api = new.maxAPIPerUpdate.GetValue()
-  output.speak(_("Loading followers for %s.") % who, True)
+  retrieveCount = new.retrieveCount.GetValue()
+  maxAPIPerUpdate = new.maxAPIPerUpdate.GetValue()
   name = _("%s's followers") % who
-  self.session.register_buffer(name, buffers.Followers, username=who, maxAPIPerUpdate = api)
+  self.session.register_buffer(name, buffers.Followers, username=who, count = retrieveCount, maxAPIPerUpdate = maxAPIPerUpdate, prelaunch_message=_("Loading friends for %s.") % who)
 
  @buffer_defaults
  def friendsFor (self, buffer=None, index=None):
   """Creates a buffer containing the people the specified user is following."""
 
   who = buffer.get_all_screen_names(index)
-  new = modal_dialog(gui.FriendsDialog, parent=self.session.frame, users=who, results_per_api=100)
+  new = modal_dialog(gui.FriendsDialog, parent=self.session.frame, users=who)
   who = new.users.GetValue()
-  api = new.maxAPIPerUpdate.GetValue()
+  retrieveCount = new.retrieveCount.GetValue()
+  maxAPIPerUpdate = new.maxAPIPerUpdate.GetValue()
   name = _("%s's friends") % who
-  self.session.register_buffer(name, buffers.Friends, username=who, maxAPIPerUpdate=api, prelaunch_message=_("Loading friends for %s.") % who)
+  self.session.register_buffer(name, buffers.Friends, username=who, count = retrieveCount, maxAPIPerUpdate = maxAPIPerUpdate, prelaunch_message=_("Loading friends for %s.") % who)
 
  def RetweetsBuffer(self):
   """Creates a buffer containing your tweets that were retweeted by others."""

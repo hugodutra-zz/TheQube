@@ -1,32 +1,22 @@
 import logging as original_logging
 logging = original_logging.getLogger('core.output')
 
-from accessible_output import braille, speech
+from accessible_output2 import outputs
 import config
 import sys
 import sessions
 
-speaker = brailler = None
 
 def speak(text, interrupt=0):
  global speaker
  if not speaker:
   setup()
- speaker.say(text,interrupt);
+ speaker.speak(text,interrupt);
  try:
   if config.main['braille']['brailleSpoken'] == True:
-   Braille(text)
+   speaker.braille(text)
  except TypeError: #The configuration isn't setup
   pass
-
-def Braille (text, *args, **kwargs):
- #Braille the given text to the display.
- global brailler
- if not config.main['braille']['brailleSpoken']:
-  return
- if not brailler:
-  setup()
- brailler.braille(text, *args, **kwargs)
 
 def CopyPostToClipboard (buffer=None, index=None):
  if not buffer:
@@ -65,10 +55,9 @@ def setup ():
  logging.debug("Initializing output subsystem.")
  try:
   if config.main['speech']['screenreader'] == 'SAPI':
-   speaker = speech.Speaker(speech.outputs.Sapi5())
+   speaker = outputs.sapi5.SAPI5()
   else:
-   speaker = speech.Speaker()
-  brailler = braille.Brailler()
+   speaker = outputs.auto.Auto()
  except:
   return logging.exception("Output: Error during initialization.")
  try:

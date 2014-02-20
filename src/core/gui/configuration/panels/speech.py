@@ -1,4 +1,4 @@
-import accessible_output.speech.outputs.sapi5voice as sapi5voice
+from accessible_output2.outputs.sapi5 import SAPI5
 import config
 
 from core.gui.configuration import ConfigurationPanel
@@ -22,7 +22,7 @@ class SpeechPanel (ConfigurationPanel):
   self.SAPIVolume.SetSizerProps(expand=True)
   try:
    wx.StaticText(self, -1, _("SAPI speech voice"))
-   self.SAPIVoice = wx.ComboBox(self, -1, style=wx.CB_READONLY, choices=sapi5voice.list_voices())
+   self.SAPIVoice = wx.ComboBox(self, -1, style=wx.CB_READONLY, choices=Sapi5().list_voices())
    self.SAPIVoice.SetSizerProps(expand=True)
    self.Bind(wx.EVT_COMBOBOX, self.VoicePreview, self.SAPIVoice)
   except:
@@ -32,11 +32,11 @@ class SpeechPanel (ConfigurationPanel):
 
  def VoicePreview (self, evt):
   try:
-   selected = sapi5voice.available_voices()[self.SAPIVoice.GetValue()]
-   current = sapi5voice.available_voices()[config.main['speech']['voice']]
-   sapi5voice.sapi5.Voice = selected
-   sapi5voice.sapi5.Speak(selected.GetDescription(), 3)
+   selected = Sapi5().available_voices()[self.SAPIVoice.GetValue()]
+   current = Sapi5().available_voices()[config.main['speech']['voice']]
+   Sapi5().Sapi5().Voice = selected
+   Sapi5().Sapi5().Speak(selected.GetDescription(), 3)
    #Revert back to the current voice setting after previewing
-   sapi5voice.sapi5.Voice = current
+   Sapi5().Sapi5().Voice = current
   except:
    pass

@@ -33,3 +33,5 @@ nosetests.xml
 
 # Ready documentation files
 *.html
+# Extra soundpacks
+src/sounds/*
