@@ -1,6 +1,5 @@
 import pycurl
 import sys
-import codecs
 import threading
 import time
 import wx
@@ -8,7 +7,6 @@ import os
 from gui_components.sized import SizedDialog
 from logger import logger
 logging = logger.getChild('transfer_dialogs')
-from urllib import urlencode
 
 __all__ = ['TransferDialog', 'DownloadDialog', 'UploadDialog']
 
@@ -28,7 +26,6 @@ class TransferDialog(SizedDialog):
   except:
    logging.exception("URL error: %s" % self.curl.errstr())
   self.curl.setopt(self.curl.NOPROGRESS, 0)
-  #self.curl.setopt(self.curl.HTTPHEADER, ["content-type: */*; charset=utf-8;"])
   self.curl.setopt(self.curl.HTTP_VERSION, self.curl.CURL_HTTP_VERSION_1_0)
   self.curl.setopt(self.curl.FOLLOWLOCATION, int(follow_location))
   self.curl.setopt(self.curl.VERBOSE, int(verbose))
@@ -104,8 +101,7 @@ class UploadDialog(TransferDialog):
    local_filename = filename.encode(sys.getfilesystemencoding())
   else:
    local_filename = filename
-  logging.debug("Local filename is %s" % local_filename)
-  self.curl.setopt(self.curl.HTTPPOST, [(field, (self.curl.FORM_FILE, local_filename, self.curl.FORM_FILENAME, local_filename))])
+  self.curl.setopt(self.curl.HTTPPOST, [(field, (self.curl.FORM_FILE, local_filename, self.curl.FORM_FILENAME, filename.encode("utf-8")))])
   self.curl.setopt(self.curl.HEADERFUNCTION, self.header_callback)
   self.curl.setopt(self.curl.WRITEFUNCTION, self.body_callback)
 
