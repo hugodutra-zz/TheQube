@@ -3,7 +3,8 @@ import global_vars
 import sys
 import wx
 import url_shortener
-
+from logger import logger
+logging = logger.getChild('config.panels.misc')
 from core.gui.configuration import ConfigurationPanel
 
 class MiscPanel (ConfigurationPanel):
@@ -22,8 +23,9 @@ class MiscPanel (ConfigurationPanel):
   self.audioServices.SetSizerProps(expand=True)
   wx.StaticText(parent=self, label=_("Your Sndup.net API Key:"))
   self.SndUpAPIKey = wx.TextCtrl(parent=self)
-  self.SndUpAPIKey.SetSizerProps(expand=True)
+  logging.debug("Audio service: %s" % str(self.audioServices.GetValue()))
   self.SndUpAPIKey.Enable(False) if self.audioServices.GetValue() != "sndup.net" else self.SndUpAPIKey.Enable(True)
+  self.SndUpAPIKey.SetSizerProps(expand=True)
   self.sendMessagesWithEnterKey = wx.CheckBox(self, label=_("Send Messages With Enter Key?"))
   self.stdKeyHandling = wx.CheckBox(self, label=_("Perform standard actions with Home/End keys?"))
   self._first = self.AutoStart if AutoStart_allowed else self.AskForExit

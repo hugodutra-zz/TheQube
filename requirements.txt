@@ -1,0 +1,10 @@
+BeautifulSoup>=3.0.8.1
+comtypes==0.6.4
+configobj==4.6.0
+distribute==0.6.14
+durus>=3.9
+oauthlib>=0.4.2
+requests>=2.0
+requests-oauthlib>=0.3.2
+twisted>=10.1.0
+zope.interface==3.6.1
