@@ -6,5 +6,7 @@
 -e hg+http://hg.q-continuum.net/urlfinder/#egg=urlfinder
 -e hg+http://hg.q-continuum.net/updater/#egg=updater
 -e hg+http://hg.q-continuum.net/i18n_utils/#egg=i18n_utils
+
 -e git+https://github.com/ryanmcgrath/twython#egg=twython
+-e git+https://github.com/kennethreitz/requests/#egg=requests
 -e git+https://github.com/google/google-api-python-client/#egg=google-api-python-client
