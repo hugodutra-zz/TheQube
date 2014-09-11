@@ -183,9 +183,7 @@ def rename_session(session, name):
 def possible_sessions ():
  #Replace when autodiscovery worked out.
  return sorted(['Twitter',
-  'Stopwatch',
-  'GoogleVoice',
-  #'Language'
+  'Stopwatch'
 ])
 
 class RenameError(Exception): pass
