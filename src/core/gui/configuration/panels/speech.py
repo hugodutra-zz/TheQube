@@ -3,6 +3,8 @@ import config
 
 from core.gui.configuration import ConfigurationPanel
 import wx
+from logger import logger
+logging = logger.getChild('config.panels.speech')
 
 class SpeechPanel (ConfigurationPanel):
  def __init__ (self, *args, **kwargs):
@@ -20,13 +22,10 @@ class SpeechPanel (ConfigurationPanel):
   self.SAPIVolume.SetRange(1,100)
   self.SAPIVolume.SetValue(100)
   self.SAPIVolume.SetSizerProps(expand=True)
-  try:
-   wx.StaticText(self, -1, _("SAPI speech voice"))
-   self.SAPIVoice = wx.ComboBox(self, -1, style=wx.CB_READONLY, choices=Sapi5().list_voices())
-   self.SAPIVoice.SetSizerProps(expand=True)
-   self.Bind(wx.EVT_COMBOBOX, self.VoicePreview, self.SAPIVoice)
-  except:
-   pass
+  wx.StaticText(self, -1, _("SAPI speech voice"))
+  self.SAPIVoice = wx.ComboBox(self, -1, style=wx.CB_READONLY, choices=SAPI5().list_voices())
+  self.SAPIVoice.SetSizerProps(expand=True)
+  self.Bind(wx.EVT_COMBOBOX, self.VoicePreview, self.SAPIVoice)
   self.EnableSpeechRecognition = wx.CheckBox(self, -1, _("Enable speech recognition?"))
   self.finish_setup()
 

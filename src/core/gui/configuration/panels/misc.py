@@ -23,7 +23,7 @@ class MiscPanel (ConfigurationPanel):
   self.audioServices.SetSizerProps(expand=True)
   wx.StaticText(parent=self, label=_("Your Sndup.net API Key:"))
   self.SndUpAPIKey = wx.TextCtrl(parent=self)
-  logging.debug("Audio service: %s" % str(self.audioServices.GetValue()))
+  logging.debug("Audio service: %s" % str(self.audioServices.GetSelection()))
   self.SndUpAPIKey.Enable(False) if self.audioServices.GetValue() != "sndup.net" else self.SndUpAPIKey.Enable(True)
   self.SndUpAPIKey.SetSizerProps(expand=True)
   self.sendMessagesWithEnterKey = wx.CheckBox(self, label=_("Send Messages With Enter Key?"))

@@ -22,26 +22,26 @@ class SAPI5(Output):
  def __init__(self):
   try:
    self.object = load_com("SAPI.SPVoice")
-   self._voices = self._available_voices()
+   self._voices = self.available_voices()
   except pywintypes.com_error:
    raise OutputError
   self._pitch = 0
 
- def _available_voices(self):
+ def available_voices(self):
   _voices = OrderedDict()
   for v in self.object.GetVoices():
    _voices[v.GetDescription()] = v
   return _voices
 
  def list_voices(self):
-  return self.available_voices.keys()
+  return self.available_voices().keys()
 
  def get_voice(self):
   return self.object.Voice.GetDescription()
 
  def set_voice(self, value):
   log.debug("Setting SAPI5 voice to \"%s\"" % value)
-  self.object.Voice = self.available_voices[value]
+  self.object.Voice = self.available_voices()[value]
   # For some reason SAPI5 does not reset audio after changing the voice
   # By setting the audio device after changing voices seems to fix this
   # This was noted from information at:

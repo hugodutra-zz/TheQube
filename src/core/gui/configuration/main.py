@@ -38,8 +38,8 @@ class MainConfigDialog (ConfigurationDialog):
   self.speech.SAPIVolume.SetValue(config.main['speech']['volume'])
   try:
    self.speech.SAPIVoice.SetValue(config.main['speech']['voice'])
-  except:
-   logging.exception("Error setting default sapi voice value.")
+  except Exception as svexc:
+   logging.exception("Error setting default sapi voice: {}".format(svexc))
   self.speech.EnableSpeechRecognition.SetValue(config.main['recognition']['enabled'])
   self.navigation.step.SetValue(config.main['client']['step'])
   self.navigation.timeStepHours.SetValue(config.main['client']['timeStep'] / 60)

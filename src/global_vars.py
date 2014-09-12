@@ -10,6 +10,7 @@ Updating = False
 platform = None
 KeyboardHelp = False
 remote = False
+DebugMode = True
 
 def setup():
  global from_source

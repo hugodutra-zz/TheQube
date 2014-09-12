@@ -1,7 +1,6 @@
 from logger import logger
 logging = logger.getChild('sessions.twitter.interface')
 
-from gmaps import GoogleMapsAPI
 from importer import Importer
 from durus_importer import SessionImporter
 from core.sessions.buffers.buffer_defaults import buffer_defaults
@@ -515,7 +514,6 @@ class TwitterInterface (BuffersInterface, HotkeyInterface, MetaInterface):
    output.speak(_("No geo location info present in this tweet."), 1)
   else:
    output.speak(_("Retrieving geo location info..."), 1)
-   api = GoogleMapsAPI(key = config.main['GoogleMaps']['APIKey'])
    coordinates = "%s,%s" % (buffer[index]['geo']['coordinates'][0], buffer[index]['geo']['coordinates'][1])
    try:
     location = api.Geocoding(coordinates)['Placemark'][0]
@@ -540,7 +538,6 @@ class TwitterInterface (BuffersInterface, HotkeyInterface, MetaInterface):
    output.speak(_("No geo location info present in this tweet."), 1)
   else:
    output.speak(_("Retrieving geo location info..."), 1)
-   api = GoogleMapsAPI(key = config.main['GoogleMaps']['APIKey'])
    coordinates = "%s,%s" % (buffer[index]['geo']['coordinates'][0], buffer[index]['geo'] ['coordinates'][1])
    try:
     location = api.Geocoding(coordinates)['Placemark'][0]
@@ -574,7 +571,6 @@ class TwitterInterface (BuffersInterface, HotkeyInterface, MetaInterface):
    f.Destroy()
    return output.speak(_("Canceled."), True)
   output.speak(_("Retrieving geo location info..."), 1)
-  api = GoogleMapsAPI(key = config.main['GoogleMaps']['APIKey'])
   coordinates = "%s,%s" % (float(dlg.lat.GetValue()), float(dlg.long.GetValue()))
   try:
    location = api.Geocoding(coordinates)['Placemark'][0]
