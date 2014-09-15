@@ -30,15 +30,14 @@ class MiscPanel (ConfigurationPanel):
   self.sndupKeySizer.Add(self.sndupKey)
   self.sendMessagesWithEnterKey = wx.CheckBox(self, label=_("Send Messages With Enter Key?"))
   self.stdKeyHandling = wx.CheckBox(self, label=_("Perform standard actions with Home/End keys?"))
-  sndupKey_allowed = self.audioServices.GetValue() == "sndup.net"
-  logging.debug("@current audio service is {0}, type {1}". format(self.audioServices.GetValue(), type(self.audioServices.GetValue())))
   self._first = self.AutoStart if AutoStart_allowed else self.AskForExit
   if not AutoStart_allowed:
    self.AutoStart.Show(False)
-  if not sndupKey_allowed:
-   self.sndupKeySizer.ShowItems(False)
-
   self.finish_setup()
+  wx.CallAfter(self.check_audioServices, args)
 
  def onChange(self, ev):
+  self.sndupKeySizer.ShowItems(False) if self.audioServices.GetValue() != "sndup.net" else self.sndupKeySizer.ShowItems(True)
+
+ def check_audioServices(self, args):
   self.sndupKeySizer.ShowItems(False) if self.audioServices.GetValue() != "sndup.net" else self.sndupKeySizer.ShowItems(True)
