@@ -27,6 +27,7 @@ import wx
 from core.sessions.buffers.interface import BuffersInterface
 from core.sessions.hotkey.interface import HotkeyInterface
 from meta_interface import MetaInterface
+from geopy.geocoders import GoogleV3
 
 class TwitterInterface (BuffersInterface, HotkeyInterface, MetaInterface):
 
@@ -514,21 +515,22 @@ class TwitterInterface (BuffersInterface, HotkeyInterface, MetaInterface):
    output.speak(_("No geo location info present in this tweet."), 1)
   else:
    output.speak(_("Retrieving geo location info..."), 1)
-   coordinates = "%s,%s" % (buffer[index]['geo']['coordinates'][0], buffer[index]['geo']['coordinates'][1])
+   coordinates = (buffer[index]['geo']['coordinates'][0], buffer[index]['geo']['coordinates'][1])
    try:
-    location = api.Geocoding(coordinates)['Placemark'][0]
-   except:
-    logging.debug("Unable to retrieve location details from Google Maps, coordinates: %s" % str(coordinates))
+    geolocator = GoogleV3()
+   except Exception as glexc:
+    logging.exception("@geolocator exception: {0}". format(glexc))
+   try:
+    location = geolocator.reverse(coordinates, True)
+   except Exception as geoexc:
+    logging.exception("Unable to retrieve geolocation info, coordinates: {0}, error: {1}".format(str(coordinates), geoexc))
     return output.speak(_("Error determining location."), True)
-   if 'address' in location and 'AddressDetails' in location and 'Accuracy' in location['AddressDetails']:
-    if not location['address']:
-     answer = _("Coordinates are not accurate enough to determine a location.")
-    else:
-     answer = _("Location is %s; %s level accuracy" % (location['address'], api.accuracy_constants[location['AddressDetails']['Accuracy']]))
-   else:
-    logging.debug("Unable to retrieve location details from Google Maps.")
-    answer = _("Error determining location.")
-  output.speak(answer, True)
+  logging.debug("@location is: {0}". format(str(location)))
+  if location.address is not None:
+   return output.speak(location.address, True)
+  else:
+   logging.debug("Locator didn't return an address.")
+   return output.speak(_("Sorry, geo locator didn't provide an address."))
 
  @buffer_defaults
  def GeoLocationDialog(self, buffer=None, index=None):

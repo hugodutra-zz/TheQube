@@ -18,21 +18,27 @@ class MiscPanel (ConfigurationPanel):
   self.shorteners.SetSizerProps(expand=True)
   wx.StaticText(parent=self, label=_("Preferred audio service:"))
   # M. E.: I don't see why we should not hard-code this list for now
-  self.audioServices = wx.ComboBox(parent=self, choices=['sndup.net', 'twup.me'], style = wx.CB_READONLY)
+  allAudioServices = ['sndup.net', 'twup.me']
+  self.audioServices = wx.ComboBox(parent=self, choices=allAudioServices, style = wx.CB_READONLY)
   self.audioServices.Bind(wx.EVT_COMBOBOX, self.onChange)
   self.audioServices.SetSizerProps(expand=True)
-  wx.StaticText(parent=self, label=_("Your Sndup.net API Key:"))
-  self.SndUpAPIKey = wx.TextCtrl(parent=self)
-  logging.debug("Audio service: %s" % str(self.audioServices.GetSelection()))
-  self.SndUpAPIKey.Enable(False) if self.audioServices.GetValue() != "sndup.net" else self.SndUpAPIKey.Enable(True)
-  self.SndUpAPIKey.SetSizerProps(expand=True)
+  self.sndupKeySizer = wx.BoxSizer(wx.HORIZONTAL)
+  self.sndupKeyLabel = wx.StaticText(parent=self, label=_("Your Sndup.net API Key:"))
+  self.sndupKey = wx.TextCtrl(parent=self)
+  self.sndupKey.SetSizerProps(expand=True)
+  self.sndupKeySizer.Add(self.sndupKeyLabel)
+  self.sndupKeySizer.Add(self.sndupKey)
   self.sendMessagesWithEnterKey = wx.CheckBox(self, label=_("Send Messages With Enter Key?"))
   self.stdKeyHandling = wx.CheckBox(self, label=_("Perform standard actions with Home/End keys?"))
+  sndupKey_allowed = self.audioServices.GetValue() == "sndup.net"
+  logging.debug("@current audio service is {0}, type {1}". format(self.audioServices.GetValue(), type(self.audioServices.GetValue())))
   self._first = self.AutoStart if AutoStart_allowed else self.AskForExit
   if not AutoStart_allowed:
    self.AutoStart.Show(False)
+  if not sndupKey_allowed:
+   self.sndupKeySizer.ShowItems(False)
 
   self.finish_setup()
 
  def onChange(self, ev):
-  self.SndUpAPIKey.Enable(False) if self.audioServices.GetValue() != "sndup.net" else self.SndUpAPIKey.Enable(True)
+  self.sndupKeySizer.ShowItems(False) if self.audioServices.GetValue() != "sndup.net" else self.sndupKeySizer.ShowItems(True)

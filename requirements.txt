@@ -2,10 +2,8 @@ BeautifulSoup>=3.0.8.1
 comtypes==0.6.4
 configobj
 distribute==0.6.14
+geopy
 oauth2>=1.0.2
 oauthlib>=0.4.2
-requests>=2.0
-requests-oauthlib>=0.3.2
 twisted
-twython>=3.0
 zope.interface==3.6.1
