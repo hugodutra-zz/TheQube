@@ -519,17 +519,15 @@ class TwitterInterface (BuffersInterface, HotkeyInterface, MetaInterface):
    try:
     geolocator = GoogleV3()
    except Exception as glexc:
-    logging.exception("@geolocator exception: {0}". format(glexc))
+    logging.exception("Geolocator exception: {0}". format(glexc))
    try:
-    location = geolocator.reverse(coordinates, True)
+    location = geolocator.reverse(coordinates, True, None, config.main['languages']['current'])
    except Exception as geoexc:
     logging.exception("Unable to retrieve geolocation info, coordinates: {0}, error: {1}".format(str(coordinates), geoexc))
     return output.speak(_("Error determining location."), True)
-  logging.debug("@location is: {0}". format(str(location)))
   if location.address is not None:
    return output.speak(location.address, True)
   else:
-   logging.debug("Locator didn't return an address.")
    return output.speak(_("Sorry, geo locator didn't provide an address."))
 
  @buffer_defaults
@@ -540,22 +538,22 @@ class TwitterInterface (BuffersInterface, HotkeyInterface, MetaInterface):
    output.speak(_("No geo location info present in this tweet."), 1)
   else:
    output.speak(_("Retrieving geo location info..."), 1)
-   coordinates = "%s,%s" % (buffer[index]['geo']['coordinates'][0], buffer[index]['geo'] ['coordinates'][1])
+   coordinates = (buffer[index]['geo']['coordinates'][0], buffer[index]['geo'] ['coordinates'][1])
    try:
-    location = api.Geocoding(coordinates)['Placemark'][0]
-   except:
-    logging.debug("Unable to retrieve location details from Google Maps.")
-    return output.speak(_("Error determining location."), 1)
-   if 'address' in location and 'AddressDetails' in location and 'Accuracy' in location['AddressDetails']:
-    if not location['address']:
-     output.speak(_("Coordinates are not accurate enough to determine a location."), 1)
-    else:
-     dlg = gui.GeoLocationDialog(parent=self.session.frame, id=wx.ID_ANY,  coordinates=coordinates, location=location['address'], accuracy=_("%s level accuracy" % api.accuracy_constants[location['AddressDetails']['Accuracy']]))
-     dlg.ShowModal()
-     dlg.Destroy()
+    geolocator = GoogleV3()
+   except Exception as glexc:
+    logging.exception("Geolocator exception: {0}". format(glexc))
+   try:
+    location = geolocator.reverse(coordinates, True, None, config.main['languages']['current'])
+   except Exception as geoexc:
+    logging.exception("Unable to retrieve geolocation info, coordinates: {0}, error: {1}".format(str(coordinates), geoexc))
+    return output.speak(_("Error determining location."), True)
+   if location.address is not None:
+    dlg = gui.GeoLocationDialog(parent=self.session.frame, id=wx.ID_ANY,  coordinates=coordinates, location=location.address)
+    dlg.ShowModal()
+    dlg.Destroy()
    else:
-    logging.debug("Unable to retrieve location details from Google Maps.")
-    output.speak(_("Error determining location."), 1)
+    return output.speak(_("Sorry, geo locator didn't provide an address."))
 
  @buffer_defaults
  def GeoLocationInput(self, buffer=None, index=None):
@@ -573,23 +571,23 @@ class TwitterInterface (BuffersInterface, HotkeyInterface, MetaInterface):
    f.Destroy()
    return output.speak(_("Canceled."), True)
   output.speak(_("Retrieving geo location info..."), 1)
-  coordinates = "%s,%s" % (float(dlg.lat.GetValue()), float(dlg.long.GetValue()))
+  coordinates = (float(dlg.lat.GetValue()), float(dlg.long.GetValue()))
   try:
-   location = api.Geocoding(coordinates)['Placemark'][0]
-  except:
-   logging.debug("Unable to retrieve location details from Google Maps.")
-   output.speak(_("Error determining location."), 1)
+   geolocator = GoogleV3()
+  except Exception as glexc:
+   logging.exception("Geolocator exception: {0}". format(glexc))
+  try:
+   location = geolocator.reverse(coordinates, True, None, config.main['languages']['current'])
+  except Exception as geoexc:
+   logging.exception("Unable to retrieve geolocation info, coordinates: {0}, error: {1}".format(str(coordinates), geoexc))
+   output.speak(_("Error determining location."), True)
    f.Destroy()
    return
-  if 'address' in location and 'AddressDetails' in location and 'Accuracy' in location['AddressDetails']:
-   if not location['address']:
-    output.speak(_("Coordinates are not accurate enough to determine a location."), 1)
-   else:
-    dlg = gui.GeoLocationDialog(parent=f, id=wx.ID_ANY, coordinates=coordinates, location=location['address'], accuracy=_("%s level accuracy" % api.accuracy_constants[location['AddressDetails']['Accuracy']]))
-    dlg.ShowModal()
+  if location.address is not None:
+   dlg = gui.GeoLocationDialog(parent=f, id=wx.ID_ANY, coordinates=coordinates, location=location.address)
+   dlg.ShowModal()
   else:
-   logging.debug("Unable to retrieve location details from Google Maps.")
-   output.speak(_("Error determining location."), 1)
+   return output.speak(_("Sorry, geo locator didn't provide an address."))
   f.Destroy()
 
  def UserSearch(self):

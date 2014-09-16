@@ -6,7 +6,6 @@ from core.gui import SquareDialog
 class GeoLocationInputDialog (SquareDialog):
 
  def __init__(self, lat=None, long=None, *args, **kwargs):
-
   super(GeoLocationInputDialog, self).__init__(title=_("Input Coordinates"), *args, **kwargs)
   #First Row
   wx.StaticText(parent=self.pane, label=_("Latitude:"))

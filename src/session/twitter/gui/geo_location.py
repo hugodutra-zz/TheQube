@@ -7,12 +7,12 @@ from core.gui import SquareDialog
 
 class GeoLocationDialog(SquareDialog):
 
- def __init__ (self, coordinates=None, location=None, accuracy=None, *args, **kwargs):
+ def __init__ (self, coordinates=None, location=None, *args, **kwargs):
   super(GeoLocationDialog, self).__init__(title=_("Geo Location"), *args, **kwargs)
   size = self.Size
   size[0] = size[0] / 2
   size[1] = -1
-  self.coordinates = self.labeled_control(_("Geo location coordinates:"), wx.TextCtrl, style=wx.TE_MULTILINE|wx.TE_READONLY|wx.WANTS_CHARS, value=coordinates, size=size)
+  self.coordinates = self.labeled_control(_("Geo location coordinates:"), wx.TextCtrl, style=wx.TE_MULTILINE|wx.TE_READONLY|wx.WANTS_CHARS, value=str(coordinates), size=size)
   self.coordinates.Bind(wx.EVT_CHAR, self.charPressed)
   self.coordinates.SetSizerProps(expand=True)
   #Row 2
@@ -22,10 +22,6 @@ class GeoLocationDialog(SquareDialog):
   self.location = self.labeled_control(_("Location:"), wx.TextCtrl, value=location, style=wx.TE_MULTILINE | wx.TE_READONLY | wx.WANTS_CHARS, size=size)
   self.location.Bind(wx.EVT_CHAR, self.charPressed)
   self.location.SetSizerProps(expand=True)
-  #Row 3
-  self.accuracy = self.labeled_control(_("Accuracy:"), wx.TextCtrl, value=accuracy, style=wx.TE_MULTILINE | wx.TE_READONLY | wx.WANTS_CHARS)
-  self.accuracy.Bind(wx.EVT_CHAR, self.charPressed)
-  self.accuracy.SetSizerProps(expand=True)
   #close button
   self.btn_close = wx.Button(self.pane, wx.ID_CLOSE)
   self.btn_close.SetSizerProps(expand = True)
