@@ -22,8 +22,8 @@ def cend(pid):
 def setup():
  try:
   end(config.main['client']['pid'])
- except:
-  pass
+ except Exception as exc:
+  logging.exception("Error ending process: {0}". format(exc))
 #Save the current pid in the config
  config.main['client']['pid'] = os.getpid()
  config.main.write()

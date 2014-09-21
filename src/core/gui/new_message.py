@@ -17,7 +17,6 @@ from recording import RecordingDialog
 from schedule import ScheduleDialog
 #from translate import TranslateDialog
 
-#from google_apis.translate import Translator, TranslationError
 
 class NewMessageDialog(SquareDialog):
 
@@ -35,10 +34,10 @@ class NewMessageDialog(SquareDialog):
    if hasattr(sessions.current_session, 'play'):
     if length > self.max_length:
      sessions.current_session.play(sessions.current_session.config['sounds']['maxLength'])
-   # Only enable the shorten button and unshorten buttonif there is text.
+   # Only enable the shorten button and unshorten button if there is text.
    self.update_url_buttons()
-  except:
-   logging.exception("This is what broke.")
+  except Exception as tuexc:
+   logging.exception("Error updating text: {0}".format(tuexc))
 
  def update_url_buttons (self):
   if hasattr(self, 'shorten') and hasattr(self,'unshorten'):
@@ -60,8 +59,8 @@ class NewMessageDialog(SquareDialog):
   # selecting sometimes includes prior or subsequent spaces; remove.
   sel = self.message.GetStringSelection().strip()
   logging.debug("len sel: %s, len tweet: %s, sel: %s, tweet: %s" % (len(sel), len(tweet), sel, tweet))
-  # useful selection, not multi-word, not bit.ly
-  if len(sel) > 3 and " " not in sel and "bit.ly" not in sel:
+  # useful selection, not multi-word
+  if len(sel) > 3 and " " not in sel:
    logging.debug("Adding selection as URL: %s" % (sel))
    urls.append(sel)
   # Find URLs from tweet.
@@ -198,7 +197,11 @@ class NewMessageDialog(SquareDialog):
    else:
     evt.Skip()
   elif key == 13 and modifiers == wx.MOD_CONTROL:
-   self.EndModal(wx.ID_OK)
+   if not config.main['UI']['sendMessagesWithEnterKey']:
+    self.EndModal(wx.ID_OK)
+   else:
+    # We need to append a new line character
+    object.AppendText('\n')
   else:
    evt.Skip()
 
@@ -256,10 +259,10 @@ class NewMessageDialog(SquareDialog):
    self.upload_dlg.Show(True)
    try:
     self.upload_dlg.perform_threaded()
-   except:
-    logging.exception("Unable to perform upload")
-  except:
-   logging.exception("Unable to upload audio file to %s" % config.main['AudioServices']['service'])
+   except Exception as upldexc:
+    logging.exception("Unable to perform upload: {0}".format(upldexc))
+  except Exception as auexc:
+   logging.exception("Unable to upload audio file to {0}: {1}".format(config.main['AudioServices']['service'], auexc))
    dlg.cleanup()
    return output.speak(_("There was an error attaching the file."), True)
 
@@ -275,12 +278,13 @@ class NewMessageDialog(SquareDialog):
    self.message.SetFocus()
   else:
    error = json.loads(self.upload_dlg.response['body'])['error']
+   logging.exception("Error getting URL to audio. Server response: {0}". format(error))
    output.speak(_(error), True)
    self.message.SetFocus()
   
  def on_schedule_message(self):
   if self.delay:
-   output.speak(_("Resetting currently-scheduled item."), True)
+   output.speak(_("Resetting currently scheduled item."), True)
   dlg = ScheduleDialog(parent=self, title=_("Schedule message"))
   if dlg.ShowModal() != wx.ID_OK:
    return output.speak(_("Canceled."), True)
