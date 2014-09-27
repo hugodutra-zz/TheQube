@@ -6,7 +6,6 @@ autoReadNum=boolean(default=True) #Automatically read number of new items?
 readBufferLength=boolean(default=True) #Automatically announce how many items are in the buffer upon buffer change?
 AutoStart=boolean(default=False)
 AskForExit=boolean(default=True)
-useGUI=boolean(default=False)
 step=integer(default=5)
 timeStep=integer(default=60)
 undoStackSize=integer(default=100)
@@ -36,10 +35,6 @@ path=string(default="")
 #Braille
 [braille]
 brailleSpoken=boolean(default=False)
-
-# Google Maps
-[GoogleMaps]
-APIKey=string(default="ABQIAAAAW56977gIWd3EKHNuNuKnbRQiSjJMu2suV1yof5sYS2J2gZKBsBTt2s9HZbrJYO3UwwufBKqq_Qtl0Q")
 
 [sessions]
 sessions=list(default=list())

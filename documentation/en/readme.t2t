@@ -56,7 +56,7 @@ You can also modify the navigation order of the buffers by pressing control+win+
 
 ==Options when sending messages in The Qube==[message-options]
 
-Often when using The Qube, you will be entering messages that you wish to send, such as in the [twitter \twitter-session] or [google voice \gv-session] sessions described later.  All of the message composition dialogs in The Qube share many common characteristics.  This section describes the options that you have in these dialogs.
+Often when using The Qube, you will be entering messages that you wish to send, such as in the [twitter \twitter-session] session described later.  All of the message composition dialogs in The Qube share many common characteristics.  This section describes the options that you have in these dialogs.
 
 ===Delaying a message===[delay]
 
@@ -554,8 +554,6 @@ Relational operators are far more powerful than this.  A complete discussion of 
 | >= | Greater than or equal to |
 | <> or != | Not equal to |
 
-
-%!include: googlevoice.t2t
 
 =The stopwatch=[stopwatch]
 

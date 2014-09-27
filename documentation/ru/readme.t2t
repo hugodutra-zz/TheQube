@@ -56,7 +56,7 @@ You can also modify the navigation order of the buffers by pressing control+win+
 
 ==Options when sending messages in The Qube==[message-options]
 
-Often when using The Qube, you will be entering messages that you wish to send, such as in the [twitter \twitter-session] or [google voice \gv-session] sessions described later.  All of the message composition dialogs in The Qube share many common characteristics.  This section describes the options that you have in these dialogs.
+Often when using The Qube, you will be entering messages that you wish to send, such as in the [twitter \twitter-session] session described later.  All of the message composition dialogs in The Qube share many common characteristics.  This section describes the options that you have in these dialogs.
 
 ===Delaying a message===[delay]
 
@@ -567,7 +567,6 @@ To start a search, press control+win+/.  This will open the bing search dialog. 
 
 You can also use bing to search for recent news articles.  To begin a news search, press control+win+n, type your search terms and press enter.  A new buffer will be created with the most recent articles that match your search, sorted by date.  Press control+win+enter to load an article into your default web browser.
 
-%!include: googlevoice.t2t
 
 =The stopwatch=[stopwatch]
 
