@@ -18,7 +18,7 @@ DELETE_DIRS = (
 [shutil.rmtree(i, ignore_errors=True) for i in DELETE_DIRS]
 def get_datafiles():
  return [("", ["main.defaults"] + glob('*.exe') + glob("*.dll")),
-("Documentation", glob("../doc/*.txt") + glob("../documentation/*/*.html")),
+("Documentation", glob("../documentation/*/*.html")),
 ] + list_all_documentation() + list_session_defaults()  + accessible_output_data() + sound_lib_data() + requests_data() + get_soundpacks() + get_locales()
 
 def accessible_output_data():
@@ -80,7 +80,7 @@ if __name__ == '__main__':
  setup(
   name = name,
   author = __author__,
-  author_email = "djquartizer@googlemail.com",
+  author_email = "andre@oire.org",
   version = __version__,
   url = 'http://www.quartzprojects.co.uk/',
   packages = find_packages(),
