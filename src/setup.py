@@ -1,3 +1,6 @@
+# -*- coding: utf-8
+
+
 from setuptools import setup, find_packages
 import py2exe, innosetup
 import shutil
@@ -7,7 +10,7 @@ import os
 
 name = 'The Qube'
 __version__ = 1.0
-__author__ = 'Quartizer Projects'
+__author__ = 'Andre Polykanine A.K.A. Menelion Elensúlë'
 DELETE_DIRS = (
  'build',
  'dist',
@@ -82,7 +85,7 @@ if __name__ == '__main__':
   author = __author__,
   author_email = "andre@oire.org",
   version = __version__,
-  url = 'http://www.quartzprojects.co.uk/',
+  url = 'http://theqube.2fh.co/',
   packages = find_packages(),
   data_files = get_datafiles(),
   options = {

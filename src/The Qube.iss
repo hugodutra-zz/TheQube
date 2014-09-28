@@ -3,8 +3,8 @@
 
 #define MyAppName "The Qube"
 #define MyAppVersion "1.0 Beta 6"
-#define MyAppPublisher "Quartizer Projects"
-#define MyAppURL "http://www.quartzprojects.co.uk"
+#define MyAppPublisher "Andre Polykanine A.K.A. Menelion Elensúlë"
+#define MyAppURL "http://theqube.2fh.co"
 #define MyAppExeName "The Qube.exe"
 
 [Setup]
@@ -26,7 +26,7 @@ OutputDir=setup
 OutputBaseFilename=The Qube-setup 1.0 Beta 6
 Compression=lzma
 SolidCompression=true
-VersionInfoCompany=Quartizer Projects
+VersionInfoCompany=The Qube dev team
 SetupLogging=true
 ShowLanguageDialog=yes
 [Languages]
