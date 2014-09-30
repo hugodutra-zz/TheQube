@@ -1,3 +1,5 @@
+# -*- coding: utf-8
+
 keys = {
  'accept': 30,
  'add': 107,

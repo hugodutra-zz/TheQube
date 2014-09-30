@@ -1,3 +1,5 @@
+# -*- coding: utf-8
+
 import platform
 import time
 
@@ -24,11 +26,6 @@ class KeyboardHandler(object):
   self.active_keys[key] = function
 
  def unregister_key (self, key, function):
-  try:
-   if self.active_keys[key] != function:
-    raise KeyboardHandlerError, "key %s is not registered to that function" % key
-  except KeyError:
-   raise KeyboardHandlerError, "Key %s not currently registered" % key
   del(self.active_keys[key])
 
  def unregister_all_keys(self):
@@ -40,8 +37,8 @@ class KeyboardHandler(object):
    return
   try:
    function = self.active_keys[key]
-  except KeyError:
-   return
+  except KeyError as kerr:
+   raise KeyboardHandlerError, "Unable to handle key {0}: {1}".format(key, kerr)
   self._last_key = key
   self._last_keypress_time = time.time()
   return function()
@@ -77,12 +74,12 @@ class KeyboardHandler(object):
   """Given a keymap, returns the keymap standardized."""
   full = {}
   for i in keymap:
-   answer = ""
+   answer = u""
    new = self.standardize_key(keymap[i])
    for (c, j) in enumerate(new):
     if c < len(new)-1:
-     answer = "%s%s+" % (answer, j)
+     answer = u"%s%s+" % (answer, j)
     else:
-     answer = "%s%s" % (answer, j)
+     answer = u"%s%s" % (answer, j)
    full[i] = answer
   return full

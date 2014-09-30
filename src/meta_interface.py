@@ -1,3 +1,5 @@
+# -*- coding: utf-8
+
 from logger import logger
 logging = logger.getChild('meta_interface')
 
@@ -48,7 +50,6 @@ class MetaInterface (object):
     d = question_dialog(parent=application.main_frame, caption=_("Exit %s") % application.name, message=_("Are you sure you wish to exit %s?") % application.name, style=wx.YES|wx.NO|wx.ICON_WARNING)
     if d!= wx.ID_YES:
      return output.speak(_("Canceled."), True)
-    logging.debug("User requested %s termination.  Now killing kittens." % application.name)
    output.speak(_("Exiting %s.") % application.name, True)
    shutdown.exit()
 
@@ -57,7 +58,7 @@ class MetaInterface (object):
   output.speak("", 3) #using this hack to force silencing of SAPI5 speech
 
  def ToggleSpeechRecognition(self):
-  """Toggles qwitter's ability to recognize spoken commands."""
+  """Toggles The Qube's ability to recognize spoken commands."""
 
   if config.main['recognition']['enabled']:
    logging.debug("Turning off speech recognition.")
@@ -74,7 +75,7 @@ class MetaInterface (object):
   info = wx.AboutDialogInfo()
   info.Name = application.name
   info.Version = str(application.version)
-  info.Copyright = "(C) 2013 %s." % application.author
+  info.Copyright = _("Copyright © 2013 — 2014 {0}.".format(application.author))
   info.WebSite = application.url
   application.main_frame.Raise()
   wx.AboutBox(info) 

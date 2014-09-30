@@ -1,3 +1,5 @@
+# -*- coding: utf-8
+
 import functools
 import wx
 
@@ -20,10 +22,10 @@ class BaseWXKeyboardHandler(KeyboardHandler):
   #Setup the replacement dictionaries.
   for i in dir(wx):
    if i.startswith('WXK_'):
-    key = i[4:].lower()
+    key = unicode(i[4:]).lower()
     self.replacement_keys[key] = getattr(wx, i)
    elif i.startswith('MOD_'):
-    key = i[4:].lower()
+    key = unicode(i[4:]).lower()
     self.replacement_mods[key] = getattr(wx, i)
 
  def parse_key (self, keystroke, separator="+"):
@@ -42,7 +44,7 @@ class BaseWXKeyboardHandler(KeyboardHandler):
    if result >= 277:
     result -= 277
   elif len(key) == 1:
-   result = ord(key.upper()) 
+   result = ord(unicode(key).upper()) 
   if result is None:
    raise KeyboardHandlerError("Could not translate key %r into a valid keycode." % key)
   return result
@@ -68,7 +70,7 @@ class WXKeyboardHandler(BaseWXKeyboardHandler):
   self.key_ids[key] = key_id
 
  def parse_key (self, keystroke, separator="+"):
-  keystroke = str(keystroke) #We don't want unicode
+  keystroke = unicode(keystroke)
   keystroke = [self.keycode_from_key(i) for i in keystroke.split(separator)]
   mods = 0
   for i in keystroke[:-1]:
@@ -99,26 +101,23 @@ class WXControlKeyboardHandler(wx.StaticText, KeyboardHandler):
   KeyboardHandler.__init__(self, *a, **k)
   self.wx_replacements = {}
   for i in [d for d in dir(wx) if d.startswith('WXK_')]:
-   self.wx_replacements[getattr(wx, i)] = i[4:].lower()
+   self.wx_replacements[getattr(wx, i)] = unicode(i[4:]).lower()
   self.Bind(wx.EVT_KEY_DOWN, self.process_key, self)
   self.SetFocus()
 
  def process_key(self, evt):
   keycode = evt.GetKeyCode()
   keyname = self.wx_replacements.get(keycode, None)
-  modifiers = ""
-  replacements = (   (evt.ControlDown(), 'control+'),
-   (evt.AltDown(),     'alt+'),
-   (evt.ShiftDown(),   'shift+'),
-   (evt.MetaDown(),    'win+')
+  modifiers = u""
+  replacements = (   (evt.ControlDown(), u'control+'),
+   (evt.AltDown(),     u'alt+'),
+   (evt.ShiftDown(),   u'shift+'),
+   (evt.MetaDown(),    u'win+')
   )
   for mod, ch in (replacements):
    if mod:
     modifiers += ch
   if keyname is None:
-   if 27 < keycode < 256:
-    keyname = chr(keycode).lower()
-   else:
-    keyname = "(%s)unknown" % keycode
+   keyname = chr(unicode(keycode)).lower()
   key = modifiers + keyname
   self.handle_key(key)
