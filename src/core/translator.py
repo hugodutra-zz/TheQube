@@ -115,7 +115,7 @@ class Translator(object):
             raise TranslatorError('invalid target language')
 
         if not text.strip():
-            return tuple(u'' for i in range(len(self._writing))) , unicode(target_language)
+            return tuple(u'' for i in xrange(len(self._writing))) , unicode(target_language)
 
         # Browser request for 'hello world' is:
         # http://translate.google.com/translate_a/t?client=t&hl=en&sl=en&tl=zh-CN&ie=UTF-8&oe=UTF-8&multires=1&prev=conf&psl=en&ptl=en&otf=1&it=sel.2016&ssel=0&tsel=0&prev=enter&oc=3&ssel=0&tsel=0&sc=1&text=hello%20world
@@ -150,7 +150,7 @@ class Translator(object):
             return self._languages
         GOOGLE_TRANSLATOR_URL = 'http://translate.google.com/translate_a/l'
         GOOGLE_TRANSLATOR_PARAMETERS = {
-            'client': 't',
+            'client': 'z',
             'hl': host_language
             }
 
@@ -160,6 +160,7 @@ class Translator(object):
 
         languages = data['sl']
         languages.update(data['tl'])
+        logging.debug("@langs: {0}".format(languages))
         if 'auto' in languages:
             del languages['auto']
         # Replacing dashes with underscores to fit the getText requirements

@@ -13,13 +13,15 @@ logging = logger.getChild('core.gui.translate')
 
 class TranslateDialog (SquareDialog):
  t = core.translator.Translator()
+ LCID = windll.kernel32.GetUserDefaultUILanguage()
+ win_lang = windows_locale[LCID]
 
  def __init__(self, *args, **kwargs):
   if 'title' not in kwargs:
    kwargs['title'] = _("Translate")
   self.title = kwargs['title']
   super(TranslateDialog, self).__init__(style=wx.DEFAULT_DIALOG_STYLE | wx.RESIZE_BORDER, *args, **kwargs)
-  langs = sorted(self.t.get_languages(self.get_current_language()).items(), key=operator.itemgetter(1))
+  langs = sorted(self.t.get_languages(self.win_lang).items(), key=operator.itemgetter(1))
   self.langs_keys = [i[0] for i in langs]
   self.langs_values = [i[1] for i in langs]
   self.langs_keys.insert(0, '')
@@ -34,8 +36,7 @@ class TranslateDialog (SquareDialog):
  def get_current_language(self):
   """ Gets current language based on the configuration setting and normalizes it so it can be used with the Translator API."""
   if config.main['languages']['current'] == 'Windows':
-   LCID = windll.kernel32.GetUserDefaultUILanguage()
-   lang = windows_locale[LCID]
+   lang = self.win_lang
   else:
    lang = config.main['languages']['current']
   # And here begins the magic...
