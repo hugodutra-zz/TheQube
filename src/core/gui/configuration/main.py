@@ -89,6 +89,5 @@ class MainConfigDialog (ConfigurationDialog):
   config.main.write()
   i18n.setup()
   output.setup()
-  #sessions.current_session.interface.ShowGui()
   if hasattr(sys, 'frozen') and not global_vars.portable:
    windows.setAutoStart(application.name, config.main['client']['AutoStart'])

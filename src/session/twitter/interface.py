@@ -1,3 +1,5 @@
+# -*- coding: utf-8
+
 from logger import logger
 logging = logger.getChild('sessions.twitter.interface')
 
@@ -7,6 +9,7 @@ from core.sessions.buffers.buffer_defaults import buffer_defaults
 from utils.delay import delay_action
 from utils.thread_utils import call_threaded
 from utils.wx_utils import modal_dialog, question_dialog
+from geopy.geocoders import GoogleV3
 
 import config
 import calendar
@@ -27,7 +30,6 @@ import wx
 from core.sessions.buffers.interface import BuffersInterface
 from core.sessions.hotkey.interface import HotkeyInterface
 from meta_interface import MetaInterface
-from geopy.geocoders import GoogleV3
 
 class TwitterInterface (BuffersInterface, HotkeyInterface, MetaInterface):
 
@@ -735,18 +737,14 @@ class TwitterInterface (BuffersInterface, HotkeyInterface, MetaInterface):
   except:
    text_to_translate = buffer.format_item(index).encode("UTF-8")
   dlg = modal_dialog(core.gui.TranslateDialog, parent=self.session.frame)
-  source = [x[0] for x in dlg.available_languages()][dlg.source_lang_list.GetSelection()]
-  target = [x[0] for x in dlg.available_languages()][dlg.target_lang_list.GetSelection()]
+  source = dlg.langs_keys[dlg.source_lang_list.GetSelection()]
+  target = dlg.langs_keys[dlg.target_lang_list.GetSelection()]
   try:
-   translate = Translator().translate
-   response = translate(text_to_translate, lang_from=source, lang_to=target)
-   if source == '':
-    source = response['source_lang']
-   translated_text = response['translatedText']
-  except TranslationError:
-   logging.exception("Translation error has happened.")
-   return output.speak(_("Translation process has failed."), True)
-  self.NewTweet(text=translated_text, title=_("Translation from %s to %s") % (source, target), retweet=True)
+   translated_text = dlg.t.translate(text_to_translate, target, source)
+  except Exception as e:
+   logging.exception("Translation error: {0}".format(e))
+   output.speak(_("Translation process has failed."), True)
+  self.NewTweet(text=translated_text, title=_("Translation from %s to %s") % (dlg.langs_values[dlg.source_lang_list.GetSelection()], dlg.langs_values[dlg.target_lang_list.GetSelection()]), retweet=True)
 
  @buffer_defaults
  def ViewUserLists(self, buffer = None, index = None):

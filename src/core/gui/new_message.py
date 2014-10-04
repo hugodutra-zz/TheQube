@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+
+# The Qube New Message dialog
+# A part of The Qube accessible social networking client
+# Copyright © Andre Polykanine A.K.A. Menelion Elensúlë, 2014
+
 from logger import logger
 logging = logger.getChild('core.gui.new_message')
 
@@ -15,7 +21,7 @@ from transfer_dialogs import UploadDialog
 from core.gui import SquareDialog
 from recording import RecordingDialog
 from schedule import ScheduleDialog
-#from translate import TranslateDialog
+from translate import TranslateDialog
 
 
 class NewMessageDialog(SquareDialog):
@@ -209,7 +215,7 @@ class NewMessageDialog(SquareDialog):
   self.button_panel = sc.SizedPanel(self.pane, -1)
   self.button_panel.SetSizerType("horizontal")
   self.setup_attachment()
-#  self.setup_translation()
+  self.setup_translation()
   self.setup_url_shortener_buttons()
   self.setup_schedule()
   self.update_title()
@@ -292,25 +298,23 @@ class NewMessageDialog(SquareDialog):
   output.speak(_("Delaying for %s") % misc.SecondsToString(self.delay), True)
   self.message.SetFocus()
 
- """def setup_translation(self):
+ def setup_translation(self):
   self.translate_message = wx.Button(parent=self.button_panel, label=_("&Translate Message..."))
-  self.translate_message.Bind(wx.EVT_BUTTON, self.on_translate_message)"""
+  self.translate_message.Bind(wx.EVT_BUTTON, self.on_translate_message)
 
- """def on_translate_message(self, evt):
+ def on_translate_message(self, evt):
   evt.Skip()
   dlg = TranslateDialog(parent=self.pane.Parent, title=_("Translate message"))
   if dlg.ShowModal() != wx.ID_OK:
    return output.speak(_("Canceled."), True)
   text_to_translate = self.message.GetValue().encode("UTF-8")
-  source = [x[0] for x in dlg.available_languages()][dlg.source_lang_list.GetSelection()]
-  target = [x[0] for x in dlg.available_languages()][dlg.target_lang_list.GetSelection()]
+  source = dlg.langs_keys[dlg.source_lang_list.GetSelection()]
+  target = dlg.langs_keys[dlg.target_lang_list.GetSelection()]
   try:
-   translate = Translator().translate
-   response = translate(text_to_translate, lang_from=source, lang_to=target)
-  except TranslationError:
-   logging.exception("Translation error has happened.")
+   translated_text = dlg.t.translate(text_to_translate, target, source)
+  except Exception as e:
+   logging.exception("Translation error: {0}".format(e))
    output.speak(_("Translation process has failed."), True)
-  if response['translatedText']:
-   self.message.SetValue(response['translatedText'])
+  self.message.SetValue(translated_text)
   self.message.SetFocus()
-  self.message.SetSelection(len(self.message.GetValue()),len(self.message.GetValue()))"""
+  self.message.SetSelection(len(self.message.GetValue()),len(self.message.GetValue()))
