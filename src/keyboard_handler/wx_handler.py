@@ -118,6 +118,6 @@ class WXControlKeyboardHandler(wx.StaticText, KeyboardHandler):
    if mod:
     modifiers += ch
   if keyname is None:
-   keyname = chr(unicode(keycode)).lower()
+   keyname = unichr(keycode).lower()
   key = modifiers + keyname
   self.handle_key(key)

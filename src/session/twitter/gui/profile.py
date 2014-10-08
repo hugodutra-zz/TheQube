@@ -15,7 +15,8 @@ class TwitterProfileDialog (SquareDialog):
  def __init__ (self, user, *args, **kwargs):
   super(TwitterProfileDialog, self).__init__(title=_("Profile for %s" % user['screen_name']), *args, **kwargs)
   self.user = user
-  self.screen_name = self.labeled_control(_("Screen name:"), wx.TextCtrl, style=wx.TE_READONLY | wx.TE_MULTILINE | wx.WANTS_CHARS, value=unicode(user['screen_name']))
+  full_url = unicode(self.user['entities']['url']['urls'][0]['expanded_url']) if 'url' in self.user['entities'] else ''
+  self.screen_name = self.labeled_control(_("Screen name:"), wx.TextCtrl, style=wx.TE_MULTILINE | wx.TE_READONLY | wx.WANTS_CHARS, value=unicode(user['screen_name']))
   self.screen_name.Bind(wx.EVT_CHAR, self.charPressed)
   self.name = self.labeled_control(_("Real name:"), wx.TextCtrl, style=wx.TE_MULTILINE | wx.TE_READONLY | wx.WANTS_CHARS, value=unicode(user['name']))
   self.name.Bind(wx.EVT_CHAR, self.charPressed)
@@ -24,25 +25,27 @@ class TwitterProfileDialog (SquareDialog):
    self.location.Bind(wx.EVT_CHAR, self.charPressed)
   self.account_id = self.labeled_control(_("Account ID:"), wx.TextCtrl, style=wx.TE_MULTILINE | wx.TE_READONLY | wx.WANTS_CHARS, value=unicode(user['id']))
   self.account_id.Bind(wx.EVT_CHAR, self.charPressed)
-  if unicode(user['url']) != '' and unicode(user['url']).lower() != 'none' and unicode(user['url']).lower() != 'http://none':
-   self.url = self.labeled_control(_("URL:"), wx.TextCtrl, style=wx.TE_MULTILINE|wx.TE_READONLY | wx.WANTS_CHARS, value=unicode(user['url']))
+  if full_url != '' and full_url.lower() != 'none' and full_url.lower() != 'http://none':
+   self.url = self.labeled_control(_("URL:"), wx.TextCtrl, style=wx.TE_RICH2 | wx.TE_MULTILINE | wx.TE_AUTO_URL | wx.TE_READONLY | wx.WANTS_CHARS, value=full_url)
    self.url.Bind(wx.EVT_CHAR, self.charPressed)
   if unicode(user['description']) != '' and unicode(user['description']).lower() != 'none':
    size = self.Size
    size[0] = size[0] / 2
    size[1] = -1
-   self.description = self.labeled_control(_("Bio:"), wx.TextCtrl, style=wx.TE_MULTILINE | wx.TE_READONLY | wx.WANTS_CHARS, size=size, value=unicode(user['description']))
+   self.description = self.labeled_control(_("Bio:"), wx.TextCtrl, style=wx.TE_RICH2 | wx.TE_MULTILINE | wx.TE_READONLY, size=size, value=unicode(user['description']))
    self.description.Bind(wx.EVT_CHAR, self.charPressed)
   self.protected = self.labeled_control(_("Tweets are protected:"), wx.TextCtrl, style=wx.TE_MULTILINE | wx.TE_READONLY | wx.WANTS_CHARS)
   if user['protected']:
-   self.protected.SetValue(unicode("yes"))
+   self.protected.SetValue(_("Yes"))
   else:
-   self.protected.SetValue(unicode("no"))
+   self.protected.SetValue(_("No"))
   self.protected.Bind(wx.EVT_CHAR, self.charPressed)
   self.followers_count = self.labeled_control(_("Number of followers:"), wx.TextCtrl, style=wx.TE_MULTILINE | wx.TE_READONLY | wx.WANTS_CHARS, value=unicode(user['followers_count']))
   self.followers_count.Bind(wx.EVT_CHAR, self.charPressed)
   self.friends_count = self.labeled_control(_("Number of friends:"), wx.TextCtrl, style=wx.TE_MULTILINE | wx.TE_READONLY | wx.WANTS_CHARS, value=unicode(user['friends_count']))
   self.friends_count.Bind(wx.EVT_CHAR, self.charPressed)
+  self.listed_count = self.labeled_control(_("Number of having this user in their lists:"), wx.TextCtrl, style=wx.TE_MULTILINE | wx.TE_READONLY | wx.WANTS_CHARS, value=unicode(user['listed_count']))
+  self.listed_count.Bind(wx.EVT_CHAR, self.charPressed)
   self.statuses_count = self.labeled_control(_("Number of tweets:"), wx.TextCtrl, parent=self.pane,  style=wx.TE_MULTILINE | wx.TE_READONLY | wx.WANTS_CHARS, value=unicode(user['statuses_count']))
   self.statuses_count.Bind(wx.EVT_CHAR, self.charPressed)
   self.average_tweets = self.labeled_control(_("Average tweets per day since joining Twitter:"), wx.TextCtrl, style=wx.TE_MULTILINE | wx.TE_READONLY | wx.WANTS_CHARS)
