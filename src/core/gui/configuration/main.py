@@ -22,11 +22,9 @@ class MainConfigDialog (ConfigurationDialog):
   self.languages = LanguagePanel(self.nb)
   self.nb.AddPage(self.languages, _("Language"))
   self.speech = SpeechPanel(self.nb)
-  self.nb.AddPage(self.speech, _("Speech"))
+  self.nb.AddPage(self.speech, _("Speech and Braille"))
   self.navigation = NavigationPanel(self.nb)
   self.nb.AddPage(self.navigation, _("Navigation"))
-  self.braille = BraillePanel(self.nb, -1)
-  self.nb.AddPage(self.braille, _("Braille"))
   self.misc = MiscPanel(self.nb)
   self.nb.AddPage(self.misc, _("Miscellaneous"))
   self.finish_setup(focus = self.languages.language)
@@ -40,12 +38,12 @@ class MainConfigDialog (ConfigurationDialog):
    self.speech.SAPIVoice.SetValue(config.main['speech']['voice'])
   except Exception as svexc:
    logging.exception("Error setting default sapi voice: {}".format(svexc))
+  self.speech.braille.SetValue(config.main['braille']['brailleSpoken'])
   self.speech.EnableSpeechRecognition.SetValue(config.main['recognition']['enabled'])
   self.navigation.step.SetValue(config.main['client']['step'])
   self.navigation.timeStepHours.SetValue(config.main['client']['timeStep'] / 60)
   self.navigation.timeStepMins.SetValue(config.main['client']['timeStep'] % 60)
   self.navigation.undoStackSize.SetValue(config.main['client']['undoStackSize'])
-  self.braille.braille.SetValue(config.main['braille']['brailleSpoken'])
   self.misc.AutoStart.SetValue(config.main['client']['AutoStart'])
   self.misc.AskForExit.SetValue(config.main['client']['AskForExit'])
   self.misc.shorteners.SetValue(config.main['shortener']['urlShortener'])
@@ -71,7 +69,7 @@ class MainConfigDialog (ConfigurationDialog):
   config.main['client']['step'] = int(self.navigation.step.GetValue()) or 5
   config.main['client']['timeStep'] = int(self.navigation.timeStepHours.GetValue()*60 + self.navigation.timeStepMins.GetValue()) or 60
   config.main['client']['undoStackSize']=int(self.navigation.undoStackSize.GetValue()) or 100
-  config.main['braille']['brailleSpoken'] = self.braille.braille.GetValue()
+  config.main['braille']['brailleSpoken'] = self.speech.braille.GetValue()
   config.main['client']['AutoStart'] = self.misc.AutoStart.GetValue()
   logging.info("AutoStart set to: %d." % config.main['client']['AutoStart'])
   config.main['client']['AskForExit'] = self.misc.AskForExit.GetValue()

@@ -26,7 +26,9 @@ class SpeechPanel (ConfigurationPanel):
   self.SAPIVoice = wx.ComboBox(self, -1, style=wx.CB_READONLY, choices=SAPI5().list_voices())
   self.SAPIVoice.SetSizerProps(expand=True)
   self.Bind(wx.EVT_COMBOBOX, self.VoicePreview, self.SAPIVoice)
-  self.EnableSpeechRecognition = wx.CheckBox(self, -1, _("Enable speech recognition?"))
+  wx.StaticText(self, wx.ID_ANY, _("Braille Output:"))
+  self.braille = wx.CheckBox(self, wx.ID_ANY, _("Braille spoken text"))
+  self.EnableSpeechRecognition = wx.CheckBox(self, -1, _("Enable speech recognition"))
   self.finish_setup()
 
  def VoicePreview (self, evt):
@@ -37,5 +39,5 @@ class SpeechPanel (ConfigurationPanel):
    Sapi5().Sapi5().Speak(selected.GetDescription(), 3)
    #Revert back to the current voice setting after previewing
    Sapi5().Sapi5().Voice = current
-  except:
-   pass
+  except Exception as e:
+   logging.exception("Unable to try voice: {0}".format(e))

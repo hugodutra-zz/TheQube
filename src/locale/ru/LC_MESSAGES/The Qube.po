@@ -2,9 +2,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TheQube 1.0\n"
 "Report-Msgid-Bugs-To: http://traq.oire.org/theqube/\n"
-"POT-Creation-Date: 2013-11-09 22:05+FLE Standard Time\n"
+"POT-Creation-Date: 2014-10-09 21:51+FLE Daylight Time\n"
 "PO-Revision-Date: \n"
-"Last-Translator: Andre Polykanine\n"
+"Last-Translator: Andre Polykanine A.K.A. Menelion Elensúlë <menelion@oire."
+"org>\n"
 "Language-Team: elensule translation team <andre@oire.org>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
@@ -13,7 +14,7 @@ msgstr ""
 "X-Poedit-Basepath: d:\\gitrepos\\the_qube\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Poedit 1.5.5\n"
+"X-Generator: Poedit 1.6.9\n"
 "X-Poedit-SearchPath-0: src\n"
 
 #: ../src\core\gui\SessionManager\main.py:16
@@ -41,10 +42,10 @@ msgid "Remove session"
 msgstr "Удалить сессию"
 
 #: ../src\core\gui\SessionManager\main.py:44
-#: ../src\core\gui\new_message.py:245 ../src\core\gui\new_message.py:282
-#: ../src\core\gui\recording.py:73
-#: ../src\core\sessions\buffers\interface.py:165 ../src\meta_interface.py:50
-#: ../src\meta_interface.py:109 ../src\meta_interface.py:145
+#: ../src\core\gui\new_message.py:254 ../src\core\gui\new_message.py:296
+#: ../src\core\gui\new_message.py:309 ../src\core\gui\recording.py:73
+#: ../src\core\sessions\buffers\interface.py:165 ../src\meta_interface.py:52
+#: ../src\meta_interface.py:110 ../src\meta_interface.py:146
 #: ../src\session\twitter\buffers\blocked.py:44
 #: ../src\session\twitter\buffers\list_members.py:37
 #: ../src\session\twitter\buffers\list_subscribers.py:37
@@ -52,15 +53,15 @@ msgstr "Удалить сессию"
 #: ../src\session\twitter\gui\list_manager\list_manager.py:50
 #: ../src\session\twitter\gui\list_manager\list_manager.py:65
 #: ../src\session\twitter\gui\list_manager\list_manager.py:80
-#: ../src\session\twitter\interface.py:49
-#: ../src\session\twitter\interface.py:141
-#: ../src\session\twitter\interface.py:495
+#: ../src\session\twitter\interface.py:51
+#: ../src\session\twitter\interface.py:143
+#: ../src\session\twitter\interface.py:498
 #: ../src\session\twitter\interface.py:574
-#: ../src\session\twitter\interface.py:651
-#: ../src\session\twitter\interface.py:659
-#: ../src\session\twitter\interface.py:672
-#: ../src\session\twitter\interface.py:680
-#: ../src\session\twitter\interface.py:763
+#: ../src\session\twitter\interface.py:650
+#: ../src\session\twitter\interface.py:658
+#: ../src\session\twitter\interface.py:671
+#: ../src\session\twitter\interface.py:679
+#: ../src\session\twitter\interface.py:758
 #: ../src\session\twitter\twitter.py:275 ../src\session\twitter\twitter.py:281
 #: ../src\session\twitter\twitter.py:292 ../src\utils\wx_utils.py:17
 msgid "Canceled."
@@ -74,7 +75,7 @@ msgstr "Тип"
 #: ../src\session\stopwatch\buffers\main.py:10
 #: ../src\session\twitter\buffers\directs.py:20
 #: ../src\session\twitter\buffers\tweets.py:15
-#: ../src\session\twitter\buffers\users.py:26
+#: ../src\session\twitter\buffers\users.py:27
 #: ../src\session\twitter\gui\list_manager\list_manager.py:144
 msgid "Name"
 msgstr "Имя"
@@ -100,62 +101,49 @@ msgid "Language"
 msgstr "Язык"
 
 #: ../src\core\gui\configuration\main.py:25
-msgid "Speech"
-msgstr "Речь"
+msgid "Speech and Braille"
+msgstr "Речь и Брайль"
 
 #: ../src\core\gui\configuration\main.py:27
 msgid "Navigation"
 msgstr "Навигация"
 
 #: ../src\core\gui\configuration\main.py:29
-msgid "Braille"
-msgstr "Брайль"
-
-#: ../src\core\gui\configuration\main.py:31
 #: ../src\session\twitter\gui\configuration\main.py:28
 msgid "Miscellaneous"
 msgstr "Разное"
-
-#: ../src\core\gui\configuration\panels\braille.py:7
-msgid "Braille Output:"
-msgstr "Брайлевский вывод:"
-
-#: ../src\core\gui\configuration\panels\braille.py:8
-msgid "Braille spoken text?"
-msgstr "Выводить на брайлевский дисплей проговариваемый текст?"
 
 #: ../src\core\gui\configuration\panels\language.py:10
 msgid "Language Selection:"
 msgstr "Выбор языка:"
 
-#: ../src\core\gui\configuration\panels\misc.py:13
-msgid "Automatically start %s after Windows log on?"
-msgstr "Автоматически запускать %s после загрузки Windows?"
-
 #: ../src\core\gui\configuration\panels\misc.py:14
-msgid "Show confirmation dialog before exiting %s?"
-msgstr "показывать диалог подтверждения при выходе из %s?"
+msgid "Automatically start %s after Windows log on"
+msgstr "Автоматически запускать %s после загрузки Windows"
 
 #: ../src\core\gui\configuration\panels\misc.py:15
-#, fuzzy
+msgid "Show confirmation dialog before exiting %s"
+msgstr "показывать диалог подтверждения при выходе из %s"
+
+#: ../src\core\gui\configuration\panels\misc.py:16
 msgid "Preferred URL Shortener:"
 msgstr "Предпочитаемый сервис сокращения ссылок:"
 
-#: ../src\core\gui\configuration\panels\misc.py:18
+#: ../src\core\gui\configuration\panels\misc.py:19
 msgid "Preferred audio service:"
 msgstr "Предпочитаемый аудиосервис"
 
-#: ../src\core\gui\configuration\panels\misc.py:22
+#: ../src\core\gui\configuration\panels\misc.py:26
 msgid "Your Sndup.net API Key:"
 msgstr "Ваш API-ключ для sndup.net:"
 
-#: ../src\core\gui\configuration\panels\misc.py:25
-msgid "Send Messages With Enter Key?"
-msgstr "Отправлять сообщения по нажатию клавиши Enter?"
+#: ../src\core\gui\configuration\panels\misc.py:31
+msgid "Send messages with Enter"
+msgstr "Отправлять сообщения по нажатию клавиши Enter"
 
-#: ../src\core\gui\configuration\panels\misc.py:26
-msgid "Perform standard actions with Home/End keys?"
-msgstr "Выполнять стандартные действия по клавишам Home и End?"
+#: ../src\core\gui\configuration\panels\misc.py:32
+msgid "Perform standard actions with Home/End keys"
+msgstr "Выполнять стандартные действия по клавишам Home и End"
 
 #: ../src\core\gui\configuration\panels\navigation.py:7
 msgid "Move by percentage amount (as a %)"
@@ -173,25 +161,33 @@ msgstr "Перемещение по времени (определяется к�
 msgid "Undo stack size"
 msgstr "Размер буфера отката"
 
-#: ../src\core\gui\configuration\panels\speech.py:10
+#: ../src\core\gui\configuration\panels\speech.py:12
 msgid "Speech output"
 msgstr "Речевой вывод"
 
-#: ../src\core\gui\configuration\panels\speech.py:13
+#: ../src\core\gui\configuration\panels\speech.py:15
 msgid "SAPI speech rate"
 msgstr "Скорость SAPI-синтезатора"
 
-#: ../src\core\gui\configuration\panels\speech.py:18
+#: ../src\core\gui\configuration\panels\speech.py:20
 msgid "SAPI speech volume"
 msgstr "Громкость SAPI-синтезатора"
 
-#: ../src\core\gui\configuration\panels\speech.py:24
+#: ../src\core\gui\configuration\panels\speech.py:25
 msgid "SAPI speech voice"
 msgstr "Голос SAPI-синтезатора"
 
+#: ../src\core\gui\configuration\panels\speech.py:29
+msgid "Braille Output:"
+msgstr "Вывод по Брайлю:"
+
 #: ../src\core\gui\configuration\panels\speech.py:30
-msgid "Enable speech recognition?"
-msgstr "Включить распознавание речи?"
+msgid "Braille spoken text"
+msgstr "Выводить озвучиваемый текст на дисплей Брайля"
+
+#: ../src\core\gui\configuration\panels\speech.py:31
+msgid "Enable speech recognition"
+msgstr "Включить распознавание речи"
 
 #: ../src\core\gui\list_urls.py:15
 msgid "URL Selection"
@@ -201,7 +197,7 @@ msgstr "Выбор ссылки"
 msgid "Select URL to open"
 msgstr "Выберите открываемую ссылку"
 
-#: ../src\core\gui\list_urls.py:22 ../src\core\gui\new_message.py:228
+#: ../src\core\gui\list_urls.py:22 ../src\core\gui\new_message.py:237
 msgid "&Unshorten URL"
 msgstr "Развернуть &ссылку"
 
@@ -209,7 +205,7 @@ msgstr "Развернуть &ссылку"
 msgid "&Copy URL"
 msgstr "С&копировать ссылку"
 
-#: ../src\core\gui\list_urls.py:49 ../src\core\gui\new_message.py:162
+#: ../src\core\gui\list_urls.py:49 ../src\core\gui\new_message.py:167
 msgid "URL expanded."
 msgstr "Ссылка развёрнута."
 
@@ -226,19 +222,18 @@ msgid "Username"
 msgstr "Имя пользователя"
 
 #: ../src\core\gui\login.py:16
-#: ../src\session\google_voice\gui\configuration\panels\general.py:13
 msgid "Password"
 msgstr "Пароль"
 
-#: ../src\core\gui\new_message.py:54 ../src\core\gui\selectable_message.py:29
+#: ../src\core\gui\new_message.py:59 ../src\core\gui\selectable_message.py:29
 msgid "%s - %d of %d Characters"
 msgstr "%s - %d из %d символов"
 
-#: ../src\core\gui\new_message.py:76
+#: ../src\core\gui\new_message.py:81
 msgid "URL Shortener - No URLs"
 msgstr "Сервис сокращения ссылок - нет ссылок"
 
-#: ../src\core\gui\new_message.py:77
+#: ../src\core\gui\new_message.py:82
 msgid ""
 "No URLs were found to shorten. If there is one, select the URL and click "
 "this button again."
@@ -246,31 +241,31 @@ msgstr ""
 "Ссылок для сокращения не найдено. Если в действительности такая ссылка "
 "имеется, выделите её и нажмите кнопку снова."
 
-#: ../src\core\gui\new_message.py:91
+#: ../src\core\gui\new_message.py:96
 msgid "URL Shortener - Select URL"
 msgstr "Сервис сокращения ссылок - выберите ссылку"
 
-#: ../src\core\gui\new_message.py:92
+#: ../src\core\gui\new_message.py:97
 msgid "Select URL to shorten."
 msgstr "Выберите ссылку для сокращения."
 
-#: ../src\core\gui\new_message.py:108
+#: ../src\core\gui\new_message.py:113
 msgid "URL Shortened."
 msgstr "Ссылка сокращена."
 
-#: ../src\core\gui\new_message.py:111
+#: ../src\core\gui\new_message.py:116
 msgid "URL Shortener - Problem"
 msgstr "Сервис сокращения ссылок - проблема"
 
-#: ../src\core\gui\new_message.py:112
+#: ../src\core\gui\new_message.py:117
 msgid "There was a problem shortening the selected URL."
 msgstr "при сокращении выбранной ссылки возникла проблема."
 
-#: ../src\core\gui\new_message.py:126
+#: ../src\core\gui\new_message.py:131
 msgid "URL Unshortener - No URLs"
 msgstr "Сервис разворачивания ссылок - нет адресов"
 
-#: ../src\core\gui\new_message.py:127
+#: ../src\core\gui\new_message.py:132
 msgid ""
 "No URLs were found to unshorten. If there is one, select the URL and click "
 "this button again."
@@ -278,97 +273,77 @@ msgstr ""
 "Ссылок для разворачивания не найдено. Если в действительности такая ссылка "
 "имеется, выделите её и нажмите кнопку снова."
 
-#: ../src\core\gui\new_message.py:141
+#: ../src\core\gui\new_message.py:146
 msgid "URL Unshortener - Select URL"
 msgstr "Сервис разворачивания ссылок - выберите ссылку"
 
-#: ../src\core\gui\new_message.py:142
+#: ../src\core\gui\new_message.py:147
 msgid "Select URL to unshorten."
 msgstr "Выберите ссылку, которую хотите развернуть."
 
-#: ../src\core\gui\new_message.py:165
+#: ../src\core\gui\new_message.py:170
 msgid "URL Unshortener - Problem"
 msgstr "Сервис разворачивания ссылок - проблема"
 
-#: ../src\core\gui\new_message.py:166
+#: ../src\core\gui\new_message.py:171
 msgid "There was a problem unshortening the selected URL."
 msgstr "при разворачивании выбранной ссылки возникла проблема."
 
-#: ../src\core\gui\new_message.py:216
+#: ../src\core\gui\new_message.py:225
 msgid "Message:"
 msgstr "Сообщение:"
 
-#: ../src\core\gui\new_message.py:226
+#: ../src\core\gui\new_message.py:235
 msgid "&Shorten URL"
 msgstr "&Сократить ссылку"
 
-#: ../src\core\gui\new_message.py:232
+#: ../src\core\gui\new_message.py:241
 msgid "Attach &Audio..."
 msgstr "прикрепить &аудио..."
 
-#: ../src\core\gui\new_message.py:237
+#: ../src\core\gui\new_message.py:246
 msgid "S&chedule message..."
 msgstr "О&тложить отправку сообщения..."
 
-#: ../src\core\gui\new_message.py:248
+#: ../src\core\gui\new_message.py:257
 msgid "Attaching..."
 msgstr "прикрепление..."
 
-#: ../src\core\gui\new_message.py:255
+#: ../src\core\gui\new_message.py:264
 msgid "Upload in progress"
 msgstr "Идёт загрузка"
 
-#: ../src\core\gui\new_message.py:261
+#: ../src\core\gui\new_message.py:273
 msgid "There was an error attaching the file."
 msgstr "В ходе прикрепления файла произошла ошибка."
 
-#: ../src\core\gui\new_message.py:270
+#: ../src\core\gui\new_message.py:283
 msgid "File attached."
 msgstr "Файл прикреплён."
 
-#: ../src\core\gui\new_message.py:279
-msgid "Resetting currently-scheduled item."
+#: ../src\core\gui\new_message.py:293
+msgid "Resetting currently scheduled item."
 msgstr "Сброс отложенного в данный момент элемента."
 
-#: ../src\core\gui\new_message.py:280
+#: ../src\core\gui\new_message.py:294
 msgid "Schedule message"
 msgstr "Отложить сообщение"
 
-#: ../src\core\gui\new_message.py:284
+#: ../src\core\gui\new_message.py:298
 msgid "Delaying for %s"
 msgstr "Откладываем на %s"
 
-#: ../src\core\gui\qdm\add.py:8
-msgid "Entry:"
-msgstr "Статья:"
+#: ../src\core\gui\new_message.py:302
+msgid "&Translate Message..."
+msgstr "П&еревести сообщение..."
 
-#: ../src\core\gui\qdm\add.py:12
-msgid "Replacement:"
-msgstr "Замена:"
+#: ../src\core\gui\new_message.py:307
+msgid "Translate message"
+msgstr "Перевести сообщение"
 
-#: ../src\core\gui\qdm\add.py:16
-msgid "Case senative?"
-msgstr "Чувствительная к регистру букв?"
-
-#: ../src\core\gui\qdm\main.py:14
-msgid "Dictionary Entries"
-msgstr "Словарные статьи"
-
-#: ../src\core\gui\qdm\main.py:18
-msgid "Add..."
-msgstr "Добавить..."
-
-#: ../src\core\gui\qdm\main.py:21
-msgid "Delete..."
-msgstr "удалить..."
-
-#: ../src\core\gui\qdm\main.py:46
-msgid "Entry"
-msgstr "Статья"
-
-#: ../src\core\gui\qdm\main.py:47
-msgid "Replacement"
-msgstr "Замена"
+#: ../src\core\gui\new_message.py:317 ../src\session\twitter\interface.py:746
+msgid "Translation process has failed."
+msgstr "Процесс перевода завершился неудачей."
 
 #: ../src\core\gui\qube.py:18 ../src\core\sessions\hotkey\interface.py:36
 msgid "Modifiers unlocked."
@@ -408,7 +383,6 @@ msgid "Recording."
 msgstr "Идёт запись."
 
 #: ../src\core\gui\recording.py:63 ../src\core\gui\recording.py:120
-#: ../src\session\google_voice\buffers\voicemail.py:82
 msgid "Stopped."
 msgstr "Остановлено."
 
@@ -434,7 +408,7 @@ msgstr "Интервал"
 
 #: ../src\core\gui\schedule.py:16
 msgid "Select scheduling method"
-msgstr "Выберите метод откладывания"
+msgstr "Выберите способ задержки отправки"
 
 #: ../src\core\gui\schedule.py:16
 #: ../src\core\sessions\buffers\buffers\messages.py:21
@@ -465,19 +439,19 @@ msgstr "получатель:"
 msgid "%s to %s"
 msgstr "%s пользователю %s"
 
-#: ../src\core\gui\translate.py:11
-msgid "Auto detect"
-msgstr "Определять автоматически"
-
-#: ../src\core\gui\translate.py:16
+#: ../src\core\gui\translate.py:21
 msgid "Translate"
 msgstr "Перевод"
 
-#: ../src\core\gui\translate.py:19
+#: ../src\core\gui\translate.py:28
+msgid "Auto detect"
+msgstr "Определять автоматически"
+
+#: ../src\core\gui\translate.py:30
 msgid "Source language:"
 msgstr "Перевести с языка:"
 
-#: ../src\core\gui\translate.py:21
+#: ../src\core\gui\translate.py:32
 msgid "Destination language:"
 msgstr "Перевести на язык:"
 
@@ -878,14 +852,12 @@ msgstr "Нет буферов в этой сессии."
 msgid "%s Buffer Configuration"
 msgstr "Конфигурация буфера %s"
 
-#: ../src\core\sessions\buffers\interface.py:281 ../src\meta_interface.py:40
-#: ../src\session\google_voice\google_voice.py:86
+#: ../src\core\sessions\buffers\interface.py:281 ../src\meta_interface.py:42
 #: ../src\session\twitter\twitter.py:182
 msgid "Configuration saved."
 msgstr "Конфигурация сохранена."
 
 #: ../src\core\sessions\buffers\interface.py:284
-#: ../src\session\google_voice\google_voice.py:90
 #: ../src\session\twitter\twitter.py:176
 msgid "Configuration canceled."
 msgstr "конфигурация отменена."
@@ -989,7 +961,7 @@ msgid "Keystroke"
 msgstr "Горячая клавиша"
 
 #: ../src\core\sessions\hotkey\gui\main.py:82
-#: ../src\session\twitter\buffers\users.py:29
+#: ../src\session\twitter\buffers\users.py:30
 #: ../src\session\twitter\gui\list_manager\list_manager.py:147
 msgid "Description"
 msgstr "Описание"
@@ -1070,49 +1042,6 @@ msgstr "Загрузка файла..."
 msgid "Attempting import of buffer %s"
 msgstr "Попытка импорта буфера %s"
 
-#: ../src\gmaps\api.py:18
-#, fuzzy
-msgid "address"
-msgstr "Адрес электронной почты"
-
-#: ../src\gmaps\api.py:18
-#, fuzzy
-msgid "country"
-msgstr "Статья"
-
-#: ../src\gmaps\api.py:18
-#, fuzzy
-msgid "intersection"
-msgstr "Описание списка:"
-
-#: ../src\gmaps\api.py:18
-msgid "planet"
-msgstr "Планета"
-
-#: ../src\gmaps\api.py:18
-msgid "post code"
-msgstr "Почтовый код"
-
-#: ../src\gmaps\api.py:18
-msgid "premise"
-msgstr "Строение"
-
-#: ../src\gmaps\api.py:18
-msgid "region"
-msgstr "Область"
-
-#: ../src\gmaps\api.py:18
-msgid "street"
-msgstr "Улица"
-
-#: ../src\gmaps\api.py:18
-msgid "sub-region"
-msgstr "Район"
-
-#: ../src\gmaps\api.py:18
-msgid "town"
-msgstr "Город"
-
 #: ../src\main.pyw:37
 msgid "Welcome to %s"
 msgstr "Добро пожаловать в %s"
@@ -1123,63 +1052,63 @@ msgstr ""
 "В процессе загрузки произошла ошибка. просим извинения за причинённые "
 "неудобства."
 
-#: ../src\meta_interface.py:38
+#: ../src\meta_interface.py:40
 msgid "%s Configuration"
 msgstr "Конфигурация %s"
 
-#: ../src\meta_interface.py:48
+#: ../src\meta_interface.py:50
 msgid "Are you sure you wish to exit %s?"
 msgstr "Вы действительно хотите завершить работу %s?"
 
-#: ../src\meta_interface.py:48
+#: ../src\meta_interface.py:50
 msgid "Exit %s"
 msgstr "Завершение работы %s"
 
-#: ../src\meta_interface.py:52
+#: ../src\meta_interface.py:53
 msgid "Exiting %s."
 msgstr "Завершение работы %s."
 
-#: ../src\meta_interface.py:65
+#: ../src\meta_interface.py:66
 msgid "Speech recognition off."
 msgstr "Распознавание речи выключено."
 
-#: ../src\meta_interface.py:69
+#: ../src\meta_interface.py:70
 msgid "Speech recognition on."
 msgstr "Распознавание речи включено."
 
-#: ../src\meta_interface.py:95 ../src\meta_interface.py:102
+#: ../src\meta_interface.py:96 ../src\meta_interface.py:103
 msgid "Error: this is the only session."
 msgstr "Ошибка: это единственная сессия."
 
-#: ../src\meta_interface.py:103
+#: ../src\meta_interface.py:104
 msgid "Delete Session"
 msgstr "Удаление сессии"
 
-#: ../src\meta_interface.py:121
+#: ../src\meta_interface.py:122
 msgid "Please enter a name for this session."
 msgstr "пожалуйста, введите имя для этой сессии."
 
-#: ../src\meta_interface.py:126
+#: ../src\meta_interface.py:127
 msgid "Unable to spawn new %s session."
 msgstr "Не могу создать новую %s-сессию."
 
-#: ../src\meta_interface.py:142
+#: ../src\meta_interface.py:143
 msgid "Please enter a new name for session %s:"
 msgstr "Пожалуйста, введите новое имя для сессии %s:"
 
-#: ../src\meta_interface.py:142
+#: ../src\meta_interface.py:143
 msgid "Rename %s session"
 msgstr "Переименовать сессию %s"
 
-#: ../src\meta_interface.py:147
+#: ../src\meta_interface.py:148
 msgid "Renaming session %s to %s, please wait."
 msgstr "Переименование сессии %s в %s, подождите..."
 
-#: ../src\meta_interface.py:151
+#: ../src\meta_interface.py:152
 msgid "There was an error renaming %s to %s: %s"
 msgstr "В ходе переименования %s в %s произошла ошибка: %s"
 
-#: ../src\meta_interface.py:152
+#: ../src\meta_interface.py:153
 msgid "Renaming session complete."
 msgstr "Переименование сессии завершено."
 
@@ -1243,172 +1172,9 @@ msgstr "%d год"
 msgid "%d years"
 msgstr "%d лет"
 
-#: ../src\output.py:58
+#: ../src\output.py:48
 msgid "No current session."
 msgstr "Нет текущей сессии."
-
-#: ../src\session\google_voice\buffers\main.py:18
-msgid "Phone number"
-msgstr "Номер телефона"
-
-#: ../src\session\google_voice\buffers\main.py:19
-msgid "Display phone number"
-msgstr "Показывать номер телефона"
-
-#: ../src\session\google_voice\buffers\main.py:48
-msgid "Calling %s"
-msgstr "Вызов %s"
-
-#: ../src\session\google_voice\buffers\missed.py:8
-msgid "missed call"
-msgstr "Пропущенный звонок"
-
-#: ../src\session\google_voice\buffers\missed.py:9
-msgid "missed calls"
-msgstr "Пропущенных звонков"
-
-#: ../src\session\google_voice\buffers\placed.py:8
-msgid "placed call"
-msgstr "Направленный звонок"
-
-#: ../src\session\google_voice\buffers\placed.py:9
-msgid "placed calls"
-msgstr "Направленных звонков"
-
-#: ../src\session\google_voice\buffers\received.py:8
-msgid "received call"
-msgstr "Принятый звонок"
-
-#: ../src\session\google_voice\buffers\received.py:9
-msgid "received calls"
-msgstr "принятых звонков"
-
-#: ../src\session\google_voice\buffers\sms.py:15
-msgid "Message sender"
-msgstr "Отправитель сообщения"
-
-#: ../src\session\google_voice\buffers\sms.py:16
-#, fuzzy
-msgid "Message text"
-msgstr "Текст сообщения"
-
-#: ../src\session\google_voice\buffers\voicemail.py:20
-msgid "voicemail"
-msgstr "голосовое сообщение"
-
-#: ../src\session\google_voice\buffers\voicemail.py:21
-msgid "voicemails"
-msgstr "голосовых сообщений"
-
-#: ../src\session\google_voice\buffers\voicemail.py:26
-msgid "Item state"
-msgstr "Состояние элемента"
-
-#: ../src\session\google_voice\buffers\voicemail.py:39
-msgid "Downloading voicemail..."
-msgstr "Скачивание голосовых сообщений..."
-
-#: ../src\session\google_voice\buffers\voicemail.py:70
-msgid "Playing voicemail from %s"
-msgstr "Воспроизведение голосового сообщения от %s"
-
-#: ../src\session\google_voice\google_voice.py:36
-msgid "Missed"
-msgstr "Пропущен"
-
-#: ../src\session\google_voice\google_voice.py:36
-msgid "Placed"
-msgstr "Направлен"
-
-#: ../src\session\google_voice\google_voice.py:36
-msgid "Received"
-msgstr "Принято"
-
-#: ../src\session\google_voice\google_voice.py:36
-msgid "Sms"
-msgstr "Sms"
-
-#: ../src\session\google_voice\google_voice.py:36
-msgid "Voicemail"
-msgstr "Голосовое сообщение"
-
-#: ../src\session\google_voice\google_voice.py:55
-msgid "Logged into Google Voice as %s"
-msgstr "Вы успешно вошли в GoogleVoice как %s"
-
-#: ../src\session\google_voice\google_voice.py:58
-msgid "Unable to Log into Google Voice."
-msgstr "Не удалось войти в GoogleVoice."
-
-#: ../src\session\google_voice\google_voice.py:70
-msgid "Google Voice Login"
-msgstr "Вход в Google Voice"
-
-#: ../src\session\google_voice\google_voice.py:70
-msgid "Please provide your credentials to login to Google Voice"
-msgstr "пожалуйста, укажите данные для входа в Google Voice"
-
-#: ../src\session\google_voice\gui\call.py:10
-msgid "Enter phone number to call:"
-msgstr "Введите номер телефона:"
-
-#: ../src\session\google_voice\gui\call.py:13
-msgid "Forwarding Number (where calls are bridged)"
-msgstr "Номер для переадресации (куда будут попадать звонки)"
-
-#: ../src\session\google_voice\gui\configuration\main.py:21
-msgid "General"
-msgstr "Общие"
-
-#: ../src\session\google_voice\gui\configuration\panels\general.py:10
-msgid "Email Address"
-msgstr "Адрес электронной почты"
-
-#: ../src\session\google_voice\interface.py:14
-msgid "New SMS"
-msgstr "Создать SMS"
-
-#: ../src\session\google_voice\interface.py:16
-msgid "Sms successfully sent to %s"
-msgstr "SMS-сообщение успешно отправлено пользователю %s"
-
-#: ../src\session\google_voice\interface.py:19
-msgid "Call Phone"
-msgstr "позвонить по номеру"
-
-#: ../src\session\google_voice\interface.py:22
-msgid "Please enter a phone number to call."
-msgstr "Введите номер телефона для звонка."
-
-#: ../src\session\google_voice\interface.py:26
-msgid ""
-"Please indicate where the call should be bridged by selecting a forwarding "
-"phone number."
-msgstr ""
-"Пожалуйста, укажите, куда должен быть направлен звонок, выбрав номер для "
-"переадресации."
-
-#: ../src\session\google_voice\interface.py:29
-msgid "Error, forwarding phone number not found."
-msgstr "Ошибка, номер для переадресации не найден."
-
-#: ../src\session\google_voice\interface.py:30
-msgid "Calling: %r"
-msgstr "Звонок: %r"
-
-#: ../src\session\google_voice\interface.py:32
-msgid "Call placed."
-msgstr "Звонок произведён."
-
-#: ../src\session\google_voice\interface.py:38
-msgid "Unable to detect a sender to reply to."
-msgstr "Невозможно обнаружить получателя ответа."
-
-#: ../src\session\google_voice\interface.py:40
-#: ../src\session\twitter\interface.py:90
-#: ../src\session\twitter\twitter.py:248
-msgid "Reply"
-msgstr "Ответ"
 
 #: ../src\session\login.py:32
 msgid "Login succeeded."
@@ -1546,7 +1312,7 @@ msgstr "друзей"
 
 #: ../src\session\twitter\buffers\home.py:14
 #: ../src\session\twitter\buffers\main.py:288
-#: ../src\session\twitter\interface.py:54
+#: ../src\session\twitter\interface.py:56
 #: ../src\session\twitter\twitter.py:350
 msgid "tweet"
 msgstr "твит"
@@ -1583,7 +1349,7 @@ msgstr "Удалить пользователя"
 
 #: ../src\session\twitter\buffers\list_members.py:38
 #: ../src\session\twitter\buffers\list_subscribers.py:38
-#: ../src\session\twitter\interface.py:682
+#: ../src\session\twitter\interface.py:681
 msgid "removing %s from list %s."
 msgstr "Удаление %s из списка %s."
 
@@ -1739,7 +1505,7 @@ msgid "Message Text"
 msgstr "Текст сообщения"
 
 #: ../src\session\twitter\buffers\tweets.py:17
-#: ../src\session\twitter\buffers\users.py:28
+#: ../src\session\twitter\buffers\users.py:29
 msgid "Location"
 msgstr "Местоположение"
 
@@ -1755,51 +1521,51 @@ msgstr "Добавлено в избранное"
 msgid "Retweeted"
 msgstr "Сделан ретвит"
 
-#: ../src\session\twitter\buffers\users.py:27
+#: ../src\session\twitter\buffers\users.py:28
 msgid "Screen name"
 msgstr "Экранное имя"
 
-#: ../src\session\twitter\buffers\users.py:30
+#: ../src\session\twitter\buffers\users.py:31
 msgid "Protected"
 msgstr "Защищено"
 
-#: ../src\session\twitter\buffers\users.py:31
+#: ../src\session\twitter\buffers\users.py:32
 msgid "Follower count"
 msgstr "Число читателей"
 
-#: ../src\session\twitter\buffers\users.py:32
+#: ../src\session\twitter\buffers\users.py:33
 msgid "Friend count"
 msgstr "Число друзей"
 
-#: ../src\session\twitter\buffers\users.py:33
+#: ../src\session\twitter\buffers\users.py:34
 msgid "Number of tweets"
 msgstr "Число твитов"
 
-#: ../src\session\twitter\buffers\users.py:34
+#: ../src\session\twitter\buffers\users.py:35
 msgid "Device notifications"
 msgstr "Уведомления на мобильное устройство"
 
-#: ../src\session\twitter\buffers\users.py:35
+#: ../src\session\twitter\buffers\users.py:36
 msgid "User's local time"
 msgstr "Локальное время пользователя"
 
-#: ../src\session\twitter\buffers\users.py:37
+#: ../src\session\twitter\buffers\users.py:38
 msgid "Last Tweet Time"
 msgstr "Время последнего твита"
 
-#: ../src\session\twitter\buffers\users.py:38
+#: ../src\session\twitter\buffers\users.py:39
 msgid "Last Tweet Date"
 msgstr "Дата последнего твита"
 
-#: ../src\session\twitter\buffers\users.py:39
+#: ../src\session\twitter\buffers\users.py:40
 msgid "Last Tweet Relative Time"
 msgstr "Относительное время последнего твита"
 
-#: ../src\session\twitter\buffers\users.py:76
+#: ../src\session\twitter\buffers\users.py:77
 msgid "%s updated"
 msgstr "%s обновлено"
 
-#: ../src\session\twitter\buffers\users.py:78
+#: ../src\session\twitter\buffers\users.py:79
 msgid "%s for %s updated"
 msgstr "%s для %s обновлено"
 
@@ -1938,31 +1704,27 @@ msgid "Geo location coordinates:"
 msgstr "Координаты геолокации:"
 
 #: ../src\session\twitter\gui\geo_location.py:22
-#: ../src\session\twitter\gui\profile.py:23
+#: ../src\session\twitter\gui\profile.py:24
 msgid "Location:"
 msgstr "Местоположение:"
 
-#: ../src\session\twitter\gui\geo_location.py:26
-msgid "Accuracy:"
-msgstr "Точность:"
-
-#: ../src\session\twitter\gui\geo_location_input.py:10
+#: ../src\session\twitter\gui\geo_location_input.py:9
 msgid "Input Coordinates"
 msgstr "Введите координаты"
 
-#: ../src\session\twitter\gui\geo_location_input.py:12
+#: ../src\session\twitter\gui\geo_location_input.py:11
 msgid "Latitude:"
 msgstr "Широта:"
 
-#: ../src\session\twitter\gui\geo_location_input.py:21
+#: ../src\session\twitter\gui\geo_location_input.py:20
 msgid "Longitude:"
 msgstr "Долгота:"
 
-#: ../src\session\twitter\gui\geo_location_input.py:38
+#: ../src\session\twitter\gui\geo_location_input.py:37
 msgid "Error: Latitude must be a value between negative 90 and positive 90."
 msgstr "Ошибка: широта должна быть числом от -90 до 90."
 
-#: ../src\session\twitter\gui\geo_location_input.py:39
+#: ../src\session\twitter\gui\geo_location_input.py:38
 msgid "Error: Longitude must be a value between negative 180 and positive 180."
 msgstr "Ошибка: долгота должна быть числом от -180 до 180."
 
@@ -2085,63 +1847,75 @@ msgstr "Твит"
 msgid "Retweet:"
 msgstr "Ретвит:"
 
-#: ../src\session\twitter\gui\profile.py:18
+#: ../src\session\twitter\gui\profile.py:19
 msgid "Screen name:"
 msgstr "Экранное имя (логин):"
 
-#: ../src\session\twitter\gui\profile.py:20
+#: ../src\session\twitter\gui\profile.py:21
 msgid "Real name:"
 msgstr "Реальное имя:"
 
-#: ../src\session\twitter\gui\profile.py:25
+#: ../src\session\twitter\gui\profile.py:26
 msgid "Account ID:"
 msgstr "Идентификатор учётной записи:"
 
-#: ../src\session\twitter\gui\profile.py:28
+#: ../src\session\twitter\gui\profile.py:29
 msgid "URL:"
 msgstr "Адрес:"
 
-#: ../src\session\twitter\gui\profile.py:34
+#: ../src\session\twitter\gui\profile.py:35
 msgid "Bio:"
 msgstr "О себе:"
 
-#: ../src\session\twitter\gui\profile.py:36
+#: ../src\session\twitter\gui\profile.py:37
 msgid "Tweets are protected:"
 msgstr "Твиты защищены:"
 
-#: ../src\session\twitter\gui\profile.py:42
+#: ../src\session\twitter\gui\profile.py:39
+msgid "Yes"
+msgstr "Да"
+
+#: ../src\session\twitter\gui\profile.py:41
+msgid "No"
+msgstr "Нет"
+
+#: ../src\session\twitter\gui\profile.py:43
 msgid "Number of followers:"
 msgstr "Число читателей:"
 
-#: ../src\session\twitter\gui\profile.py:44
+#: ../src\session\twitter\gui\profile.py:45
 msgid "Number of friends:"
 msgstr "Число друзей:"
 
-#: ../src\session\twitter\gui\profile.py:46
+#: ../src\session\twitter\gui\profile.py:47
+msgid "Number of having this user in their lists:"
+msgstr "Число добавивших пользователя в списки:"
+
+#: ../src\session\twitter\gui\profile.py:49
 msgid "Number of tweets:"
 msgstr "Число твитов:"
 
-#: ../src\session\twitter\gui\profile.py:48
-msgid "Average tweets per day since joining Twitter:"
-msgstr "Среднее количество твитов в день с момента регистрации:"
-
 #: ../src\session\twitter\gui\profile.py:51
+msgid "Average tweets per day since joining Twitter:"
+msgstr "Среднее число твитов в день с момента регистрации:"
+
+#: ../src\session\twitter\gui\profile.py:54
 msgid "Date of last tweet:"
 msgstr "Дата последнего твита:"
 
-#: ../src\session\twitter\gui\profile.py:55
+#: ../src\session\twitter\gui\profile.py:58
 msgid "Not available"
 msgstr "Недоступно"
 
-#: ../src\session\twitter\gui\profile.py:57
+#: ../src\session\twitter\gui\profile.py:60
 msgid "Date joined Twitter:"
 msgstr "Дата регистрации в Твиттере:"
 
-#: ../src\session\twitter\gui\profile.py:90
+#: ../src\session\twitter\gui\profile.py:93
 msgid "Follow %s"
 msgstr "Начать читать %s"
 
-#: ../src\session\twitter\gui\profile.py:93
+#: ../src\session\twitter\gui\profile.py:96
 msgid "Unfollow %s"
 msgstr "Прекратить читать %s"
 
@@ -2221,289 +1995,288 @@ msgstr "Профиль пользователя"
 msgid "User profile for:"
 msgstr "Профиль пользователя:"
 
-#: ../src\session\twitter\interface.py:63
+#: ../src\session\twitter\interface.py:65
 msgid "Direct message"
 msgstr "Личное сообщение"
 
-#: ../src\session\twitter\interface.py:70
+#: ../src\session\twitter\interface.py:72
 msgid "dm"
 msgstr "Личное сообщение"
 
-#: ../src\session\twitter\interface.py:89
+#: ../src\session\twitter\interface.py:91
 msgid "Unable to detect a user to reply to."
 msgstr "Нет пользователя для ответа."
 
-#: ../src\session\twitter\interface.py:97
+#: ../src\session\twitter\interface.py:92
+#: ../src\session\twitter\twitter.py:248
+msgid "Reply"
+msgstr "Ответ"
+
+#: ../src\session\twitter\interface.py:99
 #, fuzzy
 msgid "reply"
 msgstr "Ответ"
 
-#: ../src\session\twitter\interface.py:105
+#: ../src\session\twitter\interface.py:107
 #, fuzzy
 msgid "view item"
 msgstr "просмотр элемента"
 
-#: ../src\session\twitter\interface.py:111
+#: ../src\session\twitter\interface.py:113
 msgid "View Tweet From %s"
 msgstr "просмотр твита пользователя %s"
 
-#: ../src\session\twitter\interface.py:129
+#: ../src\session\twitter\interface.py:131
 msgid "Item is not a post."
 msgstr "Элемент не является сообщением."
 
-#: ../src\session\twitter\interface.py:132
+#: ../src\session\twitter\interface.py:134
 msgid "Cannot retweet a direct message while DM safe mode is enabled."
 msgstr ""
 "Невозможно ретвитнуть личное сообщение при включённом режиме безопасности "
 "личных сообщений."
 
-#: ../src\session\twitter\interface.py:135
+#: ../src\session\twitter\interface.py:137
 msgid "Cannot retweet your own tweet."
 msgstr "Невозможно ретвитнуть ваш собственный твит."
 
-#: ../src\session\twitter\interface.py:139
+#: ../src\session\twitter\interface.py:141
 msgid "Would you like to add a comment?"
 msgstr "Хотите добавить комментарий?"
 
-#: ../src\session\twitter\interface.py:139
+#: ../src\session\twitter\interface.py:141
 #: ../src\session\twitter\twitter.py:241
 msgid "Retweet"
 msgstr "Ретвит"
 
-#: ../src\session\twitter\interface.py:158
+#: ../src\session\twitter\interface.py:160
 msgid "No users to follow detected in current post."
 msgstr ""
 "В текущем сообщении пользователей, которых можно начать читать, не "
 "обнаружено."
 
-#: ../src\session\twitter\interface.py:171
+#: ../src\session\twitter\interface.py:173
 msgid "No users to unfollow detected in current post."
 msgstr ""
 "В текущем сообщении пользователей, чтение которых можно прекратить, не "
 "обнаружено."
 
-#: ../src\session\twitter\interface.py:198
+#: ../src\session\twitter\interface.py:200
 msgid "No URLs detected in current post."
 msgstr "В текущем сообщение ссылок не найдено."
 
-#: ../src\session\twitter\interface.py:211
+#: ../src\session\twitter\interface.py:213
 msgid "Twitter search"
 msgstr "Поиск в Твиттере"
 
-#: ../src\session\twitter\interface.py:220
+#: ../src\session\twitter\interface.py:222
 msgid "Please enter a term to search for."
 msgstr "Введите слово для поиска."
 
-#: ../src\session\twitter\interface.py:222
+#: ../src\session\twitter\interface.py:224
 #: ../src\session\twitter\twitter.py:127
 msgid "Search for %s"
 msgstr "Поиск %s"
 
-#: ../src\session\twitter\interface.py:228
+#: ../src\session\twitter\interface.py:230
 msgid "Trending: Worldwide"
 msgstr "Актуальные темы: по всему миру"
 
-#: ../src\session\twitter\interface.py:233
+#: ../src\session\twitter\interface.py:235
 msgid "Loading public timeline."
 msgstr "Загрузка публичной ленты."
 
-#: ../src\session\twitter\interface.py:233
+#: ../src\session\twitter\interface.py:235
 msgid "Public Timeline"
 msgstr "Публичная лента"
 
-#: ../src\session\twitter\interface.py:238
+#: ../src\session\twitter\interface.py:240
 msgid "Favorites"
 msgstr "Избранное"
 
-#: ../src\session\twitter\interface.py:238
+#: ../src\session\twitter\interface.py:240
 msgid "Loading favorites"
 msgstr "Загрузка избранного"
 
-#: ../src\session\twitter\interface.py:247
+#: ../src\session\twitter\interface.py:249
 msgid "%s's favorites"
 msgstr "Избранное пользователя %s"
 
-#: ../src\session\twitter\interface.py:248
+#: ../src\session\twitter\interface.py:250
 msgid "Loading favorites for %s."
 msgstr "Загрузка избранного пользователя %s."
 
-#: ../src\session\twitter\interface.py:265
+#: ../src\session\twitter\interface.py:267
 msgid "Followers"
 msgstr "Читатели"
 
-#: ../src\session\twitter\interface.py:265
+#: ../src\session\twitter\interface.py:267
 msgid "Loading followers list."
 msgstr "Загрузка списка читателей."
 
-#: ../src\session\twitter\interface.py:270
+#: ../src\session\twitter\interface.py:272
 msgid "Friends"
 msgstr "Друзья"
 
-#: ../src\session\twitter\interface.py:270
+#: ../src\session\twitter\interface.py:272
 msgid "Loading friends list."
 msgstr "Загрузка списка друзей."
 
-#: ../src\session\twitter\interface.py:281
+#: ../src\session\twitter\interface.py:283
 msgid ""
 "Please launch your followers buffer before attempting to perform analysis."
 msgstr "Пожалуйста, откройте буфер читателей перед попыткой сделать их анализ."
 
-#: ../src\session\twitter\interface.py:283
+#: ../src\session\twitter\interface.py:285
 msgid "Cannot perform analysis on an empty followers buffer."
 msgstr "Не удалось выполнить анализ читателейна пустом буфере."
 
-#: ../src\session\twitter\interface.py:284
+#: ../src\session\twitter\interface.py:286
 msgid "Followers Analysis"
 msgstr "Анализ читателей"
 
-#: ../src\session\twitter\interface.py:284
+#: ../src\session\twitter\interface.py:286
 msgid "Performing followers analysis, please wait..."
 msgstr "Выполняется анализ читателей, подождите..."
 
-#: ../src\session\twitter\interface.py:289
+#: ../src\session\twitter\interface.py:291
 msgid "Blocked Users"
 msgstr "Заблокированные пользователи"
 
-#: ../src\session\twitter\interface.py:289
+#: ../src\session\twitter\interface.py:291
 msgid "Loading blocked users."
 msgstr "Загрузка заблокированных пользователей."
 
-#: ../src\session\twitter\interface.py:317
+#: ../src\session\twitter\interface.py:319
 msgid "%s's timeline"
 msgstr "Лента пользователя %s"
 
-#: ../src\session\twitter\interface.py:317
+#: ../src\session\twitter\interface.py:319
 msgid "Loading timeline for %s."
 msgstr "Загрузка ленты пользователя %s."
 
-#: ../src\session\twitter\interface.py:362
-msgid "Loading followers for %s."
-msgstr "Загрузка читателей пользователя %s."
-
-#: ../src\session\twitter\interface.py:363
+#: ../src\session\twitter\interface.py:365
 msgid "%s's followers"
 msgstr "Читатели пользователя %s"
 
-#: ../src\session\twitter\interface.py:374
-msgid "%s's friends"
-msgstr "Друзья пользователя %s"
-
-#: ../src\session\twitter\interface.py:375
+#: ../src\session\twitter\interface.py:366
+#: ../src\session\twitter\interface.py:378
 msgid "Loading friends for %s."
 msgstr "Загрузка друзей пользователя %s."
 
-#: ../src\session\twitter\interface.py:407
+#: ../src\session\twitter\interface.py:377
+msgid "%s's friends"
+msgstr "Друзья пользователя %s"
+
+#: ../src\session\twitter\interface.py:410
 msgid "This command is not supported from within a search buffer."
 msgstr "Эта команда в буфере поиска не поддерживается."
 
-#: ../src\session\twitter\interface.py:409
-#: ../src\session\twitter\interface.py:615
+#: ../src\session\twitter\interface.py:412
+#: ../src\session\twitter\interface.py:614
 msgid "No user detected in current item."
 msgstr "В текущем элементе пользователей не найдено."
 
-#: ../src\session\twitter\interface.py:420
+#: ../src\session\twitter\interface.py:423
 msgid "Loading profile for %s"
 msgstr "Загрузка профиля пользователя %s"
 
-#: ../src\session\twitter\interface.py:435
+#: ../src\session\twitter\interface.py:438
 msgid "Retrieving locations."
 msgstr "получение местоположений."
 
-#: ../src\session\twitter\interface.py:441
+#: ../src\session\twitter\interface.py:444
 msgid "Unable to retrieve local trend locations; please try again later."
 msgstr ""
 "Невозможно получить местоположение локальных актуальных тем; пожалуйста, "
 "попробуйте позднее."
 
-#: ../src\session\twitter\interface.py:480
-#: ../src\session\twitter\interface.py:603
+#: ../src\session\twitter\interface.py:483
+#: ../src\session\twitter\interface.py:602
 msgid "Canceled"
 msgstr "Отменено"
 
-#: ../src\session\twitter\interface.py:491
+#: ../src\session\twitter\interface.py:494
 msgid "Are you sure you want to import %d items from old database?"
 msgstr ""
 "Вы действительно хотите импортировать %d элементов из старой базы данных?"
 
-#: ../src\session\twitter\interface.py:491
+#: ../src\session\twitter\interface.py:494
 msgid "Are you sure?"
 msgstr "Вы уверены?"
 
-#: ../src\session\twitter\interface.py:493
+#: ../src\session\twitter\interface.py:496
 msgid "Importing, please wait."
 msgstr "Импортирую. Пожалуйста, подождите."
 
-#: ../src\session\twitter\interface.py:502
+#: ../src\session\twitter\interface.py:505
 msgid "Session type mismatch."
 msgstr "Несовпадение типа сессии."
 
-#: ../src\session\twitter\interface.py:504
+#: ../src\session\twitter\interface.py:507
 msgid "Import complete."
 msgstr "Импорт завершён."
 
-#: ../src\session\twitter\interface.py:504
+#: ../src\session\twitter\interface.py:507
 msgid "Import completed successfully."
 msgstr "Импорт успешно завершён."
 
-#: ../src\session\twitter\interface.py:514
-#: ../src\session\twitter\interface.py:539
+#: ../src\session\twitter\interface.py:517
+#: ../src\session\twitter\interface.py:540
 msgid "No geo location info present in this tweet."
 msgstr "В этом твите нет геолокационной информации."
 
-#: ../src\session\twitter\interface.py:516
-#: ../src\session\twitter\interface.py:541
+#: ../src\session\twitter\interface.py:519
+#: ../src\session\twitter\interface.py:542
 #: ../src\session\twitter\interface.py:575
 msgid "Retrieving geo location info..."
 msgstr "Получение геолокационной информации..."
 
-#: ../src\session\twitter\interface.py:523
-#: ../src\session\twitter\interface.py:531
-#: ../src\session\twitter\interface.py:548
-#: ../src\session\twitter\interface.py:558
-#: ../src\session\twitter\interface.py:582
-#: ../src\session\twitter\interface.py:593
+#: ../src\session\twitter\interface.py:529
+#: ../src\session\twitter\interface.py:552
+#: ../src\session\twitter\interface.py:585
 msgid "Error determining location."
 msgstr "Ошибка получения местоположения."
 
-#: ../src\session\twitter\interface.py:526
-#: ../src\session\twitter\interface.py:551
-#: ../src\session\twitter\interface.py:587
-msgid "Coordinates are not accurate enough to determine a location."
-msgstr "Координаты недостаточно точны для определения местоположения."
+#: ../src\session\twitter\interface.py:533
+#: ../src\session\twitter\interface.py:558
+#: ../src\session\twitter\interface.py:592
+msgid "Sorry, geo locator didn't provide an address."
+msgstr "К сожалению, сервис геолокации не предоставил адреса."
 
-#: ../src\session\twitter\interface.py:599
+#: ../src\session\twitter\interface.py:598
 msgid "Enter a name to search for:"
 msgstr "Введите имя для поиска:"
 
-#: ../src\session\twitter\interface.py:599
+#: ../src\session\twitter\interface.py:598
 msgid "User search"
 msgstr "Поиск пользователей"
 
-#: ../src\session\twitter\interface.py:605
+#: ../src\session\twitter\interface.py:604
 msgid "User search for %s"
 msgstr "Поиск пользователя %s"
 
-#: ../src\session\twitter\interface.py:621
+#: ../src\session\twitter\interface.py:620
 msgid "Retrieving relationship status for %s"
 msgstr "Получение статуса отношений с %s."
 
-#: ../src\session\twitter\interface.py:639
+#: ../src\session\twitter\interface.py:638
 msgid "Retrieving relationship status between %s and %s"
 msgstr "Получение статуса отношений между %s и %s."
 
-#: ../src\session\twitter\interface.py:647
+#: ../src\session\twitter\interface.py:646
 #: ../src\session\twitter\twitter.py:271
 msgid "Select user to add"
 msgstr "Выберите пользователя для добавления"
 
-#: ../src\session\twitter\interface.py:653
-#: ../src\session\twitter\interface.py:674
+#: ../src\session\twitter\interface.py:652
+#: ../src\session\twitter\interface.py:673
 #: ../src\session\twitter\twitter.py:277
 msgid "Retrieving lists, please wait."
 msgstr "Получение списков, подождите..."
 
-#: ../src\session\twitter\interface.py:656
-#: ../src\session\twitter\interface.py:677
+#: ../src\session\twitter\interface.py:655
+#: ../src\session\twitter\interface.py:676
 msgid ""
 "No lists defined.  Please create a list with the list manager before "
 "performing this action."
@@ -2511,57 +2284,57 @@ msgstr ""
 "Списков не найдено. Пожалуйста, создайте список с помощью диспетчера списков "
 "перед данным действием."
 
-#: ../src\session\twitter\interface.py:657
-#: ../src\session\twitter\interface.py:678
+#: ../src\session\twitter\interface.py:656
+#: ../src\session\twitter\interface.py:677
 #: ../src\session\twitter\twitter.py:279
 msgid "Select list"
 msgstr "Выбор списка"
 
-#: ../src\session\twitter\interface.py:657
+#: ../src\session\twitter\interface.py:656
 #: ../src\session\twitter\twitter.py:279
 msgid "Please select a list to add %s to?"
 msgstr "Выберите список для добавления %s"
 
-#: ../src\session\twitter\interface.py:661
+#: ../src\session\twitter\interface.py:660
 msgid "adding %s to list %s."
 msgstr "Добавление пользователя %s в список %s."
 
-#: ../src\session\twitter\interface.py:668
+#: ../src\session\twitter\interface.py:667
 msgid "Select user to remove"
 msgstr "Выберите пользователя для удаления"
 
-#: ../src\session\twitter\interface.py:678
+#: ../src\session\twitter\interface.py:677
 msgid "Please select a list to remove %s from?"
 msgstr "Выберите список для удаления пользователя %s"
 
-#: ../src\session\twitter\interface.py:689
-#: ../src\session\twitter\interface.py:727
+#: ../src\session\twitter\interface.py:688
+#: ../src\session\twitter\interface.py:726
 msgid "Please change to a list buffer before using this command."
 msgstr "Пожалуйста, перейдите к буферу списка перед этой командой."
 
-#: ../src\session\twitter\interface.py:697
+#: ../src\session\twitter\interface.py:696
 msgid "Choose your social network:"
 msgstr "Выберите вашу социальную сеть:"
 
-#: ../src\session\twitter\interface.py:697
+#: ../src\session\twitter\interface.py:696
 msgid "Social Network"
 msgstr "Социальная сеть"
 
-#: ../src\session\twitter\interface.py:697
+#: ../src\session\twitter\interface.py:696
 msgid "Users who follow me but whom I do not follow"
 msgstr "Пользователи, которые читают меня, но которых я не читаю"
 
-#: ../src\session\twitter\interface.py:697
-#: ../src\session\twitter\interface.py:714
+#: ../src\session\twitter\interface.py:696
+#: ../src\session\twitter\interface.py:713
 msgid "Users whom I follow and who also follow me"
 msgstr "Пользователи, которых читаю я и которые читают меня"
 
-#: ../src\session\twitter\interface.py:697
-#: ../src\session\twitter\interface.py:716
+#: ../src\session\twitter\interface.py:696
+#: ../src\session\twitter\interface.py:715
 msgid "Users whom I follow but who do not follow me"
 msgstr "Пользователи, которых читаю я, но которые не читают меня"
 
-#: ../src\session\twitter\interface.py:710
+#: ../src\session\twitter\interface.py:709
 msgid ""
 "Please launch both your followers and friends buffers before attempting to "
 "create a social network."
@@ -2569,28 +2342,24 @@ msgstr ""
 "Пожалуйста, откройте буферы ваших друзей и читателей перед тем, как "
 "создавать социальную сеть."
 
-#: ../src\session\twitter\interface.py:712
+#: ../src\session\twitter\interface.py:711
 msgid "Cannot create social network from an empty followers or friends buffer."
 msgstr ""
 "Не удалось создать социальную сеть из пустого буфера друзей или читателей."
 
-#: ../src\session\twitter\interface.py:720
+#: ../src\session\twitter\interface.py:719
 msgid "Creating social network, please wait..."
 msgstr "Создание социальной сети, подождите..."
 
-#: ../src\session\twitter\interface.py:720
+#: ../src\session\twitter\interface.py:719
 msgid "Social Network: %s"
 msgstr "Социальная сеть: %s"
 
-#: ../src\session\twitter\interface.py:751
-msgid "Translation process has failed."
-msgstr "Процесс перевода завершился неудачей."
-
-#: ../src\session\twitter\interface.py:752
+#: ../src\session\twitter\interface.py:747
 msgid "Translation from %s to %s"
 msgstr "Перевод с %s на %s"
 
-#: ../src\session\twitter\interface.py:759
+#: ../src\session\twitter\interface.py:754
 msgid "Select user"
 msgstr "Выберите пользователя"
 
@@ -2887,6 +2656,197 @@ msgstr "секунду"
 #: ../src\utils\time_period.py:14
 msgid "{0} seconds"
 msgstr "{0} секунд"
+
+#~ msgid "Speech"
+#~ msgstr "Речь"
+
+#~ msgid "Braille"
+#~ msgstr "Брайль"
+
+#~ msgid "Entry:"
+#~ msgstr "Статья:"
+
+#~ msgid "Replacement:"
+#~ msgstr "Замена:"
+
+#~ msgid "Case senative?"
+#~ msgstr "Чувствительная к регистру букв?"
+
+#~ msgid "Dictionary Entries"
+#~ msgstr "Словарные статьи"
+
+#~ msgid "Add..."
+#~ msgstr "Добавить..."
+
+#~ msgid "Delete..."
+#~ msgstr "удалить..."
+
+#~ msgid "Entry"
+#~ msgstr "Статья"
+
+#~ msgid "Replacement"
+#~ msgstr "Замена"
+
+#, fuzzy
+#~ msgid "address"
+#~ msgstr "Адрес электронной почты"
+
+#, fuzzy
+#~ msgid "country"
+#~ msgstr "Статья"
+
+#, fuzzy
+#~ msgid "intersection"
+#~ msgstr "Описание списка:"
+
+#~ msgid "planet"
+#~ msgstr "Планета"
+
+#~ msgid "post code"
+#~ msgstr "Почтовый код"
+
+#~ msgid "premise"
+#~ msgstr "Строение"
+
+#~ msgid "region"
+#~ msgstr "Область"
+
+#~ msgid "street"
+#~ msgstr "Улица"
+
+#~ msgid "sub-region"
+#~ msgstr "Район"
+
+#~ msgid "town"
+#~ msgstr "Город"
+
+#~ msgid "Phone number"
+#~ msgstr "Номер телефона"
+
+#~ msgid "Display phone number"
+#~ msgstr "Показывать номер телефона"
+
+#~ msgid "Calling %s"
+#~ msgstr "Вызов %s"
+
+#~ msgid "missed call"
+#~ msgstr "Пропущенный звонок"
+
+#~ msgid "missed calls"
+#~ msgstr "Пропущенных звонков"
+
+#~ msgid "placed call"
+#~ msgstr "Направленный звонок"
+
+#~ msgid "placed calls"
+#~ msgstr "Направленных звонков"
+
+#~ msgid "received call"
+#~ msgstr "Принятый звонок"
+
+#~ msgid "received calls"
+#~ msgstr "принятых звонков"
+
+#~ msgid "Message sender"
+#~ msgstr "Отправитель сообщения"
+
+#, fuzzy
+#~ msgid "Message text"
+#~ msgstr "Текст сообщения"
+
+#~ msgid "voicemail"
+#~ msgstr "голосовое сообщение"
+
+#~ msgid "voicemails"
+#~ msgstr "голосовых сообщений"
+
+#~ msgid "Item state"
+#~ msgstr "Состояние элемента"
+
+#~ msgid "Downloading voicemail..."
+#~ msgstr "Скачивание голосовых сообщений..."
+
+#~ msgid "Playing voicemail from %s"
+#~ msgstr "Воспроизведение голосового сообщения от %s"
+
+#~ msgid "Missed"
+#~ msgstr "Пропущен"
+
+#~ msgid "Placed"
+#~ msgstr "Направлен"
+
+#~ msgid "Received"
+#~ msgstr "Принято"
+
+#~ msgid "Sms"
+#~ msgstr "Sms"
+
+#~ msgid "Voicemail"
+#~ msgstr "Голосовое сообщение"
+
+#~ msgid "Logged into Google Voice as %s"
+#~ msgstr "Вы успешно вошли в GoogleVoice как %s"
+
+#~ msgid "Unable to Log into Google Voice."
+#~ msgstr "Не удалось войти в GoogleVoice."
+
+#~ msgid "Google Voice Login"
+#~ msgstr "Вход в Google Voice"
+
+#~ msgid "Please provide your credentials to login to Google Voice"
+#~ msgstr "пожалуйста, укажите данные для входа в Google Voice"
+
+#~ msgid "Enter phone number to call:"
+#~ msgstr "Введите номер телефона:"
+
+#~ msgid "Forwarding Number (where calls are bridged)"
+#~ msgstr "Номер для переадресации (куда будут попадать звонки)"
+
+#~ msgid "General"
+#~ msgstr "Общие"
+
+#~ msgid "Email Address"
+#~ msgstr "Адрес электронной почты"
+
+#~ msgid "New SMS"
+#~ msgstr "Создать SMS"
+
+#~ msgid "Sms successfully sent to %s"
+#~ msgstr "SMS-сообщение успешно отправлено пользователю %s"
+
+#~ msgid "Call Phone"
+#~ msgstr "позвонить по номеру"
+
+#~ msgid "Please enter a phone number to call."
+#~ msgstr "Введите номер телефона для звонка."
+
+#~ msgid ""
+#~ "Please indicate where the call should be bridged by selecting a "
+#~ "forwarding phone number."
+#~ msgstr ""
+#~ "Пожалуйста, укажите, куда должен быть направлен звонок, выбрав номер для "
+#~ "переадресации."
+
+#~ msgid "Error, forwarding phone number not found."
+#~ msgstr "Ошибка, номер для переадресации не найден."
+
+#~ msgid "Calling: %r"
+#~ msgstr "Звонок: %r"
+
+#~ msgid "Call placed."
+#~ msgstr "Звонок произведён."
+
+#~ msgid "Unable to detect a sender to reply to."
+#~ msgstr "Невозможно обнаружить получателя ответа."
+
+#~ msgid "Accuracy:"
+#~ msgstr "Точность:"
+
+#~ msgid "Loading followers for %s."
+#~ msgstr "Загрузка читателей пользователя %s."
+
+#~ msgid "Coordinates are not accurate enough to determine a location."
+#~ msgstr "Координаты недостаточно точны для определения местоположения."
 
 #~ msgid "Retrieving blocked users"
 #~ msgstr "Получение заблокированных пользователей"
