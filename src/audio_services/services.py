@@ -24,6 +24,13 @@ def convert_secure_audioboo(url):
  url = url.split('?')[0]
  return url + ".mp3"
 
+@matches_url('https://audioboom.com')
+def convert_audioboom(url):
+ if not re.findall ("^https?://audioboom.com/boos/[a-zA-Z0-9]", url.lower()):
+  raise TypeError('%r is not a valid URL' % url)
+ url = url.split('?')[0]
+ return url + ".mp3"
+
 @matches_url('http://q-audio.net')
 def convert_q_audio(url):
  result = re.match("^https?://q-audio.net/(i|d|download)/(?P<audio_id>[a-z0-9]+/?)$", url, re.I)
