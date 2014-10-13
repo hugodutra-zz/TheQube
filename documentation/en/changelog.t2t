@@ -15,6 +15,7 @@ The Qube change log
 - The tweets translation service is back ([#27 https://github.com/Oire/TheQube/issues/27])
 - The audio links from rebranded AudioBoom are supported.
 - Now The Qube has a permanent multilingual [website http://theqube.oire.org]
+- Now the website address in the profile info dialog won't be shortened with t.co.
 - Fixed: [#33: Switching sessions freezes the keyboard commands https://github.com/Oire/TheQube/issues/33]
 - Fixed: [#1: Keyboard commands don't work if the default keyboard layout is not set to English https://github.com/Oire/TheQube/issues/1]
 

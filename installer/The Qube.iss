@@ -14,7 +14,7 @@
 AppId={{45E90244-4E13-41FF-B351-C387F444965E}
 AppName={#MyAppName}
 AppVersion={#MyAppVersion}
-AppVerName={#MyAppName} {#MyAppVer}
+AppVerName={#MyAppName} {#MyAppVersion}
 AppCopyright=Copyright © {#MyAppCopyrightYear} {#MyAppPublisher}
 AppPublisher={#MyAppPublisher}
 AppPublisherURL={#MyAppURL}
@@ -22,9 +22,9 @@ AppSupportURL={#MyAppURL}
 AppUpdatesURL={#MyAppURL}
 DefaultDirName={pf}\{#MyAppName}
 DefaultGroupName={#MyAppName}
-; LicenseFile=dist\Documentation\license.txt
+; LicenseFile=..\src\dist\Documentation\license.txt
 OutputDir=setup
-OutputBaseFilename=Theqube-{#MyAppVersion}-setup
+OutputBaseFilename=TheQube-{#MyAppVersion}-setup
 Compression=lzma2
 SolidCompression=true
 DisableStartupPrompt=true
@@ -32,30 +32,30 @@ AlwaysShowDirOnReadyPage=true
 AlwaysShowGroupOnReadyPage=true
 ShowLanguageDialog=yes
 DisableProgramGroupPage=true
-DisableReadyPage=true
+DisableReadyPage=false
 DisableFinishedPage=false
 ArchitecturesAllowed=x86 x64
 VersionInfoCompany={#MyAppPublisher}
 VersionInfoCopyright=Copyright © {#MyAppCopyrightYear} {#MyAppPublisher}
 VersionInfoDescription={#MyAppDescription}
 VersionInfoProductName={#MyAppName}
-VersionInfoProductVersion={#MyAppVer}
-VersionInfoVersion={#MyAppVer}
-AppVersion={#MyAppVer}
+VersionInfoProductVersion={#MyAppVersion}
+VersionInfoVersion={#MyAppVersion}
 AppModifyPath={app}
 AppContact=andre@oire.org
+PrivilegesRequired=lowest
 
 [Languages]
-Name: english; MessagesFile: compiler:Default.isl,languages\DefaultCustom.isl
-Name: Portuguese (Brazil); MessagesFile: compiler:languages\BrazilianPortuguese.isl
-Name: Dutch; MessagesFile: compiler:Languages\Dutch.isl
-Name: French; MessagesFile: compiler:languages\French.isl,languages\FrenchCustom.isl
-Name: German; MessagesFile: compiler:Languages\German.isl,languages\GermanCustom.isl
-Name: Italian; MessagesFile: compiler:languages\Italian.isl
-Name: Polish; MessagesFile: compiler:languages\Polish.isl
-Name: Russian; MessagesFile: compiler:Languages\russian.isl,languages\RussianCustom.isl
-Name: Spanish; MessagesFile: compiler:languages\Spanish.isl
-Name: Ukrainian; MessagesFile: compiler:languages\Ukrainian.isl,languages\UkrainianCustom.isl
+Name: en; MessagesFile: compiler:Default.isl,languages\DefaultCustom.islu
+Name: pt_BR; MessagesFile: compiler:languages\BrazilianPortuguese.isl
+Name: nl; MessagesFile: compiler:Languages\Dutch.isl
+Name: Fr; MessagesFile: compiler:languages\French.isl
+Name: de; MessagesFile: compiler:Languages\German.isl
+Name: it; MessagesFile: compiler:languages\Italian.isl
+Name: pl; MessagesFile: compiler:languages\Polish.isl
+Name: ru; MessagesFile: compiler:Languages\russian.isl,languages\RussianCustom.islu
+Name: es; MessagesFile: compiler:languages\Spanish.isl
+Name: uk; MessagesFile: compiler:languages\Ukrainian.isl,languages\UkrainianCustom.islu
 
 [Tasks]
 Name: desktopicon; Description: {cm:CreateDesktopIcon}; GroupDescription: {cm:AdditionalIcons}; Flags: unchecked
@@ -66,15 +66,15 @@ Source: IssProcLanguage.ini; DestDir: {tmp}; Flags: dontcopy
 Source: IssProc.dll; DestDir: {app}
 Source: IssProcLanguage.ini; DestDir: {app}
 
-Source: dist\*; DestDir: {app}; Flags: ignoreversion createallsubdirs recursesubdirs
-source: sounds\*; DestDir: {app}\sounds; Flags: ignoreversion createallsubdirs recursesubdirs
-source: locale\*; Excludes: *.po; DestDir: {app}\locale; Flags: ignoreversion createallsubdirs recursesubdirs
-Source: dist\documentation\readme.html; DestDir: {app}\documentation; Flags: ignoreversion isreadme
+Source: ..\src\dist\*; DestDir: {app}; Permissions: users-readexec; Flags: ignoreversion createallsubdirs recursesubdirs
+source: ..\src\sounds\*; DestDir: {app}\sounds; Flags: ignoreversion createallsubdirs recursesubdirs
+source: ..\src\locale\*; Excludes: *.po; DestDir: {app}\locale; Flags: ignoreversion createallsubdirs recursesubdirs
+Source: ..\src\dist\documentation\*; DestDir: {app}\documentation; Flags: ignoreversion createallsubdirs recursesubdirs
 
 [Icons]
 Name: {group}\{#MyAppName}; Filename: {app}\{#MyAppExeName}
-Name: {group}\{cm:ReadManual}; Filename: {app}\Documentation\readme.html
-Name: {group}\{cm:WhatsNew}; Filename: {app}\Documentation\changelog.html
+Name: {group}\{cm:ReadManual,{#MyAppName}}; Filename: {app}\Documentation\{language}\readme.html
+Name: {group}\{cm:WhatsNew,{#MyAppName}}; Filename: {app}\Documentation\{language}\changelog.html
 Name: {group}\{cm:JoinTwitter}; Filename: https://twitter.com/signup
 Name: {group}\{cm:ProgramOnTheWeb,{#MyAppName}}; Filename: {#MyAppURL}
 Name: {group}\{cm:UninstallProgram,{#MyAppName}}; Filename: {uninstallexe}
@@ -82,6 +82,8 @@ Name: {commondesktop}\{#MyAppName}; Filename: {app}\{#MyAppExeName}; Tasks: desk
 
 [Run]
 Filename: {app}\{#MyAppExeName}; Description: {cm:LaunchProgram,{#MyAppName}}; Flags: nowait postinstall skipifsilent
+filename: {app}\documentation\{language}\readme.html; Description: {cm:ReadManual,{#MyAppName}}; Flags: nowait postinstall skipifsilent unchecked
+filename: {app}\documentation\{language}\changelog.html; Description: {cm:WhatsNew,{#MyAppName}}; Flags: nowait postinstall skipifsilent unchecked
 
 [Code]
 function IssFindModule(hWnd: Integer; Modulename: PAnsiChar; Language: PAnsiChar; Silent: Boolean; CanIgnore: Boolean ): Integer;
