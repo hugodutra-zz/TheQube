@@ -6,6 +6,19 @@ The Qube change log
 
 =Change Log=[changelog]
 
+== The Qube 0.7==
+
+===Changes and fixes===
+
+- Now The Qube is versioned according to usually adopted system major.minor.patch. And, until the first stable version is released, the first digit will be zero, so this version is 0.7.
+- The Speech and Braille panels in the global The Qube configuration consolidated into one panel as the Braille panel contained only one check box.
+- The tweets translation service is back ([#27 https://github.com/Oire/TheQube/issues/27])
+- The audio links from rebranded AudioBoom are supported.
+- Now The Qube has a permanent multilingual [website http://theqube.oire.org]
+- Fixed: [#33: Switching sessions freezes the keyboard commands https://github.com/Oire/TheQube/issues/33]
+- Fixed: [#1: Keyboard commands don't work if the default keyboard layout is not set to English https://github.com/Oire/TheQube/issues/1]
+
+
 ==The Qube 1.0 beta 6==
 
 ===Changes===
