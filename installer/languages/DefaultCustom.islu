@@ -1,3 +1,6 @@
+﻿[LangOptions]
+LanguageCodePage=0
+
 [CustomMessages]
 ReadManual=Read %1 &documentation
 WhatsNew=&What's new in %1

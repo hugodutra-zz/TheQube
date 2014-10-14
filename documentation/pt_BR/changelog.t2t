@@ -1,0 +1,443 @@
+The Qube change log
+
+
+%!target: html
+%!options: -o changelog.html
+
+=Change Log=[changelog]
+
+== The Qube 0.7==
+
+===Changes and fixes===
+
+- Now The Qube is versioned according to usually adopted system major.minor.patch. And, until the first stable version is released, the first digit will be zero, so this version is 0.7.
+- The Speech and Braille panels in the global The Qube configuration consolidated into one panel as the Braille panel contained only one check box.
+- The tweets translation service is back ([#27 https://github.com/Oire/TheQube/issues/27])
+- The audio links from rebranded AudioBoom are supported.
+- Now The Qube has a permanent multilingual [website http://theqube.oire.org]
+- Now the website address in the profile info dialog won't be shortened with t.co.
+- Fixed: [#33: Switching sessions freezes the keyboard commands https://github.com/Oire/TheQube/issues/33]
+- Fixed: [#1: Keyboard commands don't work if the default keyboard layout is not set to English https://github.com/Oire/TheQube/issues/1]
+
+
+==The Qube 1.0 beta 6==
+
+===Changes===
+
+- Buffer update hotkey has been changed to Ctrl+Win+Alt+U to resolve a conflict with Windows 8 key assignments.
+- The Qube source has been moved to [Github https://github.com/Oire/TheQube]
+- Now The Qube has a bugtracker. It's located [here https://github.com/Oire/TheQube/issues].
+- Now you can decide whether to send messages by pressin Enter or by pressing Ctrl+Enter. The corresponding checkbox is located in The Qube configuration under the Miscellaneous tab. The default is to send messages with Enter, as it was earlier.
+- Now you can choose whether to upload audio to [SndUp http://sndup.net/] or [TwUp http://twup.me/].
+- The GoogleVoice session has been removed because it's impossible for developers to test the service (it works only in the USA).
+- Now the geo location information is spoken in the language you set for The Qube interface.
+- The keystrokes for following/unfollowing users changed to Ctrl+Win+S/Ctrl+Shift+Win+S to resolve conflict with JAWS 16 change language feature. To memorize the new keystrokes, consider them as "start/stop following".
+
+===Bugfixes===
+
+- Now you're able to send messages with line breaks in them. By default, a line break is inserted with Ctrl+Enter. However, you might want to set Ctrl+Enter to send messages, then you'll be able to insert a line break by pressing Enter.
+- Keystrokes editing works again.
+- Now you can select a voice for SAPI 5 speech if you use it for The Qube.
+- The geo location information is been reported correctly in all the ways (Ctrl+Win+G, Ctrl+Shift+Win+G, Ctrl+Shift+Win+Alt+G).
+
+==The Qube 1.0 Beta 5==
+
+===Changes===
+
+- Now The Qube supports Twitter API 1.1.
+- Added ability to provide an API key for SndUp.net to upload audio as a registered user.
+- Twitter API library changed from Tweepy to [Twython https://github.com/ryanmcgrath/twython/].
+
+
+==The Qube 1.0 Beta 4.3==
+
+===Changes===
+
+- Added the SndUp audio service to the seemingly ever growing list of supported audio playback services.
+- switched the audio upload capability to use SndUp.
+
+
+==The Qube 1.0 Beta 4.2==
+
+===Changes===
+
+- The Bing session has been removed as the API no longer seems to be functional.
+
+
+===Improvements===
+
+- Updates to documentation, the first since Beta 4 release, sorry about that.
+- redundant Bit.Ly, Goo.gl and met.al URL shorteners have been removed, let me know if you find any more that don't work.
+- 2 new URL shorteners have been added, xed.cc and clck.ru.
+- Added the ability to recognise twup.me links as audio links.
+- reactivated the audio attachment capability, which can now upload files to TwUp.
+- The Qube will now automatically append the #audio hashtag after successfull upload to TwUp, let me know if you think this is to intrusive.
+
+
+===Bugfixes===
+
+- Dolphin and SAPI speach should now work propperly again, let me know if you experience any further issues.
+
+
+==The Qube 1.0 Beta 4.1==
+
+===Improvements===
+
+- Added a dialog to the update manager to allow the user to decide whether to download and install an update to the Qube, or delay the update by 30 minutes, after which the dialog will be presented again.
+- Disabled the translate message button in the new message dialog as the Google translate API has been deprecated, let me know if you can think of a suitable replacement.
+- Disabled the attach audio button in the new message dialog since q-audio has been taken down.
+- Continued work on reducing storage footprint.
+- Added a force sync to disk keystroke as Qwitter used to have, accessible with ctrl + win + shift + alt + s.
+- The Qube can now play Sound Cloud links as it would q-audio / Audioboo links.
+- work on the google voice session, though it is far from perfect, since Google Voice is not accessible in the UK. GV users, I'd apreciate any help with this.
+- When creating new Twitter sessions, DM safe mode is now enabled by default.
+- durus.prepack files are now removed from sessions' folders on shutdown
+- session datafiles now reside in their corresponding session's folder, not in the root of The Qube's appdata folder!
+
+
+===Bugfixes===
+
+- More attempts at fixing the streamer to reconnect if connection is dropped.
+- Fixed keyboard help toggling.
+- keystrokes are no longer activated when keyboard help is on.
+- followers analysis now works again.
+
+
+==The Qube 1.0 Beta 4==
+
+===Improvements===
+
+- We now once again use Durus for storage.
+- Documentation has been updated.
+
+
+===Bugfixes===
+
+- Buffers: tralling through conversations no longer lags.
+- Buffers: favourites no longer exponentially expands.
+- Filters: oddities with URLs not being recognised, tweets not being displayed correctly, etc. are now fixed.
+- I18N: translations are once again available from the configuration dialog.
+- Streaming: initial attempts to reduce CPU spiking when a connection to the streaming API is lost.
+
+
+==The Qube 1.0 Beta 3==
+
+===Bugfixes===
+
+- Output: SAPI and NVDA now work as expected.
+
+
+==The Qube 1.0 Beta 2==
+
+===Changes===
+
+- The solona session has been removed as the service no longer seems to be functional.
+
+
+===Improvements===
+
+- The posting of audio tweets has been re-enabled.
+
+
+===Bugfixes===
+
+- Updater: the correct server location is now included. Please note that this build will need to be downloaded manually, but subsequent updates should work as expected.
+
+
+==The Qube 1.0 Beta 1==
+
+===Changes===
+
+- The client is now called 'The Qube'.
+- Temporarily disabled the posting of audio tweets whilst a new audio service is implemented.
+
+
+===Improvements===
+
+- Temporarily reverted to an older storage system to prevent lag when buffers receive new data
+
+
+===Bugfixes===
+
+- Storage: fixed occasional shutdown issues.
+- Setup: several minor improvements.
+
+
+==Qwitter 5.0 Beta 5==
+
+===Improvements===
+
+- UI: When dialogs are launched, modifier lock is now deactivated.
+
+
+===Bugfixes===
+
+- Messages: : The scheduling dialog for messages is once-again usable.
+
+
+==Qwitter 5.0 Beta 4==
+
+===Bugfixes===
+
+- Installer: Include more localization data in the build.
+- Storage: Fixed database compression task.
+
+
+==Qwitter 5.0 Beta 3==
+
+===Bugfixes===
+
+- Core: Successfully-handle a case which prevented starting on some xp machines.
+- Storage: Buffers now successfully clear
+- Output: Fixed sapi speech output.
+- Keyboard: Ensure key descriptions are included in build.
+
+
+==Qwitter 5.0 Beta2==
+
+===Bug fixes===
+
+- Output: NVDA and System Access once again work as selectable speech and Braille outputs.
+- Core: Restored filtering functionality
+- core: Fixed issue preventing global configuration dialog from launching.
+- I18n: Included language files in the installer.
+
+
+==Qwitter 5.0 Beta1==
+
+===Improvements===
+
+- Twitter: Qwitter now works with twitter's new requirements for authorization. Please see the upgrade notes at the beginning of the readme for details.
+- Core: Qwitter has switched to a new method of storage, resulting in vastly improved memory usage and better stability with sessions containing large numbers of items. This change also prepares the way for further improvements in the future.
+- Twitter: Qwitter now utilizes twitter's new streaming capabilities to instantly deliver new mentions and direct messages instead of waiting for the update interval.
+- Twitter: It is now possible to view and follow lists created by other users by pressing alt+win+shift+l.
+- Twitter: Qwitter now displays new-style retweets in the sent buffer, individual timeline buffers, and in the mentions buffer as appropriate. 
+- There is now an option in the Miscellaneous tab of the global configuration dialog to set whether Qwitter will start automatically with Windows
+- Qwitter is now able to automatically download updates directly from the qwitter web site.
+- You can now press alt+win+k to lock and unlock the ctrl+win modifier keys. This allows you to do the most common actions with single key commands, great when you are working with Qwitter for extended periods.
+- If qwitter is set to use SAPI, it is now possible to choose a different voice than the system default.
+- After using the translation feature, the source language is now displayed in the title bar of the dialog box containing the translated result.
+- Twitter: Qwitter now correctly identifies audio tweets, even if the audio link is not the first URL in the tweet.
+- Qwitter now provides progress indication for audio uploads.
+- twitter: Added the ability to indicate that the first URL in a tweet is an audio link by including the #audio hashtag
+- Qwitter will now speak an error message if no internet connection is available when attempting to stream audio.
+- Twitter: Added checkboxes to buffer config for choosing whether to use the default template.
+- Pressing ctrl+win+enter on an audio post now stops playback instead of pausing
+- New URL Shorteners: hkc.im, onj.me, and tinyArro.ws
+- If you replace a buffer with a filtered buffer, the replacement will now remain in effect after a restart.
+- Twitter: The profile dialog now includes the user's account ID on twitter.
+
+
+===bug fixes===
+
+- It should no longer be necessary to run qwitter as administrator on windows vista/7
+- Hopefully fix qwitter not properly exiting during Windows 7 shutdown.
+- Twitter: The problem of Qwitter occasionally retrieving duplicate tweets has been solved.
+- Twitter: Qwitter will no longer allow attempts to favorite a direct message. This is nott supported by the way the twitter API works.
+- Twitter: Fixed a bug where mention detection code would incorrectly detect a mention in the middle of an email address.
+- Fixed a bug causing apostrophes to not be translated correctly with the google translate feature.
+- Twitter: Fixed a bug where deleting a favorite of the user's own post would also delete the post from the user's timeline as well as removing the favorite.
+- Twitter: It is now possible to access the buffer configuration dialog when the buffer has been replaced by a filter.
+- Bing: buffers should now be retained across restarts.
+
+
+==Qwitter 4.5.1==
+
+===Improvements===
+
+- Twitter: It is now possible to translate tweets into different languages. Press win+alt+t while focused on a tweet to translate it. You can also press the translate button in a message dialog to translate your own tweet before sending.
+- Twitter: Added a list subscribers hotkey; for public lists, alt-win-[ now displays a list of users following the list.
+- Twitter: Added a $notifications user template variable which is true or false depending on device notifications status for a user.
+- Core: When deleting an item, Qwitter now automatically announces the next item to receive focus.
+
+
+===Bug Fixes===
+
+- Twitter: Fixed bug where Qwitter would not play back a recording if mute was on.
+- Twitter: All temporary files are now correctly removed once attaching audio has completed.
+- Twitter: Fixed bug where tweets containing invalid audio links would not be spoken (the blank tweet issue).
+- Twitter: Fixed bug where Qwitter would let you attach an audio file while recording.
+- Twitter: Qwitter now properly recognizes all q-audio links.
+- Twitter: Closing the attach audio dialog now properly stops any recording or playback that was in progress.
+- Twitter: Fixed a shortcut key conflict in new message dialogs; alt-c is now the shortcut for scheduling tweets while alt-s is for shortening URLs.
+- Google Voice: Calling with google voice now works; outbound calls can once again be placed.
+
+
+==Qwitter 4.5==
+
+===Improvements===
+
+- The Google Voice session is complete and has been reenabled for this release.
+- Filters: It is now possible to filter by regular expression.
+- Filters: It is now possible to create a stack of multiple filters without leaving the filter dialog.
+- Core: The interval for a buffer can now be set to 0, disabling all automatic updates for that buffer.
+- Core: Qwitter now syncs its data to disk when the computer is not in use. Automatic sync will still occur once per hour, but this should come as a welcome change for those with large sessions as there will be no periodic system sluggishness caused by writing a large amount of data to disk during other user operations.
+- Core: If you press the keystroke to launch a buffer while the buffer is visible,you will now be placed automatically in the buffer, rather than no announcement or action taking place.
+- Core: It is now possible to control the mute status for individual sessions or buffers.
+- Core: Replaced the old twitter-specific method of delaying posts with a generic schedule dialog.
+- Twitter: Qwitter will now default to using https for connecting to work around reported issues with corporate firewalls etc and for general Security
+- Twitter: Added the ability to record audio posts or select existing audio files to attach to your tweets.
+- Twitter: Added a "relationship status between" command that announces the relationship status between any two users. Keystroke is ctrl-win-alt- shift-semicolon.
+- Twitter: Added new commands to manage the users you have blocked. Press control+win+backslash to see the list and control+win+delete to unblock a user.
+- Twitter: Added a new "social network" command, ctrl+win+alt+right bracket.  After bringing up both your followers and friends buffers, you can issue this command and then choose from three types of social networks to display:  users whom you follow and who follow you back, users whom you follow who do not follow you back, and users who follow you but whom you do not follow back.
+
+
+===Changes in twitter lists===
+
+- Added a 'remove from list' keystroke, ctrl-win-alt-shift-l, to complement the 'add to list' keystroke.
+- Changed the list members keystroke from alt-win- left bracket to alt-win-right bracket. List members are analogous to friends, not followers.
+- Hitting ctrl-win-delete from within a list now deletes the post from the database, just as in any other tweet buffer.
+- Hitting ctrl-win-delete from within the list of list members now prompts the user to remove that user from the list, not unfollow the User.
+
+
+===Bug fixes===
+
+- Filters: Multiple nested filters work again
+- Core: Dialogs should now auto-size and auto-scroll to accommodate for any resolution size.  
+- Bing: It is once again possible to dismiss search results and news searches.
+- Twitter: Dismissing a saved search now correctly removes the search from twitter as well.
+- Twitter: Fixed the problem that prevented playing an audio post more than once.
+- Twitter: The favorites buffer will now properly-announce what type of items it is retrieving instead of "messages."
+- twitter: The tweet exporter has been fixed.
+- Twitter: Fixed a bug when deleting that would not allow one's own tweet or DM to be deleted if it couldn't be found on Twitter.
+
+
+===Other Changes===
+
+- Core: The option to set your prefered URL shortener has been moved to the miscellaneous tab of the global configuration dialog. 
+- Core: The goo.gl shortener has been added and is the new default shortener.
+
+
+==Qwitter 4.1.1==
+
+===Improvements===
+
+- Twitter: The sent buffer can now be filtered on tweet source
+
+
+===Bug Fixes===
+
+- Core: Fixed session renaming
+- Sound: Fixed a bug where the volume keys would only work in the last-initialized session.
+- Sound: If Qwitter detects the current soundcard is no longer valid it will attempt to re-initialize sound output.  This will not occur when USB headsets are plugged in, but it will when they are unplugged!
+- Twitter: The local trends buffer has been fixed.
+- Twitter: Fixed issues navigating in the view profile dialog.
+- twitter: Fixed several bugs related to filters.
+- twitter: Fixed a problem causing non-default buffers to not be recreated after restarting qwitter.
+- Twitter: Fixed broken geo location input dialog. 
+- Twitter: Fixed dialogs not reading correctly.
+- Twitter: The list URLs command can once again be used in buffers with a list of users, such as followers/friends. 
+
+
+==Qwitter 4.1==
+
+===Changed options===
+
+- The option to use standard Home/End handling in New Message dialogs has been moved from twitter configuration to main configuration.
+
+
+===Improvements===
+
+- Core: Implemented a possible fix for the reported errors on system shutdown experienced by some users.
+- Core: Qwitter now supports Hal and SuperNova from Dolphin.
+- Core: It is now possible to rename an existing session by pressing control+win+f2
+- URL Shortening: It is now possible to expand URLS that have been repeatedly shortened by more than one URL shortener.
+- core: Added volume control keystrokes control+alt+win+up and down arrows.
+- Twitter: the dialog for viewing another user's profile now has a button to follow or unfollow that user.
+- Twitter: Added tweet source to the list of available fields for filtering.
+- Twitter: From within a list buffer, you can now press win+alt+ left bracket to see the members of that list.
+- Twitter: Added support for playing back audio tweets from TWAudio or Audioboo.fm. By default, Qwitter will indicate that audio is available by speaking *audio* before the tweet. Press control+win+enter to hear the audio.
+- Twitter: If not focused on an audio post, ctrl+win+enter now opens the first URL of the focused item.
+- twitter: You can now choose to have a filter replace the buffer that is being filtered by checking the "replace source buffer" checkbox in the filter dialog.
+- Bing: You can search for the latest news stories on a given topic with bing. Press control+win+n to start a bing news search.
+
+
+===Bug Fixes===
+
+- Stopwatch: Fixed a bug that caused another countdown to be started when a countdown was completed.
+
+
+==Qwitter 4.0.2==
+
+===Improvements===
+
+- Twitter: Added a "mention all users" button to the reply dialog that will automatically insert mentions for all users appearing in the original tweet.
+- Templates have a new variable, $nl (for new line), providing additional control over formatting when copying to clipboard.
+
+
+===Bug Fixes===
+
+- Core: Fixed a bug where the parent buffer sometimes could not be dismissed after dismissing a filter buffer.
+- Core: Fixed another issue with braille under Window-Eyes.
+- Twitter: Fixed a bug where the URL manipulation buttons would sometimes appear in a tweet dialog even when no URL was present.
+- Twitter: the announcing of new items in list timelines no longer interrupts speach.
+- Twitter: Fixed a bug where followers analysis buffer would sometimes not populate on some non-English systems.
+
+
+==4.0.1==
+
+===Bug Fixes===
+
+- Core: Using braille on some systems no longer causes Qwitter to crash upon startup.
+- Twitter: Friends/followers buffers now update correctly if left open.
+- Twitter: Friends/followers buffers now honor mute settings when reporting new items.
+
+
+==Qwitter 4.0==[]
+
+===improvements===
+
+- Installer: Updated to include all supported languages which Inno also supports
+- Core: Added execute button to keyboard manager to run the selected function.
+- twitter: Qwitter will now announce basic reasons for API failures.
+- twitter: The relationship status command, ctrl-win-alt-semicolon, now works from within search buffers.
+- twitter: Improved templates tab in configuration dialog to be easier to understand
+- Twitter: Lists no longer automatically spawn upon starting Qwitter.
+
+
+===Bug Fixes===
+
+- Core: fixed several major errors that would break initial startup process associated with accessible_output
+- Core: All Qwitter commands that require inputting screen names can now be called from within an empty buffer.  These include individual timeline, new DM, user profile, etc.
+- Twitter: Fix the Update Profile dialog which somehow got mixed with the Add User To List dialog
+- Twitter: Search buffers once again honor retrieve count, instead of pulling 100 results every single time.
+- Sound: Fixed an issue where-by missing sounds would cause Qwitter to stop doing whatever was associated with said sound.
+- Solona: Removed the unnecessary Account tab from the Solona config dialog.
+- Exporter: The filename field in the exporter can now be tabbed to.
+- URL Shortening: The bit.ly URL shortener works again.
+- Keyboard Manager: The functions in the keystroke manager are now correctly sorted alphabetically, regardless of case.
+- Google Voice: Removed Google Voice from new session dialog, as it is currently in development and not yet supported.
+
+
+==Qwitter 4.0rc1==
+
+===Improvements===
+
+- Qwitter now uses oAuth via Twitter's xAuth protocol. This means that Qwitter is now granted 350 API calls per hour and will not cease functioning when Twitter deactivates Basic Authentication.
+- Rewrote conditional template system to be far more rational.
+- Refactored message dialogs for a more consistent presentation.
+- Decoupled Twitter login from configuration so that it is now extremely simple to modify Qwitter's settings without worrying about needing to wait to log in each time.
+- Improved URL-locating code.
+- Only display URL-manipulating buttons in a message dialog if it actually contains an URL.
+- Added ability to view relationship status for yourself and another user. (default keystroke control+win+alt+semicolon)
+- Added ability to move buffers around, control+alt+windows+left/right.
+- Added an option to use standard Home/End handling in New Message dialogs.
+- Created a standard login dialog.  I hope you enjoy it, you'll be seeing a lot of it for any session that requires logging in.
+- Added a stopwatch to the stopwatch session. Toggle it with control+win+return. 
+- Raised the retry count and retry delay for the Twitter API to handle errors more gracefully.
+
+
+===Bug Fixes===
+
+- Twitter: Fixed sent template errors.
+- Core: Fixed localized buffers not spawning and other i18n errors caused by PyDispatcher.
+- Twitter: Reversed the order of removal operation for Twitter buffer, and removed the redundant output.
+- Twitter: Fixed user search
+- Bing: Fixed Bing search
+- Sound: Fixed some issues with sound especially the issue which manifests in no max_length sound playing.
+- Core: Remove .hg directory from locale directory in installer..
+- Core: Make session existance be determined case-insensetively.  Thanks @Simon818
+- Twitter: Fixed the profile and update profile dialogs. 
+- Core: Fixed an error where Python reports that _ isn't defined on startup. 
+
+

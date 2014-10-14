@@ -82,8 +82,8 @@ Name: {commondesktop}\{#MyAppName}; Filename: {app}\{#MyAppExeName}; Tasks: desk
 
 [Run]
 Filename: {app}\{#MyAppExeName}; Description: {cm:LaunchProgram,{#MyAppName}}; Flags: nowait postinstall skipifsilent
-filename: {app}\documentation\{language}\readme.html; Description: {cm:ReadManual,{#MyAppName}}; Flags: nowait postinstall skipifsilent unchecked
-filename: {app}\documentation\{language}\changelog.html; Description: {cm:WhatsNew,{#MyAppName}}; Flags: nowait postinstall skipifsilent unchecked
+filename: {app}\documentation\{language}\readme.html; Description: {cm:ReadManual,{#MyAppName}}; Flags: shellexec runasoriginaluser nowait postinstall skipifsilent unchecked
+filename: {app}\documentation\{language}\changelog.html; Description: {cm:WhatsNew,{#MyAppName}}; Flags: shellexec runasoriginaluser nowait postinstall skipifsilent unchecked
 
 [Code]
 function IssFindModule(hWnd: Integer; Modulename: PAnsiChar; Language: PAnsiChar; Silent: Boolean; CanIgnore: Boolean ): Integer;

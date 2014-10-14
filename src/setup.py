@@ -1,4 +1,4 @@
-# -*- coding: utf-8
+# -*- coding: utf-8 -*-
 
 
 from setuptools import setup, find_packages
@@ -6,10 +6,12 @@ import py2exe, innosetup
 import shutil
 from glob import glob
 import os
+from logger import logger
+logging = logger.getChild("Installer")
 
 
 name = 'The Qube'
-__version__ = 1.0
+__version__ = 0.7
 __author__ = 'Andre Polykanine A.K.A. Menelion Elensúlë'
 DELETE_DIRS = (
  'build',
@@ -20,8 +22,7 @@ DELETE_DIRS = (
 
 [shutil.rmtree(i, ignore_errors=True) for i in DELETE_DIRS]
 def get_datafiles():
- return [("", ["main.defaults"] + glob('*.exe') + glob("*.dll")),
-("Documentation", glob("../documentation/*/*.html")),
+ return [("", ["main.defaults"] + glob('*.exe') + glob("*.dll"))
 ] + list_all_documentation() + list_session_defaults()  + accessible_output_data() + sound_lib_data() + requests_data() + get_soundpacks() + get_locales()
 
 def accessible_output_data():
@@ -60,8 +61,6 @@ def get_soundpacks():
 def get_locales():
  answer = []
  for root, dirs, files in os.walk('locale'):
-  if ".hg" in dirs:
-   dirs.remove(".hg")
   new = (root, glob(os.path.join(root, '*.mo')))
   answer.append(new)
  return answer
@@ -70,12 +69,12 @@ def list_all_documentation ():
  answer = []
  depth = 6
  for root, dirs, files in os.walk('../Documentation'):
-  if ".hg" in dirs:
-   dirs.remove(".hg")
-  elif depth == 0:
+  if depth == 0:
    break
-  new = (root, [os.path.join(root.replace('/', '\\'), 'Readme.html')])
-  answer.append(new)
+  readme = (root[3:], [os.path.join(root, 'readme.html')])
+  answer.append(readme)
+  changelog = (root[3:], [os.path.join(root, 'changelog.html')])
+  answer.append(changelog)
   depth -= 1
  return answer
 
@@ -85,7 +84,7 @@ if __name__ == '__main__':
   author = __author__,
   author_email = "andre@oire.org",
   version = __version__,
-  url = 'http://theqube.2fh.co/',
+  url = 'http://theqube.oire.org/',
   packages = find_packages(),
   data_files = get_datafiles(),
   options = {

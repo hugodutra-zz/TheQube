@@ -18,6 +18,8 @@ The Qube change log
 - Now the website address in the profile info dialog won't be shortened with t.co.
 - Fixed: [#33: Switching sessions freezes the keyboard commands https://github.com/Oire/TheQube/issues/33]
 - Fixed: [#1: Keyboard commands don't work if the default keyboard layout is not set to English https://github.com/Oire/TheQube/issues/1]
+- Fixed: [#35: The Qube requires to be run as administrator under Windows 8.X https://github.com/Oire/TheQube/issues/35]
+- Fixed: [#44: Language of the documentation doesn't correspond to the language chosen during installation https://github.com/Oire/TheQube/issues/44]
 
 
 ==The Qube 1.0 beta 6==

@@ -1,3 +1,6 @@
+﻿[LangOptions]
+LanguageCodePage=0
+
 [CustomMessages]
 ReadManual=Прочитати &документацію %1
 WhatsNew=&Що є нового у %1
