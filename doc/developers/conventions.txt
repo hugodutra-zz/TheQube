@@ -1,7 +1,0 @@
-Here, listed in no particular order, are the code conventions we use in Qwitter.  As more arise, feel free to add them to this file.
-Single-space indent.
-Spaces around assignment and comparison operators for easy word-by-word navigation with screen readers.  For example:
-if a == b: answer = a
-Configuration file entries should be camel-case.  For example:
-tweetLength=integer(default=140)
-When writing strings that will be seen by users, make sure to use the _("string") syntax so that the strings can be translated.

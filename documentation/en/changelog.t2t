@@ -15,7 +15,10 @@ The Qube change log
 - The tweets translation service is back ([#27 https://github.com/Oire/TheQube/issues/27])
 - The audio links from rebranded AudioBoom are supported.
 - Now The Qube has a permanent multilingual [website http://theqube.oire.org]
+- Now Ctrl+BackSpace works in new message dialogs, allowing to delete previous word.
 - Now the website address in the profile info dialog won't be shortened with t.co.
+- Now the profile info dialog shows also the number of users that added the current user to their lists.
+- The doc folder is removed from sources as it doesn't contain any meaningful guidelines for The Qube developers. If the number of developers grows, such guidelines will be rewritten.
 - Fixed: [#33: Switching sessions freezes the keyboard commands https://github.com/Oire/TheQube/issues/33]
 - Fixed: [#1: Keyboard commands don't work if the default keyboard layout is not set to English https://github.com/Oire/TheQube/issues/1]
 - Fixed: [#35: The Qube requires to be run as administrator under Windows 8.X https://github.com/Oire/TheQube/issues/35]

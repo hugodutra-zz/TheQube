@@ -222,7 +222,7 @@ class NewMessageDialog(SquareDialog):
   super(NewMessageDialog, self).finish_setup(*args, **kwargs)
 
  def setup_message_field(self, text=""):
-  self.message = self.labeled_control(_("Message:"), wx.TextCtrl, style=wx.TE_MULTILINE|wx.WANTS_CHARS, size=(400, -1))
+  self.message = self.labeled_control(_("Message:"), wx.TextCtrl, style=wx.TE_RICH2 | wx.TE_MULTILINE|wx.WANTS_CHARS, size=(400, -1))
   self.message.Bind(wx.EVT_CHAR, self.charPressed)
   self.message.Bind(wx.EVT_TEXT, self.textUpdated)
   self.message.SetSizerProps(expand=True)
