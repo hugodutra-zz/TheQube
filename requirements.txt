@@ -6,6 +6,9 @@ geopy
 innosetup
 oauth2>=1.0.2
 oauthlib>=0.4.2
-requests
 twisted
 zope.interface==3.6.1
+
+# Make sure those are the latest of the latest
+git+https://github.com/kennethreitz/requests#egg=requests&subdirectory=requests
+git+https://github.com/ryanmcgrath/twython#egg=twython&subdirectory=twython
