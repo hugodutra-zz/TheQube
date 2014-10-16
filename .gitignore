@@ -35,3 +35,6 @@ nosetests.xml
 *.html
 # Extra soundpacks
 src/sounds/*
+
+# Translation catalogs
+*.pot
