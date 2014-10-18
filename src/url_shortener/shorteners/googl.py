@@ -1,10 +1,11 @@
+# -*- encoding: utf-8 -*-
+
 import requests
 import json
-import output
 
 from url_shortener import URLShortener
 from logger import logger
-logging = logger.getChild("core.UrlShorteners.gooGl")
+logging = logger.getChild("core.UrlShorteners.GooGl")
 
 class GooglShortener (URLShortener):
  api_url = "https://www.googleapis.com/urlshortener/v1/url"
@@ -31,4 +32,4 @@ class GooglShortener (URLShortener):
 
 
  def created_url (self, url):
-  return 'clck.ru' in url
+  return 'goo.gl' in url

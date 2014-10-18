@@ -8,7 +8,7 @@ The Qube change log
 
 == The Qube 0.7==
 
-===Changes and fixes===
+===Changes===
 
 - Now The Qube is versioned according to usually adopted system major.minor.patch. And, until the first stable version is released, the first digit will be zero, so this version is 0.7.
 - The Speech and Braille panels in the global The Qube configuration consolidated into one panel as the Braille panel contained only one check box.
@@ -19,6 +19,12 @@ The Qube change log
 - Now the website address in the profile info dialog won't be shortened with t.co.
 - Now the profile info dialog shows also the number of users that added the current user to their lists.
 - The doc folder is removed from sources as it doesn't contain any meaningful guidelines for The Qube developers. If the number of developers grows, such guidelines will be rewritten.
+- Temporarily removed support of the hkc.im URL shortener because of a service error, see [their main page http://hkc.im]
+- Added support for new URL shortening services, namely goo.gl, senta.la and Readability
+
+
+===Bugfixes===
+
 - Fixed: [#33: Switching sessions freezes the keyboard commands https://github.com/Oire/TheQube/issues/33]
 - Fixed: [#1: Keyboard commands don't work if the default keyboard layout is not set to English https://github.com/Oire/TheQube/issues/1]
 - Fixed: [#35: The Qube requires to be run as administrator under Windows 8.X https://github.com/Oire/TheQube/issues/35]

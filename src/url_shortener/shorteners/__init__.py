@@ -7,4 +7,7 @@ from tinyarrows import TinyArrowsShortener
 from tinyurl import TinyurlShortener
 from xedcc import XedccShortener
 from clckru import ClckruShortener
-__all__ = ["GooglShortener", "IsgdShortener", "OnjmeShortener", "TinyArrowsShortener", "TinyurlShortener", "XedccShortener", "ClckruShortener"]
+from sentala import SentalaShortener
+from readability import ReadabilityShortener
+
+__all__ = sorted(["GooglShortener", "IsgdShortener", "OnjmeShortener", "TinyArrowsShortener", "TinyurlShortener", "XedccShortener", "ClckruShortener", "SentalaShortener", "ReadabilityShortener"])
