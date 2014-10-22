@@ -1,4 +1,4 @@
-# -*- coding: utf-8
+# -*- coding: utf-8 -*-
 
 from logger import logger
 logging = logger.getChild('meta_interface')
@@ -13,6 +13,7 @@ import threading
 import shutdown
 import wx
 import signals
+import i18n
 from pydispatch import dispatcher
 from utils.thread_utils import call_threaded
 from utils.wx_utils import always_call_after, modal_dialog, question_dialog
@@ -75,7 +76,7 @@ class MetaInterface (object):
   info = wx.AboutDialogInfo()
   info.Name = application.name
   info.Version = str(application.version)
-  info.Copyright = _("Copyright © 2013 — 2014 {0}.".format(application.author))
+  info.Copyright = _(u"Copyright © 2013 — 2014 %s." % application.author)
   info.WebSite = application.url
   application.main_frame.Raise()
   wx.AboutBox(info) 

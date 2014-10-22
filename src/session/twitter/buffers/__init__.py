@@ -11,7 +11,6 @@ from followers import Followers
 from followers_analysis import FollowersAnalysis
 from friends import Friends
 from blocked import Blocked
-from public import Public
 from individual import Individual
 from favorites import Favorites
 from retweets import Retweets

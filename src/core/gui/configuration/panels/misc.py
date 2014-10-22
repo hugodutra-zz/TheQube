@@ -23,7 +23,7 @@ class MiscPanel (ConfigurationPanel):
   self.audioServices.Bind(wx.EVT_COMBOBOX, self.onChange)
   self.audioServices.SetSizerProps(expand=True)
   self.sndupKeySizer = wx.BoxSizer(wx.HORIZONTAL)
-  self.sndupKeyLabel = wx.StaticText(parent=self, label=_("Your Sndup.net API Key:"))
+  self.sndupKeyLabel = wx.StaticText(parent=self, label=_("Your %s API Key (optional):") % "sndup.net")
   self.sndupKey = wx.TextCtrl(parent=self)
   self.sndupKey.SetSizerProps(expand=True)
   self.sndupKeySizer.Add(self.sndupKeyLabel)

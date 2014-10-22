@@ -1,8 +1,8 @@
-# -*- coding: utf-8
+# -*- coding: utf-8 -*-
 
 name = 'The Qube'
-version = '1.0beta6'
+version = '0.7'
 author = u'Andre Polykanine A.K.A. Menelion Elensúlë'
-url = "http://theqube.2fh.co"
+url = "http://theqube.oire.org"
 # @TODO: Should be changed!
 update_url = 'http://quartzprojects.co.uk/software/beta/updates/the_qube/update.json'

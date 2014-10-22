@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from logger import logger
 logging = logger.getChild('sessions.twitter.main')
 
@@ -21,17 +23,33 @@ import signals
 import stream
 import time
 import wx
-
+import BaseHTTPServer
+import webbrowser
+from urlparse import urlparse, parse_qs
 from core.sessions.buffers  import Buffers
 from session import Login
 from core.sessions.hotkey.hotkey import Hotkey
-from session import HttpServer
 from session import SpeechRecognition
 from session import WebService
 from twython import Twython, TwythonError
 
+logged = False
+verifier = None
 
-class Twitter (Buffers, Login, Hotkey, HttpServer, SpeechRecognition, WebService):
+class Handler(BaseHTTPServer.BaseHTTPRequestHandler):
+
+ def do_GET(self):
+  global logged
+  self.send_response(200)
+  self.send_header("Content-type", "text/html")
+  self.end_headers()
+  logged = True
+  params = parse_qs(urlparse(self.path).query)
+  global verifier
+  verifier = params.get('oauth_verifier', [None])[0]
+  self.wfile.write(_("You have successfully logged in to Twitter! Now please close this window and happy tweeting!"))
+
+class Twitter (Buffers, Login, Hotkey, SpeechRecognition, WebService):
 
  def __init__(self, *args, **kwargs):
   super(Twitter, self).__init__(*args, **kwargs)
@@ -65,19 +83,15 @@ class Twitter (Buffers, Login, Hotkey, HttpServer, SpeechRecognition, WebService
  @always_call_after
  def retrieve_access_token (self):
   output.speak(_("Please wait while an access token is retrieved from Twitter."), True)
-  self.check_twitter_connection()
-  auth_props = self.auth_handler.get_authentication_tokens()
-  oauth_token = auth_props['oauth_token']
-  oauth_token_secret = auth_props['oauth_token_secret']
-  url = auth_props['auth_url']
-  misc.open_url_in_browser(url)
-  dlg = wx.TextEntryDialog(caption=_("Twitter Login"), message=_("Please enter the verification code from Twitter for session %s") % self.name, parent=self.frame)
-  dlg.Raise()
-  if dlg.ShowModal() != wx.ID_OK:
-   raise ValueError("User canceled login")
-  verification = dlg.GetValue().strip()
-  self.auth_handler = Twython(str(self.config['oauth']['twitterKey']), str(self.config['oauth']['twitterSecret']), oauth_token, oauth_token_secret)
-  token = self.auth_handler.get_authorized_tokens(verification)
+  httpd = BaseHTTPServer.HTTPServer(('127.0.0.1', 7823), Handler)
+  logging.debug("@httpd: %s" % str(httpd))
+  auth_props = self.auth_handler.get_authentication_tokens(callback_url = "http://127.0.0.1:7823")
+  webbrowser.open_new_tab(auth_props['auth_url'])
+  global logged, verifier
+  while logged == False:
+   httpd.handle_request()
+  self.auth_handler = Twython(str(self.config['oauth']['twitterKey']), str(self.config['oauth']['twitterSecret']), auth_props['oauth_token'], auth_props['oauth_token_secret'])
+  token = self.auth_handler.get_authorized_tokens(verifier)
   output.speak(_("Retrieved access token from Twitter."), True)
   self.config['oauth']['userKey'] = token['oauth_token']
   self.config['oauth']['userSecret'] = token['oauth_token_secret']

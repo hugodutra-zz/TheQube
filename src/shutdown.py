@@ -12,7 +12,7 @@ import sessions
 import signals
 import wx
 
-def exit ():
+def exit():
  logging.debug("Shutting down %s" % application.name)
  dispatcher.send(sender=dispatcher.Anonymous, signal=signals.shutdown)
  sessions.shutdown(end=True)

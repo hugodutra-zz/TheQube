@@ -4,6 +4,7 @@
 # A part of The Qube accessible social networking client
 # Copyright © Andre Polykanine A.K.A. Menelion Elensúlë, 2014
 
+from __future__ import unicode_literals
 from logger import logger
 logging = logger.getChild('core.gui.new_message')
 
@@ -229,6 +230,7 @@ class NewMessageDialog(SquareDialog):
   self.message.SetValue(text)
   #Deselect any current text.
   self.message.SetSelection(len(self.message.GetValue()),len(self.message.GetValue()))
+
 
  def setup_url_shortener_buttons (self):
   logging.debug("Setting up URL buttons.")

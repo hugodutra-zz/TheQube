@@ -1,4 +1,4 @@
-# -*- coding: utf-8
+# -*- coding: utf-8 -*-
 
 from logger import logger
 logging = logger.getChild('sessions.twitter.interface')
@@ -26,7 +26,7 @@ import sessions
 import templates
 import time
 import wx
-
+import traceback
 from core.sessions.buffers.interface import BuffersInterface
 from core.sessions.hotkey.interface import HotkeyInterface
 from meta_interface import MetaInterface
@@ -229,11 +229,6 @@ class TwitterInterface (BuffersInterface, HotkeyInterface, MetaInterface):
 
   self.session.register_buffer(_("Trending: Worldwide"), buffers.TopTrends)
 
- def PublicTimeline(self):
-  """Creates a buffer containing snapshots of twitters public timeline."""
-
-  self.session.register_buffer(_("Public Timeline"), buffers.Public, prelaunch_message=_("Loading public timeline."))
- 
  def Favorites(self):
   """Creates a buffer containing the tweets you have favorited."""
 
