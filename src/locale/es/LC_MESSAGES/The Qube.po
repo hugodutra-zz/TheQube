@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: The Qube 0.7\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-10-18 19:33+FLE Daylight Time\n"
-"PO-Revision-Date: 2014-10-18 23:11+0200\n"
+"PO-Revision-Date: 2014-10-22 22:31+0200\n"
 "Last-Translator: Andre Polykanine A.K.A. Menelion Elensúlë <menelion@oire."
 "org>\n"
 "Language-Team: The Qube translation team <theqube@lists.oire.org>\n"
@@ -33,11 +33,11 @@ msgstr "&Borrar sesión..."
 
 #: ../src\core\gui\SessionManager\main.py:26
 msgid "&New session..."
-msgstr "Sesión &nueva..."
+msgstr "&Nueva sesión..."
 
 #: ../src\core\gui\SessionManager\main.py:40
 msgid "Are you sure you want to close session %s?"
-msgstr "¿Seguro que quieres cerrar la sesión %s?"
+msgstr "¿Estás seguro de que quieres cerrar la sesión %s?"
 
 #: ../src\core\gui\SessionManager\main.py:40
 msgid "Remove session"
@@ -84,7 +84,7 @@ msgstr "Nombre"
 
 #: ../src\core\gui\SessionManager\new_session.py:9
 msgid "New Session"
-msgstr "Sesión nueva"
+msgstr "Nueva sesión"
 
 #: ../src\core\gui\SessionManager\new_session.py:11
 msgid "Session type:"
@@ -103,9 +103,8 @@ msgid "Language"
 msgstr "Idioma"
 
 #: ../src\core\gui\configuration\main.py:25
-#, fuzzy
 msgid "Speech and Braille"
-msgstr "Velocidad del habla"
+msgstr "Braille y voz"
 
 #: ../src\core\gui\configuration\main.py:27
 msgid "Navigation"
@@ -118,40 +117,36 @@ msgstr "Miscelánea"
 
 #: ../src\core\gui\configuration\panels\language.py:10
 msgid "Language Selection:"
-msgstr "Selección de idioma:"
+msgstr "seleccionar idioma:"
 
 #: ../src\core\gui\configuration\panels\misc.py:14
-#, fuzzy
 msgid "Automatically start %s after Windows log on"
-msgstr "¿Iniciar %s automáticamente tras iniciar sesión en windows?"
+msgstr "Iniciar %s automáticamente tras iniciar sesión en windows"
 
 #: ../src\core\gui\configuration\panels\misc.py:15
-#, fuzzy
 msgid "Show confirmation dialog before exiting %s"
-msgstr "¿Mostrar diálogo de confirmación antes de salir de %s?"
+msgstr "Mostrar diálogo de confirmación antes de salir de %s"
 
 # Acortador no es la mejor traducción.
 #: ../src\core\gui\configuration\panels\misc.py:16
-#, fuzzy
 msgid "Preferred URL Shortener:"
-msgstr "Acortador de URLs preferido:"
+msgstr "Acortador de URLS preferido:"
 
 #: ../src\core\gui\configuration\panels\misc.py:19
 msgid "Preferred audio service:"
-msgstr ""
+msgstr "Servicio de audio preferido:"
 
 #: ../src\core\gui\configuration\panels\misc.py:26
 msgid "Your %s API Key (optional):"
-msgstr ""
+msgstr "Tu API Key para %s (opcional):"
 
 #: ../src\core\gui\configuration\panels\misc.py:31
 msgid "Send messages with Enter"
-msgstr ""
+msgstr "Enviar mensajes con énter."
 
 #: ../src\core\gui\configuration\panels\misc.py:32
-#, fuzzy
 msgid "Perform standard actions with Home/End keys"
-msgstr "¿Realizar acciones estándar con teclas inicio y fin?"
+msgstr "Realizar acciones estándar con las teclas inicio y fin"
 
 #: ../src\core\gui\configuration\panels\navigation.py:7
 msgid "Move by percentage amount (as a %)"
@@ -190,14 +185,12 @@ msgid "Braille Output:"
 msgstr "Salida Braille:"
 
 #: ../src\core\gui\configuration\panels\speech.py:30
-#, fuzzy
 msgid "Braille spoken text"
-msgstr "¿Texto hablado en braille?"
+msgstr "deseas verbalización al usar salida braille"
 
 #: ../src\core\gui\configuration\panels\speech.py:31
-#, fuzzy
 msgid "Enable speech recognition"
-msgstr "¿Activar reconocimiento de voz?"
+msgstr "Activar reconocimiento de voz"
 
 #: ../src\core\gui\list_urls.py:15
 msgid "URL Selection"
@@ -251,8 +244,8 @@ msgid ""
 "No URLs were found to shorten. If there is one, select the URL and click "
 "this button again."
 msgstr ""
-"No se encontraron URLs para acortar. Si hay alguna, selecciónala y pulsa "
-"este botón de nuevo."
+"No se encontró ninguna URL para acortar. Si hay alguna, selecciónala y pulsa "
+"este botón otra vez."
 
 #: ../src\core\gui\new_message.py:96
 msgid "URL Shortener - Select URL"
@@ -327,18 +320,17 @@ msgstr "Adjuntando..."
 
 #: ../src\core\gui\new_message.py:264
 msgid "Upload in progress"
-msgstr ""
+msgstr "Cargando..."
 
 #: ../src\core\gui\new_message.py:273
 msgid "There was an error attaching the file."
-msgstr "Error al adjuntar el archivo."
+msgstr "Ocurrió un error al adjuntar el archivo."
 
 #: ../src\core\gui\new_message.py:283
 msgid "File attached."
 msgstr "Archivo adjuntado."
 
 #: ../src\core\gui\new_message.py:293
-#, fuzzy
 msgid "Resetting currently scheduled item."
 msgstr "Reiniciando elemento programado actualmente."
 
@@ -372,7 +364,7 @@ msgstr "Adjuntar audio"
 
 #: ../src\core\gui\recording.py:24 ../src\core\gui\recording.py:65
 msgid "&Record"
-msgstr "G&rabar"
+msgstr "&Grabar"
 
 #: ../src\core\gui\recording.py:26
 msgid "Attach existing audio &file..."
@@ -393,7 +385,7 @@ msgstr "&Adjuntar"
 
 #: ../src\core\gui\recording.py:57 ../src\core\gui\recording.py:109
 msgid "&Stop"
-msgstr "Parar."
+msgstr "&Parar."
 
 #: ../src\core\gui\recording.py:58
 msgid "Recording."
@@ -622,9 +614,8 @@ msgid "Number of posts to download per update"
 msgstr "Número de mensajes a descargar por actualización"
 
 #: ../src\core\sessions\buffers\gui\configuration\twitter\panels\buffer.py:19
-#, fuzzy
 msgid "Search for "
-msgstr "Buscar %s"
+msgstr "Buscar"
 
 #: ../src\core\sessions\buffers\gui\configuration\twitter\panels\buffer.py:20
 msgid "Max API calls to use per update (1 API call = 100 results)"
@@ -671,7 +662,7 @@ msgstr "Formato"
 
 #: ../src\core\sessions\buffers\gui\export\panels\format_panel.py:9
 msgid "Export Format"
-msgstr "Fomrato de exportación"
+msgstr "Formato de exportación"
 
 #: ../src\core\sessions\buffers\gui\export\panels\format_panel.py:13
 msgid "Filename"
@@ -703,11 +694,11 @@ msgstr "Rango"
 
 #: ../src\core\sessions\buffers\gui\export\panels\items_panel.py:19
 msgid "All (bottom to top)"
-msgstr "Todos (de abajo a arriba)"
+msgstr "Todos (de abajo hacia arriba)"
 
 #: ../src\core\sessions\buffers\gui\export\panels\items_panel.py:19
 msgid "All (top to bottom)"
-msgstr "Todos (de arriba a abajo)"
+msgstr "Todos (de arriba hacia abajo)"
 
 #: ../src\core\sessions\buffers\gui\export\panels\items_panel.py:19
 msgid "Custom"
@@ -735,7 +726,7 @@ msgstr "&Añadir"
 
 #: ../src\core\sessions\buffers\gui\filter.py:22
 msgid "&Remove"
-msgstr "Bo&rrar"
+msgstr "&Borrar"
 
 #: ../src\core\sessions\buffers\gui\filter.py:24
 msgid "Use a regular expression"
@@ -797,20 +788,20 @@ msgstr "Sin listas activas en sesión %s"
 
 #: ../src\core\sessions\buffers\interface.py:129
 msgid "There are no buffers to dismiss."
-msgstr "No hay listas a descartar."
+msgstr "No hay listas para descartar."
 
 #: ../src\core\sessions\buffers\interface.py:131
 #: ../src\core\sessions\buffers\interface.py:137
 msgid "Unable to dismiss buffer %s"
-msgstr "Imposible descartar lista %s"
+msgstr "Imposible eliminar lista %s"
 
 #: ../src\core\sessions\buffers\interface.py:145
 msgid "Undo failed: stack empty"
-msgstr "Fallo al deshacer: pila vacía"
+msgstr "Error al deshacer: pila vacía"
 
 #: ../src\core\sessions\buffers\interface.py:148
 msgid "Undo failed: buffer no longer exists"
-msgstr "Fallo al deshacer: ya no existe la lista"
+msgstr "Error al deshacer: ya no existe la lista"
 
 #: ../src\core\sessions\buffers\interface.py:160
 msgid "This buffer cannot be cleared."
@@ -830,7 +821,7 @@ msgstr "Número de elemento demasiado alto."
 
 #: ../src\core\sessions\buffers\interface.py:192
 msgid "Processing.  Please wait."
-msgstr "Procesando. Espera, por favor."
+msgstr "Procesando.Por favor espera."
 
 #: ../src\core\sessions\buffers\interface.py:207
 msgid "Item copied to clipboard."
@@ -843,19 +834,19 @@ msgstr "Movido"
 
 #: ../src\core\sessions\buffers\interface.py:235
 msgid "The export function is not available."
-msgstr "Función de exportación no disponible."
+msgstr "La función de exportación no está disponible."
 
 #: ../src\core\sessions\buffers\interface.py:237
 msgid "Export started, please wait."
-msgstr "Iniciada exportación, espera, por favor."
+msgstr "Se ha iniciado la exportación, por favor espera."
 
 #: ../src\core\sessions\buffers\interface.py:241
 msgid "Export complete"
-msgstr "Exportación completa"
+msgstr "Exportación finalizada"
 
 #: ../src\core\sessions\buffers\interface.py:253
 msgid "Export failed."
-msgstr "Fallo en la exportación."
+msgstr "La función de exportación ha fallado"
 
 #: ../src\core\sessions\buffers\interface.py:260
 msgid "No buffers in this session."
@@ -872,7 +863,7 @@ msgstr "Configuración de la lista %s"
 #: ../src\core\sessions\buffers\interface.py:281 ../src\meta_interface.py:42
 #: ../src\session\twitter\twitter.py:182
 msgid "Configuration saved."
-msgstr "Configuración grabada."
+msgstr "Configuración guardada."
 
 #: ../src\core\sessions\buffers\interface.py:284
 #: ../src\session\twitter\twitter.py:176
@@ -946,9 +937,8 @@ msgid "Keymap:"
 msgstr "Mapa de teclado:"
 
 #: ../src\core\sessions\hotkey\gui\main.py:27
-#, fuzzy
 msgid "E&xecute Function"
-msgstr "Función"
+msgstr "Ejecutar función"
 
 #: ../src\core\sessions\hotkey\gui\main.py:29
 msgid "&Add..."
@@ -1022,7 +1012,7 @@ msgstr "Más bajo."
 
 #: ../src\core\sessions\sound\sound.py:80
 msgid "No internet connection could be opened."
-msgstr "No pudo abrirse conexión a internet."
+msgstr "No pudo abrirse la conexión a internet."
 
 #: ../src\core\sessions\sound\sound.py:83
 msgid "Unable to play audio."
@@ -1046,7 +1036,7 @@ msgstr "Silencio global activado"
 
 #: ../src\core\sessions\storage\storage.py:59
 msgid "Sync failed."
-msgstr "Fallo de sincronización."
+msgstr "La sincronización ha fallado"
 
 #: ../src\core\sessions\storage\storage.py:63
 msgid "Sync completed."
@@ -1066,7 +1056,7 @@ msgstr "Bienvenido a %s"
 
 #: ../src\main.pyw:45
 msgid "There was an error in the startup process.  We appologize for this."
-msgstr "Se produjo un error al iniciar. Nos disculpamos por ello."
+msgstr "Lo sentimos, se produjo un error al iniciar el procesoº"
 
 #: ../src\meta_interface.py:40
 msgid "%s Configuration"
@@ -1102,7 +1092,7 @@ msgstr "Borrar sesión..."
 
 #: ../src\meta_interface.py:122
 msgid "Please enter a name for this session."
-msgstr "Da un nombre a esta sesión, por favor."
+msgstr "Por favor, introduce un nombre para esta sesión."
 
 #: ../src\meta_interface.py:127
 msgid "Unable to spawn new %s session."
@@ -1110,7 +1100,7 @@ msgstr "Imposible abrir nueva sesión %s."
 
 #: ../src\meta_interface.py:143
 msgid "Please enter a new name for session %s:"
-msgstr "Introduce un nuevo nombre para la sesión %s, por favor."
+msgstr "Introduce un nuevo nombre para la sesión %s:"
 
 #: ../src\meta_interface.py:143
 msgid "Rename %s session"
@@ -1190,7 +1180,7 @@ msgstr "%d años"
 
 #: ../src\output.py:48
 msgid "No current session."
-msgstr "No hay sesión actual."
+msgstr "No hay sesión."
 
 #: ../src\session\login.py:32
 msgid "Login succeeded."
@@ -1198,7 +1188,7 @@ msgstr "Éxito al identificarse."
 
 #: ../src\session\login.py:35
 msgid "Login failed."
-msgstr "Fallo de identificación."
+msgstr "Error de identificación."
 
 #: ../src\session\speech_recognition.py:39
 msgid "Unable to initialize speech recognition."
@@ -1347,7 +1337,7 @@ msgstr "tuits de %s"
 
 #: ../src\session\twitter\buffers\list_members.py:19
 msgid "list member"
-msgstr "miembro del grupo"
+msgstr "miembro de la lista"
 
 #: ../src\session\twitter\buffers\list_members.py:20
 msgid "list members"
@@ -1356,7 +1346,7 @@ msgstr "Lista de miembros"
 #: ../src\session\twitter\buffers\list_members.py:34
 #: ../src\session\twitter\buffers\list_subscribers.py:34
 msgid "Are you sure you wish to remove %s from list %s?"
-msgstr "¿Seguro que quieres borrar %s del grupo %s?"
+msgstr "¿Seguro que quieres borrar %s de la lista %s?"
 
 #: ../src\session\twitter\buffers\list_members.py:34
 #: ../src\session\twitter\buffers\list_subscribers.py:34
@@ -1367,15 +1357,15 @@ msgstr "Borrar usuario"
 #: ../src\session\twitter\buffers\list_subscribers.py:38
 #: ../src\session\twitter\interface.py:681
 msgid "removing %s from list %s."
-msgstr "Borrando %s del grupo %s."
+msgstr "Borrando %s del lista %s."
 
 #: ../src\session\twitter\buffers\list_subscribers.py:19
 msgid "list subscriber"
-msgstr "suscriptor del grupo"
+msgstr "suscriptor a la lista"
 
 #: ../src\session\twitter\buffers\list_subscribers.py:20
 msgid "list subscribers"
-msgstr "suscriptores del grupo"
+msgstr "suscriptores a la lista"
 
 #: ../src\session\twitter\buffers\local_trends.py:15
 msgid "local trend"
@@ -1453,7 +1443,7 @@ msgstr "guardando búsqueda %s"
 
 #: ../src\session\twitter\buffers\search.py:47
 msgid "Destroying saved search %s"
-msgstr "Destruyenddo búsqueda guardada %s"
+msgstr "ºBorrando búsqueda guardada %s"
 
 #: ../src\session\twitter\buffers\sent.py:22
 msgid "sent item"
@@ -1754,35 +1744,35 @@ msgstr "Lista de:"
 
 #: ../src\session\twitter\gui\list_manager\add_list.py:11
 msgid "List name:"
-msgstr "Nombre del grupo:"
+msgstr "Nombre de la lista:"
 
 #: ../src\session\twitter\gui\list_manager\add_list.py:15
 msgid "List mode:"
-msgstr "Modo del grupo:"
+msgstr "Modo de la lista:"
 
 #: ../src\session\twitter\gui\list_manager\add_list.py:18
 msgid "List description:"
-msgstr "Descripción del grupo:"
+msgstr "Descripción de lista:"
 
 #: ../src\session\twitter\gui\list_manager\list_manager.py:18
 msgid "List manager"
-msgstr "Gestor del grupo"
+msgstr "Gestor de lista"
 
 #: ../src\session\twitter\gui\list_manager\list_manager.py:19
 msgid "Current lists:"
-msgstr "Grupos actuales:"
+msgstr "Listas actuales:"
 
 #: ../src\session\twitter\gui\list_manager\list_manager.py:23
 msgid "&Add list..."
-msgstr "&Añadir grupo..."
+msgstr "&Añadir lista..."
 
 #: ../src\session\twitter\gui\list_manager\list_manager.py:25
 msgid "&Edit list..."
-msgstr "&Editar grupo..."
+msgstr "&Editar lista..."
 
 #: ../src\session\twitter\gui\list_manager\list_manager.py:27
 msgid "&Remove list..."
-msgstr "E&liminar grupo..."
+msgstr "E&liminar lista..."
 
 #: ../src\session\twitter\gui\list_manager\list_manager.py:29
 msgid "Subscribe"
@@ -1794,41 +1784,41 @@ msgstr "Borrarse"
 
 #: ../src\session\twitter\gui\list_manager\list_manager.py:33
 msgid "&Spawn list"
-msgstr "Producir grupo"
+msgstr "Producir lista"
 
 #: ../src\session\twitter\gui\list_manager\list_manager.py:47
 msgid "Add list"
-msgstr "Añadir grupo"
+msgstr "Añadir lista"
 
 #: ../src\session\twitter\gui\list_manager\list_manager.py:55
 msgid "Creating list"
-msgstr "Creando grupo"
+msgstr "Creando lista"
 
 #: ../src\session\twitter\gui\list_manager\list_manager.py:55
 #: ../src\session\twitter\gui\list_manager\list_manager.py:70
 #: ../src\session\twitter\gui\list_manager\list_manager.py:81
 msgid "Please wait..."
-msgstr "Espera, por favor..."
+msgstr "Por favor espera..."
 
 #: ../src\session\twitter\gui\list_manager\list_manager.py:62
 msgid "Edit list"
-msgstr "Editar grupo"
+msgstr "Editar lista"
 
 #: ../src\session\twitter\gui\list_manager\list_manager.py:70
 msgid "Editting list"
-msgstr "Editando grupo"
+msgstr "Editando lista"
 
 #: ../src\session\twitter\gui\list_manager\list_manager.py:77
 msgid "Delete list"
-msgstr "Borrar grupo"
+msgstr "Borrar lista"
 
 #: ../src\session\twitter\gui\list_manager\list_manager.py:88
 msgid "Subscribing to list"
-msgstr "Suscribiéndose a grupo"
+msgstr "Suscribiéndose a lista"
 
 #: ../src\session\twitter\gui\list_manager\list_manager.py:94
 msgid "Unsubscribing from list"
-msgstr "Borrándose de grupo"
+msgstr "Borrándose de la lista"
 
 #: ../src\session\twitter\gui\list_manager\list_manager.py:145
 msgid "Owner"
@@ -1888,11 +1878,11 @@ msgstr "Tuits protegidos:"
 
 #: ../src\session\twitter\gui\profile.py:39
 msgid "Yes"
-msgstr ""
+msgstr "sí"
 
 #: ../src\session\twitter\gui\profile.py:41
 msgid "No"
-msgstr ""
+msgstr "No"
 
 #: ../src\session\twitter\gui\profile.py:43
 msgid "Number of followers:"
@@ -1904,7 +1894,7 @@ msgstr "Número de amigos:"
 
 #: ../src\session\twitter\gui\profile.py:47
 msgid "Number of having this user in their lists:"
-msgstr ""
+msgstr "Número de suscripciones de este usuario a sus listas."
 
 #: ../src\session\twitter\gui\profile.py:49
 msgid "Number of tweets:"
@@ -1960,7 +1950,7 @@ msgstr "Rrelación"
 
 #: ../src\session\twitter\gui\relationship_status.py:10
 msgid "Relationship status between:"
-msgstr "Estado de la relación entre:"
+msgstr "Estado de relación entre:"
 
 #: ../src\session\twitter\gui\relationship_status.py:13
 msgid "And:"
@@ -2198,7 +2188,7 @@ msgstr "Obteniendo localidades."
 msgid "Unable to retrieve local trend locations; please try again later."
 msgstr ""
 "Imposible obtener localidades para últimas tendencias locales, inténtalo más "
-"tarde, por favor."
+"tarde."
 
 #: ../src\session\twitter\interface.py:483
 #: ../src\session\twitter\interface.py:602
@@ -2244,13 +2234,14 @@ msgstr "Obteniendo info de posición geográfica..."
 #: ../src\session\twitter\interface.py:552
 #: ../src\session\twitter\interface.py:585
 msgid "Error determining location."
-msgstr "Error al determinar la posición."
+msgstr "Error al determinar localización."
 
 #: ../src\session\twitter\interface.py:533
 #: ../src\session\twitter\interface.py:558
 #: ../src\session\twitter\interface.py:592
 msgid "Sorry, geo locator didn't provide an address."
 msgstr ""
+"Lo sentimos, el localizador geográfico no puede establecer una localización."
 
 #: ../src\session\twitter\interface.py:598
 msgid "Enter a name to search for:"
@@ -2281,7 +2272,7 @@ msgstr "Elige usuario a añadir"
 #: ../src\session\twitter\interface.py:673
 #: ../src\session\twitter\twitter.py:277
 msgid "Retrieving lists, please wait."
-msgstr "Obteniendo grupos, espera, por favor."
+msgstr "Obteniendo lista, por favor espera."
 
 #: ../src\session\twitter\interface.py:655
 #: ../src\session\twitter\interface.py:676
@@ -2289,23 +2280,23 @@ msgid ""
 "No lists defined.  Please create a list with the list manager before "
 "performing this action."
 msgstr ""
-"No hay grupos definidos. Crea un grupo con el gestor de grupos antes de "
-"realizar esta acción, por favor."
+"No hay listas definidas. Por favor, crea una con el gestor de listas antes "
+"de realizar esta acción."
 
 #: ../src\session\twitter\interface.py:656
 #: ../src\session\twitter\interface.py:677
 #: ../src\session\twitter\twitter.py:279
 msgid "Select list"
-msgstr "Elegir grupo"
+msgstr "Elegir lista"
 
 #: ../src\session\twitter\interface.py:656
 #: ../src\session\twitter\twitter.py:279
 msgid "Please select a list to add %s to?"
-msgstr "Elige un grupo al que añadir %s, por favor."
+msgstr "Elige una lista a la que añadir %s."
 
 #: ../src\session\twitter\interface.py:660
 msgid "adding %s to list %s."
-msgstr "Añadiendo %s al grupo %s."
+msgstr "Añadiendo %s a la lista %s."
 
 #: ../src\session\twitter\interface.py:667
 msgid "Select user to remove"
@@ -2313,12 +2304,12 @@ msgstr "Elige usuario a borrar"
 
 #: ../src\session\twitter\interface.py:677
 msgid "Please select a list to remove %s from?"
-msgstr "Elige un grupo del que borrar %s, por favor."
+msgstr "Elige la lista de la que borrar %s."
 
 #: ../src\session\twitter\interface.py:688
 #: ../src\session\twitter\interface.py:726
 msgid "Please change to a list buffer before using this command."
-msgstr "Ponte en una lista de grupos antes de usar esta orden."
+msgstr "Ponte en un buffer de listas antes de usar esta orden."
 
 #: ../src\session\twitter\interface.py:696
 msgid "Choose your social network:"
@@ -2395,8 +2386,7 @@ msgstr ""
 
 #: ../src\session\twitter\twitter.py:74
 msgid "Please enter the verification code from Twitter for session %s"
-msgstr ""
-"Introduce el código de verificación de Twitter para la sesión %s, por favor."
+msgstr "Introduce el código de verificación de Twitter para la sesión %s."
 
 #: ../src\session\twitter\twitter.py:74
 msgid "Twitter Login"
@@ -2416,7 +2406,7 @@ msgstr "Autenticado en Qwitter como %s"
 
 #: ../src\session\twitter\twitter.py:110
 msgid "Login failed!"
-msgstr "¡Fallo de identificación!"
+msgstr "¡Error de identificación!"
 
 #: ../src\session\twitter\twitter.py:124
 msgid "Loading %d saved search%s from twitter."
@@ -2424,15 +2414,15 @@ msgstr "Cargando %d búsquedas%s guardadas en twitter."
 
 #: ../src\session\twitter\twitter.py:134
 msgid "Retrieving lists"
-msgstr "Obteniendo grupos"
+msgstr "Obteniendo listas"
 
 #: ../src\session\twitter\twitter.py:136
 msgid "Retrieving lists for %s"
-msgstr "Obteniendo grupos de %s"
+msgstr "Obteniendo listas de %s"
 
 #: ../src\session\twitter\twitter.py:161
 msgid "Retrieving %d list timeline%s from twitter."
-msgstr "Obteniendo hilo temporal %d del grupo%s de Twitter."
+msgstr "Obteniendo hilo temporal %d de la lista%s desde Twitter."
 
 #: ../src\session\twitter\twitter.py:169
 msgid "List timeline for %s"
@@ -2492,7 +2482,7 @@ msgstr "Enviando MD"
 
 #: ../src\session\twitter\twitter.py:283
 msgid "adding user %s to list %s"
-msgstr "Añadiendo usuario %s al grupo %s"
+msgstr "Añadiendo usuario %s a la lista %s"
 
 #: ../src\session\twitter\twitter.py:288
 msgid "Please wait while your profile is retrieved."
@@ -2508,7 +2498,7 @@ msgstr "Actualizando perfil"
 
 #: ../src\session\twitter\twitter.py:317
 msgid "%s has no lists."
-msgstr "No hay grupos en %s."
+msgstr "No hay listas en %s."
 
 #: ../src\session\twitter\twitter.py:336
 msgid "%s failed.  Reason: %s"
@@ -2555,40 +2545,39 @@ msgid "disabling device notifications for %s"
 msgstr "Desactivando notificaciones a dispositivo %s"
 
 #: ../src\sessions.py:146
-#, fuzzy
 msgid ""
 "There was an error spawning previously-loaded sessions.  Please send your "
 "log to The Qube's development staff.  Activating new session dialog."
 msgstr ""
 "Se produjo un error al generar las sesiones cargadas anteriormente. Envía el "
-"registro a al grupo de desarrollo de Qwitter, por favor. Activando diálogo "
+"registro al equipo de desarrollo de The Qube, por favor. Activando diálogo "
 "de nueva sesión."
 
+# In Spanish, that "it" is ambiguous, it can be either "update" or "%s", so I've decided to repeat %s to make it clear.
 #: ../src\update_manager.py:25
 msgid ""
 "An update for %s is available, would you like to download and install it now?"
 msgstr ""
+"Una actualización de %s está disponible, ¿quieres descargar %s y "
+"actualizarlo ahora?"
 
 #: ../src\update_manager.py:25
-#, fuzzy
 msgid "Update %s"
-msgstr "al actualizar"
+msgstr "Actualizar %s"
 
 #: ../src\update_manager.py:39
-#, fuzzy
 msgid ""
 "An update for The Qube has been downloaded and installed. Press okay to "
 "restart the application and begin using the new version.\n"
 " Enjoy!"
 msgstr ""
-"Se ha actualizado e instalado una nueva versión de qwitter. Pulsa aceptar "
+"Se ha actualizado e instalado una nueva versión de The Qube. Pulsa aceptar "
 "para reiniciar la aplicación y empezar a usar la nueva versión.\n"
 "¡Bienvenido al futuro!"
 
 #: ../src\update_manager.py:39
-#, fuzzy
 msgid "The Qube update"
-msgstr "Actualización de Qwitter"
+msgstr "Actualización de The Qube"
 
 #: ../src\utils\delay.py:19
 msgid "action"
@@ -2596,7 +2585,7 @@ msgstr "acción:"
 
 #: ../src\utils\delay.py:20
 msgid "Delaying %s for %s."
-msgstr "Retrasando %s durante %s."
+msgstr "%s se retrasa durante %s."
 
 #: ../src\utils\time_period.py:7
 msgid "a decade"
