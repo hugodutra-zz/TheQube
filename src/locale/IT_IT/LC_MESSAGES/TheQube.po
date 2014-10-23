@@ -3,44 +3,44 @@ msgstr ""
 "Project-Id-Version: The Qube 0.7\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-10-18 19:33+FLE Daylight Time\n"
-"PO-Revision-Date: 2014-10-18 23:13+0200\n"
+"PO-Revision-Date: 2014-10-24 00:18+0200\n"
 "Last-Translator: Andre Polykanine A.K.A. Menelion Elensúlë <menelion@oire."
 "org>\n"
 "Language-Team: The Qube translation team <theqube@lists.oire.org>\n"
-"Language: hu_HU\n"
+"Language: it_IT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
-"X-Poedit-Basepath: c:\\qwitter\n"
-"X-Generator: Poedit 1.6.10\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Basepath: c:\\users\\laura\\qwitter\n"
 "X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.6.10\n"
 "X-Poedit-SearchPath-0: src\n"
 
 #: ../src\core\gui\SessionManager\main.py:16
 msgid "Sessions:"
-msgstr "szakaszok:"
+msgstr "Sessioni:"
 
 #: ../src\core\gui\SessionManager\main.py:22
 msgid "&Switch to"
-msgstr "&átVáltás"
+msgstr "&Passa a"
 
 #: ../src\core\gui\SessionManager\main.py:24
 msgid "&Delete session..."
-msgstr "&szakasz törlése"
+msgstr "&Elimina sessione..."
 
 #: ../src\core\gui\SessionManager\main.py:26
 msgid "&New session..."
-msgstr "&új szakasz"
+msgstr "&Nuova sessione..."
 
 #: ../src\core\gui\SessionManager\main.py:40
 msgid "Are you sure you want to close session %s?"
-msgstr "biztos hogy a %s szakazt leakarja zárni?"
+msgstr "Sei sicuro di voler chiudere la sessione %s?"
 
 #: ../src\core\gui\SessionManager\main.py:40
 msgid "Remove session"
-msgstr "szakasz eltávolítása"
+msgstr "Rimuovi sessione"
 
 #: ../src\core\gui\SessionManager\main.py:44
 #: ../src\core\gui\new_message.py:254 ../src\core\gui\new_message.py:296
@@ -66,11 +66,11 @@ msgstr "szakasz eltávolítása"
 #: ../src\session\twitter\twitter.py:275 ../src\session\twitter\twitter.py:281
 #: ../src\session\twitter\twitter.py:292 ../src\utils\wx_utils.py:17
 msgid "Canceled."
-msgstr "jóvánhagyva."
+msgstr "Annullato."
 
 #: ../src\core\gui\SessionManager\main.py:54
 msgid "Type"
-msgstr "típus"
+msgstr "Tipo"
 
 #: ../src\core\gui\SessionManager\main.py:55
 #: ../src\session\stopwatch\buffers\main.py:10
@@ -79,60 +79,59 @@ msgstr "típus"
 #: ../src\session\twitter\buffers\users.py:27
 #: ../src\session\twitter\gui\list_manager\list_manager.py:144
 msgid "Name"
-msgstr "név"
+msgstr "Nome"
 
 #: ../src\core\gui\SessionManager\new_session.py:9
 msgid "New Session"
-msgstr "új szakasz"
+msgstr "Nuova sessione"
 
 #: ../src\core\gui\SessionManager\new_session.py:11
 msgid "Session type:"
-msgstr "a szakasz típusa"
+msgstr "Tipo sessione:"
 
 #: ../src\core\gui\SessionManager\new_session.py:16
 msgid "Session name:"
-msgstr "a szakasz neve:"
+msgstr "Nome sessione:"
 
 #: ../src\core\gui\configuration\dialog.py:8
 msgid "Configuration"
-msgstr "konfiguráció"
+msgstr "Configurazione"
 
 #: ../src\core\gui\configuration\main.py:23
 msgid "Language"
-msgstr "nyelv"
+msgstr "Lingua"
 
 #: ../src\core\gui\configuration\main.py:25
 #, fuzzy
 msgid "Speech and Braille"
-msgstr "hang sebesség"
+msgstr "Velocità sintetizzatore"
 
 #: ../src\core\gui\configuration\main.py:27
 msgid "Navigation"
-msgstr "navigáció"
+msgstr "Navigazione"
 
 #: ../src\core\gui\configuration\main.py:29
 #: ../src\session\twitter\gui\configuration\main.py:28
 msgid "Miscellaneous"
-msgstr "egyéb"
+msgstr "Varie"
 
 #: ../src\core\gui\configuration\panels\language.py:10
 msgid "Language Selection:"
-msgstr "nyelvi válaztás"
+msgstr "Selezione lingua:"
 
 #: ../src\core\gui\configuration\panels\misc.py:14
-#, fuzzy
 msgid "Automatically start %s after Windows log on"
-msgstr "A %s automatikus elindítása a Windows bejelentkezése után?"
+msgstr ""
 
 #: ../src\core\gui\configuration\panels\misc.py:15
 #, fuzzy
 msgid "Show confirmation dialog before exiting %s"
-msgstr "a %s kilépése előtt jelenjen meg a figyelmeztető párbeszédpanel?"
+msgstr "Mostra il dialogo di conferma prima di uscire da %s?"
 
 #: ../src\core\gui\configuration\panels\misc.py:16
 #, fuzzy
 msgid "Preferred URL Shortener:"
-msgstr "kivánt URL rövidítve"
+msgstr "Riduttore URL preferito:"
 
 #: ../src\core\gui\configuration\panels\misc.py:19
 msgid "Preferred audio service:"
@@ -149,173 +148,174 @@ msgstr ""
 #: ../src\core\gui\configuration\panels\misc.py:32
 #, fuzzy
 msgid "Perform standard actions with Home/End keys"
-msgstr "Perform standard actions with Home/End keys?"
+msgstr "Esegui azioni standard con i tasti home/fine?"
 
 #: ../src\core\gui\configuration\panels\navigation.py:7
 msgid "Move by percentage amount (as a %)"
-msgstr "százalék léptetése(százalékban)"
+msgstr "Sposta per importo percentuale (come %)"
 
 #: ../src\core\gui\configuration\panels\navigation.py:11
 msgid "Move by time (defined as hours:minutes) hours"
-msgstr "idő léptetése (megadva óra:perc formában) óra:"
+msgstr "Sposta per tempo (definito come ore/minuti) ore"
 
 #: ../src\core\gui\configuration\panels\navigation.py:15
 msgid "Move by time (defined as hours:minutes) minutes"
-msgstr "idő léptetése mozgás (megadva óra:perc formában) perc:"
+msgstr "Sposta per tempo (definito come ore/minuti) minuti"
 
 #: ../src\core\gui\configuration\panels\navigation.py:19
 msgid "Undo stack size"
-msgstr "visszavonás stack mérete"
+msgstr "Numero azioni annullabili"
 
 #: ../src\core\gui\configuration\panels\speech.py:12
 msgid "Speech output"
-msgstr "hang kimenet"
+msgstr "Sintesi vocale"
 
 #: ../src\core\gui\configuration\panels\speech.py:15
 msgid "SAPI speech rate"
-msgstr "sapi hang sebessége"
+msgstr "Velocità sintesi sapi"
 
 #: ../src\core\gui\configuration\panels\speech.py:20
 msgid "SAPI speech volume"
-msgstr "sapi hang erője"
+msgstr "Volume sintesi sapi"
 
 #: ../src\core\gui\configuration\panels\speech.py:25
+#, fuzzy
 msgid "SAPI speech voice"
-msgstr "sapi hangkarakter"
+msgstr "Volume sintesi sapi"
 
 #: ../src\core\gui\configuration\panels\speech.py:29
 msgid "Braille Output:"
-msgstr "braille kijelzés:"
+msgstr "Output braille:"
 
 #: ../src\core\gui\configuration\panels\speech.py:30
 #, fuzzy
 msgid "Braille spoken text"
-msgstr "szöveg leírása a braille kijelzőn?"
+msgstr "Testo vocalizzato in Braille?"
 
 #: ../src\core\gui\configuration\panels\speech.py:31
 #, fuzzy
 msgid "Enable speech recognition"
-msgstr "hangismerés engedélyezése?"
+msgstr "Attivare il riconoscimento vocale?"
 
 #: ../src\core\gui\list_urls.py:15
 msgid "URL Selection"
-msgstr "URL választás"
+msgstr "Selezione URL"
 
 #: ../src\core\gui\list_urls.py:19
 msgid "Select URL to open"
-msgstr "Válassza ki a kivánt URL címét a megnyitáshoz"
+msgstr "Seleziona URL da aprire"
 
 #: ../src\core\gui\list_urls.py:22 ../src\core\gui\new_message.py:237
 msgid "&Unshorten URL"
-msgstr "&URL kinyújtás"
+msgstr "&Espandi URL"
 
 #: ../src\core\gui\list_urls.py:25
 msgid "&Copy URL"
-msgstr "&URL másolása"
+msgstr "&copia URL"
 
 #: ../src\core\gui\list_urls.py:49 ../src\core\gui\new_message.py:167
 msgid "URL expanded."
-msgstr "URL kinyilva"
+msgstr "URL espanso."
 
 #: ../src\core\gui\list_urls.py:52
 msgid "Unable to expand URL"
-msgstr "A URL-t nem lehetett kinyújtani"
+msgstr "Impossibile espandere URL"
 
 #: ../src\core\gui\list_urls.py:67
 msgid "URL copied to clipboard."
-msgstr "a URL vágólapra másolva"
+msgstr "URL copiato negli appunti."
 
 #: ../src\core\gui\login.py:15
 msgid "Username"
-msgstr "felhasználói név"
+msgstr "Username"
 
 #: ../src\core\gui\login.py:16
 msgid "Password"
-msgstr "jelszó"
+msgstr "Password"
 
 #: ../src\core\gui\new_message.py:59 ../src\core\gui\selectable_message.py:29
 msgid "%s - %d of %d Characters"
-msgstr "%s- %d per %d karakter"
+msgstr "%s - %d di %d caratteri"
 
 #: ../src\core\gui\new_message.py:81
 msgid "URL Shortener - No URLs"
-msgstr "URL rövidítő-nincsen URL"
+msgstr "Riduttore URL - nessun URL"
 
 #: ../src\core\gui\new_message.py:82
 msgid ""
 "No URLs were found to shorten. If there is one, select the URL and click "
 "this button again."
 msgstr ""
-"nemtalálható egy URL cím a rövidítéshez. Ha van egy, válassza ki és e gomb "
-"újdon megnyomásával a webcím rövidítve lesz."
+"Nessun URL trovato per la riduzione. Se ce n'è uno, seleziona l'URL e premi "
+"di nuovo questo pulsante."
 
 #: ../src\core\gui\new_message.py:96
 msgid "URL Shortener - Select URL"
-msgstr "URL rövidítő-válasszon egy webcímet"
+msgstr "Riduttore URL - seleziona URL"
 
 #: ../src\core\gui\new_message.py:97
 msgid "Select URL to shorten."
-msgstr "Válassza ki a kivánt URL címét"
+msgstr "Seleziona URL da accorciare."
 
 #: ../src\core\gui\new_message.py:113
 msgid "URL Shortened."
-msgstr "URL rövidítve"
+msgstr "URL accorciato."
 
 #: ../src\core\gui\new_message.py:116
 msgid "URL Shortener - Problem"
-msgstr "URL rövidítő-hiba"
+msgstr "Riduttore URL - problema"
 
 #: ../src\core\gui\new_message.py:117
 msgid "There was a problem shortening the selected URL."
-msgstr "Problémák merültek fel a URL rövidítése közben."
+msgstr "C'è stato un problema nell'accorciare l'URL selezionato."
 
 #: ../src\core\gui\new_message.py:131
 msgid "URL Unshortener - No URLs"
-msgstr "URL nyújtó -válasszon egy webcímet"
+msgstr "Espansore URL - nessun URL"
 
 #: ../src\core\gui\new_message.py:132
 msgid ""
 "No URLs were found to unshorten. If there is one, select the URL and click "
 "this button again."
 msgstr ""
-"nemtalálható egy URL cím a nyújtáshoz. Ha van egy, válassza ki és e gomb "
-"újdon megnyomásával a webcím rövidítve lesz."
+"Nessun URL trovato per l'espansione. Se ce n'è uno, seleziona l'URL e premi "
+"di nuovo questo pulsante."
 
 #: ../src\core\gui\new_message.py:146
 msgid "URL Unshortener - Select URL"
-msgstr "url kinyújtó - válasszon egy url-t"
+msgstr "Espansore URL - seleziona URL"
 
 #: ../src\core\gui\new_message.py:147
 msgid "Select URL to unshorten."
-msgstr "Válassza ki a kivánt URL címét"
+msgstr "Seleziona URL da espandere."
 
 #: ../src\core\gui\new_message.py:170
 msgid "URL Unshortener - Problem"
-msgstr "URL rövidítő-hiba"
+msgstr "Espansore URL - problema"
 
 #: ../src\core\gui\new_message.py:171
 msgid "There was a problem unshortening the selected URL."
-msgstr "Problémák merültek fel a URL kinyújtása közben."
+msgstr "C'è stato un problema nell'espandere l'URL selezionato."
 
 #: ../src\core\gui\new_message.py:225
 msgid "Message:"
-msgstr "üzenet:"
+msgstr "Messaggio:"
 
 #: ../src\core\gui\new_message.py:235
 msgid "&Shorten URL"
-msgstr "&URL rövidítése"
+msgstr "&Accorcia URL"
 
 #: ../src\core\gui\new_message.py:241
 msgid "Attach &Audio..."
-msgstr "Audio &csatolása"
+msgstr "Allega &audio..."
 
 #: ../src\core\gui\new_message.py:246
 msgid "S&chedule message..."
-msgstr "Ü&zenet ütemezése"
+msgstr "P&ianifica messaggio..."
 
 #: ../src\core\gui\new_message.py:257
 msgid "Attaching..."
-msgstr "csatolás folyamatban..."
+msgstr "Allegando..."
 
 #: ../src\core\gui\new_message.py:264
 msgid "Upload in progress"
@@ -323,538 +323,542 @@ msgstr ""
 
 #: ../src\core\gui\new_message.py:273
 msgid "There was an error attaching the file."
-msgstr "hiba történt a faájl csatolásakor"
+msgstr "C'è stato un errore nell'allegare il file."
 
 #: ../src\core\gui\new_message.py:283
 msgid "File attached."
-msgstr "fájl csatolva"
+msgstr "File allegato."
 
 #: ../src\core\gui\new_message.py:293
 #, fuzzy
 msgid "Resetting currently scheduled item."
-msgstr "ütemezett elem újraállítása"
+msgstr "Ripristino elemento pianificato attuale."
 
 #: ../src\core\gui\new_message.py:294
 msgid "Schedule message"
-msgstr "üzenet ütemezése"
+msgstr "Pianifica messaggio"
 
 #: ../src\core\gui\new_message.py:298
 msgid "Delaying for %s"
-msgstr "elhalasztás %s ig"
+msgstr "Ritardo di %s."
 
 #: ../src\core\gui\new_message.py:302
-#, fuzzy
 msgid "&Translate Message..."
-msgstr "Ü&zenet ütemezése"
+msgstr "&Traduci messaggio..."
 
 #: ../src\core\gui\new_message.py:307
-#, fuzzy
 msgid "Translate message"
-msgstr "fordítás"
+msgstr "Traduci messaggio"
 
 #: ../src\core\gui\new_message.py:317 ../src\session\twitter\interface.py:746
 msgid "Translation process has failed."
-msgstr "a fordítás sikertelen"
+msgstr "Il processo di traduzione è fallito."
 
 #: ../src\core\gui\qube.py:18 ../src\core\sessions\hotkey\interface.py:36
 msgid "Modifiers unlocked."
-msgstr "billentyű kombinációk feloldva"
+msgstr ""
 
 #: ../src\core\gui\recording.py:17
 msgid "Attach audio"
-msgstr "audió csatolása"
+msgstr "Allega audio"
 
 #: ../src\core\gui\recording.py:24 ../src\core\gui\recording.py:65
 msgid "&Record"
-msgstr "&felvevés"
+msgstr "&Registra"
 
 #: ../src\core\gui\recording.py:26
 msgid "Attach existing audio &file..."
-msgstr "Meglévő audió Fájl &csatolása"
+msgstr "Allega &file audio esistente..."
 
 #: ../src\core\gui\recording.py:28 ../src\core\gui\recording.py:113
 #: ../src\core\gui\recording.py:123
 msgid "&Play"
-msgstr "&lejátszás"
+msgstr "&Riproduci"
 
 #: ../src\core\gui\recording.py:31
 msgid "&Discard"
-msgstr "&törlés"
+msgstr "&Scarta"
 
 #: ../src\core\gui\recording.py:37
 msgid "&Attach!"
-msgstr "&csatolás!"
+msgstr "&Allega!"
 
 #: ../src\core\gui\recording.py:57 ../src\core\gui\recording.py:109
 msgid "&Stop"
-msgstr "&leállítás"
+msgstr "&Stop"
 
 #: ../src\core\gui\recording.py:58
 msgid "Recording."
-msgstr "rögzítés."
+msgstr "Registrazione."
 
 #: ../src\core\gui\recording.py:63 ../src\core\gui\recording.py:120
 msgid "Stopped."
-msgstr "leállítva"
+msgstr "Fermata."
 
 #: ../src\core\gui\recording.py:71
 msgid "Select audio file"
-msgstr "Válassza ki az audió fájlt:"
+msgstr "Seleziona file audio"
 
 #: ../src\core\gui\recording.py:97
 msgid "Discarded."
-msgstr "eltörölve"
+msgstr "Scartato."
 
 #: ../src\core\gui\recording.py:107
 msgid "Playing."
-msgstr "lejátszás"
+msgstr "Riproduzione."
 
 #: ../src\core\gui\recording.py:128
 msgid "Transcoding audio."
-msgstr "audió transzkódolása"
+msgstr "Transcodifica audio"
 
 #: ../src\core\gui\schedule.py:16
 msgid "Interval"
-msgstr "folyam"
+msgstr "Intervallo"
 
 #: ../src\core\gui\schedule.py:16
 msgid "Select scheduling method"
-msgstr "ütemezés típus választása"
+msgstr "Seleziona metodo di pianificazione"
 
 #: ../src\core\gui\schedule.py:16
 #: ../src\core\sessions\buffers\buffers\messages.py:21
 msgid "Time"
-msgstr "Válasszon egy időpontot"
+msgstr "Tempo"
 
 #: ../src\core\gui\schedule.py:44 ../src\session\stopwatch\gui\countdown.py:11
 msgid "Hours:"
-msgstr "órák száma:"
+msgstr "Ore:"
 
 #: ../src\core\gui\schedule.py:46 ../src\session\stopwatch\gui\countdown.py:14
 msgid "Minutes:"
-msgstr "percek:"
+msgstr "Minuti:"
 
 #: ../src\core\gui\schedule.py:48 ../src\session\stopwatch\gui\countdown.py:17
 msgid "Seconds:"
-msgstr "másodperc:"
+msgstr "Secondi:"
 
 #: ../src\core\gui\schedule.py:60
 msgid "Hour:"
-msgstr "órák száma:"
+msgstr "Ora:"
 
 #: ../src\core\gui\selectable_message.py:17
 msgid "Recipient:"
-msgstr "címzett:"
+msgstr "Destinatario:"
 
 #: ../src\core\gui\selectable_message.py:28
 msgid "%s to %s"
-msgstr "%s %s hez"
+msgstr "%s a %s"
 
 #: ../src\core\gui\translate.py:21
 msgid "Translate"
-msgstr "fordítás"
+msgstr "Traduci"
 
 #: ../src\core\gui\translate.py:28
 msgid "Auto detect"
-msgstr "autó felismerés"
+msgstr "Rileva automaticamente"
 
 #: ../src\core\gui\translate.py:30
+#, fuzzy
 msgid "Source language:"
-msgstr "forrási nyelv:"
+msgstr "Inizio codice"
 
 #: ../src\core\gui\translate.py:32
 msgid "Destination language:"
-msgstr "végleges nyelv:"
+msgstr ""
 
 #: ../src\core\sessions\buffers\buffers\buffer.py:52
 msgid "Total"
-msgstr "összes"
+msgstr "Totale"
 
 #: ../src\core\sessions\buffers\buffers\buffer.py:53
 msgid "Index"
-msgstr "index"
+msgstr "Indice"
 
 #: ../src\core\sessions\buffers\buffers\buffer.py:92
 msgid "Item deleted."
-msgstr "üzenet törölve"
+msgstr "Elemento eliminato."
 
 #: ../src\core\sessions\buffers\buffers\buffer.py:194
 msgid "buffer %s"
-msgstr "tár %s"
+msgstr "Buffer %s"
 
 #: ../src\core\sessions\buffers\buffers\buffer.py:229
 msgid "Buffer mute off"
-msgstr "tár némítás ki"
+msgstr "Silenzio buffer disattivato"
 
 #: ../src\core\sessions\buffers\buffers\buffer.py:231
 msgid "Buffer mute on"
-msgstr "tár némítás be"
+msgstr "Silenzio buffer attivato"
 
 #: ../src\core\sessions\buffers\buffers\buffer.py:260
 msgid "Item %d of %d."
-msgstr "elem %d %d elemböl"
+msgstr "%d di %d elemento."
 
 #: ../src\core\sessions\buffers\buffers\filtered.py:157
 msgid "Removed all matching items from source %s"
-msgstr "minden elemző twít letőrlés a %s forrásból"
+msgstr "Rimossi tutti gli elementi corrispondenti dal sorgente %s"
 
 #: ../src\core\sessions\buffers\buffers\filtered.py:190
 msgid "rx {term}"
-msgstr "rx {term}"
+msgstr "{termine} rx"
 
 #: ../src\core\sessions\buffers\buffers\filtered.py:208
 msgid " and "
-msgstr "és"
+msgstr " e "
 
 #: ../src\core\sessions\buffers\buffers\filtered.py:210
 #: ../src\core\sessions\buffers\buffers\filtered.py:217
 msgid ", "
-msgstr ""
+msgstr ", "
 
 #: ../src\core\sessions\buffers\buffers\filtered.py:211
 msgid ", and "
-msgstr ", és"
+msgstr ", e "
 
 #: ../src\core\sessions\buffers\buffers\filtered.py:215
 msgid " or "
-msgstr "vagy"
+msgstr " o "
 
 #: ../src\core\sessions\buffers\buffers\filtered.py:218
 msgid ", or "
-msgstr ", vagy"
+msgstr ", o "
 
 #: ../src\core\sessions\buffers\buffers\filtered.py:220
+#, fuzzy
 msgid "{0} with {1}"
-msgstr ""
+msgstr "{0} con {1}."
 
 #: ../src\core\sessions\buffers\buffers\filtered.py:222
+#, fuzzy
 msgid "{0} without {1}"
-msgstr ""
+msgstr "{0} senza {1}."
 
 #: ../src\core\sessions\buffers\buffers\filtered.py:224
+#, fuzzy
 msgid "{0} with {1} and without {2}"
-msgstr ""
+msgstr "{0} con {1} e senza {2}."
 
 #: ../src\core\sessions\buffers\buffers\filtered.py:226
+#, fuzzy
 msgid "{0} with {1}. Without {2}"
-msgstr ""
+msgstr "{0} con {1}. Senza {2}."
 
 #: ../src\core\sessions\buffers\buffers\messages.py:19
 msgid "Relative Time"
-msgstr "időpont"
+msgstr "Tempo relativo"
 
 #: ../src\core\sessions\buffers\buffers\messages.py:20
 msgid "Date"
-msgstr "dátum"
+msgstr "Data"
 
 #: ../src\core\sessions\buffers\buffers\messages.py:27
 #: ../src\core\sessions\buffers\buffers\messages.py:35
 #: ../src\core\sessions\buffers\buffers\messages.py:43
 #: ../src\core\sessions\buffers\buffers\messages.py:51
 #: ../src\core\sessions\buffers\buffers\messages.py:60
+#, fuzzy
 msgid "Not Available"
-msgstr "nem érhető el"
+msgstr "Non disponibile"
 
 #: ../src\core\sessions\buffers\buffers\messages.py:30
+#, fuzzy
 msgid "{0} ago"
-msgstr "{0} óta"
+msgstr "Circa {0} fa"
 
 #: ../src\core\sessions\buffers\buffers\messages.py:96
 msgid "No URLs detected in current item."
-msgstr "a jelen hozzászolásban nincsenek webcímek"
+msgstr "Nessun URL trovato nell'elemento corrente."
 
 #: ../src\core\sessions\buffers\buffers\messages.py:103
+#, fuzzy
 msgid "%s %d of %d."
-msgstr "%s: %d per %d elem"
+msgstr "%s: %d di %d elementi."
 
 #: ../src\core\sessions\buffers\buffers\updating.py:32
 msgid "message"
-msgstr "üzenet"
+msgstr "Messaggio"
 
 #: ../src\core\sessions\buffers\buffers\updating.py:33
 msgid "messages"
-msgstr "üzenetek:"
+msgstr "Messaggi"
 
 #: ../src\core\sessions\buffers\buffers\updating.py:78
 msgid "Update already in progress; please wait."
-msgstr "frissités már folyamatban, kérem várjon"
+msgstr "Aggiornamento già in corso, attendi per favore."
 
 #: ../src\core\sessions\buffers\buffers\updating.py:124
 msgid "No new %s."
-msgstr "nincs új %s"
+msgstr "Nessun nuovo %s."
 
 #: ../src\core\sessions\buffers\buffers\updating.py:131
 msgid "%s: %s"
-msgstr "%s : %s"
+msgstr "%s: %s"
 
 #: ../src\core\sessions\buffers\buffers\updating.py:148
-#, fuzzy
 msgid "Checking for %s."
-msgstr "%s keresése"
+msgstr "Verifica di %s."
 
 #: ../src\core\sessions\buffers\exporter\exporters\text.py:22
 msgid "Text file"
-msgstr "szövegfájl"
+msgstr "File di testo"
 
 #: ../src\core\sessions\buffers\gui\configuration\twitter\main.py:19
 msgid "Buffer Configuration"
-msgstr "tár konfiguráció"
+msgstr "Configurazione del buffer"
 
 #: ../src\core\sessions\buffers\gui\configuration\twitter\main.py:23
 msgid "Default Settings"
-msgstr "alapértelmezett beállítások"
+msgstr "Impostazioni predefinite"
 
 #: ../src\core\sessions\buffers\gui\configuration\twitter\main.py:150
 msgid "Attention"
-msgstr "figyelem"
+msgstr "Attenzione"
 
 #: ../src\core\sessions\buffers\gui\configuration\twitter\panels\buffer.py:9
 msgid "Update interval (in minutes)"
-msgstr "Frissítés gyakorisága (percben)"
+msgstr "Intervallo aggiornamento (in minuti)"
 
 #: ../src\core\sessions\buffers\gui\configuration\twitter\panels\buffer.py:13
 msgid "Number of posts to download per update"
-msgstr "hozzászólások letőltése frissítéskor:"
+msgstr "Numero di messaggi da scaricare per aggiornamento"
 
 #: ../src\core\sessions\buffers\gui\configuration\twitter\panels\buffer.py:19
 #, fuzzy
 msgid "Search for "
-msgstr "%s keresése"
+msgstr "Ricerca di %s"
 
 #: ../src\core\sessions\buffers\gui\configuration\twitter\panels\buffer.py:20
 msgid "Max API calls to use per update (1 API call = 100 results)"
-msgstr "maximum API hívások használata (1 API hívás 200 találat lekérése)"
+msgstr ""
+"Massimo api calls da usare per aggiornamento (1 api call = 100 risultati)"
 
 #: ../src\core\sessions\buffers\gui\configuration\twitter\panels\buffer.py:22
 msgid "Max API calls to use per update (1 API call = 200 tweets)"
-msgstr ""
-"Max API hívás használata egy frissítés lekérésekor (1 api hívás 200 twít)"
+msgstr "Massimo api calls da usare per aggiornamento (1 api call = 200 tweets)"
 
 #: ../src\core\sessions\buffers\gui\configuration\twitter\panels\buffer.py:27
 msgid "Mute buffer"
-msgstr "tár némítása"
+msgstr "Silenzio buffer"
 
 #: ../src\core\sessions\buffers\gui\configuration\twitter\panels\buffer.py:30
 msgid "Apply settings to all buffers"
-msgstr "beállítások alkalmazása minden tárhoz"
+msgstr "Applica le impostazioni a tutti i buffers"
 
 #: ../src\core\sessions\buffers\gui\configuration\twitter\panels\buffer.py:32
 msgid "Use default spoken template"
-msgstr "alapértelmezett beszéd sablon:"
+msgstr "Usa modello predefinito per feedback vocale"
 
 #: ../src\core\sessions\buffers\gui\configuration\twitter\panels\buffer.py:34
 msgid "Spoken template:"
-msgstr "beszéd sablon:"
+msgstr "Modello per feedback vocale:"
 
 #: ../src\core\sessions\buffers\gui\configuration\twitter\panels\buffer.py:37
 msgid "Use default clipboard template"
-msgstr "alapértelmezett vágólap sablon"
+msgstr "Usa modello predefinito per copia negli appunti"
 
 #: ../src\core\sessions\buffers\gui\configuration\twitter\panels\buffer.py:39
 msgid "Clipboard template:"
-msgstr "vágólap sablon:"
+msgstr "Modello per copia negli appunti"
 
 #: ../src\core\sessions\buffers\gui\export\main.py:12
 msgid "Export"
-msgstr "exportálás"
+msgstr "Esporta"
 
 #: ../src\core\sessions\buffers\gui\export\panels\format_panel.py:8
 msgid "Format"
-msgstr "formátum"
+msgstr "Formato"
 
 #: ../src\core\sessions\buffers\gui\export\panels\format_panel.py:9
 msgid "Export Format"
-msgstr "exportálásformátuma"
+msgstr "Formato di esportazione"
 
 #: ../src\core\sessions\buffers\gui\export\panels\format_panel.py:13
 msgid "Filename"
-msgstr "fájlneve"
+msgstr "Nome file"
 
 #: ../src\core\sessions\buffers\gui\export\panels\format_panel.py:16
-#, fuzzy
 msgid "Save As"
-msgstr "mentés másként"
+msgstr "Salva come"
 
 #: ../src\core\sessions\buffers\gui\export\panels\format_panel.py:18
 msgid "Export more?"
-msgstr "több exportálás?"
+msgstr "Esportare di più?"
 
 #: ../src\core\sessions\buffers\gui\export\panels\items_panel.py:10
 msgid "Items"
-msgstr "elemek"
+msgstr "Elementi"
 
 #: ../src\core\sessions\buffers\gui\export\panels\items_panel.py:11
 msgid "Buffer"
-msgstr "tár"
+msgstr "Buffer"
 
 #: ../src\core\sessions\buffers\gui\export\panels\items_panel.py:15
 msgid "Item template"
-msgstr "elem sablon:"
+msgstr "Modello per elemento"
 
 #: ../src\core\sessions\buffers\gui\export\panels\items_panel.py:18
 msgid "Range"
-msgstr "sorozat"
+msgstr "Posizione"
 
 #: ../src\core\sessions\buffers\gui\export\panels\items_panel.py:19
 msgid "All (bottom to top)"
-msgstr "minden (lentről fentig)"
+msgstr "Tutti (dall'alto in basso)"
 
 #: ../src\core\sessions\buffers\gui\export\panels\items_panel.py:19
 msgid "All (top to bottom)"
-msgstr "minden (fentről lentig)"
+msgstr "Tutti (dal basso in alto)"
 
 #: ../src\core\sessions\buffers\gui\export\panels\items_panel.py:19
 msgid "Custom"
-msgstr "megszabott"
+msgstr "Personalizza"
 
 #: ../src\core\sessions\buffers\gui\export\panels\items_panel.py:22
 msgid "First item index"
-msgstr "első elem index"
+msgstr "Inizio primo elemento"
 
 #: ../src\core\sessions\buffers\gui\export\panels\items_panel.py:25
 msgid "Last item index"
-msgstr "utolsó elem index"
+msgstr "Inizio ultimo elemento"
 
 #: ../src\core\sessions\buffers\gui\filter.py:13
 msgid "Filter: %s"
-msgstr "szürés: %s"
+msgstr "Filtro: %s"
 
 #: ../src\core\sessions\buffers\gui\filter.py:16
 msgid "Filters:"
-msgstr "szürések:"
+msgstr "Filtri:"
 
 #: ../src\core\sessions\buffers\gui\filter.py:20
-#, fuzzy
 msgid "&Add"
-msgstr "&hozzáadás..."
+msgstr "&Aggiungi"
 
 #: ../src\core\sessions\buffers\gui\filter.py:22
 msgid "&Remove"
-msgstr "&Törlése"
+msgstr "&Rimuovi"
 
 #: ../src\core\sessions\buffers\gui\filter.py:24
 msgid "Use a regular expression"
-msgstr "egy rendes kifejezés használata"
+msgstr "Usa un'espressione regolare"
 
 #: ../src\core\sessions\buffers\gui\filter.py:27
 msgid "Buffer Search:"
-msgstr "Tár keresése:"
+msgstr "Buffer di ricerca:"
 
 #: ../src\core\sessions\buffers\gui\filter.py:31
 msgid "Fields:"
-msgstr "mezők"
+msgstr "Campi:"
 
 #: ../src\core\sessions\buffers\gui\filter.py:41
 msgid "excluding"
-msgstr "kivéve"
+msgstr "Escluso"
 
 #: ../src\core\sessions\buffers\gui\filter.py:44
 msgid "Replace source buffer"
-msgstr "Forrás tár áthelyezése"
+msgstr "Sostituire il buffer sorgente"
 
 #: ../src\core\sessions\buffers\gui\filter.py:86
 msgid "Regular Expression:"
-msgstr "rendes kifejezés:"
+msgstr "Espressione regolare:"
 
 #: ../src\core\sessions\buffers\gui\filter.py:88
 msgid "Term:"
-msgstr "szó:"
+msgstr "Termine:"
 
 #: ../src\core\sessions\buffers\gui\filter.py:172
+#, fuzzy
 msgid "replacement "
-msgstr "áthelyezés"
+msgstr "Sostituzione"
 
 #: ../src\core\sessions\buffers\gui\filter.py:174
 msgid "without "
-msgstr "e nélkül:"
+msgstr "Senza"
 
 #: ../src\core\sessions\buffers\gui\filter.py:176
 msgid "with "
-msgstr "ezzel:"
+msgstr "Con"
 
 #: ../src\core\sessions\buffers\gui\filter.py:178
 msgid "RX "
-msgstr ""
+msgstr "RX "
 
 #: ../src\core\sessions\buffers\gui\jump_to_item.py:10
 msgid "Enter item number to jump to, 1 to %s:"
-msgstr "írja be az ugorni kívánt elem számát, egytöl %s ig"
+msgstr "Inserisci il numero dell'elemento a cui saltare? Da 1 a %s:"
 
 #: ../src\core\sessions\buffers\interface.py:64
 #: ../src\core\sessions\buffers\interface.py:77
 msgid "Cannot move by time in this buffer."
-msgstr "e tárban nem lehet idő szerint létni"
+msgstr "Impossibile spostarsi per tempo in questo buffer."
 
 #: ../src\core\sessions\buffers\interface.py:112
 #: ../src\core\sessions\buffers\interface.py:122
 msgid "No active buffers in %s session."
-msgstr "a %s szakazban nincsen aktív tár"
+msgstr "Nessun buffer attivo nella sessione %s."
 
 #: ../src\core\sessions\buffers\interface.py:129
 msgid "There are no buffers to dismiss."
-msgstr "Nincsen elutasításandó tár"
+msgstr "Non ci sono buffers da nascondere."
 
 #: ../src\core\sessions\buffers\interface.py:131
 #: ../src\core\sessions\buffers\interface.py:137
 msgid "Unable to dismiss buffer %s"
-msgstr "a %s tár elutasítása sikertelen"
+msgstr "Impossibile nascondere il buffer %s"
 
 #: ../src\core\sessions\buffers\interface.py:145
 msgid "Undo failed: stack empty"
-msgstr "visszavonás sikertelen: stack üres"
+msgstr "Annullamento fallito: stack vuoto"
 
 #: ../src\core\sessions\buffers\interface.py:148
 msgid "Undo failed: buffer no longer exists"
-msgstr "visszavonás sikertelen: tár már nem létezik"
+msgstr "Annullamento fallito: il buffer non esiste più"
 
 #: ../src\core\sessions\buffers\interface.py:160
 msgid "This buffer cannot be cleared."
-msgstr "Ez a tár nem üríthető"
+msgstr "Questo buffer non può essere cancellato."
 
 #: ../src\core\sessions\buffers\interface.py:161
 msgid "Are you sure you want to delete %d items from %s?"
-msgstr "biztosan kitöröl %d elemeket a %s böl?"
+msgstr "Sei sicuro di voler eliminare %d elementi da %s?"
 
 #: ../src\core\sessions\buffers\interface.py:161
 msgid "Clear buffer"
-msgstr "tár ürítése"
+msgstr "Cancella buffer"
 
 #: ../src\core\sessions\buffers\interface.py:176
 msgid "Item number too high."
-msgstr "Elem száma túl magas"
+msgstr "Numero di elementi troppo alto."
 
 #: ../src\core\sessions\buffers\interface.py:192
 msgid "Processing.  Please wait."
-msgstr "Feldolgozás folyamatban, kérem várjon"
+msgstr "Elaborazione. Attendi per favore."
 
 #: ../src\core\sessions\buffers\interface.py:207
 msgid "Item copied to clipboard."
-msgstr "Hozzászólás vágólapra másolva"
+msgstr "Elemento copiato negli appunti."
 
 #: ../src\core\sessions\buffers\interface.py:221
 #: ../src\core\sessions\buffers\interface.py:228
 msgid "Moved"
-msgstr "elmozdult"
+msgstr "Spostato"
 
 #: ../src\core\sessions\buffers\interface.py:235
 msgid "The export function is not available."
-msgstr "az export funkció nem érhető el"
+msgstr "La funzione di esportazione non è disponibile."
 
 #: ../src\core\sessions\buffers\interface.py:237
 msgid "Export started, please wait."
-msgstr "exportálás folyamatban, kérem várjon."
+msgstr "Esportazione iniziata, attendi per favore."
 
 #: ../src\core\sessions\buffers\interface.py:241
 msgid "Export complete"
-msgstr "exportálás befejeződött"
+msgstr "Esportazione completa"
 
 #: ../src\core\sessions\buffers\interface.py:253
 msgid "Export failed."
-msgstr "exportálás nem sikerült"
+msgstr "Esportazione fallita."
 
 #: ../src\core\sessions\buffers\interface.py:260
 msgid "No buffers in this session."
-msgstr "E szakaszban nincsen buffer"
+msgstr "Nessun buffer in questa sessione."
 
 #: ../src\core\sessions\buffers\interface.py:265
 #: ../src\core\sessions\buffers\interface.py:267
@@ -862,58 +866,58 @@ msgstr "E szakaszban nincsen buffer"
 #: ../src\core\sessions\buffers\interface.py:271
 #: ../src\core\sessions\buffers\interface.py:273
 msgid "%s Buffer Configuration"
-msgstr "%s tár konfigurálása"
+msgstr "Configurazione del buffer %s"
 
 #: ../src\core\sessions\buffers\interface.py:281 ../src\meta_interface.py:42
 #: ../src\session\twitter\twitter.py:182
 msgid "Configuration saved."
-msgstr "Konfiguráció mentve."
+msgstr "Configurazione salvata."
 
 #: ../src\core\sessions\buffers\interface.py:284
 #: ../src\session\twitter\twitter.py:176
 msgid "Configuration canceled."
-msgstr "Konfiguráció jóvánhagyva"
+msgstr "Configurazione annullata."
 
 #: ../src\core\sessions\buffers\interface.py:293
 msgid "Forcing updates is not permitted in this buffer."
-msgstr "önkénti frissítések a %s tárban nem engedélyezett"
+msgstr "L'aggiornamento forzato non è permesso in questo buffer."
 
 #: ../src\core\sessions\buffers\interface.py:298
 msgid "Item text:"
-msgstr "elem szövege:"
+msgstr "Testo dell'elemento:"
 
 #: ../src\core\sessions\buffers\interface.py:298
 msgid "View item"
-msgstr "elem megtekíntése"
+msgstr "Visualizza elemento"
 
 #: ../src\core\sessions\buffers\interface.py:304
 msgid "Interaction is not enabled in this buffer."
-msgstr "önkénti frissítések a %s tárban nem engedélyezett"
+msgstr "L'interazione non è attiva in questo buffer"
 
 #: ../src\core\sessions\buffers\main.py:95
 msgid "No buffers remaining."
-msgstr "nincs több tár"
+msgstr "Nessun buffer rimanente."
 
 #: ../src\core\sessions\buffers\main.py:315
 msgid "No current buffer."
-msgstr "nincs jelen tár"
+msgstr "Nessun buffer corrente."
 
 #: ../src\core\sessions\buffers\main.py:319
 msgid "%s: Empty."
-msgstr "%s: Üres"
+msgstr ""
 
 #: ../src\core\sessions\buffers\main.py:321
 msgid "%s: %d of %d items."
-msgstr "%s: %d per %d elem"
+msgstr "%s: %d di %d elementi."
 
 #: ../src\core\sessions\hotkey\gui\dialog.py:9
 #: ../src\core\sessions\hotkey\gui\main.py:16
 msgid "Keystroke Manager"
-msgstr "billentyűparancs vezérlo"
+msgstr "Gestore combinazioni di tasti"
 
 #: ../src\core\sessions\hotkey\gui\dialog.py:10
 msgid "CTRL"
-msgstr "control"
+msgstr "CTRL"
 
 #: ../src\core\sessions\hotkey\gui\dialog.py:11
 msgid "WIN"
@@ -929,959 +933,963 @@ msgstr "SHIFT"
 
 #: ../src\core\sessions\hotkey\gui\dialog.py:14
 msgid "Key:"
-msgstr "billentyű:"
+msgstr "Tasto:"
 
 #: ../src\core\sessions\hotkey\gui\dialog.py:54
 msgid "Function:"
-msgstr "funkció:"
+msgstr "Funzione:"
 
 #: ../src\core\sessions\hotkey\gui\main.py:20
 #: ../src\core\sessions\hotkey\gui\main.py:21
 msgid "Keymap:"
-msgstr "billentyű kép"
+msgstr "Mappa dei tasti:"
 
 #: ../src\core\sessions\hotkey\gui\main.py:27
+#, fuzzy
 msgid "E&xecute Function"
-msgstr "F&unkció végrehajtása"
+msgstr "Funzione"
 
 #: ../src\core\sessions\hotkey\gui\main.py:29
 msgid "&Add..."
-msgstr "&hozzáadás..."
+msgstr "&Aggiungi..."
 
 #: ../src\core\sessions\hotkey\gui\main.py:31
 msgid "&Edit..."
-msgstr "&szerkeztés..."
+msgstr "&Modifica..."
 
 #: ../src\core\sessions\hotkey\gui\main.py:33
 msgid "&Delete..."
-msgstr "&törlés..."
+msgstr "&Elimina..."
 
 #: ../src\core\sessions\hotkey\gui\main.py:69
 msgid "Keystroke in use"
-msgstr "parancs használva"
+msgstr "Combinazione in uso"
 
 #: ../src\core\sessions\hotkey\gui\main.py:69
 msgid "The keystroke %s is already in use.  Please choose another."
-msgstr "a %s parancs már használat alatt áll. Válasszon egy másikat"
+msgstr "La combinazione %s è già in uso. Per favore, scegline un'altra."
 
 #: ../src\core\sessions\hotkey\gui\main.py:80
 msgid "Function"
-msgstr "funkció"
+msgstr "Funzione"
 
 #: ../src\core\sessions\hotkey\gui\main.py:81
 msgid "Keystroke"
-msgstr "parancs"
+msgstr "Combinazione di tasti"
 
 #: ../src\core\sessions\hotkey\gui\main.py:82
 #: ../src\session\twitter\buffers\users.py:30
 #: ../src\session\twitter\gui\list_manager\list_manager.py:147
 msgid "Description"
-msgstr "leírás"
+msgstr "Descrizione"
 
 #: ../src\core\sessions\hotkey\interface.py:21
 msgid "Keymap saved."
-msgstr "billentyű kép lementve"
+msgstr "Mappa dei tasti salvata."
 
 #: ../src\core\sessions\hotkey\interface.py:28
 msgid "Keyboard help on."
-msgstr "billentyűzet súgó bekapcsolva"
+msgstr "Aiuto tastiera attivato."
 
 #: ../src\core\sessions\hotkey\interface.py:30
 msgid "Keyboard help off."
-msgstr "Billentyűzet súgó kikapcsolva"
+msgstr "Aiuto tastiera disattivato."
 
 #: ../src\core\sessions\hotkey\interface.py:39
 msgid "Modifiers locked."
-msgstr "billentyű kombináció lezárva"
+msgstr ""
 
 #: ../src\core\sessions\sound\buffers\audio.py:17
 msgid "Attached Audio"
-msgstr "audio csatolva"
+msgstr "Allegato audio"
 
 #: ../src\core\sessions\sound\buffers\audio.py:42
 msgid "playing audio."
-msgstr "audio lejátszása"
+msgstr "Riproduzione audio."
 
 #: ../src\core\sessions\sound\buffers\audio.py:57
+#, fuzzy
 msgid "audio playback stopped."
-msgstr "audio lejátszás leállítva"
+msgstr "Riproduzione audio messa in pausa."
 
 #: ../src\core\sessions\sound\interface.py:25
 msgid "Louder."
-msgstr "hangosítás"
+msgstr "Più forte."
 
 #: ../src\core\sessions\sound\interface.py:32
 msgid "Quieter."
-msgstr "halkítás"
+msgstr "Meno forte."
 
 #: ../src\core\sessions\sound\sound.py:80
 msgid "No internet connection could be opened."
-msgstr "az internet kapcsolat nem megnyitható"
+msgstr "Nessuna connessione ad internet può essere aperta."
 
 #: ../src\core\sessions\sound\sound.py:83
 msgid "Unable to play audio."
-msgstr "audió lejátszása sikertelen"
+msgstr "Impossibile riprodurre l'audio."
 
 #: ../src\core\sessions\sound\sound.py:116
 msgid "Session mute off"
-msgstr "szakasz némítás kikapcsolva"
+msgstr "Silenzio sessione disattivato"
 
 #: ../src\core\sessions\sound\sound.py:118
 msgid "Session mute on"
-msgstr "szakasz némítás bekapcsolva"
+msgstr "Silenzio sessione attivato"
 
 #: ../src\core\sessions\sound\sound.py:124
 msgid "Global mute off"
-msgstr "Némítás kikapcsolva"
+msgstr "Silenzio globale disattivato"
 
 #: ../src\core\sessions\sound\sound.py:126
 msgid "Global mute on"
-msgstr "teljes némítás"
+msgstr "Silenzio globale attivato"
 
 #: ../src\core\sessions\storage\storage.py:59
 msgid "Sync failed."
-msgstr "sinkronizálás sikertelen"
+msgstr "Sincronizzazione fallita."
 
 #: ../src\core\sessions\storage\storage.py:63
 msgid "Sync completed."
-msgstr "sinkronizálás befejeződőtt"
+msgstr "Sincronizzazione completata."
 
 #: ../src\durus_importer.py:18
+#, fuzzy
 msgid "Loading file..."
-msgstr "fájl  betőltése..."
+msgstr "Caricamento preferiti."
 
 #: ../src\durus_importer.py:33
-#, fuzzy
 msgid "Attempting import of buffer %s"
-msgstr "a %s tárban régebbi hozzászólások visszaállítása..."
+msgstr ""
 
 #: ../src\main.pyw:37
 msgid "Welcome to %s"
-msgstr "üdvözli a %s"
+msgstr "Benvenuto in %s..."
 
 #: ../src\main.pyw:45
 msgid "There was an error in the startup process.  We appologize for this."
-msgstr "Hiba történt az indulás közben. Elnézést ezért"
+msgstr "C'è stato un errore nel processo di avvio. Ci scusiamo per questo."
 
 #: ../src\meta_interface.py:40
 msgid "%s Configuration"
-msgstr "%s Konfiguráció"
+msgstr "Configurazione di %s"
 
 #: ../src\meta_interface.py:50
 msgid "Are you sure you wish to exit %s?"
-msgstr "Biztosan kilép a %s-böl?"
+msgstr "Sei sicuro di voler uscire da %s?"
 
 #: ../src\meta_interface.py:50
 msgid "Exit %s"
-msgstr "kilépés a %s-böl"
+msgstr "Esci da %s"
 
 #: ../src\meta_interface.py:53
 msgid "Exiting %s."
-msgstr "kilépés a %s -böl"
+msgstr "Uscita da %s."
 
 #: ../src\meta_interface.py:66
 msgid "Speech recognition off."
-msgstr "Beszédfelismerés kikapcsolva."
+msgstr "Riconoscimento vocale disattivato."
 
 #: ../src\meta_interface.py:70
 msgid "Speech recognition on."
-msgstr "Beszédfelismerés bekapcsolva"
+msgstr "Riconoscimento vocale attivato."
 
 #: ../src\meta_interface.py:96 ../src\meta_interface.py:103
 msgid "Error: this is the only session."
-msgstr "hiba: Csak ez a szakasz létezik"
+msgstr "Errore: questa è l'unica sessione."
 
 #: ../src\meta_interface.py:104
 msgid "Delete Session"
-msgstr "Szakasz törlése"
+msgstr "Elimina sessione"
 
 #: ../src\meta_interface.py:122
 msgid "Please enter a name for this session."
-msgstr "Adja meg a szakasz nevét"
+msgstr "Per favore, inserisci un nome per questa sessione."
 
 #: ../src\meta_interface.py:127
 msgid "Unable to spawn new %s session."
-msgstr "Nemlehetett a %s szakaszt készíteni"
+msgstr "Impossibile aprire la nuova sessione %s."
 
 #: ../src\meta_interface.py:143
 msgid "Please enter a new name for session %s:"
-msgstr "Adja meg a %s új szakasz nevét"
+msgstr "Per favore, inserisci un nuovo nome per la sessione %s:"
 
 #: ../src\meta_interface.py:143
 msgid "Rename %s session"
-msgstr "a %s szakaz átnevezése"
+msgstr "Rinomina sessione %s"
 
 #: ../src\meta_interface.py:148
 msgid "Renaming session %s to %s, please wait."
-msgstr "a %s szakaz átnevezése %s-re, kérem várjon"
+msgstr "Ridenominazione sessione %s in %s, attendi per favore."
 
 #: ../src\meta_interface.py:152
 msgid "There was an error renaming %s to %s: %s"
-msgstr "Hiba történt a %s %s átnevezése közben: %s"
+msgstr "C'è stato un errore nel rinominare %s in %s: %s"
 
 #: ../src\meta_interface.py:153
 msgid "Renaming session complete."
-msgstr "Szakasz átnevezése sikeres"
+msgstr "Ridenominazione sessione completa."
 
 #: ../src\misc.py:92
 msgid "less than %d second"
-msgstr "kevesebb mint %d másodperce"
+msgstr "Meno di %d secondi"
 
 #: ../src\misc.py:93
 msgid "%d second"
-msgstr "%d másodperce"
+msgstr "%d secondo"
 
 #: ../src\misc.py:94
 msgid "%d seconds"
-msgstr "%d másodperce"
+msgstr "%d secondi"
 
 #: ../src\misc.py:95
 msgid "%d minute"
-msgstr "%d perce"
+msgstr "%d minuto"
 
 #: ../src\misc.py:96
 msgid "%d minutes"
-msgstr "%d perce"
+msgstr "%d minuti"
 
 #: ../src\misc.py:97
 msgid "%d hour"
-msgstr "%d óra"
+msgstr "%d ora"
 
 #: ../src\misc.py:98
-#, fuzzy
 msgid "%d hours"
-msgstr "%d órája"
+msgstr "%d ore"
 
 #: ../src\misc.py:99
 msgid "%d day"
-msgstr "%d nap"
+msgstr "%d giorno"
 
 #: ../src\misc.py:100
 msgid "%d days"
-msgstr "%d napok"
+msgstr "%d giorni"
 
 #: ../src\misc.py:101
 msgid "%d week"
-msgstr "%d hét"
+msgstr "%d settimana"
 
 #: ../src\misc.py:102
 msgid "%d weeks"
-msgstr "%d hete"
+msgstr "%d settimane"
 
 #: ../src\misc.py:103
 msgid "%d month"
-msgstr "%d hónap"
+msgstr "%d mese"
 
 #: ../src\misc.py:104
 msgid "%d months"
-msgstr "%d hónapja"
+msgstr "%d mesi"
 
 #: ../src\misc.py:105
 msgid "%d year"
-msgstr "%d éve"
+msgstr "%d anno"
 
 #: ../src\misc.py:106
 msgid "%d years"
-msgstr "%d éve"
+msgstr "%d anni"
 
 #: ../src\output.py:48
 msgid "No current session."
-msgstr "Nincs jelen aktív szakasz"
+msgstr "Nessuna sessione corrente."
 
 #: ../src\session\login.py:32
 msgid "Login succeeded."
-msgstr "bejelentkezés sikeres"
+msgstr "Accesso riuscito."
 
 #: ../src\session\login.py:35
 msgid "Login failed."
-msgstr "bejelentkezés sikertelen"
+msgstr "Accesso fallito."
 
 #: ../src\session\speech_recognition.py:39
 msgid "Unable to initialize speech recognition."
-msgstr "a hangfelismerés elindítása sikertelen volt"
+msgstr "Impossibile inizializzare il riconoscimento vocale."
 
 #: ../src\session\stopwatch\buffers\countdowns.py:15
 msgid "Remaining time"
-msgstr "maradandó idő"
+msgstr "Tempo rimanente"
 
 #: ../src\session\stopwatch\buffers\timers.py:17
 msgid "Elapsed time"
-msgstr "eltelt idő"
+msgstr "Tempo trascorso"
 
 #: ../src\session\stopwatch\buffers\timers.py:28
-#, fuzzy
 msgid "Stopwatch reset and counting."
-msgstr "Stopper mér"
+msgstr "Cronometro azzerato e conteggio in corso."
 
 #: ../src\session\stopwatch\buffers\timers.py:31
 msgid "Stopwatch counting."
-msgstr "Stopper mér"
+msgstr "Conteggio cronometro."
 
 #: ../src\session\stopwatch\gui\countdown.py:9
 msgid "Name:"
-msgstr "név:"
+msgstr "Nome:"
 
 #: ../src\session\stopwatch\interface.py:17
 msgid "Countdown Timer"
-msgstr "Időzítés"
+msgstr "Timer conto alla rovescia"
 
 #: ../src\session\stopwatch\interface.py:21
 msgid "Counting."
-msgstr "számolás"
+msgstr "Conteggio in corso."
 
 #: ../src\session\stopwatch\main.py:21
 msgid "Countdowns"
-msgstr "időzítések"
+msgstr "Conti alla rovescia"
 
 #: ../src\session\stopwatch\main.py:21
 msgid "Timers"
-msgstr "számlálók"
+msgstr "Timers"
 
 #: ../src\session\stopwatch\main.py:24
 msgid "default"
-msgstr "alapértelmezett"
+msgstr "Predefinito"
 
 #: ../src\session\stopwatch\main.py:79
-#, fuzzy
 msgid "Countdown %s complete."
-msgstr "Időzítés"
+msgstr "Conto alla rovescia %s completo."
 
 #: ../src\session\twitter\buffers\blocked.py:19
 #: ../src\session\twitter\buffers\blocked.py:23
 msgid "blocked user"
-msgstr "blokkolt használó"
+msgstr "%s Bloccato utente %s"
 
 #: ../src\session\twitter\buffers\blocked.py:20
 #: ../src\session\twitter\buffers\blocked.py:24
 msgid "blocked users"
-msgstr "blokkolt felhasználók"
+msgstr "Utenti bloccati"
 
 #: ../src\session\twitter\buffers\blocked.py:32
 msgid "%s blocked users retrieved."
-msgstr "%s blokkolt használók lekérve"
+msgstr "%s utenti bloccati recuperati."
 
 #: ../src\session\twitter\buffers\blocked.py:40
 msgid "Are you sure you wish to unblock %s?"
-msgstr "biztos a %s-t kiblokkolja?"
+msgstr "Sei sicuro di voler sbloccare %s?"
 
 #: ../src\session\twitter\buffers\blocked.py:40
 msgid "Unblock"
-msgstr "blokkolás feloldása"
+msgstr "Sblocca"
 
 #: ../src\session\twitter\buffers\blocked.py:46
 msgid "unblocking %s"
-msgstr "%s kiblokkolása"
+msgstr "%s sbloccato"
 
 #: ../src\session\twitter\buffers\directs.py:17
 msgid "direct message"
-msgstr "személyes üzenet"
+msgstr "Messaggio diretto"
 
 #: ../src\session\twitter\buffers\directs.py:18
 msgid "direct messages"
-msgstr "személyes üzenetek"
+msgstr "Messaggi diretti"
 
 #: ../src\session\twitter\buffers\directs.py:21
 #: ../src\session\twitter\buffers\tweets.py:16
 msgid "Screen Name"
-msgstr "felhasználói név"
+msgstr "Nome visualizzato"
 
 #: ../src\session\twitter\buffers\favorites.py:26
 msgid "favorite"
-msgstr "kedvenc"
+msgstr "Preferito"
 
 #: ../src\session\twitter\buffers\favorites.py:27
-#, fuzzy
 msgid "favorites"
-msgstr "kedvencek"
+msgstr "Preferiti"
 
 #: ../src\session\twitter\buffers\favorites.py:43
 #: ../src\session\twitter\twitter.py:358
 msgid "Tweet removed from favorites."
-msgstr "twít törölve a kedvencekböl"
+msgstr "Tweet rimosso dai preferiti."
 
 #: ../src\session\twitter\buffers\favorites.py:46
 msgid "Unable to remove tweet from favorites."
-msgstr "Twít törlése a kedvencekből sikertelen"
+msgstr "Impossibile rimuovere il tweet dai preferiti."
 
 #: ../src\session\twitter\buffers\followers.py:17
 #: ../src\session\twitter\buffers\followers.py:21
 msgid "follower"
-msgstr "követő"
+msgstr "Follower"
 
 #: ../src\session\twitter\buffers\followers.py:18
 #: ../src\session\twitter\buffers\followers.py:22
 msgid "followers"
-msgstr "követők"
+msgstr "Followers"
 
 #: ../src\session\twitter\buffers\followers_analysis.py:32
 msgid "New Follower"
-msgstr "új követő"
+msgstr "Nuovi followers"
 
 #: ../src\session\twitter\buffers\friends.py:18
 msgid "friend"
-msgstr "barát"
+msgstr "Amico"
 
 #: ../src\session\twitter\buffers\friends.py:19
 msgid "friends"
-msgstr "barátok"
+msgstr "Amici"
 
 #: ../src\session\twitter\buffers\home.py:14
 #: ../src\session\twitter\buffers\main.py:288
 #: ../src\session\twitter\interface.py:56
 #: ../src\session\twitter\twitter.py:350
-#, fuzzy
 msgid "tweet"
-msgstr "retwít"
+msgstr "Tweet"
 
 #: ../src\session\twitter\buffers\home.py:15
 msgid "tweets"
-msgstr "tweetek"
+msgstr "Tweets"
 
 #: ../src\session\twitter\buffers\individual.py:20
 msgid "tweet from %s"
-msgstr "twít megtekínthető %stöl"
+msgstr "Tweet da %s"
 
 #: ../src\session\twitter\buffers\individual.py:21
 msgid "tweets from %s"
-msgstr "twít megtekínthető %stöl"
+msgstr "Tweets da %s"
 
 #: ../src\session\twitter\buffers\list_members.py:19
 msgid "list member"
-msgstr "lista tag"
+msgstr "Membro della lista"
 
 #: ../src\session\twitter\buffers\list_members.py:20
 msgid "list members"
-msgstr "személyek a listán"
+msgstr "Membri della lista"
 
 #: ../src\session\twitter\buffers\list_members.py:34
 #: ../src\session\twitter\buffers\list_subscribers.py:34
 msgid "Are you sure you wish to remove %s from list %s?"
-msgstr "Biztosan kiakarja törölni a %s a %s-böl?"
+msgstr "Sei sicuro di voler rimuovere l'utente %s dalla lista %s?"
 
 #: ../src\session\twitter\buffers\list_members.py:34
 #: ../src\session\twitter\buffers\list_subscribers.py:34
 msgid "Remove user"
-msgstr "felhasználó törlés"
+msgstr "Rimuovi utente"
 
 #: ../src\session\twitter\buffers\list_members.py:38
 #: ../src\session\twitter\buffers\list_subscribers.py:38
 #: ../src\session\twitter\interface.py:681
 msgid "removing %s from list %s."
-msgstr "%s eltávolítása a %s listából"
+msgstr "Rimozione di %s alla lista %s."
 
 #: ../src\session\twitter\buffers\list_subscribers.py:19
 msgid "list subscriber"
-msgstr "lista jelentkező"
+msgstr "Iscritto alla lista"
 
 #: ../src\session\twitter\buffers\list_subscribers.py:20
 msgid "list subscribers"
-msgstr "lista jelentkezők"
+msgstr "Iscritti alla lista"
 
 #: ../src\session\twitter\buffers\local_trends.py:15
 msgid "local trend"
-msgstr "helyi irányok"
+msgstr "Tendenza locale"
 
 #: ../src\session\twitter\buffers\local_trends.py:16
 msgid "local trends"
-msgstr "helyi irányok"
+msgstr "Tendenze locali"
 
 #: ../src\session\twitter\buffers\local_trends.py:22
 msgid "Retrieving local trends"
-msgstr "helyi irányok lekérése"
+msgstr "Recupero tendenze locali"
 
 #: ../src\session\twitter\buffers\main.py:249
 msgid "Remove Tweet"
-msgstr "tweet törlése"
+msgstr "Rimuovi tweet"
 
 #: ../src\session\twitter\buffers\main.py:249
 msgid ""
 "The post you are trying to remove will also be deleted from Twitter.  Do you "
 "still wish to remove it?"
 msgstr ""
-"A hozzászólás ki lesz törölve a twitterböl is. Mindig törölné szeretné?"
+"Il messaggio che stai cercando di rimuovere sarà eliminato anche da Twitter. "
+"Desideri ancora rimuoverlo?"
 
 #: ../src\session\twitter\buffers\main.py:255
 msgid "Deleting direct message"
-msgstr "személyes üzenet törlése"
+msgstr "Eliminazione messaggio diretto"
 
 #: ../src\session\twitter\buffers\main.py:255
 msgid "deleting direct message"
-msgstr "személyes üzenet törlése"
+msgstr "Eliminazione messaggio diretto"
 
 #: ../src\session\twitter\buffers\main.py:257
 msgid "removing item"
-msgstr "elem tőrlése"
+msgstr "Rimozione elemento"
 
 #: ../src\session\twitter\buffers\mentions.py:16
 msgid "mention"
-msgstr "Említés"
+msgstr "Menzione"
 
 #: ../src\session\twitter\buffers\mentions.py:17
 msgid "mentions"
-msgstr "Említések"
+msgstr "Menzioni"
 
 #: ../src\session\twitter\buffers\public.py:18
 msgid "public tweet"
-msgstr "publik tweet"
+msgstr "Tweet pubblico"
 
 #: ../src\session\twitter\buffers\public.py:19
 msgid "public tweets"
-msgstr "publik tweetek"
+msgstr "Tweets pubblici"
 
 #: ../src\session\twitter\buffers\retweets.py:16
 msgid "retweet"
-msgstr "újra twítelés"
+msgstr "Retweet"
 
 #: ../src\session\twitter\buffers\retweets.py:17
 msgid "retweets"
-msgstr "saját újratwítjeim"
+msgstr "Retweets"
 
 #: ../src\session\twitter\buffers\search.py:24
 #: ../src\session\twitter\buffers\user_search.py:17
 msgid "result for %s"
-msgstr "új találhat %s hez"
+msgstr "Risultato per %s"
 
 #: ../src\session\twitter\buffers\search.py:25
 #: ../src\session\twitter\buffers\user_search.py:18
 msgid "results for %s"
-msgstr "új találatok %s hez"
+msgstr "Risultati per %s"
 
 #: ../src\session\twitter\buffers\search.py:44
 msgid "saving search %s"
-msgstr "%s keresés mentése"
+msgstr "Salvataggio ricerca %s"
 
 #: ../src\session\twitter\buffers\search.py:47
 msgid "Destroying saved search %s"
-msgstr "a %s mentett keresés bontása"
+msgstr "Distruzione della ricerca salvata %s"
 
 #: ../src\session\twitter\buffers\sent.py:22
 msgid "sent item"
-msgstr "elküldött elem"
+msgstr "Elemento inviato"
 
 #: ../src\session\twitter\buffers\sent.py:23
 msgid "sent items"
-msgstr "elküldött elemek"
+msgstr "Elementi inviati"
 
 #: ../src\session\twitter\buffers\sent.py:29
 msgid "Direct Message"
-msgstr "személyes üzenet"
+msgstr "Messaggio diretto"
 
 #: ../src\session\twitter\buffers\sent.py:30
 msgid "DM Recipient's Name"
-msgstr "Személyes üzenet feladó neve"
+msgstr "Nome destinatario del messaggio diretto"
 
 #: ../src\session\twitter\buffers\sent.py:31
 msgid "DM Recipient's Screen Name"
-msgstr "Személyes üzenet feladó twitter neve"
+msgstr "Nome visualizzato destinatario del messaggio diretto"
 
 #: ../src\session\twitter\buffers\social_network.py:30
 msgid "user"
-msgstr "felhasználó"
+msgstr ""
 
 #: ../src\session\twitter\buffers\social_network.py:31
 msgid "users"
-msgstr "felhasználók"
+msgstr ""
 
 #: ../src\session\twitter\buffers\top_trends.py:20
 msgid "Retrieving trends"
-msgstr "irányok lekérése"
+msgstr "Recupero tendenze"
 
 #: ../src\session\twitter\buffers\trends.py:18
 msgid "trend"
-msgstr "irány"
+msgstr "Tendenza"
 
 #: ../src\session\twitter\buffers\trends.py:19
 msgid "trends"
-msgstr "irányok"
+msgstr "Tendenze"
 
 #: ../src\session\twitter\buffers\trends.py:22
 msgid "Trending item's name"
-msgstr "irányok neve"
+msgstr "Nome dell'elemento tendenza"
 
 #: ../src\session\twitter\buffers\trends.py:33
 msgid "%s updated."
-msgstr "%s frissitve"
+msgstr "%s aggiornato."
 
 #: ../src\session\twitter\buffers\trends.py:42
 msgid "Search"
-msgstr "keresés"
+msgstr "Ricerca"
 
 #: ../src\session\twitter\buffers\tweets.py:12
 msgid "Tweet Source"
-msgstr "tweet forrása"
+msgstr "Tweet sorgente"
 
 #: ../src\session\twitter\buffers\tweets.py:13
 msgid "Geo Tagged"
-msgstr "földhely"
+msgstr "Ultime notizie"
 
 #: ../src\session\twitter\buffers\tweets.py:14
 msgid "Message Text"
-msgstr "üzenet szövege:"
+msgstr "Testo del messaggio"
 
 #: ../src\session\twitter\buffers\tweets.py:17
 #: ../src\session\twitter\buffers\users.py:29
 msgid "Location"
-msgstr "hely"
+msgstr "Posizione"
 
 #: ../src\session\twitter\buffers\tweets.py:18
 msgid "Retweet count"
-msgstr "újratweetek száma"
+msgstr "Conteggio retweet"
 
 #: ../src\session\twitter\buffers\tweets.py:19
 msgid "Favorited"
-msgstr "kedvencelve"
+msgstr "Preferito"
 
 #: ../src\session\twitter\buffers\tweets.py:20
 msgid "Retweeted"
-msgstr "újratweetelve"
+msgstr "Di cui si è effettuato il retweet"
 
 #: ../src\session\twitter\buffers\users.py:28
+#, fuzzy
 msgid "Screen name"
-msgstr "felhasználói név"
+msgstr "Nome visualizzato:"
 
 #: ../src\session\twitter\buffers\users.py:31
 msgid "Protected"
-msgstr "levédve"
+msgstr "Protetto"
 
 #: ../src\session\twitter\buffers\users.py:32
 msgid "Follower count"
-msgstr "követők száma"
+msgstr "Conteggio followers"
 
 #: ../src\session\twitter\buffers\users.py:33
 msgid "Friend count"
-msgstr "barátok száma"
+msgstr "Conteggio amici"
 
 #: ../src\session\twitter\buffers\users.py:34
 msgid "Number of tweets"
-msgstr "twítek száma"
+msgstr "Numero di tweets"
 
 #: ../src\session\twitter\buffers\users.py:35
 msgid "Device notifications"
-msgstr "ezközi értesítések"
+msgstr "Notifiche su dispositivo mobile"
 
 #: ../src\session\twitter\buffers\users.py:36
 msgid "User's local time"
-msgstr "felhasználó helzy idője"
+msgstr "Ora locale dell'utente"
 
 #: ../src\session\twitter\buffers\users.py:38
 msgid "Last Tweet Time"
-msgstr "utolsó tweet időpontja"
+msgstr "Ora ultimo tweet"
 
 #: ../src\session\twitter\buffers\users.py:39
 msgid "Last Tweet Date"
-msgstr "utolsó tweet dátuma"
+msgstr "Data ultimo tweet"
 
 #: ../src\session\twitter\buffers\users.py:40
 msgid "Last Tweet Relative Time"
-msgstr "utolsó tweet idője"
+msgstr "Tempo relativo all'ultimo tweet"
 
 #: ../src\session\twitter\buffers\users.py:77
+#, fuzzy
 msgid "%s updated"
-msgstr "%s frissítve"
+msgstr "%s aggiornato."
 
 #: ../src\session\twitter\buffers\users.py:79
+#, fuzzy
 msgid "%s for %s updated"
-msgstr "%s frissitve a %s hez"
+msgstr "%s aggiornato."
 
 #: ../src\session\twitter\gui\api_count.py:12
 msgid "Posts per update:"
-msgstr "hozzászólások lekérése egy frissítés alatt:"
+msgstr "Messaggi per aggiornamento:"
 
 #: ../src\session\twitter\gui\api_count.py:17
 msgid "Max API calls to use per update (1 API call = {0} tweets)"
-msgstr ""
-"Max API hívás használata egy frissítés lekérésekor (1 api hívás = {0} twít)"
+msgstr "Massimo api calls da usare per aggiornamento (1 api call = [0] tweets)"
 
 #: ../src\session\twitter\gui\configuration\main.py:16
 msgid "Twitter Configuration"
-msgstr "Qwitter Konfiguráció"
+msgstr "Configurazione di twitter"
 
 #: ../src\session\twitter\gui\configuration\main.py:24
 msgid "Sounds"
-msgstr "hangok"
+msgstr "Suoni"
 
 #: ../src\session\twitter\gui\configuration\main.py:26
 msgid "Templates"
-msgstr "sablonok"
+msgstr "Modelli"
 
 #: ../src\session\twitter\gui\configuration\main.py:44
 msgid "Always add comments (old style)"
-msgstr "mindeg lehessen megjegyzéseket hozzáadni (régi stílus)"
+msgstr "Aggiungere sempre i commenti (vecchio stile)"
 
 #: ../src\session\twitter\gui\configuration\main.py:44
 msgid "Ask whether comments are to be added (recommended)"
-msgstr "megjegyzések hozzáadása küldés előtt (ajánlott)"
+msgstr "Chiedere se devono essere aggiunti commenti (raccomandato)"
 
 #: ../src\session\twitter\gui\configuration\main.py:44
 msgid "Never add comments (automatically retweet)"
-msgstr "Soha se legyen megkérdezve (automatikusan retwít)"
+msgstr "Non aggiungere mai commenti (fai il retweet automaticamente)"
 
 #: ../src\session\twitter\gui\configuration\panels\misc.py:9
 msgid "Enable DM safe mode"
-msgstr "Személyes üzenetek  biztonságos mód engedélyezése"
+msgstr "Attiva la modalità sicura per messaggi diretti"
 
 #: ../src\session\twitter\gui\configuration\panels\misc.py:10
 msgid "Confirm before removing sent tweets and DMs"
-msgstr "DM és elküldött elemek törlés előtt megkérdés"
+msgstr "Conferma prima di rimuovere tweets inviati e messaggi diretti"
 
 #: ../src\session\twitter\gui\configuration\panels\misc.py:11
 msgid "Retweet Style"
-msgstr "retwít formátum"
+msgstr "Stile retweet"
 
 #: ../src\session\twitter\gui\configuration\panels\misc.py:14
 msgid "Allow reply to self"
-msgstr "önmagára való válaszolás engedélyezése"
+msgstr "Permetti la risposta a te stesso"
 
 #: ../src\session\twitter\gui\configuration\panels\misc.py:15
 msgid "Work offline"
-msgstr "kapcsolat nélküli dolgozás"
+msgstr "Lavora offline"
 
 #: ../src\session\twitter\gui\configuration\panels\sound.py:8
 msgid "Sound pack"
-msgstr "hang téma"
+msgstr "Pacchetti suoni"
 
 #: ../src\session\twitter\gui\configuration\panels\sound.py:11
 msgid "Mute session"
-msgstr "szakasz némítása"
+msgstr "Silenzio sessione"
 
 #: ../src\session\twitter\gui\configuration\panels\templates.py:10
 msgid "New generic buffer template:"
-msgstr "új  nemi sablon:"
+msgstr "Nuovo modello per buffer generico:"
 
 #: ../src\session\twitter\gui\configuration\panels\templates.py:14
 msgid "New search buffer template:"
-msgstr "új keresési sablon"
+msgstr "Nuovo modello per buffer di ricerca:"
 
 #: ../src\session\twitter\gui\configuration\panels\templates.py:18
 msgid "New followers/friends buffer template:"
-msgstr "alapértelmezett követők és barátok sablonja"
+msgstr "Nuovo modello per buffer di followers/amici:"
 
 #: ../src\session\twitter\gui\configuration\panels\templates.py:22
 msgid "Modify Existing Buffer Templates..."
-msgstr "jelen puffer sablon módositása"
+msgstr "Modifica i modelli per i buffer esistenti..."
 
 #: ../src\session\twitter\gui\configuration\panels\templates.py:25
 msgid "User info template:"
-msgstr "felhasználói infó sablona:"
+msgstr "Modello per informazioni utente:"
 
 #: ../src\session\twitter\gui\configuration\panels\templates.py:29
 msgid "Reply template:"
-msgstr "válaszolási sablon:"
+msgstr "Modello per risposta:"
 
 #: ../src\session\twitter\gui\configuration\panels\templates.py:33
 msgid "Retweet template:"
-msgstr "retwít sablon:"
+msgstr "Modello per retweet:"
 
 #: ../src\session\twitter\gui\favorites.py:9
 msgid "Display favorites"
-msgstr "kedvencek megtekintése"
+msgstr "Visualizza preferiti"
 
 #: ../src\session\twitter\gui\favorites.py:11
 msgid "Favorites for:"
-msgstr "e kedvencei:"
+msgstr "Preferiti di:"
 
 #: ../src\session\twitter\gui\follow.py:8
 msgid "Follow someone"
-msgstr "Valaki követése"
+msgstr "Segui qualcuno"
 
 #: ../src\session\twitter\gui\follow.py:9
 msgid "Follow who:"
-msgstr "követés ezt a felhasználót:"
+msgstr "Segui chi:"
 
 #: ../src\session\twitter\gui\follow.py:11
 msgid "Mobile Updates"
-msgstr "mobil ezköz frissítések"
+msgstr "Aggiornamenti sul cellulare"
 
 #: ../src\session\twitter\gui\followers.py:9
 msgid "List Followers"
-msgstr "követők megjelenítése"
+msgstr "Lista followers"
 
 #: ../src\session\twitter\gui\followers.py:11
 msgid "Followers for:"
-msgstr "e felhasználó követői:"
+msgstr "Followers di:"
 
 #: ../src\session\twitter\gui\friends.py:9
 msgid "List Friends"
-msgstr "barátok megjelenítése"
+msgstr "Lista amici"
 
 #: ../src\session\twitter\gui\friends.py:11
 msgid "Friends for:"
-msgstr "e felhasználó barátai:"
+msgstr "Amici di:"
 
 #: ../src\session\twitter\gui\geo_location.py:11
 msgid "Geo Location"
-msgstr "geó helyszín"
+msgstr "Posizione geografica"
 
 #: ../src\session\twitter\gui\geo_location.py:15
 msgid "Geo location coordinates:"
-msgstr "geó helyszín kordináták"
+msgstr "Coordinate posizione geografica:"
 
 #: ../src\session\twitter\gui\geo_location.py:22
 #: ../src\session\twitter\gui\profile.py:24
 msgid "Location:"
-msgstr "hely:"
+msgstr "Posizione:"
 
 #: ../src\session\twitter\gui\geo_location_input.py:9
 msgid "Input Coordinates"
-msgstr "kordináták beírása"
+msgstr "Immissione coordinate:"
 
 #: ../src\session\twitter\gui\geo_location_input.py:11
 msgid "Latitude:"
-msgstr "szélesség"
+msgstr "Latitudine:"
 
 #: ../src\session\twitter\gui\geo_location_input.py:20
 msgid "Longitude:"
-msgstr "Hosszúság"
+msgstr "Longitudine:"
 
 #: ../src\session\twitter\gui\geo_location_input.py:37
 msgid "Error: Latitude must be a value between negative 90 and positive 90."
-msgstr "hiba: szélesség csak negatív 90 és pozitív 90 közötti szám lehet"
+msgstr "Errore: la latitudine deve essere un valore tra +90 e -90."
 
 #: ../src\session\twitter\gui\geo_location_input.py:38
 msgid "Error: Longitude must be a value between negative 180 and positive 180."
-msgstr "hiba: hossúság csak negatív 180 és pozitív 180 közötti szám lehet"
+msgstr "Errore: la latitudine deve essere un valore tra +180 e -180."
 
 #: ../src\session\twitter\gui\individual.py:9
 msgid "Individual Timeline"
-msgstr "egyéni idövonal:"
+msgstr "Timeline individuale"
 
 #: ../src\session\twitter\gui\individual.py:11
 msgid "Buffer for:"
-msgstr "tár e felhasználóhoz:"
+msgstr "Vuffer di:"
 
 #: ../src\session\twitter\gui\list_manager\add_list.py:11
 msgid "List name:"
-msgstr "Lista Neve:"
+msgstr "Nome lista:"
 
 #: ../src\session\twitter\gui\list_manager\add_list.py:15
 msgid "List mode:"
-msgstr "Lista típusa:"
+msgstr "Modalità lista:"
 
 #: ../src\session\twitter\gui\list_manager\add_list.py:18
 msgid "List description:"
-msgstr "Lista leírása:"
+msgstr "Descrizione lista:"
 
 #: ../src\session\twitter\gui\list_manager\list_manager.py:18
 msgid "List manager"
-msgstr "lista kezelő"
+msgstr "Gestore lista"
 
 #: ../src\session\twitter\gui\list_manager\list_manager.py:19
 msgid "Current lists:"
-msgstr "jelen listák:"
+msgstr "Liste correnti:"
 
 #: ../src\session\twitter\gui\list_manager\list_manager.py:23
 msgid "&Add list..."
-msgstr "&lista hozzáadása"
+msgstr "&Aggiungi lista..."
 
 #: ../src\session\twitter\gui\list_manager\list_manager.py:25
 msgid "&Edit list..."
-msgstr "&lista szerkeztése..."
+msgstr "&Modifica lista..."
 
 #: ../src\session\twitter\gui\list_manager\list_manager.py:27
 msgid "&Remove list..."
-msgstr "lista törlése"
+msgstr "&Rimuovi lista..."
 
 #: ../src\session\twitter\gui\list_manager\list_manager.py:29
+#, fuzzy
 msgid "Subscribe"
-msgstr "feljelentkezés"
+msgstr "Iscritto alla lista"
 
 #: ../src\session\twitter\gui\list_manager\list_manager.py:31
+#, fuzzy
 msgid "&Unsubscribe"
-msgstr "&lejelentkezés"
+msgstr "Iscritto alla lista"
 
 #: ../src\session\twitter\gui\list_manager\list_manager.py:33
 msgid "&Spawn list"
-msgstr "&lista elkészítése"
+msgstr "&Apri lista"
 
 #: ../src\session\twitter\gui\list_manager\list_manager.py:47
 msgid "Add list"
-msgstr "lista hozzáadása"
+msgstr "Aggiungi lista"
 
 #: ../src\session\twitter\gui\list_manager\list_manager.py:55
+#, fuzzy
 msgid "Creating list"
-msgstr "lista elkészítése"
+msgstr "Liste correnti:"
 
 #: ../src\session\twitter\gui\list_manager\list_manager.py:55
 #: ../src\session\twitter\gui\list_manager\list_manager.py:70
 #: ../src\session\twitter\gui\list_manager\list_manager.py:81
 msgid "Please wait..."
-msgstr "kérem várjon..."
+msgstr "Attendi per favore..."
 
 #: ../src\session\twitter\gui\list_manager\list_manager.py:62
 msgid "Edit list"
-msgstr "lista szerkeztése"
+msgstr "Modifica lista"
 
 #: ../src\session\twitter\gui\list_manager\list_manager.py:70
+#, fuzzy
 msgid "Editting list"
-msgstr "lista szerkeztése"
+msgstr "Modifica lista"
 
 #: ../src\session\twitter\gui\list_manager\list_manager.py:77
 msgid "Delete list"
-msgstr "lista törlése"
+msgstr "Elimina lista"
 
 #: ../src\session\twitter\gui\list_manager\list_manager.py:88
 msgid "Subscribing to list"
-msgstr "feljelentkezése a listára"
+msgstr ""
 
 #: ../src\session\twitter\gui\list_manager\list_manager.py:94
 msgid "Unsubscribing from list"
-msgstr "lista lemondása"
+msgstr ""
 
 #: ../src\session\twitter\gui\list_manager\list_manager.py:145
 msgid "Owner"
-msgstr "kezelő"
+msgstr ""
 
 #: ../src\session\twitter\gui\list_manager\list_manager.py:146
 msgid "Mode"
-msgstr "mód"
+msgstr "Modalità"
 
 #: ../src\session\twitter\gui\local_trends.py:16
 msgid "Location Selection"
-msgstr "hely választása"
+msgstr "Selezione posizione"
 
 #: ../src\session\twitter\gui\local_trends.py:18
 msgid "Select type of location:"
-msgstr "válassza ki a hely típusát"
+msgstr "Seleziona tipo di posizione:"
 
 #: ../src\session\twitter\gui\local_trends.py:20
 msgid "Select location:"
-msgstr "válassza ki a hely címét:"
+msgstr "Seleziona posizione:"
 
 #: ../src\session\twitter\gui\new_reply.py:11
 msgid "&Mention all users"
-msgstr "&hozzászólás minden felhasználónak"
+msgstr "&Menziona tutti gli utenti"
 
 #: ../src\session\twitter\gui\new_tweet.py:9
 msgid "Tweet"
-msgstr "twít"
+msgstr "Tweet"
 
 #: ../src\session\twitter\gui\new_tweet.py:13
 msgid "Retweet:"
-msgstr "retwít:"
+msgstr "Retweet"
 
 #: ../src\session\twitter\gui\profile.py:19
 msgid "Screen name:"
-msgstr "felhasználói név:"
+msgstr "Nome visualizzato:"
 
 #: ../src\session\twitter\gui\profile.py:21
 msgid "Real name:"
-msgstr "Név:"
+msgstr "Vero nome:"
 
 #: ../src\session\twitter\gui\profile.py:26
 msgid "Account ID:"
-msgstr "fiók száma"
+msgstr ""
 
 #: ../src\session\twitter\gui\profile.py:29
 msgid "URL:"
-msgstr "webcím:"
+msgstr "URL:"
 
 #: ../src\session\twitter\gui\profile.py:35
 msgid "Bio:"
-msgstr "életrajz:"
+msgstr "Bio:"
 
 #: ../src\session\twitter\gui\profile.py:37
 msgid "Tweets are protected:"
-msgstr "twítek védettek:"
+msgstr "I tweets sono protetti:"
 
 #: ../src\session\twitter\gui\profile.py:39
 msgid "Yes"
@@ -1893,11 +1901,11 @@ msgstr ""
 
 #: ../src\session\twitter\gui\profile.py:43
 msgid "Number of followers:"
-msgstr "kötetők száma:"
+msgstr "Numero di followers:"
 
 #: ../src\session\twitter\gui\profile.py:45
 msgid "Number of friends:"
-msgstr "barátok száma:"
+msgstr "Numero di amici:"
 
 #: ../src\session\twitter\gui\profile.py:47
 msgid "Number of having this user in their lists:"
@@ -1905,342 +1913,348 @@ msgstr ""
 
 #: ../src\session\twitter\gui\profile.py:49
 msgid "Number of tweets:"
-msgstr "twítek száma:"
+msgstr "Numero di tweets:"
 
 #: ../src\session\twitter\gui\profile.py:51
 msgid "Average tweets per day since joining Twitter:"
-msgstr "átlag twítek száma a Twitter használata óta:"
+msgstr "Media giornaliera tweet dall'iscrizione a twitter"
 
 #: ../src\session\twitter\gui\profile.py:54
 msgid "Date of last tweet:"
-msgstr "utolsó twít dátuma:"
+msgstr "Data dell'ultimo tweet:"
 
 #: ../src\session\twitter\gui\profile.py:58
 msgid "Not available"
-msgstr "nem érhető el"
+msgstr "Non disponibile"
 
 #: ../src\session\twitter\gui\profile.py:60
 msgid "Date joined Twitter:"
-msgstr "Twitter csatlakozási dátuma:"
+msgstr "Data iscrizione a twitter"
 
 #: ../src\session\twitter\gui\profile.py:93
 msgid "Follow %s"
-msgstr "%s követése"
+msgstr "Segui %s"
 
 #: ../src\session\twitter\gui\profile.py:96
 msgid "Unfollow %s"
-msgstr "%s követés lemondása"
+msgstr "Smetti di seguire %s"
 
 #: ../src\session\twitter\gui\profile_update.py:10
 msgid "Update profile"
-msgstr "személyes profil frissítése"
+msgstr "Aggiorna profilo"
 
 #: ../src\session\twitter\gui\profile_update.py:11
 msgid "Name (Maximum of %d characters)."
-msgstr "név (maximum %d karakter)"
+msgstr "Nome (massimo di %d caratteri)."
 
 #: ../src\session\twitter\gui\profile_update.py:17
 msgid "URL (Maximum of %d characters)."
-msgstr "honlap (maximum %d karakter)"
+msgstr "URL (massimo di %d caratteri)."
 
 #: ../src\session\twitter\gui\profile_update.py:23
 msgid "Location (Maximum of %d characters)."
-msgstr "tartózkodási helye (maximum %d karakter)"
+msgstr "Posizione (massimo di %d caratteri)."
 
 #: ../src\session\twitter\gui\profile_update.py:32
 msgid "Bio (Maximum of %d characters)."
-msgstr "életrajz (maximum %d karakter)"
+msgstr "Bio (massimo di %d caratteri)."
 
 #: ../src\session\twitter\gui\relationship_status.py:8
 msgid "Relationship"
-msgstr "kapcsolat"
+msgstr "Relazione"
 
 #: ../src\session\twitter\gui\relationship_status.py:10
 msgid "Relationship status between:"
-msgstr "kapcsolat e felhasználók közt:"
+msgstr "Stato di relazione tra:"
 
 #: ../src\session\twitter\gui\relationship_status.py:13
 msgid "And:"
-msgstr "és:"
+msgstr "E:"
 
 #: ../src\session\twitter\gui\search.py:10
 msgid "Twitter Search:"
-msgstr "Twitter Keresés:"
+msgstr "Ricerca di twitter:"
 
 #: ../src\session\twitter\gui\search.py:15
 msgid "Persistent results"
-msgstr "tartott eredmények"
+msgstr "Risultati persistenti"
 
 #: ../src\session\twitter\gui\search.py:18
 msgid "Save Search"
-msgstr "keresés mentése"
+msgstr "Salva la ricerca"
 
 #: ../src\session\twitter\gui\unfollow.py:8
 msgid "Unfollow someone"
-msgstr "Felhasználó kikövetése"
+msgstr "Smetti di seguire qualcuno"
 
 #: ../src\session\twitter\gui\unfollow.py:10
 msgid "Unfollow who:"
-msgstr "Kikövetés ezt:"
+msgstr "Smetti di seguire chi:"
 
 #: ../src\session\twitter\gui\unfollow.py:13
 msgid "Action:"
-msgstr "művelet"
+msgstr "Azione:"
 
 #: ../src\session\twitter\gui\unfollow.py:13
 msgid "Block"
-msgstr "blokkolás"
+msgstr "Blocca"
 
 #: ../src\session\twitter\gui\unfollow.py:13
 msgid "Report as spam"
-msgstr "számolás spamként "
+msgstr "Segnala come spam"
 
 #: ../src\session\twitter\gui\unfollow.py:13
 msgid "Unfollow"
-msgstr "követés lemondása"
+msgstr "Smetti di seguire"
 
 #: ../src\session\twitter\gui\user_info.py:8
 msgid "User profile"
-msgstr "felhasználói profil"
+msgstr "Profilo utente"
 
 #: ../src\session\twitter\gui\user_info.py:10
 msgid "User profile for:"
-msgstr "profil ennek:"
+msgstr "Profilo utente di:"
 
 #: ../src\session\twitter\interface.py:65
 msgid "Direct message"
-msgstr "személyes üzenet"
+msgstr "Messaggio diretto"
 
 #: ../src\session\twitter\interface.py:72
 msgid "dm"
-msgstr "dm"
+msgstr "Messaggio diretto"
 
 #: ../src\session\twitter\interface.py:91
-#, fuzzy
 msgid "Unable to detect a user to reply to."
-msgstr "az üzenet törlése sikertelen a Twitterböl"
+msgstr "Impossibile trovare un utente a cui rispondere."
 
 #: ../src\session\twitter\interface.py:92
 #: ../src\session\twitter\twitter.py:248
 msgid "Reply"
-msgstr "hozzászólás"
+msgstr "Risposta"
 
 #: ../src\session\twitter\interface.py:99
+#, fuzzy
 msgid "reply"
-msgstr "válaszolás"
+msgstr "Risposta"
 
 #: ../src\session\twitter\interface.py:107
 msgid "view item"
-msgstr "elem megtekíntése"
+msgstr "Visualizza elemento"
 
 #: ../src\session\twitter\interface.py:113
 msgid "View Tweet From %s"
-msgstr "%s twít a következőtöl:"
+msgstr "Visualizza tweet da %s"
 
 #: ../src\session\twitter\interface.py:131
 msgid "Item is not a post."
-msgstr "elem nem egy hozzászólás"
+msgstr "L'elemento non è un messaggio."
 
 #: ../src\session\twitter\interface.py:134
 msgid "Cannot retweet a direct message while DM safe mode is enabled."
 msgstr ""
-"egy személyes üzenet újraküldése nem lehetséges míg a Személyes üzenet "
-"biztonsági mód engedélyzve van"
+"Non si può fare il retweet di un messaggio diretto mentre la modalità "
+"messaggio diretto sicuro è attiva."
 
 #: ../src\session\twitter\interface.py:137
 msgid "Cannot retweet your own tweet."
-msgstr "saját twítet nemlehet retwítelni"
+msgstr "Non si può fare il retweet di un tuo stesso tweet."
 
 #: ../src\session\twitter\interface.py:141
 msgid "Would you like to add a comment?"
-msgstr "Akar hozzáfűzni megjegyzéseket? "
+msgstr "Desideri aggiungere un commento?"
 
 #: ../src\session\twitter\interface.py:141
 #: ../src\session\twitter\twitter.py:241
 msgid "Retweet"
-msgstr "retwít"
+msgstr "Retweet"
 
 #: ../src\session\twitter\interface.py:160
 msgid "No users to follow detected in current post."
-msgstr "e hozzászólásban nincsenek követendő felhasználók"
+msgstr "Nessun utente da seguire trovato nel messaggio corrente."
 
 #: ../src\session\twitter\interface.py:173
 msgid "No users to unfollow detected in current post."
-msgstr "e hozzászólásban nincsenek kikövetendő felhasználók"
+msgstr "Nessun utente da smettere di seguire trovato nel messaggio corrente."
 
 #: ../src\session\twitter\interface.py:200
 msgid "No URLs detected in current post."
-msgstr "a jelen hozzászolásban nincsenek webcímek"
+msgstr "Nessun URL trovato nel messaggio corrente."
 
 #: ../src\session\twitter\interface.py:213
 msgid "Twitter search"
-msgstr "twitter keresés"
+msgstr "Ricerca di Twitter"
 
 #: ../src\session\twitter\interface.py:222
 msgid "Please enter a term to search for."
-msgstr "írja be a keresendő kifejezést:"
+msgstr "Per favore, inserisci un termine da cercare:"
 
 #: ../src\session\twitter\interface.py:224
 #: ../src\session\twitter\twitter.py:127
 msgid "Search for %s"
-msgstr "%s keresése"
+msgstr "Ricerca di %s"
 
 #: ../src\session\twitter\interface.py:230
 msgid "Trending: Worldwide"
-msgstr "Trendek: világilag"
+msgstr "Tendenza: tutto il mondo"
 
 #: ../src\session\twitter\interface.py:235
 msgid "Loading public timeline."
-msgstr "publik idővonal betöltése"
+msgstr "Caricamento timeline pubblica."
 
 #: ../src\session\twitter\interface.py:235
 msgid "Public Timeline"
-msgstr "publik idővonal"
+msgstr "Timeline pubblica"
 
 #: ../src\session\twitter\interface.py:240
 msgid "Favorites"
-msgstr "kedvencek"
+msgstr "Preferiti"
 
 #: ../src\session\twitter\interface.py:240
 msgid "Loading favorites"
-msgstr "kedvencek betöltése"
+msgstr "Caricamento preferiti."
 
 #: ../src\session\twitter\interface.py:249
 msgid "%s's favorites"
-msgstr "%s kedvencei"
+msgstr "Preferiti di %s"
 
 #: ../src\session\twitter\interface.py:250
 msgid "Loading favorites for %s."
-msgstr "%s kedvencei letöltése"
+msgstr "Caricamento preferiti di %s"
 
 #: ../src\session\twitter\interface.py:267
 msgid "Followers"
-msgstr "követők"
+msgstr "Followers"
 
 #: ../src\session\twitter\interface.py:267
 msgid "Loading followers list."
-msgstr "követők lista betöltése"
+msgstr "Caricamento lista followers."
 
 #: ../src\session\twitter\interface.py:272
 msgid "Friends"
-msgstr "barátok"
+msgstr "Amici"
 
 #: ../src\session\twitter\interface.py:272
 msgid "Loading friends list."
-msgstr "barátok lista betöltése"
+msgstr "Caricamento lista amici."
 
 #: ../src\session\twitter\interface.py:283
 msgid ""
 "Please launch your followers buffer before attempting to perform analysis."
-msgstr "Kérem nitsa meg a követők tárt elemzés előtt"
+msgstr ""
+"Per favore, lancia il tuo buffer di followers prima di tentare di eseguire "
+"l'analisi."
 
 #: ../src\session\twitter\interface.py:285
 msgid "Cannot perform analysis on an empty followers buffer."
-msgstr "nemlehet elemzést készíteni egy üres követők táron"
+msgstr "Non si può eseguire l'analisi in un buffer di followers vuoto."
 
 #: ../src\session\twitter\interface.py:286
 msgid "Followers Analysis"
-msgstr "Követők elemzése"
+msgstr "Analisi dei followers"
 
 #: ../src\session\twitter\interface.py:286
 msgid "Performing followers analysis, please wait..."
-msgstr "követők elemzés végrehajtása, kérem várjon..."
+msgstr "Esecuzione analisi followers, attendi per favore."
 
 #: ../src\session\twitter\interface.py:291
 msgid "Blocked Users"
-msgstr "leblokkolt felhasználók"
+msgstr "Utenti bloccati"
 
 #: ../src\session\twitter\interface.py:291
 msgid "Loading blocked users."
-msgstr "blokkolt felhasználók betöltése"
+msgstr "Caricamento utenti bloccati."
 
 #: ../src\session\twitter\interface.py:319
 msgid "%s's timeline"
-msgstr "%s idővonala"
+msgstr "Timeline di %s"
 
 #: ../src\session\twitter\interface.py:319
 msgid "Loading timeline for %s."
-msgstr "%s idővonal betöltése"
+msgstr "Caricamento timeline di %s"
 
 #: ../src\session\twitter\interface.py:365
 msgid "%s's followers"
-msgstr "%s követői"
+msgstr "Followers di %s"
 
 #: ../src\session\twitter\interface.py:366
 #: ../src\session\twitter\interface.py:378
 msgid "Loading friends for %s."
-msgstr "%s barátai betőltése"
+msgstr "Caricamento amici di %s."
 
 #: ../src\session\twitter\interface.py:377
 msgid "%s's friends"
-msgstr "%s barátai"
+msgstr "Amici di %s"
 
 #: ../src\session\twitter\interface.py:410
 msgid "This command is not supported from within a search buffer."
-msgstr "Ez a parancs nem támogatott egy keresési tárból"
+msgstr "Questo comando non è supportato all'interno di un buffer di ricerca."
 
 #: ../src\session\twitter\interface.py:412
 #: ../src\session\twitter\interface.py:614
 msgid "No user detected in current item."
-msgstr "nincs felhasználó a jelen elemben"
+msgstr "Nessun utente trovato nell'elemento corrente."
 
 #: ../src\session\twitter\interface.py:423
 msgid "Loading profile for %s"
-msgstr "%s profil betöltése"
+msgstr "Caricamento profilo di %s"
 
 #: ../src\session\twitter\interface.py:438
 msgid "Retrieving locations."
-msgstr "hely lekérése"
+msgstr "Recupero posizioni."
 
 #: ../src\session\twitter\interface.py:444
 msgid "Unable to retrieve local trend locations; please try again later."
-msgstr "Helyi trendek listáját nemlehetett letölteni;kérem próbálja meg később"
+msgstr ""
+"Impossibile recuperare le posizioni della tendenza locale; per favore, prova "
+"di nuovo più tardi."
 
 #: ../src\session\twitter\interface.py:483
 #: ../src\session\twitter\interface.py:602
 msgid "Canceled"
-msgstr "jóvánhagyva"
+msgstr "Annullato"
 
 #: ../src\session\twitter\interface.py:494
 msgid "Are you sure you want to import %d items from old database?"
-msgstr "biztosan importalja a %d elemeket régi adatbázisból?"
+msgstr "Sei sicuro di voler importare %d elementi dal vecchio database?"
 
 #: ../src\session\twitter\interface.py:494
 msgid "Are you sure?"
-msgstr "biztos?"
+msgstr "Sei sicuro?"
 
 #: ../src\session\twitter\interface.py:496
 msgid "Importing, please wait."
-msgstr "importálás folyamatban, kérem várjon."
+msgstr "Importazione, attendi per favore."
 
 #: ../src\session\twitter\interface.py:505
+#, fuzzy
 msgid "Session type mismatch."
-msgstr "a szakasz típusa nem egyforma"
+msgstr "Tipo sessione:"
 
 #: ../src\session\twitter\interface.py:507
 msgid "Import complete."
-msgstr "import befejeződőtt"
+msgstr "Importazione completa."
 
 #: ../src\session\twitter\interface.py:507
 msgid "Import completed successfully."
-msgstr "importálás befejeződött sikeresen"
+msgstr "Importazione completata con successo."
 
 #: ../src\session\twitter\interface.py:517
 #: ../src\session\twitter\interface.py:540
 msgid "No geo location info present in this tweet."
-msgstr "e twítben nincsen geó hely"
+msgstr ""
+"Nessuna informazione sulla posizione geografica presente in questo tweet."
 
 #: ../src\session\twitter\interface.py:519
 #: ../src\session\twitter\interface.py:542
 #: ../src\session\twitter\interface.py:575
 msgid "Retrieving geo location info..."
-msgstr "geó helyi információ lekérése..."
+msgstr "Recupero delle informazioni sulla posizione geografica."
 
 #: ../src\session\twitter\interface.py:529
 #: ../src\session\twitter\interface.py:552
 #: ../src\session\twitter\interface.py:585
 msgid "Error determining location."
-msgstr "hiba történt a hely lekérése közben"
+msgstr "Errore nel determinare la locazione."
 
 #: ../src\session\twitter\interface.py:533
 #: ../src\session\twitter\interface.py:558
@@ -2250,319 +2264,330 @@ msgstr ""
 
 #: ../src\session\twitter\interface.py:598
 msgid "Enter a name to search for:"
-msgstr "írja be a keresendő kifejezést:"
+msgstr "Inserisci un nome da cercare:"
 
 #: ../src\session\twitter\interface.py:598
 msgid "User search"
-msgstr "felhasználó keresés"
+msgstr "Ricerca di utenti"
 
 #: ../src\session\twitter\interface.py:604
 msgid "User search for %s"
-msgstr "a %s felhasználó keresése"
+msgstr "Ricerca utenti di %s"
 
 #: ../src\session\twitter\interface.py:620
 msgid "Retrieving relationship status for %s"
-msgstr "%s kapcsolat állapotának lekérése"
+msgstr "Recupero stato di relazione di %s"
 
 #: ../src\session\twitter\interface.py:638
 msgid "Retrieving relationship status between %s and %s"
-msgstr "%s é %s közti kapcsolat lekérése"
+msgstr "Recupero stato di relazione tra %s e %s"
 
 #: ../src\session\twitter\interface.py:646
 #: ../src\session\twitter\twitter.py:271
 msgid "Select user to add"
-msgstr "válassza ki a kivánt felhasználót a hozzáadáshoz"
+msgstr "Seleziona utente da aggiungere"
 
 #: ../src\session\twitter\interface.py:652
 #: ../src\session\twitter\interface.py:673
 #: ../src\session\twitter\twitter.py:277
 msgid "Retrieving lists, please wait."
-msgstr "listák lekérése, kérem várjon..."
+msgstr "Recupero lista, attendi per favore."
 
 #: ../src\session\twitter\interface.py:655
 #: ../src\session\twitter\interface.py:676
 msgid ""
 "No lists defined.  Please create a list with the list manager before "
 "performing this action."
-msgstr "nincs lista elkészítve. Kérem csináljon egyet a lista kezelővel"
+msgstr ""
+"Nessuna lista definita. Per favore, creane una con il gestore lista prima di "
+"eseguire questa azione."
 
 #: ../src\session\twitter\interface.py:656
 #: ../src\session\twitter\interface.py:677
 #: ../src\session\twitter\twitter.py:279
 msgid "Select list"
-msgstr "Válassza ki a listát"
+msgstr "Seleziona lista"
 
 #: ../src\session\twitter\interface.py:656
 #: ../src\session\twitter\twitter.py:279
 msgid "Please select a list to add %s to?"
-msgstr "Kérem, válaszon ki egy listát a %s hozzáadásához"
+msgstr "Per favore, seleziona una lista a cui aggiungere %s?"
 
 #: ../src\session\twitter\interface.py:660
 msgid "adding %s to list %s."
-msgstr "%s hozzáadása %s listához"
+msgstr "Aggiunta di %s alla lista %s."
 
 #: ../src\session\twitter\interface.py:667
 msgid "Select user to remove"
-msgstr "Válassza ki a felhasználót melyet törölni akar"
+msgstr "Seleziona utente da rimuovere"
 
 #: ../src\session\twitter\interface.py:677
 msgid "Please select a list to remove %s from?"
-msgstr "Kérem, válassza ki a listát melyböl %s t akarja eltávolítani"
+msgstr "Per favore, seleziona una lista da cui rimuovere %s?"
 
 #: ../src\session\twitter\interface.py:688
 #: ../src\session\twitter\interface.py:726
 msgid "Please change to a list buffer before using this command."
-msgstr "Kérem váltson egy lista tárra mielőtt ezt a parancsot használja"
+msgstr "Per favore, passa ad un buffer di lista prima di usare questo comando."
 
 #: ../src\session\twitter\interface.py:696
 msgid "Choose your social network:"
-msgstr "válassza ki a hálózatát:"
+msgstr "Scegli il tuo social network:"
 
 #: ../src\session\twitter\interface.py:696
 msgid "Social Network"
-msgstr "hálózat"
+msgstr "Social network"
 
 #: ../src\session\twitter\interface.py:696
 msgid "Users who follow me but whom I do not follow"
-msgstr "Felhasználók melyek követnek engem de én nem követem"
+msgstr "Utenti che mi seguono ma che non seguo"
 
 #: ../src\session\twitter\interface.py:696
 #: ../src\session\twitter\interface.py:713
 msgid "Users whom I follow and who also follow me"
-msgstr "Felhasználók melyek követnek engem és én is követek"
+msgstr "Utenti che seguo e che mi seguono"
 
 #: ../src\session\twitter\interface.py:696
 #: ../src\session\twitter\interface.py:715
 msgid "Users whom I follow but who do not follow me"
-msgstr "Felhasználók melyeket én követek de ők nem követnek"
+msgstr "Utenti che seguo ma che non mi seguono"
 
 #: ../src\session\twitter\interface.py:709
 msgid ""
 "Please launch both your followers and friends buffers before attempting to "
 "create a social network."
 msgstr ""
-"Kérem nitja meg a követők és barátok tárjait a hálózat elkészítése előtt."
+"Per favore, lancia i buffers di followers e di amici prima di tentare di "
+"creare il tuo social network."
 
 #: ../src\session\twitter\interface.py:711
 msgid "Cannot create social network from an empty followers or friends buffer."
 msgstr ""
-"nemlehet hálózat elemzést készíteni egy üres követők vagy barátok táron"
+"Non si può creare un social network in un buffer di followers o di amici "
+"vuoto"
 
 #: ../src\session\twitter\interface.py:719
 msgid "Creating social network, please wait..."
-msgstr "hálózat elemzés végrehajtása, kérem várjon..."
+msgstr "Creazione social network, attendi per favore."
 
 #: ../src\session\twitter\interface.py:719
 msgid "Social Network: %s"
-msgstr "hálózat: %s"
+msgstr "Social network: %s"
 
 #: ../src\session\twitter\interface.py:747
 msgid "Translation from %s to %s"
-msgstr "fordítás %s %s re"
+msgstr "Traduzione da %s in%s"
 
 #: ../src\session\twitter\interface.py:754
+#, fuzzy
 msgid "Select user"
-msgstr "válassza ki a felhasználót:"
+msgstr "Seleziona buffer:"
 
 #: ../src\session\twitter\twitter.py:46
 msgid "Direct Messages"
-msgstr "személyes üzenetek"
+msgstr "Messaggi diretti"
 
 #: ../src\session\twitter\twitter.py:46
 msgid "Home"
-msgstr "twítek"
+msgstr "Home"
 
 #: ../src\session\twitter\twitter.py:46
 msgid "Mentions"
-msgstr "Említések"
+msgstr "Menzioni"
 
 #: ../src\session\twitter\twitter.py:46
 msgid "Sent"
-msgstr "elküldött"
+msgstr "Inviati"
 
 #: ../src\session\twitter\twitter.py:67
 msgid "Please wait while an access token is retrieved from Twitter."
-msgstr "kérem várjon még a twitter add egy hozzáférési tókent "
+msgstr ""
+"Per favore, attendi mentre viene ottenuto un token di accesso da twitter."
 
 #: ../src\session\twitter\twitter.py:74
+#, fuzzy
 msgid "Please enter the verification code from Twitter for session %s"
-msgstr "írja be a megerősítési kódot a twittertöl a %s szakazhoz"
+msgstr "Per favore, inserisci un nuovo nome per la sessione %s:"
 
 #: ../src\session\twitter\twitter.py:74
 msgid "Twitter Login"
-msgstr "Twitter bejelentkezés"
+msgstr "Accesso a twitter"
 
 #: ../src\session\twitter\twitter.py:81
 msgid "Retrieved access token from Twitter."
-msgstr "A hozzáférési tóken le lett kérve a twittertől:"
+msgstr "Token di accesso ottenuto da Twitter."
 
 #: ../src\session\twitter\twitter.py:95
 msgid "verifying Twitter credentials"
-msgstr "twitter bizonyiték ellenörzése"
+msgstr "Verifica credenziali di twitter."
 
 #: ../src\session\twitter\twitter.py:101
 msgid "Logged into Twitter as %s"
-msgstr "a Twitterbe bejelentkezés %s néven"
+msgstr "Effettuato l'accesso a twitter come %s"
 
 #: ../src\session\twitter\twitter.py:110
 msgid "Login failed!"
-msgstr "bejelentkezés sikertelen"
+msgstr "Accesso fallito!"
 
 #: ../src\session\twitter\twitter.py:124
 msgid "Loading %d saved search%s from twitter."
-msgstr "%d mentett keresések %s betöltése a twitter-böl"
+msgstr "Caricamento della ricerca salvata %d %s da twitter."
 
 #: ../src\session\twitter\twitter.py:134
+#, fuzzy
 msgid "Retrieving lists"
-msgstr "listák lekérése"
+msgstr "Recupero tendenze"
 
 #: ../src\session\twitter\twitter.py:136
+#, fuzzy
 msgid "Retrieving lists for %s"
-msgstr "Listák lekérése %s hez"
+msgstr "Recupero stato di relazione di %s"
 
 #: ../src\session\twitter\twitter.py:161
 msgid "Retrieving %d list timeline%s from twitter."
-msgstr "%d idővonalak lekérése a %s twitterböl"
+msgstr "Recupero timeline %d della lista%s da twitter."
 
 #: ../src\session\twitter\twitter.py:169
-#, fuzzy
 msgid "List timeline for %s"
-msgstr "%s idővonal betöltése"
+msgstr "Timeline della lista di %s"
 
 #: ../src\session\twitter\twitter.py:193
 msgid "retrieving relationship status for %s"
-msgstr "%s kapcsolata lekérése"
+msgstr "Recupero stato di relazione di %s"
 
 #: ../src\session\twitter\twitter.py:196
 msgid "You are following %s.  "
-msgstr "ön %s felhasználót követi"
+msgstr "Stai seguendo %s"
 
 #: ../src\session\twitter\twitter.py:198
 msgid "%s is following you.  "
-msgstr "%s követ"
+msgstr "%s ti sta seguendo."
 
 #: ../src\session\twitter\twitter.py:200
 msgid "No relationship exists between yourself and %s."
-msgstr "nincsen %s és közte kapcsolat"
+msgstr "Non esiste alcuna relazione tra te e %s."
 
 #: ../src\session\twitter\twitter.py:204
 msgid "retrieving relationship status between %s and %s"
-msgstr "%s és %s közti kapcsolat lekérése"
+msgstr "Recupero stato di relazione tra %s e %s"
 
 #: ../src\session\twitter\twitter.py:207 ../src\session\twitter\twitter.py:209
 msgid "%s is following %s.  "
-msgstr "%s követi %s-t"
+msgstr "%s sta seguendo %s."
 
 #: ../src\session\twitter\twitter.py:211
 msgid "No relationship exists between %s and %s."
-msgstr "nincsen %s és %s közte kapcsolat"
+msgstr "Non esiste alcuna relazione tra %s e %s."
 
 #: ../src\session\twitter\twitter.py:216 ../src\session\twitter\twitter.py:218
 msgid "following %s"
-msgstr "%s követése"
+msgstr "%s seguito"
 
 #: ../src\session\twitter\twitter.py:222
 msgid "unfollowing %s"
-msgstr "%s követése letiltása"
+msgstr "%s smesso di seguire"
 
 #: ../src\session\twitter\twitter.py:224
 msgid "blocking %s"
-msgstr "%s blokkolása"
+msgstr "%s bloccato"
 
 #: ../src\session\twitter\twitter.py:226
 msgid "reporting %s as spam"
-msgstr "%s számolása spamként"
+msgstr "%s segnalato come spam"
 
 #: ../src\session\twitter\twitter.py:235
 msgid "Update"
-msgstr "frissités"
+msgstr "Aggiornamento"
 
 #: ../src\session\twitter\twitter.py:256
 msgid "Sending dm"
-msgstr "személyes üzenet elküldése"
+msgstr "Invio messaggio diretto"
 
 #: ../src\session\twitter\twitter.py:283
 msgid "adding user %s to list %s"
-msgstr "%s felhasználó hozzáadása a %s listához"
+msgstr "Aggiunta utente %s alla lista %s"
 
 #: ../src\session\twitter\twitter.py:288
 msgid "Please wait while your profile is retrieved."
-msgstr "várjon az adatlapja  lekéréséhez"
+msgstr "Per favore, attendi mentre il tuo profilo viene recuperato."
 
 #: ../src\session\twitter\twitter.py:289
 msgid "Retrieving profile to edit"
-msgstr "lekérése a szerkesztendő adatlapot"
+msgstr "Recupero profilo da modificare"
 
 #: ../src\session\twitter\twitter.py:297
-#, fuzzy
 msgid "updating profile"
-msgstr "személyes profil frissítése"
+msgstr "Aggiornamento profilo"
 
 #: ../src\session\twitter\twitter.py:317
+#, fuzzy
 msgid "%s has no lists."
-msgstr "%s felhasználónak nincsenek listái"
+msgstr "%s non ha tweets."
 
 #: ../src\session\twitter\twitter.py:336
 msgid "%s failed.  Reason: %s"
-msgstr "%s sikertelen. Ok: %s"
+msgstr "%s fallito. Ragione: %s"
 
 #: ../src\session\twitter\twitter.py:339
 msgid "%s succeeded."
-msgstr "%s sikeres"
+msgstr "%s riuscito."
 
 #: ../src\session\twitter\twitter.py:343
 msgid "Retrieving API calls"
-msgstr "API hívások lekérése"
+msgstr "Recupero api calls"
 
 #: ../src\session\twitter\twitter.py:345
 msgid "You have %s API calls left.  They will reset to %d calls in %s."
-msgstr ""
-"%s API hívás van még hátra. %d hívás fog rendelkezésre állni  %s mulva."
+msgstr "Hai %s api calls rimanenti. Saranno ripristinate a %d calls in %s"
 
 #: ../src\session\twitter\twitter.py:351
+#, fuzzy
 msgid "You can only favorite a tweet."
-msgstr "csak egy tweetet lehet kedvencelni"
+msgstr "Non è possibile aggiuntere ai preferiti un %s."
 
 #: ../src\session\twitter\twitter.py:352
 msgid "Marking as favorite"
-msgstr "kedvencé jelölés"
+msgstr "Contrassegnato come preferito"
 
 #: ../src\session\twitter\twitter.py:353 ../src\session\twitter\twitter.py:357
 msgid "marking as favorite"
-msgstr "kedvencé jelölés"
+msgstr "Contrassegnato come preferito"
 
 #: ../src\session\twitter\twitter.py:362
 msgid "Toggling device notifications"
-msgstr "ezkőzi értesítések módosítása"
+msgstr "Verifica notifiche su dispositivo mobile"
 
 #: ../src\session\twitter\twitter.py:362
 msgid "retrieving user details for %s"
-msgstr "%s adatlap lekérése"
+msgstr "Recupero dettagli utente pdi %s"
 
 #: ../src\session\twitter\twitter.py:365
 msgid "enabling device notifications for %s"
-msgstr "az ezkőzi értesítések be lettek kapcsolva a %s felhasználónak "
+msgstr "Attivazione notifiche su dispositivo mobile per %s"
 
 #: ../src\session\twitter\twitter.py:368
 msgid "disabling device notifications for %s"
-msgstr "az ezkőzi értesítések ki lettek kapcsolva a %s felhasználónak "
+msgstr "Disattivazione notifiche su dispositivo mobile per %s"
 
 #: ../src\sessions.py:146
+#, fuzzy
 msgid ""
 "There was an error spawning previously-loaded sessions.  Please send your "
 "log to The Qube's development staff.  Activating new session dialog."
 msgstr ""
-"Hiba történt a szakasz elkészítésekőr. Kérem küldje el a naplóját a "
-"fejleztőknek."
+"C'è stato un errore nell'aprire la sessione precedentemente caricata. Per "
+"favore, invia il tuo log allo staff di sviluppo di Qwitter. Attivazione "
+"nuova sessione dialogo."
 
 #: ../src\update_manager.py:25
 msgid ""
 "An update for %s is available, would you like to download and install it now?"
-msgstr "Egy frissítés a %s hez elérhető, leakarja e tölteni?"
+msgstr ""
 
 #: ../src\update_manager.py:25
+#, fuzzy
 msgid "Update %s"
-msgstr "%s frissitése"
+msgstr "Aggiornamento"
 
 #: ../src\update_manager.py:39
 msgid ""
@@ -2570,721 +2595,802 @@ msgid ""
 "restart the application and begin using the new version.\n"
 " Enjoy!"
 msgstr ""
-"Egy Frissités a Qube-hoz le lett töltve. Az enter billentyüvel elindul az új "
-"verzió."
 
 #: ../src\update_manager.py:39
 msgid "The Qube update"
-msgstr "A qube frissitése"
+msgstr ""
 
 #: ../src\utils\delay.py:19
 msgid "action"
-msgstr "művelet"
+msgstr "Azione"
 
 #: ../src\utils\delay.py:20
 msgid "Delaying %s for %s."
-msgstr "%s elhalítás %s ideig"
+msgstr "Ritardo %s di %s."
 
 #: ../src\utils\time_period.py:7
 msgid "a decade"
-msgstr "egy tized év"
+msgstr "un decennio"
 
 #: ../src\utils\time_period.py:7
 msgid "{0} decades"
-msgstr "{0} tized"
+msgstr "{0} decenni"
 
 #: ../src\utils\time_period.py:8
 msgid "a year"
-msgstr "egy év"
+msgstr "un anno"
 
 #: ../src\utils\time_period.py:8
 msgid "{0} years"
-msgstr "{0} éveegy éve"
+msgstr "{0} anni"
 
 #: ../src\utils\time_period.py:9
 msgid "a month"
-msgstr "egy hónapja"
+msgstr "un mese"
 
 #: ../src\utils\time_period.py:9
 msgid "{0} months"
-msgstr "{0} hónap"
+msgstr "{0} mesi"
 
 #: ../src\utils\time_period.py:10
 msgid "a week"
-msgstr "egy hét"
+msgstr "una settimana"
 
 #: ../src\utils\time_period.py:10
 msgid "{0} weeks"
-msgstr "{0} héte"
+msgstr "{0} settimane"
 
 #: ../src\utils\time_period.py:11
 msgid "a day"
-msgstr "egy nap"
+msgstr "un giorno"
 
 #: ../src\utils\time_period.py:11
 msgid "{0} days"
-msgstr "{0} napja"
+msgstr "{0} giorni"
 
 #: ../src\utils\time_period.py:12
 msgid "an hour"
-msgstr "egy óra"
+msgstr "un ora"
 
 #: ../src\utils\time_period.py:12
 msgid "{0} hours"
-msgstr "{0} órája"
+msgstr "{0} ore"
 
 #: ../src\utils\time_period.py:13
 msgid "a minute"
-msgstr "egy perc"
+msgstr "un minuto"
 
 #: ../src\utils\time_period.py:13
 msgid "{0} minutes"
-msgstr "{0} perc"
+msgstr "{0} minuti"
 
 #: ../src\utils\time_period.py:14
 msgid "a second"
-msgstr "egy másodperc"
+msgstr "un secondo"
 
 #: ../src\utils\time_period.py:14
 msgid "{0} seconds"
-msgstr "{0} másodperc"
+msgstr "{0} secondi"
 
 #~ msgid "Permanently delete all data associated with session %s?"
-#~ msgstr "A %s szakaszban lévő minden adat végleges tőrlése?"
+#~ msgstr "Eliminare definitivamente tutti i dati associati alla sessione %s?"
 
 #~ msgid "Syncing storage to disk for %s session."
-#~ msgstr "a %s szakasz adatai lemezre szinkronizálása..."
+#~ msgstr "Sincronizzazione dati sul disco per la sessione %s."
+
+#~ msgid "No items in %s buffer."
+#~ msgstr "Nessun elemento nel buffer %s."
+
+#~ msgid "%s: No items."
+#~ msgstr "%s: nessun elemento."
+
+#~ msgid "&Tweet"
+#~ msgstr "&Tweet"
+
+#~ msgid "Post a new tweet"
+#~ msgstr "Pubblica un nuovo tweet"
+
+#~ msgid "&Direct message"
+#~ msgstr "&Messaggio diretto"
+
+#~ msgid "Post a new direct message"
+#~ msgstr "Invia un nuovo messaggio diretto"
+
+#~ msgid "New"
+#~ msgstr "Nuovo"
+
+#~ msgid "Select a buffer:"
+#~ msgstr "Seleziona un buffer:"
+
+#~ msgid "Destroyed..."
+#~ msgstr "Distrutto..."
+
+#~ msgid "Minute:"
+#~ msgstr "Minuto:"
+
+#~ msgid "Translate from"
+#~ msgstr "Traduci da"
+
+#~ msgid "Translate into"
+#~ msgstr "Traduci in"
 
 #~ msgid "Speech"
-#~ msgstr "beszéd"
+#~ msgstr "Sintetizzatore"
 
 #~ msgid "Braille"
-#~ msgstr "braille"
+#~ msgstr "Braille"
 
 #~ msgid "Entry:"
-#~ msgstr "bejegyzés"
+#~ msgstr "Voce:"
 
 #~ msgid "Replacement:"
-#~ msgstr "áthelyezés:"
+#~ msgstr "Sostituzione:"
 
 #~ msgid "Case senative?"
-#~ msgstr "Case senative?"
+#~ msgstr "Sensibile alle maiuscole?"
 
 #~ msgid "Dictionary Entries"
-#~ msgstr "szótár jegyzetek"
+#~ msgstr "Voci del dizionario"
 
 #~ msgid "Add..."
-#~ msgstr "hozzáadás..."
+#~ msgstr "Aggiungi..."
 
 #~ msgid "Delete..."
-#~ msgstr "törlés..."
+#~ msgstr "Elimina..."
 
 #~ msgid "Entry"
-#~ msgstr "jegyzet"
+#~ msgstr "Voce"
 
 #~ msgid "Replacement"
-#~ msgstr "áthelyezés"
+#~ msgstr "Sostituzione"
+
+#~ msgid "planet"
+#~ msgstr "Pianeta"
+
+#~ msgid "country"
+#~ msgstr "Paese"
+
+#~ msgid "region"
+#~ msgstr "Regione"
+
+#~ msgid "sub-region"
+#~ msgstr "Sub-regione"
+
+#~ msgid "town"
+#~ msgstr "Città"
+
+#~ msgid "post code"
+#~ msgstr "Codice postale"
+
+#~ msgid "street"
+#~ msgstr "Strada"
+
+#~ msgid "intersection"
+#~ msgstr "Intersezione"
+
+#~ msgid "address"
+#~ msgstr "Indirizzo"
+
+#~ msgid "premise"
+#~ msgstr "Posizione attuale"
+
+#~ msgid "Bing! Search"
+#~ msgstr "Bing! Ricerca"
+
+#~ msgid "Opening website."
+#~ msgstr "Apertura sito web."
+
+#~ msgid "Bing! News Search"
+#~ msgstr "Bing! Ricerca notizie"
+
+#~ msgid "Headlines for %s"
+#~ msgstr "Notizie recenti per %s"
+
+#~ msgid "Title"
+#~ msgstr "Titolo"
+
+#~ msgid "Item URL"
+#~ msgstr "URL elemento"
+
+#~ msgid "news story"
+#~ msgstr "Storico notizie"
+
+#~ msgid "news stories"
+#~ msgstr "Ultime notizie"
+
+#~ msgid "Story source"
+#~ msgstr "Storico codice"
+
+#~ msgid "Breaking news"
+#~ msgstr "Ultime notizie"
+
+#~ msgid "Snippet"
+#~ msgstr "Frammento"
+
+#~ msgid "%s returned no results."
+#~ msgstr "%s non ha prodotto risultati."
+
+#~ msgid "search result"
+#~ msgstr "Risultato della ricerca"
+
+#~ msgid "search results"
+#~ msgstr "Risultati della ricerca"
+
+#~ msgid "Search:"
+#~ msgstr "Ricerca:"
 
 #~ msgid "Buffer %s does not support filtration."
-#~ msgstr "tár %s nemtámogat szűröket"
+#~ msgstr "Il buffer %s non supporta filtraggio."
 
-#~ msgid "No items in %s."
-#~ msgstr "a %s üres"
+#~ msgid "Source Total"
+#~ msgstr "Codice totale"
+
+#~ msgid "Master Index"
+#~ msgstr "Inizio master"
+
+#~ msgid "Master Total"
+#~ msgstr "Master totale"
 
 #~ msgid "Opening URL: %s"
-#~ msgstr "%s webcím megniitása"
+#~ msgstr "Apertura URL: %s"
+
+#~ msgid "%s%d new %s."
+#~ msgstr "%s%d nuovi %s."
 
 #~ msgid "Jump to Item in %s"
-#~ msgstr "a %sen belüli elem ugrás"
+#~ msgstr "Salta all'elemento in %s"
 
 #~ msgid ""
 #~ "No modifiable properties for buffer %s; showing default buffer "
 #~ "configuration."
 #~ msgstr ""
-#~ "Nincs módosíthatandó tulajdonságai a %s tárnak;az alapértelmezett tár "
-#~ "konfiguráció megjelenítése"
+#~ "Nessuna proprietà modificabile per il buffer %s; Mostra la configurazione "
+#~ "predefinita per il buffer."
 
-#~ msgid "Enable Streaming"
-#~ msgstr "áram bekapcsolása"
+#~ msgid "Save As..."
+#~ msgstr "Salva come..."
 
-#~ msgid "Sms"
-#~ msgstr "sms"
+#~ msgid "Speech Volume"
+#~ msgstr "Volume sintetizzatore"
 
-#~ msgid "Voicemail"
-#~ msgstr "hangposta"
+#~ msgid "Speech Voice"
+#~ msgstr "Voce sintetizzatore"
 
-#~ msgid "Missed"
-#~ msgstr "nem fogadott"
+#~ msgid "Min:"
+#~ msgstr "Minimo:"
 
-#~ msgid "Received"
-#~ msgstr "beérkezett"
+#~ msgid "Max:"
+#~ msgstr "Massimo:"
 
-#~ msgid "Placed"
-#~ msgstr "kezdemenyézve"
-
-#~ msgid "Logged into Google Voice as %s"
-#~ msgstr "bejelentkezés a google voice-ba sikeres volt %s néven"
-
-#~ msgid "Unable to Log into Google Voice."
-#~ msgstr "bejelentkezés a google voice-ba sikeres volt %s néven"
-
-#~ msgid "Google Voice Login"
-#~ msgstr "google voice bejelentkezés"
-
-#~ msgid "Please provide your credentials to login to Google Voice"
-#~ msgstr "Adja meg a Google Voice bizonyitékait"
+#~ msgid "Files"
+#~ msgstr "Files"
 
 #~ msgid "New SMS"
-#~ msgstr "új sms"
+#~ msgstr "Nuovo sms"
 
 #~ msgid "Sms successfully sent to %s"
-#~ msgstr "sms elküldése a %s -hez sikeres volt"
+#~ msgstr "Sms inviato con successo a %s"
 
 #~ msgid "Call Phone"
-#~ msgstr "telefonszám hívása"
+#~ msgstr "Telefonata"
 
 #~ msgid "Please enter a phone number to call."
-#~ msgstr "kérem írjon be egy telefonszámot"
+#~ msgstr "Per favore, inserisci un numero telefonico da chiamare."
 
 #~ msgid ""
 #~ "Please indicate where the call should be bridged by selecting a "
 #~ "forwarding phone number."
-#~ msgstr "kérem Adja meg a továbbítási telefonszámot"
+#~ msgstr ""
+#~ "Per favore, indica dove la chiamata deve essere inoltrata selezionando un "
+#~ "numero telefonico di inoltro."
 
 #~ msgid "Error, forwarding phone number not found."
-#~ msgstr "hiba, továbbítási telefonszám nem található"
+#~ msgstr "Errore: numero telefonico di inoltro non trovato."
 
 #~ msgid "Calling: %r"
-#~ msgstr "hívás: %r"
+#~ msgstr "Chiamata da: %r"
 
 #~ msgid "Call placed."
-#~ msgstr "hívás elindítva"
+#~ msgstr "Chiamata effettuata."
 
-#, fuzzy
 #~ msgid "Unable to detect a sender to reply to."
-#~ msgstr "az üzenet törlése sikertelen a Twitterböl"
+#~ msgstr "Impossibile trovare un destinatario a cui rispondere."
 
-#, fuzzy
 #~ msgid "Reply sent to %s"
-#~ msgstr "önmagára való válaszolás engedélyezve?"
+#~ msgstr "Risposta inviata a %s"
+
+#~ msgid "Sms"
+#~ msgstr "Sms"
+
+#~ msgid "Voicemail"
+#~ msgstr "Mail vocali"
+
+#~ msgid "Missed"
+#~ msgstr "Perse"
+
+#~ msgid "Received"
+#~ msgstr "Ricevute"
+
+#~ msgid "Placed"
+#~ msgstr "Effettuate"
+
+#~ msgid ""
+#~ "Unable to connect to Google Voice.  %s will retry until connection is "
+#~ "established."
+#~ msgstr ""
+#~ "Impossibile connettersi a Google Voice. %s ritenterà finchè la "
+#~ "connessione non sarà stabilita."
+
+#~ msgid "Logged into Google Voice as %s"
+#~ msgstr "Effettuato l'accesso a Google Voice come %s"
+
+#~ msgid "Unable to Log into Google Voice."
+#~ msgstr "Impossibile accedere a Google Voice."
+
+#~ msgid "Google Voice Login"
+#~ msgstr "Accesso a Google Voice"
+
+#~ msgid "Please provide your credentials to login to Google Voice"
+#~ msgstr "Per favore, fornisci le tue credenziali per accedere a Google Voice"
 
 #~ msgid "Phone number"
-#~ msgstr "telefonszám"
+#~ msgstr "Numero telefonico"
 
 #~ msgid "Display phone number"
-#~ msgstr "telefonszám megjelenitése"
+#~ msgstr "Visualizza numero ttelefonico"
 
 #~ msgid "Calling %s"
-#~ msgstr "%s hívása"
+#~ msgstr "Chiamata da %s"
 
 #~ msgid "missed call"
-#~ msgstr "nemfogadott hívás"
+#~ msgstr "Chiamata senza risposta."
 
 #~ msgid "missed calls"
-#~ msgstr "nemfogadott hívások"
+#~ msgstr "Chiamate senza risposta."
 
 #~ msgid "placed call"
-#~ msgstr "kezdeményezett hívás"
+#~ msgstr "Chiamata effettuata"
 
 #~ msgid "placed calls"
-#~ msgstr "kezdeményezett hívások"
+#~ msgstr "Chiamate effettuate"
 
 #~ msgid "received call"
-#~ msgstr "kapott hívás"
+#~ msgstr "Chiamata ricevuta"
 
 #~ msgid "received calls"
-#~ msgstr "kapott hívások"
+#~ msgstr "Chiamate ricevute"
 
-#, fuzzy
 #~ msgid "Message sender"
-#~ msgstr "üzenet szövege:"
+#~ msgstr "Mittente del messaggio"
 
-#, fuzzy
 #~ msgid "Message text"
-#~ msgstr "üzenet szövege:"
+#~ msgstr "Testo del messaggio"
 
 #~ msgid "voicemail"
-#~ msgstr "hang üzenet"
+#~ msgstr "Mail vocale"
 
 #~ msgid "voicemails"
-#~ msgstr "hang üzenetek"
+#~ msgstr "Mails vocali"
 
-#, fuzzy
 #~ msgid "Item state"
-#~ msgstr "elem nem egy hozzászólás"
+#~ msgstr "Stato elemento"
 
 #~ msgid "Downloading voicemail..."
-#~ msgstr "üzenet letőltése..."
+#~ msgstr "Scaricamento mail vocale..."
 
 #~ msgid "Playing voicemail from %s"
-#~ msgstr "üzenet lejátszása a %s töl"
+#~ msgstr "Riproduzione mail vocale da %s"
 
 #~ msgid "Enter phone number to call:"
-#~ msgstr "Írja be a hívni kivánt telefonszámot"
+#~ msgstr "Inserisci numero telefonico da chiamare:"
 
 #~ msgid "Forwarding Number (where calls are bridged)"
-#~ msgstr "továbbítási szám (ahol hívások átküldve lesznek)"
+#~ msgstr "Numero d'inoltro (a cui le chiamate sono trasferite)"
 
 #~ msgid "General"
-#~ msgstr "álltalános"
+#~ msgstr "Generale"
 
 #~ msgid "Email Address"
-#~ msgstr "e-mail cím"
+#~ msgstr "Indirizzo email"
+
+#~ msgid "&About %s"
+#~ msgstr "&Circa %s"
+
+#~ msgid "About %s"
+#~ msgstr "Circa %s"
+
+#~ msgid "E&xit %s"
+#~ msgstr "&Esci da %s"
+
+#~ msgid "Exit %s..."
+#~ msgstr "Esci da %s..."
+
+#~ msgid "Definitions"
+#~ msgstr "Definizioni"
+
+#~ msgid "Translations"
+#~ msgstr "Traduzioni"
+
+#~ msgid "Unable to retrieve URL to open from this feed."
+#~ msgstr "Impossibile ottenere URL da aprire da questo feed."
+
+#~ msgid "Enter URL of rss feed to add:"
+#~ msgstr "Inserisci l'URL del feed da aggiungere:"
+
+#~ msgid "Add feed"
+#~ msgstr "Aggiungi feed"
+
+#~ msgid "No new items in %s buffer."
+#~ msgstr "Nessun nuovo elemento nel buffer %s."
+
+#~ msgid "%d new item in feed %s"
+#~ msgstr "%d nuovo elemento nel feed %s"
+
+#~ msgid "%d new items in feed %s"
+#~ msgstr "%d nuovi elementi nel feed %s"
+
+#~ msgid "%s RSS Viewer"
+#~ msgstr "Visualizzatore rss %s"
+
+#~ msgid "Contact List"
+#~ msgstr "Lista contatti"
+
+#~ msgid "Call ended."
+#~ msgstr "Chiamata terminata."
+
+#~ msgid "Call on hold."
+#~ msgstr "Chiamata in attesa."
+
+#~ msgid "Call resumed."
+#~ msgstr "Chiamata ripristinata."
+
+#~ msgid "Getting chat with %s."
+#~ msgstr "Caricamento chat con %s"
+
+#~ msgid "Chat with %s"
+#~ msgstr "Chat con %s"
+
+#~ msgid "Mood Message"
+#~ msgstr "Messaggio d'umore:"
+
+#~ msgid "Mood text changed to: %s"
+#~ msgstr "Messaggio di umore cambiato in: %s"
+
+#~ msgid "Failed to post mood text."
+#~ msgstr "Invio del messaggio di umore fallito."
+
+#~ msgid "Send an instant message to %s"
+#~ msgstr "Invia un messaggio istantaneo a %s."
+
+#~ msgid "Call: %s"
+#~ msgstr "Chiama: %s"
+
+#~ msgid "%s has no messages."
+#~ msgstr "%s non ha messaggi."
+
+#~ msgid "No new items in buffer %s."
+#~ msgstr "Nessun nuovo elemento nel buffer %s."
+
+#~ msgid "Instant Message"
+#~ msgstr "Messaggio istantaneo"
+
+#~ msgid "Skype Session Configuration"
+#~ msgstr "Configurazione sessione Skype"
+
+#~ msgid "Let %s start Skype"
+#~ msgstr "Lascia che %s esegua skype"
+
+#~ msgid "Contact list buffer template:"
+#~ msgstr "Modello per buffer della lista contatti"
+
+#~ msgid "Chat buffer template:"
+#~ msgstr "Modello per buffer della chat"
+
+#~ msgid "Capturing screenshot."
+#~ msgstr "Cattura dell'immagine."
+
+#~ msgid "Unable to take screenshot."
+#~ msgstr "Impossibile catturare l'immagine."
+
+#~ msgid "Unable to submit captcha to Solona."
+#~ msgstr "Impossibile inviare il captcha a Solona."
+
+#~ msgid "Submitted captcha for analysis."
+#~ msgstr "Captcha inviato per l'analisi."
+
+#~ msgid "Solona is currently offline; please try again later."
+#~ msgstr "Solona è al momento offline; Per favore, prova di nuovo più tardi."
+
+#~ msgid "Checking current status of Solona..."
+#~ msgstr "Verifica stato attuale di Solona..."
+
+#~ msgid "Unable to obtain current operator status."
+#~ msgstr "Impossibile ottenere lo stato attuale degli operatori."
+
+#~ msgid "Solona is offline; no operators are available."
+#~ msgstr "Solona è offline. Nessun operatore è disponibile."
+
+#~ msgid "Solona is online, and operators are standing by."
+#~ msgstr "Solona è online, e gli operatori sono in attesa."
+
+#~ msgid ""
+#~ "Unable to connect to Solona.  %s will retry until connection is "
+#~ "established."
+#~ msgstr ""
+#~ "Impossibile connettersi a Solona. %s ritenterà finchè la connessione non "
+#~ "sarà stabilita."
+
+#~ msgid "Logged into Solona as %s"
+#~ msgstr "Effettuato l'accesso a Solona come %s"
+
+#~ msgid "Unable to Log into Solona."
+#~ msgstr "Impossibile accedere a Solona."
+
+#~ msgid "Solona Login"
+#~ msgstr "Accesso a Solona"
+
+#~ msgid "Please supply your credentials for Solona"
+#~ msgstr "Per favore, fornisci le tue credenziali di Solona"
+
+#~ msgid "Login canceled."
+#~ msgstr "Accesso annullato."
+
+#~ msgid "Captcha solution copied to clipboard."
+#~ msgstr "Soluzione del captcha copiata negli appunti."
+
+#~ msgid "Solona Solution"
+#~ msgstr "Soluzione di Solona"
+
+#~ msgid "Solona returned:"
+#~ msgstr "Restituito da Solona:"
+
+#~ msgid "Settings"
+#~ msgstr "Impostazioni"
+
+#~ msgid "Show message box with captcha solution."
+#~ msgstr "Mostrare un box di messaggio con la soluzione del captcha."
+
+#~ msgid "Copy Captcha solution to clipboard."
+#~ msgstr "Copiare la soluzione del captcha negli appunti."
 
 #~ msgid "Stopwatch stopped at %s."
-#~ msgstr "stopper leállítva %s időnél"
+#~ msgstr "Cronometro fermato a %s."
 
 #~ msgid "Checking current API call count..."
-#~ msgstr "Jelen API hívások lekérése..."
+#~ msgstr "Verifica numero api call attuale..."
 
 #~ msgid "Loading followers for %s."
-#~ msgstr "%s követői betöltése"
+#~ msgstr "Caricamento followers di %s."
 
 #~ msgid "Select which type of retweets to display:"
-#~ msgstr "Válassza ki a retwítek típus megjelenítését"
+#~ msgstr "Seleziona quale tipo di retweets visualizzare:"
 
 #~ msgid "Select type"
-#~ msgstr "válasszon típust"
+#~ msgstr "Seleziona tipo"
 
 #~ msgid "My friends' retweets"
-#~ msgstr "barátaim retwítjei"
+#~ msgstr "Retweets dei miei amici"
 
 #~ msgid "My retweets"
-#~ msgstr "saját retwítjeim"
+#~ msgstr "Miei retweets"
 
 #~ msgid "My tweets that have been retweeted by others"
-#~ msgstr "twítjeim melyeket mások újra twíteltek"
+#~ msgstr "Miei tweet di cui altri hanno fatto il retweet"
 
 #~ msgid "%s"
 #~ msgstr "%s"
 
 #~ msgid "Trending: %s"
-#~ msgstr "trendek: %s"
+#~ msgstr "Tendenza: %s"
 
 #~ msgid "Coordinates are not accurate enough to determine a location."
-#~ msgstr "a koordináták nem elég pontosak egy hely megadásához"
+#~ msgstr ""
+#~ "Le coordinate non sono abbastanza accurate per determinare una locazione."
 
 #~ msgid "Location is %s; %s level accuracy"
-#~ msgstr "hely %s; %s pontosság"
+#~ msgstr "La posizione è %s; livello accuratezza %s"
 
 #~ msgid "%s level accuracy"
-#~ msgstr "%s pontosság"
+#~ msgstr "Livello accuratezza %s"
 
 #~ msgid "List members for %s"
-#~ msgstr "%s lista tagok"
+#~ msgstr "Membri della lista %s"
 
 #~ msgid "List subscribers for %s"
-#~ msgstr "%s feljelentkezők betőltése"
+#~ msgstr "Iscritti alla lista %s"
 
-#~ msgid "Retrieving blocked users"
-#~ msgstr "blokkolt felhasználók lekérése"
-
-#~ msgid "tweet in %s"
-#~ msgstr "tweet a %s ben"
-
-#~ msgid "tweets in %s"
-#~ msgstr "új tweetek a %s-ben"
-
-#~ msgid "User's local date"
-#~ msgstr "felhasználó helyi dátuma"
-
-#~ msgid "Accuracy:"
-#~ msgstr "pontosság:"
-
-#~ msgid "Profile for %s"
-#~ msgstr "%s profilja"
-
-#~ msgid "Are you sure you want to delete %s?"
-#~ msgstr "Biztosan kiltörli a %s-t?"
-
-#~ msgid "Deleting list %s"
-#~ msgstr "a %s lista törlése"
-
-#~ msgid "%d friends retrieved."
-#~ msgstr "%d barátok előhozva"
-
-#~ msgid "%d new direct messages."
-#~ msgstr "%d új személyes üzenet"
-
-#~ msgid "%d new item in feed %s"
-#~ msgstr "%d új elem a %s hírtárban"
-
-#~ msgid "%d new item in search %s"
-#~ msgstr "%d új elem a %s hírtárban"
-
-#~ msgid "%d new items in feed %s"
-#~ msgstr "%d új elem a %s hírtárban"
-
-#~ msgid "%d new items in search %s"
-#~ msgstr "%d új elem a %s hírtárban"
-
-#~ msgid "%d new mention."
-#~ msgstr "%d új említés"
-
-#~ msgid "%d new mentions."
-#~ msgstr "%d új említés"
-
-#~ msgid "%d new post in %s's favorites."
-#~ msgstr "%d új hozzászólás %s kedvenceiben"
-
-#~ msgid "%d new post in %s's timeline."
-#~ msgstr "%d új hozzászólás a %s idővonálában"
-
-#~ msgid "%d new posts in %s's favorites."
-#~ msgstr "%d új hozzászólás %s kedvenceiben"
-
-#~ msgid "%d new posts in %s's timeline."
-#~ msgstr "%d új hozzászólás a %s idővonálában"
-
-#~ msgid "%d new tweet."
-#~ msgstr "%d új twít"
-
-#~ msgid "%d new tweets."
-#~ msgstr "%d új twít"
-
-#~ msgid "%s RSS Viewer"
-#~ msgstr "%s RSS néző"
-
-#~ msgid "%s does not support this feature."
-#~ msgstr "%s ezt a funkciót nem támogatja"
-
-#~ msgid "%s has been reported as a spammer."
-#~ msgstr "%s spammerként lett beszámolva"
-
-#~ msgid "%s login failure"
-#~ msgstr "%s bejelentkezési hiba"
-
-#~ msgid "%s new status updates."
-#~ msgstr "%s új állapot frissítés"
-
-#~ msgid "%s: No items."
-#~ msgstr "%s: üres"
-
-#~ msgid "&About %s"
-#~ msgstr "&névjegy %s"
-
-#~ msgid "About %s"
-#~ msgstr "%s névjegye"
-
-#~ msgid "Add feed"
-#~ msgstr "fíd hozzáadása"
-
-#~ msgid "Bing! Search"
-#~ msgstr "bing! Keresés"
-
-#~ msgid "Buffer Search"
-#~ msgstr "tár keresése"
-
-#~ msgid "Call ended."
-#~ msgstr "a hívás befejeződött"
-
-#~ msgid "Call on hold."
-#~ msgstr "hívás tartva"
-
-#~ msgid "Call resumed."
-#~ msgstr "hívás folytatva"
-
-#~ msgid "Call: %s"
-#~ msgstr "hívás: %s"
-
-#~ msgid "Captcha solution copied to clipboard."
-#~ msgstr "Captcha megoldás vágólapra másolva"
-
-#~ msgid "Capturing screenshot."
-#~ msgstr "képernyő elfogása..."
-
-#~ msgid "Checking current status of Solona..."
-#~ msgstr "A Solona jelen állapotának lekérése..."
-
-#~ msgid "Checking for new updates in %s buffer."
-#~ msgstr "a %s tár frissítése"
-
-#~ msgid "Contact List"
-#~ msgstr "kontakt lista"
-
-#~ msgid "Copy Captcha solution to clipboard."
-#~ msgstr "a Captcha megoldás vágólapra másolása"
-
-#~ msgid "Default Template:"
-#~ msgstr "alapértelmezett twít sablon:"
-
-#~ msgid "Dm Sent."
-#~ msgstr "személyes üzenet elküldve"
-
-#~ msgid "E&xit %s"
-#~ msgstr "ki&lépés %s"
-
-#~ msgid "Enter URL of rss feed to add:"
-#~ msgstr "írja be az RSS fíd címét:"
-
-#~ msgid "Exit %s..."
-#~ msgstr "kilépés %s..."
-
-#~ msgid "Exporting..."
-#~ msgstr "exportálás folyamatban..."
-
-#~ msgid "Failed to post mood text."
-#~ msgstr "állapot szöveg elküldése sikertelen"
-
-#~ msgid "Following %s failed"
-#~ msgstr "%s követése sikertelen"
-
-#~ msgid "Full mute"
-#~ msgstr "teljes némítás"
-
-#~ msgid "Keymap unsaved."
-#~ msgstr "billentyű kép nem mentett"
-
-#~ msgid "List created."
-#~ msgstr "lista létrehozva"
-
-#~ msgid "Logging into Twitter with the supplied credentials failed."
-#~ msgstr ""
-#~ "bejelentkezés a  Twitter szolgáltatásba a megadott megbízólevél nem "
-#~ "sikerült"
-
-#~ msgid "Login to facebook"
-#~ msgstr "Facebook bejelentkezés "
-
-#~ msgid "Max API calls to use (1 API call = 100 followers)"
-#~ msgstr "max API hívás használása (1 API hívás= 100 követő lekérése)"
-
-#~ msgid "Max API calls to use (1 API call = 100 friends)"
-#~ msgstr "max API hívás használása (1 API hívás= 100 barát lekérése)"
-
-#~ msgid "Max:"
-#~ msgstr "Max:"
-
-#~ msgid "Message whom?"
-#~ msgstr "üzenet küldése kinek?"
-
-#~ msgid "Min:"
-#~ msgstr "Min:"
-
-#~ msgid "Mood text changed."
-#~ msgstr "állapot szöveg változott"
-
-#~ msgid "Mute Status"
-#~ msgstr "állapot elnémítás"
-
-#~ msgid "Mute all but receive"
-#~ msgstr "minden, csak beérkező üzenetek némítása"
-
-#~ msgid "New"
-#~ msgstr "új"
-
-#~ msgid "New Tweet"
-#~ msgstr "új twít"
-
-#~ msgid "No longer following %s"
-#~ msgstr "%s követése lemondva"
-
-#~ msgid "No new posts in %s buffer."
-#~ msgstr "nincs új hozzászólás a %s tárban"
-
-#~ msgid "No new posts in buffer %s."
-#~ msgstr "nincs új hozzászólas a %s tárban"
-
-#~ msgid "No update is currently available.  Thanks for checking!"
-#~ msgstr "Jelenleg nincsen frissítés. Köszönjük hogy ellenőrizte!"
-
-#~ msgid "Now checking for an update to %s.  Please wait."
-#~ msgstr "%s frissítés ellenőrzése..."
-
-#~ msgid "Opening website."
-#~ msgstr "honlap megnyítása"
-
-#~ msgid "Post a new direct message"
-#~ msgstr "új személyes üzenet küldése"
-
-#~ msgid "Post a new tweet"
-#~ msgstr "új twít küldése"
-
-#~ msgid "Post this message later?"
-#~ msgstr "üzenet későbbi elküldése?"
-
-#~ msgid "Public timeline updated."
-#~ msgstr "publik idővonal frissítve"
-
-#~ msgid "Removing tweet from favorites failed."
-#~ msgstr "twítet nem lehetett a kedvencekböl törölni"
-
-#~ msgid "Reply failed."
-#~ msgstr "válasz nem sikerült"
-
-#~ msgid "Reply posted."
-#~ msgstr "válasz elküldve"
-
-#~ msgid "Retweet failed."
-#~ msgstr "retwít sikertelen"
-
-#~ msgid "Save As..."
-#~ msgstr "mentés másként..."
-
-#~ msgid "Select URL from tweet to open"
-#~ msgstr "válassza ki a twítet internet címmel"
-
-#~ msgid "Settings"
-#~ msgstr "beállítások"
-
-#~ msgid "Show Favorites"
-#~ msgstr "kedvencek megjelenítése"
-
-#~ msgid "Show message box with captcha solution."
-#~ msgstr "Üzenet mező mutatása a Captcha megoldásával"
-
-#~ msgid "Solona Solution"
-#~ msgstr "Solona oldás"
-
-#~ msgid "Solona is currently offline; please try again later."
-#~ msgstr ""
-#~ "A solona szolgaltatás jelenleg nincsen fenn;Kérem próbálja meg újra később"
-
-#~ msgid "Solona is offline; no operators are available."
-#~ msgstr "A solona ninsen üzemben;operátorok nem elérhetők"
-
-#~ msgid "Solona is online, and operators are standing by."
-#~ msgstr "A solona üzemel, és operátorok elérhetőek"
-
-#~ msgid "Solona returned:"
-#~ msgstr "Solona válasza:"
-
-#~ msgid "Speech Voice"
-#~ msgstr "hang karakter"
-
-#~ msgid "Speech Volume"
-#~ msgstr "hangerő"
-
-#~ msgid "Statuses"
-#~ msgstr "állapotok"
-
-#~ msgid "Submitted captcha for analysis."
-#~ msgstr "A captcha sirekesen belett küldve elemzésre. "
-
-#~ msgid "Text File (*.txt)|*.txt|WAV File (*.wav)|*.wav"
-#~ msgstr "Text fájl (*.txt)|*.txt|WAV hangformátum  (*.wav)|*.wav"
-
-#~ msgid "This dm will be posted in %d minutes."
-#~ msgstr "ez a személyes üzenet %d perc mulva lesz elküldve"
-
-#~ msgid "This reply will be posted in %d minutes."
-#~ msgstr "ez a válasz %d perc mulva lesz elküldve"
-
-#~ msgid "This tweet will be posted in %d minutes."
-#~ msgstr "Ez a twít %d perc mulva lesz elküldve"
-
-#~ msgid "Time in minutes to wait before posting this message?"
-#~ msgstr "várási idő percben az üzenet elküldéséig?"
-
-#~ msgid "Time is up."
-#~ msgstr "az idő lejárt"
-
-#~ msgid "Tweet added to favorites"
-#~ msgstr "twít kedvencek közé adva"
-
-#~ msgid "URL"
-#~ msgstr "honlap:"
-
-#~ msgid "Unable to Log into Solona."
-#~ msgstr "A solona bejelentkezése sikertelen."
-
-#~ msgid "Unable to check notification status for %s."
-#~ msgstr "Értesítési állapotot nem lehetett lekérni a %s felhasználóhoz"
+#~ msgid "Please provide your credentials to login to Twitter"
+#~ msgstr "Per favore, fornisci le tue credenziali per accedere a twitter"
 
 #~ msgid ""
 #~ "Unable to connect to twitter.  %s will retry until connection is "
 #~ "established."
 #~ msgstr ""
-#~ "Nemlehetett a Twitterhez kapcsolódni. %s újrapróbál amíg egy kapcsolat "
-#~ "létrejön"
+#~ "Impossibile connettersi a Twitter. %s ritenterà finchè la connessione non "
+#~ "sarà stabilita."
 
-#~ msgid "Unable to obtain current operator status."
-#~ msgstr "operátor állapot lekérése sikertelen"
+#~ msgid "Retrieving blocked users"
+#~ msgstr "Recupero utenti bloccati"
 
-#~ msgid ""
-#~ "Unable to obtain the remaining number of API calls you have this hour."
-#~ msgstr "Nemlehet lekérni a hátralévő API hívások számát"
+#~ msgid "Retrieving favorites"
+#~ msgstr "Recupero preferiti"
 
-#~ msgid "Unable to retrieve URL to open from this feed."
-#~ msgstr "az RSS  webcím megnyitása képtelen"
+#~ msgid "%s followers retrieved."
+#~ msgstr "%s followers recuperati."
 
-#~ msgid "Unable to submit captcha to Solona."
-#~ msgstr "a Captcha Solona beküldése sikertelen"
+#~ msgid "%s friends retrieved."
+#~ msgstr "%s amici recuperati."
 
-#~ msgid "Unable to take screenshot."
-#~ msgstr "a képernyő elfogása sikertelen."
+#~ msgid "tweet in %s"
+#~ msgstr "Tweet in %s"
 
-#~ msgid "Unable to turn off device notifications for %s."
-#~ msgstr "A %s felhasználónak ezkőzi értesítéseit nem lehetett kikapcsolni "
+#~ msgid "tweets in %s"
+#~ msgstr "Tweets in %s"
 
-#~ msgid "Unfollowing %s failed"
-#~ msgstr "a %s követése lemondása sikertelen volt"
+#~ msgid "User's local date"
+#~ msgstr "Data locale dell'utente"
 
-#~ msgid "Unshorten URL"
-#~ msgstr "URL kirövidítése"
+#~ msgid "Accuracy:"
+#~ msgstr "Accuratezza:"
 
-#~ msgid "Updating status failed."
-#~ msgstr "az állapot frissítése sikertelen volt"
+#~ msgid "Profile for %s"
+#~ msgstr "Profilo di %s"
 
-#~ msgid "User"
-#~ msgstr "felhasználó"
+#~ msgid "List created."
+#~ msgstr "Lista creata."
 
-#~ msgid "You will no longer receive device notifications for %s."
-#~ msgstr "Mostantól nem fog ezkőzi értesítéseket kapni a %s felhasználától"
+#~ msgid "List editted successfully."
+#~ msgstr "Lista modificata con successo."
 
-#~ msgid "about %d days ago"
-#~ msgstr "körülbelül %d napja"
+#~ msgid "Unable to edit list."
+#~ msgstr "Impossibile modificare la lista."
 
-#~ msgid "about a day ago"
-#~ msgstr "körülbelül egy napja"
+#~ msgid "Are you sure you want to delete %s?"
+#~ msgstr "Sei sicuro di voler eliminare %s?"
 
-#~ msgid "about a minute ago"
-#~ msgstr "körülbelül egy perce"
+#~ msgid "list %s deleted."
+#~ msgstr "Lista %s eliminata."
+
+#~ msgid "Unable to delete list %s."
+#~ msgstr "impossibile eliminare la lista %s."
+
+#~ msgid "days"
+#~ msgstr "giorni"
 
 #~ msgid "about a second ago"
-#~ msgstr "körülbelül egy másodperce"
+#~ msgstr "Circa un secondo fa"
 
-#~ msgid "about an hour ago"
-#~ msgstr "körülbelül egy úrája"
+#~ msgid "more than a second ago"
+#~ msgstr "Più di un secondo fa"
 
-#~ msgid "address"
-#~ msgstr "cím"
+#~ msgid "about %d seconds ago"
+#~ msgstr "Circa %d secondi fa"
 
-#~ msgid "canceled."
-#~ msgstr "jóvánhagyva"
-
-#~ msgid "country"
-#~ msgstr "ország"
-
-#~ msgid "intersection"
-#~ msgstr "útkereszteződés"
-
-#~ msgid "more than a day ago"
-#~ msgstr "több mint egy napja"
+#~ msgid "about a minute ago"
+#~ msgstr "Circa un minuto fa"
 
 #~ msgid "more than a minute ago"
-#~ msgstr "több mint egy perce"
+#~ msgstr "Più di un minuto fa"
+
+#~ msgid "about %d minutes ago"
+#~ msgstr "Circa %d minuti fa"
+
+#~ msgid "about an hour ago"
+#~ msgstr "Circa un'ora fa"
 
 #~ msgid "more than an hour ago"
-#~ msgstr "több mint egy órája"
+#~ msgstr "Più di un'ora fa"
 
-#~ msgid "planet"
-#~ msgstr "bolygó"
+#~ msgid "about %d hours ago"
+#~ msgstr "Circa %d ore fa"
 
-#~ msgid "post code"
-#~ msgstr "irányszám"
+#~ msgid "about a day ago"
+#~ msgstr "Circa un giorno fa"
 
-#~ msgid "premise"
-#~ msgstr "feltevésen"
+#~ msgid "more than a day ago"
+#~ msgstr "Più di un giorno fa"
 
-#~ msgid "region"
-#~ msgstr "régió/megye"
+#~ msgid "No new posts in %s buffer."
+#~ msgstr "Nessun nuovo messaggio nel buffer %s."
 
-#~ msgid "street"
-#~ msgstr "Utca"
+#~ msgid "User"
+#~ msgstr "Utente"
 
-#~ msgid "sub-region"
-#~ msgstr "táj"
+#~ msgid "Removing tweet from favorites failed."
+#~ msgstr "Rimozione tweet dai preferiti fallita."
 
-#~ msgid "town"
-#~ msgstr "falu"
+#~ msgid "Status updated."
+#~ msgstr "Stato aggiornato."
+
+#~ msgid "Updating status failed."
+#~ msgstr "Aggiornamento stato fallito."
+
+#~ msgid "Statuses"
+#~ msgstr "Stati"
+
+#~ msgid "%s new status update."
+#~ msgstr "%s nuovo aggiornamento di stato"
+
+#~ msgid "%s new status updates."
+#~ msgstr "%s nuovi aggiornamenti di stato."
+
+#~ msgid "Login to facebook"
+#~ msgstr "Accedi a Facebook"
+
+#~ msgid "Select URL from tweet to open"
+#~ msgstr "Seleziona URL da aprire da un tweet"
+
+#~ msgid "Keymap unsaved."
+#~ msgstr "Mappa dei tasti non salvata."
+
+#~ msgid "Default (English)"
+#~ msgstr "inglese (predefinito)"
+
+#~ msgid "Message cannot be sent."
+#~ msgstr "Il messaggio non può essere inviato."
+
+#~ msgid "Reply canceled."
+#~ msgstr "Risposta annullata."
+
+#~ msgid "Remove Post"
+#~ msgstr "Rimuovi messaggio"
+
+#~ msgid "New Tweet"
+#~ msgstr "Nuovo tweet"
+
+#~ msgid "Available Fields:"
+#~ msgstr "Campi disponibili:"
+
+#~ msgid "canceled."
+#~ msgstr "Annullato."
+
+#~ msgid "Post this message later?"
+#~ msgstr "Inviare questo messaggio più tardi?"
+
+#~ msgid "Time in minutes to wait before posting this message?"
+#~ msgstr "Tempo di attesa in minuti prima di inviare questo messaggio?"
+
+#~ msgid "This tweet will be posted in %d minutes."
+#~ msgstr "Questo tweet sarà pubblicato in %d minuti."
+
+#~ msgid "This dm will be posted in %d minutes."
+#~ msgstr "Questo messaggio diretto sarà inviato in %d minuti."
+
+#~ msgid "This reply will be posted in %d minutes."
+#~ msgstr "Questa risposta sarà inviata in %d minuti."
+
+#~ msgid "Unshorten URL"
+#~ msgstr "Riduzione URL"
+
+#~ msgid "Posting reply"
+#~ msgstr "Invio risposta"
+
+#~ msgid "Full mute"
+#~ msgstr "Silenzio totale"
+
+#~ msgid "Mute all but receive"
+#~ msgstr "Silenzio totale ma ricezione"
+
+#~ msgid "Public timeline updated."
+#~ msgstr "Timeline pubblica aggiornata."
+
+#~ msgid "Mute Status"
+#~ msgstr "Stato silenzio"
+
+#~ msgid "Buffer Search"
+#~ msgstr "Buffer di ricerca"
+
+#~ msgid "Successfully removed %s from list %s"
+#~ msgstr "%s rimosso con successo dalla lista %s"
+
+#~ msgid "Unable to remove %s from list %s"
+#~ msgstr "Impossibile rimuovere %s dalla lista %s"
+
+#~ msgid "including"
+#~ msgstr "Compreso"
+
+#~ msgid "%d new post in %s's favorites."
+#~ msgstr "%d nuovo messaggio nei preferiti di %s."
+
+#~ msgid "%d new posts in %s's favorites."
+#~ msgstr "%d nuovi messaggi nei preferiti di %s."

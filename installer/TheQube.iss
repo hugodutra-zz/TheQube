@@ -2,11 +2,11 @@
 ; InnoSetup v5.5.5 unicode
 ; Copyright © Andre Polykanine A.K.A. Menelion Elensúlë, 2014
 
-#define MyAppName "The Qube"
+#define MyAppName "TheQube"
 #define MyAppVersion "0.7"
 #define MyAppPublisher "Andre Polykanine A.K.A. Menelion Elensúlë"
 #define MyAppURL "http://theqube.oire.org"
-#define MyAppExeName "The Qube.exe"
+#define MyAppExeName "TheQube.exe"
 #define MyAppDescription "An accessible social networking client developed mainly for the blind."
 #define MyAppCopyrightYear "2014"
 
@@ -54,7 +54,7 @@ Name: de; MessagesFile: compiler:Languages\German.isl
 Name: it; MessagesFile: compiler:languages\Italian.isl
 Name: pl; MessagesFile: compiler:languages\Polish.isl
 Name: ru; MessagesFile: compiler:Languages\russian.isl,languages\RussianCustom.islu
-Name: es; MessagesFile: compiler:languages\Spanish.isl
+Name: es; MessagesFile: compiler:languages\Spanish.isl,languages\SpanishCustom.islu
 Name: uk; MessagesFile: compiler:languages\Ukrainian.isl,languages\UkrainianCustom.islu
 
 [Tasks]

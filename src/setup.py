@@ -10,7 +10,7 @@ from logger import logger
 logging = logger.getChild("Installer")
 
 
-name = 'The Qube'
+name = 'TheQube'
 __version__ = 0.7
 __author__ = 'Andre Polykanine A.K.A. Menelion Elensúlë'
 DELETE_DIRS = (
@@ -102,7 +102,7 @@ if __name__ == '__main__':
   windows = [
    {
     'script': 'main.pyw',
-    'dest_base': 'The Qube',
+    'dest_base': 'TheQube',
    }
   ],
   install_requires = [

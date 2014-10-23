@@ -1,0 +1,7 @@
+﻿[LangOptions]
+LanguageCodePage=0
+
+[CustomMessages]
+ReadManual=Leer %1 &documentación
+WhatsNew=&qué novedades hay en  %1
+JoinTwitter=Ingresar a &Twitter

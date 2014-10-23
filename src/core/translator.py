@@ -5,7 +5,6 @@
 # Copyright © Andre Polykanine A.K.A. Menelion Elensúlë, 2014
 # Based on Goslate, a Google translate binding by Zhuo Qiang
 
-from __future__ import print_function
 from __future__ import unicode_literals
 
 import sys
@@ -156,11 +155,9 @@ class Translator(object):
 
         url = '?'.join((GOOGLE_TRANSLATOR_URL, urlencode(GOOGLE_TRANSLATOR_PARAMETERS)))
         response_content = self._open_url(url)
-        data = json.loads(response_content[1:-1])
-
+        data = json.loads(response_content)
         languages = data['sl']
         languages.update(data['tl'])
-        logging.debug("@langs: {0}".format(languages))
         if 'auto' in languages:
             del languages['auto']
         # Replacing dashes with underscores to fit the getText requirements
