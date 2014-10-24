@@ -12,7 +12,7 @@ logging = logger.getChild("Installer")
 
 name = 'TheQube'
 __version__ = 0.7
-__author__ = 'Andre Polykanine A.K.A. Menelion Elensúlë'
+__author__ = 'TheQube developers team'
 DELETE_DIRS = (
  'build',
  'dist',
@@ -82,7 +82,7 @@ if __name__ == '__main__':
  setup(
   name = name,
   author = __author__,
-  author_email = "andre@oire.org",
+  author_email = "theqube@lists.oire.org",
   version = __version__,
   url = 'http://theqube.oire.org/',
   packages = find_packages(),

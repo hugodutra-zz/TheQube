@@ -1,6 +1,7 @@
-h2. Welcome to The Qube
+h2. Welcome to TheQube
 
-The Qube is an accessible social networking client.
+TheQube is an accessible social networking client.
 © Original idea and code by "Christopher Toth":http://q-continuum.net/
-© Further development and support by "Quartizer projects":http://quartzprojects.co.uk/
+© Main fork implementation and various new features and bugfixes by "Quartizer projects":http://quartzprojects.co.uk/
+© Currently developed and maintained by "TheQube developers team":http://theqube.oire.org/.
 Distributed under an "MIT license":http://choosealicense.com/licenses/mit/.

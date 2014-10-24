@@ -70,7 +70,7 @@ stdKeyHandling=boolean(default=False)
 
 
 [shortener]
-urlShortener=string(default="Hkc.Im")
+urlShortener=string(default="onj.me")
 
 [AudioServices]
 service=string(default="sndup.net")

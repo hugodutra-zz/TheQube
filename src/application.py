@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-name = 'The Qube'
+name = 'TheQube'
 version = '0.7'
 author = u'Andre Polykanine A.K.A. Menelion Elensúlë'
 url = "http://theqube.oire.org"

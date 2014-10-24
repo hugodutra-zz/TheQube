@@ -1,10 +1,10 @@
-﻿; The Qube install script
+﻿; TheQube install script
 ; InnoSetup v5.5.5 unicode
-; Copyright © Andre Polykanine A.K.A. Menelion Elensúlë, 2014
+; Copyright © TheQube developers team, 2014
 
 #define MyAppName "TheQube"
 #define MyAppVersion "0.7"
-#define MyAppPublisher "Andre Polykanine A.K.A. Menelion Elensúlë"
+#define MyAppPublisher "TheQube developers team"
 #define MyAppURL "http://theqube.oire.org"
 #define MyAppExeName "TheQube.exe"
 #define MyAppDescription "An accessible social networking client developed mainly for the blind."
@@ -42,7 +42,7 @@ VersionInfoProductName={#MyAppName}
 VersionInfoProductVersion={#MyAppVersion}
 VersionInfoVersion={#MyAppVersion}
 AppModifyPath={app}
-AppContact=andre@oire.org
+AppContact=theqube@lists.oire.org
 PrivilegesRequired=lowest
 
 [Languages]
@@ -105,7 +105,7 @@ begin
       Result := false;
       ExtractTemporaryFile('IssProcLanguage.ini');                          { extract extra language file - you don't need to add this line if you are using english only }
       hWnd := StrToInt(ExpandConstant('{wizardhwnd}'));                     { get main wizard handle }
-      sModuleName :=ExpandConstant('*The Qube.exe;');                        { searched modules. Tip: separate multiple modules with semicolon Ex: '*mymodule.dll;*mymodule2.dll;*myapp.exe'}
+      sModuleName :=ExpandConstant('*TheQube.exe;');                        { searched modules. Tip: separate multiple modules with semicolon Ex: '*mymodule.dll;*mymodule2.dll;*myapp.exe'}
 
      nCode:=IssFindModule(hWnd,sModuleName,'en',false,true);                { search for module and display files-in-use window if found  }
      //sModuleName:=IntToStr(nCode);
@@ -129,7 +129,7 @@ var
 
 begin
     Result := false;
-     sModuleName := ExpandConstant('*The Qube.exe;');          { searched module. Tip: separate multiple modules with semicolon Ex: '*mymodule.dll;*mymodule2.dll;*myapp.exe'}
+     sModuleName := ExpandConstant('*TheQube.exe;');          { searched module. Tip: separate multiple modules with semicolon Ex: '*mymodule.dll;*mymodule2.dll;*myapp.exe'}
 
      nCode:=IssFindModuleU(0,sModuleName,'enu',false,false); { search for module and display files-in-use window if found  }
 

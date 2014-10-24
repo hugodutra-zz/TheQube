@@ -1,6 +1,6 @@
-import platform
 import os
 import sys
+import shlobj
 
 from functools import wraps
 
@@ -12,12 +12,8 @@ def merge_paths(func):
 
 
 @merge_paths
-def data_path(app_name='The Qube'):
- if platform.system() == "Windows":
-  import shlobj
-  data_path = os.path.join(shlobj.SHGetFolderPath(0, shlobj.CSIDL_APPDATA), app_name)
- else:
-  data_path = os.path.join(os.environ['HOME'], ".%s" % app_name)
+def data_path(app_name='TheQube'):
+ data_path = os.path.join(shlobj.SHGetFolderPath(0, shlobj.CSIDL_APPDATA), app_name)
  if not os.path.exists(data_path):
   os.mkdir(data_path)
  return data_path

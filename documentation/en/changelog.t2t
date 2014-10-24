@@ -1,4 +1,4 @@
-The Qube change log
+TheQube change log
 
 
 %!target: html
@@ -6,19 +6,19 @@ The Qube change log
 
 =Change Log=[changelog]
 
-== The Qube 0.7==
+== TheQube 0.7==
 
 ===Changes===
 
-- Now The Qube is versioned according to usually adopted system major.minor.patch. And, until the first stable version is released, the first digit will be zero, so this version is 0.7.
-- The Speech and Braille panels in the global The Qube configuration consolidated into one panel as the Braille panel contained only one check box.
+- Now the application is called TheQube (without a space) and versioned according to usually adopted system major.minor.patch. And, until the first stable version is released, the first digit will be zero, so this version is 0.7.
+- The Speech and Braille panels in the global TheQube configuration consolidated into one panel as the Braille panel contained only one check box.
 - The tweets translation service is back ([#27 https://github.com/Oire/TheQube/issues/27])
 - The audio links from rebranded AudioBoom are supported.
-- Now The Qube has a permanent multilingual [website http://theqube.oire.org]
+- Now TheQube has a permanent multilingual [website http://theqube.oire.org]
 - Now Ctrl+BackSpace works in new message dialogs, allowing to delete previous word.
 - Now the website address in the profile info dialog won't be shortened with t.co.
 - Now the profile info dialog shows also the number of users that added the current user to their lists.
-- The doc folder is removed from sources as it doesn't contain any meaningful guidelines for The Qube developers. If the number of developers grows, such guidelines will be rewritten.
+- The doc folder is removed from sources as it doesn't contain any meaningful guidelines for TheQube developers. If the number of developers grows, such guidelines will be rewritten.
 - Temporarily removed support of the hkc.im URL shortener because of a service error, see [their main page http://hkc.im]
 - Added support for new URL shortening services, namely goo.gl, senta.la and Readability
 - The authorization process doesn't require a pin code anymore. However, the browser page still opens, we can't do anything to it so far ([#13 https://github.com/Oire/TheQube/issues/13])
@@ -28,7 +28,7 @@ The Qube change log
 
 - Fixed: [#33: Switching sessions freezes the keyboard commands https://github.com/Oire/TheQube/issues/33]
 - Fixed: [#1: Keyboard commands don't work if the default keyboard layout is not set to English https://github.com/Oire/TheQube/issues/1]
-- Fixed: [#35: The Qube requires to be run as administrator under Windows 8.X https://github.com/Oire/TheQube/issues/35]
+- Fixed: [#35: TheQube requires to be run as administrator under Windows 8.X https://github.com/Oire/TheQube/issues/35]
 - Fixed: [#44: Language of the documentation doesn't correspond to the language chosen during installation https://github.com/Oire/TheQube/issues/44]
 
 
