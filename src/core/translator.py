@@ -16,6 +16,8 @@ import time
 import socket
 import random
 import requests
+import re
+import htmlentitydefs
 
 from urllib import urlencode, unquote_plus, quote_plus
 from urlparse import urljoin
@@ -43,6 +45,28 @@ def _unwrapper_single_element(elements):
     if len(elements) == 1:
         return elements[0]
     return elements
+
+def html_unescape(text):
+ def fixup(m):
+  text = m.group(0)
+  if text[:2] == "&#":
+   # character reference
+   try:
+    if text[:3] == "&#x":
+     return unichr(int(text[3:-1], 16))
+    else:
+     return unichr(int(text[2:-1]))
+   except ValueError:
+    pass
+  else:
+   # named entity
+   try:
+    text = unichr(htmlentitydefs.name2codepoint[text[1:-1]])
+   except KeyError:
+    pass
+  return text # leave as is
+ return re.sub("&#?\w+;", fixup, text)
+
 
 class TranslatorError(Exception): pass
 
@@ -160,8 +184,8 @@ class Translator(object):
         languages.update(data['tl'])
         if 'auto' in languages:
             del languages['auto']
-        # Replacing dashes with underscores to fit the getText requirements
-        self._languages = {k.replace('-', '_'): v for k, v in languages.items()}
+        # Replacing dashes with underscores to fit the getText requirements and turning HTML entities into plain chars
+        self._languages = {k.replace('-', '_'): html_unescape(v) for k, v in languages.items()}
         return self._languages
 
 

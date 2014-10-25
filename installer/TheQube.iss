@@ -23,7 +23,7 @@ AppUpdatesURL={#MyAppURL}
 DefaultDirName={pf}\{#MyAppName}
 DefaultGroupName={#MyAppName}
 ; LicenseFile=..\src\dist\Documentation\license.txt
-OutputDir=setup
+OutputDir=bin
 OutputBaseFilename=TheQube-{#MyAppVersion}-setup
 Compression=lzma2
 SolidCompression=true
@@ -41,9 +41,7 @@ VersionInfoDescription={#MyAppDescription}
 VersionInfoProductName={#MyAppName}
 VersionInfoProductVersion={#MyAppVersion}
 VersionInfoVersion={#MyAppVersion}
-AppModifyPath={app}
 AppContact=theqube@lists.oire.org
-PrivilegesRequired=lowest
 
 [Languages]
 Name: en; MessagesFile: compiler:Default.isl,languages\DefaultCustom.islu
@@ -55,15 +53,15 @@ Name: es; MessagesFile: compiler:languages\Spanish.isl,languages\SpanishCustom.i
 Name: desktopicon; Description: {cm:CreateDesktopIcon}; GroupDescription: {cm:AdditionalIcons}; Flags: unchecked
 
 [Files]
-Source: IssProc.dll; DestDir: {tmp}; Flags: dontcopy
-Source: IssProcLanguage.ini; DestDir: {tmp}; Flags: dontcopy
-Source: IssProc.dll; DestDir: {app}
-Source: IssProcLanguage.ini; DestDir: {app}
+Source: IssProc.dll; DestDir: {tmp}; Permissions: users-modify; Flags: dontcopy
+Source: IssProcLanguage.ini; DestDir: {tmp}; Permissions: users-modify; Flags: dontcopy
+Source: IssProc.dll; DestDir: {app}; Permissions: users-modify
+Source: IssProcLanguage.ini; DestDir: {app}; Permissions: users-modify
 
-Source: ..\src\dist\*; DestDir: {app}; Permissions: users-readexec; Flags: ignoreversion createallsubdirs recursesubdirs
-source: ..\src\sounds\*; DestDir: {app}\sounds; Flags: ignoreversion createallsubdirs recursesubdirs
-source: ..\src\locale\*; Excludes: *.po; DestDir: {app}\locale; Flags: ignoreversion createallsubdirs recursesubdirs
-Source: ..\src\dist\documentation\*; DestDir: {app}\documentation; Flags: ignoreversion createallsubdirs recursesubdirs
+Source: ..\src\dist\*; DestDir: {app}; Permissions: users-modify; Flags: ignoreversion createallsubdirs recursesubdirs
+source: ..\src\sounds\*; DestDir: {app}\sounds; Permissions: users-modify; Flags: ignoreversion createallsubdirs recursesubdirs
+source: ..\src\locale\*; Excludes: *.po; DestDir: {app}\locale; Permissions: users-modify; Flags: ignoreversion createallsubdirs recursesubdirs
+Source: ..\src\dist\documentation\*; DestDir: {app}\documentation; Permissions: users-modify; Flags: ignoreversion createallsubdirs recursesubdirs
 
 [Icons]
 Name: {group}\{#MyAppName}; Filename: {app}\{#MyAppExeName}

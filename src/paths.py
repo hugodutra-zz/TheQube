@@ -13,7 +13,7 @@ def merge_paths(func):
 
 @merge_paths
 def data_path(app_name='TheQube'):
- data_path = os.path.join(shlobj.SHGetFolderPath(0, shlobj.CSIDL_APPDATA), app_name)
+ data_path = os.path.join(os.getenv('APPDATA'), app_name)
  if not os.path.exists(data_path):
   os.mkdir(data_path)
  return data_path
