@@ -47,7 +47,7 @@ class Handler(BaseHTTPServer.BaseHTTPRequestHandler):
   params = parse_qs(urlparse(self.path).query)
   global verifier
   verifier = params.get('oauth_verifier', [None])[0]
-  self.wfile.write(_("You have successfully logged in to Twitter! Now please close this window and happy tweeting!"))
+  self.wfile.write("You have successfully logged in to Twitter! Now please close this window and happy tweeting!")
 
 class Twitter (Buffers, Login, Hotkey, SpeechRecognition, WebService):
 
@@ -83,9 +83,8 @@ class Twitter (Buffers, Login, Hotkey, SpeechRecognition, WebService):
  @always_call_after
  def retrieve_access_token (self):
   output.speak(_("Please wait while an access token is retrieved from Twitter."), True)
-  httpd = BaseHTTPServer.HTTPServer(('127.0.0.1', 7823), Handler)
-  logging.debug("@httpd: %s" % str(httpd))
-  auth_props = self.auth_handler.get_authentication_tokens(callback_url = "http://127.0.0.1:7823")
+  httpd = BaseHTTPServer.HTTPServer(('127.0.0.1', 8080), Handler)
+  auth_props = self.auth_handler.get_authentication_tokens(callback_url = "http://127.0.0.1:8080")
   webbrowser.open_new_tab(auth_props['auth_url'])
   global logged, verifier
   while logged == False:
@@ -95,7 +94,6 @@ class Twitter (Buffers, Login, Hotkey, SpeechRecognition, WebService):
   output.speak(_("Retrieved access token from Twitter."), True)
   self.config['oauth']['userKey'] = token['oauth_token']
   self.config['oauth']['userSecret'] = token['oauth_token_secret']
-  logging.debug("Successfully retrieved an oAuth access token for user.")
   self.login()
 
  login_required = retrieve_access_token 
@@ -343,9 +341,7 @@ class Twitter (Buffers, Login, Hotkey, SpeechRecognition, WebService):
   try:
    val = getattr(self.TwitterApi, call_name)(*args, **kwargs)
   except TwythonError as e:
-   if hasattr(e, 'reason') and e.reason.startswith("Failed to send request"):
-    raise e
-   logging.exception("%s: Error making call to twitter API function %s" % (self.name, call_name))
+   logging.exception("%s: Error making call to twitter API function %s: %s" % (self.name, call_name, e.message()))
    if report_failure and hasattr(e, 'reason'):
     output.speak(_("%s failed.  Reason: %s") % (action, e.reason))
    raise e

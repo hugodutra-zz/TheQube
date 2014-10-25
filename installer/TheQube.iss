@@ -47,15 +47,9 @@ PrivilegesRequired=lowest
 
 [Languages]
 Name: en; MessagesFile: compiler:Default.isl,languages\DefaultCustom.islu
-Name: pt_BR; MessagesFile: compiler:languages\BrazilianPortuguese.isl
-Name: nl; MessagesFile: compiler:Languages\Dutch.isl
-Name: Fr; MessagesFile: compiler:languages\French.isl
-Name: de; MessagesFile: compiler:Languages\German.isl
-Name: it; MessagesFile: compiler:languages\Italian.isl
-Name: pl; MessagesFile: compiler:languages\Polish.isl
+Name: pt_BR; MessagesFile: compiler:Languages\BrazilianPortuguese.isl,languages\DefaultCustom.islu
 Name: ru; MessagesFile: compiler:Languages\russian.isl,languages\RussianCustom.islu
 Name: es; MessagesFile: compiler:languages\Spanish.isl,languages\SpanishCustom.islu
-Name: uk; MessagesFile: compiler:languages\Ukrainian.isl,languages\UkrainianCustom.islu
 
 [Tasks]
 Name: desktopicon; Description: {cm:CreateDesktopIcon}; GroupDescription: {cm:AdditionalIcons}; Flags: unchecked
