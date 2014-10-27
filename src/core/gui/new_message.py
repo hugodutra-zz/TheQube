@@ -1,10 +1,9 @@
 # -*- coding: utf-8 -*-
 
-# The Qube New Message dialog
-# A part of The Qube accessible social networking client
+# TheQube New Message dialog
+# A part of TheQube accessible social networking client
 # Copyright © Andre Polykanine A.K.A. Menelion Elensúlë, 2014
 
-from __future__ import unicode_literals
 from logger import logger
 logging = logger.getChild('core.gui.new_message')
 
@@ -17,7 +16,7 @@ import output
 import wx
 import wx.lib.sized_controls as sc
 
-from transfer_dialogs import UploadDialog
+from core.transfer_dialogs import UploadDialog
 
 from core.gui import SquareDialog
 from recording import RecordingDialog
@@ -249,7 +248,6 @@ class NewMessageDialog(SquareDialog):
 
  def on_attach_audio(self, evt):
   evt.Skip()
-  logging.debug("Attempting to attach audio file...")
   self.recording_dlg = dlg = RecordingDialog(parent=self.pane.Parent)
   if dlg.ShowModal() != wx.ID_OK:
    dlg.cleanup()
@@ -259,18 +257,19 @@ class NewMessageDialog(SquareDialog):
    output.speak(_("Attaching..."), True)
    baseUrl = 'http://api.twup.me/post.json' if config.main['AudioServices']['service'] == 'twup.me' else 'http://sndup.net/post.php'
    if config.main['AudioServices']['service'] == 'sndup.net' and len(config.main['AudioServices']['sndUpAPIKey']) > 0:
-    uploadUrl = baseUrl + '?apikey=' + config.main['AudioServices']['sndUpAPIKey']
+    upload_url = baseUrl + '?apikey=' + config.main['AudioServices']['sndUpAPIKey']
    else:
-    uploadUrl = baseUrl
-   logging.debug("Upload url: %s" % uploadUrl)
-   self.upload_dlg = UploadDialog(parent=self, title=_("Upload in progress"), field='file', url=uploadUrl, filename=dlg.file, completed_callback=self.upload_completed)
+    upload_url = baseUrl
+   logging.debug("Upload URL: %s" % upload_url)
+   self.upload_dlg = UploadDialog(parent=self, title=_("Upload in progress"), field='file', url=upload_url, filename=dlg.file, completed_callback=self.upload_completed)
+   logging.debug("@Upload dialog: %s" % str(self.upload_dlg))
    self.upload_dlg.Show(True)
    try:
     self.upload_dlg.perform_threaded()
    except Exception as upldexc:
-    logging.exception("Unable to perform upload: {0}".format(upldexc))
+    logging.exception("Unable to perform upload: %s " % upldexc)
   except Exception as auexc:
-   logging.exception("Unable to upload audio file to {0}: {1}".format(config.main['AudioServices']['service'], auexc))
+   logging.exception("Unable to upload audio file to %s: %s" % (config.main['AudioServices']['service'], auexc))
    dlg.cleanup()
    return output.speak(_("There was an error attaching the file."), True)
 

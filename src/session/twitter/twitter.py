@@ -341,7 +341,7 @@ class Twitter (Buffers, Login, Hotkey, SpeechRecognition, WebService):
   try:
    val = getattr(self.TwitterApi, call_name)(*args, **kwargs)
   except TwythonError as e:
-   logging.exception("%s: Error making call to twitter API function %s: %s" % (self.name, call_name, e.message()))
+   logging.exception("%s: Error making call to twitter API function %s: %s" % (self.name, call_name, e.message))
    if report_failure and hasattr(e, 'reason'):
     output.speak(_("%s failed.  Reason: %s") % (action, e.reason))
    raise e
