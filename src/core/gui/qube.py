@@ -22,5 +22,4 @@ class SquareDialog (SizedDialog):
 
  def on_close(self, evt):
   evt.Skip()
-  logging.info("Destroying dialog")
   self.Destroy()

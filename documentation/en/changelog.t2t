@@ -6,6 +6,12 @@ TheQube change log
 
 =Change Log=[changelog]
 
+
+== TheQube 0.7.1 ==
+
+- Fixed: [#29 Log files grow to insane sizes https://github.com/Oire/theqube/issues/29]. For now the maximum filesize is set to 100 kb.
+
+
 == TheQube 0.7==
 
 ===Changes===

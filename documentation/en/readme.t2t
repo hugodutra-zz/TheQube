@@ -1,4 +1,4 @@
-The Qube Readme
+TheQube Readme
 version 1.0 beta4.3
 Last Updated: %%mtime(%x)
 %!target: xhtml
@@ -6,30 +6,30 @@ Last Updated: %%mtime(%x)
 
 =Beta Warning=[beta]
 
-This version of The Qube is beta-quality software and, as such, it is possible that its feature set and the way it operates may change significantly before final release.  It should also be stressed that, though we will make every effort to eliminate as many problems as possible, it is inevitable that you will still encounter bugs, some of which could potentially lead to system instability.  If you encounter such a problem, please mention @quartz_projects on Twitter with details of the issue and we will investigate it as quickly as possible.
+This version of TheQube is beta-quality software and, as such, it is possible that its feature set and the way it operates may change significantly before final release.  It should also be stressed that, though we will make every effort to eliminate as many problems as possible, it is inevitable that you will still encounter bugs, some of which could potentially lead to system instability.  If you encounter such a problem, please mention @quartz_projects on Twitter with details of the issue and we will investigate it as quickly as possible.
 
 
 =Introduction=[introduction]
 
-==What is The Qube?==[qube-intro]
+==What is TheQube?==[qube-intro]
 
-The Qube is a fork of [Qwitter http://www.qwitter-client.net], a popular program pioneered by [Christopher Toth http://www.q-continuum.net].  It was originally created as a private project to give its authors greater user interface flexibility, but gained popularity since Qwitter's development ceased in September 2011.
+TheQube is a fork of [Qwitter http://www.qwitter-client.net], a popular program pioneered by [Christopher Toth http://www.q-continuum.net].  It was originally created as a private project to give its authors greater user interface flexibility, but gained popularity since Qwitter's development ceased in September 2011.
 
 Qwitter was originally designed as a client for the Twitter microblogging service, but later evolved into a revolutionary application, bringing the speech and sound-based navigation paradigm it popularized on the Twitter platform to several other services.  Its primary advantage is that you can access these services without ever having to open up another window: you never need to leave the application you are working in.
 
-The Qube intends to maintain this philosophy, building upon Qwitter's existing infrastructure to continue to provide a powerful, high quality solution.  It is extremely intuitive to use and, if you've previously used Qwitter, the same concepts and keystrokes still apply.  Even if you haven't, after reading through this document, it's likely you'll be using it easily and efficiently in no time.  We hope you enjoy the software and welcome your feedback on how it can be improved in the future.
+TheQube intends to maintain this philosophy, building upon Qwitter's existing infrastructure to continue to provide a powerful, high quality solution.  It is extremely intuitive to use and, if you've previously used Qwitter, the same concepts and keystrokes still apply.  Even if you haven't, after reading through this document, it's likely you'll be using it easily and efficiently in no time.  We hope you enjoy the software and welcome your feedback on how it can be improved in the future.
 
-The Qube works with most screen readers, including JAWS, Window-Eyes, System Access, SuperNova and the freely available [NVDA http://nvda-project.org] (version 2010.1 or later).
+TheQube works with most screen readers, including JAWS, Window-Eyes, System Access, SuperNova and the freely available [NVDA http://nvda-project.org] (version 2010.1 or later).
 
 =General Concepts=[general]
 
 ==What are sessions?==[sessions]
 
-Sessions are applications running on The Qube's platform that add functionality to it, most commonly from web-based applications.  The first such session was for Twitter.
+Sessions are applications running on TheQube's platform that add functionality to it, most commonly from web-based applications.  The first such session was for Twitter.
 
-The first time you run The Qube after installation, you are presented with the new session dialog.  Select the type of session you would like to use and then press tab to give this session a name.  You will probably want to set The Qube up to work with Twitter first.  We will describe the Twitter session in [the next chapter.  #twitter-session] You can have more than one session for a particular service.  For example you can access multiple twitter accounts with The Qube by creating a new session for each one.  
+The first time you run TheQube after installation, you are presented with the new session dialog.  Select the type of session you would like to use and then press tab to give this session a name.  You will probably want to set TheQube up to work with Twitter first.  We will describe the Twitter session in [the next chapter.  #twitter-session] You can have more than one session for a particular service.  For example you can access multiple twitter accounts with TheQube by creating a new session for each one.  
 
-The following commands can be used to work with sessions in The Qube.
+The following commands can be used to work with sessions in TheQube.
 
 - control+shift+win+n will bring up the new session dialog again at any point in the future.
 - control+shift+win+left or right arrow will switch between sessions that you have set up.
@@ -42,29 +42,29 @@ The following commands can be used to work with sessions in The Qube.
 
 ==what are buffers?==[buffers]
 
-Buffers are separate areas within The Qube that are used to hold different types of information for review.  Each type of session uses buffers in different ways, and we'll show you how to utilize them all Throughout this document.
+Buffers are separate areas within TheQube that are used to hold different types of information for review.  Each type of session uses buffers in different ways, and we'll show you how to utilize them all Throughout this document.
 
-Each session contains it's own unique set of buffers, and remembers which buffer you are working in within that session.  To switch between the various buffers within your current session, use ctrl+win+left and right arrows.  The Qube will announce the buffer you change to, so you'll always know where you are.  By default, The Qube places you in the last buffer you've used, even
+Each session contains it's own unique set of buffers, and remembers which buffer you are working in within that session.  To switch between the various buffers within your current session, use ctrl+win+left and right arrows.  TheQube will announce the buffer you change to, so you'll always know where you are.  By default, TheQube places you in the last buffer you've used, even
 if you restart.  Once you've picked a buffer you want to read through, use control+win+up and down arrows to browse the items.  
 
-To go to the most recent or oldest item in the buffer, use ctrl+win+home or end respectively.  To move forward or back through the list by 5%, press control+win+page up or down.  To move forward or back by an hour, use control+win+shift+page up or down.  You can adjust how much these commands move in the navigation tab of The Qube's main configuration dialog, available by pressing control+shift+win+o.  You can also use control+win+z to undo the last navigation command you issued.
+To go to the most recent or oldest item in the buffer, use ctrl+win+home or end respectively.  To move forward or back through the list by 5%, press control+win+page up or down.  To move forward or back by an hour, use control+win+shift+page up or down.  You can adjust how much these commands move in the navigation tab of TheQube's main configuration dialog, available by pressing control+shift+win+o.  You can also use control+win+z to undo the last navigation command you issued.
 
 If you wish to manually update the buffer you're in, rather
-than waiting for it to update itself at whatever interval you chose during configuration, use ctrl+win+u.  If you ever wish to delete the contents of a buffer from The Qube's database, you can do so by pressing ctrl+shift+win+delete.  When the buffer updates again, the newest items will be back in the buffer, up to the maximum that you configured.
+than waiting for it to update itself at whatever interval you chose during configuration, use ctrl+win+u.  If you ever wish to delete the contents of a buffer from TheQube's database, you can do so by pressing ctrl+shift+win+delete.  When the buffer updates again, the newest items will be back in the buffer, up to the maximum that you configured.
 
 You can also modify the navigation order of the buffers by pressing control+win+alt+left or right arrows to move the current buffer in that direction.  
 
-==Options when sending messages in The Qube==[message-options]
+==Options when sending messages in TheQube==[message-options]
 
-Often when using The Qube, you will be entering messages that you wish to send, such as in the [twitter \twitter-session] session described later.  All of the message composition dialogs in The Qube share many common characteristics.  This section describes the options that you have in these dialogs.
+Often when using TheQube, you will be entering messages that you wish to send, such as in the [twitter \twitter-session] session described later.  All of the message composition dialogs in TheQube share many common characteristics.  This section describes the options that you have in these dialogs.
 
 ===Delaying a message===[delay]
 
-You have the option to schedule a message to be sent out at a later time.  Anywhere that you would compose something, there is a button which brings up a dialog for you to schedule the message.  The first option in this dialog   is the scheduling method.  If you select the interval method, you can set the number of hours, minutes and seconds that The Qube will wait before sending your message.  Using the time method, you enter the exact time you wish to send the message.  You must enter the time in 24-hour format rather than in am/pm format.
+You have the option to schedule a message to be sent out at a later time.  Anywhere that you would compose something, there is a button which brings up a dialog for you to schedule the message.  The first option in this dialog   is the scheduling method.  If you select the interval method, you can set the number of hours, minutes and seconds that TheQube will wait before sending your message.  Using the time method, you enter the exact time you wish to send the message.  You must enter the time in 24-hour format rather than in am/pm format.
 
 ===Sending audio with your messages===[attach-audio]
 
-The Qube also has the ability to attach audio messages to your posts using a proprietary service called [SndUp http://www.sndup.net].  Any new message dialog contains an attach audio button.  Pressing this button brings up a dialog that gives you the option to either record your audio from within The Qube itself or attach an existing file.  
+TheQube also has the ability to attach audio messages to your posts using a proprietary service called [SndUp http://www.sndup.net].  Any new message dialog contains an attach audio button.  Pressing this button brings up a dialog that gives you the option to either record your audio from within TheQube itself or attach an existing file.  
 
 Pressing the record button will start the recording and you will be focused on a stop button.  Press this button when you are through recording.  You will be given the opportunity to play your recording back again.  If you are satisfied with what you have recorded, press the attach button.  Otherwise you can discard the recording and try again.
 
@@ -72,7 +72,7 @@ Selecting the option to attach an existing file opens a standard windows dialog 
 
 Also please note that, though direct messages in twitter are more or less considered to be private, audio content attached to a DM is still very much public.  This is because of the way publicly accessible audio posting services work.  The link contained in the message points to a file that is still publically available.  Though only the recipient sees the direct link, it is still possible for others to find your file.  It's similar to hiding a key to your house under the matt and then sending someone a private note telling them where to find the key.  The key is still there for anyone to find even if only one other person knows exactly where it is.  In the case of audio links, the "key" is still there after your recipient has heard the message.
 
-If you do not wish to use SndUp, you can still indicate that a tweet links to audio content by including the #audio hashtag in your tweet.  This will inform The Qube that the first URL in the post is an audio link, allowing others to play the file by pressing ctrl+win+enter
+If you do not wish to use SndUp, you can still indicate that a tweet links to audio content by including the #audio hashtag in your tweet.  This will inform TheQube that the first URL in the post is an audio link, allowing others to play the file by pressing ctrl+win+enter
 
 ===Shortening and unshortening URLs===[url-short]
 
@@ -90,11 +90,11 @@ In the twitter session, you can also translate tweets that you are reading.  We 
 
 ==Keyboard Help==[keyboard-help]
 
-We Highly recommend that you read all of this document to get a complete understanding of how The Qube's various functions work.  After you have done that however, there is a way to quickly remind yourself what a particular keystroke does.  The keyboard help mode can be turned on by pressing control+win+shift+k.  In this mode, pressing any of The Qube's commands will inform you what that keystroke does within the current session.  Press control+win+shift+k again to exit keyboard help mode.
+We Highly recommend that you read all of this document to get a complete understanding of how TheQube's various functions work.  After you have done that however, there is a way to quickly remind yourself what a particular keystroke does.  The keyboard help mode can be turned on by pressing control+win+shift+k.  In this mode, pressing any of TheQube's commands will inform you what that keystroke does within the current session.  Press control+win+shift+k again to exit keyboard help mode.
 
 ==Configuration==[configuration]
 
-The Qube is actually a very flexible piece of software.  Most of this document discusses The Qube's default behavior.  Pressing control+win+o will bring up a configuration dialog with options for the current session.  These options will be described in the chapter for each session.  Pressing control +shift+win+o will bring up the [main configuration dialog #main_config] with options that apply to all of The Qube.  
+TheQube is actually a very flexible piece of software.  Most of this document discusses TheQube's default behavior.  Pressing control+win+o will bring up a configuration dialog with options for the current session.  These options will be described in the chapter for each session.  Pressing control +shift+win+o will bring up the [main configuration dialog #main_config] with options that apply to all of TheQube.  
 
 =Twitter=[twitter-session]
 
@@ -104,7 +104,7 @@ Twitter is an insanely popular micro blogging service, that is, a service which 
 text to the web at a time and have these updates, or tweets, as they are called in twitter speak, read by your followers, or the people who are following
 you.  If you don't currently have a twitter account, you may create one [here http://twitter.com/signup]
 
-There are many advantages to using a Twitter client, and The Qube in particular.  Here are just a few:
+There are many advantages to using a Twitter client, and TheQube in particular.  Here are just a few:
 
 - Instant, seamless access to Twitter from anywhere on your system, without having to have a browser open.
 - Announcement of new events such as receiving new tweets, direct messages, and mentions, or when new results are returned for a particular Twitter search.
@@ -113,15 +113,15 @@ There are many advantages to using a Twitter client, and The Qube in particular.
 
 ==logging into twitter==[login-dialog]
 
-The first time you open a twitter session, your web browser will open and load a twitter web page which will askyou to enter your twitter username and password to authorize The Qube.  After logging in, twitter will provide you with a number.  Return to The Qube, enter this number and you will be ready to get started.  The following sections will tell you everything you need to know about using Twitter.  
+The first time you open a twitter session, your web browser will open and load a twitter web page which will askyou to enter your twitter username and password to authorize TheQube.  After logging in, twitter will provide you with a number.  Return to TheQube, enter this number and you will be ready to get started.  The following sections will tell you everything you need to know about using Twitter.  
 
-Note: there have been a few reports of trouble connecting to twitter when certain firewalls are in use.  The most common problems are with the Vipre firewall.  If you are unable to connect, you may need to add an exception to the firewall.  In the case of Vipre, you want to add twitter.com as a web exception.  Generally, you either need to create an exception for twitter.com or for The Qube itself.
+Note: there have been a few reports of trouble connecting to twitter when certain firewalls are in use.  The most common problems are with the Vipre firewall.  If you are unable to connect, you may need to add an exception to the firewall.  In the case of Vipre, you want to add twitter.com as a web exception.  Generally, you either need to create an exception for twitter.com or for TheQube itself.
 
 ==about API calls==[api]
 
-Throughout this chapter, you will see references to API calls.  Twitter has a limit on how much data you can get from the site in a given hour.  Any time you use The Qube or any other twitter client to download tweets, it counts against this limit.  Press control+win+a to check how many API calls you have left for the hour and how long until your limit will be reset.
+Throughout this chapter, you will see references to API calls.  Twitter has a limit on how much data you can get from the site in a given hour.  Any time you use TheQube or any other twitter client to download tweets, it counts against this limit.  Press control+win+a to check how many API calls you have left for the hour and how long until your limit will be reset.
 
-In most cases, one call to twitter's API can get 200 tweets.  By default, The Qube will only use 1 API call for any operation.  You can change this in the default settings tab of the buffer configuration dialog, available with control+win+alt+o.  This dialog will be fully discussed in [a later section.  #buffer-config] You need to always keep this fact in mind whenever changing a setting that will use more API calls than the default.  We have chosen tdefault settings that will insure that you should not run up against your hourly limit.
+In most cases, one call to twitter's API can get 200 tweets.  By default, TheQube will only use 1 API call for any operation.  You can change this in the default settings tab of the buffer configuration dialog, available with control+win+alt+o.  This dialog will be fully discussed in [a later section.  #buffer-config] You need to always keep this fact in mind whenever changing a setting that will use more API calls than the default.  We have chosen tdefault settings that will insure that you should not run up against your hourly limit.
 
 ==Buffers for Twitter==[twitter-buffers]
 
@@ -135,10 +135,10 @@ the message can see, or vice versa.
 The sent buffer, logically, contains all the tweets and direct messages that you've sent.
 
 The mentions buffer contains all of the tweets that contain mentions of your screen name.  In twitter, if you make a comment that someone wants to respond
-to, they can make what is referred to as a mention, or reply.  From the website they would have to type an @ followed by your username.  However in The Qube
+to, they can make what is referred to as a mention, or reply.  From the website they would have to type an @ followed by your username.  However in TheQube
 we take care of that.  (see the section on [replying.  #reply]
 
-The Qube utilizes a newer feature of twitter to instantly update your Mentions and Direct Message buffers.  Unlike all other buffers in The Qube, they are automatically updated instantly as soon as you receive a new message, without waiting the normal length of time for an update.
+TheQube utilizes a newer feature of twitter to instantly update your Mentions and Direct Message buffers.  Unlike all other buffers in TheQube, they are automatically updated instantly as soon as you receive a new message, without waiting the normal length of time for an update.
 
 ===The buffer configuration dialog===[buffer-config]
 
@@ -146,16 +146,16 @@ There are a few options that can be set differently for each type of buffer.  Co
 
 This dialog has a tab with settings for each buffer.  When you open the dialog, the tab for the buffer that you are currently working in will be the default.  If you change buffers while this dialog is open, the active tab of the dialog will change to match your current position.  The settings available in this dialog are described below.
 
-The first option is the update interval.  This allows you to choose how often The Qube checks for updates in a given buffer.  The default is 3 minutes.  This is the minimum in the default settings tab.  You can set a particular buffer as low as 1 minute, but this is not recommended.  If you are not careful about this, you may run out of API calls.  
+The first option is the update interval.  This allows you to choose how often TheQube checks for updates in a given buffer.  The default is 3 minutes.  This is the minimum in the default settings tab.  You can set a particular buffer as low as 1 minute, but this is not recommended.  If you are not careful about this, you may run out of API calls.  
 
-Next we have the max number of tweets to retrieve option.  This is basically exactly what it says: how many tweets should The Qube download at once? The default
+Next we have the max number of tweets to retrieve option.  This is basically exactly what it says: how many tweets should TheQube download at once? The default
 is 200, which is the highest allowed by  twitter.  
 
 If the previous option was set to 200, you have the option of using more than 1 API call if necessary to get caught up on tweets.  The next option is the maximum number of API calls to use.  Each API call gets up to 200 tweets.  Again, this will use more of your hourly API call limit.
 
 The next option controls whether this buffer is muted.  If it is checked, you will not be notified by sound or speech when new items arrive in this buffer during an automatic update.  If you manually check for updates, you will get spoken feedback without sounds.
 
-The next two options determine how The Qube formats information.  The spoken template specifies how tweets in this buffer will be spoken, and the clipboard template sets the format used for copying them to the clipboard.  First you will find two checkboxes, allowing you to specify that the default templates should be used.  If these checkboxes are unchecked, you will be able to set a different template for this buffer.  The default templates can be modified in the [twitter configuration dialog, #twitter-config] available by pressing ctrl+win+o.  For more on how to use these options, see [the templates section.  #templates]
+The next two options determine how TheQube formats information.  The spoken template specifies how tweets in this buffer will be spoken, and the clipboard template sets the format used for copying them to the clipboard.  First you will find two checkboxes, allowing you to specify that the default templates should be used.  If these checkboxes are unchecked, you will be able to set a different template for this buffer.  The default templates can be modified in the [twitter configuration dialog, #twitter-config] available by pressing ctrl+win+o.  For more on how to use these options, see [the templates section.  #templates]
 
 ==following and unfollowing==[follow]
 
@@ -172,13 +172,13 @@ As just mentioned, the unfollow dialog (ctrl+shift+win+l) also contains an optio
 ===post a new tweet===[new-tweet]
 
 To post a new tweet, press ctrl+win+n.  It will bring up a dialogue and place you in an edit field.  Just type away.  Twitter limits you to 140
-characters, so if you go over this limit The Qube will make a sound to let you know.  (Note: Characters are anything you can type, whether it be a letter, punctuation mark, number, symbol, or space.).
+characters, so if you go over this limit TheQube will make a sound to let you know.  (Note: Characters are anything you can type, whether it be a letter, punctuation mark, number, symbol, or space.).
 
 If you're curious to know how many characters you've used up so far, use your screen readers read application title command.  It will say something along
 the lines of "new Tweet - 40 of 140," where 40 is the number of characters you've already used.  (Believe me, this feature though small, is a very useful
 one.) 
 
-When you're done writing your sage 140 character remark of wisdom, press enter.  You should hear the tweet sent sound, and The Qube (via your screen reader) will announce
+When you're done writing your sage 140 character remark of wisdom, press enter.  You should hear the tweet sent sound, and TheQube (via your screen reader) will announce
 "update posted."
 
 ===Reply to a tweet===[reply]
@@ -194,7 +194,7 @@ This dialog box also contains a button to mention all users in the selected twee
 ===Post a direct message===[post-direct]
 
 To post a direct message, find a tweet from the person you wish to DM, and press ctrl+win+d.  The same type of dialogue comes up.  (Note, you can only direct
-message people that follow you.  This is a twitter rule, not a limitation of The Qube.  Without this limit, everyone would be flooded with dm
+message people that follow you.  This is a twitter rule, not a limitation of TheQube.  Without this limit, everyone would be flooded with dm
 spam and that feature would be even more useless than email.)
 
 Important: Please see [the section on attaching audio #attach-audio] for an important note about using that feature with direct messages.
@@ -225,11 +225,11 @@ be sure to let us know.
 
 ==Interacting with tweets==[interaction]
 
-Pressing control+win+enter will interact with the first URL that is mentioned in a tweet, which is often easier than using the URL Selection dialog.  In most cases, the given web page will be opened in your default web browser for you to view.  However, if the link points to an audio post that has been recorded with one of the supported audio posting services, or the tweet contains the #audio hashtag, The Qube will play the content directly without the need to open any extra windows.  By default, The Qube will alert you when a tweet links to audio content that you can play within The Qube.  To stop the audio playback, press control+win+enter again while focused on the same tweet.  In adition to Qwitter's q-audio.net service, The Qube can currently automatically play posts found on [twaud.io http://twaud.io] or [audioboo.  http://audioboo.fm]
+Pressing control+win+enter will interact with the first URL that is mentioned in a tweet, which is often easier than using the URL Selection dialog.  In most cases, the given web page will be opened in your default web browser for you to view.  However, if the link points to an audio post that has been recorded with one of the supported audio posting services, or the tweet contains the #audio hashtag, TheQube will play the content directly without the need to open any extra windows.  By default, TheQube will alert you when a tweet links to audio content that you can play within TheQube.  To stop the audio playback, press control+win+enter again while focused on the same tweet.  In adition to Qwitter's q-audio.net service, TheQube can currently automatically play posts found on [twaud.io http://twaud.io] or [audioboo.  http://audioboo.fm]
 
 ==Translating tweets==[translate-tweet]
 
-If you receive a tweet written in a language you do not understand, The Qube makes it easy to find out what was said with the help of google's translation service.  Press win+alt+t to open the translate dialog.  This dialog allows you to indicate which language the tweet is written in, as well as which language you would like the message translated into.  If you are unsure of the original language, you can select autodetect and google should be able to figure it out.  This is the default.  
+If you receive a tweet written in a language you do not understand, TheQube makes it easy to find out what was said with the help of google's translation service.  Press win+alt+t to open the translate dialog.  This dialog allows you to indicate which language the tweet is written in, as well as which language you would like the message translated into.  If you are unsure of the original language, you can select autodetect and google should be able to figure it out.  This is the default.  
 
 The translation is displayed in a view tweet dialog.  Press escape when you are through reviewing the contents of the message.
 
@@ -245,7 +245,7 @@ To bring up a buffer containing your favorites, press control+win+alt+f.  To bri
 
 ===Retweeting a tweet===[retweeting]
 
-If you come across a tweet that you find interesting in some way, you can post it again for your followers to see.  This is known as a retweet.  Retweets are marked with "RT @username" before the tweet text.  To retweet the current tweet, press control+shift+win+r.  In the miscellaneous tab of the twitter configuration dialog,  You can choose whether you want to add a comment to your retweet.  The first setting is recommended.  In this mode The Qube will ask you each time you press the retweet command.  The second mode will assume you want to send the retweet automatically without comment.  The third option will simply assume that you want to comment.
+If you come across a tweet that you find interesting in some way, you can post it again for your followers to see.  This is known as a retweet.  Retweets are marked with "RT @username" before the tweet text.  To retweet the current tweet, press control+shift+win+r.  In the miscellaneous tab of the twitter configuration dialog,  You can choose whether you want to add a comment to your retweet.  The first setting is recommended.  In this mode TheQube will ask you each time you press the retweet command.  The second mode will assume you want to send the retweet automatically without comment.  The third option will simply assume that you want to comment.
 
 If you are adding a comment, the tweet is shown in the retweet dialog so you can edit it at your leasure.  Once you're done, press ok and the tweet is posted.
 
@@ -255,7 +255,7 @@ To view retweets, press control+win+alt+r.  This displays a dialog asking you wh
 retweets, my retweets, and my retweets that have been retweeted by friends.  These options are pretty self-explanatory.  When you have made your selection,
 press ok.  A buffer containing the type of tweets you selected will be created.  Note: this is a new feature of twitter, and may still have some bugs.
 This also means that some other twitter clients have not yet switched to the new method of posting retweets, so you may not see a lot of tweets in
-this buffer.  Only tweets that are posted through The Qube without comments will appear in these buffers.
+this buffer.  Only tweets that are posted through TheQube without comments will appear in these buffers.
 
 ==Searching for tweets==[searching-tweets]
 
@@ -264,14 +264,14 @@ control+win+/.  This will bring up a search dialog.  If the current tweet contai
 
 After you have typed in your search term, there are a couple more options you can choose.  The
 first is a checkbox that says "persistent search." If checked, this option stores your search results in the current session, so that if you use the same
-search term ever again from that session, you'll be able to see the previous results.  The second checkbox, save search, tells The Qube that you want this search to come up in a buffer every time you restart The Qube.  For searching, each API call can bring up 100 results.  The next option sets the number of posts to retrieve during each update, and the default is 100.  If this remains at the default, the next option will be the max API calls to use per update of this search.  The default will be whatever you set in the default settings tab of the buffer configuration dialog.  Click OK, and a search buffer will be created and you will be placed in this buffer.  Note that if you create a saved search, The Qube will automatically save posts in-session.
+search term ever again from that session, you'll be able to see the previous results.  The second checkbox, save search, tells TheQube that you want this search to come up in a buffer every time you restart TheQube.  For searching, each API call can bring up 100 results.  The next option sets the number of posts to retrieve during each update, and the default is 100.  If this remains at the default, the next option will be the max API calls to use per update of this search.  The default will be whatever you set in the default settings tab of the buffer configuration dialog.  Click OK, and a search buffer will be created and you will be placed in this buffer.  Note that if you create a saved search, TheQube will automatically save posts in-session.
 
 Note that these search buffers act just like any other buffer and that they will update as new results come in or if forced to by the force update keystroke.
 To dismiss a search buffer, or any dismissable buffer, press control+win+apostrophe.
 
 ==Searching for a user==[user-search]
 
-If you are looking for a particular person on twitter, but do not know their user name, The Qube can help you find them.  Pressing control+shift+win+/ will bring up the user search dialog.  Simply enter the person's real name, and The Qube will provide up to 20 accounts that match your search term.  
+If you are looking for a particular person on twitter, but do not know their user name, TheQube can help you find them.  Pressing control+shift+win+/ will bring up the user search dialog.  Simply enter the person's real name, and TheQube will provide up to 20 accounts that match your search term.  
 
 The information that is presented for each user is the same as in the [followers and friends buffers, #followers-friends] and can be customized with a template.  See the [section on templates #templates] for more information.
 
@@ -280,7 +280,7 @@ The information that is presented for each user is the same as in the [followers
 
 Filters allow you to search a particular buffer for a keyword or term.  To bring up the filter dialogue use ctrl+shift+win+f.  You will be focused on the edit box where you can fill in your search term.
 
-If you tab from there, you have two options that customize how your filter will be applied.  The first is the list of available fields.  Select each field in this list box that you would like the filter to check.  The next option is the excluding checkbox.  IF you leave it unchecked, it basically acts like a find function.  The Qube
+If you tab from there, you have two options that customize how your filter will be applied.  The first is the list of available fields.  Select each field in this list box that you would like the filter to check.  The next option is the excluding checkbox.  IF you leave it unchecked, it basically acts like a find function.  TheQube
 will find all the tweets with your search term in the buffer you're filtering and put them all in a new buffer.  However, if you use the excluding checkbox, it will instead filter out all of the matching tweets from your chosen buffer.  
 
 The next option is the replace source buffer checkbox.  If this is unchecked, the source buffer will remain available along with the filter results.  If the replace source buffer  checkbox is checked, the original buffer will be replaced by the filter buffer until you dismiss it.  This is probably most commonly used in combination with the excluding checkbox.  With either setting, you can use ctrl+win+apostrophe to dismiss the buffer when you're done with it.  Filters will last until you dismiss the filter buffer.  
@@ -300,7 +300,7 @@ Here's an example of stacking filters.  You could set an excluding filter to rem
 
 ==Advanced Filtering with regular expressions==[filter-regexps]
 
-Advanced users may wish to construct more complicated filters.  The Qube's filtering system has a checkbox which allows you to use regular expressions in your filters to match exactly what you want them to match.
+Advanced users may wish to construct more complicated filters.  TheQube's filtering system has a checkbox which allows you to use regular expressions in your filters to match exactly what you want them to match.
 
 This is a very advanced filtering language which is far beyond the scope of this document, but it is also very well documented on the internet.  It is not at all necessary to know anything about this to use filters effectively, but if you are interested you can search wikipedia or google for "regular expressions" for a vast supply of information and examples.
 
@@ -308,11 +308,11 @@ This is a very advanced filtering language which is far beyond the scope of this
 
 ===What are lists?===[Lists-Explanation]
 
-Lists allow you to put various twitter users into a group that you can monitor easily.  With The Qube, lists will appear in their own buffer.  There are 2 kinds of lists, public and private.  Public lists, as the name implies, can be seen by anyone, and are useful for letting others see groups of resources or things you find of interest.  Private lists on the other hand are only visible to the person that creates them.  Some popular uses of lists include grouping family members or friends together in one place, listing a particular type of resource (whether it be a certain type of news, community related information, or something else), or twitter users that share a common interest.  It's all up to what you want to do with it.  
+Lists allow you to put various twitter users into a group that you can monitor easily.  With TheQube, lists will appear in their own buffer.  There are 2 kinds of lists, public and private.  Public lists, as the name implies, can be seen by anyone, and are useful for letting others see groups of resources or things you find of interest.  Private lists on the other hand are only visible to the person that creates them.  Some popular uses of lists include grouping family members or friends together in one place, listing a particular type of resource (whether it be a certain type of news, community related information, or something else), or twitter users that share a common interest.  It's all up to what you want to do with it.  
 
 ===The List Manager===[List-Manager-Explanation]
 
-At the core of lists in The Qube is the list manager.  It is accessed with alt+win+l, and allows you to view all the lists you've created, as well as any other lists from other users that you subscribe to.  The list manager is also where you add, delete, and edit lists, as well as subscribing to lists from other users.  There is also a spawn list button, in case you close the buffer for a list and wish to reopen it.
+At the core of lists in TheQube is the list manager.  It is accessed with alt+win+l, and allows you to view all the lists you've created, as well as any other lists from other users that you subscribe to.  The list manager is also where you add, delete, and edit lists, as well as subscribing to lists from other users.  There is also a spawn list button, in case you close the buffer for a list and wish to reopen it.
 
 ===Adding and deleting users from lists===[Adding-and-Deleting-Users-from-Lists]
 
@@ -334,7 +334,7 @@ When viewing the members of a list, You can also remove a user from a list by pr
 
 ==Exporting tweets==[exporter]
 
-The Qube also supports exporting tweets.  As of this release, posts can be exported to plain text files.  Other formats may be added later.  
+TheQube also supports exporting tweets.  As of this release, posts can be exported to plain text files.  Other formats may be added later.  
 
 Press control+win+e to open the export dialog.  In the format tab, press the save as button to open a dialog box to select where you would like to save the file.  If you intend to save multiple sets of items, you can select the export more checkbox and the dialog will come back up when the export is complete.  
 
@@ -355,7 +355,7 @@ All tweets posted to twitter are available in the public timeline, with the exce
 ==Listing followers and friends==[followers-friends]
 
 To bring up a list of your followers, press control+win+left bracket.  Alternatively, to bring up a list of your friends, twitterspeak for people you
-follow, use control+win+right bracket.  Note that these lists may take a while to load, depending on how many friends or followers you have.  You can also have The Qube keep track of new followers and those who stop following you.  Bring up your followers list with control+win+left bracket and wait until the list is loaded.  Then press control+win+alt+left bracket.  The Qube will create a new buffer containing the list.  The first time you do this, all of your followers will be reported as new.  When you follow these steps in the future, The Qube will list who has started or stopped following you.
+follow, use control+win+right bracket.  Note that these lists may take a while to load, depending on how many friends or followers you have.  You can also have TheQube keep track of new followers and those who stop following you.  Bring up your followers list with control+win+left bracket and wait until the list is loaded.  Then press control+win+alt+left bracket.  TheQube will create a new buffer containing the list.  The first time you do this, all of your followers will be reported as new.  When you follow these steps in the future, TheQube will list who has started or stopped following you.
 
 You may also add the shift key to these commands to view the followers or friends of a different user.  This will bring up a dialog where you can select
 a user.  The sender of the current tweet is the first option in this dialog.  You can select anyone mentioned in the current tweet by pressing down arrow.
@@ -377,13 +377,13 @@ Once you have brought up both your lists of [followers and friends, #followers-f
 
 ==Getting the location of a tweet==[geolocation]
 
-Twitter has a feature that allows people to include exact location information with their tweets, and The Qube makes it easy to hear this information.  If the sender's client is including this geolocation data, simply pressing control+win+g will tell you where the person was when they wrote a given tweet.  Pressing control+shift+win+g will display the same information in a text box so that you can review or copy it.
+Twitter has a feature that allows people to include exact location information with their tweets, and TheQube makes it easy to hear this information.  If the sender's client is including this geolocation data, simply pressing control+win+g will tell you where the person was when they wrote a given tweet.  Pressing control+shift+win+g will display the same information in a text box so that you can review or copy it.
 
-This is a relatively new feature of twitter, and some clients may not support it yet.  Also, people can choose not to participate with this feature.  Therefore, this will not work with all tweets.  By default, The Qube will alert you when location information is available.
+This is a relatively new feature of twitter, and some clients may not support it yet.  Also, people can choose not to participate with this feature.  Therefore, this will not work with all tweets.  By default, TheQube will alert you when location information is available.
 
-You also have the option to input latitude and longitude coordinates manually.  Press control+win+shift+alt+g and The Qube will prompt you for the information.  If the current tweet contains geolocation data, those coordinates will be filled in by default.  The coordinates you enter will be looked up and the location will be displayed in a text box.
+You also have the option to input latitude and longitude coordinates manually.  Press control+win+shift+alt+g and TheQube will prompt you for the information.  If the current tweet contains geolocation data, those coordinates will be filled in by default.  The coordinates you enter will be looked up and the location will be displayed in a text box.
 
-Note that The Qube can only read geolocation data provided by others.  The Qube can not add geolocation data to your tweets.  
+Note that TheQube can only read geolocation data provided by others.  TheQube can not add geolocation data to your tweets.  
 
 ==device notifications==[notifications]
 
@@ -393,7 +393,7 @@ This will toggle the state of that user's device notifications on.  Pressing it 
 
 ==Editing your profile==[edit-profile]
 
-You can change the information listed in your twitter profile from The Qube.  Press control+win+shift+p to bring up a dialog where you can change any of the
+You can change the information listed in your twitter profile from TheQube.  Press control+win+shift+p to bring up a dialog where you can change any of the
 fields in your profile.
 
 ==Getting Information about a user==[info-commands]
@@ -407,7 +407,7 @@ that person's latest tweets.  Dismiss the buffer with control+win+apostrophe.
 
 ===Determining a user's relationship to yourself===[relationship-status]
 
-You can easily find out what kind of relationship exists between yourself and another user on Twitter.  Press control+win+alt+semicolon on a message to have The Qube announce the type of relationship which exists between you and that user.  You will hear who is following whom once the information is retrieved.  Note that this operation requires one API call.
+You can easily find out what kind of relationship exists between yourself and another user on Twitter.  Press control+win+alt+semicolon on a message to have TheQube announce the type of relationship which exists between you and that user.  You will hear who is following whom once the information is retrieved.  Note that this operation requires one API call.
 
 You can also press control+win+alt+shift+semicolon to check the relationship between any two users.  A dialog will come up where you can indicate which two users to check.  You can choose between your own username, the sender of the current tweet or anyone mentioned in the tweet.  You can also type in any other username you wish.
 
@@ -422,29 +422,29 @@ see what is selected.  You can enter a username manually as well.  When you're d
 ever want about a users twitter profile (there name, screen name, number of followers, friends, and tweets, etc)
 
 
-==Muting The Qube==[mute]
+==Muting TheQube==[mute]
 
-You can easily configure exactly what new content you want The Qube to notify you about.  Each session and buffer in The Qube has it's own independent mute setting.  When a buffer is muted, automatic updates will not play any sounds or say anything when new items come in.  Checking for updates manually will provide spoken feedback without sounds when the buffer is muted.
+You can easily configure exactly what new content you want TheQube to notify you about.  Each session and buffer in TheQube has it's own independent mute setting.  When a buffer is muted, automatic updates will not play any sounds or say anything when new items come in.  Checking for updates manually will provide spoken feedback without sounds when the buffer is muted.
 
 You can choose to only mute particular buffers.  Press ctrl+alt+win+m from within a buffer you want to mute.  Also, each buffer's tab within the [Buffer configuration Dialog #buffer-config] Contains a mute checkbox for that buffer.  Muting a buffer only mutes notifications of incoming tweets for the buffer.  It does not mute other sounds such as when you exceed the max tweet length or reach the top or bottom of a buffer.
 
 You can mute an entire session by pressing ctrl+win+m.  There is also a session mute checkbox, which can be found in the sounds tab of the session configuration dialog, accessible with ctrl+win+o.  Unlike the buffer mute, this option mutes all sounds for this session.
 
-It is also possible to globally mute all The Qube sessions.  To do so, so as to hear no sounds at all from the program, press control+shift+win+m.
+It is also possible to globally mute all TheQube sessions.  To do so, so as to hear no sounds at all from the program, press control+shift+win+m.
 
 ==Configuring the twitter session==[twitter-config]
 
-From within a Twitter session, you can open the Twitter configuration dialog by pressing control+win+o.  This dialog box controls configuration options that only effect the current twitter session.  We generally suggest leaving these settings at the defaults until you have used The Qube for a while, but we'll briefly touch on each of them in the sections below.  Many of these options are discussed more fully in appropriate places later in this document.  This dialog is divided into sections, or tabs.  Press control+tab and control+shift+tab to navigate between the various sections.  Press the ok button when you are finished.  
+From within a Twitter session, you can open the Twitter configuration dialog by pressing control+win+o.  This dialog box controls configuration options that only effect the current twitter session.  We generally suggest leaving these settings at the defaults until you have used TheQube for a while, but we'll briefly touch on each of them in the sections below.  Many of these options are discussed more fully in appropriate places later in this document.  This dialog is divided into sections, or tabs.  Press control+tab and control+shift+tab to navigate between the various sections.  Press the ok button when you are finished.  
 
 ===Sounds tab===[sounds]
 
-The first option on this tab allows you to choose a soundpack.  The Qube only comes with one soundpack, but people have contributed many others which are available for download at [Qwitter's Soundpack Repository http://www.qwitter-client.net/soundpacks.php].  When you download a soundpack, unzip it to the sounds folder where you have installed The Qube.  If you kept the defaults, you would unzip the soundpacks to c:\program files\The Qube\sounds.  
+The first option on this tab allows you to choose a soundpack.  TheQube only comes with one soundpack, but people have contributed many others which are available for download at [Qwitter's Soundpack Repository http://www.qwitter-client.net/soundpacks.php].  When you download a soundpack, unzip it to the sounds folder where you have installed TheQube.  If you kept the defaults, you would unzip the soundpacks to c:\program files\TheQube\sounds.  
 
 The session mute  checkbox allows you to easily mute all sounds and spoken update notifications for this session.  You can also leave this box unchecked and control the mute status for each buffer separately.
 
 === Templates tab===[twitter-templates] 
 
-The options in this tab allow you to configure a few of The Qube's [templates.  #templates] These concepts are described later, and you do not need to touch these options when setting up a twitter session for the first time.  
+The options in this tab allow you to configure a few of TheQube's [templates.  #templates] These concepts are described later, and you do not need to touch these options when setting up a twitter session for the first time.  
 
 Most templates are set in the buffer configuration dialog.  The templates in this tab are those that either effect newly created buffers or simply can not be set  separately for each buffer.  As a convenience, this tab contains a button to modify existing buffer templates, which simply opens the buffer configuration dialog for you.
 
@@ -456,25 +456,25 @@ First we have DM safe mode.  This is the one option you may wish to change your 
 mesage it will reply as a direct message, rather than a public reply.  Also, it will stop you from retweeting
 direct messages.  
 
-When The next option is turned on, The Qube will ask you for confirmation when you delete tweets or direct messages that you have sent.  
+When The next option is turned on, TheQube will ask you for confirmation when you delete tweets or direct messages that you have sent.  
 
 The option labeled perform standard actions with home/end keys" will change the behavior of those keys.  With this turned on, pressing them will jump to the start/end of the current line rather than the start or end of the entire item you are writing.
 
-The next option allows you to select your prefered URL shortener.  When posting tweets, The Qube gives you the option to use one of several [URL shortening services #url-short] to make web addresses shorter and give you more room to type.  
+The next option allows you to select your prefered URL shortener.  When posting tweets, TheQube gives you the option to use one of several [URL shortening services #url-short] to make web addresses shorter and give you more room to type.  
 
 The next setting controls the way retweets are sent.  See the section on [retweets #retweets] for the details of these options.
 
-The last option on this tab is reply to self.  If unchecked, The Qube will not allow you to post a reply (You'll learn about those later) to yourself.
+The last option on this tab is reply to self.  If unchecked, TheQube will not allow you to post a reply (You'll learn about those later) to yourself.
 
 ==The template system==[templates]
 
-It is easy to customize how The Qube announces information.  The format is controlled by templates.  Templates are strings of text that contain instructions for The Qube on what to speak or copy to the clipboard.  These instructions begin with the $ sign.  In the simplest and most common usage,  you just place variables in the text which The Qube replaces with the appropriate information.  The variables you can use are described in the following tables.  There are also conditional templates, but these are described later and are not necessary to understand in order to start using templates.  If for some reason you wish to have The Qube actually use $ in your templates, you would indicate this by writing $$.  Braces are also special characters in templates, so to use one of these you would indicate it by writing ${{ or $}}.
+It is easy to customize how TheQube announces information.  The format is controlled by templates.  Templates are strings of text that contain instructions for TheQube on what to speak or copy to the clipboard.  These instructions begin with the $ sign.  In the simplest and most common usage,  you just place variables in the text which TheQube replaces with the appropriate information.  The variables you can use are described in the following tables.  There are also conditional templates, but these are described later and are not necessary to understand in order to start using templates.  If for some reason you wish to have TheQube actually use $ in your templates, you would indicate this by writing $$.  Braces are also special characters in templates, so to use one of these you would indicate it by writing ${{ or $}}.
 
 Most of the templates are configured for each buffer in the buffer configuration dialog, accessible with control+alt+win+o.  The templates tab of the twitter configuration dialog, accessible with control+win+o, contains templates that are used when creating new buffers, and a few for formatting tweets you send.
 
 ===templates for formatting tweets===[tweet-templates]
 
-The templates for specifying how The Qube formats tweets are set in the buffer configuration dialog, accessible with control+win+alt+o.  The tab for each buffer has a set of two template options.  The speech output and the format of tweets copied to the clipboard can be set separately.  The twitter configuration dialog, accessible with control+win+o, also contains a new generic buffer  template that will be applied to any new buffers as well as a template for search results.  The following table lists variables that you can use to customize the output.  
+The templates for specifying how TheQube formats tweets are set in the buffer configuration dialog, accessible with control+win+alt+o.  The tab for each buffer has a set of two template options.  The speech output and the format of tweets copied to the clipboard can be set separately.  The twitter configuration dialog, accessible with control+win+o, also contains a new generic buffer  template that will be applied to any new buffers as well as a template for search results.  The following table lists variables that you can use to customize the output.  
 
 || Variable | Description |
 | $time | The exact time the tweet was posted.  |
@@ -493,7 +493,7 @@ The templates for specifying how The Qube formats tweets are set in the buffer c
 
 ===Templates for formatting user information===[user-info-templates]
 
-There are also templates that specify what is spoken when The Qube lists information about users.  These are located in the templates tab of the twitter configuration dialog.  The new followers/friends buffer template determines what is spoken
+There are also templates that specify what is spoken when TheQube lists information about users.  These are located in the templates tab of the twitter configuration dialog.  The new followers/friends buffer template determines what is spoken
 when viewing lists of friends or followers.  The user info template determines the items spoken when control+win+semicolon is pressed.  The following table lists the available variables for these templates.  In addition to those mentioned below, $index, $total, and $nl also work as previously described.
 
 || Variable | Description |
@@ -518,15 +518,15 @@ when viewing lists of friends or followers.  The user info template determines t
 
 ===Conditional Templates===[conditionals]
 
-Conditional templates allow you to have more control over what The Qube speaks based on the contents of the variables you use.  The Qube's default templates already contain some useful ones.  If you don't understand the following discussion or aren't interested in conditionals, you can ignore them since their use is optional.
+Conditional templates allow you to have more control over what TheQube speaks based on the contents of the variables you use.  TheQube's default templates already contain some useful ones.  If you don't understand the following discussion or aren't interested in conditionals, you can ignore them since their use is optional.
 
 The format for a conditional template looks like this:
 
 	$if(condition){if_true}{if_false}
 
-The {if_false} part of the definition can be left out if you don't want The Qube to say anything if the condition is not met.
+The {if_false} part of the definition can be left out if you don't want TheQube to say anything if the condition is not met.
 
-We will provide Some examples to better demonstrate how this works.  The simplest use of conditionals simply tells The Qube what to say if a variable is set to true or false.  The sent buffer's default format uses the following conditional to determine if a tweet is a direct message and speak the recipient if it is.
+We will provide Some examples to better demonstrate how this works.  The simplest use of conditionals simply tells TheQube what to say if a variable is set to true or false.  The sent buffer's default format uses the following conditional to determine if a tweet is a direct message and speak the recipient if it is.
 
 $if(dm){DM to $rcpt_name:}
 
@@ -540,7 +540,7 @@ Now let's look at an example using both {if_true} and {if_false} statements.  Yo
 
 $if(protected){tweets are protected}{tweets are public}
 
-Conditionals can also use instructions known as relational operators.  Note that you may need to raise your screen reader's punctuation level or read a character at a time to hear this part correctly.  One possible usage would be to have The Qube speak a different message depending on how many people follow a given user.  This sample conditional could be used in the user info or followers/friends template to point out those users with a significant following.
+Conditionals can also use instructions known as relational operators.  Note that you may need to raise your screen reader's punctuation level or read a character at a time to hear this part correctly.  One possible usage would be to have TheQube speak a different message depending on how many people follow a given user.  This sample conditional could be used in the user info or followers/friends template to point out those users with a significant following.
 
 $if(followers_count >= 1000){popular}
 
@@ -557,47 +557,47 @@ Relational operators are far more powerful than this.  A complete discussion of 
 
 =The stopwatch=[stopwatch]
 
-The Qube can even act as a handy stopwatch and countdown timer.  Open the new session dialog with control+shift+win+n, select Stopwatch as the session type, name the session and press ok.  
+TheQube can even act as a handy stopwatch and countdown timer.  Open the new session dialog with control+shift+win+n, select Stopwatch as the session type, name the session and press ok.  
 
-Press control+win+c to create a countdown timer.  Enter the time that you'd like to put on the timer and press ok.  The Qube will announce when time is up, no matter what session you are working in.  From within the stopwatch session, you can check the time remaining in the countdowns buffer.  
+Press control+win+c to create a countdown timer.  Enter the time that you'd like to put on the timer and press ok.  TheQube will announce when time is up, no matter what session you are working in.  From within the stopwatch session, you can check the time remaining in the countdowns buffer.  
 
 Press control+win+enter to start a stopwatch.  Pressing it again will stop the timer and announce the time elapsed.
 
-=Customizing The Qube=[customize]
+=Customizing TheQube=[customize]
 ==The Keyboard manager.==[keyboard-manager]
 
-All of the commands listed in this document can easily be customized using The Qube's keyboard manager.  Press ctrl+win +k to bring up a list of commands available in the current session.  The execute keystroke button will act just as if you had pressed the keystroke yourself.  You can press the edit button to change the assigned keystroke.  Editing a command brings up a series of checkboxes to select which modifier keys are used, and a place to type the key you want to use.  There are also buttons to delete commands from the list or add commands you previously deleted.
+All of the commands listed in this document can easily be customized using TheQube's keyboard manager.  Press ctrl+win +k to bring up a list of commands available in the current session.  The execute keystroke button will act just as if you had pressed the keystroke yourself.  You can press the edit button to change the assigned keystroke.  Editing a command brings up a series of checkboxes to select which modifier keys are used, and a place to type the key you want to use.  There are also buttons to delete commands from the list or add commands you previously deleted.
 
-==Controling The Qube with less keys==
+==Controling TheQube with less keys==
 
-If you will be reading a very large number of tweets, or you are using The Qube for a long period of time, you can temporarily lock the ctrl and windows keys with alt+win+k.  This enables the most common functions to be performed with a single key.  Repeat the keystroke to deactivate the mode.  Alternatively, it will be automatically deactivated when you switch sessions or close The Qube.
+If you will be reading a very large number of tweets, or you are using TheQube for a long period of time, you can temporarily lock the ctrl and windows keys with alt+win+k.  This enables the most common functions to be performed with a single key.  Repeat the keystroke to deactivate the mode.  Alternatively, it will be automatically deactivated when you switch sessions or close TheQube.
 
-==The Qube's main configuration dialog==[main-config]
+==TheQube's main configuration dialog==[main-config]
 
-You can press control+shift+win+o to bring up The Qube's  main configuration dialog.  This dialog controls configuration options that
-are used throughout the program.  We suggest leaving them at the defaults until you have used The Qube for a while.  This dialog is divided into sections, or tabs.  Press control+tab to move through the sections.  Press the ok button
+You can press control+shift+win+o to bring up TheQube's  main configuration dialog.  This dialog controls configuration options that
+are used throughout the program.  We suggest leaving them at the defaults until you have used TheQube for a while.  This dialog is divided into sections, or tabs.  Press control+tab to move through the sections.  Press the ok button
 when you are finished.
 
 ===language tab===[language]
 
-In this tab you can select which language you wish The Qube's messages to be in.  Several languages are available, and if yours isn't and you're willing to translate, it can be added.
+In this tab you can select which language you wish TheQube's messages to be in.  Several languages are available, and if yours isn't and you're willing to translate, it can be added.
 
 ===Speech tab===[speech-tab]
 
-The first item on this tab, speech output, is set to auto.  There will rarely ever be any reason to change this, as The Qube auto-detects your screen reader.
+The first item on this tab, speech output, is set to auto.  There will rarely ever be any reason to change this, as TheQube auto-detects your screen reader.
 If it doesn't detect a supported screen reader, or you're not running one, it will automatically use whatever microsoft speech synthesizer you have selected
 in your control panel.  If for some reason you don't want to use a screen reader even though you're running one, you can instead choose SAPI.  
 
-The next three options are pretty self explanitory; they allow you to change the rate, volume and voice used by Microsoft speech if you choose to use SAPI with The Qube.  
+The next three options are pretty self explanitory; they allow you to change the rate, volume and voice used by Microsoft speech if you choose to use SAPI with TheQube.  
 
-The final option on this tab allows you to enable or disable The Qube's speech recognition function.  You can also toggle this by pressing shift+win+s.
+The final option on this tab allows you to enable or disable TheQube's speech recognition function.  You can also toggle this by pressing shift+win+s.
 
 ===Navigation tab===[navigation]
 
-The first option on this tab controls how far The Qube jumps through items when using control+win+page up and page down to move by a percentage.
+The first option on this tab controls how far TheQube jumps through items when using control+win+page up and page down to move by a percentage.
 
-The next 2 options control how far The Qube jumps through items when using control+win+shift+page up and page down to move by time.  The first box determines how many hours The Qube should jump, and the second
-determines how many minutes The Qube should jump.  For example, if the hours box was set to 1, and the minutes box was set to 5, The Qube would jump 1 hour
+The next 2 options control how far TheQube jumps through items when using control+win+shift+page up and page down to move by time.  The first box determines how many hours TheQube should jump, and the second
+determines how many minutes TheQube should jump.  For example, if the hours box was set to 1, and the minutes box was set to 5, TheQube would jump 1 hour
 and 5 minutes forward or back depending on which command you issued.
 
 The last option here is the undo stack size option.  It determines the number of undo operations you can do with control+win+z.  For example, if the value of this
@@ -605,44 +605,44 @@ box is set to 100, you can undo the last 100 commands.
 
 ===Braille tab===[braille]
 
-There is currently one option in this tab.  The braille spoken text checkbox determines whether The Qube's braille support will be used.
+There is currently one option in this tab.  The braille spoken text checkbox determines whether TheQube's braille support will be used.
 
 ===Miscellaneous tab===[main-misc-tab]
 
-The First option on this tab determines whether The Qube will automatically start when you login to windows.  This replaces an option that was found in the installer for previous versions of The Qube.
+The First option on this tab determines whether TheQube will automatically start when you login to windows.  This replaces an option that was found in the installer for previous versions of TheQube.
 
-The next option is self-explanatory.  If you don't want to be prompted before exiting The Qube, uncheck the Show Confirmation checkbox here.
+The next option is self-explanatory.  If you don't want to be prompted before exiting TheQube, uncheck the Show Confirmation checkbox here.
 
 The option labeled perform standard actions with home/end keys" will change the behavior of those keys.  With this turned on, pressing them will jump to the start/end of the current line rather than the start or end of the entire item you are writing.
 
 
-= Quitting The Qube=[quit]
+= Quitting TheQube=[quit]
 
-If for some reason you wish to close The Qube, use ctrl+win+f4.  It'll bring up a confirmation dialogue.  Note: Quitting The Qube has been known to cause some
+If for some reason you wish to close TheQube, use ctrl+win+f4.  It'll bring up a confirmation dialogue.  Note: Quitting TheQube has been known to cause some
 generally horrible things to happen, like the death of innocent kittens.
 
 =Portable mode=[portable]
 
-If you run The Qube with -p or --portable on the command line or from a shortcut, it will run in portable mode, meaning that any files it reads and rights will be kept in the The Qube program's current directory, making it ideal to use on a thumb drive.  Here is an example of how to set this up.
+If you run TheQube with -p or --portable on the command line or from a shortcut, it will run in portable mode, meaning that any files it reads and rights will be kept in the TheQube program's current directory, making it ideal to use on a thumb drive.  Here is an example of how to set this up.
 
-Let's assume you have The Qube installed in the default location on your C drive.  And let's assume your thumb drive is drive E.  Windows may have assigned a different letter to your thumb drive.
+Let's assume you have TheQube installed in the default location on your C drive.  And let's assume your thumb drive is drive E.  Windows may have assigned a different letter to your thumb drive.
 
-Copy your c:\Program Files\The Qube folder to e:\The Qube.  
+Copy your c:\Program Files\TheQube folder to e:\TheQube.  
 
-Next, copy all the contents of %appdata%\The Qube to e:\The Qube as well
+Next, copy all the contents of %appdata%\TheQube to e:\TheQube as well
 
-Once that is done, anytime you want to run The Qube in portable mode from your thumb drive, you simply do start, run, then type the following:
+Once that is done, anytime you want to run TheQube in portable mode from your thumb drive, you simply do start, run, then type the following:
  
-	e:\The Qube\The Qube.exe -p
+	e:\TheQube\TheQube.exe -p
 
 =Technical Support=[technical-support]
 
 ==Twitter API issues==[api-trouble]
 
-If you suddenly start having problems using the twitter session when it previously worked normally, chances are very good that the issue is with the twitter API itself, not The Qube.  The fact that the twitter web site may be working normally does not decrease the likelyhood that the API for external applications may be experiencing issues.  You can check [the twitter status page http://status.twitter.com] to determine if there are known issues with the twitter API.  Below are some conditions that have commonly been reported in the past.  There is no need to report these, as there is nothing that The Qube developers can do about them.
+If you suddenly start having problems using the twitter session when it previously worked normally, chances are very good that the issue is with the twitter API itself, not TheQube.  The fact that the twitter web site may be working normally does not decrease the likelyhood that the API for external applications may be experiencing issues.  You can check [the twitter status page http://status.twitter.com] to determine if there are known issues with the twitter API.  Below are some conditions that have commonly been reported in the past.  There is no need to report these, as there is nothing that TheQube developers can do about them.
 
 - If you find yourself unable to login, and you know that you have the correct credentials, this indicates some problem on twitter's end.
-- If The Qube informs you that a tweet failed to post but it shows up anyway, twitter has reported the wrong status to The Qube.  The Qube can only inform you of what the API has reported.  For example, This situation was commonly mentioned when twitter was experiencing heavy traffic in the earlier rounds of the 2010 world cup.
+- If TheQube informs you that a tweet failed to post but it shows up anyway, twitter has reported the wrong status to TheQube.  TheQube can only inform you of what the API has reported.  For example, This situation was commonly mentioned when twitter was experiencing heavy traffic in the earlier rounds of the 2010 world cup.
 - Twitter may change the number of API calls that you can use each hour when the site is particularly busy.  Each buffer allows you to set how often it checks twitter for new posts.  When the limit is lowered, adjust your settings to avoid running out.  The defaults should usually be safe.
 
 
@@ -654,15 +654,15 @@ Look for the link that says "The Visual C++ 2008 SP1 Redistributable." Make sure
 
 ==I get a message that states that the program can not start because the log file could not be accessed.==[logfile-error]
 
-On operating systems starting with windows vista, people sometimes get this message the first time they run The Qube.  There is a simple fix for this.
+On operating systems starting with windows vista, people sometimes get this message the first time they run TheQube.  There is a simple fix for this.
 
-Locate the installed The Qube icon and press shift+f10 or the applications key if you have it.  Arrow down to run as administrator and press enter.  A user account control dialog will appear asking if you would like to allow the application access to your computer.  Answer yes to this prompt and The Qube should start as normal.
+Locate the installed TheQube icon and press shift+f10 or the applications key if you have it.  Arrow down to run as administrator and press enter.  A user account control dialog will appear asking if you would like to allow the application access to your computer.  Answer yes to this prompt and TheQube should start as normal.
 
 Note: You should only have to do this once.
 
 ==When reviewing tweets, the time that is announced is incorrect.==[timezone]
 
-For The Qube to announce the correct posting time for tweets, your time zone must be set correctly on twitter.com and on your computer.  Here's how to check your time zone settings.
+For TheQube to announce the correct posting time for tweets, your time zone must be set correctly on twitter.com and on your computer.  Here's how to check your time zone settings.
 
 To set the time zone on twitter, sign in to your account and select the settings link.  On that page, you will find several options, including one for choosing your time zone.  Once you have selected your time zone and pressed the save button, twitter may prompt you to enter your password again to change settings.
 
@@ -670,11 +670,11 @@ On your computer, open the windows control panel and select date and time.  Ther
 
 ==When writing a tweet, it is difficult to review what I've written using jaws.==[mctwit-scripts-error]
 
-There is a known conflict between The Qube and the jaws scripts for the McTwit application.  Jaws is associating The Qube dialog boxes with the McTwit scripts, a combination that does not work.  At this time, the only known solution is to remove the McTwit scripts from your system.  Mctwit is still very accessible without them.
+There is a known conflict between TheQube and the jaws scripts for the McTwit application.  Jaws is associating TheQube dialog boxes with the McTwit scripts, a combination that does not work.  At this time, the only known solution is to remove the McTwit scripts from your system.  Mctwit is still very accessible without them.
 
 ==I have a question/comment/concern that's not covered in this readme.==[contact]
 
-Every attempt has been made to insure that this document describes every aspect of The Qube in complete detail.  If you have checked this document carefully and still have questions, please ask in a mention to [@quartz_projects http://www.twitter.com/quartz_projects] on Twitter.
+Every attempt has been made to insure that this document describes every aspect of TheQube in complete detail.  If you have checked this document carefully and still have questions, please ask in a mention to [@quartz_projects http://www.twitter.com/quartz_projects] on Twitter.
 
 You can also address a mention to the same account if you wish to submit a bug report or feature suggestion.  In your mention, please provide a turse description of the problem you're having or the feature you'd like and we'll be in touch.
 
@@ -687,9 +687,9 @@ The idea behind a UI-Less Twitter client belongs to Sean Randall, [@cachondo on 
 
 Christopher Toth, [@Mongoose_Q on twitter http://www.twitter.com/mongoose_q], is responsible for the majority of the code behind Qwitter, on which this software is based.
 
-Kyle Jones, [@djquartizer on Twitter http://www.twitter.com/djquartizer], is now responsible for the majority of The Qube's development.
+Kyle Jones, [@djquartizer on Twitter http://www.twitter.com/djquartizer], is now responsible for the majority of TheQube's development.
 
-hllf, [@hllf on twitter http://www.twitter.com/hllf], is largely responsible for much of the advanced Twitter support found in The Qube.  He contributed code to Qwitter when he could find the time, and he enjoyed fixing a lot of pesky bugs.
+hllf, [@hllf on twitter http://www.twitter.com/hllf], is largely responsible for much of the advanced Twitter support found in TheQube.  He contributed code to Qwitter when he could find the time, and he enjoyed fixing a lot of pesky bugs.
 
 Haden Pike, [@hadenpike on twitter http://www.twitter.com/hadenpike], did a remarkable amount of work on Qwitter, helping out @Mongoose_Q when he was stuck in college badness.
 
