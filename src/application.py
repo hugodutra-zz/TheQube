@@ -2,7 +2,6 @@
 
 name = 'TheQube'
 version = '0.7'
-author = u'Andre Polykanine A.K.A. Menelion Elensúlë'
+author = u'TheQube Developers Team'
 url = "http://theqube.oire.org"
-# @TODO: Should be changed!
-update_url = 'http://quartzprojects.co.uk/software/beta/updates/the_qube/update.json'
+update_url = 'http://theqube.oire.org/files/updates/update.json'

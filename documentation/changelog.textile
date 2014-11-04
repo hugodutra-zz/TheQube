@@ -1,0 +1,10 @@
+TheQube Changelog
+
+h1. Welcome!
+
+h2. Please select your language
+
+* "English":en/changelog.html
+* "Português Brasileiro":pt_BR/changelog.html
+* "Español":es/changelog.html
+* "Русский":ru/changelog.html

@@ -1,19 +1,24 @@
+# -*- coding: utf-8 -*-
+
+# Global variables
+# A part of TheQube, an accessible social networking client
+# Copyright © TheQube Developers Team, 2014
+
 #Holds all universal variables
 import sys
 
 speaker = None
 brailler = None
-LogFile = "The Qube.log"
+LogFile = "TheQube.log"
 portable = False
-from_source = None
+from_source = False
 Updating = False
-platform = None
 KeyboardHelp = False
 remote = False
-DebugMode = True
+debug = False
 
 def setup():
  global from_source
- global platform
- from_source = sys.argv[0].endswith('.pyw')
- platform = sys.platform
+ global debug
+ from_source = sys.argv[0].endswith('.pyw') or sys.argv[0] == "pythonw.exe"
+ debug = from_source or "-d" in sys.argv or "--debug" in sys.argv
