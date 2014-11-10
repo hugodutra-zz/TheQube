@@ -5,6 +5,5 @@ h1. Welcome!
 h2. Please select your language
 
 * "English":en/readme.html
-* "Português Brasileiro":pt_BR/readme.html
 * "Español":es/readme.html
 * "Русский":ru/readme.html

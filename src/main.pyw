@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import os
 from platform_utils import blackhole, paths
 os.chdir(paths.app_path())
@@ -14,8 +16,8 @@ import sessions
 import update_manager
 
 """
-The Qube
-A Quartizer Projects production
+TheQube
+An accessible social networking client
 
 Licensed under the MIT license, see documentation/license.txt in this distribution.
 """

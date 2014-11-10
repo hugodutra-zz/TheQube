@@ -5,6 +5,7 @@ p. This page lists all the changes and bugfixes made in TheQube, from newest to 
 h2. TheQube 0.7.1
 
 * Fixed: "#29: Log files grow to insane sizes":https://github.com/Oire/theqube/issues/29. For now the maximum filesize is set to 100 kb.
+* Fixed: Posting audio is back.
 
 h2. TheQube 0.7
 

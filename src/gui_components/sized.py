@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from logging import getLogger
 logger = getLogger('gui_components.sized')
 

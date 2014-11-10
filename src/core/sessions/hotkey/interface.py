@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from core.sessions.hotkey.gui.main import KeymapDialog
 import global_vars
 import output
@@ -9,7 +11,7 @@ from core.sessions.interface.interface import Interface
 class HotkeyInterface (Interface):
 
  def ChangeKeymap(self):
-  """Allows you to change the keystrokes used to control qwitter."""
+  """Allows you to change the keystrokes used to control TheQube."""
 
   @always_call_after
   def replace_keymap(new):

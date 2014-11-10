@@ -18,8 +18,7 @@ import stat
 import platform
 import shutil
 import json
-if platform.system() == 'Windows':
- import win32api
+import win32api
 
 
 class AutoUpdater(object):
@@ -33,28 +32,9 @@ class AutoUpdater(object):
   self.percentage_callback = percentage_callback or self.print_percentage_callback
   self.URL = URL
   self.bootstrapper = bootstrapper
-  #The application path on the Mac should be 1 directory up from where the .app file is.
-  tempstr = ""
-  if (platform.system() == "Darwin"):
-    for x in (app_path.split("/")):
-      if (".app" in x):
-        break
-      else:
-        tempstr = os.path.join(tempstr, x)
-    app_path = "/" + tempstr + "/"
-    #The post-execution path should include the .app file
-    tempstr = ""
-    for x in (postexecute.split("/")):
-      if (".app" in x):
-        tempstr = os.path.join(tempstr, x)
-        break
-      else:
-        tempstr = os.path.join(tempstr, x)
-    postexecute = "/" + tempstr
   self.app_path = app_path
   self.postexecute = postexecute
-  logging.info("apppath: " + str(app_path))
-  logging.info("postexecute: " + str(postexecute))
+  logging.info("App path: %s, postexecute: %s" % (str(self.app_path), str(self.postexecute)))
   self.password = password  
   self.MD5 = MD5
   self.save_location = save_location
@@ -66,7 +46,7 @@ class AutoUpdater(object):
   if not os.path.exists(self.save_directory):
    #We need to make all folders but the last one
    os.makedirs(self.save_directory)
-   logger.info("Created staging directory  %s" % self.save_directory)
+   logging.info("Created staging directory  %s" % self.save_directory)
 
  def transfer_callback(self, count, bSize, tSize):
   """Callback to update percentage of download"""
@@ -79,7 +59,7 @@ class AutoUpdater(object):
 
  def start_update(self):
   """Called to start the whole process"""
-  logger.debug("URL: %s   SL: %s" % (self.URL, self.save_location))
+  logging.debug("URL: %s, save location: %s" % (self.URL, self.save_location))
   self.prepare_staging_directory()
   Listy = CustomURLOpener().retrieve(self.URL, self.save_location, reporthook=self.transfer_callback)
   if self.MD5:
@@ -90,13 +70,13 @@ class AutoUpdater(object):
   self.download_complete(Listy[0])
 
  def MD5File(self, fileName):
-  "Custom function that will get the Md5 sum of our file"
+  """Custom function that will get the Md5 sum of our file"""
   file_reference=open(fileName, 'rb').read() 
   return hashlib.md5(file_reference).hexdigest()
 
  def download_complete(self, location):
   """Called when the file is done downloading, and MD5 has been successfull"""
-  logger.debug("Download complete.")
+  logging.debug("Download complete.")
   zippy = ZipFile(location, mode='r')
   extracted_path = os.path.join(self.save_directory, os.path.basename(location).strip(".zip"))
   zippy.extractall(extracted_path, pwd=self.password)
@@ -107,16 +87,9 @@ class AutoUpdater(object):
    os.remove(bootstrapper_path)
   shutil.move(old_bootstrapper_path, self.save_directory) #move bootstrapper
   os.chmod(bootstrapper_path, stat.S_IRUSR|stat.S_IXUSR)
-  if platform.system() == "Windows": 
-   bootstrapper_command = r'%s' % bootstrapper_path
-   bootstrapper_args = r'"%s" "%s" "%s" "%s"' % (os.getpid(), extracted_path, self.app_path, self.postexecute)
-   win32api.ShellExecute(0, 'open', bootstrapper_command, bootstrapper_args, "", 5)
-  else:
-   #bootstrapper_command = [r'sh "%s" -l "%s" -d "%s" "%s"' % (bootstrapper_path, self.app_path, extracted_path, str(os.getpid()))]
-   bootstrapper_command = r'"%s" "%s" "%s" "%s" "%s"' % (bootstrapper_path, os.getpid(), extracted_path, self.app_path, self.postexecute)
-   shell = True
-   #logging.debug("Final bootstrapper command: %r" % bootstrapper_command)
-   subprocess.Popen([bootstrapper_command], shell=shell)
+  bootstrapper_command = r'%s' % bootstrapper_path
+  bootstrapper_args = r'"%s" "%s" "%s" "%s"' % (os.getpid(), extracted_path, self.app_path, self.postexecute)
+  win32api.ShellExecute(0, 'open', bootstrapper_command, bootstrapper_args, "", 5)
   self.complete = 1
   if callable(self.finish_callback):
    self.finish_callback()
@@ -130,7 +103,7 @@ class AutoUpdater(object):
 
 def find_update_url(URL, version):
  """Return a URL to an update of the application for the current platform at the given URL if one exists, or None""
-  Assumes Windows, Linux, or Mac"""
+  Assumes Windows only"""
  response = urllib2.urlopen(URL)
  json_str = response.read().strip("\n")
  json_p = json.loads(json_str)

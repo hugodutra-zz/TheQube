@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from main import Twitter
 from core.sessions.buffers import field_metadata as meta
 from core.sessions.buffers.buffer_defaults import buffer_defaults

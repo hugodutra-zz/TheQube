@@ -197,17 +197,16 @@ class NewMessageDialog(SquareDialog):
   elif key == 1 and modifiers == wx.MOD_CONTROL:
    object.SetInsertionPoint(0)
    object.SetSelection(0, len(object.GetValue()))
-  elif key == 13:
+  elif key == wx.WXK_RETURN:
    if config.main['UI']['sendMessagesWithEnterKey']:
+    evt.Skip()
     self.EndModal(wx.ID_OK)
    else:
     evt.Skip()
   elif key == 13 and modifiers == wx.MOD_CONTROL:
    if not config.main['UI']['sendMessagesWithEnterKey']:
+    evt.Skip()
     self.EndModal(wx.ID_OK)
-   else:
-    # We need to append a new line character
-    object.AppendText('\n')
   else:
    evt.Skip()
 
@@ -222,7 +221,7 @@ class NewMessageDialog(SquareDialog):
   super(NewMessageDialog, self).finish_setup(*args, **kwargs)
 
  def setup_message_field(self, text=""):
-  self.message = self.labeled_control(_("Message:"), wx.TextCtrl, style=wx.TE_RICH2 | wx.TE_MULTILINE|wx.WANTS_CHARS, size=(400, -1))
+  self.message = self.labeled_control(_("Message:"), wx.TextCtrl, style=wx.TE_RICH | wx.TE_MULTILINE|wx.WANTS_CHARS, size=(400, -1))
   self.message.Bind(wx.EVT_CHAR, self.charPressed)
   self.message.Bind(wx.EVT_TEXT, self.textUpdated)
   self.message.SetSizerProps(expand=True)
