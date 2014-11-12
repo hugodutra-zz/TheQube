@@ -1,10 +1,10 @@
 ﻿; TheQube install script
 ; InnoSetup v5.5.5 unicode
-; Copyright © TheQube developers team, 2014
+; Copyright © TheQube Developers and Translators Team, 2014
 
 #define MyAppName "TheQube"
-#define MyAppVersion "0.7"
-#define MyAppPublisher "TheQube developers team"
+#define MyAppVersion "0.7.1"
+#define MyAppPublisher "TheQube Developers and Translators Team"
 #define MyAppURL "http://theqube.oire.org"
 #define MyAppExeName "TheQube.exe"
 #define MyAppDescription "An accessible social networking client developed mainly for the blind."
@@ -45,7 +45,7 @@ AppContact=theqube@lists.oire.org
 
 [Languages]
 Name: en; MessagesFile: compiler:Default.isl,languages\DefaultCustom.islu
-Name: pt_BR; MessagesFile: compiler:Languages\BrazilianPortuguese.isl,languages\DefaultCustom.islu
+Name: pt_BR; MessagesFile: compiler:Languages\BrazilianPortuguese.isl,languages\BrazilianPortugueseCustom.islu
 Name: ru; MessagesFile: compiler:Languages\russian.isl,languages\RussianCustom.islu
 Name: es; MessagesFile: compiler:languages\Spanish.isl,languages\SpanishCustom.islu
 
