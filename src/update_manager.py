@@ -1,7 +1,10 @@
+# -*- coding: utf-8 -*-
+
 from logger import logger
 logging = logger.getChild('update_manager')
 
 import os
+import sys
 import wx
 import paths
 import application

@@ -45,6 +45,7 @@ class Handler(BaseHTTPServer.BaseHTTPRequestHandler):
   self.end_headers()
   logged = True
   params = parse_qs(urlparse(self.path).query)
+  logging.debug("@Verifier params: %s" % str(params))
   global verifier
   verifier = params.get('oauth_verifier', [None])[0]
   self.wfile.write("You have successfully logged in to Twitter! Now please close this window and happy tweeting!")
@@ -82,11 +83,16 @@ class Twitter (Buffers, Login, Hotkey, SpeechRecognition, WebService):
 
  @always_call_after
  def retrieve_access_token (self):
+  global logged, verifier
   output.speak(_("Please wait while an access token is retrieved from Twitter."), True)
+  try:
+   del auth_props, httpd, token
+   verifier = None
+  except:
+   pass # We don't need this logged: this is needed only for the multi-session initialization process
   httpd = BaseHTTPServer.HTTPServer(('127.0.0.1', 8080), Handler)
   auth_props = self.auth_handler.get_authentication_tokens(callback_url = "http://127.0.0.1:8080")
   webbrowser.open_new_tab(auth_props['auth_url'])
-  global logged, verifier
   while logged == False:
    httpd.handle_request()
   self.auth_handler = Twython(str(self.config['oauth']['twitterKey']), str(self.config['oauth']['twitterSecret']), auth_props['oauth_token'], auth_props['oauth_token_secret'])

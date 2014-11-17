@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from logger import logger
 logging = logger.getChild('core.end')
 
@@ -7,7 +9,8 @@ import win32api
 
 def end(pid):
  PROCESS_TERMINATE = 1
- logging.warning("Ending pid: %d" % pid)
+ if pid != 0:
+  logging.debug("Ending pid: %d" % pid)
  handle = win32api.OpenProcess(PROCESS_TERMINATE, False, pid)
  win32api.TerminateProcess(handle, -1)
  win32api.CloseHandle(handle)
@@ -23,7 +26,7 @@ def setup():
  try:
   end(config.main['client']['pid'])
  except Exception as exc:
-  logging.exception("Error ending process: {0}". format(exc))
+  pass # This is by design for now, otherwise errors are logged on app startup
 #Save the current pid in the config
  config.main['client']['pid'] = os.getpid()
  config.main.write()
