@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: The qube 0.7\n"
 "POT-Creation-Date: 2014-10-24 00:19+FLE Daylight Time\n"
-"PO-Revision-Date: 2014-11-10 02:25+0200\n"
+"PO-Revision-Date: 2014-12-08 14:32+0200\n"
 "Last-Translator: Andre Polykanine A.K.A. Menelion Elensúlë <menelion@oire."
 "org>\n"
 "Language-Team: Ciata <info@ciata.org.br>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"X-Generator: Poedit 1.7beta1\n"
+"X-Generator: Poedit 1.7.1\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
@@ -767,7 +767,7 @@ msgstr "RX "
 
 #: ../src\core\sessions\buffers\gui\jump_to_item.py:10
 msgid "Enter item number to jump to, 1 to %s:"
-msgstr "Digite o número do item para qual saltar, entre 1 a %S "
+msgstr "Digite o número do item para qual saltar, de 1 a %S "
 
 #: ../src\core\sessions\buffers\interface.py:64
 #: ../src\core\sessions\buffers\interface.py:77
@@ -993,7 +993,7 @@ msgstr "Reproduzindo áudio"
 
 #: ../src\core\sessions\sound\buffers\audio.py:57
 msgid "audio playback stopped."
-msgstr "som parado."
+msgstr "reprodução parada"
 
 #: ../src\core\sessions\sound\interface.py:25
 msgid "Louder."
@@ -1509,7 +1509,7 @@ msgstr "Favoritado"
 
 #: ../src\session\twitter\buffers\tweets.py:20
 msgid "Retweeted"
-msgstr "Retweetado"
+msgstr "Retwitado"
 
 #: ../src\session\twitter\buffers\users.py:28
 msgid "Screen name"
@@ -1589,7 +1589,7 @@ msgstr "Perguntar se deseja adicionar comentários (recomendado)"
 
 #: ../src\session\twitter\gui\configuration\main.py:44
 msgid "Never add comments (automatically retweet)"
-msgstr "Nunca adicionar comentários. (Retweetar automaticamente)"
+msgstr "Nunca adicionar comentários, (Retweetar automaticamente)"
 
 #: ../src\session\twitter\gui\configuration\panels\misc.py:9
 msgid "Enable DM safe mode"
@@ -1605,7 +1605,7 @@ msgstr "Estilo dos Retweets"
 
 #: ../src\session\twitter\gui\configuration\panels\misc.py:14
 msgid "Allow reply to self"
-msgstr "Permitir responder seus próprios Tweets"
+msgstr "Permitir responder a si mesmo"
 
 #: ../src\session\twitter\gui\configuration\panels\misc.py:15
 msgid "Work offline"
@@ -1613,7 +1613,7 @@ msgstr "Trabalhar Off-line"
 
 #: ../src\session\twitter\gui\configuration\panels\sound.py:8
 msgid "Sound pack"
-msgstr "Pacotes de sons"
+msgstr "Pacote de sons"
 
 #: ../src\session\twitter\gui\configuration\panels\sound.py:11
 msgid "Mute session"
@@ -2025,7 +2025,7 @@ msgstr ""
 
 #: ../src\session\twitter\interface.py:137
 msgid "Cannot retweet your own tweet."
-msgstr "Não pode retuitar seu próprio tweet."
+msgstr "Não é possível retuitar seu próprio tweet."
 
 #: ../src\session\twitter\interface.py:141
 msgid "Would you like to add a comment?"
@@ -2034,7 +2034,7 @@ msgstr "Você gostaria de adicionar um comentário?"
 #: ../src\session\twitter\interface.py:141
 #: ../src\session\twitter\twitter.py:255
 msgid "Retweet"
-msgstr "Retweetar"
+msgstr "Retwitar"
 
 #: ../src\session\twitter\interface.py:160
 msgid "No users to follow detected in current post."
@@ -2354,7 +2354,7 @@ msgstr "Diretas"
 
 #: ../src\session\twitter\twitter.py:64
 msgid "Home"
-msgstr "Públicas"
+msgstr "início"
 
 #: ../src\session\twitter\twitter.py:64
 msgid "Mentions"
@@ -2378,7 +2378,7 @@ msgstr "Verificando credenciais do Twitter"
 
 #: ../src\session\twitter\twitter.py:115
 msgid "Logged into Twitter as %s"
-msgstr "Logado no Twitter como %S"
+msgstr "conectado no Twitter como %S"
 
 #: ../src\session\twitter\twitter.py:124
 msgid "Login failed!"
@@ -2454,7 +2454,7 @@ msgstr "Atualização"
 
 #: ../src\session\twitter\twitter.py:270
 msgid "Sending dm"
-msgstr "Enviando DM..."
+msgstr "Enviando Direta..."
 
 #: ../src\session\twitter\twitter.py:297
 msgid "adding user %s to list %s"
@@ -2532,7 +2532,7 @@ msgstr ""
 msgid ""
 "An update for %s is available, would you like to download and install it now?"
 msgstr ""
-"Está disponível uma atualização para o %S. Deseja baixar e instalá-la agora?"
+"Está disponível uma atualização para o %S. Deseja baixar e instalar agora?"
 
 #: ../src\update_manager.py:25
 msgid "Update %s"

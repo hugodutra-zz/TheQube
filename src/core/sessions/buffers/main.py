@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from logger import logger
 logging = logger.getChild('core.sessions.buffers.main')
 

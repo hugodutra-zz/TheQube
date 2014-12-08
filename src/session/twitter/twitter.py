@@ -45,10 +45,10 @@ class Handler(BaseHTTPServer.BaseHTTPRequestHandler):
   self.end_headers()
   logged = True
   params = parse_qs(urlparse(self.path).query)
-  logging.debug("@Verifier params: %s" % str(params))
   global verifier
   verifier = params.get('oauth_verifier', [None])[0]
   self.wfile.write("You have successfully logged in to Twitter! Now please close this window and happy tweeting!")
+  self.wfile.close()
 
 class Twitter (Buffers, Login, Hotkey, SpeechRecognition, WebService):
 
@@ -81,26 +81,28 @@ class Twitter (Buffers, Login, Hotkey, SpeechRecognition, WebService):
   self.login()
   super(Twitter, self).finish_initialization()
 
- @always_call_after
+ # @always_call_after
  def retrieve_access_token (self):
-  global logged, verifier
   output.speak(_("Please wait while an access token is retrieved from Twitter."), True)
   try:
-   del auth_props, httpd, token
-   verifier = None
+   logging.debug("@httpd: %s" % str(httpd))
   except:
-   pass # We don't need this logged: this is needed only for the multi-session initialization process
+   pass
   httpd = BaseHTTPServer.HTTPServer(('127.0.0.1', 8080), Handler)
-  auth_props = self.auth_handler.get_authentication_tokens(callback_url = "http://127.0.0.1:8080")
-  webbrowser.open_new_tab(auth_props['auth_url'])
+  tw = Twython(str(self.config['oauth']['twitterKey']), str(self.config['oauth']['twitterSecret']), auth_endpoint='authorize')
+  auth = tw.get_authentication_tokens("http://127.0.0.1:8080")
+  webbrowser.open_new_tab(auth['auth_url'])
+  global logged, verifier
   while logged == False:
    httpd.handle_request()
-  self.auth_handler = Twython(str(self.config['oauth']['twitterKey']), str(self.config['oauth']['twitterSecret']), auth_props['oauth_token'], auth_props['oauth_token_secret'])
+  self.auth_handler = Twython(str(self.config['oauth']['twitterKey']), str(self.config['oauth']['twitterSecret']), auth['oauth_token'], auth['oauth_token_secret'])
   token = self.auth_handler.get_authorized_tokens(verifier)
   output.speak(_("Retrieved access token from Twitter."), True)
+  httpd.server_close()
   self.config['oauth']['userKey'] = token['oauth_token']
   self.config['oauth']['userSecret'] = token['oauth_token_secret']
   self.login()
+
 
  login_required = retrieve_access_token 
  

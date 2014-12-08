@@ -1,4 +1,4 @@
-What's new in TheQube
+h1. What's new in TheQube
 
 p. This page lists all the changes and bugfixes made in TheQube, from newest to oldest.
 
