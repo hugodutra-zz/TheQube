@@ -6,6 +6,7 @@ h2. TheQube 0.7.1
 
 * Fixed: "#29: Log files grow to insane sizes":https://github.com/Oire/theqube/issues/29. For now the maximum filesize is set to 100 kb.
 * Fixed: Posting audio is back.
+* Fixed: Pressing *Enter* doesn't add a new line on sending a tweet.
 
 h2. TheQube 0.7
 

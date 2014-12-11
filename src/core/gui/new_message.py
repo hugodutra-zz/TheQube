@@ -199,7 +199,7 @@ class NewMessageDialog(SquareDialog):
    object.SetSelection(0, len(object.GetValue()))
   elif key == wx.WXK_RETURN:
    if config.main['UI']['sendMessagesWithEnterKey']:
-    evt.Skip()
+    # evt.Skip()
     self.EndModal(wx.ID_OK)
    else:
     evt.Skip()
@@ -221,7 +221,7 @@ class NewMessageDialog(SquareDialog):
   super(NewMessageDialog, self).finish_setup(*args, **kwargs)
 
  def setup_message_field(self, text=""):
-  self.message = self.labeled_control(_("Message:"), wx.TextCtrl, style=wx.TE_MULTILINE|wx.PROCESS_ENTER|wx.TE_RICH2|wx.WANTS_CHARS, size=(400, -1))
+  self.message = self.labeled_control(_("Message:"), wx.TextCtrl, style=wx.TE_MULTILINE|wx.WANTS_CHARS, size=(400, -1))
   self.message.Bind(wx.EVT_CHAR, self.charPressed)
   self.message.Bind(wx.EVT_TEXT, self.textUpdated)
   self.message.SetSizerProps(expand=True)
