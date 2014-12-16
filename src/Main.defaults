@@ -19,7 +19,7 @@ voice=string(default="")
 volume=integer(default=100)
 
 [sounds]
-SoundServer=string(default="http://www.qwitter-client.net/soundpacks")
+SoundServer=string(default="http://theqube.oire.org/files/soundpacks")
 audioDevice=string(default="")
 mute=boolean(default=False)
 soundPack=string(default="Standard")

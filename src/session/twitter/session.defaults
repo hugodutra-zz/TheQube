@@ -117,12 +117,12 @@ autoLoadLists=boolean(default=False)
 autoLoadSearches=boolean(default=True)
 
 [templates]
-default_template=string(default='$if(audio){*audio* }$if(geo){*geo* } about $when, $name posted $message')
+default_template=string(default='$if(audio){*audio* }$if(geo){*geo* } $when, $name: $message, $from')
 reply=string(default="@$user $message")
 retweet=string(default="RT @$user: $message")
 default_followers_friends=string(default="$name ($followers_count followers, $friends_count friends, $tweets_count tweets, last tweeted about $last_tweet_when, joined Twitter about $when)")
 user_info=string(default="$followers_count followers, $friends_count friends, $tweets_count tweets")
-search=string(default="$if(audio){*audio* }about $when, $screen_name posted $message")
+search=string(default="$if(audio){*audio* } $when, $screen_name: $message, $from")
 trend = string(default="$name")
 
 [sounds]

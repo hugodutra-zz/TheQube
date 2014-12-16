@@ -84,10 +84,6 @@ class Twitter (Buffers, Login, Hotkey, SpeechRecognition, WebService):
  # @always_call_after
  def retrieve_access_token (self):
   output.speak(_("Please wait while an access token is retrieved from Twitter."), True)
-  try:
-   logging.debug("@httpd: %s" % str(httpd))
-  except:
-   pass
   httpd = BaseHTTPServer.HTTPServer(('127.0.0.1', 8080), Handler)
   tw = Twython(str(self.config['oauth']['twitterKey']), str(self.config['oauth']['twitterSecret']), auth_endpoint='authorize')
   auth = tw.get_authentication_tokens("http://127.0.0.1:8080")
@@ -102,6 +98,7 @@ class Twitter (Buffers, Login, Hotkey, SpeechRecognition, WebService):
   self.config['oauth']['userKey'] = token['oauth_token']
   self.config['oauth']['userSecret'] = token['oauth_token_secret']
   self.login()
+  del (httpd, auth, tw, token, logged, verifier, self.auth_handler)
 
 
  login_required = retrieve_access_token 
