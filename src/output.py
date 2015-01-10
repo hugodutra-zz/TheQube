@@ -6,6 +6,7 @@ import config
 import sys
 import sessions
 
+speaker = None
 
 def speak(text, interrupt=0):
  global speaker
@@ -28,17 +29,11 @@ def CopyPostToClipboard (buffer=None, index=None):
 
 def Copy(text):
  #Copies text to the clipboard.
- if sys.platform == "win32":
-  import win32clipboard
-  win32clipboard.OpenClipboard()
-  win32clipboard.EmptyClipboard()
-  win32clipboard.SetClipboardText(text)
-  win32clipboard.CloseClipboard()
- elif sys.platform == "linux2":
-  import gtk
-  cb = gtk.Clipboard()
-  cb.set_text(text)
-  cb.store()
+ import win32clipboard
+ win32clipboard.OpenClipboard()
+ win32clipboard.EmptyClipboard()
+ win32clipboard.SetClipboardText(text)
+ win32clipboard.CloseClipboard()
  return True
 
 def AnnounceSession(session=None, interrupt=True):
@@ -62,8 +57,8 @@ def setup ():
   return logging.exception("Output: Error during initialization.")
  try:
   if config.main['speech']['screenreader'] == 'SAPI':
-   speaker.rate = config.main['speech']['rate']
-   speaker.volume = config.main['speech']['volume']
-   speaker.voice = config.main['speech']['voice']
+   speaker.set_rate(config.main['speech']['rate'])
+   speaker.set_volume(config.main['speech']['volume'])
+   speaker.set_voice(config.main['speech']['voice'])
  except:
   logging.exception("Unable to set sapi speech properties from configuration")
