@@ -1,6 +1,6 @@
 h2. Welcome to TheQube
 
-TheQube is an accessible social networking client.
+TheQube is an accessible social networking client developed mainly for the blind and visually impaired users.
 © Original idea and code by "Christopher Toth":http://q-continuum.net/
 © Main fork implementation and various new features and bugfixes by "Quartizer projects":http://quartzprojects.co.uk/
 © Currently developed and maintained by "TheQube developers team":http://theqube.oire.org/.

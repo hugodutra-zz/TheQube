@@ -1,6 +1,5 @@
-h1. TheQube Readme
+h1. TheQube 0.7.1 Readme
 Copyright © TheQube Developers and Translators Team, 2014
-version 0.7
 Last Updated: November 6th, 2014
 
 h1. Preproduction warning
@@ -12,7 +11,7 @@ h1. Introduction
 h2. What is TheQube?
 
 TheQube is an accessible social networking client developed mainly for the blind and visually impaired users. It provides speech and sound feedback to screen reader users and is operated just from the keyboard, using various keystrokes as commands. If you want to read a bit more about TheQube history, please visit our "About TheQube":http://theqube.oire.org/about/ page. TheQube has no graphical user interface, that is, you have no main window. This is particularly helpful if you'd like to read some tweets to distract yourself a bit without closing the application you're working in.
-TheQube is developed for Windows only. It supports all Microsoft desktop systems starting from Windows XP up to Windows 8.1.
+TheQube is developed for Windows only. It supports all Microsoft desktop systems starting from Windows XP up to Windows 10 Preview.
 TheQube works with most screen readers, including JAWS, Window-Eyes, System Access, SuperNova and the freely available NVDA (version 2010.1 or later).
 
 h1. General Concepts
@@ -33,17 +32,13 @@ The following commands can be used to work with sessions in TheQube:
 |Dismiss the  current session|Ctrl+Shift+Win+Apostrophe|
 *Note*: When a session is dismissed, the associated data are not deleted. So you may create a session with the same name and type to access your previously dismissed session at any time.
 
-==what are buffers?==[buffers]
+h2. What are buffers?
 
 Buffers are separate areas within TheQube that are used to hold different types of information for review.  Each type of session uses buffers in different ways, and we'll show you how to utilize them all Throughout this document.
-
-Each session contains it's own unique set of buffers, and remembers which buffer you are working in within that session.  To switch between the various buffers within your current session, use ctrl+win+left and right arrows.  TheQube will announce the buffer you change to, so you'll always know where you are.  By default, TheQube places you in the last buffer you've used, even
-if you restart.  Once you've picked a buffer you want to read through, use control+win+up and down arrows to browse the items.  
-
+Each session contains its own unique set of buffers, and remembers which buffer you are working in within that session.  To switch between the various buffers within your current session, use *Ctrl+Win+Alt+Left* and *Right* arrows.  TheQube will announce the buffer you change to, so you'll always know where you are.  By default, TheQube places you in the last buffer you've used, even if you restart.  Once you've picked a buffer you want to read through, use *Ctrl+Win+Alt+Up* and *Down* arrows to browse the items.  
 To go to the most recent or oldest item in the buffer, use ctrl+win+home or end respectively.  To move forward or back through the list by 5%, press control+win+page up or down.  To move forward or back by an hour, use control+win+shift+page up or down.  You can adjust how much these commands move in the navigation tab of TheQube's main configuration dialog, available by pressing control+shift+win+o.  You can also use control+win+z to undo the last navigation command you issued.
 
-If you wish to manually update the buffer you're in, rather
-than waiting for it to update itself at whatever interval you chose during configuration, use ctrl+win+u.  If you ever wish to delete the contents of a buffer from TheQube's database, you can do so by pressing ctrl+shift+win+delete.  When the buffer updates again, the newest items will be back in the buffer, up to the maximum that you configured.
+If you wish to manually update the buffer you're in, rather than waiting for it to update itself at whatever interval you chose during configuration, use ctrl+win+u.  If you ever wish to delete the contents of a buffer from TheQube's database, you can do so by pressing ctrl+shift+win+delete.  When the buffer updates again, the newest items will be back in the buffer, up to the maximum that you configured.
 
 You can also modify the navigation order of the buffers by pressing control+win+alt+left or right arrows to move the current buffer in that direction.  
 
