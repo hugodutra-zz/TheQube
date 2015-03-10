@@ -2,7 +2,7 @@
 
 # Global variables
 # A part of TheQube, an accessible social networking client
-# Copyright © TheQube Developers Team, 2014
+# Copyright © TheQube Developers Team, 2015
 
 #Holds all universal variables
 import sys

@@ -1,6 +1,6 @@
 h1. TheQube 0.7.1 Readme
 Copyright © TheQube Developers and Translators Team, 2014
-Last Updated: November 6th, 2014
+Last Updated: March 10th, 2015
 
 h1. Preproduction warning
 
@@ -36,73 +36,67 @@ h2. What are buffers?
 
 Buffers are separate areas within TheQube that are used to hold different types of information for review.  Each type of session uses buffers in different ways, and we'll show you how to utilize them all Throughout this document.
 Each session contains its own unique set of buffers, and remembers which buffer you are working in within that session.  To switch between the various buffers within your current session, use *Ctrl+Win+Alt+Left* and *Right* arrows.  TheQube will announce the buffer you change to, so you'll always know where you are.  By default, TheQube places you in the last buffer you've used, even if you restart.  Once you've picked a buffer you want to read through, use *Ctrl+Win+Alt+Up* and *Down* arrows to browse the items.  
-To go to the most recent or oldest item in the buffer, use *Ctrl+Win+Home* or *End* respectively.  To move forward or back through the list by 5%, press *Ctrl+Win+PageUp* or *PageDown*.  To move forward or back by an hour, use control+win+shift+page up or down.  You can adjust how much these commands move in the navigation tab of TheQube's main configuration dialog, available by pressing control+shift+win+o.  You can also use control+win+z to undo the last navigation command you issued.
+To go to the most recent or oldest item in the buffer, use *Ctrl+Win+Home* or *End* respectively.  To move forward or back through the list by 5%, press *Ctrl+Win+PageUp* or *PageDown*.  To move forward or back by an hour, use *Ctrl+Win+Shift+PageUP* or *PageDown*. You can adjust how much these commands move in the Navigation tab of TheQube's main configuration dialog, available by pressing *Ctrl+Shift+Win+O*. You can also use *Ctrl+Win+Z* to undo the last navigation command you issued.
+If you wish to manually update the buffer you're in, rather than waiting for it to update itself at whatever interval you chose during configuration, use *Ctrl+Win+Alt+U*.  If you ever wish to delete the contents of a buffer from TheQube's database, you can do so by pressing *Ctrl+Shift+Win+Delete*.  When the buffer updates again, the newest items will be back in the buffer, up to the maximum that you configured.
+You can also modify the navigation order of the buffers by pressing *Ctrl+Win+Alt+Left* or *Right* arrows to move the current buffer in that direction.  
 
-If you wish to manually update the buffer you're in, rather than waiting for it to update itself at whatever interval you chose during configuration, use ctrl+win+u.  If you ever wish to delete the contents of a buffer from TheQube's database, you can do so by pressing ctrl+shift+win+delete.  When the buffer updates again, the newest items will be back in the buffer, up to the maximum that you configured.
+h2. Options when sending messages in TheQube
 
-You can also modify the navigation order of the buffers by pressing control+win+alt+left or right arrows to move the current buffer in that direction.  
+Often when using TheQube, you will be entering messages that you wish to send, such as in the  Twitter session described later.  All of the message composition dialogs in TheQube share many common characteristics.  This section describes the options that you have in these dialogs.
 
-==Options when sending messages in TheQube==[message-options]
-
-Often when using TheQube, you will be entering messages that you wish to send, such as in the [twitter \twitter-session] session described later.  All of the message composition dialogs in TheQube share many common characteristics.  This section describes the options that you have in these dialogs.
-
-===Delaying a message===[delay]
+h3. Scheduling a message
 
 You have the option to schedule a message to be sent out at a later time.  Anywhere that you would compose something, there is a button which brings up a dialog for you to schedule the message.  The first option in this dialog   is the scheduling method.  If you select the interval method, you can set the number of hours, minutes and seconds that TheQube will wait before sending your message.  Using the time method, you enter the exact time you wish to send the message.  You must enter the time in 24-hour format rather than in am/pm format.
 
-===Sending audio with your messages===[attach-audio]
+h3. Sending audio with your messages
 
-TheQube also has the ability to attach audio messages to your posts using a proprietary service called [SndUp http://www.sndup.net].  Any new message dialog contains an attach audio button.  Pressing this button brings up a dialog that gives you the option to either record your audio from within TheQube itself or attach an existing file.  
-
-Pressing the record button will start the recording and you will be focused on a stop button.  Press this button when you are through recording.  You will be given the opportunity to play your recording back again.  If you are satisfied with what you have recorded, press the attach button.  Otherwise you can discard the recording and try again.
-
+TheQube also has the ability to attach audio messages to your posts using third-party services. You can choose from "SndUp":http://sndup.net/ (set by default) or "TwUp":http://twup.me/ on the Miscellaneous tab of TheQube's main configuration dialog. Any new message dialog contains an Attach audio button.  Clicking this button brings up a dialog that gives you the option to either record your audio from within TheQube itself or attach an existing file.  
+Clicking the record button will start the recording and you will be focused on a stop button. click this button when you finish recording.  You will be given the opportunity to play your recording back again.  If you are satisfied with what you have recorded, click the Attach button.  Otherwise you can discard the recording and try again.
 Selecting the option to attach an existing file opens a standard windows dialog for selecting the file you wish to upload.
+Also please note that, though direct messages in twitter are more or less considered to be private, audio content attached to a DM is still very much public.  This is because of the way publicly accessible audio posting services work.  The link contained in the message points to a file that is still publicly available.  Though only the recipient sees the direct link, it is still possible for others to find your file.  It's similar to hiding a key to your house under the matt and then sending someone a private note telling them where to find the key.  The key is still there for anyone to find even if only one other person knows exactly where it is.  In the case of audio links, the "key" is still there after your recipient has heard the message.
+If you do not wish to use SndUp or TwUp, you can still indicate that a tweet links to audio content by including the _#audio_ hashtag in your tweet.  This will inform TheQube that the first URL in the post is an audio link, allowing others to play the file by pressing *Ctrl+Win+Enter*.
 
-Also please note that, though direct messages in twitter are more or less considered to be private, audio content attached to a DM is still very much public.  This is because of the way publicly accessible audio posting services work.  The link contained in the message points to a file that is still publically available.  Though only the recipient sees the direct link, it is still possible for others to find your file.  It's similar to hiding a key to your house under the matt and then sending someone a private note telling them where to find the key.  The key is still there for anyone to find even if only one other person knows exactly where it is.  In the case of audio links, the "key" is still there after your recipient has heard the message.
+h3. Shortening and unshortening URLs
 
-If you do not wish to use SndUp, you can still indicate that a tweet links to audio content by including the #audio hashtag in your tweet.  This will inform TheQube that the first URL in the post is an audio link, allowing others to play the file by pressing ctrl+win+enter
+The idea behind URL shortening is that a long address is replaced by a shorter one.  This gives you more characters in situations where you have a limit to work with such as tweets or sms messages .  You may select your preferred shortener from the Miscellaneous tab of the global Configuration dialog, available by pressing *Ctrl+Shift+Win+O*.  Within any dialog where you would compose something, you will find buttons to shorten or unshorten any URL in the message.
+If your URL starts with "http://" or "www." (no quotes), it will be automatically detected.  Pressing Alt+S or clicking on the "Shorten URL" button will replace your long URL with a shorter one.  If the URL you want to replace isn't automatically detected, you can select it and press Alt+S which will use your selection.  If more than one URL is detected, you'll be presented with a list allowing you to select the URL you wish to shorten.
+TheQube supports the following URL shortening services:
+* goo.gl
+* is.gd
+* TinyURL
+* TinyArrows
+* SentaLa
+* Readability
+* Clck.ru
+* Qps.ru
+Goo.gl is selected by default.
 
-===Shortening and unshortening URLs===[url-short]
+h3. Translating messages
 
-The idea behind URL shortening is that a long address is replaced by a shorter one.  This gives you more characters in situations where you have a limit to work with such as tweets or sms messages .  You may select your preferred shortener from the Miscellaneous tab of the global Configuration dialog, available by pressing control+shift+win+o.  Within any dialog where you would compose something, you will find buttons to shorten or unshorten any URL in the message.
+In any new message dialog, you can translate your message into another language with the Translate button.  You will be given the opportunity to select what language the message is written in and what language it should be translated into.
+In the twitter session, you can also translate tweets that you are reading.  We describe this in a later section.
 
-If your URL starts with "http://" or "www." (no quotes), it will be automatically detected.  Pressing alt+s or clicking on the "Shorten URL" button will
-replace your long URL with a shorter one.  If the URL you want to replace isn't automatically detected, you can select it and press alt+s which will use
-your selection.  If more than one URL is detected, you'll be presented with a list allowing you to select the URL you wish to shorten.
+h2. Keyboard Help
 
-===Translating messages===[translate-post]
+We Highly recommend that you read all of this document to get a complete understanding of how TheQube's various functions work.  After you have done that however, there is a way to quickly remind yourself what a particular keystroke does.  The keyboard help mode can be turned on by pressing *Ctrl+Shift+Win+K*.  In this mode, pressing any of TheQube's commands will inform you what that keystroke does within the current session.  Press *Ctrl+Win+Shift+K* again to exit keyboard help mode.
 
-In any message composition dialog, you can translate your message into another language with the translate button.  You will be given the opportunity to select what language the message is written in and what language it should be translated into.
+h2. Configuration
 
-In the twitter session, you can also translate tweets that you are reading.  We describe this in [a later section #translate-tweet]
+TheQube is actually a very flexible piece of software.  Most of this document discusses TheQube's default behavior.  Pressing *Ctrl+Win+O* will bring up a configuration dialog with options for the current session.  These options will be described in the chapter for each session.  Pressing *Ctrl+Shift+Win+O* will bring up the main configuration dialog with options that apply to all of TheQube.  
 
-==Keyboard Help==[keyboard-help]
+h1. Twitter
 
-We Highly recommend that you read all of this document to get a complete understanding of how TheQube's various functions work.  After you have done that however, there is a way to quickly remind yourself what a particular keystroke does.  The keyboard help mode can be turned on by pressing control+win+shift+k.  In this mode, pressing any of TheQube's commands will inform you what that keystroke does within the current session.  Press control+win+shift+k again to exit keyboard help mode.
+h2. What is Twitter?
 
-==Configuration==[configuration]
-
-TheQube is actually a very flexible piece of software.  Most of this document discusses TheQube's default behavior.  Pressing control+win+o will bring up a configuration dialog with options for the current session.  These options will be described in the chapter for each session.  Pressing control +shift+win+o will bring up the [main configuration dialog #main_config] with options that apply to all of TheQube.  
-
-=Twitter=[twitter-session]
-
-==What is Twitter?==[twitter-intro]
-
-Twitter is an insanely popular micro blogging service, that is, a service which allows you to post short little chunks of no more than 140 characters of
-text to the web at a time and have these updates, or tweets, as they are called in twitter speak, read by your followers, or the people who are following
-you.  If you don't currently have a twitter account, you may create one [here http://twitter.com/signup]
-
+"Twitter":https://twitter.com/ is an insanely popular micro blogging service, that is, a service which allows you to post short little chunks of no more than 140 characters of text to the web at a time and have these updates, or tweets, as they are called in twitter speak, read by your followers, or the people who are following you. If you don't currently have a twitter account, you may create one on the Twitter website.
 There are many advantages to using a Twitter client, and TheQube in particular.  Here are just a few:
+* Instant, seamless access to Twitter from anywhere on your system, without having to have a browser open.
+* Announcement of new events such as receiving new tweets, direct messages, and mentions, or when new results are returned for a particular Twitter search.
+* A searchable repository of all of your received tweets saved in the session storage.
 
-- Instant, seamless access to Twitter from anywhere on your system, without having to have a browser open.
-- Announcement of new events such as receiving new tweets, direct messages, and mentions, or when new results are returned for a particular Twitter search.
-- A searchable repository of all of your received tweets saved in the session storage.
-
-
-==logging into twitter==[login-dialog]
+h2. Logging into twitter
 
 The first time you open a twitter session, your web browser will open and load a twitter web page which will askyou to enter your twitter username and password to authorize TheQube.  After logging in, twitter will provide you with a number.  Return to TheQube, enter this number and you will be ready to get started.  The following sections will tell you everything you need to know about using Twitter.  
-
 Note: there have been a few reports of trouble connecting to twitter when certain firewalls are in use.  The most common problems are with the Vipre firewall.  If you are unable to connect, you may need to add an exception to the firewall.  In the case of Vipre, you want to add twitter.com as a web exception.  Generally, you either need to create an exception for twitter.com or for TheQube itself.
 
 ==about API calls==[api]
@@ -665,9 +659,6 @@ There is a known conflict between TheQube and the jaws scripts for the McTwit ap
 Every attempt has been made to insure that this document describes every aspect of TheQube in complete detail.  If you have checked this document carefully and still have questions, please ask in a mention to [@quartz_projects http://www.twitter.com/quartz_projects] on Twitter.
 
 You can also address a mention to the same account if you wish to submit a bug report or feature suggestion.  In your mention, please provide a turse description of the problem you're having or the feature you'd like and we'll be in touch.
-
-%!include: changelog.t2t
-
 
 =Credits=[credits]
 

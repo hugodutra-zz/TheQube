@@ -76,7 +76,7 @@ class MetaInterface (object):
   info = wx.AboutDialogInfo()
   info.Name = application.name
   info.Version = str(application.version)
-  info.Copyright = _(u"Copyright © 2013 — 2014 %s." % application.author)
+  info.Copyright = _(u"Copyright © 2013 — %s %s." % (application.copyright_year, application.author))
   info.WebSite = application.url
   application.main_frame.Raise()
   wx.AboutBox(info) 

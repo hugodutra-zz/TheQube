@@ -8,7 +8,7 @@
 #define MyAppURL "http://theqube.oire.org"
 #define MyAppExeName "TheQube.exe"
 #define MyAppDescription "An accessible social networking client developed mainly for the blind."
-#define MyAppCopyrightYear "2014"
+#define MyAppCopyrightYear "2015"
 
 [Setup]
 AppId={{45E90244-4E13-41FF-B351-C387F444965E}
