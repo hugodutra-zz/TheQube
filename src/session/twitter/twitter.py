@@ -89,6 +89,7 @@ class Twitter (Buffers, Login, Hotkey, SpeechRecognition, WebService):
   auth = tw.get_authentication_tokens("http://127.0.0.1:8080")
   webbrowser.open_new_tab(auth['auth_url'])
   global logged, verifier
+  logged = False
   while logged == False:
    httpd.handle_request()
   self.auth_handler = Twython(str(self.config['oauth']['twitterKey']), str(self.config['oauth']['twitterSecret']), auth['oauth_token'], auth['oauth_token_secret'])
