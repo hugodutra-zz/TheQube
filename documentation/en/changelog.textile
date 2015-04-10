@@ -2,6 +2,10 @@ h1. What's new in TheQube
 
 p. This page lists all the changes and bugfixes made in TheQube, from newest to oldest.
 
+h2. TheQube 0.7.2
+
+* Fixed: "#49: To authorize the second session, TheQube has to be restarted":https://github.com/Oire/theqube/issues/49. Thanks to Manuel Cortéz for this lovely fix!
+
 h2. TheQube 0.7.1
 
 * New: added the "qps.ru":http://qps.ru URL shortening service.

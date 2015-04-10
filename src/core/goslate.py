@@ -1,10 +1,9 @@
+#! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
-# The Qube Messages Translator
-# A part of The Qube accessible social networking client
-# Copyright © Andre Polykanine A.K.A. Menelion Elensúlë, 2014
-# Based on Goslate, a Google translate binding by Zhuo Qiang
-
+'''Goslate: Free Google Translate API
+'''
+from __future__ import print_function
 from __future__ import unicode_literals
 
 import sys
@@ -15,23 +14,44 @@ import functools
 import time
 import socket
 import random
-import requests
 import re
-import htmlentitydefs
 
-from urllib import urlencode, unquote_plus, quote_plus
-from urlparse import urljoin
-from itertools import izip
+try:
+    # python 3
+    from urllib.request import build_opener, Request, HTTPHandler, HTTPSHandler
+    from urllib.parse import quote_plus, urlencode, unquote_plus, urljoin
+    izip = zip
+
+except ImportError:
+    # python 2
+    from urllib2 import build_opener, Request, HTTPHandler, HTTPSHandler
+    from urllib import urlencode, unquote_plus, quote_plus
+    from urlparse import urljoin
+    from itertools import izip
 
 try:
     import concurrent.futures
     _g_executor = concurrent.futures.ThreadPoolExecutor(max_workers=120)
 except ImportError:
     _g_executor = None
+    
 
-from logger import logger
-logging = logger.getChild('core.translator')
+__author__ = 'ZHUO Qiang'
+__email__ = 'zhuo.qiang@gmail.com'
+__copyright__ = "2013, http://zhuoqiang.me"
+__license__ = "MIT"
+__date__ = '2013-05-11'
+__version_info__ = (1, 4, 0)
+__version__ = '.'.join(str(i) for i in __version_info__)
+__home__ = 'https://bitbucket.org/zhuoqiang/goslate'
+__download__ = 'https://pypi.python.org/pypi/goslate'
 
+
+try:
+    unicode
+except NameError:
+    unicode = str
+    
 def _is_sequence(arg):
     return (not isinstance(arg, unicode)) and (
         not isinstance(arg, bytes)) and (
@@ -45,30 +65,15 @@ def _unwrapper_single_element(elements):
     if len(elements) == 1:
         return elements[0]
     return elements
-
-def html_unescape(text):
- def fixup(m):
-  text = m.group(0)
-  if text[:2] == "&#":
-   # character reference
-   try:
-    if text[:3] == "&#x":
-     return unichr(int(text[3:-1], 16))
-    else:
-     return unichr(int(text[2:-1]))
-   except ValueError:
+        
+    
+class Error(Exception):
+    '''Error type
+    '''
     pass
-  else:
-   # named entity
-   try:
-    text = unichr(htmlentitydefs.name2codepoint[text[1:-1]])
-   except KeyError:
-    pass
-  return text # leave as is
- return re.sub("&#?\w+;", fixup, text)
 
 
-class TranslatorError(Exception): pass
+_empty_comma = re.compile(r',(?=,)')
 
 WRITING_NATIVE = ('trans',)
 '''native target language writing system'''
@@ -79,15 +84,83 @@ WRITING_ROMAN = ('translit',)
 WRITING_NATIVE_AND_ROMAN = WRITING_NATIVE + WRITING_ROMAN
 '''both native and roman writing. The output will be a tuple'''
 
-class Translator(object):
+class Goslate(object):
+    '''All goslate API lives in this class
 
+    You have to first create an instance of Goslate to use this API
+
+    :param writing: The translation writing system. Currently 3 values are valid
+    
+                 - :const:`WRITING_NATIVE` for native writing system
+                 - :const:`WRITING_ROMAN` for roman writing system
+                 - :const:`WRITING_NATIVE_AND_ROMAN` for both native and roman writing system. output will be a tuple in this case
+    
+    :param opener: The url opener to be used for HTTP/HTTPS query.
+                   If not provide, a default opener will be used.
+                   For proxy support you should provide an ``opener`` with ``ProxyHandler``
+    :type opener: `urllib2.OpenerDirector <http://docs.python.org/2/library/urllib2.html#urllib2.OpenerDirector>`_
+        
+    :param retry_times: how many times to retry when connection reset error occured. Default to 4
+    :type retry_times: int
+        
+    :type max_workers: int
+
+    :param timeout: HTTP request timeout in seconds
+    :type timeout: int/float
+    
+    :param debug: Turn on/off the debug output
+    :type debug: bool
+
+    :param service_urls: google translate url list. URLs will be used randomly for better concurrent performance. For example ``['http://translate.google.com', 'http://translate.google.de']``
+    :type service_urls: single string or a sequence of strings
+    
+    :param executor: the multi thread executor for handling batch input, default to a global ``futures.ThreadPoolExecutor`` instance with 120 max thead workers if ``futures`` is avalible. Set to None to disable multi thread support
+    :type executor: ``futures.ThreadPoolExecutor``
+    
+    .. note:: multi thread worker relys on `futures <https://pypi.python.org/pypi/futures>`_, if it is not avalible, ``goslate`` will work under single thread mode
+    
+    :Example:
+
+        >>> import goslate
+        >>> 
+        >>> # Create a Goslate instance first
+        >>> gs = goslate.Goslate()
+        >>> 
+        >>> # You could get all supported language list through get_languages
+        >>> languages = gs.get_languages()
+        >>> print(languages['en'])
+        English
+        >>> 
+        >>> # Tranlate English into German
+        >>> print(gs.translate('hello', 'de'))
+        hallo
+        >>> # Detect the language of the text
+        >>> print(gs.detect('some English words'))
+        en
+        >>> # Get goslate object dedicated for romanlized translation (romanlization)
+        >>> gs_roman = goslate.Goslate(WRITING_ROMAN)
+        >>> print(gs_roman.translate('hello', 'zh'))
+        Nín hǎo
+    '''
+
+    
     _MAX_LENGTH_PER_QUERY = 1800
 
-    def __init__(self, writing=WRITING_NATIVE, retry_times=4, timeout=4, service_urls=('http://translate.google.com',)):
+    def __init__(self, writing=WRITING_NATIVE, opener=None, retry_times=4, executor=_g_executor,
+                 timeout=4, service_urls=('http://translate.google.com',), debug=False):
+        self._DEBUG = debug
         self._MIN_TASKS_FOR_CONCURRENT = 2
+        self._opener = opener
         self._languages = None
         self._TIMEOUT = timeout
+        if not self._opener:
+            debuglevel = self._DEBUG and 1 or 0
+            self._opener = build_opener(
+                HTTPHandler(debuglevel=debuglevel),
+                HTTPSHandler(debuglevel=debuglevel))
+        
         self._RETRY_TIMES = retry_times
+        self._executor = executor
         self._writing = writing
         if _is_sequence(service_urls):
             self._service_urls = service_urls
@@ -96,19 +169,30 @@ class Translator(object):
 
     def _open_url(self, url):
         if len(url) > self._MAX_LENGTH_PER_QUERY+100:
-            raise TranslatorError('input too large')
+            raise Error('input too large')
 
         # Google forbits urllib2 User-Agent: Python-urllib/2.7
-        r = requests.get(url, headers={'User-Agent':'Mozilla/4.0'})
+        request = Request(url, headers={'User-Agent':'Mozilla/4.0'})
 
         exception = None
         # retry when get (<class 'socket.error'>, error(54, 'Connection reset by peer')
-        for i in xrange(self._RETRY_TIMES):
+        for i in range(self._RETRY_TIMES):
             try:
-                response = r.text
-                return response
-            except Exception as e:
-                logging.exception("Translator error. Unable to get response: {0}".format(e))
+                response = self._opener.open(request, timeout=self._TIMEOUT)
+                response_content = response.read().decode('utf-8')
+                if self._DEBUG:
+                    print('GET Response body:{}'.format(response_content))
+                return response_content
+            except socket.error as e:
+                if self._DEBUG:
+                    import threading
+                    print(threading.currentThread(), e)
+                if 'Connection reset by peer' not in str(e):
+                    raise e
+                exception = e
+                time.sleep(0.0001)
+        raise exception
+    
 
     def _execute(self, tasks):
         first_tasks = [next(tasks, None) for i in range(self._MIN_TASKS_FOR_CONCURRENT)]
@@ -131,94 +215,128 @@ class Translator(object):
                 raise exception
 
 
-    def _basic_translate(self, text, target_language, source_language, host_language='en'):
+    def _basic_translate(self, text, target_language, source_language):
         # assert _is_bytes(text)
         
         if not target_language:
-            raise TranslatorError('invalid target language')
+            raise Error('invalid target language')
 
         if not text.strip():
-            return tuple(u'' for i in xrange(len(self._writing))) , unicode(target_language)
+            return tuple(u'' for i in range(len(self._writing))) , unicode(target_language)
 
         # Browser request for 'hello world' is:
         # http://translate.google.com/translate_a/t?client=t&hl=en&sl=en&tl=zh-CN&ie=UTF-8&oe=UTF-8&multires=1&prev=conf&psl=en&ptl=en&otf=1&it=sel.2016&ssel=0&tsel=0&prev=enter&oc=3&ssel=0&tsel=0&sc=1&text=hello%20world
+        
+        # 2015-04: google had changed service, it is now:
+        # https://translate.google.com/translate_a/single?client=z&sl=en&tl=zh-CN&ie=UTF-8&oe=UTF-8&dt=t&dt=rm&q=hello%20world
+        # dt=t: translate
+        # dt=rm: romanlized writing, like Chinese Pinyin
 
         # TODO: we could randomly choose one of the google domain URLs for concurrent support
-        GOOGLE_TRANSLATE_URL = urljoin(random.choice(self._service_urls), '/translate_a/t')
-        GOOGLE_TRANSLATE_PARAMETERS = {
-            # 't' client will receiver non-standard json format
-            # change client to something other than 't' to get standard json response
-            'client': 'z',
+        GOOGLE_TRASLATE_URL = urljoin(random.choice(self._service_urls), '/translate_a/single')
+        GOOGLE_TRASLATE_PARAMETERS = {
+            'client': 'a',
             'sl': source_language,
             'tl': target_language,
-            'hl': host_language,
             'ie': 'UTF-8',
             'oe': 'UTF-8',
-            'text': text
+            'dt': 't',
+            'q': text,
             }
 
-        url = '?'.join((GOOGLE_TRANSLATE_URL, urlencode(GOOGLE_TRANSLATE_PARAMETERS)))
-        response_content = self._open_url(url)
-        data = json.loads(response_content)
+        url = '?'.join((GOOGLE_TRASLATE_URL, urlencode(GOOGLE_TRASLATE_PARAMETERS)))
+        if 'translit' in self._writing:
+            url += '&dt=rm'
         
-        # google may change space to no-break space, we may need to change it back
-        translation = tuple(u''.join(i[part] for i in data['sentences']).replace(u'\xA0', u' ') for part in self._writing)
+        response_content = self._open_url(url)
+        raw_data = json.loads(_empty_comma.subn('', response_content)[0].replace(u'\xA0', u' ').replace('[,', '[1,'))
+        data = {'src': raw_data[-1][0][0]}
+        
+        if raw_data[0][-1][0] == 1: # roman writing
+            data['translit'] = raw_data[0][-1][1]
+            data['trans'] = u''.join(i[0] for i in raw_data[0][:-1])
+        else:
+            data['translit'] = u''
+            data['trans'] = u''.join(i[0] for i in raw_data[0])
+            
+        translation = tuple(data[part] for part in self._writing)
         
         detected_source_language = data['src']
         return translation, detected_source_language
 
 
-    def get_languages(self, host_language='en'):
+    def get_languages(self, hl='en'):
+        '''Discover supported languages
+
+        It returns iso639-1 language codes for
+        `supported languages <https://developers.google.com/translate/v2/using_rest#language-params>`_
+        for translation. Some language codes also include a country code, like zh-CN or zh-TW.
+
+        .. note:: It only queries Google once for the first time and use cached result afterwards
+
+        :returns: a dict of all supported language code and language name mapping ``{'language-code', 'Language name'}``
+
+        :Example:
+
+        >>> languages = Goslate().get_languages()
+        >>> assert 'zh' in languages
+        >>> print(languages['zh'])
+        Chinese
+
+        '''
         if self._languages:
             return self._languages
-        GOOGLE_TRANSLATOR_URL = 'http://translate.google.com/translate_a/l'
-        GOOGLE_TRANSLATOR_PARAMETERS = {
-            'client': 'z',
-            'hl': host_language
+
+        GOOGLE_TRASLATOR_URL = 'http://translate.google.com/translate_a/l'
+        GOOGLE_TRASLATOR_PARAMETERS = {
+            'client': 't',
+            'hl': hl
             }
 
-        url = '?'.join((GOOGLE_TRANSLATOR_URL, urlencode(GOOGLE_TRANSLATOR_PARAMETERS)))
+        url = '?'.join((GOOGLE_TRASLATOR_URL, urlencode(GOOGLE_TRASLATOR_PARAMETERS)))
         response_content = self._open_url(url)
         data = json.loads(response_content)
+
         languages = data['sl']
         languages.update(data['tl'])
         if 'auto' in languages:
             del languages['auto']
-        # Replacing dashes with underscores to fit the getText requirements and turning HTML entities into plain chars
-        self._languages = {k.replace('-', '_'): html_unescape(v) for k, v in languages.items()}
+        if 'zh' not in languages:
+            languages['zh'] = 'Chinese'
+        self._languages = languages
         return self._languages
 
 
-    _SEPARATORS = [quote_plus(i.encode('utf-8')) for i in
+    _SEPERATORS = [quote_plus(i.encode('utf-8')) for i in
                    u'.!?,;。，？！:："“”’‘#$%&()（）*×+/<=>@＃￥[\]…［］^`{|}｛｝～~\n\r\t ']
 
-    def _translate_single_text(self, text, target_language, source_language):
+    def _translate_single_text(self, text, target_language, source_lauguage):
         assert _is_bytes(text)
         def split_text(text):
             start = 0
             text = quote_plus(text)
             length = len(text)
             while (length - start) > self._MAX_LENGTH_PER_QUERY:
-                for separator in self._SEPARATORS:
-                    index = text.rfind(separator, start, start+self._MAX_LENGTH_PER_QUERY)
+                for seperator in self._SEPERATORS:
+                    index = text.rfind(seperator, start, start+self._MAX_LENGTH_PER_QUERY)
                     if index != -1:
                         break
                 else:
                     raise Error('input too large')
-                end = index + len(separator)
+                end = index + len(seperator)
                 yield unquote_plus(text[start:end])
                 start = end
 
             yield unquote_plus(text[start:])
 
         def make_task(text):
-            return lambda: self._basic_translate(text, target_language, source_language)[0]
+            return lambda: self._basic_translate(text, target_language, source_lauguage)[0]
 
         results = list(self._execute(make_task(i) for i in split_text(text)))
         return tuple(''.join(i[n] for i in results) for n in range(len(self._writing)))
 
 
-    def translate(self, text, target_language, source_language='', host_language='en'):
+    def translate(self, text, target_language, source_language='auto'):
         '''Translate text from source language to target language
 
         .. note::
@@ -260,7 +378,7 @@ class Translator(object):
          >>> for i in gs.translate(['good', u'morning'], 'de'):
          ...     print(i)
          ...
-         gut
+         gut aus
          Morgen
 
         To output romanlized translation
@@ -269,7 +387,7 @@ class Translator(object):
         
          >>> gs_roman = Goslate(WRITING_ROMAN)
          >>> print(gs_roman.translate('Hello', 'zh'))
-         Nǐ hǎo
+         Nín hǎo
         
         '''
 
@@ -277,6 +395,9 @@ class Translator(object):
         if not target_language:
             raise Error('invalid target language')
 
+        if not source_language:
+            source_language = 'auto'
+        
         if target_language.lower() == 'zh':
             target_language = 'zh-CN'
             
@@ -325,7 +446,7 @@ class Translator(object):
     def _detect_language(self, text):
         if _is_bytes(text):
             text = text.decode('utf-8')
-        return self._basic_translate(text[:50].encode('utf-8'), 'en', '')[1]
+        return self._basic_translate(text[:50].encode('utf-8'), 'en', 'auto')[1]
 
 
     def detect(self, text):
@@ -372,7 +493,7 @@ def _main(argv):
     parser = optparse.OptionParser(usage=usage, version="%%prog %s @ Copyright %s" % (__version__, __copyright__))
     parser.add_option('-t', '--target-language', metavar='zh-CN',
                       help='specify target language to translate the source text into')
-    parser.add_option('-s', '--source-language', default='', metavar='en',
+    parser.add_option('-s', '--source-language', default='auto', metavar='en',
                       help='specify source language, if not provide it will identify the source language automatically')
     parser.add_option('-i', '--input-encoding', default=sys.getfilesystemencoding(), metavar='utf-8',
                       help='specify input encoding, default to current console system encoding')

@@ -3,7 +3,7 @@
 import wx
 from core.gui import SquareDialog
 import config
-import core.translator
+import core.goslate
 import operator
 from ctypes import windll
 from locale import windows_locale
@@ -12,7 +12,7 @@ from logger import logger
 logging = logger.getChild('core.gui.translate')
 
 class TranslateDialog (SquareDialog):
- t = core.translator.Translator()
+ t = core.goslate.Goslate()
  LCID = windll.kernel32.GetUserDefaultUILanguage()
  win_lang = windows_locale[LCID]
 

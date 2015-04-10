@@ -26,7 +26,7 @@ class GooglShortener (URLShortener):
    if 'id' in data:
     return data['id']
   else: # Response is not OK
-   logging.exception("Bad response on shortening URL {}: {}".format(url, response.status_code))
+   logging.exception("Bad response on shortening URL {}: {}".format(url, str(response)))
 
 
 

@@ -22,11 +22,12 @@ from core.gui import SquareDialog
 from recording import RecordingDialog
 from schedule import ScheduleDialog
 from translate import TranslateDialog
+from photos import AddPhotosDialog
 
 
 class NewMessageDialog(SquareDialog):
 
- def __init__ (self, title="", max_length=0, *args, **kwargs):
+ def __init__ (self, title=u"", max_length=0, *args, **kwargs):
   self.base_title = title
   self.max_length = max_length
   super(NewMessageDialog, self).__init__(*args, title=title, **kwargs)
@@ -56,7 +57,10 @@ class NewMessageDialog(SquareDialog):
 
  def update_title (self):
   length = self.getMessageLength()
-  self.SetTitle(_("%s - %d of %d Characters") % (self.base_title, length, self.max_length))
+  if self.max_length > 0:
+   self.SetTitle(_("%s - %d of %d Characters") % (self.base_title, length, self.max_length))
+  else:
+   self.SetTitle(_("%s - %d Characters") % (self.base_title, length))
 
  def GetURLList(self):
   urls = []
@@ -200,9 +204,10 @@ class NewMessageDialog(SquareDialog):
   elif key == 13:
    if config.main['UI']['sendMessagesWithEnterKey']:
     self.EndModal(wx.ID_OK)
+   else:
+    evt.Skip()
   elif key == 10:
    if not config.main['UI']['sendMessagesWithEnterKey']:
-    evt.Skip()
     self.EndModal(wx.ID_OK)
    else:
     evt.Skip()
@@ -213,6 +218,7 @@ class NewMessageDialog(SquareDialog):
   self.button_panel = sc.SizedPanel(self.pane, -1)
   self.button_panel.SetSizerType("horizontal")
   self.setup_attachment()
+  self.setup_photo()
   self.setup_translation()
   self.setup_url_shortener_buttons()
   self.setup_schedule()
@@ -239,6 +245,10 @@ class NewMessageDialog(SquareDialog):
  def setup_attachment(self):
   self.attach_audio = wx.Button(parent=self.button_panel, label=_("Attach &Audio..."))
   self.attach_audio.Bind(wx.EVT_BUTTON, self.on_attach_audio)
+
+ def setup_photo(self):
+  self.add_photo = wx.Button(parent=self.button_panel, label=_("Add &Photo..."))
+  self.add_photo.Bind(wx.EVT_BUTTON, self.on_add_photo)
 
  def setup_schedule(self):
   self.delay = 0
@@ -271,6 +281,9 @@ class NewMessageDialog(SquareDialog):
    dlg.cleanup()
    return output.speak(_("There was an error attaching the file."), True)
 
+ def on_add_photo(self, evt):
+  evt.Skip()
+  # @@@
  def upload_completed(self):
   url = json.loads(self.upload_dlg.response['body'])['url']
   logging.debug("Gotten URL: %s" % url)
