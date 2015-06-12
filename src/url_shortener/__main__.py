@@ -25,7 +25,7 @@ def unshorten (url, service=None, **kwargs):
 
 
 def default_service ():
- return shorteners.OnjmeShortener
+ return shorteners.QpsruShortener
 
 def find_service (service, **kwargs):
  for i in shorteners.__all__:

@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+
+# TheQube profile dialog
+# A part of TheQube accessible social networking client
+# Copyright © Andre Polykanine A.K.A. Menelion Elensúlë, 2014 — 2015
+
 from logger import logger
 logging = logger.getChild("sessions.twitter.gui.profile")
 

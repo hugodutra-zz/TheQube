@@ -2,7 +2,7 @@
 
 # TheQube logger
 # A part of TheQube, an accessible social networking client
-# Copyright © TheQube Developers Team, 2014
+# Copyright © TheQube Developers Team, 2014 — 2015
 
 import os
 import logging
@@ -31,8 +31,8 @@ class TheQubeFileHandler(logging.handlers.RotatingFileHandler):
 
 APP_LOG_FILE = u"TheQube.log"
 ERROR_LOG_FILE = u"error.log"
-MESSAGE_FORMAT = "%(asctime)s %(name)s %(levelname)s: %(message)s"
-DATE_FORMAT = "%a %b %d, %Y %H:%M:%S"
+MESSAGE_FORMAT = u"%(asctime)s %(name)s %(levelname)s: %(message)s"
+DATE_FORMAT = u"%a %b %d, %Y %H:%M:%S"
 
 formatter = logging.Formatter(MESSAGE_FORMAT, datefmt=DATE_FORMAT)
 requests_log = logging.getLogger("requests")
