@@ -2,9 +2,13 @@ h1. What's new in TheQube
 
 p. This page lists all the changes and bugfixes made in TheQube, from newest to oldest.
 
-h2. TheQube 0.7.2
+h2. TheQube 0.8
 
+* New: Added the "ux.nu":http://ux.nu URL shortening service.
+* Changed: improved the Twitter credentials storing technology.
 * Fixed: "#49: To authorize the second session, TheQube has to be restarted":https://github.com/Oire/theqube/issues/49. Thanks to Manuel Cortéz for this lovely fix!
+* Fixed: Google translation is back again.
+
 
 h2. TheQube 0.7.1
 
@@ -13,6 +17,7 @@ h2. TheQube 0.7.1
 * Fixed: "#29: Log files grow to insane sizes":https://github.com/Oire/theqube/issues/29. For now the maximum filesize is set to 100 kb.
 * Fixed: Posting audio is back.
 * Fixed: Pressing *Enter* doesn't add a new line on sending a tweet.
+
 
 h2. TheQube 0.7
 

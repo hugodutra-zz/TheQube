@@ -5,10 +5,8 @@ isConfigured=boolean(default=False)
 [oauth]
 # twitterKey=string(default = "VjSApIZocoa5jHXY7eyzdg")
 # twitterSecret=string(default = "vhOSxTsWhIvoogm2C5bzi39QWfFoAIog9fvvyWjaY")
-twitterKey=string(default = "eCeFB9Thb2BKB6KYP4iE1AM0X")
-twitterSecret=string(default = "9Dj12aoF51rLpogIVAgYGVQfSbDhdn0pIfTap7rQo3fRhNYaIN")
-userKey=string(default = "")
-userSecret=string(default = "")
+twitterData=string(default = "WyJwTG5xUXJYNFc1dlUwcTl4bHdnQ3BSSDBPIiwgInl2bmpWcFNEam90ZXMwQWpramtaNFAwOFpZeWNGdVB5ZllLMlFOV25nb3c1ekJYSVhZIl0~")
+userData=string(default = "")
 
 [keymap]
 NewTweet = string(default = "control+win+n")

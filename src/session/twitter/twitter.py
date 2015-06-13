@@ -25,7 +25,11 @@ import time
 import wx
 import BaseHTTPServer
 import webbrowser
+from base64 import b64encode, b64decode
 from urlparse import urlparse, parse_qs
+from string import maketrans
+from json import dumps
+from ast import literal_eval
 from core.sessions.buffers  import Buffers
 from session import Login
 from core.sessions.hotkey.hotkey import Hotkey
@@ -76,7 +80,12 @@ class Twitter (Buffers, Login, Hotkey, SpeechRecognition, WebService):
 
  @always_call_after #madness
  def finish_initialization (self):
-  self.auth_handler = Twython(str(self.config['oauth']['twitterKey']), str(self.config['oauth']['twitterSecret']))
+  twitterDataOrig = str(self.config['oauth']['twitterData'])
+  trans = maketrans("-_~", "+/=")
+  twitterDataTrans = twitterDataOrig.translate(trans)
+  twitterData = b64decode(twitterDataTrans)
+  twitterData = literal_eval(twitterData)
+  self.auth_handler = Twython(twitterData[0], twitterData[1])
   logging.info("%s: Initializing Twitter API" % self.name)
   self.login()
   super(Twitter, self).finish_initialization()
@@ -85,21 +94,30 @@ class Twitter (Buffers, Login, Hotkey, SpeechRecognition, WebService):
  def retrieve_access_token (self):
   output.speak(_("Please wait while an access token is retrieved from Twitter."), True)
   httpd = BaseHTTPServer.HTTPServer(('127.0.0.1', 8080), Handler)
-  tw = Twython(str(self.config['oauth']['twitterKey']), str(self.config['oauth']['twitterSecret']), auth_endpoint='authorize')
+  twitterDataOrig = str(self.config['oauth']['twitterData'])
+  trans = maketrans("-_~", "+/=")
+  twitterDataTrans = twitterDataOrig.translate(trans)
+  twitterData = b64decode(twitterDataTrans)
+  twitterData = literal_eval(twitterData)
+  tw = Twython(twitterData[0], twitterData[1], auth_endpoint='authorize')
   auth = tw.get_authentication_tokens("http://127.0.0.1:8080")
   webbrowser.open_new_tab(auth['auth_url'])
   global logged, verifier
   logged = False
   while logged == False:
    httpd.handle_request()
-  self.auth_handler = Twython(str(self.config['oauth']['twitterKey']), str(self.config['oauth']['twitterSecret']), auth['oauth_token'], auth['oauth_token_secret'])
+  self.auth_handler = Twython(twitterData[0], twitterData[1], auth['oauth_token'], auth['oauth_token_secret'])
   token = self.auth_handler.get_authorized_tokens(verifier)
   output.speak(_("Retrieved access token from Twitter."), True)
   httpd.server_close()
-  self.config['oauth']['userKey'] = token['oauth_token']
-  self.config['oauth']['userSecret'] = token['oauth_token_secret']
+  data = [token['oauth_token'], token['oauth_token_secret']]
+  eData = dumps(data)
+  trans = maketrans("+/=", "-_~")
+  eData = b64encode(eData)
+  eData = eData.translate(trans)
+  self.config['oauth']['userData'] = eData
   self.login()
-  del (httpd, auth, tw, token, logged, verifier, self.auth_handler)
+  del (httpd, auth, tw, token, logged, verifier, twitterData, twitterDataOrig, data, edata, self.auth_handler)
 
 
  login_required = retrieve_access_token 
@@ -108,7 +126,16 @@ class Twitter (Buffers, Login, Hotkey, SpeechRecognition, WebService):
   if self.is_login_required():
    self.retrieve_token()  
   self.save_config()
-  self.TwitterApi = Twython(str(self.config['oauth']['twitterKey']), str(self.config['oauth']['twitterSecret']), self.config['oauth']['userKey'], self.config['oauth']['userSecret'])
+  twitterDataOrig = str(self.config['oauth']['twitterData'])
+  trans = maketrans("-_~", "+/=")
+  twitterDataTrans = twitterDataOrig.translate(trans)
+  twitterData = b64decode(twitterDataTrans)
+  twitterData = literal_eval(twitterData)
+  userDataOrig = str(self.config['oauth']['userData'])
+  userDataTrans = userDataOrig.translate(trans)
+  userData = b64decode(userDataTrans)
+  userData = literal_eval(userData)
+  self.TwitterApi = Twython(twitterData[0], twitterData[1], userData[0], userData[1])
   self.check_twitter_connection()
   resp =  self.api_call('verify_credentials', _("verifying Twitter credentials"), report_success=False, login=True)
   self.username = resp['screen_name']
@@ -129,7 +156,7 @@ class Twitter (Buffers, Login, Hotkey, SpeechRecognition, WebService):
   self.login_required()
 
  def is_login_required (self):
-  return not self.config['oauth']['userKey'] or not self.config['oauth']['userSecret']
+  return not self.config['oauth']['userData']
  
  def load_saved_searches(self):
   searches = self.api_call('get_saved_searches', report_success=False)
@@ -384,8 +411,17 @@ class Twitter (Buffers, Login, Hotkey, SpeechRecognition, WebService):
    self.api_call("disable_notifications", action=_("disabling device notifications for %s") % username, screen_name=username)
 
  def setup_stream(self):
-  consumer = oauth2.Token(key=self.config['oauth']['twitterKey'], secret=self.config['oauth']['twitterSecret'])
-  token = oauth2.Token(key=self.config['oauth']['userKey'], secret=self.config['oauth']['userSecret'])
+  twitterDataOrig = str(self.config['oauth']['twitterData'])
+  trans = maketrans("-_~", "+/=")
+  twitterDataTrans = twitterDataOrig.translate(trans)
+  twitterData = b64decode(twitterDataTrans)
+  twitterData = literal_eval(twitterData)
+  userDataOrig = str(self.config['oauth']['userData'])
+  userDataTrans = userDataOrig.translate(trans)
+  userData = b64decode(userDataTrans)
+  userData = literal_eval(userData)
+  consumer = oauth2.Token(key=twitterData[0], secret=twitterData[1])
+  token = oauth2.Token(key=userData[0], secret=userData[1])
   self.streamer = stream.UserStreamer(consumer=consumer, token=token, callback=self.stream_callback, reconnected_callback=self.update_all_buffers())
   logging.debug("Twitter user stream created.")
   self.daemon_stream = call_threaded(self.streamer.stream)
