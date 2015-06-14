@@ -9,7 +9,6 @@ from utils.wx_utils import always_call_after
 
 import application
 import config
-import crypt
 import global_vars
 import interface
 import core.gui

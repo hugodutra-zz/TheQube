@@ -70,7 +70,7 @@ stdKeyHandling=boolean(default=False)
 
 
 [shortener]
-urlShortener=string(default="onj.me")
+urlShortener=string(default="qps.ru")
 
 [AudioServices]
 service=string(default="sndup.net")

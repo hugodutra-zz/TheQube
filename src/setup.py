@@ -11,7 +11,7 @@ logging = logger.getChild("Installer")
 
 
 name = 'TheQube'
-__version__ = 0.7
+__version__ = 0.8
 __author__ = 'TheQube developers team'
 DELETE_DIRS = (
  'build',

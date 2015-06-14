@@ -1,6 +1,6 @@
-h1. TheQube 0.7.1 Readme
+h1. TheQube 0.8-alpha1 Readme
 Copyright © TheQube Developers and Translators Team, 2014
-Last Updated: March 10th, 2015
+Last Updated: June 14th, 2015
 
 h1. Preproduction warning
 

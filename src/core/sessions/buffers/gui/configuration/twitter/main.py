@@ -2,8 +2,6 @@ from logger import logger
 logging = logger.getChild("sessions.buffers.gui.configuration")
 
 from pydispatch import dispatcher
-
-import crypt
 import signals
 from utils.thread_utils import call_threaded
 import wx
