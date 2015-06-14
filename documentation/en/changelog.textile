@@ -8,7 +8,7 @@ h2. TheQube 0.8
 * Changed: improved the Twitter credentials storing technology.
 * Fixed: "#49: To authorize the second session, TheQube has to be restarted":https://github.com/Oire/theqube/issues/49. Thanks to Manuel Cortéz for this lovely fix!
 * Fixed: Google translation is back again.
-
+* Fixed: errors in Brazilian Portuguese translation preventing TheQube from working normally.
 
 h2. TheQube 0.7.1
 
