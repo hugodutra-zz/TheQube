@@ -7,6 +7,7 @@ h2. TheQube 0.8
 * New: Added the "ux.nu":http://ux.nu URL shortening service.
 * Changed: improved the Twitter credentials storing technology.
 * Fixed: "#49: To authorize the second session, TheQube has to be restarted":https://github.com/Oire/theqube/issues/49. Thanks to Manuel Cortéz for this lovely fix!
+* Fixed: "#56: If a user follows, unfollows or blocks someone, TheQube doesn't check for repeating actions":https://github.com/Oire/theqube/issues/56.
 * Fixed: Google translation is back again.
 * Fixed: errors in Brazilian Portuguese translation preventing TheQube from working normally.
 

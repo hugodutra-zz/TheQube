@@ -256,17 +256,34 @@ class Twitter (Buffers, Login, Hotkey, SpeechRecognition, WebService):
   output.speak(message, True)
 
  def follow (self, screen_name, updates=False):
-  if updates:
-   self.api_call('create_friendship', _("following %s") % screen_name, screen_name=screen_name)
-  else:
-   self.api_call('create_friendship', _("following %s") % screen_name, screen_name=screen_name, updates=updates)
+  already = self.api_call('lookup_friendships', screen_name=screen_name, report_success=False)
+  conns = already[0]['connections']
+  if 'following' in conns:
+   output.speak(_("You already follow %s" % screen_name))
+  elif 'following_requested' in conns:
+   output.speak(_("You have already sent a request to follow %s" % screen_name))
+  elif 'blocking' in conns:
+   output.speak(_("You can't follow %s because you blocked this user" % screen_name))
+  else: # Not following, so proceeding to follow
+   if updates:
+    self.api_call('create_friendship', _("following %s") % screen_name, screen_name=screen_name)
+   else:
+    self.api_call('create_friendship', _("following %s") % screen_name, screen_name=screen_name, updates=updates)
 
  def do_unfollow (self, screen_name, action):
-  if action == 0:
-   self.api_call('destroy_friendship', _("unfollowing %s") % screen_name, screen_name=screen_name)
-  elif action == 1:
-   self.api_call('create_block', _("blocking %s") % screen_name, screen_name=screen_name)
-  elif action == 2:
+  already = self.api_call('lookup_friendships', screen_name=screen_name, report_success=False)
+  conns = already[0]['connections']
+  if action == 0: # Unfollowing
+   if 'following' not in conns:
+    output.speak(_("You are not following %s" % screen_name))
+   else: # Proceeding to unfollow
+    self.api_call('destroy_friendship', _("unfollowing %s") % screen_name, screen_name=screen_name)
+  elif action == 1: # Blocking
+   if 'blocking' in conns:
+    output.speak(_("You have already blocked %s" % screen_name))
+   else:
+    self.api_call('create_block', _("blocking %s") % screen_name, screen_name=screen_name)
+  elif action == 2: # Reporting for spam
    self.api_call('report_spam', _("reporting %s as spam") % screen_name, screen_name=screen_name)
 
  def check_twitter_connection (self):
