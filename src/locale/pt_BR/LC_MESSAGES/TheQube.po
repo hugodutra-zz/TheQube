@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: The qube 0.8\n"
 "POT-Creation-Date: 2014-10-24 00:19+FLE Daylight Time\n"
-"PO-Revision-Date: 2015-06-15 00:56+0200\n"
+"PO-Revision-Date: 2015-07-12 19:25+0300\n"
 "Last-Translator: Andre Polykanine A.K.A. Menelion Elensúlë <menelion@oire."
 "org>\n"
 "Language-Team: TheQube developers and translators team <theqube@lists.oire."
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"X-Generator: Poedit 1.8.1\n"
+"X-Generator: Poedit 1.8.2\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
@@ -30,7 +30,7 @@ msgstr "&Ir para"
 
 #: ../src\core\gui\SessionManager\main.py:24
 msgid "&Delete session..."
-msgstr "E&xcluir Sessão"
+msgstr "E&xcluir Sessão..."
 
 #: ../src\core\gui\SessionManager\main.py:26
 msgid "&New session..."
@@ -38,7 +38,7 @@ msgstr "&Nova Sessão..."
 
 #: ../src\core\gui\SessionManager\main.py:40
 msgid "Are you sure you want to close session %s?"
-msgstr "Você deseja fechar a sessão %s?"
+msgstr "Você tem certeza de que deseja fechar a sessão %s?"
 
 #: ../src\core\gui\SessionManager\main.py:40
 msgid "Remove session"
@@ -68,7 +68,7 @@ msgstr "Remover Sessão"
 #: ../src\session\twitter\twitter.py:289 ../src\session\twitter\twitter.py:295
 #: ../src\session\twitter\twitter.py:306 ../src\utils\wx_utils.py:17
 msgid "Canceled."
-msgstr "Cancelado"
+msgstr "Cancelado."
 
 #: ../src\core\gui\SessionManager\main.py:54
 msgid "Type"
@@ -89,7 +89,7 @@ msgstr "Nova Sessão"
 
 #: ../src\core\gui\SessionManager\new_session.py:11
 msgid "Session type:"
-msgstr "Tipo da Sessão"
+msgstr "Tipo da Sessão:"
 
 #: ../src\core\gui\SessionManager\new_session.py:16
 msgid "Session name:"
@@ -105,7 +105,7 @@ msgstr "Idioma"
 
 #: ../src\core\gui\configuration\main.py:25
 msgid "Speech and Braille"
-msgstr "Voz e Braille"
+msgstr "Fala e Braille"
 
 #: ../src\core\gui\configuration\main.py:27
 msgid "Navigation"
@@ -118,19 +118,19 @@ msgstr "Diversos"
 
 #: ../src\core\gui\configuration\panels\language.py:10
 msgid "Language Selection:"
-msgstr "Seleção do idioma"
+msgstr "Seleção do idioma:"
 
 #: ../src\core\gui\configuration\panels\misc.py:14
 msgid "Automatically start %s after Windows log on"
-msgstr "Iniciar o %s após o logon no Windows"
+msgstr "Executar o %s após a inicialização do Windows"
 
 #: ../src\core\gui\configuration\panels\misc.py:15
 msgid "Show confirmation dialog before exiting %s"
-msgstr "Exibir confirmação ao sair do %s "
+msgstr "Exibir um diálogo de confirmação antes de sair do %s"
 
 #: ../src\core\gui\configuration\panels\misc.py:16
 msgid "Preferred URL Shortener:"
-msgstr "Encurtador de URL preferido:"
+msgstr "Encurtador de links preferido:"
 
 #: ../src\core\gui\configuration\panels\misc.py:19
 msgid "Preferred audio service:"
@@ -142,11 +142,11 @@ msgstr "Sua tecla %s (opcional):"
 
 #: ../src\core\gui\configuration\panels\misc.py:31
 msgid "Send messages with Enter"
-msgstr "Enviar mensagem com enter"
+msgstr "Enviar mensagem com o Enter"
 
 #: ../src\core\gui\configuration\panels\misc.py:32
 msgid "Perform standard actions with Home/End keys"
-msgstr "Teclas home e end comportam-se de maneira padrão."
+msgstr "Teclas home e end comportam-se de maneira padrão"
 
 # Porcentagem a mover pelo
 #: ../src\core\gui\configuration\panels\navigation.py:7
@@ -155,7 +155,7 @@ msgstr "Porcentagem a qual mover no Exibidor"
 
 #: ../src\core\gui\configuration\panels\navigation.py:11
 msgid "Move by time (defined as hours:minutes) hours"
-msgstr "Mover pela linha do tempo definido como horas, minutos, horas"
+msgstr "Mover pela linha do tempo (definido como horas:minutos) horas"
 
 #: ../src\core\gui\configuration\panels\navigation.py:15
 msgid "Move by time (defined as hours:minutes) minutes"
@@ -187,7 +187,7 @@ msgstr "Saída Braille"
 
 #: ../src\core\gui\configuration\panels\speech.py:30
 msgid "Braille spoken text"
-msgstr "Texto Braille falado"
+msgstr "Texto falado em Braille"
 
 #: ../src\core\gui\configuration\panels\speech.py:31
 msgid "Enable speech recognition"
@@ -203,7 +203,7 @@ msgstr "Selecione uma URL para abrir"
 
 #: ../src\core\gui\list_urls.py:22 ../src\core\gui\new_message.py:239
 msgid "&Unshorten URL"
-msgstr "&Desencurtar Endereço"
+msgstr "&Desencurtar URL"
 
 #: ../src\core\gui\list_urls.py:25
 msgid "&Copy URL"
@@ -211,7 +211,7 @@ msgstr "&Copiar URL"
 
 #: ../src\core\gui\list_urls.py:49 ../src\core\gui\new_message.py:168
 msgid "URL expanded."
-msgstr "URL Expandida"
+msgstr "URL desencurtada."
 
 #: ../src\core\gui\list_urls.py:52
 msgid "Unable to expand URL"
@@ -219,11 +219,11 @@ msgstr "Não foi possível desencurtar a URL"
 
 #: ../src\core\gui\list_urls.py:67
 msgid "URL copied to clipboard."
-msgstr "URL copiada para a área de transferência"
+msgstr "URL copiada para a área de transferência."
 
 #: ../src\core\gui\login.py:15
 msgid "Username"
-msgstr "Nome de Usuário:"
+msgstr "Nome de usuário"
 
 #: ../src\core\gui\login.py:16
 msgid "Password"
@@ -231,67 +231,67 @@ msgstr "Senha"
 
 #: ../src\core\gui\new_message.py:60 ../src\core\gui\selectable_message.py:29
 msgid "%s - %d of %d Characters"
-msgstr "%s - %d de %d caracteres "
+msgstr "%s - %d de %d caracteres"
 
 #: ../src\core\gui\new_message.py:82
 msgid "URL Shortener - No URLs"
-msgstr "Encurtador de URL - Nenhuma URL"
+msgstr "Encurtador de links - Nenhum link"
 
 #: ../src\core\gui\new_message.py:83
 msgid ""
 "No URLs were found to shorten. If there is one, select the URL and click "
 "this button again."
 msgstr ""
-"Nenhuma URL encontrada para encurtar, caso exista uma, selecione-a e "
-"pressione este botão novamente. "
+"Nenhum link encontrado para encurtar, caso exista um, selecione-o e "
+"pressione este botão novamente."
 
 #: ../src\core\gui\new_message.py:97
 msgid "URL Shortener - Select URL"
-msgstr "Encurtador de URL - Selecione uma URL "
+msgstr "Encurtador de links - Selecione um link"
 
 #: ../src\core\gui\new_message.py:98
 msgid "Select URL to shorten."
-msgstr "Selecione uma URL para encurtar."
+msgstr "Selecione um link para encurtar."
 
 #: ../src\core\gui\new_message.py:114
 msgid "URL Shortened."
-msgstr "URL encurtada."
+msgstr "Link encurtado."
 
 #: ../src\core\gui\new_message.py:117
 msgid "URL Shortener - Problem"
-msgstr "Problema ao encurtar a URL"
+msgstr "Problema ao encurtar o link"
 
 #: ../src\core\gui\new_message.py:118
 msgid "There was a problem shortening the selected URL."
-msgstr "Erro ao encurtar a URL selecionada."
+msgstr "Houve um problema ao tentar encurtar o link selecionado."
 
 #: ../src\core\gui\new_message.py:132
 msgid "URL Unshortener - No URLs"
-msgstr "Encurtador de URL - Nenhuma URL"
+msgstr "Desencurtador de links - Nenhum link"
 
 #: ../src\core\gui\new_message.py:133
 msgid ""
 "No URLs were found to unshorten. If there is one, select the URL and click "
 "this button again."
 msgstr ""
-"Desencurtador de URL - Nenhuma URL encontrada para desencurtar, caso exista "
-"uma, selecione-a e pressione este botão novamente"
+"Não foram encontrados links para desencurtar. Caso exista um, selecione-o e "
+"pressione este botão novamente"
 
 #: ../src\core\gui\new_message.py:147
 msgid "URL Unshortener - Select URL"
-msgstr "Desencurtador de URL - Selecione uma URL"
+msgstr "Desencurtador de links - Selecione um link"
 
 #: ../src\core\gui\new_message.py:148
 msgid "Select URL to unshorten."
-msgstr "Selecione URL para desencurtar"
+msgstr "Selecione um link para desencurtar."
 
 #: ../src\core\gui\new_message.py:171
 msgid "URL Unshortener - Problem"
-msgstr "Problema ao desencurtar a URL"
+msgstr "Problema ao desencurtar o link."
 
 #: ../src\core\gui\new_message.py:172
 msgid "There was a problem unshortening the selected URL."
-msgstr "Ocorreu um problema ao desencurtar a URL selecionada."
+msgstr "Houve um problema ao tentar desencurtar o link selecionado."
 
 #: ../src\core\gui\new_message.py:226
 msgid "Message:"
@@ -299,7 +299,7 @@ msgstr "Mensagem:"
 
 #: ../src\core\gui\new_message.py:237
 msgid "&Shorten URL"
-msgstr "&Encurtar URL"
+msgstr "&Encurtar link"
 
 #: ../src\core\gui\new_message.py:243
 msgid "Attach &Audio..."
@@ -311,7 +311,7 @@ msgstr "A&gendar a mensagem"
 
 #: ../src\core\gui\new_message.py:259
 msgid "Attaching..."
-msgstr "Adicionando..."
+msgstr "Anexando..."
 
 #: ../src\core\gui\new_message.py:266
 msgid "Upload in progress"
@@ -347,15 +347,15 @@ msgstr "Traduzir mensagem"
 
 #: ../src\core\gui\new_message.py:319 ../src\session\twitter\interface.py:741
 msgid "Translation process has failed."
-msgstr "Erro no Processo de tradução"
+msgstr "Erro no Processo de tradução."
 
 #: ../src\core\gui\qube.py:18 ../src\core\sessions\hotkey\interface.py:36
 msgid "Modifiers unlocked."
-msgstr "Modificadores desbloqueados"
+msgstr "Modificadores desbloqueados."
 
 #: ../src\core\gui\recording.py:17
 msgid "Attach audio"
-msgstr "Adicionar áudio"
+msgstr "Anexar áudio"
 
 #: ../src\core\gui\recording.py:24 ../src\core\gui\recording.py:65
 msgid "&Record"
@@ -363,7 +363,7 @@ msgstr "&Gravar"
 
 #: ../src\core\gui\recording.py:26
 msgid "Attach existing audio &file..."
-msgstr "Adicionar arquivo &existente..."
+msgstr "Adicionar um arquivo &existente..."
 
 #: ../src\core\gui\recording.py:28 ../src\core\gui\recording.py:113
 #: ../src\core\gui\recording.py:123
@@ -376,7 +376,7 @@ msgstr "&Descartar"
 
 #: ../src\core\gui\recording.py:37
 msgid "&Attach!"
-msgstr "&Adicionar!"
+msgstr "&Anexar!"
 
 #: ../src\core\gui\recording.py:57 ../src\core\gui\recording.py:109
 msgid "&Stop"
@@ -392,19 +392,19 @@ msgstr "Parado"
 
 #: ../src\core\gui\recording.py:71
 msgid "Select audio file"
-msgstr "Selecionar arquivo de áudio"
+msgstr "Selecione o arquivo de áudio"
 
 #: ../src\core\gui\recording.py:97
 msgid "Discarded."
-msgstr "Descartado"
+msgstr "Descartado."
 
 #: ../src\core\gui\recording.py:107
 msgid "Playing."
-msgstr "Reproduzindo"
+msgstr "Reproduzindo."
 
 #: ../src\core\gui\recording.py:128
 msgid "Transcoding audio."
-msgstr "Codificando áudio"
+msgstr "Codificando áudio."
 
 #: ../src\core\gui\schedule.py:16
 msgid "Interval"
@@ -412,7 +412,7 @@ msgstr "Intervalo"
 
 #: ../src\core\gui\schedule.py:16
 msgid "Select scheduling method"
-msgstr "Selecionar método de agendamento"
+msgstr "Selecione o método de agendamento"
 
 #: ../src\core\gui\schedule.py:16
 #: ../src\core\sessions\buffers\buffers\messages.py:21
@@ -421,23 +421,23 @@ msgstr "Tempo"
 
 #: ../src\core\gui\schedule.py:44 ../src\session\stopwatch\gui\countdown.py:11
 msgid "Hours:"
-msgstr "Horas"
+msgstr "Horas:"
 
 #: ../src\core\gui\schedule.py:46 ../src\session\stopwatch\gui\countdown.py:14
 msgid "Minutes:"
-msgstr "Minutos"
+msgstr "Minutos:"
 
 #: ../src\core\gui\schedule.py:48 ../src\session\stopwatch\gui\countdown.py:17
 msgid "Seconds:"
-msgstr "Segundos"
+msgstr "Segundos:"
 
 #: ../src\core\gui\schedule.py:60
 msgid "Hour:"
-msgstr "Hora"
+msgstr "Hora:"
 
 #: ../src\core\gui\selectable_message.py:17
 msgid "Recipient:"
-msgstr "Destinatário"
+msgstr "Destinatário:"
 
 #: ../src\core\gui\selectable_message.py:28
 msgid "%s to %s"
@@ -445,19 +445,19 @@ msgstr "%s para %s"
 
 #: ../src\core\gui\translate.py:21
 msgid "Translate"
-msgstr "Traduza"
+msgstr "Traduzir"
 
 #: ../src\core\gui\translate.py:28
 msgid "Auto detect"
-msgstr "Auto detectar"
+msgstr "Detecção automática"
 
 #: ../src\core\gui\translate.py:30
 msgid "Source language:"
-msgstr "Idioma de origem"
+msgstr "Idioma de origem:"
 
 #: ../src\core\gui\translate.py:32
 msgid "Destination language:"
-msgstr "Idioma de destino"
+msgstr "Idioma de destino:"
 
 #: ../src\core\sessions\buffers\buffers\buffer.py:52
 msgid "Total"
@@ -489,7 +489,7 @@ msgstr "Item %d de %d"
 
 #: ../src\core\sessions\buffers\buffers\filtered.py:157
 msgid "Removed all matching items from source %s"
-msgstr "Removido todos os itens da origem %s"
+msgstr "Removido todos os itens da fonte %s"
 
 #: ../src\core\sessions\buffers\buffers\filtered.py:190
 msgid "rx {term}"
@@ -570,11 +570,11 @@ msgstr "Mensagens"
 
 #: ../src\core\sessions\buffers\buffers\updating.py:78
 msgid "Update already in progress; please wait."
-msgstr "Atualização em andamento, por favor aguarde."
+msgstr "A atualização já está em andamento... por favor aguarde."
 
 #: ../src\core\sessions\buffers\buffers\updating.py:124
 msgid "No new %s."
-msgstr "Sem novos %s"
+msgstr "Sem novos %s."
 
 #: ../src\core\sessions\buffers\buffers\updating.py:131
 msgid "%s: %s"
@@ -602,7 +602,7 @@ msgstr "Atenção"
 
 #: ../src\core\sessions\buffers\gui\configuration\twitter\panels\buffer.py:9
 msgid "Update interval (in minutes)"
-msgstr "Intervalo para atualização, em minutos."
+msgstr "Intervalo para atualização (em minutos)"
 
 #: ../src\core\sessions\buffers\gui\configuration\twitter\panels\buffer.py:13
 msgid "Number of posts to download per update"
@@ -615,12 +615,12 @@ msgstr "Buscar por "
 #: ../src\core\sessions\buffers\gui\configuration\twitter\panels\buffer.py:20
 msgid "Max API calls to use per update (1 API call = 100 results)"
 msgstr ""
-"Número máximo de chamadas a usar por atualização (1) chamada = 100 twets)"
+"Número máximo de chamadas a usar por atualização (1 chamada = 100 tweets)"
 
 #: ../src\core\sessions\buffers\gui\configuration\twitter\panels\buffer.py:22
 msgid "Max API calls to use per update (1 API call = 200 tweets)"
 msgstr ""
-"Número máximo de chamadas a usar por atualização (1) chamada = 200 twets)"
+"Número máximo de chamadas a usar por atualização (1 chamada = 200 tweets)"
 
 #: ../src\core\sessions\buffers\gui\configuration\twitter\panels\buffer.py:27
 msgid "Mute buffer"
@@ -712,7 +712,7 @@ msgstr "Filtro: %s"
 
 #: ../src\core\sessions\buffers\gui\filter.py:16
 msgid "Filters:"
-msgstr "Filtro:"
+msgstr "Filtro: "
 
 #: ../src\core\sessions\buffers\gui\filter.py:20
 msgid "&Add"
@@ -748,7 +748,7 @@ msgstr "Expressão regular: "
 
 #: ../src\core\sessions\buffers\gui\filter.py:88
 msgid "Term:"
-msgstr "Termo:"
+msgstr "Termo: "
 
 #: ../src\core\sessions\buffers\gui\filter.py:172
 msgid "replacement "
@@ -756,11 +756,11 @@ msgstr "Substituição"
 
 #: ../src\core\sessions\buffers\gui\filter.py:174
 msgid "without "
-msgstr "sem"
+msgstr "sem "
 
 #: ../src\core\sessions\buffers\gui\filter.py:176
 msgid "with "
-msgstr "com"
+msgstr "com "
 
 #: ../src\core\sessions\buffers\gui\filter.py:178
 msgid "RX "
@@ -768,7 +768,7 @@ msgstr "RX "
 
 #: ../src\core\sessions\buffers\gui\jump_to_item.py:10
 msgid "Enter item number to jump to, 1 to %s:"
-msgstr "Digite o número do item para qual saltar, de 1 a %s "
+msgstr "Digite o número do item para qual saltar, de 1 a %s: "
 
 #: ../src\core\sessions\buffers\interface.py:64
 #: ../src\core\sessions\buffers\interface.py:77
@@ -795,7 +795,7 @@ msgstr "Falha ao desfazer: Fila vazia."
 
 #: ../src\core\sessions\buffers\interface.py:148
 msgid "Undo failed: buffer no longer exists"
-msgstr "Falha ao desfazer: Fila não mais existe"
+msgstr "Falha ao desfazer: Fila não existe mais"
 
 #: ../src\core\sessions\buffers\interface.py:160
 msgid "This buffer cannot be cleared."
@@ -803,7 +803,7 @@ msgstr "Não é possível limpar este exibidor"
 
 #: ../src\core\sessions\buffers\interface.py:161
 msgid "Are you sure you want to delete %d items from %s?"
-msgstr "Você deseja excluir %d itens do %s?"
+msgstr "Você tem certeza que deseja excluir %d itens de %s?"
 
 #: ../src\core\sessions\buffers\interface.py:161
 msgid "Clear buffer"
@@ -986,7 +986,7 @@ msgstr "Modificadores bloqueados"
 
 #: ../src\core\sessions\sound\buffers\audio.py:17
 msgid "Attached Audio"
-msgstr "Áudio adicionado"
+msgstr "Áudio anexado"
 
 #: ../src\core\sessions\sound\buffers\audio.py:42
 msgid "playing audio."
@@ -1030,11 +1030,11 @@ msgstr "todos os sons ativados"
 
 #: ../src\core\sessions\storage\storage.py:59
 msgid "Sync failed."
-msgstr "Falha na sincronia."
+msgstr "Falha na sincronização."
 
 #: ../src\core\sessions\storage\storage.py:63
 msgid "Sync completed."
-msgstr "Sincronia concluída"
+msgstr "Sincronização concluída."
 
 #: ../src\durus_importer.py:18
 msgid "Loading file..."
@@ -1054,11 +1054,11 @@ msgstr "Desculpe, Ocorreu um erro no processo de inicialização."
 
 #: ../src\meta_interface.py:41
 msgid "%s Configuration"
-msgstr "Configoração do %s"
+msgstr "Configuração do %s"
 
 #: ../src\meta_interface.py:51
 msgid "Are you sure you wish to exit %s?"
-msgstr "Você deseja sair do %s?"
+msgstr "Você tem certeza que deseja sair do %s?"
 
 #: ../src\meta_interface.py:51
 msgid "Exit %s"
@@ -1248,7 +1248,7 @@ msgstr "%s Usuários bloqueados obtidos"
 
 #: ../src\session\twitter\buffers\blocked.py:40
 msgid "Are you sure you wish to unblock %s?"
-msgstr "Você realmente deseja desbloquear o usuário %s?"
+msgstr "Você tem certeza que deseja desbloquear o usuário %s?"
 
 #: ../src\session\twitter\buffers\blocked.py:40
 msgid "Unblock"
@@ -1269,7 +1269,7 @@ msgstr "Mensagens diretas"
 #: ../src\session\twitter\buffers\directs.py:21
 #: ../src\session\twitter\buffers\tweets.py:16
 msgid "Screen Name"
-msgstr "Nome de exibição"
+msgstr "Nome de tela"
 
 #: ../src\session\twitter\buffers\favorites.py:26
 msgid "favorite"
@@ -1282,11 +1282,11 @@ msgstr "Favoritos"
 #: ../src\session\twitter\buffers\favorites.py:43
 #: ../src\session\twitter\twitter.py:372
 msgid "Tweet removed from favorites."
-msgstr "Twet Removido dos favoritos."
+msgstr "Tweet Removido dos favoritos."
 
 #: ../src\session\twitter\buffers\favorites.py:46
 msgid "Unable to remove tweet from favorites."
-msgstr "Não foi possível remover o Twet dos favoritos."
+msgstr "Não foi possível remover o Tweet dos favoritos."
 
 #: ../src\session\twitter\buffers\followers.py:17
 #: ../src\session\twitter\buffers\followers.py:21
@@ -1340,7 +1340,7 @@ msgstr "Lista de Membros"
 #: ../src\session\twitter\buffers\list_members.py:34
 #: ../src\session\twitter\buffers\list_subscribers.py:34
 msgid "Are you sure you wish to remove %s from list %s?"
-msgstr "Você realmente deseja excluir %s da lista %s?"
+msgstr "Você tem certeza que deseja excluir %s da lista %s?"
 
 #: ../src\session\twitter\buffers\list_members.py:34
 #: ../src\session\twitter\buffers\list_subscribers.py:34
@@ -1485,7 +1485,7 @@ msgstr "Buscar"
 
 #: ../src\session\twitter\buffers\tweets.py:12
 msgid "Tweet Source"
-msgstr "Origem do Tweet"
+msgstr "Fonte do Tweet"
 
 #: ../src\session\twitter\buffers\tweets.py:13
 msgid "Geo Tagged"
@@ -1880,7 +1880,7 @@ msgstr "Número de Amigos:"
 
 #: ../src\session\twitter\gui\profile.py:47
 msgid "Number of having this user in their lists:"
-msgstr "Número de Vezes que este Usuário aparece nas suas listas:"
+msgstr "Número de pessoas que tem este usuário em suas listas"
 
 #: ../src\session\twitter\gui\profile.py:49
 msgid "Number of tweets:"
@@ -1904,11 +1904,11 @@ msgstr "Data que entrou no Twitter:"
 
 #: ../src\session\twitter\gui\profile.py:93
 msgid "Follow %s"
-msgstr "Seguindo %s"
+msgstr "Seguir %s"
 
 #: ../src\session\twitter\gui\profile.py:96
 msgid "Unfollow %s"
-msgstr "Largando %s"
+msgstr "Largar %s"
 
 #: ../src\session\twitter\gui\profile_update.py:10
 msgid "Update profile"
@@ -2017,7 +2017,7 @@ msgstr "Visualizar Tweet de %s"
 
 #: ../src\session\twitter\interface.py:131
 msgid "Item is not a post."
-msgstr "ítem não é um post."
+msgstr "O item não é um post."
 
 #: ../src\session\twitter\interface.py:134
 msgid "Cannot retweet a direct message while DM safe mode is enabled."
@@ -2039,15 +2039,15 @@ msgstr "Retwitar"
 
 #: ../src\session\twitter\interface.py:160
 msgid "No users to follow detected in current post."
-msgstr "Não foram detectados Usuários a qual seguir nesta postagem."
+msgstr "Não foram detectados Usuários para seguir nesta postagem."
 
 #: ../src\session\twitter\interface.py:173
 msgid "No users to unfollow detected in current post."
-msgstr "Não foram detectados Usuários a qual largar nesta postagem."
+msgstr "Não foram detectados Usuários para largar nesta postagem."
 
 #: ../src\session\twitter\interface.py:200
 msgid "No URLs detected in current post."
-msgstr "Nenhuma URL detectada nesta postagem."
+msgstr "Nenhum link detectada nesta postagem."
 
 #: ../src\session\twitter\interface.py:213
 msgid "Twitter search"
@@ -2102,7 +2102,7 @@ msgstr "Carregando lista de Amigos"
 msgid ""
 "Please launch your followers buffer before attempting to perform analysis."
 msgstr ""
-"Favor carregue o exibidor dos seus Seguidores antes de tentar realizar a "
+"Por favor carregue o exibidor dos seus Seguidores antes de tentar realizar a "
 "análise."
 
 #: ../src\session\twitter\interface.py:280
@@ -2135,7 +2135,7 @@ msgstr "Carregando linha do tempo de %s."
 
 #: ../src\session\twitter\interface.py:360
 msgid "%s's followers"
-msgstr "%s Seguidores"
+msgstr "seguidores de %s"
 
 #: ../src\session\twitter\interface.py:361
 #: ../src\session\twitter\interface.py:373
@@ -2144,7 +2144,7 @@ msgstr "Carregando amigos de %s."
 
 #: ../src\session\twitter\interface.py:372
 msgid "%s's friends"
-msgstr "%s Amigos"
+msgstr "amigos de %s"
 
 #: ../src\session\twitter\interface.py:405
 msgid "This command is not supported from within a search buffer."
@@ -2176,7 +2176,8 @@ msgstr "Cancelado"
 
 #: ../src\session\twitter\interface.py:489
 msgid "Are you sure you want to import %d items from old database?"
-msgstr "Você deseja importar os %s itens da base de dados anterior?"
+msgstr ""
+"Você tem certeza que deseja importar os %s itens da base de dados anterior?"
 
 #: ../src\session\twitter\interface.py:489
 msgid "Are you sure?"
@@ -2355,7 +2356,7 @@ msgstr "Diretas"
 
 #: ../src\session\twitter\twitter.py:64
 msgid "Home"
-msgstr "início"
+msgstr "Principal"
 
 #: ../src\session\twitter\twitter.py:64
 msgid "Mentions"

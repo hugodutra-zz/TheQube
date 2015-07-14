@@ -56,10 +56,10 @@ class Twitter (Updating, Storage, Audio, APICount):
   for i in update:
    if 'text' in i:
     i['text'] = html_filter.StripChars(i['text'])
-    i['text'] = i['text'].replace('\n', ' ')
    if 'retweeted_status' in i and 'text' in i['retweeted_status']:
     i['retweeted_status']['text'] = html_filter.StripChars(i['retweeted_status']['text'])
-    i['retweeted_status']['text'] = i['retweeted_status']['text'].replace('\n', ' ')
+   if 'quoted_status' in i and 'text' in i['quoted_status']:
+    i['quoted_status']['text'] = html_filter.StripChars(i['quoted_status']['text'])
   return update
 
  def process_source(self, field):
@@ -131,7 +131,7 @@ class Twitter (Updating, Storage, Audio, APICount):
   step = step * 60
   new_index = len(self) - 1
   current_tweet_time = self.standardize_timestamp (self[index]['created_at'])
-  for i in range(index+1, len(self)):
+  for i in xrange(index+1, len(self)):
    if self.standardize_timestamp (self[i]['created_at']) - current_tweet_time >= step:
     new_index = i
     break
@@ -143,7 +143,7 @@ class Twitter (Updating, Storage, Audio, APICount):
   step = step * 60
   new_index = 0
   current_tweet_time = self.standardize_timestamp (self[index]['created_at'])
-  for i in range(index-1, -1, -1):
+  for i in xrange(index-1, -1, -1):
    if current_tweet_time - self.standardize_timestamp (self[i]['created_at']) >= step:
     new_index = i
     break
@@ -179,6 +179,8 @@ class Twitter (Updating, Storage, Audio, APICount):
 
  @buffer_defaults
  def get_text(self, index=None, item=None):
+  if 'quoted_status' in item:
+   logging.debug("@Tweet with quote: %s" % item['text'].split(u'http')[:-1][0])
   if 'retweeted_status' not in item and 'text' in item:
    text = item['text']
   elif 'retweeted_status' in item and 'text' in item['retweeted_status']:

@@ -99,7 +99,10 @@ class Twitter (Buffers, Login, Hotkey, SpeechRecognition, WebService):
   twitterData = b64decode(twitterDataTrans)
   twitterData = literal_eval(twitterData)
   tw = Twython(twitterData[0], twitterData[1], auth_endpoint='authorize')
-  auth = tw.get_authentication_tokens("http://127.0.0.1:8080")
+  try:
+   auth = tw.get_authentication_tokens("http://127.0.0.1:8080")
+  except SSLError:
+   output.speak(_("Sorry, we can't connect to Twitter. You may want to adjust your firewall or antivirus software appropriately", True))
   webbrowser.open_new_tab(auth['auth_url'])
   global logged, verifier
   logged = False
@@ -259,11 +262,11 @@ class Twitter (Buffers, Login, Hotkey, SpeechRecognition, WebService):
   already = self.api_call('lookup_friendships', screen_name=screen_name, report_success=False)
   conns = already[0]['connections']
   if 'following' in conns:
-   output.speak(_("You already follow %s" % screen_name))
+   output.speak(_("You already follow %s" % screen_name), True)
   elif 'following_requested' in conns:
-   output.speak(_("You have already sent a request to follow %s" % screen_name))
+   output.speak(_("You have already sent a request to follow %s" % screen_name), True)
   elif 'blocking' in conns:
-   output.speak(_("You can't follow %s because you blocked this user" % screen_name))
+   output.speak(_("You can't follow %s because you blocked this user" % screen_name), True)
   else: # Not following, so proceeding to follow
    if updates:
     self.api_call('create_friendship', _("following %s") % screen_name, screen_name=screen_name)
@@ -275,12 +278,12 @@ class Twitter (Buffers, Login, Hotkey, SpeechRecognition, WebService):
   conns = already[0]['connections']
   if action == 0: # Unfollowing
    if 'following' not in conns:
-    output.speak(_("You are not following %s" % screen_name))
+    output.speak(_("You are not following %s" % screen_name), True)
    else: # Proceeding to unfollow
     self.api_call('destroy_friendship', _("unfollowing %s") % screen_name, screen_name=screen_name)
   elif action == 1: # Blocking
    if 'blocking' in conns:
-    output.speak(_("You have already blocked %s" % screen_name))
+    output.speak(_("You have already blocked %s" % screen_name), True)
    else:
     self.api_call('create_block', _("blocking %s") % screen_name, screen_name=screen_name)
   elif action == 2: # Reporting for spam
