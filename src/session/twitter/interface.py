@@ -65,7 +65,7 @@ class TwitterInterface (BuffersInterface, HotkeyInterface, MetaInterface):
   new = modal_dialog(gui.NewDirectDialog, parent=self.session.frame, default=who[0], selection=who, title=_("Direct message"), text=text)
   user = new.selection.GetValue()
   text = new.message.GetValue()
-  if len(text) > self.session.config['lengths']['tweetLength']:
+  if len(text) > self.session.config['lengths']['dmLength']:
    logging.info("Direct message too long.  Forcing edit.")
    return self.NewDm (buffer, index, user, text)
   if new.delay:

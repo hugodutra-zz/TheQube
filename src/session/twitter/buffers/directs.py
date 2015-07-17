@@ -22,7 +22,7 @@ class Directs (Tweets):
   self.init_done_event.set()
 
  def retrieve_update(self, *args, **kwargs):
-  return self.timeline_update(update_function_name='get_direct_messages', since_id=self.get_max_twitter_id(), include_entities=True)
+  return self.timeline_update(update_function_name='get_direct_messages', since_id=self.get_max_twitter_id(), include_entities=True, full_text=True)
 
  def handles_post(self, post):
   if 'direct_message' in post and post['direct_message']['recipient']['screen_name'].lower() == self.session.username.lower():

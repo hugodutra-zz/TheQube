@@ -37,7 +37,7 @@ class Sent (Tweets):
   return tweets
 
  def retrieve_new_sent_directs (self):
-  return self.timeline_update(update_function_name='get_sent_messages', since_id=self.get_max_sent_direct_id(), include_entities=True)
+  return self.timeline_update(update_function_name='get_sent_messages', since_id=self.get_max_sent_direct_id(), include_entities=True, full_text=True)
 
  def process_update(self, update, *args, **kwargs):
   update = Tweets.process_update(self, update)

@@ -2,7 +2,7 @@
 
 # TheQube New Message dialog
 # A part of TheQube accessible social networking client
-# Copyright © Andre Polykanine A.K.A. Menelion Elensúlë, 2014
+# Copyright © Andre Polykanine A.K.A. Menelion Elensúlë, 2014 — 2015
 
 from logger import logger
 logging = logger.getChild('core.gui.new_message')
@@ -284,6 +284,7 @@ class NewMessageDialog(SquareDialog):
  def on_add_photo(self, evt):
   evt.Skip()
   # @@@
+
  def upload_completed(self):
   url = json.loads(self.upload_dlg.response['body'])['url']
   logging.debug("Gotten URL: %s" % url)

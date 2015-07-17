@@ -4,6 +4,7 @@ p. This page lists all the changes and bugfixes made in TheQube, from newest to 
 
 h2. TheQube 0.8
 
+* New: Added support for long direct messages (up to 10000 characters).
 * New: Added the "ux.nu":http://ux.nu URL shortening service.
 * Changed: improved the Twitter credentials storing technology.
 * Fixed: "#49: To authorize the second session, TheQube has to be restarted":https://github.com/Oire/theqube/issues/49. Thanks to Manuel Cortéz for this lovely fix!

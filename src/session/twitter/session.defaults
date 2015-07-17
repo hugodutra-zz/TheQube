@@ -139,6 +139,7 @@ dismissBuffer=string(default="dismiss_buffer.wav")
 
 [lengths]
 tweetLength=integer(default = 140)
+dmLength=integer(default = 10000)
 nameLength=integer(default = 20)
 emailLength=integer(default = 40)
 URLLength=integer(default = 100)
