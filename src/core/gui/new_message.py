@@ -206,8 +206,6 @@ class NewMessageDialog(SquareDialog):
     self.EndModal(wx.ID_OK)
    else:
     evt.Skip()
-  elif key == wx.WXK_RETURN and modifiers == wx.MOD_SHIFT:
-   evt.Skip()
   else:
    evt.Skip()
 
