@@ -22,7 +22,7 @@ from core.gui import SquareDialog
 from recording import RecordingDialog
 from schedule import ScheduleDialog
 from translate import TranslateDialog
-from photos import AddPhotosDialog
+from photos import AddPhotoDialog
 
 
 class NewMessageDialog(SquareDialog):
