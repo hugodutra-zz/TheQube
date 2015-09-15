@@ -20,7 +20,7 @@ AppPublisher={#MyAppPublisher}
 AppPublisherURL={#MyAppURL}
 AppSupportURL={#MyAppURL}
 AppUpdatesURL={#MyAppURL}
-DefaultDirName={pf}\{#MyAppName}
+DefaultDirName={code:DefDirRoot}\{#MyAppName}
 DefaultGroupName={#MyAppName}
 ; LicenseFile=..\src\dist\Documentation\license.txt
 OutputDir=bin
@@ -42,6 +42,7 @@ VersionInfoProductName={#MyAppName}
 VersionInfoProductVersion={#MyAppVersion}
 VersionInfoVersion={#MyAppVersion}
 AppContact=theqube@lists.oire.org
+PrivilegesRequired=none
 
 [Languages]
 Name: en; MessagesFile: compiler:Default.isl,languages\DefaultCustom.islu
@@ -132,4 +133,17 @@ begin
     // Unload the extension, otherwise it will not be deleted by the uninstaller
     UnloadDLL(ExpandConstant('{app}\IssProc.dll'));
 
+end;
+
+function IsRegularUser(): Boolean;
+begin
+    Result := not (IsAdminLoggedOn or IsPowerUserLoggedOn);
+end;
+
+function DefDirRoot(Param: String): String;
+begin
+    if IsRegularUser then
+        Result := ExpandConstant('{localappdata}')
+    else
+        Result := ExpandConstant('{pf}')
 end;

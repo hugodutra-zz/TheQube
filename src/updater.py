@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 #AutoUpdater
 #Released under an MIT license
 
@@ -29,7 +31,7 @@ class AutoUpdater(object):
   #Let's download the file using urllib
   self.complete = 0
   self.finish_callback = finish_callback #What to do on exit
-  self.percentage_callback = percentage_callback or self.print_percentage_callback
+  self.percentage_callback = percentage_callback
   self.URL = URL
   self.bootstrapper = bootstrapper
   self.app_path = app_path
@@ -52,10 +54,6 @@ class AutoUpdater(object):
   """Callback to update percentage of download"""
   percent = int(count*bSize*100/tSize)
   self.percentage_callback(percent)
-
- @staticmethod
- def print_percentage_callback(percent):
-  print percent
 
  def start_update(self):
   """Called to start the whole process"""

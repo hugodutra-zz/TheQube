@@ -19,7 +19,7 @@ class AddPhotoDialog(SquareDialog):
   super(AddPhotoDialog, self).__init__(title=title, *args, **kwargs)
   self.file = None
   filter = _('Image Files (*.jpg, *.png, *.gif)|*.jpg;*.png;*.gif')
-  open_dlg = wx.FileDialog(parent=self.pane.Parent, message=_("Select audio file"), wildcard=filter, style=wx.OPEN)
+  open_dlg = wx.FileDialog(parent=self.pane.Parent, message=_("Select image file"), wildcard=filter, style=wx.OPEN)
   if open_dlg.ShowModal() != wx.ID_OK:
    return output.speak(_("Canceled."), True)
   self.file = open_dlg.GetPath()
@@ -35,6 +35,3 @@ class AddPhotoDialog(SquareDialog):
  def file_attached(self):
   self.add.Enable()
   self.add.SetFocus()
-
- def cleanup(self):
-  os.remove(self.file)

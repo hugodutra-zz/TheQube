@@ -179,12 +179,12 @@ class Twitter (Updating, Storage, Audio, APICount):
 
  @buffer_defaults
  def get_text(self, index=None, item=None):
-  if 'quoted_status' in item:
-   logging.debug("@Tweet with quote: %s" % item['text'].split(u'http')[:-1][0])
-  if 'retweeted_status' not in item and 'text' in item:
+  if 'retweeted_status' not in item and 'quoted_status' not in item and 'text' in item:
    text = item['text']
   elif 'retweeted_status' in item and 'text' in item['retweeted_status']:
    text = "RT @%s: %s" % (item['retweeted_status']['user']['screen_name'], item['retweeted_status']['text'])
+  elif 'quoted_status' in item and 'text' in item['quoted_status']:
+   text = "%s QT @%s: %s" % (item['text'].split(u'http')[:-1][0], item['quoted_status']['user']['screen_name'], item['quoted_status']['text'])
   else:
    logging.debug("Unable to find text in buffer %s, index %s, item %s" % (self.name, index, item))
   return text

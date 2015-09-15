@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+import sys
 import os
 from platform_utils import blackhole, paths
 os.chdir(paths.app_path())
@@ -21,6 +22,11 @@ An accessible social networking client
 
 Licensed under the MIT license, see documentation/license.txt in this distribution.
 """
+
+stdout=sys.stdout
+stderr=sys.stderr
+sys.stdout = open(os.path.join(os.getenv("temp"), "stdout.log"), "w")
+sys.stderr = open(os.path.join(os.getenv("temp"), "stderr.log"), "w")
 
 def main():
  try:

@@ -213,9 +213,9 @@ class NewMessageDialog(SquareDialog):
   self.button_panel = sc.SizedPanel(self.pane, -1)
   self.button_panel.SetSizerType("horizontal")
   self.setup_attachment()
-  self.setup_photo()
-  self.setup_translation()
   self.setup_url_shortener_buttons()
+  self.setup_translation()
+  self.setup_photo()
   self.setup_schedule()
   self.update_title()
   super(NewMessageDialog, self).finish_setup(*args, **kwargs)
@@ -265,7 +265,6 @@ class NewMessageDialog(SquareDialog):
     upload_url = baseUrl
    logging.debug("Upload URL: %s" % upload_url)
    self.upload_dlg = UploadDialog(parent=self, title=_("Upload in progress"), field='file', url=upload_url, filename=dlg.file, completed_callback=self.upload_completed)
-   logging.debug("@Upload dialog: %s" % str(self.upload_dlg))
    self.upload_dlg.Show(True)
    try:
     self.upload_dlg.perform_threaded()
@@ -278,7 +277,9 @@ class NewMessageDialog(SquareDialog):
 
  def on_add_photo(self, evt):
   evt.Skip()
-  # @@@
+  self.add_photo_dlg = dlg = AddPhotoDialog(parent=self.pane.Parent)
+  if dlg.ShowModal() != wx.ID_OK:
+   return output.speak(_("Canceled."), True)
 
  def upload_completed(self):
   url = json.loads(self.upload_dlg.response['body'])['url']
