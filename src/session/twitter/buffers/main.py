@@ -182,7 +182,10 @@ class Twitter (Updating, Storage, Audio, APICount):
   if 'retweeted_status' not in item and 'quoted_status' not in item and 'text' in item:
    text = item['text']
   elif 'retweeted_status' in item and 'text' in item['retweeted_status']:
-   text = "RT @%s: %s" % (item['retweeted_status']['user']['screen_name'], item['retweeted_status']['text'])
+   if 'quoted_status' in item['retweeted_status'] and 'text' in item['retweeted_status']['quoted_status']:
+    text = "RT @%s: %s QT @%s: %s" % (item['retweeted_status']['user']['screen_name'], item['retweeted_status']['text'].split(u'http')[:-1][0], item['retweeted_status']['quoted_status']['user']['screen_name'], item['retweeted_status']['quoted_status']['text'])
+   else:
+    text = "RT @%s: %s" % (item['retweeted_status']['user']['screen_name'], item['retweeted_status']['text'])
   elif 'quoted_status' in item and 'text' in item['quoted_status']:
    text = "%s QT @%s: %s" % (item['text'].split(u'http')[:-1][0], item['quoted_status']['user']['screen_name'], item['quoted_status']['text'])
   else:

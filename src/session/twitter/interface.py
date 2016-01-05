@@ -34,16 +34,19 @@ from meta_interface import MetaInterface
 class TwitterInterface (BuffersInterface, HotkeyInterface, MetaInterface):
 
  @buffer_defaults
- def NewTweet(self, buffer=None, index=None, text="", title=None, retweet=False):
+ def NewTweet(self, buffer=None, index=None, text=u"", title=None, retweet=False, quote=False):
   """Allows you to post a new tweet.
 """
   new = gui.NewTweetDialog(parent=self.session.frame, text=text, title=title)
   new.retweet.Show(retweet)
+  new.quote.Show(quote)
   new.message.SetInsertionPoint(0)
   val=new.ShowModal()
   if val==wx.ID_OK:
    if new.retweet.GetValue():
     return self.Retweet(buffer, index)
+   elif new.quote.GetValue():
+    return self.Quote(buffer, index)
    else:
     text = new.message.GetValue()
   else:
@@ -58,7 +61,7 @@ class TwitterInterface (BuffersInterface, HotkeyInterface, MetaInterface):
    call_threaded(self.session.post_update, text=text)
 
  @buffer_defaults
- def NewDm(self, buffer=None, index=None, user="", text=""):
+ def NewDm(self, buffer=None, index=None, user=u"", text=u""):
   """Allows you to send a new direct message to a user."""
 
   who = buffer.get_all_screen_names(index)
@@ -74,7 +77,7 @@ class TwitterInterface (BuffersInterface, HotkeyInterface, MetaInterface):
    call_threaded(self.session.post_dm, buffer=buffer, index=index, user=user, text=text)
 
  @buffer_defaults
- def NewReply(self, buffer=None, index=None, text="", user=None):
+ def NewReply(self, buffer=None, index=None, text=u"", user=None):
   """Allows you to post a reply to a tweet."""
 
   default = user
@@ -113,7 +116,40 @@ class TwitterInterface (BuffersInterface, HotkeyInterface, MetaInterface):
    title = _("View Tweet From %s") % buffer.get_screen_name(index)
   except:
    logging.exception("ViewItem: Unable to obtain screen name")
-  self.NewTweet(text=text, title=title, retweet=True)
+  self.NewTweet(text=text, title=title, retweet=True, quote=True)
+
+ @buffer_defaults
+ def Quote (self, buffer=None, index=None):
+  """Allows you to quote the current tweet."""
+
+  try:
+   user = buffer.get_screen_name(index)
+   if 'quoted_status' not in buffer[index]:
+    id = buffer[index]['id']
+   else:
+    id = buffer[index]['quoted_status']['id']
+   tweet_link = u"https://twitter.com/statuses/%s" % str(id)
+  except:
+   logging.debug("Quoter: Unable to retrieve post to reply to.")
+   return output.speak(_("Item is not a post."), True)
+  if self.session.config['UI']['DMSafeMode'] and 'source' not in buffer[index]:
+   logging.debug("Quoter: Preventing quote of direct message in DM safe mode...")
+   return output.speak(_("Cannot quote a direct message while DM safe mode is enabled."), True)
+  title="Quote"
+  choice = 0
+  if self.session.config['UI']['RTStyle'] == 0 and 'source' in buffer[index]:
+   choice = question_dialog(caption=_("Quote"), message=_("Would you like to add a comment?"))
+   if choice == wx.ID_CANCEL:
+    return output.speak(_("Canceled."), True)
+   elif choice == wx.ID_NO:
+    return call_threaded(self.session.post_update, text=tweet_link)
+   else:
+    return   self.NewTweet(buffer, index, tweet_link, title)
+  elif self.session.config['UI']['RTStyle'] == 1:
+   logging.debug("Retweeter: Automatically retweeting...")
+   call_threaded(self.session.post_retweet, id)
+  elif self.session.config['UI']['RTStyle'] == 2 or 'source' not in buffer[index]:
+   self.NewTweet(buffer, index, tweet_link, title)
 
  @buffer_defaults
  def Retweet (self, buffer=None, index=None):

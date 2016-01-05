@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import pycurl
 import sys
 import threading
@@ -14,7 +16,7 @@ class TransferDialog(SizedDialog):
 
  def __init__(self, url=None, filename=None, follow_location=True, completed_callback=None, verbose=False, *args, **kwargs):
   self.url = url
-  self.filename = filename
+  self.filename =  name
   self.curl = pycurl.Curl()
   self.start_time = None
   self.completed_callback = completed_callback

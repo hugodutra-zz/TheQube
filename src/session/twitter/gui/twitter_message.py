@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import sessions
 
 from core.gui import NewMessageDialog

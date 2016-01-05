@@ -10,9 +10,12 @@ h3. Changes
 * New: Added the "ux.nu":http://ux.nu URL shortening service.
 * Changed: improved the Twitter credentials storing technology.
 * Changed: Several hotkeys changed for Windows 10 compatibility:
-** Moving to next and previous buffer changed to *Alt+Win+Right* and *left arrows*;
-** New direct message dialog is invoked by *Alt+Win+D*;
-** If you use SAPI 5, stop speech by *Alt+Win+S*.
+	** Moving by items in buffer changed to *Alt+Win+Up* and *Down* arrows;
+	** Moving to next and previous buffer changed to *Alt+Win+Right* and *left arrows*;
+	** New direct message dialog is invoked by *Alt+Win+D*;
+	** If you use SAPI 5, stop speech by *Alt+Win+S*;
+	** Close TheQube using *Ctrl+Alt+Win+F4*.
+* Favorites and everything related to them renamed to likes as requested by Twitter.
 
 h3. Bugfixes
 

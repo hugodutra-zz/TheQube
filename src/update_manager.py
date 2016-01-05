@@ -42,5 +42,5 @@ def setup():
  call_threaded(check_for_update)
 
 def update_complete():
- wx.MessageBox(caption=_("%s update") % application.name, message=_("An update for %s has been downloaded and installed. Click the OK button to restart the application and begin using the new version.\nEnjoy!") % application.name, style=wx.OK | wx.ICON_INFORMATION)
+ wx.MessageBox(caption=_("%s updated successfully!") % application.name, message=_("An update for %s has been downloaded and installed. Click the OK button to restart the application and begin using the new version.\nEnjoy!") % application.name, style=wx.OK | wx.ICON_INFORMATION)
  shutdown.exit()

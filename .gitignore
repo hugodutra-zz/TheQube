@@ -36,3 +36,7 @@ src/sounds/*
 
 # Translation catalogs
 *.pot
+
+# Compiled D files
+*.exe
+*.obj

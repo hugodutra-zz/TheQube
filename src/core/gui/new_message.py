@@ -22,7 +22,6 @@ from core.gui import SquareDialog
 from recording import RecordingDialog
 from schedule import ScheduleDialog
 from translate import TranslateDialog
-from photos import AddPhotoDialog
 
 
 class NewMessageDialog(SquareDialog):
@@ -215,7 +214,6 @@ class NewMessageDialog(SquareDialog):
   self.setup_attachment()
   self.setup_url_shortener_buttons()
   self.setup_translation()
-  self.setup_photo()
   self.setup_schedule()
   self.update_title()
   super(NewMessageDialog, self).finish_setup(*args, **kwargs)
@@ -241,10 +239,6 @@ class NewMessageDialog(SquareDialog):
   self.attach_audio = wx.Button(parent=self.button_panel, label=_("Attach &Audio..."))
   self.attach_audio.Bind(wx.EVT_BUTTON, self.on_attach_audio)
 
- def setup_photo(self):
-  self.add_photo = wx.Button(parent=self.button_panel, label=_("Add &Photo..."))
-  self.add_photo.Bind(wx.EVT_BUTTON, self.on_add_photo)
-
  def setup_schedule(self):
   self.delay = 0
   self.schedule_message = self.labeled_control(parent=self.button_panel, label=_("S&chedule message..."), control=wx.Button, callback=self.on_schedule_message)
@@ -258,8 +252,17 @@ class NewMessageDialog(SquareDialog):
   try:
    dlg.postprocess()
    output.speak(_("Attaching..."), True)
-   baseUrl = 'http://api.twup.me/post.json' if config.main['AudioServices']['service'] == 'twup.me' else 'http://sndup.net/post.php'
-   if config.main['AudioServices']['service'] == 'sndup.net' and len(config.main['AudioServices']['sndUpAPIKey']) > 0:
+   service = config.main['AudioServices']['service']
+   if service == 'twup.me':
+    baseUrl = 'http://api.twup.me/post.json'
+   elif service == 'sndup.net':
+    baseUrl = 'http://sndup.net/post.php'
+   elif service == 'soundcache.tk':
+    baseUrl = 'http://soundcache.tk/upload.php'
+   else: # Invalid audio service
+    output.speak(_("The audio service %s is unknown" % service), True)
+    logging.error("Invalid audio service: %s" % service)
+   if service == 'sndup.net' and len(config.main['AudioServices']['sndUpAPIKey']) > 0:
     upload_url = baseUrl + '?apikey=' + config.main['AudioServices']['sndUpAPIKey']
    else:
     upload_url = baseUrl
@@ -275,13 +278,8 @@ class NewMessageDialog(SquareDialog):
    dlg.cleanup()
    return output.speak(_("There was an error attaching the file."), True)
 
- def on_add_photo(self, evt):
-  evt.Skip()
-  self.add_photo_dlg = dlg = AddPhotoDialog(parent=self.pane.Parent)
-  if dlg.ShowModal() != wx.ID_OK:
-   return output.speak(_("Canceled."), True)
-
  def upload_completed(self):
+  logging.debug("@response: %s" % str(self.upload_dlg.response))
   url = json.loads(self.upload_dlg.response['body'])['url']
   logging.debug("Gotten URL: %s" % url)
   self.upload_dlg.Destroy()

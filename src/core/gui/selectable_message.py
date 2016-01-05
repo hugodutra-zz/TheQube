@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import sessions
 import wx
 
@@ -5,7 +7,7 @@ from new_message import NewMessageDialog
 
 class SelectableMessageDialog (NewMessageDialog):
 
- def __init__(self, selection=[""], default="", text="", *args, **kwargs):
+ def __init__(self, selection=[u""], default=u"", text=u"", *args, **kwargs):
   self.recipients = selection
   self.default_recipient = default
   super(SelectableMessageDialog, self).__init__(*args, **kwargs)

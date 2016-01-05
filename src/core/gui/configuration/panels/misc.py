@@ -18,7 +18,7 @@ class MiscPanel (ConfigurationPanel):
   self.shorteners.SetSizerProps(expand=True)
   wx.StaticText(parent=self, label=_("Preferred audio service:"))
   # M. E.: I don't see why we should not hard-code this list for now
-  allAudioServices = ['sndup.net', 'twup.me']
+  allAudioServices = ['sndup.net', 'twup.me', 'soundcache.tk']
   self.audioServices = wx.ComboBox(parent=self, choices=allAudioServices, style = wx.CB_READONLY)
   self.audioServices.Bind(wx.EVT_COMBOBOX, self.onChange)
   self.audioServices.SetSizerProps(expand=True)

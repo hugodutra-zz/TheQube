@@ -160,7 +160,7 @@ def SpawnSession (kind, name, *args, **kwargs):
  return new
 
 def session_descriptor (session):
- #Given a session object, returns a way to represent it in a reloadable fassion
+ #Given a session object, returns a way to represent it in a reloadable fashion
   return '%s|%s' % (session.type, session.name)
 
 def unpack_descriptor (desc):
@@ -184,8 +184,8 @@ def rename_session(session, name):
 
 def possible_sessions ():
  #Replace when autodiscovery worked out.
- return sorted(['Twitter',
+ return ['Twitter',
   'Stopwatch'
-])
+]
 
 class RenameError(Exception): pass

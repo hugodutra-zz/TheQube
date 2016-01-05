@@ -48,7 +48,7 @@ enabled=boolean(default=False)
 
 [keymap]
 CopyToClipboard = string(default = "control+win+shift+c")
-Exit = string(default = "alt+win+f4")
+Exit = string(default = "control+alt+win+f4")
 StopSpeech = string(default = "alt+win+s")
 export=string(default="control+win+e")
 PrevSession=string(default="control+shift+win+left")

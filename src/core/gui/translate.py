@@ -21,11 +21,14 @@ class TranslateDialog (SquareDialog):
    kwargs['title'] = _("Translate")
   self.title = kwargs['title']
   super(TranslateDialog, self).__init__(style=wx.DEFAULT_DIALOG_STYLE | wx.RESIZE_BORDER, *args, **kwargs)
-  langs = sorted(self.t.get_languages(self.win_lang).items(), key=operator.itemgetter(1))
-  self.langs_keys = [i[0] for i in langs]
-  self.langs_values = [i[1] for i in langs]
-  self.langs_keys.insert(0, '')
-  self.langs_values.insert(0, _("Auto detect"))
+  if not self.langs or self.langs is None:
+   self.langs = sorted(self.t.get_languages(self.win_lang).items(), key=operator.itemgetter(1))
+  if not self.langs_keys or self.langs_keys is None:
+   self.langs_keys = [i[0] for i in self.langs]
+   self.langs_keys.insert(0, '')
+  if not self.langs_values or self.langs_values is None:
+   self.langs_values = [i[1] for i in self.langs]
+   self.langs_values.insert(0, _("Auto detect"))
   current_lang = self.langs_keys.index(self.get_current_language())
   self.source_lang_list = self.labeled_control(_("Source language:"), wx.ComboBox, choices=self.langs_values, style = wx.CB_READONLY)
   self.source_lang_list.SetSelection(0)
@@ -40,11 +43,12 @@ class TranslateDialog (SquareDialog):
   else:
    lang = config.main['languages']['current']
   # And here begins the magic...
-  all_langs = self.t.get_languages().keys()
-  if lang in all_langs:
+  if not self.all_langs or self.all_langs is None:
+   self.all_langs = self.t.get_languages().keys()
+  if lang in self.all_langs:
    curr_lang = lang
   else:
-   if lang.split('_')[0] in all_langs:
+   if lang.split('_')[0] in self.all_langs:
     curr_lang = lang.split('_')[0]
    else:
     logging.Warn("Translator: unable to detect current language. Falling back to English.")

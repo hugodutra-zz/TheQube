@@ -50,7 +50,7 @@ class Handler(BaseHTTPServer.BaseHTTPRequestHandler):
   params = parse_qs(urlparse(self.path).query)
   global verifier
   verifier = params.get('oauth_verifier', [None])[0]
-  self.wfile.write("You have successfully logged in to Twitter! Now please close this window and happy tweeting!")
+  self.wfile.write(_("You have successfully logged in to Twitter! Now please close this window and happy tweeting!"))
   self.wfile.close()
 
 class Twitter (Buffers, Login, Hotkey, SpeechRecognition, WebService):
@@ -102,7 +102,7 @@ class Twitter (Buffers, Login, Hotkey, SpeechRecognition, WebService):
   try:
    auth = tw.get_authentication_tokens("http://127.0.0.1:8080")
   except SSLError:
-   output.speak(_("Sorry, we can't connect to Twitter. You may want to adjust your firewall or antivirus software appropriately", True))
+   output.speak(_("Sorry, we can't connect to Twitter. You may want to adjust your firewall or antivirus software appropriately"), True)
   webbrowser.open_new_tab(auth['auth_url'])
   global logged, verifier
   logged = False
@@ -260,46 +260,52 @@ class Twitter (Buffers, Login, Hotkey, SpeechRecognition, WebService):
 
  def follow (self, screen_name, updates=False):
   already = self.api_call('lookup_friendships', screen_name=screen_name, report_success=False)
-  conns = already[0]['connections']
-  if 'following' in conns:
-   output.speak(_("You already follow %s" % screen_name), True)
-  elif 'following_requested' in conns:
-   output.speak(_("You have already sent a request to follow %s" % screen_name), True)
-  elif 'blocking' in conns:
-   output.speak(_("You can't follow %s because you blocked this user" % screen_name), True)
-  else: # Not following, so proceeding to follow
-   if updates:
-    self.api_call('create_friendship', _("following %s") % screen_name, screen_name=screen_name)
-   else:
-    self.api_call('create_friendship', _("following %s") % screen_name, screen_name=screen_name, updates=updates)
+  if len(already) > 0:
+   conns = already[0]['connections']
+   if 'following' in conns:
+    output.speak(_("You already follow %s" % screen_name), True)
+   elif 'following_requested' in conns:
+    output.speak(_("You have already sent a request to follow %s" % screen_name), True)
+   elif 'blocking' in conns:
+    output.speak(_("You can't follow %s because you blocked this user" % screen_name), True)
+   else: # Not following, so proceeding to follow
+    if not updates:
+     self.api_call('create_friendship', _("following %s") % screen_name, screen_name=screen_name)
+    else:
+     self.api_call('create_friendship', _("following %s") % screen_name, screen_name=screen_name, updates=updates)
+  else: # `already` is empty, so the user doesn't exist
+   output.speak(_("User %s does not exist." % screen_name), True)
 
  def do_unfollow (self, screen_name, action):
   already = self.api_call('lookup_friendships', screen_name=screen_name, report_success=False)
-  conns = already[0]['connections']
-  if action == 0: # Unfollowing
-   if 'following' not in conns:
-    output.speak(_("You are not following %s" % screen_name), True)
-   else: # Proceeding to unfollow
-    self.api_call('destroy_friendship', _("unfollowing %s") % screen_name, screen_name=screen_name)
-  elif action == 1: # Blocking
-   if 'blocking' in conns:
-    output.speak(_("You have already blocked %s" % screen_name), True)
-   else:
-    self.api_call('create_block', _("blocking %s") % screen_name, screen_name=screen_name)
-  elif action == 2: # Reporting for spam
-   self.api_call('report_spam', _("reporting %s as spam") % screen_name, screen_name=screen_name)
+  if len(already) > 0:
+   conns = already[0]['connections']
+   if action == 0: # Unfollowing
+    if 'following' not in conns:
+     output.speak(_("You are not following %s" % screen_name), True)
+    else: # Proceeding to unfollow
+     self.api_call('destroy_friendship', _("unfollowing %s") % screen_name, screen_name=screen_name)
+   elif action == 1: # Blocking
+    if 'blocking' in conns:
+     output.speak(_("You have already blocked %s" % screen_name), True)
+    else:
+     self.api_call('create_block', _("blocking %s") % screen_name, screen_name=screen_name)
+   elif action == 2: # Reporting for spam
+    self.api_call('report_spam', _("reporting %s as spam") % screen_name, screen_name=screen_name)
+  else: # `already` is empty, so the user doesn't exist
+   output.speak(_("User %s does not exist." % screen_name), True)
 
  def check_twitter_connection (self):
   #Block until we can connect to Twitter.
   #self.wait_for_availability(url='http://api.twitter.com/', message=_("Unable to connect to twitter.  %s will retry until connection is established.") % application.name)
   pass
 
- def post_update (self, text="", buffer=None, index=None):
+ def post_update (self, text=u"", buffer=None, index=None):
   try:
    self.api_call('update_status', _("Update"), status=text.encode("UTF-8"))
+   self.play(self.config['sounds']['tweetSent'])
   except:
    return wx.CallAfter(self.interface.NewTweet, buffer=buffer, index=index, text=text)
-  self.play(self.config['sounds']['tweetSent'])
 
  def post_retweet(self, id):
   self.api_call('retweet', _("Retweet"), id=id)

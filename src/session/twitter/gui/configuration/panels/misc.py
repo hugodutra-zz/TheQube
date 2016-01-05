@@ -8,7 +8,7 @@ class MiscPanel (ConfigurationPanel):
   super(MiscPanel, self).__init__(*args, **kwargs)
   self._first = self.DMSafeMode = wx.CheckBox(parent=self, label=_("Enable DM safe mode"))
   self.confirmRemovePost = wx.CheckBox(parent=self, label=_("Confirm before removing sent tweets and DMs"))
-  wx.StaticText(parent=self, label=_("Retweet Style"))
+  wx.StaticText(parent=self, label=_("Retweet and Quote Style"))
   self.RTStyle = wx.ComboBox(parent=self, style=wx.CB_READONLY)
   self.RTStyle.SetSizerProps(expand=True)
   self.replyToSelf = wx.CheckBox(parent=self, label=_("Allow reply to self"))
