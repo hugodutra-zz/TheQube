@@ -29,8 +29,6 @@ nosetests.xml
 .project
 .pydevproject
 
-# Ready documentation files
-*.html
 # Extra soundpacks
 src/sounds/*
 

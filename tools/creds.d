@@ -1,3 +1,9 @@
+/** 
+	TheQube Credentials storing
+
+	Copyright 2016, Andre Polykanine A.K.A. Menelion Elensúlë
+	https://github.com/Oire
+*/
 module theqube.tools.creds;
 
 import std.stdio;
@@ -16,6 +22,7 @@ int main(string[] args) {
 	string creds = Base64Oire.encode(cast(ubyte[])mCreds);
 	if (args.length == 4) {
 		auto f = File(args[3], "w");
+		scope(exit) f.close();
 		try {
 			f.writeln(creds);
 		} catch (Exception e) {

@@ -1,0 +1,251 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>What's new in TheQube</title>
+<style>
+h1, h2, h3 {
+	text-align: center;
+}
+footer {
+	text-align: right;
+}
+</style>
+<base target="_blank">
+</head>
+<body>
+<header>
+<h1>What's new in TheQube</h1>
+<section role="complementary">This page lists all the changes and bugfixes made in TheQube, from newest to oldest.</section>
+</header>
+<main>
+<article>
+<h2>TheQube 0.8</h2>
+
+<h3>Changes</h3>
+<ul>
+<li>+New: Added support for long direct messages (up to 10000 characters).</li>
+<li>+New: Added support for quoted tweets.</li>
+<li>+New: Added the <a href="http://ux.nu">ux.nu</a> URL shortening service.</li>
+<li>*Changed: improved the Twitter credentials storing technology.</li>
+<li>*Changed: Several hotkeys changed for Windows 10 compatibility:
+<ul>
+	<li>Moving by items in buffer changed to <strong>Alt+Win+Up</strong> and <strong>Down</strong> arrows;</li>
+	<li>Moving to next and previous buffer changed to <strong>Alt+Win+Right</strong> and <strong>Left</strong> arrows;</li>
+	<li>New direct message dialog is invoked by <strong>Alt+Win+D</strong>;</li>
+	<li>If you use SAPI 5, stop speech by <strong>Alt+Win+S</strong>;</li>
+	<li>Close TheQube using <strong>Ctrl+Alt+Win+F4</strong>.</li>
+</ul></li>
+<li>*Changed: Favorites and everything related to them renamed to likes as requested by Twitter.</li>
+<li>*Changed: The documentation is converted to manually written HTML 5 with WAI-ARIA mark-up. Enjoy moving not only by headings, but also by regions!</li>
+</ul>
+
+<h3>Bugfixes</h3>
+<ul>
+<li><a href="https://github.com/Oire/theqube/issues/49">#49: To authorize the second session, TheQube has to be restarted</a>. Thanks to <a href="https://twitter.com/manuelcortez00">Manuel Cortéz</a> for this lovely fix!</li>
+<li><a href="https://github.com/Oire/theqube/issues/56">#56: If a user follows, unfollows or blocks someone, TheQube doesn't check for repeating actions"</a>.</li>
+<li><a href="https://github.com/Oire/TheQube/issues/48">#48: Line breaks ignored when viewing a tweet</a>.</li>
+<li><a href="https://github.com/Oire/theqube/issues/25">#25: Cannot insert a line break if sending tweets on Enter is enabled</a>.</li>
+<li>-Fixed: Google translation is back again.</li>
+<li>-Fixed: Errors in Brazilian Portuguese translation preventing TheQube from working normally.</li>
+</ul>
+</article>
+
+<article>
+<h2>TheQube 0.7.1</h2>
+<ul>
+<li>+New: added the <a href="http://qps.ru">qps.ru</a> URL shortening service.</li>
+<li>-Fixed: Temporarily removed non-working URL shortening services, namely onj.me and xed.cc as they require a CAPTCHA now.</li>
+<li>-Fixed: <a href="https://github.com/Oire/theqube/issues/29">#29: Log files grow to insane sizes</a>. For now the maximum filesize is set to 100 kb.</li>
+<li>-Fixed: Posting audio is back.</li>
+<li>-Fixed: Pressing <strong>Enter</strong> doesn't add a new line on sending a tweet.</li>
+</ul>
+</article>
+
+<article>
+<h2>TheQube 0.7</h2>
+
+<h3>Changes</h3>
+<ul>
+<li>Now the application is called TheQube (without a space) and versioned according to semantic versioning (<em>major.minor.patch</em>) system. And, until the first stable version is released, the first digit will be zero, so this version is 0.7.</li>
+<li>The Speech and Braille panels in the global TheQube configuration are consolidated into one panel as the Braille panel contained only one check box.</li>
+<li>The tweets translation service is back (<a href="https://github.com/Oire/TheQube/issues/27">#27</a>)</li>
+<li>The audio links from rebranded AudioBoom are supported.</li>
+<li>Now TheQube has a permanent <a href="http://theqube.oire.org">website</a></li>
+<li>Now the website address in the profile info dialog won't be shortened with <em>t.co</em>.</li>
+<li>Now the profile info dialog shows also the number of users that added the current user to their lists.</li>
+<li>The <em>doc</em> folder is removed from sources as it doesn't contain any meaningful guidelines for TheQube developers. If the number of developers grows, such guidelines will be rewritten.</li>
+<li>Temporarily removed support of the hkc.im URL shortener because of a service error, see <a href="http://hkc.im">their main page</a>. It can be brought back at any time, as soon as the service works again.</li>
+<li>Added support for new URL shortening services, namely <em>goo.gl</em>, <em>senta.la</em>, and <em>Readability</em></li>
+<li>The authorization process doesn't require a pin code anymore. However, the browser page still opens, we can't do anything to it so far (<a href="https://github.com/Oire/TheQube/issues/13">#13</a>)</li>
+<li>Updated Spanish, Serbian, and Polish translations. Thanks to our translators team!</li>
+</ul>
+
+<h3>Bugfixes</h3>
+<ul>
+<li>-Fixed: <a href="https://github.com/Oire/TheQube/issues/33">#33: Switching sessions freezes the keyboard commands</a></li>
+<li>-Fixed: <a href="https://github.com/Oire/TheQube/issues/1">#1: Keyboard commands don't work if the default keyboard layout is not set to English</a></li>
+<li>-Fixed: <a href="https://github.com/Oire/TheQube/issues/44">#44: Language of the documentation doesn't correspond to the language chosen during installation</a></li>
+</ul>
+</article>
+
+<article>
+<h2>The Qube 1.0 beta 6</h2>
+
+<h3>Changes</h3>
+<ul>
+<li>Buffer update hotkey has been changed to <strong>Ctrl+Win+Alt+U</strong> to resolve a conflict with Windows 8 key assignments.</li>
+<li>The Qube source has been moved to <a href="https://github.com/Oire/TheQube">Github</a></li>
+<li>Now The Qube has a bugtracker. It's located <a href="https://github.com/Oire/TheQube/issues">here</a></li>
+<li>Now you can decide whether to send messages by pressing <strong>Enter</strong> or by pressing <strong>Ctrl+Enter</strong>. The corresponding checkbox is located in The Qube configuration under the Miscellaneous tab. The default is to send messages with <strong>Enter</strong>, as it was earlier.</li>
+<li>Now you can choose whether to upload audio to <a href="http://sndup.net/">SndUp</a> or <a href="http://twup.me/">TwUp</a></li>
+<li>The GoogleVoice session has been removed because it's impossible for developers to test the service (it works only in the USA).</li>
+<li>Now the geo location information is spoken in the language you set for The Qube interface.</li>
+<li>The keystrokes for following/unfollowing users changed to <strong>Ctrl+Win+S</strong> and <strong>Ctrl+Shift+Win+S</strong> to resolve conflict with JAWS 16 change language feature. To memorize the new keystrokes, consider them as "start/stop following".</li>
+</ul>
+
+<h3>Bugfixes</h3>
+<ul>
+<li>Now you're able to send messages with line breaks in them. By default, a line break is inserted with <strong>Ctrl+Enter</strong>. However, you might want to set <strong>Ctrl+Enter</strong> to send messages, then you'll be able to insert a line break by pressing <strong>Enter</strong>.</li>
+<li>Keystrokes editing works again.</li>
+<li>Now you can select a voice for SAPI 5 speech if you use it for The Qube.</li>
+<li>The geo location information is been reported correctly in all the ways (<strong>Ctrl+Win+G</strong>, <strong>Ctrl+Shift+Win+G</strong>, <strong>Ctrl+Shift+Win+Alt+G</strong>).</li>
+</ul>
+</article>
+
+<article>
+<h2>The Qube 1.0 Beta 5</h2>
+<ul>
+<li>Now The Qube supports Twitter API 1.1.</li>
+<li>Added ability to provide an API key for SndUp.net to upload audio as a registered user.</li>
+<li>Twitter API library changed from Tweepy to <a href="https://github.com/ryanmcgrath/twython/">Twython</a>.</li>
+</ul>
+</article>
+
+<article>
+<h2>The Qube 1.0 Beta 4.3</h2>
+<ul>
+<li>Added the SndUp audio service to the seemingly ever growing list of supported audio playback services.</li>
+<li>Switched the audio upload capability to use SndUp.</li>
+</ul>
+</article>
+
+<article>
+<h2>The Qube 1.0 Beta 4.2</h2>
+
+<h3>Changes</h3>
+<ul>
+<li>The Bing session has been removed as the API no longer seems to be functional.</li>
+</ul>
+
+<h3>Improvements</h3>
+<ul>
+<li>Updates to documentation, the first since Beta 4 release, sorry about that.</li>
+<li>Redundant Bit.Ly, Goo.gl and met.al URL shorteners have been removed, let me know if you find any more that don't work.</li>
+<li>2 new URL shorteners have been added, xed.cc and clck.ru.</li>
+<li>Added the ability to recognise twup.me links as audio links.</li>
+<li>Reactivated the audio attachment capability, which can now upload files to TwUp.</li>
+<li>The Qube will now automatically append the #audio hashtag after successfull upload to TwUp, let me know if you think this is too intrusive.</li>
+</ul>
+
+<h3>Bugfixes</h3>
+<ul>
+<li>Dolphin and SAPI speech should now work properly again, let me know if you experience any further issues.</li>
+</ul>
+</article>
+
+<article>
+<h2>The Qube 1.0 Beta 4.1</h2>
+
+<h3>Improvements</h3>
+<ul>
+<li>Added a dialog to the update manager to allow the user to decide whether to download and install an update to the Qube, or delay the update by 30 minutes, after which the dialog will be presented again.</li>
+<li>Disabled the translate message button in the new message dialog as the Google translate API has been deprecated, let me know if you can think of a suitable replacement.</li>
+<li>Disabled the attach audio button in the new message dialog since q-audio has been taken down.</li>
+<li>Continued work on reducing storage footprint.</li>
+<li>Added a force sync to disk keystroke as Qwitter used to have, accessible with <strong>Ctrl+Win+Shift+Alt+S</strong>.</li>
+<li>The Qube can now play Sound Cloud links as it would q-audio / Audioboo links.</li>
+<li>Work on the google voice session, though it is far from perfect, since Google Voice is not accessible in the UK. GV users, I'd apreciate any help with this.</li>
+<li>When creating new Twitter sessions, DM safe mode is now enabled by default.</li>
+<li>Durus.prepack files are now removed from sessions' folders on shutdown</li>
+<li>Session datafiles now reside in their corresponding session's folder, not in the root of The Qube's appdata folder!</li>
+</ul>
+
+<h3>Bugfixes</h3>
+<ul>
+<li>More attempts at fixing the streamer to reconnect if connection is dropped.</li>
+<li>Fixed keyboard help toggling.</li>
+<li>Keystrokes are no longer activated when keyboard help is on.</li>
+<li>Followers analysis now works again.</li>
+</ul>
+</article>
+
+<article>
+<h2>The Qube 1.0 Beta 4</h2>
+
+<h3>Improvements</h3>
+<ul>
+<li>We now once again use Durus for storage.</li>
+<li>Documentation has been updated.</li>
+</ul>
+
+<h3>Bugfixes</h3>
+<ul>
+<li>Buffers: tralling through conversations no longer lags.</li>
+<li>Buffers: favourites no longer exponentially expands.</li>
+<li>Filters: oddities with URLs not being recognised, tweets not being displayed correctly, etc. are now fixed.</li>
+<li>I18N: translations are once again available from the configuration dialog.</li>
+<li>Streaming: initial attempts to reduce CPU spiking when a connection to the streaming API is lost.</li>
+</ul>
+</article>
+
+<article>
+<h2>The Qube 1.0 Beta 3</h2>
+<ul>
+<li>Output: SAPI and NVDA now work as expected.</li>
+</ul>
+</article>
+
+<article>
+<h2>The Qube 1.0 Beta 2</h2>
+
+<h3>Changes</h3>
+<ul>
+<li>The solona session has been removed as the service no longer seems to be functional.</li>
+</ul>
+
+<h3>Improvements</h3>
+<ul>
+<li>The posting of audio tweets has been re-enabled.</li>
+</ul>
+
+<h3>Bugfixes</h3>
+<ul>
+<li>Updater: the correct server location is now included. Please note that this build will need to be downloaded manually, but subsequent updates should work as expected.</li>
+</ul>
+</article>
+
+<article>
+<h2>The Qube 1.0 Beta 1</h2>
+
+<h3>Changes</h3>
+<ul>
+<li>The client is now called 'The Qube'.</li>
+<li>Temporarily disabled the posting of audio tweets whilst a new audio service is implemented.</li>
+</ul>
+
+<h3>Improvements</h3>
+<ul>
+<li>Temporarily reverted to an older storage system to prevent lag when buffers receive new data</li>
+</ul>
+
+<h3>Bugfixes</h3>
+<ul>
+<li>Storage: fixed occasional shutdown issues.</li>
+<li>Setup: several minor improvements.</li>
+</ul>
+</article>
+</main>
+<footer role="contentinfo">Copyright © <a href="http://theqube.oire.org/">TheQube Team</a>, 2013 — 2016</footer>
+</body>
+</html>

@@ -5,15 +5,12 @@ parser.add_argument('-v', '--verbose', action='store_true', default=False, dest=
 verbose = parser.parse_args().verbose
 
 srcpath = os.path.normpath(os.path.join(sys.path[0], "../src"))
-docpath = os.path.normpath(os.path.join(sys.path[0], "../documentation"))
 file_count = 0
 dir_count = 0
 filenames = []
 for (path, subdirs, files) in os.walk(srcpath):
  filenames.extend(glob.glob(os.path.join(path, "*.pyc")))
  filenames.extend(glob.glob(os.path.join(path, "*.pyo")))
-for (path2, subdirs2, files2) in os.walk(docpath):
- filenames.extend(glob.glob(os.path.join(path2, "*.html")))
 for filename in filenames:
  try:
   os.remove(filename)
@@ -40,5 +37,4 @@ while run_again:
   except:
    if verbose: print "Can't remove directory " + path
 
-print
-print "{0} file(s), {1} dir(s) removed.".format(file_count, dir_count)
+print("\n%s file(s), %s dir(s) removed." % file_count, dir_count)

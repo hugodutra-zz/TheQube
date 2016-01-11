@@ -3,19 +3,19 @@
 ; Copyright © TheQube Developers and Translators Team, 2014 — 2015
 
 #define MyAppName "TheQube"
-#define MyAppVersion "0.8-alpha1"
+#define MyAppVersion "0.8"
 #define MyAppPublisher "TheQube Developers and Translators Team"
 #define MyAppURL "http://theqube.oire.org"
 #define MyAppExeName "TheQube.exe"
 #define MyAppDescription "An accessible social networking client developed mainly for the blind."
-#define MyAppCopyrightYear "2015"
+#define MyAppCopyrightYear "2016"
 
 [Setup]
 AppId={{45E90244-4E13-41FF-B351-C387F444965E}
 AppName={#MyAppName}
 AppVersion={#MyAppVersion}
 AppVerName={#MyAppName} {#MyAppVersion}
-AppCopyright=Copyright © {#MyAppCopyrightYear} {#MyAppPublisher}
+AppCopyright=Copyright © 2013 — {#MyAppCopyrightYear} {#MyAppPublisher}
 AppPublisher={#MyAppPublisher}
 AppPublisherURL={#MyAppURL}
 AppSupportURL={#MyAppURL}
@@ -36,7 +36,7 @@ DisableReadyPage=false
 DisableFinishedPage=false
 ArchitecturesAllowed=x86 x64
 VersionInfoCompany={#MyAppPublisher}
-VersionInfoCopyright=Copyright © {#MyAppCopyrightYear} {#MyAppPublisher}
+VersionInfoCopyright=Copyright © 2013 — {#MyAppCopyrightYear} {#MyAppPublisher}
 VersionInfoDescription={#MyAppDescription}
 VersionInfoProductName={#MyAppName}
 VersionInfoProductVersion={#MyAppVersion}
