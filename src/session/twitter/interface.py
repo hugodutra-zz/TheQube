@@ -128,7 +128,7 @@ class TwitterInterface (BuffersInterface, HotkeyInterface, MetaInterface):
     id = buffer[index]['id']
    else:
     id = buffer[index]['quoted_status']['id']
-   tweet_link = u"https://twitter.com/statuses/%s" % str(id)
+   tweet_link = u"https://twitter.com/%s/statuses/%s" % (user, str(id))
   except:
    logging.debug("Quoter: Unable to retrieve post to reply to.")
    return output.speak(_("Item is not a post."), True)
