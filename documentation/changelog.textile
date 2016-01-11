@@ -1,8 +1,0 @@
-TheQube Changelog
-
-h1. Welcome!
-
-h2. Please select your language
-
-* "English":en/changelog.html
-* "Русский":ru/changelog.html
