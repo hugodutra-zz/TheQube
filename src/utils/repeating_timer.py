@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import logging as original_logging
 logging = original_logging.getLogger('utils.repeating_timer')
 

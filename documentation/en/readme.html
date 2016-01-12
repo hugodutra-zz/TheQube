@@ -14,8 +14,8 @@ h1, h2, h3 {
 <main>
 <h1>TheQube 0.8 Readme</h1>
 
-<h2>Preproduction warning</h2>
 <article>
+<h2>Preproduction warning</h2>
 This version of TheQube and all subsequent versions starting with <em>0</em> are preproduction software and, as such, it is possible that their feature set and the way they operate may change significantly before final 1.0 release.  It should also be stressed that, though we will make every effort to eliminate as many problems as possible, it is inevitable that you will still encounter bugs, some of which could potentially lead to system instability.  If you encounter such a problem, please report the issue in our <a href="https://github.com/Oire/theqube/issues">issue tracker</a>, on our <a href="http://lists.oire.org/mailman/listinfo/theqube_lists.oire.org/">mailing list</a> or mention <a href="https://twitter.com/theqube_dev">@theqube_dev</a> on Twitter with details of the issue and we will investigate it as quickly as possible.
 </article>
 
@@ -29,8 +29,8 @@ TheQube works with most screen readers, including JAWS, Window-Eyes, System Acce
 
 <h2>General Concepts</h2>
 
-<h3>What are sessions?</h3>
 <article>
+<h3>What are sessions?</h3>
 <p>Sessions are sub-applications running on TheQube's platform that add functionality to it, most commonly from web-based applications. As for now, Twitter and Stopwatch sessions are supported.<br>
 The first time you run TheQube after installation, you are presented with the new session dialog.  Select the type of session you would like to use and then press tab to give this session a name.  You will probably want to set TheQube up to work with Twitter first.  We will describe the Twitter session in the next chapter. You can have more than one session for a particular service.  For example you can access multiple twitter accounts with TheQube by creating a new session for each one.</p>
 
@@ -48,81 +48,88 @@ The first time you run TheQube after installation, you are presented with the ne
 <p><strong>Note</strong>: When a session is dismissed, the associated data are not deleted. So you may create a session with the same name and type to access your previously dismissed session at any time.</p>
 </article>
 
-<h3>What are buffers?</h3>
 <article>
+<h3>What are buffers?</h3>
 <p>Buffers are separate areas within TheQube that are used to hold different types of information for review.  Each type of session uses buffers in different ways, and we'll show you how to utilize them all Throughout this document.<br>
 Each session contains its own unique set of buffers, and remembers which buffer you are working in within that session.  To switch between the various buffers within your current session, use <strong>Alt+Win+Left</strong> and <strong>Right</strong> arrows.  TheQube will announce the buffer you change to, so you'll always know where you are.  By default, TheQube places you in the last buffer you've used, even if you restart.  Once you've picked a buffer you want to read through, use <strong>Alt+Win+Up</strong> and <strong>Down</strong> arrows to browse the items.<br>
 To go to the most recent or oldest item in the buffer, use <strong>Alt+Win+Home</strong> or <strong>End</strong> respectively.  To move forward or back through the list by 5%, press <strong>Ctrl+Win+PageUp</strong> or <strong>PageDown</strong>.  To move forward or back by an hour, use <strong>Ctrl+Win+Shift+PageUp</strong> or <strong>PageDown</strong>. You can adjust how much these commands move in the Navigation tab of TheQube's main configuration dialog, available by pressing <strong>Ctrl+Shift+Win+O</strong>. You can also use <strong>Ctrl+Win+Z</strong> to undo the last navigation command you issued.<br>
-If you wish to manually update the buffer you're in, rather than waiting for it to update itself at whatever interval you chose during configuration, use *Ctrl+Win+Alt+U*.  If you ever wish to delete the contents of a buffer from TheQube's database, you can do so by pressing *Ctrl+Shift+Win+Delete*.  When the buffer updates again, the newest items will be back in the buffer, up to the maximum that you configured.
-You can also modify the navigation order of the buffers by pressing *Ctrl+Win+Alt+Left* or *Right* arrows to move the current buffer in that direction.  
+If you wish to manually update the buffer you're in, rather than waiting for it to update itself at whatever interval you chose during configuration, use <strong>Ctrl+Win+Alt+U</strong>.  If you ever wish to delete the contents of a buffer from TheQube's database, you can do so by pressing <strong>Ctrl+Shift+Win+Delete</strong>.  When the buffer updates again, the newest items will be back in the buffer, up to the maximum that you configured or what is authorized by the web application in use.<br>
+You can also modify the navigation order of the buffers by pressing <strong>Ctrl+Win+Alt+Left</strong> or <strong>Right</strong> arrows to move the current buffer in that direction.  
+</article>
 
-h2. Options when sending messages in TheQube
+<article>
+<h3>Options when sending messages in TheQube</h3>
+<p>Often when using TheQube, you will be entering messages that you wish to send, such as in the  Twitter session described later.  All of the message composition dialogs in TheQube share many common characteristics.  This section describes the options that you have in these dialogs.</p>
 
-Often when using TheQube, you will be entering messages that you wish to send, such as in the  Twitter session described later.  All of the message composition dialogs in TheQube share many common characteristics.  This section describes the options that you have in these dialogs.
+<h4>Scheduling a message</h4>
+<p>You have the option to schedule a message to be sent out at a later time.  Anywhere that you would compose something, there is a button which brings up a dialog for you to schedule the message.  The first option in this dialog   is the scheduling method.  If you select the interval method, you can set the number of hours, minutes and seconds that TheQube will wait before sending your message.  Using the time method, you enter the exact time you wish to send the message.  You must enter the time in 24-hour format rather than in am/pm format.</p>
 
-h3. Scheduling a message
+<h4>Sending audio with your messages</h4>
+<p>TheQube also has the ability to attach audio messages to your posts using third-party services. You can choose from <a href="http://sndup.net/">SndUp</a> (set by default) or <a href="http://twup.me/">TwUp</a> on the Miscellaneous tab of TheQube's main configuration dialog. Any new message dialog contains an Attach audio button.  Clicking this button brings up a dialog that gives you the option to either record your audio from within TheQube itself or attach an existing file.<br>
+Clicking the record button will start the recording and you will be focused on a stop button. click this button when you finish recording.  You will be given the opportunity to play your recording back again.  If you are satisfied with what you have recorded, click the Attach button.  Otherwise you can discard the recording and try again.<br>
+Selecting the option to attach an existing file opens a standard windows dialog for selecting the file you wish to upload.<br>
+Also please note that, though direct messages in twitter are more or less considered to be private, audio content attached to a DM is still very much public.  This is because of the way publicly accessible audio posting services work.  The link contained in the message points to a file that is still publicly available.  Though only the recipient sees the direct link, it is still possible for others to find your file.  It's similar to hiding a key to your house under the matt and then sending someone a private note telling them where to find the key.  The key is still there for anyone to find even if only one other person knows exactly where it is.  In the case of audio links, the "key" is still there after your recipient has heard the message.<br>
+If you do not wish to use SndUp or TwUp, you can still indicate that a tweet links to audio content by including the <em>#audio</em> hashtag in your tweet.  This will inform TheQube that the first URL in the post is an audio link, allowing others to play the file by pressing <strong>Ctrl+Win+Enter</strong>.</p>
 
-You have the option to schedule a message to be sent out at a later time.  Anywhere that you would compose something, there is a button which brings up a dialog for you to schedule the message.  The first option in this dialog   is the scheduling method.  If you select the interval method, you can set the number of hours, minutes and seconds that TheQube will wait before sending your message.  Using the time method, you enter the exact time you wish to send the message.  You must enter the time in 24-hour format rather than in am/pm format.
-
-h3. Sending audio with your messages
-
-TheQube also has the ability to attach audio messages to your posts using third-party services. You can choose from "SndUp":http://sndup.net/ (set by default) or "TwUp":http://twup.me/ on the Miscellaneous tab of TheQube's main configuration dialog. Any new message dialog contains an Attach audio button.  Clicking this button brings up a dialog that gives you the option to either record your audio from within TheQube itself or attach an existing file.  
-Clicking the record button will start the recording and you will be focused on a stop button. click this button when you finish recording.  You will be given the opportunity to play your recording back again.  If you are satisfied with what you have recorded, click the Attach button.  Otherwise you can discard the recording and try again.
-Selecting the option to attach an existing file opens a standard windows dialog for selecting the file you wish to upload.
-Also please note that, though direct messages in twitter are more or less considered to be private, audio content attached to a DM is still very much public.  This is because of the way publicly accessible audio posting services work.  The link contained in the message points to a file that is still publicly available.  Though only the recipient sees the direct link, it is still possible for others to find your file.  It's similar to hiding a key to your house under the matt and then sending someone a private note telling them where to find the key.  The key is still there for anyone to find even if only one other person knows exactly where it is.  In the case of audio links, the "key" is still there after your recipient has heard the message.
-If you do not wish to use SndUp or TwUp, you can still indicate that a tweet links to audio content by including the _#audio_ hashtag in your tweet.  This will inform TheQube that the first URL in the post is an audio link, allowing others to play the file by pressing *Ctrl+Win+Enter*.
-
-h3. Shortening and unshortening URLs
-
-The idea behind URL shortening is that a long address is replaced by a shorter one.  This gives you more characters in situations where you have a limit to work with such as tweets or sms messages .  You may select your preferred shortener from the Miscellaneous tab of the global Configuration dialog, available by pressing *Ctrl+Shift+Win+O*.  Within any dialog where you would compose something, you will find buttons to shorten or unshorten any URL in the message.
-If your URL starts with "http://" or "www." (no quotes), it will be automatically detected.  Pressing Alt+S or clicking on the "Shorten URL" button will replace your long URL with a shorter one.  If the URL you want to replace isn't automatically detected, you can select it and press Alt+S which will use your selection.  If more than one URL is detected, you'll be presented with a list allowing you to select the URL you wish to shorten.
+<h4>Shortening and unshortening URLs</h4>
+<p>The idea behind URL shortening is that a long address is replaced by a shorter one.  This gives you more characters in situations where you have a limit to work with such as tweets or sms messages .  You may select your preferred shortener from the Miscellaneous tab of the global Configuration dialog, available by pressing <strong>Ctrl+Shift+Win+O</strong>.  Within any dialog where you would compose something, you will find buttons to shorten or unshorten any URL in the message.<br>
+If your URL starts with "http://" or "www." (no quotes), it will be automatically detected.  Pressing Alt+S or clicking on the "Shorten URL" button will replace your long URL with a shorter one.  If the URL you want to replace isn't automatically detected, you can select it and press Alt+S which will use your selection.  If more than one URL is detected, you'll be presented with a list allowing you to select the URL you wish to shorten.<br>
 TheQube supports the following URL shortening services:
-* goo.gl
-* is.gd
-* TinyURL
-* TinyArrows
-* SentaLa
-* Readability
-* Clck.ru
-* Qps.ru
-Goo.gl is selected by default.
+<ul>
+<li>goo.gl</li>
+<li>is.gd</li>
+<li>TinyURL</li>
+<li>TinyArrows</li>
+<li>SentaLa</li>
+<li>Readability</li>
+<li>Clck.ru</li>
+<li>Qps.ru</li>
+<li>Ux.nu</li>
+</ul>
+Qps.ru is selected by default.</p>
 
-h3. Translating messages
+<h4>Translating messages</h4>
+<p>In any new message dialog, you can translate your message into another language with the Translate button.  You will be given the opportunity to select what language the message is written in and what language it should be translated into.<br>
+In the twitter session, you can also translate tweets that you are reading.  We describe this in a later section.<br>
+By default, the source language (the language to translate from) is auto detected, so usually you don't need to select this. The target language (the one to translate into) is set to TheQube's interface language for your convenience. If you need to translate the text into another language, please select it in the list.</p>
+</article>
 
-In any new message dialog, you can translate your message into another language with the Translate button.  You will be given the opportunity to select what language the message is written in and what language it should be translated into.
-In the twitter session, you can also translate tweets that you are reading.  We describe this in a later section.
+<article>
+<h3>Keyboard Help</h3>
+<p>We Highly recommend that you read all of this document to get a complete understanding of how TheQube's various functions work.  After you have done that however, there is a way to quickly remind yourself what a particular keystroke does.  The keyboard help mode can be turned on by pressing <strong>Ctrl+Shift+Win+K</strong>.  In this mode, pressing any of TheQube's commands will inform you what that keystroke does within the current session.  Press <strong>Ctrl+Shift+Win+K</strong> again to exit keyboard help mode.</p>
+</article>
 
-h2. Keyboard Help
+<article>
+<h3>Configuration</h3>
+<p>TheQube is actually a very flexible piece of software.  Most of this document discusses TheQube's default behavior.  Pressing <strong>Ctrl+Win+O</strong> will bring up a configuration dialog with options for the current session.  These options will be described in the chapter for each session.  Pressing <strong>Ctrl+Shift+Win+O</strong> will bring up the main configuration dialog with options that apply to all of TheQube.</p>
+</article>
 
-We Highly recommend that you read all of this document to get a complete understanding of how TheQube's various functions work.  After you have done that however, there is a way to quickly remind yourself what a particular keystroke does.  The keyboard help mode can be turned on by pressing *Ctrl+Shift+Win+K*.  In this mode, pressing any of TheQube's commands will inform you what that keystroke does within the current session.  Press *Ctrl+Win+Shift+K* again to exit keyboard help mode.
+<h2>Twitter</h2>
 
-h2. Configuration
-
-TheQube is actually a very flexible piece of software.  Most of this document discusses TheQube's default behavior.  Pressing *Ctrl+Win+O* will bring up a configuration dialog with options for the current session.  These options will be described in the chapter for each session.  Pressing *Ctrl+Shift+Win+O* will bring up the main configuration dialog with options that apply to all of TheQube.  
-
-h1. Twitter
-
-h2. What is Twitter?
-
-"Twitter":https://twitter.com/ is an insanely popular micro blogging service, that is, a service which allows you to post short little chunks of no more than 140 characters of text to the web at a time and have these updates, or tweets, as they are called in twitter speak, read by your followers, or the people who are following you. If you don't currently have a twitter account, you may create one on the Twitter website.
+<article>
+<h3>What is Twitter?</h3>
+<p><a href="https://twitter.com/">Twitter</a> is an insanely popular micro blogging service, that is, a service which allows you to post short little chunks of no more than 140 characters of text to the web at a time and have these updates, or tweets, as they are called in twitter speak, read by your followers, or the people who are following you. If you don't currently have a twitter account, you may create one on the Twitter website.<br>
 There are many advantages to using a Twitter client, and TheQube in particular.  Here are just a few:
-* Instant, seamless access to Twitter from anywhere on your system, without having to have a browser open.
-* Announcement of new events such as receiving new tweets, direct messages, and mentions, or when new results are returned for a particular Twitter search.
-* A searchable repository of all of your received tweets saved in the session storage.
+<ul>
+<li>Instant, seamless access to Twitter from anywhere on your system, without having to have a browser open.</li>
+<li>Announcement of new events such as receiving new tweets, direct messages, and mentions, or when new results are returned for a particular Twitter search.</li>
+<li>A searchable repository of all of your received tweets saved in the session storage.</li>
+</ul></p>
+</article>
 
-h2. Logging into twitter
+<article>
+<h3>Logging into twitter</h3>
+<p>The first time you open a twitter session, your web browser will open and load a twitter web page which will ask you to enter your twitter username and password (if not done so yet before) to authorize TheQube.  After logging in, twitter will redirect you to a page saying that you're logged in. Please close this page, and you're ready to get started. The following sections will tell you everything you need to know about using Twitter.<br>
+<strong>Note</strong>: there have been a few reports of trouble connecting to twitter when certain firewalls are in use.  The most common problems are with the Vipre firewall.  If you are unable to connect, you may need to add an exception to the firewall.  In the case of Vipre, you want to add twitter.com as a web exception.  Generally, you either need to create an exception for twitter.com or for TheQube itself.</p>
+</article>
 
-The first time you open a twitter session, your web browser will open and load a twitter web page which will askyou to enter your twitter username and password to authorize TheQube.  After logging in, twitter will provide you with a number.  Return to TheQube, enter this number and you will be ready to get started.  The following sections will tell you everything you need to know about using Twitter.  
-Note: there have been a few reports of trouble connecting to twitter when certain firewalls are in use.  The most common problems are with the Vipre firewall.  If you are unable to connect, you may need to add an exception to the firewall.  In the case of Vipre, you want to add twitter.com as a web exception.  Generally, you either need to create an exception for twitter.com or for TheQube itself.
-
-==about API calls==[api]
-
-Throughout this chapter, you will see references to API calls.  Twitter has a limit on how much data you can get from the site in a given hour.  Any time you use TheQube or any other twitter client to download tweets, it counts against this limit.  Press control+win+a to check how many API calls you have left for the hour and how long until your limit will be reset.
-
-In most cases, one call to twitter's API can get 200 tweets.  By default, TheQube will only use 1 API call for any operation.  You can change this in the default settings tab of the buffer configuration dialog, available with control+win+alt+o.  This dialog will be fully discussed in [a later section.  #buffer-config] You need to always keep this fact in mind whenever changing a setting that will use more API calls than the default.  We have chosen tdefault settings that will insure that you should not run up against your hourly limit.
+<article>
+<h3>About API calls</h3>
+<p>Throughout this chapter, you will see references to API calls.  Twitter has a limit on how much data you can get from the site in a given hour.  Any time you use TheQube or any other twitter client to download tweets, it counts against this limit. Press <strong>Ctrl+Win+A</strong> to check how many API calls you have left for the hour and how long until your limit will be reset.<br>
+In most cases, one call to Twitter's API can get 200 tweets. By default, TheQube will only use 1 API call for any operation. You can change this in the Default Settings tab of the Buffer Configuration dialog, available with <strong>Ctrl+Win+Alt+O</strong>.  This dialog will be fully discussed in a later section. You need to always keep this fact in mind whenever changing a setting that will use more API calls than the default.  We have chosen default settings that will insure that you should not run out of your hourly limit.</p>
+</article>
 
 ==Buffers for Twitter==[twitter-buffers]
-
 In a Twitter session, there are four default buffers, or collections of posts.  They are home, direct messages, sent, and mentions.
 
 The home buffer holds all received tweets, except for direct messages.  These are the tweets of the users you have chosen to follow.
@@ -675,31 +682,3 @@ There is a known conflict between TheQube and the jaws scripts for the McTwit ap
 Every attempt has been made to insure that this document describes every aspect of TheQube in complete detail.  If you have checked this document carefully and still have questions, please ask in a mention to [@quartz_projects http://www.twitter.com/quartz_projects] on Twitter.
 
 You can also address a mention to the same account if you wish to submit a bug report or feature suggestion.  In your mention, please provide a turse description of the problem you're having or the feature you'd like and we'll be in touch.
-
-=Credits=[credits]
-
-The idea behind a UI-Less Twitter client belongs to Sean Randall, [@cachondo on Twitter http://www.twitter.com/cachondo], who originally brought us [Jawter http://randylaptop.com/software/jawter-2/all/1/].
-
-Christopher Toth, [@Mongoose_Q on twitter http://www.twitter.com/mongoose_q], is responsible for the majority of the code behind Qwitter, on which this software is based.
-
-Kyle Jones, [@djquartizer on Twitter http://www.twitter.com/djquartizer], is now responsible for the majority of TheQube's development.
-
-hllf, [@hllf on twitter http://www.twitter.com/hllf], is largely responsible for much of the advanced Twitter support found in TheQube.  He contributed code to Qwitter when he could find the time, and he enjoyed fixing a lot of pesky bugs.
-
-Haden Pike, [@hadenpike on twitter http://www.twitter.com/hadenpike], did a remarkable amount of work on Qwitter, helping out @Mongoose_Q when he was stuck in college badness.
-
-Paul, [@webboy42 on Twitter http://www.twitter.com/webboy42], rebuilt Qwitter's template system and exporter.  He's highly opinionated and fond of cursing live on Twitter while coding particularly tricky functionality.
-
-David Sexton, [@Daiverd on Twitter http://www.twitter.com/Daiverd], contributed code to Qwitter from time to time, especially the Quitting code that kills the kittens.
-
-Jason White, [@Coderunner on Twitter http://www.twitter.com/coderunner], was behind some important aspects of Qwitter's configuration dialog.
-
-Matt Campbell, [@mwcampbell1980 on Twitter http://www.twitter.com/mwcampbell1980], added System Access support to Qwitter.
-
-Nehemiah Hall, [@MiahTech on Twitter http://www.twitter.com/MiahTech], Was responsible for the original text of this readme, and served as a general idea factory.
-
-Justin Ekis, [@jekis on twitter http://www.twitter.com/jekis], Kept this readme up-to-date during Qwitter's lifetime, and found a way to make it much more simple to update it going forward.  He later started making small feature contributions to Qwitter.
-
-Matthew Horspool, [@mhorspool on twitter http://www.twitter.com/mhorspool], continues to keep this readme up-to-date.  He also manns the @quartz_projects twitter account and deals with technical support requests as they come in, as well as contributing feature suggestions and small pieces of code.
-
-Chris Nestrud, [@IAmChrisN on Twitter http://www.twitter.com/IAmChrisN], assisted Qwitter in being the bestest client it could be.
