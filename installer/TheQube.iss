@@ -4,7 +4,7 @@
 
 #define MyAppName "TheQube"
 #define MyAppVersion "0.8"
-#define MyAppPublisher "TheQube Developers and Translators Team"
+#define MyAppPublisher "TheQube Team"
 #define MyAppURL "http://theqube.oire.org"
 #define MyAppExeName "TheQube.exe"
 #define MyAppDescription "An accessible social networking client developed mainly for the blind."
