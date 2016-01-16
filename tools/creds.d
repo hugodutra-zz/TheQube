@@ -1,10 +1,14 @@
 /** 
-	TheQube Credentials storing
+	TheQube Credentials
+	Version 0.1
+
+	This command-line utility takes a key, a secret and (optionally) an output file name and outputs TheQube credentials as a string ready to be stored in the app config.
 
 	Copyright 2016, Andre Polykanine A.K.A. Menelion Elensúlë
 	https://github.com/Oire
 */
-module theqube.tools.creds;
+
+module theqube.tools.credentials;
 
 import std.stdio;
 import std.file;
@@ -13,7 +17,7 @@ import std.json;
 
 int main(string[] args) {
 	if (args.length < 3 || args.length > 4) {
-		writeln("Usage: creds <key> <secret> [<fileToWrite>]");
+		writeln("Usage: creds <key> <secret> [<outputFileName>]");
 		return 1;
 	}
 	JSONValue data = [args[1], args[2]];
