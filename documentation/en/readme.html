@@ -32,7 +32,7 @@ TheQube works with most screen readers, including JAWS, Window-Eyes, System Acce
 <article>
 <h3>What Are Sessions?</h3>
 <p>Sessions are sub-applications running on TheQube’s platform that add functionality to it, most commonly from web-based applications. As for now, Twitter and Stopwatch sessions are supported.<br>
-The first time you run TheQube after installation, you are presented with the new session dialog.  Select the type of session you would like to use and then press tab to give this session a name.  You will probably want to set TheQube up to work with Twitter first.  We will describe the Twitter session in the next chapter. You can have more than one session for a particular service.  For example you can access multiple twitter accounts with TheQube by creating a new session for each one.</p>
+The first time you run TheQube after installation, you are presented with the new session dialog.  Select the type of session you would like to use and then press <strong>Tab</strong> to give this session a name.  You will probably want to set TheQube up to work with Twitter first.  We will describe the Twitter session in the next chapter. You can have more than one session for a particular service.  For example you can access multiple twitter accounts with TheQube by creating a new session for each one.</p>
 
 <p>The following commands can be used to work with sessions in TheQube:
 <table>
@@ -65,11 +65,11 @@ You can also modify the navigation order of the buffers by pressing <strong>Ctrl
 <p>You have the option to schedule a message to be sent out at a later time.  Anywhere that you would compose something, there is a button which brings up a dialog for you to schedule the message.  The first option in this dialog   is the scheduling method.  If you select the interval method, you can set the number of hours, minutes and seconds that TheQube will wait before sending your message.  Using the time method, you enter the exact time you wish to send the message.  You must enter the time in 24-hour format rather than in am/pm format.</p>
 
 <h4>Sending Audio with Your Messages</h4>
-<p>TheQube also has the ability to attach audio messages to your posts using third-party services. You can choose from <a href="http://sndup.net/">SndUp</a> (set by default) or <a href="http://twup.me/">TwUp</a> on the Miscellaneous tab of TheQube’s main configuration dialog. Any new message dialog contains an Attach audio button.  Clicking this button brings up a dialog that gives you the option to either record your audio from within TheQube itself or attach an existing file.<br>
+<p>TheQube also has the ability to attach audio messages to your posts using third-party services. Currently only <a href="http://sndup.net/">SndUp</a> is supported. Any new message dialog contains an Attach audio button.  Clicking this button brings up a dialog that gives you the option to either record your audio from within TheQube itself or attach an existing file.<br>
 Clicking the record button will start the recording and you will be focused on a stop button. click this button when you finish recording.  You will be given the opportunity to play your recording back again.  If you are satisfied with what you have recorded, click the Attach button.  Otherwise you can discard the recording and try again.<br>
 Selecting the option to attach an existing file opens a standard windows dialog for selecting the file you wish to upload.<br>
 Also please note that, though direct messages in twitter are more or less considered to be private, audio content attached to a DM is still very much public.  This is because of the way publicly accessible audio posting services work.  The link contained in the message points to a file that is still publicly available.  Though only the recipient sees the direct link, it is still possible for others to find your file.  It’s similar to hiding a key to your house under the matt and then sending someone a private note telling them where to find the key.  The key is still there for anyone to find even if only one other person knows exactly where it is.  In the case of audio links, the "key" is still there after your recipient has heard the message.<br>
-If you do not wish to use SndUp or TwUp, you can still indicate that a tweet links to audio content by including the <em>#audio</em> hashtag in your tweet.  This will inform TheQube that the first URL in the post is an audio link, allowing others to play the file by pressing <strong>Ctrl+Windows+Enter</strong>.</p>
+If you do not wish to use SndUp, you can still indicate that a tweet links to audio content by including the <em>#audio</em> hashtag in your tweet.  This will inform TheQube that the first URL in the post is an audio link, allowing others to play the file by pressing <strong>Ctrl+Windows+Enter</strong>.</p>
 
 <h4>Shortening and Unshortening URLs</h4>
 <p>The idea behind URL shortening is that a long address is replaced by a shorter one.  This gives you more characters in situations where you have a limit to work with such as tweets or sms messages .  You may select your preferred shortener from the Miscellaneous tab of the global Configuration dialog, available by pressing <strong>Ctrl+Shift+Windows+O</strong>.  Within any dialog where you would compose something, you will find buttons to shorten or unshorten any URL in the message.<br>
@@ -92,6 +92,7 @@ Qps.ru is selected by default.</p>
 <p>In any new message dialog, you can translate your message into another language with the Translate button.  You will be given the opportunity to select what language the message is written in and what language it should be translated into.<br>
 In the twitter session, you can also translate tweets that you are reading.  We describe this in a later section.<br>
 By default, the source language (the language to translate from) is auto detected, so usually you don’t need to select this. The target language (the one to translate into) is set to TheQube’s interface language for your convenience. If you need to translate the text into another language, please select it in the list.</p>
+<p><strong>Note</strong>: Machine translation that is used for this feature might give (and often gives) inaccurate results, so we recommend you to warn people about using an automated translation service to avoid inconveniences.</p>
 </article>
 
 <article>
@@ -139,9 +140,7 @@ In most cases, one call to Twitter’s API can get 200 tweets. By default, TheQu
 <li>The mentions buffer contains all of the tweets that contain mentions of your screen name.  In twitter, if you make a comment that someone wants to respond to, they can make what is referred to as a mention, or reply.  From the website they would have to type an @ followed by your username.  However in TheQube we take care of that (see the section on replying).</li>
 </ul>
 TheQube utilizes a newer feature of twitter to instantly update your Mentions and Direct Message buffers.  Unlike all other buffers in TheQube, they are automatically updated instantly as soon as you receive a new message, without waiting the normal length of time for an update.</p>
-</article>
 
-<article>
 <h4>The Buffer Configuration Dialog</h4>
 <p>There are a few options that can be set differently for each type of buffer.  <strong>Ctrl+Windows+Alt+O</strong> will bring up the buffer configuration dialog.  The Default Settings tab will set the defaults for any new buffer that you create, such as searches or individual timelines.  You can check the apply settings to all buffers checkbox to use these settings for buffers that already exist.<br>
 This dialog has a tab with settings for each buffer.  When you open the dialog, the tab for the buffer that you are currently working in will be the default.  If you change buffers while this dialog is open, the active tab of the dialog will change to match your current position.  The settings available in this dialog are described below.
@@ -165,35 +164,28 @@ If at any time you no longer want to get a particular user’s tweets in your ho
 <p>As just mentioned, the Unfollow dialog (<strong>Ctrl+Shift+Windows+S</strong>) also contains an option to block a user from following you.  You can view a list of users that you have blocked by pressing <strong>Ctrl+Windows+Backslash</strong>.  The information that is presented for each user can be customized with a template.  See the section on templates for more information.  To unblock the selected user, press <strong>Ctrl+Windows+Delete</strong>.
 </article>
 
-<h3>Posting Updates</h3>
 <article>
+<h3>Posting Updates</h3>
+
 <h4>Post a New Tweet</h4>
 <p>To post a new tweet, press <strong>Ctrl+Windows+N</strong>.  It will bring up a dialog and place you in an edit field.  Just type away.  Twitter limits you to 140 characters, so if you go over this limit, TheQube will make a sound to let you know.<br>
 <strong>Note</strong>: Characters are anything you can type, be it a letter, punctuation mark, number, symbol, or space.</p>
 <p>If you’re curious to know how many characters you’ve used up so far, use your screen reader’s read application title command.  It will say something like "New Tweet - 40 of 140," where 40 is the number of characters you’ve already used. (Believe me, this feature though small, is a very useful one.) <br>
 When you’re done writing your sage 140 character remark of wisdom, press <strong>Enter</strong>.  You should hear the tweet sent sound, and TheQube (via your screen reader) will announce "Update posted."
-</article>
 
-<article>
 <h4>Reply to a Tweet</h4>
 <p>Remember us talking about mentions and replies earlier? Here’s where we find out how to make them.  When you’re reading your list of tweets, and you come across one you want to reply to, use <strong>Ctrl+Windows+R</strong>.  It’ll bring up a dialog very similar to the new tweet dialog.<br>
 Just type your reply, and press <strong>Enter</strong>.  Take special notice of your character count after you start typing, as part of your available characters go to showing who you’re replying to.  As before, checking your title will give you an idea of how many characters you have to work with.</p>
 <p>This dialog box also contains a button to mention all users in the selected tweet.  This is an easy way to make sure that all of the people involved in a conversation remain in the loop.  Please note that the more users you mention in this way, the fewer characters you will have for your actual message.</p>
-</article>
 
-<article>
 <h4>Post a Direct Message</h4>
 <p>To post a direct message, find a tweet from the person you wish to DM, and press <strong>Alt+Windows+D</strong>.  The same type of dialog comes up, but now you can type up to 10,000 characters as Twitter has recently increased its limit for direct messages.<br>
 <strong>Note</strong>: You can only direct message people that follow you.  This is a Twitter rule, not a limitation of TheQube.  Without this limit, everyone would be flooded with dm spam, and that feature would be really useless.<br>
 <strong>Important</strong>: Please see the section on attaching audio for an important note about using that feature with direct messages.
-</article>
 
-<article>
 <h4>Deleting a Tweet You Have Posted</h4>
 <p>It happens to all of us.  You reply to the wrong person, or send a public tweet instead of a direct message.  Or maybe you simply realize that what you just posted doesn’t deserve to see the light of day.  If for any reason you wish to delete one of your tweets, simply locate the offending tweet and press <strong>Ctrl+Windows+Delete</strong>.
-</article>
 
-<article>
 <h4>View a Tweet</h4>
 <p>You can view any tweet by pressing <strong>Ctrl+Windows+V</strong> to bring up the View Tweet dialog.  Also in this dialog, there is the Retweet checkbox.  If you check this and click the OK button, the tweet is posted as a retweet.  If unchecked, the current tweet is posted as a regular update. Click Cancel if you don’t wish to do anything with this tweet.
 </article>
@@ -219,6 +211,7 @@ Just type your reply, and press <strong>Enter</strong>.  Take special notice of 
 <li><a href="https://soundcloud.com/" target="_blank">SoundCloud</a></li>
 <li><a href="http://twup.me/" target="_blank">TwUp</a></li>
 <li><a href="http://sndup.net/" target="_blank">SndUp</a></li>
+<li>Generic links, i.e., a simple direct link to an audio file posted anywhere, for example, on Dropbox.</li>
 </ul>
 </article>
 
@@ -232,23 +225,21 @@ Please note: Of course, this is a completely automated process and the results c
 <article>
 <h3>Working with Likes</h3>
 <p>If you come across a tweet that you really appreciate, you can add it to the list of your liked tweets by pressing <strong>Alt+Windows+F</strong>. To remove a tweet from your likes list, press <strong>Alt+Shift+Windows+F</strong>. You can also remove a like from within the likes list with <strong>Ctrl+Windows+Delete</strong> while in your likes buffer.<br>
-To bring up a buffer containing your likes, press <strong>Ctrl+Windows+Alt+F</strong>. To bring up another user’s likes, press <strong>Ctrl+Shift+Windows+Alt+F</strong>. This will bring up a dialog for you to select the user whose favorites you wish to view.  The first option will be the sender of the current tweet.  You can press <strong>Down arrow</strong> to select any other user mentioned in that tweet.  Use your screen reader’s read current line command to see what is currently selected.  You can also enter a different user name manually.  You can dismiss a likes buffer with <strong>Ctrl+Windows+Apostrophe</strong>.</p>
+To bring up a buffer containing your likes, press <strong>Ctrl+Windows+Alt+F</strong>. To bring up another user’s likes, press <strong>Ctrl+Shift+Windows+Alt+F</strong>. This will bring up a dialog for you to select the user whose likes you wish to view.  The first option will be the sender of the current tweet.  You can press <strong>Down arrow</strong> to select any other user mentioned in that tweet.  Use your screen reader’s read current line command to see what is currently selected.  You can also enter a different user name manually.  You can dismiss a likes buffer with <strong>Ctrl+Windows+Apostrophe</strong>.</p>
 </article>
 
-<h3>Retweets</h3>
 <article>
+<h3>Retweets</h3>
+
 <h4>Retweeting a Tweet</h4>
-<p>If you come across a tweet that you find interesting in some way, you can post it again for your followers to see.  This is known as a retweet.  Retweets are marked with "RT @username" before the tweet text.  To retweet the current tweet, press control+shift+Windows+r.  In the miscellaneous tab of the twitter configuration dialog,  You can choose whether you want to add a comment to your retweet.  The first setting is recommended.  In this mode TheQube will ask you each time you press the retweet command.  The second mode will assume you want to send the retweet automatically without comment.  The third option will simply assume that you want to comment.
+<p>If you come across a tweet that you find interesting in some way, you can post it again for your followers to see.  This is known as a retweet.  Retweets are marked with "RT @username" before the tweet text.  To retweet the current tweet, press control+shift+Windows+r.  In the miscellaneous tab of the twitter configuration dialog,  You can choose whether you want to add a comment to your retweet.  The first setting is recommended.  In this mode TheQube will ask you each time you press the retweet command.  The second mode will assume you want to send the retweet automatically without comment.  The third option will simply assume that you want to comment.<br>
+If you are adding a comment, the tweet is shown in the retweet dialog so you can edit it at your leisure.  Once you’re done, press ok and the tweet is posted.</p>
 
-If you are adding a comment, the tweet is shown in the retweet dialog so you can edit it at your leasure.  Once you’re done, press ok and the tweet is posted.
+<h4>Viewing Retweets</h4>
+<p>To view retweets, press <strong>Ctrl+Windows+Alt+R</strong>.  This displays a dialog asking you which type of retweets you would like to view.<br>
+There are 3 options: my friends’ retweets, my retweets, and my retweets that have been retweeted by friends.  These options are pretty self-explanatory.  When you have made your selection, press OK.  A buffer containing the type of tweets you selected will be created.  Note: this is a new feature of twitter, and may still have some bugs. This also means that some other twitter clients have not yet switched to the new method of posting retweets, so you may not see a lot of tweets in this buffer.  Only tweets that are posted through TheQube without comments will appear in these buffers.</p>
+</article>
 
-===viewing retweets===[view-retweets]
-
-To view retweets, press control+Windows+alt+r.  This displays a dialog asking you which type of retweets you would like to view.  There are 3 options: my friends
-retweets, my retweets, and my retweets that have been retweeted by friends.  These options are pretty self-explanatory.  When you have made your selection,
-press ok.  A buffer containing the type of tweets you selected will be created.  Note: this is a new feature of twitter, and may still have some bugs.
-This also means that some other twitter clients have not yet switched to the new method of posting retweets, so you may not see a lot of tweets in
-this buffer.  Only tweets that are posted through TheQube without comments will appear in these buffers.
 
 ==Searching for tweets==[searching-tweets]
 

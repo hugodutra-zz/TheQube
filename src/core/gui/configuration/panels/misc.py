@@ -16,12 +16,6 @@ class MiscPanel (ConfigurationPanel):
   wx.StaticText(parent=self, label=_("Preferred URL Shortener:"))
   self.shorteners = wx.ComboBox(parent=self, choices=url_shortener.list_services(), style = wx.CB_READONLY)
   self.shorteners.SetSizerProps(expand=True)
-  wx.StaticText(parent=self, label=_("Preferred audio service:"))
-  # M. E.: I don't see why we should not hard-code this list for now
-  allAudioServices = ['sndup.net', 'twup.me', 'soundcache.tk']
-  self.audioServices = wx.ComboBox(parent=self, choices=allAudioServices, style = wx.CB_READONLY)
-  self.audioServices.Bind(wx.EVT_COMBOBOX, self.onChange)
-  self.audioServices.SetSizerProps(expand=True)
   self.sndupKeySizer = wx.BoxSizer(wx.HORIZONTAL)
   self.sndupKeyLabel = wx.StaticText(parent=self, label=_("Your %s API Key (optional):") % "sndup.net")
   self.sndupKey = wx.TextCtrl(parent=self)
@@ -34,10 +28,4 @@ class MiscPanel (ConfigurationPanel):
   if not AutoStart_allowed:
    self.AutoStart.Show(False)
   self.finish_setup()
-  wx.CallAfter(self.check_audioServices, args)
 
- def onChange(self, ev):
-  self.sndupKeySizer.ShowItems(False) if self.audioServices.GetValue() != "sndup.net" else self.sndupKeySizer.ShowItems(True)
-
- def check_audioServices(self, args):
-  self.sndupKeySizer.ShowItems(False) if self.audioServices.GetValue() != "sndup.net" else self.sndupKeySizer.ShowItems(True)

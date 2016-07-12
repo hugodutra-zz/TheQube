@@ -3,8 +3,7 @@ templateSystemVersion=integer(default=1)
 isConfigured=boolean(default=False)
 
 [oauth]
-# twitterData=string(default = "WyJwTG5xUXJYNFc1dlUwcTl4bHdnQ3BSSDBPIiwgInl2bmpWcFNEam90ZXMwQWpramtaNFAwOFpZeWNGdVB5ZllLMlFOV25nb3c1ekJYSVhZIl0~")
-twitterData=string(default = "WyJWalNBcElab2NvYTVqSFhZN2V5emRnIiwgInZoT1N4VHNXaEl2b29nbTJDNWJ6aTM5UVdmRm9BSW9nOWZ2dnlXamFZIl0~")
+twitterData=string(default = "WyJwTG5xUXJYNFc1dlUwcTl4bHdnQ3BSSDBPIiwgInl2bmpWcFNEam90ZXMwQWpramtaNFAwOFpZeWNGdVB5ZllLMlFOV25nb3c1ekJYSVhZIl0~")
 userData=string(default = "")
 
 [keymap]
