@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: The Qube 0.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-10 15:04+0200\n"
+"POT-Creation-Date: 2016-07-13 02:11+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Andre Polykanine A.K.A. Menelion Elensúlë <menelion@oire."
 "org>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "X-Poedit-Basepath: d:/gitrepos/the_qube\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Poedit 1.8.4\n"
+"X-Generator: Poedit 1.8.8\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: src\n"
 
@@ -131,19 +131,15 @@ msgstr "показывать диалог подтверждения при вы
 msgid "Preferred URL Shortener:"
 msgstr "Предпочитаемый сервис сокращения ссылок:"
 
-#: ../src\core\gui\configuration\panels\misc.py:19
-msgid "Preferred audio service:"
-msgstr "Предпочитаемый аудиосервис"
-
-#: ../src\core\gui\configuration\panels\misc.py:26
+#: ../src\core\gui\configuration\panels\misc.py:20
 msgid "Your %s API Key (optional):"
 msgstr "Ваш API-ключ для %s (необязательно):"
 
-#: ../src\core\gui\configuration\panels\misc.py:31
+#: ../src\core\gui\configuration\panels\misc.py:25
 msgid "Send messages with Enter"
 msgstr "Отправлять сообщения по нажатию клавиши Enter"
 
-#: ../src\core\gui\configuration\panels\misc.py:32
+#: ../src\core\gui\configuration\panels\misc.py:26
 msgid "Perform standard actions with Home/End keys"
 msgstr "Выполнять стандартные действия по клавишам Home и End"
 
@@ -445,19 +441,19 @@ msgstr "получатель:"
 msgid "%s to %s"
 msgstr "%s пользователю %s"
 
-#: ../src\core\gui\translate.py:21
+#: ../src\core\gui\translate.py:22
 msgid "Translate"
 msgstr "Перевод"
 
-#: ../src\core\gui\translate.py:31
+#: ../src\core\gui\translate.py:34
 msgid "Auto detect"
 msgstr "Определять автоматически"
 
-#: ../src\core\gui\translate.py:33
+#: ../src\core\gui\translate.py:36
 msgid "Source language:"
 msgstr "Перевести с языка:"
 
-#: ../src\core\gui\translate.py:35
+#: ../src\core\gui\translate.py:38
 msgid "Destination language:"
 msgstr "Перевести на язык:"
 
@@ -2665,6 +2661,9 @@ msgstr "секунду"
 #: ../src\utils\time_period.py:14
 msgid "{0} seconds"
 msgstr "{0} секунд"
+
+#~ msgid "Preferred audio service:"
+#~ msgstr "Предпочитаемый аудиосервис"
 
 #~ msgid "Retweet Style"
 #~ msgstr "стиль ретвита"

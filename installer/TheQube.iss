@@ -1,6 +1,6 @@
 ﻿; TheQube install script
-; InnoSetup v5.5.5 unicode
-; Copyright © TheQube Developers and Translators Team, 2014 — 2015
+; InnoSetup v5.5.9 unicode
+; Copyright © TheQube Developers and Translators Team, 2014 — 2016
 
 #define MyAppName "TheQube"
 #define MyAppVersion "0.8"

@@ -16,7 +16,4 @@ def exit():
  logging.debug("Shutting down %s" % application.name)
  dispatcher.send(sender=dispatcher.Anonymous, signal=signals.shutdown)
  sessions.shutdown(end=True)
- if global_vars.from_source or global_vars.remote:
-  import remote
-  remote.shutdown()
  wx.Exit()

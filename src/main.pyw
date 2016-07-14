@@ -44,9 +44,6 @@ def main():
   output.setup()
   output.speak(_("Welcome to %s") % application.name, 1)
   sessions.setup()
-  if global_vars.from_source or global_vars.remote:
-   import remote #Must be done here as not always packaged.
-   remote.setup()
   update_manager.setup()
  except:
   logging.exception("Error in startup process.")

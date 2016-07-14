@@ -14,7 +14,6 @@ portable = False
 from_source = False
 Updating = False
 KeyboardHelp = False
-remote = False
 debug = False
 
 def setup():
