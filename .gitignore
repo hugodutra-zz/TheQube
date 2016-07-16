@@ -56,3 +56,8 @@ src/sounds/*
 .dub
 docs.json
 __dummy.html
+
+# Visual Studio files
+.vs
+*.sln
+*.pyproj
