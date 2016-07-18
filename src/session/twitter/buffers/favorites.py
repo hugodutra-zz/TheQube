@@ -1,5 +1,5 @@
 from logger import logger
-logging = logger.getChild('sessions.twitter.buffers.favorites')
+logging = logger.getChild('sessions.twitter.buffers.likes')
 
 from core.sessions.buffers.buffer_defaults import buffer_defaults
 import config
@@ -12,8 +12,8 @@ from core.sessions.buffers.buffers import Dismissable
 
 class Favorites (Dismissable, Tweets):
  """
- Buffer to show all favorited tweets.
- Deleting a tweet from this buffer will actually unfavorite it.
+ Buffer to show all liked tweets.
+ Deleting a tweet from this buffer will actually unlike it.
  """
  def __init__(self, username=None, *args, **kwargs):
   self.init_done_event = threading.Event()
@@ -23,8 +23,8 @@ class Favorites (Dismissable, Tweets):
    kwargs['maxAPIPerUpdate'] = 100
   self.username = username
   super(Favorites, self).__init__(*args, **kwargs)
-  self.item_name = _("favorite")
-  self.item_name_plural = _("favorites")
+  self.item_name = _("like")
+  self.item_name_plural = _("likes")
   self.store_args(dict(username=username))
   self.init_done_event.set()
  
@@ -40,7 +40,7 @@ class Favorites (Dismissable, Tweets):
   super(Twitter, self).remove_item(index)
   try:
    self.session.TwitterApi.destroy_favorite(id = id)
-   output.speak(_("Tweet removed from favorites."), 1)
+   output.speak(_("Tweet removed from likes."), 1)
   except:
-   logging.exception("Unable to remove from favorites.")
-   output.speak(_("Unable to remove tweet from favorites."))
+   logging.exception("Unable to remove from likes.")
+   output.speak(_("Unable to remove tweet from likes."))

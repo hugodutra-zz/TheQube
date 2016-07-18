@@ -2,7 +2,7 @@
 
 
 from setuptools import setup, find_packages
-import py2exe, innosetup
+import py2exe
 import shutil
 from glob import glob
 import os
@@ -13,14 +13,7 @@ logging = logger.getChild("Installer")
 name = 'TheQube'
 __version__ = 0.8
 __author__ = 'TheQube developers team'
-DELETE_DIRS = (
- 'build',
- 'dist',
- 'release',
- 'update'
-)
 
-[shutil.rmtree(i, ignore_errors=True) for i in DELETE_DIRS]
 def get_datafiles():
  return [("", ["main.defaults"] + glob('*.exe') + glob("*.dll"))
 ] + list_all_documentation() + list_session_defaults()  + accessible_output_data() + sound_lib_data() + requests_data() + get_soundpacks() + get_locales()
@@ -90,14 +83,11 @@ if __name__ == '__main__':
   options = {
    'py2exe': {
     'compressed': False,
-    'dll_excludes': ["powrprof.dll", "mswsock.dll"],
+    'dll_excludes': ['w9xpopen.exe', 'MSVCP90.dll', 'mswsock.dll', 'powrprof.dll', 'MPR.dll', 'MSVCR100.dll', 'mfc90.dll'],
     'optimize': 1,
     'skip_archive': True,
-    'excludes': ["win32ui", "pywin.dialogs", "pywin.debugger.dbgcon", "tkinter", "tk", "Tkconstants", "Tkinter", "tcl", "_imagingtk", "PIL._imagingtk", "ImageTk", "PIL.ImageTk", "FixTk", "twisted", "django", "gobject", "gtk", "unittest", "remote", "ZODB", "zope.interface"],
-   },
-   'innosetup': {
-    'inno_setup_exe': "C:\\Program Files\\Inno Setup 5\\ISCC.exe"
-   },
+    'excludes': ["win32ui", "pywin.dialogs", "pywin.debugger.dbgcon", "tkinter", "tk", "Tkconstants", "Tkinter", "tcl", "_imagingtk", "PIL._imagingtk", "ImageTk", "PIL.ImageTk", "FixTk", "django", "gobject", "gtk", "unittest", "remote", "ZODB"],
+   }
   },
   windows = [
    {
@@ -108,4 +98,5 @@ if __name__ == '__main__':
   install_requires = [
   ]
  )
+
 
