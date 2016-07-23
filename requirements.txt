@@ -9,7 +9,5 @@ oauth2>=1.0.2
 oauthlib>=0.4.2
 pycurl
 pydispatcher
-twisted
-zope.interface==3.6.1
 requests
 twython

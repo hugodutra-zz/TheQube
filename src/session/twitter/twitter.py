@@ -418,11 +418,11 @@ class Twitter (Buffers, Login, Hotkey, SpeechRecognition, WebService):
   if post_type != _("tweet"):
    return output.speak(_("You can like only a tweet."), True)
   output.speak(_("You like this tweet"), True)
-  self.api_call('create_favorite', action=_("marking as favorite"), id=twitter_id)
+  self.api_call('create_favorite', action=_("Liking"), id=twitter_id)
 
  def unfavorite_tweet(self, buffer=None, index=None):
   twitter_id = buffer[index]['id']
-  self.api_call('destroy_favorite', action=_("marking as favorite"), id=twitter_id)
+  self.api_call('destroy_favorite', action=_("Unliking"), id=twitter_id)
   output.speak(_("Tweet removed from likes."), 1)
 
  def toggle_device_notifications(self, buffer=None, index=None):

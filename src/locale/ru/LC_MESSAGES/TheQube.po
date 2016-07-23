@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: The Qube 0.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-13 02:11+0300\n"
+"POT-Creation-Date: 2016-07-17 00:42+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Andre Polykanine A.K.A. Menelion Elensúlë <menelion@oire."
 "org>\n"
@@ -1048,7 +1048,7 @@ msgstr "Попытка импорта буфера %s"
 msgid "Welcome to %s"
 msgstr "Добро пожаловать в %s"
 
-#: ../src\main.pyw:53
+#: ../src\main.pyw:50
 msgid "There was an error in the startup process.  We appologize for this."
 msgstr ""
 "В процессе загрузки произошла ошибка. просим извинения за причинённые "
@@ -1274,20 +1274,21 @@ msgid "Screen Name"
 msgstr "Экранное имя"
 
 #: ../src\session\twitter\buffers\favorites.py:26
-msgid "favorite"
-msgstr "Избранный"
+msgid "like"
+msgstr "Понравившийся твит"
 
 #: ../src\session\twitter\buffers\favorites.py:27
-msgid "favorites"
-msgstr "Избранные"
+msgid "likes"
+msgstr "понравившихся твитов"
 
 #: ../src\session\twitter\buffers\favorites.py:43
-msgid "Tweet removed from favorites."
-msgstr "Твит удалён из избранных."
+#: ../src\session\twitter\twitter.py:426
+msgid "Tweet removed from likes."
+msgstr "Твит удалён из понравившихся."
 
 #: ../src\session\twitter\buffers\favorites.py:46
-msgid "Unable to remove tweet from favorites."
-msgstr "Невозможно удалить твит из избранных."
+msgid "Unable to remove tweet from likes."
+msgstr "Невозможно удалить твит из понравившихся."
 
 #: ../src\session\twitter\buffers\followers.py:17
 #: ../src\session\twitter\buffers\followers.py:21
@@ -1506,8 +1507,8 @@ msgid "Retweet count"
 msgstr "Число ретвитов"
 
 #: ../src\session\twitter\buffers\tweets.py:21
-msgid "Favorited"
-msgstr "Добавлено в избранное"
+msgid "Liked"
+msgstr "Понравившиеся"
 
 #: ../src\session\twitter\buffers\tweets.py:22
 msgid "Retweeted"
@@ -2088,16 +2089,16 @@ msgid "Favorites"
 msgstr "Избранное"
 
 #: ../src\session\twitter\interface.py:271
-msgid "Loading favorites"
-msgstr "Загрузка избранного"
+msgid "Loading likes"
+msgstr "Загрузка понравившихся твитов"
 
 #: ../src\session\twitter\interface.py:280
-msgid "%s's favorites"
-msgstr "Избранное пользователя %s"
+msgid "%s's likes"
+msgstr "Твиты, понравившиеся пользователю %s"
 
 #: ../src\session\twitter\interface.py:281
-msgid "Loading favorites for %s."
-msgstr "Загрузка избранного пользователя %s."
+msgid "Loading likes for %s."
+msgstr "Загрузка твитов, понравившихся %s."
 
 #: ../src\session\twitter\interface.py:298
 msgid "Followers"
@@ -2529,10 +2530,6 @@ msgstr "Вам нравится этот твит"
 msgid "marking as favorite"
 msgstr "Добавление в избранное"
 
-#: ../src\session\twitter\twitter.py:426
-msgid "Tweet removed from likes."
-msgstr "Твит удалён из понравившихся."
-
 #: ../src\session\twitter\twitter.py:430
 msgid "Toggling device notifications"
 msgstr "Включение/выключение уведомлений на мобильное устройство."
@@ -2661,6 +2658,30 @@ msgstr "секунду"
 #: ../src\utils\time_period.py:14
 msgid "{0} seconds"
 msgstr "{0} секунд"
+
+#~ msgid "favorite"
+#~ msgstr "Избранный"
+
+#~ msgid "favorites"
+#~ msgstr "Избранные"
+
+#~ msgid "Tweet removed from favorites."
+#~ msgstr "Твит удалён из избранных."
+
+#~ msgid "Unable to remove tweet from favorites."
+#~ msgstr "Невозможно удалить твит из избранных."
+
+#~ msgid "Favorited"
+#~ msgstr "Добавлено в избранное"
+
+#~ msgid "Loading favorites"
+#~ msgstr "Загрузка избранного"
+
+#~ msgid "%s's favorites"
+#~ msgstr "Избранное пользователя %s"
+
+#~ msgid "Loading favorites for %s."
+#~ msgstr "Загрузка избранного пользователя %s."
 
 #~ msgid "Preferred audio service:"
 #~ msgstr "Предпочитаемый аудиосервис"

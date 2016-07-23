@@ -2,9 +2,6 @@
 
 from logger import logger
 logging = logger.getChild('sessions.twitter.interface')
-
-from importer import Importer
-from durus_importer import SessionImporter
 from core.sessions.buffers.buffer_defaults import buffer_defaults
 from utils.delay import delay_action
 from utils.thread_utils import call_threaded
@@ -266,29 +263,29 @@ class TwitterInterface (BuffersInterface, HotkeyInterface, MetaInterface):
   self.session.register_buffer(_("Trending: Worldwide"), buffers.TopTrends)
 
  def Favorites(self):
-  """Creates a buffer containing the tweets you have favorited."""
+  """Creates a buffer containing the tweets you have liked."""
 
-  self.session.register_buffer(_("Favorites"), buffers.Favorites, prelaunch_message=_("Loading favorites"))
+  self.session.register_buffer(_("Likes"), buffers.Favorites, prelaunch_message=_("Loading likes"))
 
  @buffer_defaults
  def FavoritesFor(self, buffer=None, index=None):
-  """Creates a buffer containing the tweets the specified user has favorited."""
+  """Creates a buffer containing the tweets the specified user has liked."""
 
   who = buffer.get_all_screen_names(index)
   new = modal_dialog(gui.FavoritesDialog, parent=self.session.frame, users=who, results_per_api=200)
   who = new.users.GetValue()
-  name = _("%s's favorites") % who
-  self.session.register_buffer(name, buffers.Favorites, username=who, count=new.retrieveCount.GetValue(), maxAPIPerUpdate=new.maxAPIPerUpdate.GetValue(), prelaunch_message=_("Loading favorites for %s.") % who)
+  name = _("%s's likes") % who
+  self.session.register_buffer(name, buffers.Favorites, username=who, count=new.retrieveCount.GetValue(), maxAPIPerUpdate=new.maxAPIPerUpdate.GetValue(), prelaunch_message=_("Loading likes for %s.") % who)
 
  @buffer_defaults
  def FavoriteTweet(self, buffer=None, index=None):
-  """Add the current tweet to your favorites on twitter."""
+  """Add the current tweet to your likes on twitter."""
 
   call_threaded(self.session.favorite_tweet, buffer, index)
 
  @buffer_defaults
  def UnfavoriteTweet(self, buffer=None, index=None):
-  """If possible, removes the current tweet from your favorites."""
+  """If possible, removes the current tweet from your likes."""
 
   call_threaded(self.session.unfavorite_tweet, buffer, index)
 
@@ -492,50 +489,6 @@ class TwitterInterface (BuffersInterface, HotkeyInterface, MetaInterface):
    choice = dlg.locations_list.GetStringSelection()
   location = locations_by_name[choice]
   self.session.register_buffer(_("Trending: %s" % location['name']), buffers.LocalTrends, woeid=location['woeid'])
-
- def ImportDatabase(self):
-  """Import an old-style  .db qwitter database, or .session file into the current session's storage."""
-
-  def import_buffer (tablename, buffername):
-   table = new.load_table(tablename)
-   newtable = new.convert_table(table)
-   buf = self.session.get_buffer_by_name(buffername)
-   buf.storage.extend(newtable)
-   buf.storage.sort(key=lambda a: calendar.timegm(rfc822.parsedate(a['created_at'])))
-   buf.storage = misc.RemoveDuplicates(buf.storage, lambda x: x['id'])
-  f = wx.Frame(None, wx.ID_ANY, "FileDialog")
-  dlg = wx.FileDialog(f, message="Select Database", defaultDir=paths.data_path(), wildcard="Session files (*.session)|*.session|Qwitter Databases (*.DB)|*.db")
-  f.Raise()
-  if dlg.ShowModal() == wx.ID_OK:
-   filename = dlg.GetPath()
-   dlg.Destroy()
-   f.Destroy()
-  else:
-   output.speak(_("Canceled"), True)
-   dlg.Destroy()
-   f.Destroy()
-   return
-  if filename.lower().endswith('.db'):
-   new = Importer(filename)
-   home = new.load_table("tweets")
-   directs = new.load_table("directs")
-   mentions = new.load_table("replies")
-   sent = new.load_table("sent")
-   total = len(home) + len(directs) + len(mentions) + len(sent)
-   yesno = wx.MessageBox(_("Are you sure you want to import %d items from old database?") % total, _("Are you sure?"), style=wx.YES|wx.NO)
-   if yesno == wx.YES:
-    output.speak(_("Importing, please wait."), True)
-   else:
-    return output.speak(_("Canceled."), True)
-   for i in [("tweets", "Home"), ("replies", "Mentions"), ("directs", "Direct Messages"), ("sent", "Sent")]:
-    import_buffer(*i)
-  elif filename.lower().endswith('.session'):
-   try:
-    new = SessionImporter(filename)
-   except TypeError:
-    return output.speak(_("Session type mismatch."))
-   new.do_import()
-  wx.MessageBox(_("Import completed successfully."), _("Import complete."))
 
  def ShowConfigurationDialog(self):
   self.session.show_configuration_dialog()

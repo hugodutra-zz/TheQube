@@ -18,7 +18,7 @@ class Tweets (Twitter):
   self.set_field('screen_name', _("Screen Name"), ('user', 'screen_name'))
   self.set_field('location', _("Location"), ('user', 'location'))
   self.set_field('retweet_count', _("Retweet count"), None, field_type=meta.FT_NUMERIC)
-  self.set_field('favorited', _("Favorited"), None, field_type=meta.FT_BOOL)
+  self.set_field('liked', _("Liked"), None, field_type=meta.FT_BOOL)
   self.set_field('retweeted', _("Retweeted"), None, field_type=meta.FT_BOOL)
   #And the template:
   self.default_template = 'default_template'
