@@ -408,9 +408,11 @@ class Twitter (Buffers, Login, Hotkey, SpeechRecognition, WebService):
   return val
 
  def remaining_api_calls(self):
-  hits = self.api_call('rate_limit_status', _("Retrieving API calls"), report_success=False)
-  resetTime = misc.SecondsToString(hits['reset_time_in_seconds'] - round(time.time()))
-  output.speak(_("You have %s API calls left.  They will reset to %d calls in %s.") % (hits['remaining_hits'], hits['hourly_limit'], resetTime), True)
+    limit = int(self.api_call('get_lastfunction_header', _("Retrieving API calls"), report_success=False, header='x-rate-limit-limit'))
+    remaining = self.api_call('get_lastfunction_header', _("Retrieving API calls"), report_success=False, header='x-rate-limit-remaining')
+    resets_in = int(self.api_call('get_lastfunction_header', _("Retrieving API calls"), report_success=False, header='x-rate-limit-reset'))
+    resetTime = misc.SecondsToString(resets_in - round(time.time()))
+    output.speak(_("You have %s API calls left.  They will reset to %d calls in %s.") % (remaining, limit, resetTime), True)
 
  def favorite_tweet(self, buffer=None, index=None):
   twitter_id = buffer[index]['id']

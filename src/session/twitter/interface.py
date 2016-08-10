@@ -318,13 +318,12 @@ class TwitterInterface (BuffersInterface, HotkeyInterface, MetaInterface):
 
   self.session.register_buffer(_("Blocked Users"), buffers.Blocked, prelaunch_message=_("Loading blocked users."))
 
- '''
+ 
  def GetRateLimitStatus(self):
   """Reports the number of calls you can make to twitter  as well as how long you have until they reset."""
 
   output.speak(_("Checking current API call count..."), True)
   call_threaded(self.session.remaining_api_calls)
-'''
 
  @buffer_defaults
  def DeviceNotifications(self, buffer=None, index=None):
