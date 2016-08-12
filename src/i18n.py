@@ -3,7 +3,7 @@ logging = logger.getChild("core.i18n")
 
 import application
 import config
-from i18n_utils import core, wx_i18n
+from i18n_utils import core
 import paths
 
 
@@ -11,7 +11,6 @@ import paths
 def setup():
  logging.info("Initializing the i18n subsystem.")
  core.set_active_language(application.name, paths.locale_path(), config.main['languages']['current'])
- #wx_i18n.set_wx_language(config.main['languages']['current'], paths.locale_path())
 
 def available_languages():
  return core.available_languages(paths.locale_path(), application.name)

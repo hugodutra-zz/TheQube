@@ -1,3 +1,6 @@
+from logger import logger
+logging = logger.getChild('i18n_utils.wx_i18n')
+
 import core
 import wx
 
@@ -10,5 +13,5 @@ def set_wx_language(lang, locale_path):
   wx_lang = lang
  try:
   wx_locale.Init(lang, wx_lang)
- except:
-  pass
+ except Exception as e:
+  logging.exception("@Unable to initialize WX locale: %s" % e)

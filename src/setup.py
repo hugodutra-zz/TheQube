@@ -83,7 +83,7 @@ if __name__ == '__main__':
   options = {
    'py2exe': {
     'compressed': False,
-    'dll_excludes': ['w9xpopen.exe', 'MSVCP90.dll', 'mswsock.dll', 'powrprof.dll', 'MPR.dll', 'MSVCR100.dll', 'mfc90.dll'],
+    'dll_excludes': ['w9xpopen.exe', 'MSVCP90.dll', 'mswsock.dll', 'powrprof.dll', 'MPR.dll', 'MSVCR100.dll', 'mfc90.dll', 'MSVFW32.dll', 'AVIFIL32.dll', 'AVICAP32.dll', 'ADVAPI32.dll', 'CRYPT32.dll', 'WLDAP32.dll'],
     'optimize': 1,
     'skip_archive': True,
     'excludes': ["win32ui", "pywin.dialogs", "pywin.debugger.dbgcon", "tkinter", "tk", "Tkconstants", "Tkinter", "tcl", "_imagingtk", "PIL._imagingtk", "ImageTk", "PIL.ImageTk", "FixTk", "django", "gobject", "gtk", "unittest", "remote", "ZODB"],

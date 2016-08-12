@@ -17,14 +17,19 @@ def end(pid):
    win32api.TerminateProcess(handle, -1)
    win32api.CloseHandle(handle)
   except Exception as e:
-   logging.exception("Process terminating failed on pid {0}: {1}".format(pid, e))
+   logging.exception("Process terminating failed on pid {0} with access level {1}: {2}".format(pid, ACCESS_LEVEL, e))
 
 def cend(pid):
  import ctypes
  ACCESS_LEVEL = win32con.PROCESS_QUERY_INFORMATION|win32con.PROCESS_VM_READ
- handle = ctypes.windll.kernel32.OpenProcess(ACCESS_LEVEL, False, pid)
- ctypes.windll.kernel32.TerminateProcess(handle, -1)
- ctypes.windll.kernel32.CloseHandle(handle)
+ if pid != 0:
+  logging.debug("CEnding pid: %d" % pid)
+  try:
+   handle = ctypes.windll.kernel32.OpenProcess(ACCESS_LEVEL, False, pid)
+   ctypes.windll.kernel32.TerminateProcess(handle, -1)
+   ctypes.windll.kernel32.CloseHandle(handle)
+  except Exception as e:
+   logging.exception("Cend process terminating failed on pid {0}: {1}".format(pid, e))
 
 def setup():
  try:

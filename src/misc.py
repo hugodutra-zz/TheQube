@@ -17,17 +17,17 @@ def SecondsToString(seconds, precision=0):
  sec_string = sec.__format__(sec_spec)
  string = ""
  if (hour == 1):
-  string += "%d hour, " % hour
+  string += _("%d hour, " % hour)
  elif (hour >= 2):
-  string += "%d hours, " % hour
+  string += _("%d hours, " % hour)
  if (min == 1):
-  string += "%d minute, " % min
+  string += _("%d minute, " % min)
  elif (min >= 2):
-  string += "%d minutes, " % min
+  string += _("%d minutes, " % min)
  if (sec == 1):
-  string += "%s second" % sec_string
+  string += _("%s second" % sec_string)
  else:
-  string += "%s seconds" % sec_string
+  string += _("%s seconds" % sec_string)
  return string
 
 def url_cleanup(url):
