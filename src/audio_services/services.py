@@ -26,7 +26,7 @@ def convert_secure_audioboo(url):
 
 @matches_url('https://audioboom.com')
 def convert_audioboom(url):
- if not re.findall ("^https?://audioboom.com/boos/[a-zA-Z0-9]", url.lower()):
+ if not re.findall ("^https?://audioboom.com/(boos|posts)/[a-zA-Z0-9]", url.lower()):
   raise TypeError('%r is not a valid URL' % url)
  url = url.split('?')[0]
  return url + ".mp3"
