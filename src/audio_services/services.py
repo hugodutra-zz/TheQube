@@ -63,7 +63,7 @@ def convert_sndup(url):
  if not result or result.group("audio_id") is None:
   raise TypeError('%r is not a valid URL' % url)
  audio_id = result.group("audio_id")
- return 'http://sndup.net/%s/a' % audio_id
+ return 'http://sndup.net/%s' % audio_id
 
 def convert_generic_audio(url):
  from urlparse import urlparse

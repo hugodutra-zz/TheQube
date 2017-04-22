@@ -253,9 +253,7 @@ class NewMessageDialog(SquareDialog):
    dlg.postprocess()
    output.speak(_("Attaching..."), True)
    service = config.main['AudioServices']['service']
-   if service == 'twup.me':
-    baseUrl = 'http://api.twup.me/post.json'
-   elif service == 'sndup.net':
+   if service == 'sndup.net':
     baseUrl = 'http://sndup.net/post.php'
    elif service == 'soundcache.tk':
     baseUrl = 'http://soundcache.tk/upload.php'
