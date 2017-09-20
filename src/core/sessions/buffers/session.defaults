@@ -21,7 +21,7 @@ MoveBufferLeft=string(default="control+alt+win+left")
 MoveBufferRight=string(default="control+alt+win+right")
 UpdateCurrentBuffer = string(default = "control+win+alt+u")
 ViewItem=string(default="control+win+v")
-Interact=string(default="control+win+return")
+Interact=string(default="control+win+alt+return")
 ToggleBufferMute=string(default="control+win+alt+m")
 
 [sounds]

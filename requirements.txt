@@ -6,7 +6,5 @@ geopy
 innosetup
 oauth2>=1.0.2
 oauthlib>=0.4.2
-pycurl
 pydispatcher
-requests
-twython
+twython==3.1.0

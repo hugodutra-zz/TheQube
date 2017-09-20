@@ -84,7 +84,7 @@ class Twitter (Buffers, Login, Hotkey, SpeechRecognition, WebService):
   twitterDataTrans = twitterDataOrig.translate(trans)
   twitterData = b64decode(twitterDataTrans)
   twitterData = literal_eval(twitterData)
-  self.auth_handler = Twython(twitterData[0], twitterData[1])
+  self.auth_handler = Twython(twitterData[0], twitterData[1], client_args = {'verify': False})
   logging.info("%s: Initializing Twitter API" % self.name)
   self.login()
   super(Twitter, self).finish_initialization()
@@ -98,17 +98,21 @@ class Twitter (Buffers, Login, Hotkey, SpeechRecognition, WebService):
   twitterDataTrans = twitterDataOrig.translate(trans)
   twitterData = b64decode(twitterDataTrans)
   twitterData = literal_eval(twitterData)
-  tw = Twython(twitterData[0], twitterData[1], auth_endpoint='authorize')
+  tw = Twython(twitterData[0], twitterData[1], auth_endpoint='authorize', client_args = {'verify': False})
   try:
    auth = tw.get_authentication_tokens("http://127.0.0.1:8080")
-  except SSLError:
-   output.speak(_("Sorry, we can't connect to Twitter. You may want to adjust your firewall or antivirus software appropriately"), True)
-  webbrowser.open_new_tab(auth['auth_url'])
+  except Exception as e:
+   logging.exception("Unable to get authentication tokens: %s" % str(e))
+   output.speak(_("Unable to get access token. Something went wrong, please call the developers."))
+  try:
+   webbrowser.open_new_tab(auth['auth_url'])
+  except Exception as e:
+   logging.exception("Unable to open web browser: %s" % str(e))
   global logged, verifier
   logged = False
   while logged == False:
    httpd.handle_request()
-  self.auth_handler = Twython(twitterData[0], twitterData[1], auth['oauth_token'], auth['oauth_token_secret'])
+  self.auth_handler = Twython(twitterData[0], twitterData[1], auth['oauth_token'], auth['oauth_token_secret'], client_args = {'verify': False})
   token = self.auth_handler.get_authorized_tokens(verifier)
   output.speak(_("Retrieved access token from Twitter."), True)
   httpd.server_close()
@@ -137,7 +141,7 @@ class Twitter (Buffers, Login, Hotkey, SpeechRecognition, WebService):
   userDataTrans = userDataOrig.translate(trans)
   userData = b64decode(userDataTrans)
   userData = literal_eval(userData)
-  self.TwitterApi = Twython(twitterData[0], twitterData[1], userData[0], userData[1])
+  self.TwitterApi = Twython(twitterData[0], twitterData[1], userData[0], userData[1], client_args = {'verify': False})
   self.check_twitter_connection()
   resp =  self.api_call('verify_credentials', _("verifying Twitter credentials"), report_success=False, login=True)
   self.username = resp['screen_name']
