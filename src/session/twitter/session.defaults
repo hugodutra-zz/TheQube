@@ -8,7 +8,7 @@ userData=string(default = "")
 
 [keymap]
 NewTweet = string(default = "control+win+n")
-NewDm = string(default = "alt+win+d")
+NewDm = string(default = "control+win+alt+d")
 NewReply = string(default = "control+win+r")
 Retweet = string(default = "control+win+shift+r")
 Quote = string(default = "control+win+shift+q")
