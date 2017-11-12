@@ -56,10 +56,18 @@ class Twitter (Updating, Storage, Audio, APICount):
   for i in update:
    if 'full_text' in i:
     i['full_text'] = html_filter.StripChars(i['full_text'])
-   if 'retweeted_status' in i and 'full_text' in i['retweeted_status']:
-    i['retweeted_status']['full_text'] = html_filter.StripChars(i['retweeted_status']['full_text'])
-   if 'quoted_status' in i and 'full_text' in i['quoted_status']:
-    i['quoted_status']['full_text'] = html_filter.StripChars(i['quoted_status']['full_text'])
+   elif 'text' in i:
+    i['text'] = html_filter.StripChars(i['text'])
+   if 'retweeted_status' in i:
+    if 'full_text' in i['retweeted_status']:
+     i['retweeted_status']['full_text'] = html_filter.StripChars(i['retweeted_status']['full_text'])
+    else:
+     i['retweeted_status']['text'] = html_filter.StripChars(i['retweeted_status']['text'])
+   if 'quoted_status' in i:
+    if 'full_text' in i['quoted_status']:
+     i['quoted_status']['full_text'] = html_filter.StripChars(i['quoted_status']['full_text'])
+    else:
+     i['quoted_status']['text'] = html_filter.StripChars(i['quoted_status']['text'])
   return update
 
  def process_source(self, field):
@@ -179,16 +187,38 @@ class Twitter (Updating, Storage, Audio, APICount):
 
  @buffer_defaults
  def get_text(self, index=None, item=None):
-  if 'retweeted_status' not in item and 'quoted_status' not in item and 'full_text' in item:
-   text = item['full_text']
-  elif 'retweeted_status' in item and 'full_text' in item['retweeted_status']:
-   if 'quoted_status' in item['retweeted_status'] and 'full_text' in item['retweeted_status']['quoted_status']:
-    text = "RT @%s: %s QT @%s: %s" % (item['retweeted_status']['user']['screen_name'], item['retweeted_status']['full_text'].split(u'http')[:-1][0], item['retweeted_status']['quoted_status']['user']['screen_name'], item['retweeted_status']['quoted_status']['full_text'])
+  if 'retweeted_status' not in item and 'quoted_status' not in item:
+   if 'full_text' in item:
+    text = item['full_text']
+   elif 'text' in item:
+    text = item['text']
    else:
-    text = "RT @%s: %s" % (item['retweeted_status']['user']['screen_name'], item['retweeted_status']['full_text'])
-  elif 'quoted_status' in item and 'full_text' in item['quoted_status']:
-   text = "%s QT @%s: %s" % (item['full_text'].split(u'http')[:-1][0], item['quoted_status']['user']['screen_name'], item['quoted_status']['full_text'])
+    text = ""
+    logging.debug("Unable to find text in buffer %s, index %s, item %s" % (self.name, index, item))
+  elif 'retweeted_status' in item:
+   if 'quoted_status' in item['retweeted_status']:
+    if 'full_text' in item['retweeted_status']['quoted_status']:
+     text = "RT @%s: %s QT @%s: %s" % (item['retweeted_status']['user']['screen_name'], item['retweeted_status']['full_text'].split(u'http')[:-1][0], item['retweeted_status']['quoted_status']['user']['screen_name'], item['retweeted_status']['quoted_status']['full_text'])
+    elif 'text' in item['retweeted_status']['quoted_status']:
+     text = "RT @%s: %s QT @%s: %s" % (item['retweeted_status']['user']['screen_name'], item['retweeted_status']['text'].split(u'http')[:-1][0], item['retweeted_status']['quoted_status']['user']['screen_name'], item['retweeted_status']['quoted_status']['text'])
+    else:
+     text = ""
+     logging.debug("Unable to find text in buffer %s, index %s, item %s" % (self.name, index, item))
+   else:
+    if 'full_text' in item['retweeted_status']:
+     text = "RT @%s: %s" % (item['retweeted_status']['user']['screen_name'], item['retweeted_status']['full_text'])
+    elif 'text' in item['retweeted_status']:
+     text = "RT @%s: %s" % (item['retweeted_status']['user']['screen_name'], item['retweeted_status']['text'])
+    else:
+     text = ""
+     logging.debug("Unable to find text in buffer %s, index %s, item %s" % (self.name, index, item))
+  elif 'quoted_status' in item:
+   if 'full_text' in item['quoted_status']:
+    text = "%s QT @%s: %s" % (item['full_text'].split(u'http')[:-1][0], item['quoted_status']['user']['screen_name'], item['quoted_status']['full_text'])
+   elif 'text' in item['quoted_status']:
+    text = "%s QT @%s: %s" % (item['text'].split(u'http')[:-1][0], item['quoted_status']['user']['screen_name'], item['quoted_status']['text'])
   else:
+   text = ""
    logging.debug("Unable to find text in buffer %s, index %s, item %s" % (self.name, index, item))
   return text
 
