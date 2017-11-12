@@ -1,14 +1,14 @@
 ﻿; TheQube install script
 ; InnoSetup v5.5.9 unicode
-; Copyright © TheQube Developers and Translators Team, 2014 — 2016
+; Copyright © Andre Polykanine, 2014 — 2017
 
 #define MyAppName "TheQube"
-#define MyAppVersion "0.8"
-#define MyAppPublisher "TheQube Team"
+#define MyAppVersion "0.9"
+#define MyAppPublisher "Andre Polykanine"
 #define MyAppURL "http://theqube.oire.org"
 #define MyAppExeName "TheQube.exe"
 #define MyAppDescription "An accessible social networking client developed mainly for the blind."
-#define MyAppCopyrightYear "2016"
+#define MyAppCopyrightYear "2017"
 
 [Setup]
 AppId={{45E90244-4E13-41FF-B351-C387F444965E}
