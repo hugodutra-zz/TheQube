@@ -32,12 +32,12 @@ class Sent (Tweets):
   self.init_done_event.set()
 
  def retrieve_update(self, *args, **kwargs):
-  tweets = self.timeline_update(update_function_name='get_user_timeline', since_id=self.get_max_sent_item_id(), include_rts=True, include_entities=True)
+  tweets = self.timeline_update(update_function_name='get_user_timeline', since_id=self.get_max_sent_item_id(), include_rts=True, include_entities=True, tweet_mode='extended')
   tweets.extend(self.retrieve_new_sent_directs())
   return tweets
 
  def retrieve_new_sent_directs (self):
-  return self.timeline_update(update_function_name='get_sent_messages', since_id=self.get_max_sent_direct_id(), include_entities=True, full_text=True)
+  return self.timeline_update(update_function_name='get_sent_messages', since_id=self.get_max_sent_direct_id(), include_entities=True, full_text=True, tweet_mode='extended')
 
  def process_update(self, update, *args, **kwargs):
   update = Tweets.process_update(self, update)
@@ -49,7 +49,7 @@ class Sent (Tweets):
 
  def get_max_sent_item_id (self):
   id = 1
-  for i in range(len(self) - 1, -1, -1):
+  for i in xrange(len(self) - 1, -1, -1):
    if 'source' in self[i] and 'id' in self[i]:
     id = self[i]['id']
     break
@@ -57,7 +57,7 @@ class Sent (Tweets):
 
  def get_max_sent_direct_id(self):
   id = 1
-  for i in range(len(self) - 1, -1, -1):
+  for i in xrange(len(self) - 1, -1, -1):
    if 'source' not in self[i] and 'id' in self[i]:
     id = self[i]['id']
     break

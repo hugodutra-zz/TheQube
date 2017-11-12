@@ -29,7 +29,7 @@ class Favorites (Dismissable, Tweets):
   self.init_done_event.set()
  
  def retrieve_update(self, *args, **kwargs):
-  tweets = self.timeline_update(update_function_name='get_favorites', since_id=self.get_max_twitter_id(), include_entities=True, screen_name=self.username)
+  tweets = self.timeline_update(update_function_name='get_favorites', since_id=self.get_max_twitter_id(), include_entities=True, screen_name=self.username, tweet_mode='extended')
   self.initial_update = False
   return tweets
   

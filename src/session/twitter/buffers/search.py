@@ -49,11 +49,11 @@ class Search (Dismissable, Tweets):
  def retrieve_update(self, *args, **kwargs):
   if self.initial_update and self.saved:
    self.initial_update = False
-  results = self.timeline_update(update_function_name='search', q=self.term, since_id=self.get_max_twitter_id(), include_entities=True)
+  results = self.timeline_update(update_function_name='search', q=self.term, since_id=self.get_max_twitter_id(), include_entities=True, tweet_mode='extended')
   if self.initial_update:
    self.initial_update = False
    if not len(self) and not results:
-    output.speak("%s returned no results." % self.name)
+    output.speak(_("%s returned no results.") % self.name)
   return results
 
  def process_users(self, items):

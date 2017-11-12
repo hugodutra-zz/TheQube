@@ -23,11 +23,11 @@ class Individual(Dismissable, Tweets):
   self.init_done_event.set()
 
  def retrieve_update(self, *args, **kwargs):
-  timeline = self.timeline_update('get_user_timeline', since_id=self.get_max_twitter_id(), screen_name=self.username, include_rts=True, include_entities=True)
+  timeline = self.timeline_update('get_user_timeline', since_id=self.get_max_twitter_id(), screen_name=self.username, include_rts=True, include_entities=True, tweet_mode='extended')
   if self.initial_update:
    self.initial_update = False
    if not len(self) and not timeline:
-    output.speak("%s has no tweets." % self.name)
+    output.speak(_("%s has no tweets.") % self.name)
   return timeline
 
  def handles_post(self, post):

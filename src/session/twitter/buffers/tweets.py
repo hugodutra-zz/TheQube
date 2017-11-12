@@ -69,10 +69,10 @@ class Tweets (Twitter):
     continue
    for url in item['entities']['urls']:
     if url['expanded_url'] is not None:
-     item['text'] = item['text'].replace(url['url'], url['expanded_url'])
+     item['full_text'] = item['full_text'].replace(url['url'], url['expanded_url'])
    if 'media' in item['entities']:
     for url in item['entities']['media']:
      if url['display_url'] is not None:
-      item['text'] = item['text'].replace(url['url'], "http://"+url['display_url'])
+      item['full_text'] = item['full_text'].replace(url['url'], "https://"+url['display_url'])
   return super(Tweets, self).process_update(update, *args, **kwargs)
 
