@@ -241,23 +241,29 @@ class Twitter (Buffers, Login, Hotkey, SpeechRecognition, WebService):
    name = buffer.get_name(index)
   except:
    name = buffer.get_screen_name(index)
-  r = self.api_call('show_friendship', _("retrieving relationship status for %s") % name, report_success=False, target_screen_name=buffer.get_screen_name(index))
   message = ""
-  if r['relationship']['source']['following']:
-   message += _("You are following %s.  ") % name
-  if r['relationship']['source']['followed_by']:
-   message += _("%s is following you.  ") % name
+  if self.is_current_user(buffer.get_screen_name(index)):
+   message = _("You cannot get relationship with yourself.")
+  else:
+   r = self.api_call('show_friendship', _("retrieving relationship status for %s") % name, report_success=False, target_screen_name=buffer.get_screen_name(index))
+   if r['relationship']['source']['following']:
+    message += _("You are following %s.  ") % name
+   if r['relationship']['source']['followed_by']:
+    message += _("%s is following you.  ") % name
   if not message:
    message = _("No relationship exists between yourself and %s.") % name
   output.speak(message, True)
 
  def relationship_status_between(self, user1, user2):
-  r = self.api_call('show_friendship', _("retrieving relationship status between %s and %s") % (user1, user2), report_success=False, source_screen_name=user1, target_screen_name=user2)
   message = ""
-  if r['relationship']['source']['following']:
-   message += _("%s is following %s.  ") % (user1, user2)
-  if r['relationship']['source']['followed_by']:
-   message += _("%s is following %s.  ") % (user2, user1)
+  if user1 == user2:
+   message = _("You cannot get relationship between the same user.")
+  else:
+   r = self.api_call('show_friendship', _("retrieving relationship status between %s and %s") % (user1, user2), report_success=False, source_screen_name=user1, target_screen_name=user2)
+   if r['relationship']['source']['following']:
+    message += _("%s is following %s.  ") % (user1, user2)
+   if r['relationship']['source']['followed_by']:
+    message += _("%s is following %s.  ") % (user2, user1)
   if not message:
    message = _("No relationship exists between %s and %s.") % (user1, user2)
   output.speak(message, True)
@@ -316,7 +322,7 @@ class Twitter (Buffers, Login, Hotkey, SpeechRecognition, WebService):
   self.play(sessions.current_session.config['sounds']['tweetSent'])
 
  def post_reply (self, buffer=None, index=None, text="", id=0):
-  if not id and 'id' in buffer[index].keys() and 'text' in buffer[index].keys() and 'source' in buffer[index].keys():
+  if not id and 'id' in buffer[index].keys() and ('full_text' in buffer[index].keys() or 'text' in buffer[index].keys()) and 'source' in buffer[index].keys():
    id = buffer[index]['id']
   try:
    self.api_call('update_status', _("Reply"), status=text.encode("UTF-8"), in_reply_to_status_id=id)
