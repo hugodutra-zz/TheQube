@@ -1,10 +1,10 @@
 ﻿; TheQube install script
 ; InnoSetup v5.5.9 unicode
-; Copyright © Andre Polykanine, 2014 — 2017
+; Copyright © Andre Polykanine also known as Menelion Elensúlë, 2014 — 2017
 
 #define MyAppName "TheQube"
-#define MyAppVersion "0.9"
-#define MyAppPublisher "Andre Polykanine"
+#define MyAppVersion "0.9.1"
+#define MyAppPublisher "Andre Polykanine also known as Menelion Elensúlë"
 #define MyAppURL "http://theqube.oire.org"
 #define MyAppExeName "TheQube.exe"
 #define MyAppDescription "An accessible social networking client developed mainly for the blind."
