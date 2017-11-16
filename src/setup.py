@@ -11,12 +11,12 @@ logging = logger.getChild("Installer")
 
 
 name = 'TheQube'
-__version__ = 0.8
-__author__ = 'TheQube developers team'
+__version__ = 0.9
+__author__ = 'Andre Polykanine also known as Menelion Elensúlë'
 
 def get_datafiles():
  return [("", ["main.defaults"] + glob('*.exe') + glob("*.dll"))
-] + list_all_documentation() + list_session_defaults()  + accessible_output_data() + sound_lib_data() + requests_data() + get_soundpacks() + get_locales()
+] + list_all_documentation() + list_session_defaults()  + accessible_output_data() + sound_lib_data() + certifi_data() + get_soundpacks() + get_locales()
 
 def accessible_output_data():
  import accessible_output2
@@ -26,11 +26,11 @@ def sound_lib_data():
  import sound_lib
  return sound_lib.find_datafiles()
 
-def requests_data():
- import requests
- path = os.path.join(requests.__path__[0], '*.pem')
+def certifi_data():
+ import certifi
+ path = os.path.join(certifi.__path__[0], '*.pem')
  results = glob(path)
- dest_dir = os.path.join('requests')
+ dest_dir = os.path.join('certifi')
  return [(dest_dir, results)]
 
 def list_session_defaults():
@@ -75,7 +75,7 @@ if __name__ == '__main__':
  setup(
   name = name,
   author = __author__,
-  author_email = "theqube@lists.oire.org",
+  author_email = "theqube@groups.io",
   version = __version__,
   url = 'http://theqube.oire.org/',
   packages = find_packages(),
