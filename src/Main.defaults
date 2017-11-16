@@ -73,5 +73,6 @@ stdKeyHandling=boolean(default=False)
 urlShortener=string(default="qps.ru")
 
 [AudioServices]
-service=string(default="sndup.net")
+servicesList=sndup.net, instaud.io
+service=int(default=0)
 sndUpAPIKey=string(default="")

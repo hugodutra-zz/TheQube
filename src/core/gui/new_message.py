@@ -254,18 +254,14 @@ class NewMessageDialog(SquareDialog):
    output.speak(_("Attaching..."), True)
    service = config.main['AudioServices']['service']
    if service == 'sndup.net':
-    baseUrl = 'http://sndup.net/post.php'
-   elif service == 'soundcache.tk':
-    baseUrl = 'http://soundcache.tk/upload.php'
-   else: # Invalid audio service
-    output.speak(_("The audio service %s is unknown" % service), True)
-    logging.error("Invalid audio service: %s" % service)
-   if service == 'sndup.net' and len(config.main['AudioServices']['sndUpAPIKey']) > 0:
-    upload_url = baseUrl + '?apikey=' + config.main['AudioServices']['sndUpAPIKey']
+    upload_url = 'https://sndup.net/post.php'
+    service_fields = {'file': dlg.file}
+    if len(config.main['AudioServices']['sndUpAPIKey']):
+     service_params = {'apikey': config.main['AudioServices']['sndUpAPIKey']}
    else:
-    upload_url = baseUrl
+    service_params = None
    logging.debug("Upload URL: %s" % upload_url)
-   self.upload_dlg = UploadDialog(parent=self, title=_("Upload in progress"), field='file', url=upload_url, filename=dlg.file, completed_callback=self.upload_completed)
+   self.upload_dlg = UploadDialog(parent=self, title=_("Upload in progress"), fields=service_fields, url=upload_url, completed_callback=self.upload_completed)
    self.upload_dlg.Show(True)
    try:
     self.upload_dlg.perform_threaded()
@@ -292,7 +288,7 @@ class NewMessageDialog(SquareDialog):
    logging.exception("Error getting URL to audio. Server response: {0}". format(error))
    output.speak(_(error), True)
    self.message.SetFocus()
-  
+
  def on_schedule_message(self):
   if self.delay:
    output.speak(_("Resetting currently scheduled item."), True)
