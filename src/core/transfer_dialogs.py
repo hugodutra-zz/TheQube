@@ -61,7 +61,19 @@ class TransferDialog(SizedDialog):
   self.start_time = time.time()
   self.fh = io.open(self.filename, 'rb')
   # Depending on service, different fields in different order are needed
-  
+   service = config.main['AudioServices']['service']
+   if service == 'sndup.net':
+    upload_url = 'https://sndup.net/post.php'
+    service_params = {'file': dlg.file}
+    if len(config.main['AudioServices']['sndUpAPIKey']):
+     service_params = {'apikey': config.main['AudioServices']['sndUpAPIKey']}
+   elif service == 'instaud.io':
+    upload_url = 'https://instaud.io/new'
+    service_params = {'utf8': u'\u2713', 'authenticity_token': 'wjLchkJow5N+EBSnncFYoVv5ezOofIuwtYWGCruWocc=', 'audio_file': (dlg.file, fo, 'application/octet-stream')}
+   else:
+    service_params = None
+   logging.debug("Upload URL: %s" % upload_url)
+
   m = MultipartEncoder(fields={field:(self.local_filename, self.fin, "application/octet-stream")})
   self.monitor = MultipartEncoderMonitor(self.m, self.progress_callback)
 

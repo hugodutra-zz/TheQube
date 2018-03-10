@@ -252,16 +252,7 @@ class NewMessageDialog(SquareDialog):
   try:
    dlg.postprocess()
    output.speak(_("Attaching..."), True)
-   service = config.main['AudioServices']['service']
-   if service == 'sndup.net':
-    upload_url = 'https://sndup.net/post.php'
-    service_fields = {'file': dlg.file}
-    if len(config.main['AudioServices']['sndUpAPIKey']):
-     service_params = {'apikey': config.main['AudioServices']['sndUpAPIKey']}
-   else:
-    service_params = None
-   logging.debug("Upload URL: %s" % upload_url)
-   self.upload_dlg = UploadDialog(parent=self, title=_("Upload in progress"), fields=service_fields, url=upload_url, completed_callback=self.upload_completed)
+   self.upload_dlg = UploadDialog(parent=self, title=_("Upload in progress"), completed_callback=self.upload_completed)
    self.upload_dlg.Show(True)
    try:
     self.upload_dlg.perform_threaded()
@@ -274,7 +265,7 @@ class NewMessageDialog(SquareDialog):
 
  def upload_completed(self):
   logging.debug("@response: %s" % str(self.upload_dlg.response))
-  url = json.loads(self.upload_dlg.response['body'])['url']
+  url = self.upload_dlg.responseUrl
   logging.debug("Gotten URL: %s" % url)
   self.upload_dlg.Destroy()
   self.recording_dlg.cleanup()
@@ -284,7 +275,7 @@ class NewMessageDialog(SquareDialog):
    output.speak(_("File attached."), True)
    self.message.SetFocus()
   else:
-   error = json.loads(self.upload_dlg.response['body'])['error']
+   error = self.upload_dlg.responseError
    logging.exception("Error getting URL to audio. Server response: {0}". format(error))
    output.speak(_(error), True)
    self.message.SetFocus()
